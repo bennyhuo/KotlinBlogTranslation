@@ -1,0 +1,31 @@
+---
+title: Catch up with our Kotlin Team at Devoxx Belgium
+date: 2013-11-04 12:36:00
+author: Robert Demmer
+tags:
+keywords:
+categories: 官方动态
+reward: false
+reward_title: Have a nice Kotlin!
+reward_wechat:
+reward_alipay:
+source_url: https://blog.jetbrains.com/kotlin/2013/11/catch-up-with-our-kotlin-team-at-devoxx-belgium/
+---
+
+Meet JetBrains and Kotlin team members Svetlana Isakova and Aleksei Sedunov, November 11-15, at the sold-out Devoxx Belgium conference. We invite you to stop by our booth for an impromptu demo, some great gifts and a chance to win a free personal license.
+Don’t miss the following great Kotlin events:
+Hackergarten Hands-on Coding
+On Tuesday, November 12th, Aleksei will be participating in the Hackergarten hands-on coding event. He will get you started with the Kotlin language and will help you write a plugin for IntelliJ IDEA in Kotlin.
+Unpuzzling Kotlin: Bringing Clarity to Your Code
+Join Svetlana and Aleksei Thursday, November 14th, 10:50 -11:50 in Room 6. In this talk we’re going to tell the story of Java puzzlers from the Kotlin perspective which would demonstrate how Kotlin design helps to eliminate some problematic issues found in Java. In particular, we’d consider such aspects as expressions and control structures, exception handling, object and classes, nullable types and extensions.
+#### About Svetlana Isakova
+
+#### About Aleksei Sedunov
+
+To get a taste of the upcoming action, watch this short video of the awesome people and atmosphere at the JetBrains booth from Devoxx 2012.
+
+{% raw %}
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="390" src="https://www.youtube.com/embed/1PyBhozpQvw?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" style="border:0;" type="text/html" width="640"></iframe></span></p>
+{% endraw %}
+
+For complete Devoxx Belgium 2013 information, please visit: http://www.devoxx.be/.
