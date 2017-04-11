@@ -57,7 +57,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 [Join Live Webinar — Functional Programming with Kotlin](original/Join Live Webinar — Functional Programming with Kotlin.md) |2015-10-19 12:43:00| [译文](translated/Join Live Webinar — Functional Programming with Kotlin.md)| |
 [Kotlin M14 is out!](original/Kotlin M14 is out!.md) |2015-10-01 16:16:00| [译文](translated/Kotlin M14 is out!.md)| |
 [What’s new in Standard Library M13 and M14](original/What’s new in Standard Library M13 and M14.md) |2015-09-28 16:56:00| [译文](translated/What’s new in Standard Library M13 and M14.md)| |
-[Call for Feedback: Java Statics, Result Expressions and More](original/Call for Feedback: Java Statics, Result Expressions and More.md) |2015-09-25 18:27:00| [译文](translated/Call for Feedback: Java Statics, Result Expressions and More.md)| |
+[Call for Feedback: Java Statics, Result Expressions and More](original/original/Call%20for%20Feedback:%20Upcoming%20Changes%20in%20Kotlin.md) |2015-09-25 18:27:00| [译文](translated/Call for Feedback: Java Statics, Result Expressions and More.md)| |
 [Kotlin Eclipse Plugin 0.3.0](original/Kotlin Eclipse Plugin 0.3.0.md) |2015-09-24 18:58:00| [译文](translated/Kotlin Eclipse Plugin 0.3.0.md)| |
 [Webinar Recording. Quasar: Efficient and Elegant Fibers, Channels and Actors](original/Webinar Recording. Quasar: Efficient and Elegant Fibers, Channels and Actors.md) |2015-09-21 13:40:00| [译文](translated/Webinar Recording. Quasar: Efficient and Elegant Fibers, Channels and Actors.md)| |
 [Call for Feedback: Upcoming Changes in Kotlin](original/Call for Feedback: Upcoming Changes in Kotlin.md) |2015-09-18 14:06:00| [译文](translated/Call for Feedback: Upcoming Changes in Kotlin.md)| |
