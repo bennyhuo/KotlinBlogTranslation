@@ -2,6 +2,7 @@
 import os
 from datetime import datetime
 from dateutils import dateutils
+import urllib
 
 os.chdir("original")
 files = os.listdir(".")
@@ -21,4 +22,5 @@ sortedKeys.sort(reverse=True)
 for key in sortedKeys:
     file = fileMap[key][0]
     name = file[:-3]
-    print "[" + name + "](/original/" + file + ") |" + fileMap[key][1] + "| [译文](/translated/" + file +")| |"
+    encodedFile = urllib.quote(file)
+    print "[" + name + "](original/" +  encodedFile + ") |" + fileMap[key][1] + "| [译文](translated/" + encodedFile +")| |"
