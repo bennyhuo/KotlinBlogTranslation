@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin 1.0 Release Candidate is Out!
+title: "[译]Kotlin 1.0 Release Candidate is Out!"
 date: 2016-02-04 18:39:00
 author: Andrey Breslav
 tags:
@@ -13,14 +13,14 @@ source_url: https://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-release-candida
 ---
 
 最后，Kotlin已经毕业了Beta，我们很高兴地介绍了Release Candidate Build！
-注意：如前所述，RC要求重新编译所有代码，以确保没有使用旧版本编译代码（即使您使用的是EAP版本，请重新编译）。
-这篇博客文章概述了自Beta 4以来所做的更改。库更改是此版本中最大的。另外，一些错误已经修复。完整的更改列表可在此处获得。
+<strong>注意</ strong>：就像我们一样 [早些时候宣布](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) ，<strong> RC需要重新编译所有代码</ strong>，以确保没有使用旧版本编译的代码（即使您使用的是EAP版本，请重新编译）。
+这篇博客文章概述了自Beta 4以来所做的更改。库更改是此版本中最大的。另外，一些错误已经修复。完整的更改列表可用 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 。
 
 {% raw %}
 <p><img alt="Kotlin 1.0 RC" class="alignnone size-full wp-image-3485" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/02/RC-Banner.png?resize=640%2C330&amp;ssl=1"/></p>
 {% endraw %}
 
-看到关于黑客新闻和Reddit的讨论。
+<em>请参阅有关<a href="https://news.ycombinator.com/item?id=11034273">黑客新闻</a>和<a href =“https://www.reddit.com的讨论/ r / programming / comments / 445jih / jvm_languages_news_kotlin_10_release_candidate_is /“> Reddit </a> </ em>。
 
 {% raw %}
 <p><span id="more-3453"></span></p>
@@ -33,10 +33,10 @@ source_url: https://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-release-candida
 * 所有先前已弃用的语言结构现在都是错误，而不是警告。
 * 以前在字节码中生成的所有不推荐的声明（如接口等中的静态字段）已被删除。
 
-大多数其他语言的变化是微小的调整和错误修复。下面给出了一些亮点。请看这里的完整列表。
+大多数其他语言的变化是微小的调整和错误修复。下面给出了一些亮点。查看完整列表 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 。
 ### 委托字段的注释
 
-现在支持新的@delegate：注释目标（use-site）。例如，要将委托对象标记为@Transient，我们可以说：
+现在支持新的<code> @delegate：</ code>注释目标（use-site）。例如，要将委托对象标记为<code> @Transient </ code>，我们可以说：
 
 {% raw %}
 <p></p>
@@ -57,7 +57,8 @@ class Example {
 在字节码中，保留代表的字段将被注释。
 ### 键入检查使用地点差异
 
-我们修复了一些与使用场所差异（类型预测）相关的烦人的错误。因此，编译器可能会在您的代码中找到一些以前错过的错误。
+我们修复了一些与使用场所差异（类型预测）相关的烦人的错误。因此，编译器可能会在您的代码中找到一些以前错过的错误
+
 例如，在以下情况下：
 
 {% raw %}
@@ -98,9 +99,14 @@ Projected type MutableList<out Comparable<*>> restricts the use of addAll()
 * 这样的声明（以及SAM转换的方法）现在与成员一样解决;
 * 为返回值的Java设置器添加了支持。
 
-支持从各种流行的库（如javax.annotations，Android SDK等）中添加了@ Nullable / @ NotNull注释。
+支持从各种流行的库（例如<code> javax.annotations </ code>，Android SDK等）中的<code> @ Nullable / @ NotNull </ code>注释添加。
+
 EAP用户报告：
-被认可的Android注释以很好的方式打破了我的很多代码
+<p>
+
+  被认可的Android注释以很好的方式打破了我的很多代码
+
+</ p>
 并突出显示错误修复：
 
 * 私有的顶级Kotlin类现在被编译为package-private Java类
@@ -119,8 +125,11 @@ EAP用户报告：
 * 添加关联和关联以帮助构建地图（而不是toMap / toMapBy）
 * 比较器和比较相关功能被移动到kotlin.comparisons包（默认情况下不导入）
 
-这里有更多的变化
-## 模具
+更多变化 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 
+## 
+
+
+模具
 
 要以更为惯用的方式在Gradle中启用Android Extensions，我们现在说：
 
@@ -137,7 +146,7 @@ apply plugin: 'kotlin-android-extensions'
 <p></p>
 {% endraw %}
 
-在build.gradle文件（每个项目单独）。
+在<code> build.gradle </ code>文件（每个项目单独）。
 旧的方式不再工作，并打印修复说明到输出。
 ## IDE更改
 
@@ -164,5 +173,5 @@ apply plugin: 'kotlin-android-extensions'
 抱歉给你带来不便。
 ## 敬请关注
 
-最后一个版本即将到来，同时有一个很棒的Kotlin！
-美国看到关于黑客新闻和Reddit的讨论。
+最后一个版本即将到来，同时有一个很棒的Kotlin！ <img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images /smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em;“/>
+</ p>请参阅<a href="https://news.ycombinator.com/item?id=11034273">黑客新闻</a>和<a href =“https://www.reddit.com/r/编程/评论/ 445jih / jvm_languages_news_kotlin_10_release_candidate_is /“> Reddit </a> </ em>。

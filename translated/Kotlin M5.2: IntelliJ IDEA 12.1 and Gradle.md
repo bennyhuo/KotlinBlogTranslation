@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin M5.2: IntelliJ IDEA 12.1 and Gradle
+title: "[译]Kotlin M5.2: IntelliJ IDEA 12.1 and Gradle"
 date: 2013-04-04 15:00:00
 author: Andrey Breslav
 tags:
@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
 ---
 
-Kotlin的另一个更新今天出来了。欢迎Kotlin M5.2。
+另一个更新 [科特林](http://kotlin.jetbrains.org/)  今天出来欢迎Kotlin M5.2。 <span id =“more-1038”> </ span>
 ## 支持新的IntelliJ IDEA
 
-Koltin M5.2支持（实际上需要）最近发布的IntelliJ IDEA 12.1。
+Koltin M5.2支持（实际上需要）最近发布 [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/index.html) 。
 Kotlin IDE的改进包括：
 
 * 类层次结构视图中的Kotlin类。只需按一下类别名称上的Ctrl + H来查看其后代和/或父母。
@@ -32,7 +32,7 @@ Kotlin IDE的改进包括：
 
 ## SAM构造函数
 
-使用Java库时，您可以通过调用其名称并传递函数文字来创建SAM接口的实例（一个具有单抽象方法）。例如：
+当使用Java库时，现在可以通过调用它来创建SAM接口（一个具有<strong> S </ strong> ingle <strong> A </ strong> bstract <strong> M </ strong>方法）的实例命名并传递函数文字。例如：
 
 {% raw %}
 <p></p>
@@ -46,7 +46,7 @@ SwingUtilities.invokeLater(Runnable { doItNow() })
 <p></p>
 {% endraw %}
 
-这仅适用于Java类。事实上，它不是语言的一部分，而是将Java类加载到Kotlin中的一个特征：我们定义一个合成函数
+<strong>这仅适用于Java类</ strong>。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个<em>合成的</ em>函数
 
 {% raw %}
 <p></p>
@@ -119,8 +119,8 @@ dependencies {
 <p></p>
 {% endraw %}
 
-更多示例和文档可以在这里找到。
+可以找到更多的例子和文档 [这里](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Gradle) 。
 ## 提醒：KAnnotator
 
-不要忘记你现在有KAnnotator服务。
-有一个漂亮的Kotlin！
+别忘了你现在有了 [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/)  乐意效劳。
+<strong>拥有不错的Kotlin！</ strong>

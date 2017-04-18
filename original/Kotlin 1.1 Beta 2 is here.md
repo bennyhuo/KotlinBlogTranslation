@@ -1,5 +1,5 @@
 ---
-title: Kotlin 1.1 Beta 2 is here
+title: "Kotlin 1.1 Beta 2 is here"
 date: 2017-02-02 23:24:00
 author: Dmitry Jemerov
 tags:
@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/02/kotlin-1-1-beta-2-is-here/
 ---
 
 We’re happy to announce the second beta of Kotlin 1.1. Please give the new version a try – your feedback is essential for ensuring that we can deliver a quality release.
-Since the first beta release, we’ve mostly been focused on stability, bugfixes, and improving the key focus areas of this release: coroutine support and the JavaScript backend. The full list of changes since 1.1 Beta can be found in the changelog. And if you’re interested in a recap of everything added in version 1.1, check out our what’s new page.
+Since the first beta release, we’ve mostly been focused on stability, bugfixes, and improving the key focus areas of this release: coroutine support and the JavaScript backend. The full list of changes since 1.1 Beta can be found in the  [changelog](https://github.com/JetBrains/kotlin/blob/0e1b61b422bd0d006158d8b68fa34e960853c5c6/ChangeLog.md) . And if you’re interested in a recap of everything added in version 1.1, check out our  [what’s new page](https://kotlinlang.org/docs/reference/whatsnew11.html) .
 
 {% raw %}
 <p><span id="more-4562"></span></p>
@@ -21,9 +21,9 @@ Since the first beta release, we’ve mostly been focused on stability, bugfixes
 
 ## Migration Notes
 
-For JavaScript projects, we’ve changed the name of the artifact for the standard library. Instead of kotlin-js-library, it is now kotlin-stdlib-js. You’ll need to update your Maven and Gradle scripts accordingly when you update to 1.1 beta 2 or a newer build.
-In addition to that, testing support classes (in the package kotlin.test) for JavaScript are now packaged as a separate artifact, as it was previously done for the Java version. If you’re using kotlin.test in your JS project, add a dependency on kotlin-test-js.
-The coroutines APIs in the Kotlin standard library have been moved to the kotlin.coroutines.experimental package; you need to update your imports if you’ve used these APIs in your code. See Andrey’s forum post for the background on this change.
+For JavaScript projects, we’ve changed the name of the artifact for the standard library. Instead of <code>kotlin-js-library</code>, it is now <code>kotlin-stdlib-js</code>. You’ll need to update your Maven and Gradle scripts accordingly when you update to 1.1 beta 2 or a newer build.
+In addition to that, testing support classes (in the package <code>kotlin.test</code>) for JavaScript are now packaged as a separate artifact, as it was previously done for the Java version. If you’re using kotlin.test in your JS project, add a dependency on <code>kotlin-test-js</code>.
+The coroutines APIs in the Kotlin standard library have been moved to the <code>kotlin.coroutines.experimental</code> package; you need to update your imports if you’ve used these APIs in your code. See  [Andrey’s forum post](https://discuss.kotlinlang.org/t/experimental-status-of-coroutines-in-1-1-and-related-compatibility-concerns/2236)  for the background on this change.
 We’ve also made it easier to enable the experimental coroutine support in your Gradle projects. Instead of editing gradle.properties, you can add the following snippet to your build.gradle:
 
 {% raw %}
@@ -42,7 +42,7 @@ kotlin {
 <p></p>
 {% endraw %}
 
-If you’re using the kotlinx.coroutines library, please update your dependency to version 0.6-beta. Earlier versions of the library are incompatible with this Kotlin update.
+If you’re using the  [kotlinx.coroutines library](https://github.com/kotlin/kotlinx.coroutines) , please update your dependency to version <code>0.6-beta</code>. Earlier versions of the library are incompatible with this Kotlin update.
 ## New Features
 
 We did add a few last-minute features in this beta. Here are the most important ones:
@@ -57,7 +57,7 @@ We did add a few last-minute features in this beta. Here are the most important 
 
 ## Source Compatibility with Kotlin 1.0
 
-Another area to which we paid a lot of attention in this update is source compatibility with Kotlin 1.0. This allows you to try Kotlin 1.1, even if your team is using Kotlin 1.0, without worrying that you’ll break the build by using some of the features added in the new release.
+Another area to which we paid a lot of attention in this update is <strong>source compatibility with Kotlin 1.0</strong>. This allows you to try Kotlin 1.1, even if your team is using Kotlin 1.0, without worrying that you’ll break the build by using some of the features added in the new release.
 To enable the compatibility mode:
 
 * For Maven, Ant and the command-line compiler, set the -language-version compiler argument to 1.0.
@@ -66,8 +66,8 @@ To enable the compatibility mode:
 
 ## How to try it
 
-In Maven/Gradle: Add http://dl.bintray.com/kotlin/kotlin-eap-1.1 as a repository for the build script and your projects; use 1.1.0-beta-38 as the version number for the compiler and the standard library.
-In IntelliJ IDEA: Go to Tools → Kotlin → Configure Kotlin Plugin Updates, then select “Early Access Preview 1.1” in the Update channel drop-down list, then press Check for updates.
-The command-line compiler can be downloaded from the Github release page.
-On try.kotlinlang.org. Will be available soon.
+<strong>In Maven/Gradle:</strong> Add <code>http://dl.bintray.com/kotlin/kotlin-eap-1.1</code> as a repository for the build script and your projects; use <code>1.1.0-beta-38</code> as the version number for the compiler and the standard library.
+<strong>In IntelliJ IDEA:</strong> Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
+The command-line compiler can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta2) .
+<strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Will be available soon.
 Let’s Kotlin!

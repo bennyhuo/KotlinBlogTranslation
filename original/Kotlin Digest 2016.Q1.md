@@ -1,5 +1,5 @@
 ---
-title: Kotlin Digest 2016.Q1
+title: "Kotlin Digest 2016.Q1"
 date: 2016-04-06 19:37:00
 author: Roman Belov
 tags:
@@ -12,14 +12,15 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 ---
 
-Welcome the Kotlin Digest of Q1 2016. It was in this quarter that Kotlin 1.0 was released, and naturally the number of articles and coverage received has substantially increased.
+Welcome the Kotlin Digest of Q1 2016. It was in this quarter that Kotlin 1.0 was released, and naturally the number of articles and coverage received has substantially increased.<br/>
+
 We want to thank everyone for their contributions, and highlight some of the most notable articles and blog posts.
 
 {% raw %}
 <p><center><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png" rel="attachment wp-att-3826"><img alt="2016Q1Cover" class="alignnone size-full wp-image-3826" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png?resize=640%2C320&amp;ssl=1"/></a></center></p>
 {% endraw %}
 
-By the way, you can join us on slack and subscribe to the #feed channel, where we push quite a bit of interesting content as it appears.
+By the way, you can  [join us on slack](http://kotlinslackin.herokuapp.com/)  and subscribe to the <em>#feed</em> channel, where we push quite a bit of interesting content as it appears.
 
 {% raw %}
 <p><span id="more-3802"></span></p>
@@ -87,6 +88,7 @@ By the way, you can join us on slack and subscribe to the #feed channel, where w
 
 * Juan Saravia started his series of stories about learning Kotlin, while developing an Android App
 
+
 Introduction: A few words about this
 Part 1: Configuring Android Studio with Kotlin
 Part 2: MainActivity.kt: Syntax, Null Safety and more…
@@ -103,6 +105,7 @@ Part 6: API — Retrofit & Kotlin
 * Part 6: API — Retrofit & Kotlin
 * Kotlin Month series by Jacob Zimmerman
 
+
 Post 1: Assorted Features
 Post 2: Inheritance and Defaults
 Post 3: Safety
@@ -112,6 +115,7 @@ Post 4: Properties
 * Post 3: Safety
 * Post 4: Properties
 * by Ciro Rizzo:
+
 
 My Kotlin Adventure
 Kotlin Coding

@@ -1,5 +1,5 @@
 ---
-title: M10 is out
+title: "M10 is out"
 date: 2014-12-17 15:02:00
 author: Hadi Hariri
 tags:
@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/12/m10-is-out/
 ---
 
-Right before the festivities start, we’ve managed to release the next milestone of Kotlin, adding dynamic types and more. Let’s see what M10 brings us.
+Right before the festivities start, we’ve managed to release the next milestone of Kotlin, adding <strong>dynamic types</strong> and more. Let’s see what M10 brings us. <span id="more-1708"></span>
 ## Language enhancements
 
 Some improvements in the language, in particular:
@@ -52,7 +52,7 @@ myTree.findParentOfType(javaClass<MyTreeNodeType>())
 <p></p>
 {% endraw %}
 
-What we actually want is simply pass a type to this function, i.e. call is like this:
+What we actually want is simply <em>pass a type</em> to this function, i.e. call is like this:
 
 {% raw %}
 <p></p>
@@ -66,8 +66,8 @@ myTree.findParentOfType<MyTreeNodeType>()
 <p></p>
 {% endraw %}
 
-But then we’d need reified generics to access that type inside a function, and on the JVM reified generics are expensive…
-Fortunately, Kotlin has inline functions, and they now support reified type parameters, so we can write something like this:
+But then we’d need <em>reified generics</em> to access that type inside a function, and on the JVM reified generics are expensive…
+Fortunately, Kotlin has  [inline functions](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) , and they now support <strong>reified</strong> type parameters, so we can write something like this:
 
 {% raw %}
 <p></p>
@@ -87,8 +87,8 @@ inline fun <reified T> TreeNode.findParentOfType(): T? {
 <p></p>
 {% endraw %}
 
-We qualified the type parameter with the reified modifier, now it’s accessible inside the function, almost as if it were a normal class. Since the function is inlined,  no reflection is needed, normal operators like !is are working now. Also, we can call it as mentioned above: myTree.findParentOfType<MyTreeNodeType>().
-Though reflection may not be needed in many cases, we can still use it with a reified type parameter: javaClass() gives us access to it:
+We qualified the type parameter with the <strong>reified</strong> modifier, now it’s accessible inside the function, almost as if it were a normal class. Since the function is inlined,  no reflection is needed, normal operators like <strong>!is</strong> are working now. Also, we can call it as mentioned above: <code>myTree.findParentOfType&lt;MyTreeNodeType&gt;()</code>.
+Though reflection may not be needed in many cases, we can still use it with a reified type parameter: <code>javaClass<t>()</t></code> gives us access to it:
 
 {% raw %}
 <p></p>
@@ -106,11 +106,11 @@ fun main(s: Array<String>) {
 <p></p>
 {% endraw %}
 
-Normal functions (not marked as inline) can not have reified parameters. A type that does not have a run-time representation (e.g. a non-reified type parameter or a fictitious type like Nothing) can not be used as an argument for a reified type parameter.
+Normal functions (not marked as <code>inline</code>) can not have reified parameters. A type that does not have a run-time representation (e.g. a non-reified type parameter or a fictitious type like <code>Nothing</code>) can not be used as an argument for a reified type parameter.
 This feature is intended to simplify code in frameworks that traditionally rely on reflection, and our internal experiments show that it’s working well.
 ### Checks for declaration-site variance
 
-Kotlin has declaration-site variance from the very beginning, but the correspondent checks have been missing from the compiler for a long time. Now they are put in their place: the compiler complains if we declare a type parameter as in or out, but misuse it in the class body:
+Kotlin has  [declaration-site variance](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  from the very beginning, but the correspondent checks have been missing from the compiler for a long time. Now they are put in their place: the compiler complains if we declare a type parameter as <strong>in</strong> or <strong>out</strong>, but misuse it in the class body:
 
 {% raw %}
 <p></p>
@@ -126,8 +126,8 @@ class C<out T> {
 <p></p>
 {% endraw %}
 
-In this example, since T is declared as out (i.e. the class is covariant in T), we are not allowed to take it as a parameter to the foo() function, we can only return it.
-Note that a private declaration is allowed to violate variance restrictions, for example:
+In this example, since T is declared as <strong>out</strong> (i.e. the class is <em>covariant</em> in T), we are not allowed to take it as a parameter to the <code>foo()</code> function, we can only return it.
+Note that a <strong>private</strong> declaration is allowed to violate variance restrictions, for example:
 
 {% raw %}
 <p></p>
@@ -143,7 +143,7 @@ class C<out T>(t: T) {
 <p></p>
 {% endraw %}
 
-Although foo‘s setter takes T as as an argument, and thus violates the out restriction on it, the compiler allows this and makes sure that only the same instance of C has access to foo. This means that the following function in C would not compile:
+Although <code>foo</code>‘s setter takes T as as an argument, and thus violates the <strong>out</strong> restriction on it, the compiler allows this and makes sure that only <em>the same instance</em> of <code>C</code> has access to <code>foo</code>. This means that the following function in <code>C</code> would not compile:
 
 {% raw %}
 <p></p>
@@ -160,10 +160,10 @@ private fun copyTo(other: C<T>) {
 <p></p>
 {% endraw %}
 
-This is a breaking change: some code that compiled previously may break, but not fixing it is likely to result in run-time exceptions anyways, so the compiler errors will be of some value to you
+This is a <strong>breaking change</strong>: some code that compiled previously may break, but not fixing it is likely to result in run-time exceptions anyways, so the compiler errors will be of some value to you <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 ### Type inference supports use-site variance
 
-Type argument inference has been improved to accommodate use-site variance more comfortably. Now you can call a generic function, e.g. reverseInPlace() on a projected type, such as Array<out Number>:
+Type argument inference has been improved to accommodate  [use-site variance](http://kotlinlang.org/docs/reference/generics.html#type-projections)  more comfortably. Now you can call a generic function, e.g. <code>reverseInPlace()</code> on a projected type, such as <code>Array&lt;out Number&gt;</code>:
 
 {% raw %}
 <p></p>
@@ -179,7 +179,7 @@ fun example(a: Array<out Number>) {
 <p></p>
 {% endraw %}
 
-where reverseInPlace is defined as follows:
+where <code>reverseInPlace</code> is defined as follows:
 
 {% raw %}
 <p></p>
@@ -199,10 +199,10 @@ fun <T> Array<T>.reverseInPlace() {
 <p></p>
 {% endraw %}
 
-The underlying mechanism was proposed initially by Ross Tate in his paper on “Mixed-Site Variance”.
+The underlying mechanism was proposed initially by Ross Tate in his  [paper on “Mixed-Site Variance”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) .
 ### Varargs translated to projected arrays
 
-Another breaking change comes in the form of a fix to a obscure, but sometimes rather annoying issue: when we have a function that takes a vararg of String?, we really want to be able to pass an array of String to it, don’t we? Before M10 it was impossible, because vararg of T were compiled to Array<T>, now they are compiled to Array<out T>, and the following code works:
+Another <strong>breaking change</strong> comes in the form of a fix to a obscure, but sometimes  [rather](https://youtrack.jetbrains.com/issue/KT-5534)   [annoying](https://youtrack.jetbrains.com/issue/KT-2163)  issue: when we have a function that takes a vararg of <code>String?</code>, we really want to be able to pass an array of <code>String</code> to it, don’t we? Before M10 it was impossible, because vararg of T were compiled to <code>Array&lt;T&gt;</code>, now they are compiled to <code>Array&lt;out T&gt;</code>, and the following code works:
 
 {% raw %}
 <p></p>
@@ -224,7 +224,7 @@ takeVararg(*strs)
 JavaScript gets an important update in this version with support for dynamic types.
 ### Dynamic support
 
-Sometimes the best way to talk to dynamic languages is dynamically. This is why we’ve introduced the soft keyword dynamic which allows us to declare types as dynamic. Currently this is only supported when targeting JavaScript, not the JVM.
+Sometimes the best way to talk to dynamic languages is dynamically. This is why we’ve introduced the soft keyword <em>dynamic</em> which allows us to declare types as dynamic. Currently this is only supported when targeting JavaScript, not the JVM.
 When interoperating with JavaScript we can now have functions take as parameters, or return, a dynamic type
 
 {% raw %}
@@ -242,11 +242,11 @@ fun interopJS(obj: dynamic): dynamic {
 <p></p>
 {% endraw %}
 
-We’ll cover dynamic in more details along with usage scenarios and limitations in a separate blog post. For technicalities see the spec document.
+We’ll cover dynamic in more details along with usage scenarios and limitations in a separate blog post. For technicalities see the  [spec document](https://github.com/JetBrains/kotlin/blob/master/spec-docs/dynamic-types.md) .
 ### New Annotations
 
-We’ve added a series of annotations to make JavaScript interop easier, in particular nativeInvoke, nativeGetter and nativeSetter.
-If a function bar is annotated with nativeInvoke, its calls foo.bar() are translated to foo() in JavaScript. For example:
+We’ve added a series of annotations to make JavaScript interop easier, in particular <em>nativeInvoke, nativeGetter</em> and <em>nativeSetter</em>.
+If a function <code>bar</code> is annotated with <code>nativeInvoke</code>, its calls <code>foo.bar()</code> are translated to <code>foo()</code> in JavaScript. For example:
 
 {% raw %}
 <p></p>
@@ -267,7 +267,7 @@ f.invoke(1) // also translates to f(1)
 <p></p>
 {% endraw %}
 
-Much the same way, we can use nativeGetter and nativeSetter to get index-access available in JavaScript:
+Much the same way, we can use <em>nativeGetter</em> and <em>nativeSetter</em> to get index-access available in JavaScript:
 
 {% raw %}
 <p></p>
@@ -287,7 +287,7 @@ class JsArray<T> {
 <p></p>
 {% endraw %}
 
-Without native* annotations, calls to get and set (including those done by convention, e.g. a[i] = j is the same as a.set(i, j)) are translated to a.get(...) and a.set(...), but with the annotations placed as above, they are translated to square brackets operator in JavaScript:
+Without <code>native*</code> annotations, calls to <code>get</code> and <code>set</code> (including those done by convention, e.g. <code>a[i] = j</code> is the same as <code>a.set(i, j)</code>) are translated to <code>a.get(...)</code> and <code>a.set(...)</code>, but with the annotations placed as above, they are translated to square brackets operator in JavaScript:
 
 {% raw %}
 <p></p>
@@ -310,10 +310,10 @@ We can use these annotations in the following cases:
 
 ### Kotlin.js output – breaking change
 
-Previously, when creating a new project, the kotlin.js runtime would be created in a folder named scripts. As of M10, this file is created on first compilation and is placed in the output folder (defaults to out). This provides for a much easier deployment scenario as library and project output is now located under the same root folder.
+Previously, when creating a new project, the kotlin.js runtime would be created in a folder named <em>scripts</em>. As of M10, this file is created on first compilation and is placed in the output folder (defaults to <em>out</em>). This provides for a much easier deployment scenario as library and project output is now located under the same root folder.
 ### New no-stdlib option to kotlin-js compiler – breaking change
 
-We now provide a command line option for the kotlin-js compiler, namely no-stdlib. Without specifying this option, the compiler uses the bundled standard library. This is a change of behaviour from M9.
+We now provide a command line option for the kotlin-js compiler, namely <em>no-stdlib</em>. Without specifying this option, the compiler uses the bundled standard library. This is a change of behaviour from M9.
 ### js code
 
 We can now output JavaScript code directly inside Kotlin code
@@ -336,13 +336,13 @@ As you can see, we’ve added a lot of new improvements for JavaScript in this r
 
 ### [platformStatic] for properties
 
-Now, we can mark properties as [platformStatic] so that their accessors become visible from Java as static methods.
+Now, we can mark properties as <code>[platformStatic]</code> so that their accessors become visible from Java as static methods.
 ### Static fields in objects
 
-Properties on any object now produce static fields so that they can easily be consumed from Java even without the need to decorate them with platformStatic annotations.
+Properties on any object now produce static fields so that they can easily be consumed from Java even without the need to decorate them with <em>platformStatic</em> annotations.
 ### JNI and [native]
 
-Kotlin now supports JNI via [native] annotation, defined in kotlin.jvm package (see the spec document here.). To declare a native method, simply put the annotation on it:
+Kotlin now supports JNI via <code>[native]</code> annotation, defined in <code>kotlin.jvm</code> package (see the spec document  [here](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) .). To declare a native method, simply put the annotation on it:
 
 {% raw %}
 <p></p>
@@ -365,7 +365,7 @@ class NativeExample {
 <p></p>
 {% endraw %}
 
-Here’s an example of using native declarations with Android and NDK.
+Here’s an  [example](https://github.com/ligee/kotlin-ndk-samples/blob/master/hello-jni/src/com/example/hellojni/HelloJni.kt)  of using native declarations with Android and NDK.
 ## IntelliJ IDEA improvements
 
 Some more improvements in the IntelliJ IDEA area, including:
@@ -377,7 +377,7 @@ We’ve enhanced incremental compilation and with M10 it now supports dependenci
 Now, when we recompile Kotlin code while debugging it, it gets smoothly re-loaded into the debugee process.
 ### Evaluate Expression: Completion improvements
 
-During debug sessions, when evaluating expressions, casts are automatically added as needed. For instance when downcasting from Any to a specific type.
+During debug sessions, when evaluating expressions, casts are automatically added as needed. For instance when downcasting from <em>Any</em> to a specific type.
 
 {% raw %}
 <p><img alt="Completion Casts" class="aligncenter size-full wp-image-1716" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2014/12/completion.png?resize=564%2C126&amp;ssl=1"/></p>
@@ -385,7 +385,7 @@ During debug sessions, when evaluating expressions, casts are automatically adde
 
 ### Copy reference
 
-We can now obtain the complete reference for any Kotlin symbol, much like we do with IntelliJ IDEA in Java code
+We can now obtain the complete reference for any Kotlin symbol, much like we do with  [IntelliJ IDEA in Java code](https://www.jetbrains.com/idea/help/cutting-copying-and-pasting.html) 
 
 {% raw %}
 <p><img alt="Copy Reference" class="aligncenter size-full wp-image-1711" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2014/12/copy-reference-no-retina.png?resize=457%2C269&amp;ssl=1"/></p>
@@ -421,13 +421,13 @@ class Derived<X>: Base<List<X>> {
 <p></p>
 {% endraw %}
 
-If the signature of Base.baseMethod is changed to baseMethod<T>(t: List<T>, k: K?) then the signature of Derived.baseMethod is appropriately changed to >baseMethod<Y>(a: List<Y>, b: List<X>?)
+If the signature of <em>Base.baseMethod</em> is changed to <em>baseMethod&lt;T&gt;(t: List&lt;T&gt;, k: K?)</em> then the signature of <em>Derived.baseMethod</em> is appropriately changed to <em>&gt;baseMethod&lt;Y&gt;(a: List&lt;Y&gt;, b: List&lt;X&gt;?)</em>
 ### Completion improvements
 
 Completions items ordering has been improved, immediate members are now highlighted. Smart completion now finds inheritors of expected types. Completion performance severely improved.
 ### Runnable objects
 
-Now you can run an object that declared a [platformStatic] main function, for the IDE:
+Now you can run an object that declared a <code>[platformStatic]</code> main function, for the IDE:
 
 {% raw %}
 <p></p>
@@ -447,7 +447,7 @@ object Hello {
 <p></p>
 {% endraw %}
 
-Just right-click the object and select Run …
+Just right-click the object and select <em>Run …</em>
 ### Code Coverage highlighting in the Editor
 
 If you run Kotlin code with coverage, the Editor now marks covered and uncovered lines for you (available in IntelliJ IDEA 14 only).
@@ -456,4 +456,4 @@ If you run Kotlin code with coverage, the Editor now marks covered and uncovered
 The IDE plugin can now automatically configure Maven projects to work with Kotlin/JS. Also, if you have an outdated version of Kotlin’s runtime library, the IDE will ask you to update it, and you can now chose to use a library located in the plugin distribution, instead of copying one into your project.
 ## Summary
 
-To install M10, update the plugin in your IntelliJ IDEA 14 (or earlier versions), and as always you can find the plugin in our plugin repository. You can also download the standalone compiler from the release page.
+To install M10, update the plugin in your IntelliJ IDEA 14 (or earlier versions), and as always you can find the plugin in our plugin repository. You can also download the standalone compiler from the  [release page](https://github.com/JetBrains/kotlin/releases/tag/build-0.10.4) .

@@ -1,5 +1,5 @@
 ---
-title: Upcoming Feature Deprecations
+title: "Upcoming Feature Deprecations"
 date: 2015-04-02 13:00:00
 author: Andrey Breslav
 tags:
@@ -13,14 +13,14 @@ source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-changes-and-more/
 ---
 
 As we are finalizing the language design, many things have to be cleaned up, and among these are features that were initially designed and (often partly) implemented, but turned out not to be worth the trouble supporting them.
-In the upcoming M12 milestone, we are going to deprecate such features, so that you could migrate your code before they are removed completely.
+In the upcoming M12 milestone, we are going to deprecate such features, so that you could migrate your code before they are removed completely.<span id="more-1996"></span>
 ## Required Classes
 
 Some of you might have heard of this feature: traits in Kotlin can “extend” classes (we actually use the term “require”).
 Technically it means that when a class extends such a trait, it must (directly or indirectly) extend the required class as well. This feature has very few use cases, so we are deprecating it.
 ## Captured Type Parameters
 
-When a generic class Outer has an inner class Inner, Java allows us to use generic parameters of Outer inside Inner:
+When a generic class <code>Outer</code> has an <strong>inner</strong> class <code>Inner</code>, Java allows us to use generic parameters of <code>Outer</code> inside <code>Inner</code>:
 
 {% raw %}
 <p></p>
@@ -69,7 +69,7 @@ class Outer<T> {
 
 ## Covariant Specialization for Supertypes
 
-I’m really skeptical about anyone even knowing that this feature exists
+I’m really skeptical about anyone even knowing that this feature exists <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 The current compiler allows a class/trait to have more than one (indirect) supertype of the same class, if one of them is a subtype of the other:
 
 {% raw %}
@@ -91,7 +91,7 @@ class Derived : Base(), List<Int> { // no error
 <p></p>
 {% endraw %}
 
-Note that List is co-variant in Kotlin.
+Note that <code>List</code> is co-variant in Kotlin.
 Although, again, logical, this has almost no use-cases, to our knowledge, but supporting this involves a lot of compiler magic and breaks Java interop right and left, so we are going to drop this.
 ## More Deprecations Coming
 

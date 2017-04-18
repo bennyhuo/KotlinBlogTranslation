@@ -1,5 +1,5 @@
 ---
-title: Kotlin 1.1 is also for Android Developers
+title: "Kotlin 1.1 is also for Android Developers"
 date: 2017-04-05 16:13:00
 author: Roman Belov
 tags:
@@ -13,10 +13,10 @@ source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-is-also-for-and
 ---
 
 We’re all really excited about the release of Kotlin 1.1. The new features this release includes are extremely useful for Java developers and lead JVM development to a new world of possibilities.
-But these new features, such as coroutines, or type aliases (to put a couple of examples), look like science fiction for Android developers.
+But these new features, such as  [coroutines](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) , or  [type aliases](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md)  (to put a couple of examples), look like science fiction for Android developers.
 We’re still stuck in an ancient Java 6 with little improvements that forces us to develop in ways almost forgotten for most developers in any other platforms.
 So a sane question would be: has the Kotlin team been able to keep compatibility to Java 6 while bringing all these new features alive? And the answer is: of course!
-All the new stuff is still available for Java 6 and, as an extension, for Android developers. And today, I want to show you some of them, and how they can make your life even easier when developing Android Apps.
+<strong>All the new stuff is still available for Java 6 and, as an extension, for Android developers.</strong> And today, I want to show you some of them, and how they can make your life even easier when developing Android Apps.
 
 {% raw %}
 <p><span id="more-4826"></span></p>
@@ -25,8 +25,8 @@ All the new stuff is still available for Java 6 and, as an extension, for Androi
 # Type aliases: You can make your listener much more readable
 
 Of course, type aliases have a lot of different applications. But the first that came to my mind was the ability to make listeners more readable while keeping the use of lambdas.
-If you haven’t heard about type aliases before, they’re basically a way to rename complex types into more readable ones.
-For instance, you could have an RecyclerViewadapter which will receive a listener. As you may know, RecyclerView doesn’t have a standard way to deal with item clicks, just as ListView had, so we have to come out with our own.
+If you haven’t heard about  [type aliases](https://github.com/Kotlin/KEEP/issues/4)  before, they’re basically a way to rename complex types into more readable ones.
+For instance, you could have an <code>RecyclerViewadapter</code> which will receive a listener. As you may know, <code>RecyclerView</code> doesn’t have a standard way to deal with item clicks, just as <code>ListView</code> had, so we have to come out with our own.
 Let’s imagine we want a listener that has access to the view. Our adapter class could look like this:
 
 {% raw %}
@@ -44,7 +44,7 @@ class MyAdapter(val items: List<Item>, val listener: (View) -> Unit) : RecyclerV
 <p></p>
 {% endraw %}
 
-And your ViewHolder would probably need to receive that listener too, to assign it to the click listener of the view:
+And your <code>ViewHolder</code> would probably need to receive that listener too, to assign it to the click listener of the view:
 
 {% raw %}
 <p></p>
@@ -64,16 +64,19 @@ class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 {% endraw %}
 
 This is not a very complicated case, but as you can see, we need to repeat that lambda definition which, out of context, could lead to a difficult read.
-But we can create a type alias that represents a click listener:
-typealias ClickListener = (View) -> Unit
-And then use it in every place we need that listener:
-class MyAdapter(val items: List<Item>, val listener: ClickListener)
-or
-fun bind(item: Item, listener: ClickListener) { ... }
+But we can create a type alias that represents a click listener:<br/>
+<code>typealias ClickListener = (View) -&gt; Unit</code><br/>
+
+And then use it in every place we need that listener:<br/>
+<code>class MyAdapter(val items: List&lt;Item&gt;, val listener: ClickListener)</code><br/>
+
+or<br/>
+<code>fun bind(item: Item, listener: ClickListener) { ... }</code>
 # Data classes are now more powerful
 
 Data classes are great because the avoid a huge amount of boilerplate. But they were lacking some powers, which made them unusable in some cases.
-One of the new inclusions in Kotlin 1.1 is inheritance: data classes can now inherit other classes.
+One of the new inclusions in Kotlin 1.1 is inheritance: data classes can now inherit other classes.<br/>
+
 This allows data classes to be part of sealed classes:
 
 {% raw %}
@@ -93,7 +96,7 @@ sealed class UiOp {
 <p></p>
 {% endraw %}
 
-And now, as sealed classes can be defined out of the parent class, this could also be like this:
+And now, <strong>as sealed classes can be defined out of the parent class</strong>, this could also be like this:
 
 {% raw %}
 <p></p>
@@ -113,7 +116,7 @@ data class Translate(val axis: Axis, val amount: Int)
 
 # Destructuring inside lambdas
 
-Data classes could be destructured since the first version thanks to the componentX() methods they generate. You could assign the content of a data class into several variables like this:
+Data classes could be destructured since the first version thanks to the <code>componentX()</code> methods they generate. You could assign the content of a data class into several variables like this:
 
 {% raw %}
 <p></p>
@@ -152,7 +155,7 @@ This is also really helpful for pairs or key/value sets in a map, for instance.
 # Local delegated properties
 
 Delegated properties have proven to be really useful to give extra abilities to the properties in our classes.
-For instance, one of the most useful ones is the lazy delegation, which defers the execution of the assignment until the property is used for the first time.
+For instance, one of the most useful ones is the <strong>lazy delegation</strong>, which defers the execution of the assignment until the property is used for the first time.
 But lazy would also be really helpful too on variables, and Kotlin was lacking this feature.
 Now, with local delegated properties, we can do it:
 
@@ -243,11 +246,11 @@ var items: List<Item> by Delegates.observable(emptyList()) {
 It’s not only that you are defining less variables, but also that the code becomes more readable. Now you don’t need to detect whether those arguments are used or not. It’s crystal clear.
 # Coroutines
 
-Coroutines are the most exciting news in Kotlin 1.1. Though finally left as “experimental” in this release, they are fully functional and you can start using them on your projects as of today.
+Coroutines are the most exciting news in Kotlin 1.1. Though finally left as “experimental” in this release, <strong>they are fully functional and you can start using them on your projects as of today</strong>.
 Coroutines will let you write asynchronous code in a synchronous way, allowing to suspend the execution at some point and wait for a result, all while writing sequential code.
-One thing you may already know about coroutines in Kotlin is that they are not a library or a specific implementation, but a language feature that allows creating libraries over it.
+One thing you may already know about coroutines in Kotlin is that they are not a library or a specific implementation, <strong>but a language feature that allows creating libraries over it</strong>.
 So, though the resulting code may look similar, it’s important to know what’s the “gear” that is creating those secondary threads and returning to the main thread, which is quite important in Android.
-Luckily, the Kotlin community moves fast and there are already several libraries that bring the power of coroutines to Android. Here you have some examples:
+Luckily, the Kotlin community moves fast and there are already <strong>several libraries that bring the power of coroutines to Android</strong>. Here you have some examples:
 The first ones you may want to take a look are the official ones provided by Jetbrains:
 
 * kotlinx-coroutines-android, which provides a coroutines implementation ready to be used on Android.
@@ -263,8 +266,8 @@ I urge you not only to use them, but also to check how they are implemented. Tha
 # Some other cool things for Android Devs
 
 There are many more improvements on this release, but I wanted to highlight some that are more focused to Android development.
-The first one of them is that now you can enable the support with the Jack compiler by using: jackOptions { true }. Google has announced they are deprecating Jack toolchain, but if you were using it for Java 8, this may be helpful for you until the final version of Android Studio 2.4 is released.
-Also, there’s a new intention that will use @JvmOverloads to implement the constructors of a custom view, which literally allows to implement custom view constructors in one line (well, one really long line) by using one constructor and default values for arguments:
+The first one of them is that now you can enable the support with the Jack compiler by using: <code>jackOptions { true }</code>. Google has announced they are deprecating Jack toolchain, but if you were using it for Java 8, this may be helpful for you until the final version of Android Studio 2.4 is released.
+Also, there’s <strong>a new intention that will use</strong> <code>@JvmOverloads</code> <strong>to implement the constructors of a custom view</strong>, which literally allows to implement custom view constructors in one line (well, one really long line) by using one constructor and default values for arguments:
 
 {% raw %}
 <p></p>
@@ -287,4 +290,4 @@ class CustomView @JvmOverloads constructor(
 
 Kotlin 1.1 has brought a good bunch of new awesome features that make the question of why we still use Java even more inevitable.
 The power that Kotlin brings to Android developers is out of question, and you can start writing your Android apps in Kotlin from today.
-And if you want to learn Kotlin for Android from scratch while developing an App, you might find Kotlin for Android Developers book of your interest.
+And if you want to learn Kotlin for Android from scratch while developing an App, <strong>you might find <a href="https://antonioleiva.com/kotlin-android-developers-book/">Kotlin for Android Developers</a> book of your interest</strong>.

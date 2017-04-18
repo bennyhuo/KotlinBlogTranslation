@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin M14 is out!
+title: "[译]Kotlin M14 is out!"
 date: 2015-10-01 16:16:00
 author: Andrey Breslav
 tags:
@@ -22,10 +22,10 @@ source_url: https://blog.jetbrains.com/kotlin/2015/10/kotlin-m14-is-out/
 ## 语言
 
 我们正在用语言变化来包装，所以在M14中没有什么真正戏剧性的。
-注意：我们正在删除以前不推荐的功能和功能，因此请确保在安装M14之前运行代码清理。
+<strong>注意</ strong>：我们正在删除以前不推荐使用的功能和功能，因此请确保在安装M14之前运行代码清理</ em>。
 ### 背景领域
 
-旧的$ propertyName语法已被弃用。要访问getter / setter中的后缀字段，请使用字段合成变量：
+旧的<code> $ propertyName </ code>语法已弃用。要访问getter / setter内的后备字段，请使用<code>字段</ code>合成变量：
 
 {% raw %}
 <p></p>
@@ -48,12 +48,12 @@ var prop: Int = 1
 <p></p>
 {% endraw %}
 
-如果同一范围内的另一个属性命名为field，那么我们需要使用“this”来限定它的使用。
+如果同一范围内的另一个属性被命名为<code> field </ code>，我们需要使用“<code> this。</ code>”来限定其使用。
 需要在声明（而不是在构造函数中）初始化具有后备字段和自定义设置器的Var属性，因为这种初始化器将绕过设置器直接写入到后台字段。
 在这种模式不够灵活的情况下（可能很少见），请考虑引入后台属性（可以使用相应的重构）或使用属性委托。
 ### 经营者
 
-如前所述，Kotlin M14期望通过运算符符号（例如加号，迭代器等）调用的函数被标记为运算符修饰符。注意：当我们扩展Any，Iterable或Comparable时，运算符修饰符将自动继承，因此不必担心它们。当需要以操作员形式使用Java方法时，请使用标记运算符的扩展功能：
+正如宣布的那样 [先前](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) ，Kotlin M14期望通过运算符符号（例如<code> plus </ code>，<code> iterator </ code>等）调用的函数被标记为<code> operator </ code>修饰符。注意：当我们扩展<code> Any </ code>，<code> Iterable </ code>或<code> Comparable </ code>时，<code>运算符</ code>修饰符将自动继承，因此不需要担心他们当需要以操作员形式使用Java方法时，请使用标记为<code> operator </ code>的扩展功能：
 
 {% raw %}
 <p></p>
@@ -68,11 +68,11 @@ operator fun JavaClass.plus(other: JavaClass): JavaClass = this.plus(other)
 <p></p>
 {% endraw %}
 
-使用代码清理来自动向项目中使用的所有运算符添加修饰符。
+使用<em>代码清理</ em>可以自动向项目中使用的所有运算符添加修饰符。
 注意：Infix功能将在最近的将来迁移到相同的方案。
 ### 编译时常数
 
-由于M14，我们需要使用const来表示Kotlin常量，以便能够在注释中使用它们，并从Java中看到：
+由于M14我们需要使用<code> const </ code>前缀Kotlin常量，以便能够在注释中使用它们，并从Java中看到字段：
 
 {% raw %}
 <p></p>
@@ -87,10 +87,10 @@ const val MAX = 239
 <p></p>
 {% endraw %}
 
-代码清理将为您添加缺少的const修饰符。
+代码清理</ em>将为您添加缺少的<code> const </ code>修饰符。
 ### 注释文件类
 
-由于M13，默认情况下，每个源文件的顶级函数和属性都将放在一个单独的类文件中（详细信息）。现在我们可以通过应用文件注释来注释这些类：
+由于M13，默认情况下，每个源文件的顶级函数和属性都将放在一个单独的类文件中（详细信息 [这里](http://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/) ）。现在我们可以通过应用文件注释来注释这些类：
 
 {% raw %}
 <p></p>
@@ -132,9 +132,9 @@ public final class FooKt {
 
 ### 从旧的“包装外观”迁移
 
-当我们转向新的类文件布局时，现在该退出旧的类文件布局了。由于M14旧程序包外观类（例如FooPackage）已被弃用，IDE可帮助您通过代码清理将Java代码迁移到新方案。
-注意：软件包外观将很快丢弃，因此请务必迁移您的代码。
-标准库（以前的kotlin.KotlinPackage类）也被迁移到新的方案中：见下文。
+当我们转向了 [新的类文件布局](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) ，现在是退休老人的时候了。由于M14旧程序包外观类（例如<code> FooPackage </ code>）已被弃用，IDE可帮助您通过代码清理</ em>将Java代码迁移到新的方案。
+<strong>注意</ strong>：包立面将很快丢弃，因此请务必迁移您的代码。
+标准库（以前的<code> kotlin.KotlinPackage </ code>类）也被迁移到新的方案中：见下文。
 ### 其他语言变化
 
 
@@ -160,7 +160,7 @@ public final class FooKt {
 在API文档中查看更多内容。
 ## IDE更改
 
-像往常一样，IDE可以帮助您通过代码清理从M13无缝迁移。 M14还有几个新的便捷功能：
+像往常一样，IDE可以帮助您通过<em>代码清理</ em>从M13无缝迁移。 M14还有几个新的便捷功能：
 
 * 如上所述，在某些情况下，我们需要私人支持属性。您可以通过意图行动轻松介绍：
 

@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin M2 Candidate
+title: "[译]Kotlin M2 Candidate"
 date: 2012-06-04 08:53:00
 author: Andrey Breslav
 tags:
@@ -12,11 +12,11 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
 ---
 
-自Kotlin M1发布以来已经有七个星期了，我很高兴邀请您尝试Kotlin M2的候选版本！这篇文章概述了即将到来的里程碑版本以及使用说明。
+这是七个星期了 [Kotlin M1发行](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) ，我很高兴邀请您尝试一下Kotlin M2 </ strong>的候选版本！这篇文章概述了即将到来的里程碑版本以及使用说明。
 ## 谢谢你，M1！
 
-我们的M1版本做得相当不错：大约有800个下载，并在我们的论坛和问题跟踪器中提供了广泛的反馈。
-看起来好像你有一些乐趣，我们的目标是更加有趣
+我们的M1建设做得相当不错：有了 [800下载](http://plugins.intellij.net/plugin/?id=6954) ，并给我们带来了广泛的反馈 [论坛](http://devnet.jetbrains.com/community/kotlin)  和 [问题追踪器](http://youtrack.jetbrains.net/issues/KT) 。
+似乎你已经有了一些乐趣，我们的目标是更加有趣的<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：// i2 .wp.com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“ >
 ## 什么是新的
 
 
@@ -33,15 +33,15 @@ source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
 
 ## 小东西
 
-像往常一样，修复了很多错误。我想指出，我们正在研究IDE的性能。在M2方面有所改善，并将在下一个里程碑上达到真正的速度。
+和往常一样 [修复了很多错误](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-04-12+..+2012-06-07) 。我想指出，我们正在研究IDE的性能。在M2方面有所改善，并将在下一个里程碑上达到真正的速度。
 ## 语言特点
 
-科特林现在尊重知名度调节器。我们有四个：
+现在Kotlin尊重<strong>可见性修饰符</ strong>。我们有四个：
 
 * 私人，保护，公开 - 像往常一样，
 * 内部 - 在模块内可见（这不仅仅是一个包）。
 
-您现在可以将一组值传递给vararg函数：
+您现在可以将<strong>数组值传递给vararg函数</ strong>：
 
 {% raw %}
 <p></p>
@@ -62,12 +62,12 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-扩展运算符将数组转换为变量列表。与Java不同，这并不表示任何丑角。
+<strong>传播</ strong>操作符将“数组”转换为变量列表。与Java不同，这并不表示任何丑角。
 稍后会有更多的好东西。
 ## IDE中的JavaScript支持
 
-虽然您仍然可以使用Kotlin Web Demo在浏览器中直接播放Kotlin，但现在有一个真正的IDE用于Kotlin编译为JavaScript。
-当您安装IntelliJ IDEA插件的M2候选版本时，请按照以下说明尝试一些Kotlin-to-JS编译：
+虽然您仍然可以直接在浏览器中与Kotlin一起玩 [Kotlin网络演示](http://kotlin-demo.jetbrains.com) 现在，Kotlin现在已经编译成了一个真正的IDE。
+当你 [安装IntelliJ IDEA插件的M2候选版本](#install) ，请按照以下说明尝试一些Kotlin-to-JS编译：
 
 * 从github查看kotlin-js-hello项目
 * 将其作为IntelliJ IDEA项目打开
@@ -75,10 +75,10 @@ fun main(args: Array<String>) {
 * 选择您喜欢的浏览器并运行。结果将在浏览器中打开。
 * 随时随地编辑JavaScript文件，并重新运行...
 
-目前，API文档正在准备中。同时，您可以在这里学习Kotlin的JS API。
+目前，API文档正在准备中。同时，您可以学习Kotlin的JS API [这里](https://github.com/JetBrains/kotlin/tree/master/js/js.libraries/src) 。
 ## Android
 
-修复了一些错误并发现了很多有趣的东西（特别感谢Aleksandro Eterverda），我们已经准备好在Android上运行Kotlin！
+修复一些bug后，发现很多有趣的东西（特别感谢 [Aleksandro Eterverda](https://github.com/eterverda) ），我们准备在Android上运行Kotlin！
 
 {% raw %}
 <p style="text-align: center"><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/06/KotlinDroid.png"><img alt="" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/06/KotlinDroid.png?resize=250%2C136&amp;ssl=1"/></a></p>
@@ -118,4 +118,4 @@ fun main(args: Array<String>) {
 <p> </p>
 {% endraw %}
 
-本页的部分内容是根据Google创建和共享的作品进行的修改，并根据Creative Commons 3.0 Attribution License中描述的条款使用。
+此页面的部分是基于创建的工作进行的修改 [由Google分享](http://code.google.com/policies.html)  并根据术语描述使用 [知识共享3.0归属许可](http://creativecommons.org/licenses/by/3.0/) 。

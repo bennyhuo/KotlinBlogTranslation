@@ -1,5 +1,5 @@
 ---
-title: [译]Advanced Features of Anko
+title: "[译]Advanced Features of Anko"
 date: 2015-05-06 10:34:00
 author: Andrey Breslav
 tags:
@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/advanced-features-of-anko/
 ---
 
-上周我们发布了一个新版本的安科。虽然该库的主要目的是通过DSL创建布局，但即使是XML布局的用户也可以从中受益。今天我们要谈论安科的这种“矛盾”特征。
+上周我们发表了 [一个新版本](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/)  的安科。虽然该库的主要目的是通过DSL创建布局，但即使是XML布局的用户也可以从中受益。今天我们来谈谈Anko的这种“矛盾”的特征。<span id =“more-2135”> </ span>
 ## 意向助手
 
-启动一个新的Activity的常见方法是创建一个Intent，也许把一些参数放入它，最后将创建的Intent传递给Context的startActivity（）方法。
+启动新的<code> Activity </ code>的常见方法是创建一个<code> Intent </ code>，可能会把一些参数放入它，最后将创建的<code> Intent </ code>传递给<code>上下文</ code>的<code> startActivity（）</ code>方法。
 
 {% raw %}
 <p></p>
@@ -48,8 +48,8 @@ startActivity<SomeActivity>("id" to 5, "name" to "John")
 <p></p>
 {% endraw %}
 
-startActivity（）函数接受将作为Intent额外参数传递的键值对。另一个函数startActivityForResult（）具有类似的语义也是可用的。
-有关详细信息，请参阅Intent Builder函数参考部分。
+<code> startActivity（）</ code>函数接受将作为<code> Intent </ code>附加参数传递的键值对。另一个功能，即具有类似语义的<code> startActivityForResult（）</ code>也是可用的。
+请参考 [意图生成器函数](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#intent-builder-functions)  参考部分了解更多信息。
 ## 热门意图
 
 几乎每个应用程序都有代码，在默认的Web浏览器中加载一个页面，或者使用Android Intent打开一个新的电子邮件屏幕，所以在Anko中有一些辅助功能：
@@ -68,7 +68,7 @@ email("admin@domain.net (mailto:admin@domain.net)", "Here I am!", "Message text"
 <p></p>
 {% endraw %}
 
-其他有用的意图描述在有用意图调用者参考部分。
+其他有用的意图描述在 [有意义的来电者](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#useful-intent-callers)  参考部分
 ## 警报对话框
 
 Anko提供了一种声明性的方式来创建带有短信，列表，进度条，甚至使用您自己的DSL布局的警报对话。
@@ -153,7 +153,7 @@ alert {
 
 ## 服务
 
-Android系统服务，例如WifiManager，LocationManager或Vibrator，可通过上下文的扩展属性在Anko中获得：
+通过<code>上下文</ code>的扩展属性可以在Anko中提供Android系统服务，例如<code> WifiManager </ code>，<code> LocationManager </ code>或<code> Vibrator </ code> ：
 
 {% raw %}
 <p></p>
@@ -173,8 +173,8 @@ if (!wifiManager.isWifiEnabled()) {
 
 ## 异步任务
 
-可能在后台执行代码最流行的方法是将AsyncTask子类化。但是，尽管它受欢迎，但在许多方面都是不方便的。安科有几个功能，实际上做同样但更容易使用。
-async（）{...}函数在ThreadExecutor下的{}中执行代码。您可以使用默认的或通过自己的。
+可能在后台执行代码最流行的方法是将<code> AsyncTask </ code>子类化。但是，尽管它受欢迎，但在许多方面都是不方便的。安科有几个功能，实际上做同样但更容易使用。
+<code> async（）{...} </ code>功能在<code> ThreadExecutor </ code>下的<code> {} </ code>中执行代码。您可以使用默认的或通过自己的。
 
 {% raw %}
 <p></p>
@@ -191,7 +191,7 @@ async(someExecutor) { // omit the parameter to use the default executor
 <p></p>
 {% endraw %}
 
-如果你想回到async（）中的UI线程，你可以使用uiThread（）函数。
+如果你想回到<code> async（）</ code>中的UI线程，你可以使用<code> uiThread（）</ code>函数。
 
 {% raw %}
 <p></p>
@@ -211,7 +211,7 @@ async {
 <p></p>
 {% endraw %}
 
-uiThread（）在async（）中有一个特殊的语义：async（）不包含一个Context实例，而只包含一个WeakReference，所以即使lambda执行永远不会完成，Context实例也不会泄漏。
+<code> uiThread（）</ code>在<code> async（）</ code>中有一个特殊的语义：<code> async（）</ code>不保存<code> Context </ code>实例，只有一个<code> WeakReference </ code>，所以即使lambda执行永远不会完成，<code> Context </ code>实例也不会泄漏。
 
 {% raw %}
 <p></p>
@@ -238,7 +238,7 @@ async {
 
 ## 记录
 
-Android SDK提供了由几个记录方法组成的android.util.Log类。用法很简单，但是这些方法需要传递一个tag参数，实际的日志消息必须是一个String。您可以通过使用AnkoLogger trait来摆脱这一点：
+Android SDK提供了由几种记录方法组成的<code> android.util.Log </ code>类。用法很简单，但是这些方法需要传递一个tag参数，实际的日志消息必须是一个<code> String </ code>。您可以通过使用<code> AnkoLogger </ code> trait来摆脱这一点：
 
 {% raw %}
 <p></p>
@@ -258,8 +258,8 @@ class SomeActivity : Activity(), AnkoLogger {
 <p></p>
 {% endraw %}
 
-默认的标签名称是一个类名（在这种情况下为SomeActivity），但您可以通过覆盖AnkoLogger的loggerTag属性轻松更改它。
-每个方法都有两个版本：plain和“lazy”（只有Log.isLoggable（tag，Log.INFO）为true），才会执行lambda。
+默认标签名称是一个类名（在这种情况下为<code> SomeActivity </ code>），但您可以通过覆盖<code> AnkoLogger </ code>的<code> loggerTag </ code>属性轻松更改它。
+每个方法有两个版本：plain和“lazy”（只有当<code> Log.isLoggable（tag，Log.INFO）</ code>是<code> true </ code>）时，将会执行lambda。
 
 {% raw %}
 <p></p>
@@ -275,8 +275,8 @@ info { "String " + "concatenation" }
 <p></p>
 {% endraw %}
 
-您可以阅读有关登录“日志参考”部分的更多信息。
+您可以阅读更多关于登录的信息 [记录](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#logging)  参考部分。
 ## 结论
 
-尝试安科，按照这些说明。
+要尝试<code> Anko </ code>，请遵循 [这些说明](https://github.com/JetBrains/anko#using-with-gradle) 。
 像往常一样，您的反馈非常受欢迎。

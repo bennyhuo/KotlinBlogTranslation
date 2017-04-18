@@ -1,5 +1,5 @@
 ---
-title: [译]The Kotlin Language: 1.0 Beta is Here!
+title: "[译]The Kotlin Language: 1.0 Beta is Here!"
 date: 2015-11-02 18:44:00
 author: Andrey Breslav
 tags:
@@ -12,17 +12,17 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/
 ---
 
-我们非常高兴地介绍Kotlin 1.0 Beta for JVM和Android！
-总结：Kotlin是JetBrains现在已经进行了一段时间的现代编程语言。
-这篇文章概述了我们在哪里和接下来会发生什么。此版本中列出了更改。
+我们非常高兴为JVM和Android提供<strong> Kotlin 1.0 Beta </ strong>！
+总结： [科特林](https://kotlinlang.org/)  是一种<strong>现代编程语言</ strong> [JetBrains](https://www.jetbrains.com/)  现在已经有一段时间了。
+这篇文章概述了我们在哪里和接下来会发生什么。列出了此版本中的更改 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-1103) 。
 ## Kotlin背后的故事
 
-Kotlin是在2010年设想的。十年的Java开发使我们感到，JetBrains的生产力可以通过与Java一起使用现代的JVM语言来显着提高。在评估了其他可用选项后，我们决定在那里需要一种新的语言，我们有专门知识和资源来创建这样一种语言。我们的主要业务是为开发人员制作工具，其指导原则是，为用户制作出令人敬畏的产品的最佳方式是制作一个我们需要的真棒工具。这与IntelliJ IDEA，ReSharper和许多其他IDE以及TeamCity和其他服务器产品配合使用，因此我们开始将另一个开发工具 - 一种编程语言应用于相同的原理。
-我们将科特林设计为工业的现代语言，并对此有相当的具体要求。首先，我们的项目活得很长，成长真的很大（数百万行代码），所以我们需要静态打字，以便能够准确地说明巨大的代码库并保持这些年。然后，我们的所有代码都是用Java编写的，所以我们需要一个顺利的迁移路径，可以将新的语言逐渐引入现有的Java代码库，尽可能少地影响其余的代码。另外，作为JetBrains，我们不想在工具质量方面妥协：我们正在寻找一种新的语言来使我们更有成效，我们相信这大部分取决于工具。最后，我们需要一种易于学习和理解的语言：在我们的团队中，我们不会将“图书馆用户”与“图书馆用户”分开，我们希望所有开发人员使用他们所使用的语言同样有效。
-这样的一个项目涉及做出很多决定，从一开始就知道，第一次尝试是不可能的。这就是为什么我们允许相当长的时间进行核心设计选择的实验和验证：由于JetBrains内部和外部的早期采用者正在使用它们，我们不断收集反馈并进行更改（非常感谢我们的社区对您的所有评论人们给了我们！）。这给了我们对广泛使用案例的重要见解，现在我们认为，我们可以在1.0之后保持向后兼容性。
-JetBrains已经使用Kotlin生产IntelliJ IDEA，YouTrack等产品了很长时间了。目前，我们有超过250'000的科特林LOC（加上Kotlin项目本身）。虽然我们的一些项目完全是在Kotlin（account.jetbrains.com）中编写的，但是其他项目已经按照我们最初的计划将其引入了现有的Java代码库。我们达到了互操作性水平，自由地将Kotlin与Java一起放在Java客户端是透明的：Java可以从Kotlin调用，反之亦然，源可以混合在一个项目中，因此.class文件与Java工具完全兼容。
-科特林正在为我们服务，我们致力于一个20多人的团队的发展。
-尽管尚未达到1.0，但其他公司和个人开发人员已经在使用Kotlin从Web服务后端到Android应用程序。我们有来自Expedia，Prezi.com等许多报告（可以随时通过提交PR将您的公司添加到此列表）。
+Kotlin是在2010年设想的。十年的Java开发使我们感到，JetBrains的生产力可以通过与Java一起使用现代的JVM语言来显着提高。在评估了其他可用选项后，我们决定在那里需要一种新的语言，我们有专门知识和资源来创建这样一种语言。我们的主要业务是为开发人员制作工具，其指导原则是，为用户制作出令人敬畏的产品的最佳方式是制作一个我们需要的真棒工具。这与IntelliJ IDEA，ReSharper和许多其他IDE以及TeamCity和其他服务器产品配合使用，因此我们开始将另一个开发工具 - 一种编程语言应用于相同的原理。 <span id =“more-3005”> </ span>
+我们将Kotlin设计为行业的<strong>现代语言</ strong>，并且具有相当的具体要求。首先，我们的项目活得很长，成长真的很大（数百万行代码），所以我们需要<strong>静态打字</ strong>，以便能够准确地说明巨大的代码库并保持这些年。然后，我们的所有代码都是用Java编写的，所以我们需要一个<strong>平滑的迁移路径</ strong>，其中新语言可以<strong>逐渐引入现有的Java代码库，影响其他代码尽可能少。另外，作为JetBrains，我们不想在<strong>工具质量</ strong>上妥协：我们正在寻找一种新的语言来使我们更有效率，而且我们相信这大部分取决于工具。最后，我们需要一种易于学习和理解的语言</ strong>：在我们的团队中，我们不会将“图书馆用户”与“图书馆用户”分开，我们希望我们所有的开发人员能够与他们正在使用的语言
+这样的一个项目涉及做出很多决定，从一开始就知道，第一次尝试是不可能的。这就是为什么我们允许相当长的时间进行核心设计选择的实验和验证：由于JetBrains内部和外部的早期采用者正在使用它们，我们不断收集反馈并进行更改（非常感谢我们的社区对您的所有评论人们给了我们！）。这给了我们对广泛使用案例的重要见解，现在我们相信我们可以在1.0 </ strong>后保持向后兼容性。
+JetBrains一直在使用Kotlin生产 [IntelliJ IDEA](https://www.jetbrains.com/idea/) ， [YouTrack](https://www.jetbrains.com/youtrack/)  和其他产品现在相当长的时间。我们现在有超过<strong> 250'000 LOC的Kotlin LOC（</ strong>）（加上大约在 [科特林项目](https://github.com/JetBrains/kotlin)  本身）。虽然我们的一些项目完全是写在科特林（ [account.jetbrains.com](https://account.jetbrains.com) ），其他人已经将其引入现有的Java代码库，正如我们最初计划的。我们达到了互操作性水平，自由地将Kotlin与Java一起放在Java客户端是透明的：Java可以从Kotlin调用，反之亦然，源可以混合在一个项目中，从而导致<code> .class </ code>文件完全兼容使用Java工具。
+科特林正在为我们服务，我们致力于发展超过20人的<strong>团队。
+尽管尚未达到1.0，但其他公司和个人开发人员已经将Kotlin从生产中使用，从网络服务后端到Android应用。我们有报告 [Expedia](https://twitter.com/fleurchild/status/636965650536108032) ， [Prezi.com等等](https://github.com/JetBrains/kotlin-web-site/blob/master/_data/companies-using-kotlin.yml)  （请随时通过提交PR将您的公司添加到此列表中）。
 到目前为止，GitHub开放存储库中的Kotlin代码行数量呈指数级增长（JetBrains的项目被排除在外）：
 
 {% raw %}
@@ -50,7 +50,7 @@ JetBrains已经使用Kotlin生产IntelliJ IDEA，YouTrack等产品了很长时�
 ## 兼容性
 
 科特林将不会停留在Beta版，1.0即将来临。
-我们致力于平滑用户体验，这包括Kotlin版本的兼容性。 1.0之后，语言和库的所有更新将向后兼容：
+我们致力于平滑用户体验，这包括Kotlin版本的兼容性。 1.0之后，所有对语言和库的更新将是<strong>向后兼容</ strong>：
 
 * 较新的编译器将使用较旧的二进制文件（但较旧的编译器可能不了解较新的二进制文件，如javac 1.6无法读取由javac 1.8编译的类）;
 * 较旧的二进制文件将在运行时继续使用较新的二进制文件（尽管更新的代码可能需要较新的依赖关系）。
@@ -71,9 +71,9 @@ JetBrains已经使用Kotlin生产IntelliJ IDEA，YouTrack等产品了很长时�
 
 ## 框架，互操作和迁移
 
-几乎任何Java或Android框架或库可以与Kotlin顺利工作。其中包括Spring MVC，Vaadin，Vert.x和Jackson。许多Android框架需要通过支持Dagger 2，DataBinding，DBFlow，ButterKnife，AndroidAnnotations等的kapt的Kotlin可用的注释处理。
-Kotlin有自己的框架和图书馆由JetBrains和社区开发。一些例子：Anko，RxKotlin，funktionale，kohesive，kovenant，Kobalt构建工具等等。
-内置IDE的转换器有助于将源代码从Java迁移到Kotlin。
+任何Java或Android框架或图书馆几乎可以与Kotlin平滑地工作</ strong>。其中包括Spring MVC </ em>，Vaadin </ em>，</ em>和<em>杰克逊</ em>。许多Android框架需要通过Kotlin可用的注释处理 [kapt](http://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/)  它支持<em> Dagger 2 </ em>，<em> DataBinding </ em>，<em> DBFlow </ em>，</ em> ButterKnife </ em>，<em> AndroidAnnotations </ em>等。
+Kotlin拥有由JetBrains和社区开发的<strong>自己的框架和库</ strong>。一些例子： [安科](https://github.com/JetBrains/anko) ， [RxKotlin](https://github.com/ReactiveX/RxKotlin) ， [funKtionale](https://github.com/MarioAriasC/funKTionale) ， [kohesive](https://github.com/kohesive/) ， [约柜](https://github.com/mplatvoet/kovenant) ， [科巴尔特](http://beust.com/kobalt)  构建工具和 [多得多](https://kotlinlang.org/docs/resources.html) 。
+内置IDE的<strong>转换器</ strong>有助于将源代码从Java迁移到Kotlin。
 ## 尝试一下
 
 
@@ -92,4 +92,4 @@ Eclipse：通过Marketplace安装插件
 * 新闻：博客，Twitter
 * 问题追踪器
 
-有一个漂亮的Kotlin！
+<strong> <em>有一个漂亮的Kotlin！</ em> </ strong>

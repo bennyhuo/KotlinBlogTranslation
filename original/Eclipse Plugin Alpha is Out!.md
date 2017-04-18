@@ -1,5 +1,5 @@
 ---
-title: Eclipse Plugin Alpha is Out!
+title: "Eclipse Plugin Alpha is Out!"
 date: 2015-03-31 00:54:00
 author: Nikolay Krasko
 tags:
@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/eclipse-plugin-alpha-is-out/
 ---
 
-Kotlin support in IntelliJ IDEA has always been among our top priorities, but we have been working on Eclipse support as well, and today we are happy to present the first alpha result of this effort.
+Kotlin support in IntelliJ IDEA has always been among our top priorities, but we have been working on Eclipse support as well, and today we are happy to present the first <strong>alpha</strong> result of this effort.
 Although it’s only a start and many things will be improved over time, it already features
 
 * Building and Running Your Code
@@ -26,14 +26,14 @@ Although it’s only a start and many things will be improved over time, it alre
 
 ## Installation
 
-To give it a try you will need a clean installation of Eclipse Luna. The Kotlin plugin is available from the Eclipse Marketplace. The easiest way to install the Kotlin plugin is to drag-and-drop this button into a running Eclipse window:
+To give it a try you will need a clean installation of  [Eclipse Luna](https://www.eclipse.org/downloads/) . The Kotlin plugin is available from the <em>Eclipse Marketplace</em>. The easiest way to install the Kotlin plugin is to <strong>drag-and-drop this button into a running Eclipse window</strong>:
 
 {% raw %}
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a><br/>
 <span id="more-1945"></span></p>
 {% endraw %}
 
-Alternatively, you can use Help -> Eclipse Marketplace… menu, or the following update site:
+Alternatively, you can use <em>Help -&gt; Eclipse Marketplace…</em> menu, or the following update site:
 
 {% raw %}
 <p></p>
@@ -48,7 +48,7 @@ https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
 <p></p>
 {% endraw %}
 
-Our Tutorial describes the installation process in more details.
+Our  [Tutorial](http://kotlinlang.org/docs/tutorials/getting-started-eclipse.html)  describes the installation process in more details.
 ## Eclipse IDE Support
 
 Here we give a quick overview of the features available in this version.
@@ -61,7 +61,7 @@ You can start by creating a new Kotlin project or adding a Kotlin file to an exi
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/New-Kotlin-File-in-Context-Menu.png"><img alt="New Kotlin File in Context Menu" class="alignnone size-full wp-image-1957" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/New-Kotlin-File-in-Context-Menu.png?resize=640%2C194&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Diagnostics (errors and warnings) reported by Kotlin are displayed in the Problems View:
+Diagnostics (errors and warnings) reported by Kotlin are displayed in the <em>Problems View</em>:
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/03/skitch.png"><img alt="Problems View in Action" class="alignnone size-full wp-image-1959" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/03/skitch.png?resize=640%2C241&amp;ssl=1"/></a></p>
@@ -70,13 +70,13 @@ Diagnostics (errors and warnings) reported by Kotlin are displayed in the Proble
 ### Editor
 
 The basic editor features such as code highlighting and formatting are supported. Basic code completion is also supported, but it needs further improvements.
-Auto-import for unresolved classes both from Java and Kotlin is already there:
+<em>Auto-import</em> for unresolved classes both from Java and Kotlin is already there:
 
 {% raw %}
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png"><img alt="Eclipse Auto-Import Feature" class="alignnone size-full wp-image-1965" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png?resize=393%2C119&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Many quick-fixes and intentions would be useful while editing Kotlin sources, and we will gradually add more and more of them. We started with the simple one for replacing get() calls with the indexing operator ([...]):
+Many  [quick-fixes](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix)  and  [intentions](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions)  would be useful while editing Kotlin sources, and we will gradually add more and more of them. We started with the simple one for replacing <code>get()</code> calls with the indexing operator (<code>[...]</code>):
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png"><img alt="Replace 'get' With Index Operator" class="alignnone size-full wp-image-1966" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png?resize=500%2C83&amp;ssl=1"/></a></p>
@@ -84,13 +84,13 @@ Many quick-fixes and intentions would be useful while editing Kotlin sources, an
 
 ### Navigation
 
-Open Declaration is the only navigation action that is supported in this release:
+<em>Open Declaration</em> is the only navigation action that is supported in this release:
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/eclipse-references.png"><img alt="Eclipse References" class="alignnone size-full wp-image-1969" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/eclipse-references.png?resize=592%2C159&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Also, you can navigate to declarations in Kotlin files with Outline View and search for Kotlin files by name in Open Resource window.
+Also, you can navigate to declarations in Kotlin files with <em>Outline View</em> and search for Kotlin files by name in <em>Open Resource</em> window.
 ### Debugger
 
 With our plugin installed, Eclipse JDT debugger gets initial support for Kotlin. Again, there’s much to be improved, but you can
@@ -106,7 +106,7 @@ With our plugin installed, Eclipse JDT debugger gets initial support for Kotlin.
 
 ### Unit Testing
 
-If you already have JUnit 3 or JUnit 4 in the classpath, you can write your tests in Kotlin. Run -> Run As -> Kotlin JUnit Test in the main menu starts testing and opens results in the JUnit View.
+If you already have JUnit 3 or JUnit 4 in the classpath, you can write your tests in Kotlin. <em>Run -&gt; Run As -&gt; Kotlin JUnit Test</em> in the main menu starts testing and opens results in the <em>JUnit View</em>.
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-01.39.29.png"><img alt="Eclipse Tests Demonstation" class="alignnone size-full wp-image-1962" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-01.39.29.png?resize=560%2C199&amp;ssl=1"/></a></p>
@@ -119,6 +119,6 @@ If you already have JUnit 3 or JUnit 4 in the classpath, you can write your test
 
 ## Feedback Welcome
 
-We could have continued implementing features one by one slowly making the plugin more and more stable and powerful. But instead we decided to show the early alpha hoping for the feedback. It is very important for us.
-Some issues and feature-requests are already in our tracker. Please fill free to add more. Thanks.
-Also, this is an open-source project, and we expect it to be even more of a community effort than our compiler and IntelliJ Plugin are, so your Pull Requests are very welcome.
+We could have continued implementing features one by one slowly making the plugin more and more stable and powerful. But instead we decided to show the early alpha hoping for the <strong>feedback</strong>. It is very important for us.
+Some issues and feature-requests are already in our  [tracker](https://youtrack.jetbrains.com/search/Kotlin%20Eclipse-19206) . Please fill free to add more. Thanks.
+Also, this is an open-source project, and we expect it to be even more of a <strong>community effort</strong> than our compiler and IntelliJ Plugin are, so your  [Pull Requests](https://github.com/JetBrains/kotlin-eclipse/)  are very welcome.

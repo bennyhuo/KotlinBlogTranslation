@@ -1,5 +1,5 @@
 ---
-title: [译]Call for Feedback: Java Statics, Result Expressions and More
+title: "[译]Call for Feedback: Java Statics, Result Expressions and More"
 date: 2015-09-25 18:27:00
 author: Andrey Breslav
 tags:
@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-java-statics-result-expressions-and-more/
 ---
 
-感谢大家对上一次电话的反馈意见！这里有另一轮变化和调整。欢迎您的意见和用例。
+感谢大家对我们的反馈 [以前的电话](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) ！这里有另一轮变化和调整。欢迎您的意见和用例。<span id =“more-2707”> </ span>
 ## Java静态和继承
 
 我们将通过允许Kotlin子类访问其超类的静态成员来提高与Kotlin中的Java静态的互操作性：现在我们可以使用常量，嵌套类和静态实用程序来定义继承树。与超类型的伴侣对象的成员相同。
@@ -47,10 +47,10 @@ class Derived : Base() {
 
 ## Lateinit val的
 
-在我们的用户的帮助下，我们发现我们以前错过了一个令人不快的漏洞，因为这样的属性的设计不是最终的，因此Java代码可以自由地修改它们。这使得这些属性的价值消失，因为没有任何代码可以对它们承担任何不变性，所以我们决定采取这个功能：从现在开始，只有vars可以标记为深夜。我们将继续考虑用例和改进此功能。
+在我们的用户的帮助下，我们发现我们以前错过了在<code> lateinit val </ code>的设计中的一个不愉快的漏洞：这样的属性的备份字段不是最终的，因此Java代码可以自由地修改它们。这使得这些属性的<code> val </ code> -ness消失，因为没有代码可以对它们承担任何不变性，所以我们决定采取这个功能：从现在开始，只有<code> var </ code >可以标记为<code> lateinit </ code>。我们将继续考虑用例和改进此功能。
 ## 支持字段和自定义设置器
 
-除了以前宣布的备份字段语法更改：如果属性具有自定义设置器或打开，则setter可能在写入该字段之前读取该字段，所以没有第一次初始化此属性的语法，除非已完成声明后所以，我们现在需要这样的属性的初始化器：
+除了以前宣布的 [更改]()  在备份字段语法中：如果属性具有自定义设置器或是<code>打开</ code>，则setter可能会在写入该字段之前读取该字段，所以没有第一次初始化该属性的语法，除非它已经完成声明后所以，我们现在需要这样的属性的初始化器：
 
 {% raw %}
 <p></p>
@@ -70,7 +70,7 @@ var foo: Foo? = makeFoo() // initializer required
 <p></p>
 {% endraw %}
 
-如果我们真的需要在构造函数中初始化这样一个属性，那么我们必须引入一个后缀属性：
+如果我们真的需要在构造函数中初始化这样的属性，那么我们必须引入一个<em>后缀属性</ em>：
 
 {% raw %}
 <p></p>
@@ -115,10 +115,10 @@ fun T.foo<T>() = ...
 <p></p>
 {% endraw %}
 
-两个太多了，所以我们决定只保留第一个，因为它将T的声明置于其用法之前，这更容易阅读，代码完成将更有帮助。
+二是太多了，所以我们决定只保留第一个，因为它在使用之前放置了<code> T </ code>的声明，这更容易阅读，代码完成将更有帮助。
 ## 子类和声明元素的可见性
 
-这是一个技术要求，但直观性：如果某些东西是公开的，它不应该暴露私有类型：
+这是一个技术要求，但直观性：如果某些东西是<code> public </ code>，它不应该公开一个<code> private </ code>类型：
 
 {% raw %}
 <p></p>
@@ -144,8 +144,8 @@ class Public : Super() {
 ## 标记结果表达式
 
 这不是真的决定，而且确实是非常有争议的，但它不能在1.0之后添加，所以我们一直在考虑一段时间：
-正如你们中的一些人所观察到的，有时可能很难看到使用什么表达式作为块或羔羊的结果。
-在以下情况下，我们正在考虑使用^符号（或可能还有一些其他前缀）将这些结果表达式前缀使其可见。
+像你们中的一些人 [正确观察](https://youtrack.jetbrains.com/issue/KT-8695) ，有时可能难以看到使用什么表达式作为块或羔羊的结果。
+在以下情况下，我们正在考虑使用<code> ^ </ code>符号（或可能还有一些其他前缀）将这些结果表达式前缀，使其可见：
 
 * 表达式是多行块或lambda的结果
 * 它的类型不是Unit，也不是Nothing。
@@ -198,6 +198,8 @@ private fun transformTryCatchBlocks(methodNode: MethodNode, newTryStartLabels: H
 * 它在GitHub，终端或IDE之外的任何地方都不起作用
 
 我们对Kotlin代码库进行了快速实验，并添加了所有必需的前缀：
-请参阅github的diff
+<p>
+<a href="https://github.com/JetBrains/kotlin/compare/hats">请参阅差异github </a>
+</ p>
 上面的diff将使您了解这些代码的外观。
 为了让您了解代码中会发生多久的一个想法：我们在约230,000行Kotlin代码（0.21％）中更改了493行，而在我们的代码中我们所拥有的2190个Kotlin文件中有233个文件被更改基数（每第10个文件）。

@@ -1,5 +1,5 @@
 ---
-title: Upcoming Change: More Null-safety for Java
+title: "Upcoming Change: More Null-safety for Java"
 date: 2015-04-10 15:34:00
 author: Andrey Breslav
 tags:
@@ -19,10 +19,10 @@ Our battle for combining null-safety and Java interop has been a long one alread
 * in M9 we discarded the annotations (for the time being), and introduced platform types, now anything could be done, but we lost (some) type-safety;
 * in M11 we started bringing the useful aspects of annotations back by issuing warnings where Java nullability constraints were violated.
 
-Now, we are planning to make one more step and use annotations in combination with platform types to bring back as much type-safety as possible.
+Now, we are planning to make one more step and use annotations in combination with platform types to <strong>bring back as much type-safety as possible</strong>.<span id="more-2090"></span>
 ## Overview
 
-The details are described in this spec-document, but the overall idea is as follows: whenever we encounter nullability annotations in Java, and they do not conflict with anything around them (like overridden declarations in supertypes), we use precise types. For example:
+The details are described in  [this spec-document](https://github.com/JetBrains/kotlin/blob/types-from-annotations/spec-docs/flexible-java-types.md#enhancing-signatures-with-annotated-declarations) , but the overall idea is as follows: whenever we encounter nullability annotations in Java, <em>and they do not conflict with anything</em> around them (like overridden declarations in supertypes), we use precise types. For example:
 
 {% raw %}
 <p></p>
@@ -45,10 +45,10 @@ foo.bar(nullableString ?: "default")?.length()
 <p></p>
 {% endraw %}
 
-In the last line the compiler requires us to deal with both the argument of bar() requiring a non-null value (so we use “elvis” to provide a default) and the result being nullable (we use a safe call to guard from NPE). If we neglected any of those, it would have been a compilation error.
+In the last line the compiler requires us to deal with both the argument of <code>bar()</code> requiring a non-null value (so we use “elvis” to provide a default) and the result being nullable (we use a safe call to guard from NPE). If we neglected any of those, it would have been a compilation error.
 ## Conflicts
 
-It may seem that we are just bringing back what we dropped before (and were so happy about it), but this is not so. The details are rather involved, but in a nutshell, a huge difference with what we had before platform types were introduced is that you could not have a type that admitted both an ArrayList<String> and ArrayList<String?>, and it lead to painful workarounds being necessary when we needed to feed something we got from Java back into another Java method. Yes, if it wasn’t for generics, almost nothing would have changed, but generics always make a compiler writer’s world brighter
+It may seem that we are just bringing back what we dropped before (and were so happy about it), but this is not so. The details are rather involved, but in a nutshell, a huge difference with what we had before platform types were introduced is that you could not have a type that admitted both an <code>ArrayList&lt;String&gt;</code> and <code>ArrayList&lt;String?&gt;</code>, and it lead to painful workarounds being necessary when we needed to feed something we got from Java back into another Java method. Yes, if it wasn’t for generics, almost nothing would have changed, but generics always make a compiler writer’s world brighter <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 Another thing that changed is how we treat conflicts in overriding signatures:
 
 {% raw %}
@@ -71,7 +71,7 @@ class Sub extends Super {
 <p></p>
 {% endraw %}
 
-When we treated unannotated Java types as nullable, in the example above Kotlin could only see two unrelated methods: foo(String?) and foo(String) have incompatible type signatures.
+When we treated unannotated Java types as nullable, in the example above Kotlin could only see two unrelated methods: <code>foo(String?)</code> and <code>foo(String)</code> have incompatible type signatures.
 There are many more possible sources of conflicts, most of them are actually inconsistencies in the annotations, but users keep having them in their code, and we have to be able to work with it. So, whenever we encounter a conflict now, we simply stick to the platform types. Warnings introduced in M11 are kept for such cases, so that that code does not break in weird ways, but we do everything in our power to keep you informed on the possible runtime issues.
 Note that whatever stays unannotated in Java still bears platform types, including all generic type arguments in the pre-Java 8 code.
 ## Which Annotations?
@@ -88,4 +88,4 @@ The actual set of annotations supported by the Kotlin compiler will likely be co
 
 ## Conclusion
 
-We hope that the battle for nulls in Java will be over after M12. Stay tuned, though
+We hope that the battle for nulls in Java will be over after M12. Stay tuned, though <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>

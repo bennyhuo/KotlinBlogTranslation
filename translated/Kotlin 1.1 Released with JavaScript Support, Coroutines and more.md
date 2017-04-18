@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin 1.1 Released with JavaScript Support, Coroutines and more
+title: "[译]Kotlin 1.1 Released with JavaScript Support, Coroutines and more"
 date: 2017-03-01 17:12:00
 author: Roman Belov
 tags:

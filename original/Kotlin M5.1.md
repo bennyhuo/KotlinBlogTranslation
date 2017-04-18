@@ -1,5 +1,5 @@
 ---
-title: Kotlin M5.1
+title: "Kotlin M5.1"
 date: 2013-02-27 11:03:00
 author: Andrey Breslav
 tags:
@@ -12,12 +12,12 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-1/
 ---
 
-There have been enough little improvements since Kotlin M5 so that we are rolling them out as M5.1 today. Some of them are not so little in fact, like enabling the use of Scala libraries, such as Akka. This post gives a quick overview of these changes.
+There have been enough little improvements since  [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/)  so that we are rolling them out as M5.1 today. Some of them are not so little in fact, like enabling the use of Scala libraries, such as  [Akka](http://akka.io/) . This post gives a quick overview of these changes.<span id="more-971"></span>
 ## Better Support for Scala Classes. Akka
 
 Theoretically, it is very easy for all JVM languages to interoperate. In practice, there appear to be numerous little problems that make it unpleasant or practically impossible.
 One of such problems was related to the ambiguous use of “$” signs in class names, which is a well-known issue on the JVM. It being fixed now, allows you to use some Akka classes you couldn’t use before, such as Duration.
-To get an impression of what Akka looks like in Kotlin, have a look at this example.
+To get an impression of what Akka looks like in Kotlin, have a look at  [this example](https://gist.github.com/abreslav/5046126) .
 ## Even More Helpful IDE
 
 With the help of students of Cornell and Jagiellonian universities, we got quite a few quick fixes implemented in M5.1. When the IDE complains about some error or warns you, you can simply press Alt+Enter and get a list of proposed fixes:
@@ -51,9 +51,9 @@ If some of your existing code breaks, you can quick-fix the whole project in one
 <p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="390" src="https://www.youtube.com/embed/JY-Vx8FjtIM?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" style="border:0;" type="text/html" width="640"></iframe></span></p>
 {% endraw %}
 
-## Support for Java’s protected static methods
+## Support for Java’s<strong> protected static </strong>methods
 
-Some Java frameworks, like Android, rely on protected static methods to be available in subclasses. Although this seems like a questionable pattern, Kotlin now supports it (only for Java compatibility), i.e. you can access a protected static member of a Java class if you extend this class in Kotlin.
+Some Java frameworks, like Android, rely on protected static methods to be available in subclasses. Although this seems like a questionable pattern, Kotlin now supports it (only for Java compatibility), i.e. you can access a <strong>protected static </strong>member of a Java class if you extend this class in Kotlin.
 ## Anonymous Objects
 
 Consider the following code (that uses a Kotlin analog to anonymous inner class):
@@ -73,7 +73,7 @@ val x = object : A() { ... }
 What is the type of x? It used to be the anonymous type, but if you use x from the outside, you can not access it: the type is not valid. Now the type will be A. This applies only to properties that can be seen from the outside, i.e. if x is a local variable it will still have the anonymous type, since it is harmless.
 ## Class Objects are Usable from Java
 
-Kotlin classes do not have static members, but rather have class objects:
+Kotlin classes do not have static members, but rather have <em><a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">class objects</a></em>:
 
 {% raw %}
 <p></p>
@@ -112,5 +112,5 @@ public static void main(String[] args) {
 The compiler is being improved too: a few fixes for corner cases of nullable types interacting with generics and optimizations for loops over ranges.
 ## Requirements
 
-Kotlin M5.1 requires IntelliJ IDEA 12.0.4 (EAPs of 12.1 are not supported yet), you can download it from the plugin repository.
-Have a nice Kotlin!
+Kotlin M5.1 requires  [IntelliJ IDEA 12.0.4](http://www.jetbrains.com/idea/download/index.html)  (EAPs of 12.1 are not supported yet), you can download it from the plugin repository.
+<strong>Have a nice Kotlin!</strong>

@@ -1,5 +1,5 @@
 ---
-title: Kotlin M1 Candidate
+title: "Kotlin M1 Candidate"
 date: 2012-03-30 14:57:00
 author: Andrey Breslav
 tags:
@@ -15,16 +15,16 @@ source_url: https://blog.jetbrains.com/kotlin/2012/03/kotlin-m1-candidate/
 IntelliJ IDEA 11.1 has been recently released, and we are happy to announce a milestone candidate build for Kotlin IDE plugin, too. This post gives an overview of what happened over the last month.
 ## Milestone Candidate Build is Ready for Your Evaluation
 
-To install on IntelliJ IDEA 11.1 (Free Community Edition is available here), please follow the instructions from the Getting Started guide. In short:
+To install on IntelliJ IDEA 11.1 (Free Community Edition is available  [here](http://www.jetbrains.com/idea/) ), please follow the instructions from the  [Getting Started](http://confluence.jetbrains.net/display/Kotlin/Getting+Started)  guide. In short:
 
 * Use this plugin repository: http://www.jetbrains.com/kotlin/eap-plugin-repository/updatePlugins.xml
 * Or download a zipped plugin from here.
 
-You can always download nightly builds of Kotlin from our build server or build it yourself from sources.
-Now we proceed to a short overview of the New and Noteworthy. Please refer to this blog post for the previously implemented features.
+You can always download nightly builds of Kotlin from our  [build server](http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&tab=artifacts&buildTypeId=bt345)  or build it yourself from  [sources](https://github.com/jetbrains/kotlin) .
+Now we proceed to a short overview of the New and Noteworthy. Please refer to  [this blog post](http://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/)  for the previously implemented features.<span id="more-440"></span>
 ## Little Things that Matter
 
-First of all, we did very many bugfixes, improvements and other important things that are hard to demo. See the commit history on github and the closed issues in YouTrack.
+First of all, we did very many bugfixes, improvements and other important things that are hard to demo. See the commit history on  [github](https://github.com/JetBrains/kotlin/commits/)  and the closed issues in  [YouTrack](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-02-14+..+2012-03-31) .
 ## Library
 
 With the power of extension functions, Kotlin makes existing Java APIs better. In particular, we provide enhancements for JDK collections so that you can say things like this:
@@ -46,7 +46,7 @@ fun main(args : Array<String>) {
 {% endraw %}
 
 Here, filter() and join() are extension functions.
-Implementation-wise, extension functions are just static utility functions, like “good old” Java’s Collecions.*, but with the “receiver.function()” call syntax, the IDE makes them much better: there is code completion that helps you browse through the API and learn it (just as if the extensions were normal class members):
+Implementation-wise, extension functions are just static utility functions, like “good old” Java’s Collecions.*, but with the “receiver.function()” call syntax, the IDE makes them much better: there is <strong>code completion</strong> that helps you browse through the API and learn it (just as if the extensions were normal class members):
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png"><img alt="" class="alignnone size-medium wp-image-483" data-recalc-dims="1" sizes="(max-width: 259px) 100vw, 259px" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png?resize=259%2C300&amp;ssl=1" srcset="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png?resize=259%2C300&amp;ssl=1 259w, https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png?w=663&amp;ssl=1 663w"/></a></p>
@@ -58,16 +58,16 @@ You can navigate to sources of library functions:
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png"><img alt="" class="alignnone size-full wp-image-485" data-recalc-dims="1" sizes="(max-width: 501px) 100vw, 501px" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?resize=501%2C144&amp;ssl=1" srcset="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?resize=300%2C86&amp;ssl=1 300w, https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?w=501&amp;ssl=1 501w"/></a></p>
 {% endraw %}
 
-And see the doc comments there:
+And see the <strong>doc comments</strong> there:
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png"><img alt="" class="alignnone size-full wp-image-486" data-recalc-dims="1" sizes="(max-width: 476px) 100vw, 476px" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?resize=476%2C297&amp;ssl=1" srcset="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?resize=300%2C187&amp;ssl=1 300w, https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?w=476&amp;ssl=1 476w"/></a></p>
 {% endraw %}
 
-The HTML version of the library docs is available here.
+The HTML version of the library docs is available  [here](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) .
 ## GitHub Support
 
-Kotlin highlighting is now supported by github, including gist.
+Kotlin highlighting is now supported by  [github](https://github.com/JetBrains/kotlin/blob/master/libraries/stdlib/test/CollectionTest.kt) , including  [gist](https://gist.github.com/2234718) .
 ## Annotations
 
 Kotlin now supports annotations. Here’s a small example that relies on JUnit 4:
@@ -91,7 +91,7 @@ class Tests {
 <p></p>
 {% endraw %}
 
-Read more here.
+Read more  [here](http://confluence.jetbrains.net/display/Kotlin/Annotations) .
 ## String Templates
 
 Now you can use multi-line string templates, for example:
@@ -114,7 +114,7 @@ println("""
 
 ## Simple Enums
 
-Simple cases of enum classes are now supported. For example:
+Simple cases of  [enum classes](http://confluence.jetbrains.net/display/Kotlin/Enum+classes)  are now supported. For example:
 
 {% raw %}
 <p></p>
@@ -155,7 +155,7 @@ fun count() : Int {
 
 ## Nullability
 
-Kotlin now recognizes the @Nullable and @NotNull annotations). If the Java code says:
+Kotlin now recognizes the  [@Nullable and @NotNull annotations](http://www.jetbrains.com/idea/documentation/howto.html) ). If the Java code says:
 
 {% raw %}
 <p></p>
@@ -170,7 +170,7 @@ Kotlin now recognizes the @Nullable and @NotNull annotations). If the Java code 
 {% endraw %}
 
 Kotlin will trat foo() as returning a non-nullable String.
-A short-hand operator (!!) for converting a nullable value into a non-nullable one is added:
+A short-hand operator ( [!!](http://confluence.jetbrains.net/display/Kotlin/Null-safety#Null-safety-sure) ) for converting a nullable value into a non-nullable one is added:
 
 {% raw %}
 <p></p>

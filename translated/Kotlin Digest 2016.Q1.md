@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin Digest 2016.Q1
+title: "[译]Kotlin Digest 2016.Q1"
 date: 2016-04-06 19:37:00
 author: Roman Belov
 tags:
@@ -12,14 +12,15 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 ---
 
-欢迎2011年第一季度的科特林文摘。在本季度，科特林1.0发行，自然收到的文章和报道数量大幅增加。
+欢迎2011年第一季度的科腾林摘要。在本季度，Kotlin 1.0被发布，自然收到的文章和报道数量大幅增加。
+
 我们要感谢大家的贡献，并强调一些最着名的文章和博文。
 
 {% raw %}
 <p><center><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png" rel="attachment wp-att-3826"><img alt="2016Q1Cover" class="alignnone size-full wp-image-3826" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png?resize=640%2C320&amp;ssl=1"/></a></center></p>
 {% endraw %}
 
-顺便说一句，你可以加入我们，并订阅#feed频道，在那里我们推出了很多有趣的内容。
+顺便说一下，你可以 [加入我们的松弛](http://kotlinslackin.herokuapp.com/)  并订阅<em> #feed </ em>频道，在那里我们推出了很多有趣的内容。
 
 {% raw %}
 <p><span id="more-3802"></span></p>
@@ -86,8 +87,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 
 
 * 胡安·萨拉维亚（Juan Saravia）在开发Android应用程序时开始了关于学习Kotlin的一系列故事
-
-简介：几句话
+* 简介：几句话
 第1部分：使用Kotlin配置Android Studio
 第2部分：MainActivity.kt：语法，Null Safety等等
 第3部分：NewsFragment.kt：扩展功能，Android扩展...
@@ -102,8 +102,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 * 第5部分：Kotlin，RxJava＆RxAndroid
 * 第6部分：API  -  Retrofit＆Kotlin
 * Kotlin月系列由Jacob Zimmerman
-
-帖子1：什么功能
+* 帖子1：什么功能
 帖子2：继承和默认值
 帖子3：安全
 帖子4：属性
@@ -112,8 +111,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 * 帖子3：安全
 * 帖子4：属性
 * 作者：Ciro Rizzo：
-
-我的Kotlin冒险
+* 我的Kotlin冒险
 Kotlin编码
 建设Kotlin项目（第1部分和第2部分）
 * 我的Kotlin冒险

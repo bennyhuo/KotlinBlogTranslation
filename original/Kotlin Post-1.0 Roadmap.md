@@ -1,5 +1,5 @@
 ---
-title: Kotlin Post-1.0 Roadmap
+title: "Kotlin Post-1.0 Roadmap"
 date: 2016-04-14 16:34:00
 author: Dmitry Jemerov
 tags:
@@ -13,19 +13,20 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/
 ---
 
 It’s been almost two months since Kotlin 1.0 was released, and the team is now switching from stabilisation and bug fixes to new feature work, so it’s a great time to talk about our plans for the future.
-We’ve already published our Android roadmap, but there are many other areas where we’re applying our efforts. Our current development is organised in two main branches:
+We’ve already published our  [Android roadmap](http://blog.jetbrains.com/kotlin/2016/03/kotlins-android-roadmap/) , but there are many other areas where we’re applying our efforts. Our current development is organised in two main branches:
 
 * Kotlin 1.0.x which will be a series of releases containing bug fixes, updates to tooling, IDE support and other areas which do not affect the core language. 1.0.x releases will be published on a regular basis once every several weeks.
 * Kotlin 1.1 which will contain major new language features, along with all the improvements from the 1.0.x branch. This will be a feature-driven release, and we aren’t announcing any specific time frame for it.
 
-Let’s look at the plans for each area in more detail, starting with the big ones.
+Let’s look at the plans for each area in more detail, starting with the big ones.<br/>
+<span id="more-3844"></span>
 ## New Language Features
 
-Before we can start talking about specific features, the big disclaimer: everything we’re talking about here is still in the design phase, and features may end up being changed dramatically or dropped entirely as we move forward with the design, implementation and feedback gathering process. So, no guarantees.
+Before we can start talking about specific features, the <strong>big disclaimer</strong>: everything we’re talking about here is still in the design phase, and features may end up being changed dramatically or dropped entirely as we move forward with the design, implementation and feedback gathering process. So, no guarantees.
 ### async/await/yield
 
-The most important feature that we’re designing right now is support for coroutines (async/await/yield). By now, the async/await pattern has found its way into many different languages, including C#, Python and Dart, and we want to support this in Kotlin as well. However, that’s not the end of the story: we want to put the specific code execution semantics into the library, rather than the compiler.
-The compiler will take care of transforming the function used as a coroutine into a form allowing to suspend and resume its execution. The actual execution of a coroutine (the initial invocation, as well as resuming the execution after a suspension point) will be the responsibility of the support library. Therefore, the same mechanism will allow us to support many different patterns: generators (yield), asynchronously executed functions (async/await), Go-like channels and goroutines, as well as potentially others which haven’t even been invented yet.
+The most important feature that we’re designing right now is support for <strong>coroutines</strong> (async/await/yield). By now, the async/await pattern has found its way into many different languages, including C#, Python and Dart, and we want to support this in Kotlin as well. However, that’s not the end of the story: we want to put the specific code execution semantics into the library, rather than the compiler.
+The compiler will take care of transforming the function used as a coroutine into a form allowing to suspend and resume its execution. The actual execution of a coroutine (the initial invocation, as well as resuming the execution after a suspension point) will be the responsibility of the support library. Therefore, the same mechanism will allow us to support many different patterns: generators (<code>yield</code>), asynchronously executed functions (<code>async</code>/<code>await</code>), Go-like channels and goroutines, as well as potentially others which haven’t even been invented yet.
 Note that we’re still in the process of estimating the effort needed to implement this feature, and we don’t know whether it would be reasonable to support it in the 1.1 timeframe or it would be postponed to a later release.
 ### Other Language Features
 
@@ -33,7 +34,9 @@ We’ve received quite a lot of feedback from Kotlin 1.0, and we were quite happ
 
 * Data class hierarchy support will remove many of the current restrictions on data class inheritance, for example, allowing you to represent an algebraic data type as a series of data classes nested in a sealed class:
 sealed class C {
+
     data class A(val x: X, val y: Y) : C() { ... }
+
 }
 * Type aliases will allow to assign a short name to a type (for example, a function type, or a generic type with a long signature):
 typealias MouseEventHandler = (MouseEvent) -> Unit
@@ -65,4 +68,4 @@ In the IDE space, our current priorities are as follows:
 The Android roadmap post already mentioned some of the improvements that we plan to make in our tools, such as support for incremental compilation with Gradle and support for Android Lint checks. Both of these features are already available in Kotlin 1.0.2 EAP, and will receive further improvements later on.
 ## Summary
 
-As you can see, there are quite a lot of exciting things coming, and there’s plenty of opportunity for you to get involved. Stop by our Slack chat, try out the EAP builds, file issues – the future of Kotlin depends on you, our users, and we’re always happy to hear anything that you have to say.
+As you can see, there are quite a lot of exciting things coming, and there’s plenty of opportunity for you to get involved. Stop by our  [Slack chat](http://kotlinslackin.herokuapp.com/) , try out the  [EAP builds](https://discuss.kotlinlang.org/c/eap) , file  [issues](http://youtrack.jetbrains.com/issues/KT)  – the future of Kotlin depends on you, our users, and we’re always happy to hear anything that you have to say.

@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin Goes Open Source!
+title: "[译]Kotlin Goes Open Source!"
 date: 2012-02-14 10:32:00
 author: Ann Oreshnikova
 tags:

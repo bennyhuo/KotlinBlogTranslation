@@ -1,5 +1,5 @@
 ---
-title: Kotlin NetBeans plugin beta is out!
+title: "Kotlin NetBeans plugin beta is out!"
 date: 2016-09-19 18:42:00
 author: Dmitry Jemerov
 tags:
@@ -16,94 +16,172 @@ Today we are happy to present the first BETA release of the Kotlin plugin for th
 The main features are:
 
 * Building and Running Your Code
+
 Maven and Ant Support
+
 Java Interoperability
+
 Code Highlighting
+
 Diagnostics
+
 Code Completion
+
 Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Maven and Ant Support
+
 Java Interoperability
+
 Code Highlighting
+
 Diagnostics
+
 Code Completion
+
 Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Java Interoperability
+
 Code Highlighting
+
 Diagnostics
+
 Code Completion
+
 Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Code Highlighting
+
 Diagnostics
+
 Code Completion
+
 Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Diagnostics
+
 Code Completion
+
 Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Code Completion
+
 Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Navigation
+
 Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Debugging
+
 Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Unit Testing
+
 Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Auto-Import
+
 Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Mark Occurrences
+
 Quick Search
+
 Code Formatting
 * Quick Search
+
 Code Formatting
 * Code Formatting
 
@@ -114,43 +192,71 @@ Code Formatting
 
 ## Installation
 
-To give it a try you will need an installation of NetBeans 8.1. The beta version of Kotlin plugin is available from the NetBeans Plugin Portal.
+To give it a try you will need an installation of NetBeans 8.1. The beta version of Kotlin plugin is available from the  [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/68590/kotlin) .
 Installation process:
 
 0. Download Kotlin plugin
+
 Launch NetBeans IDE
+
 Choose Tools and then Plugins from the main menu
+
 Switch to Downloaded tab
+
 On the Downloaded tab click Add Plugins… button
+
 In the file chooser, navigate to the folder with downloaded plugin. Select the NBM file and click OK. The plugin will show up in the list of plugins to be installed.
+
 Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 1. Launch NetBeans IDE
+
 Choose Tools and then Plugins from the main menu
+
 Switch to Downloaded tab
+
 On the Downloaded tab click Add Plugins… button
+
 In the file chooser, navigate to the folder with downloaded plugin. Select the NBM file and click OK. The plugin will show up in the list of plugins to be installed.
+
 Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 2. Choose Tools and then Plugins from the main menu
+
 Switch to Downloaded tab
+
 On the Downloaded tab click Add Plugins… button
+
 In the file chooser, navigate to the folder with downloaded plugin. Select the NBM file and click OK. The plugin will show up in the list of plugins to be installed.
+
 Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 3. Switch to Downloaded tab
+
 On the Downloaded tab click Add Plugins… button
+
 In the file chooser, navigate to the folder with downloaded plugin. Select the NBM file and click OK. The plugin will show up in the list of plugins to be installed.
+
 Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 4. On the Downloaded tab click Add Plugins… button
+
 In the file chooser, navigate to the folder with downloaded plugin. Select the NBM file and click OK. The plugin will show up in the list of plugins to be installed.
+
 Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 5. In the file chooser, navigate to the folder with downloaded plugin. Select the NBM file and click OK. The plugin will show up in the list of plugins to be installed.
+
 Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 6. Click Install button in the Plugins dialog
+
 Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 7. Complete the installation wizard by clicking Next, agreeing to the license terms and clicking Install button.
 
@@ -197,9 +303,12 @@ From Java to Kotlin:
 You can
 
 * Set breakpoints
+
 Use Step in/out/over
+
 View local variables and contents of Kotlin objects
 * Use Step in/out/over
+
 View local variables and contents of Kotlin objects
 * View local variables and contents of Kotlin objects
 
@@ -239,5 +348,5 @@ To write tests in Kotlin you should have JUnit in the classpath of your project.
 
 ### Feedback Welcome
 
-Your feedback is very important. Feel free to add issues and feature requests in the plugin issue tracker.
+Your feedback is very important. Feel free to add issues and feature requests in the  [plugin issue tracker](https://github.com/Baratynskiy/kotlin-netbeans/issues) .
 Just like Kotlin itself, the NetBeans plugin is an open-source project, so your contributions can help it evolve faster.

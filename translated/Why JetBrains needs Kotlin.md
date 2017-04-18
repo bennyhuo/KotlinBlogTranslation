@@ -1,5 +1,5 @@
 ---
-title: [译]Why JetBrains needs Kotlin
+title: "[译]Why JetBrains needs Kotlin"
 date: 2011-08-02 15:52:00
 author: Dmitry Jemerov
 tags:

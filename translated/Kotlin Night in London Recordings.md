@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin Night in London Recordings
+title: "[译]Kotlin Night in London Recordings"
 date: 2016-11-15 14:44:00
 author: Robert Demmer
 tags:
@@ -18,7 +18,8 @@ source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-night-in-london-rec
 <p><span id="more-4337"></span></p>
 {% endraw %}
 
-## 简介
+## <strong>简介</ strong> <br/>
+
 哈迪哈里里，JetBrains
 
 
@@ -26,7 +27,8 @@ source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-night-in-london-rec
 <p><iframe allowfullscreen="" frameborder="0" height="450" src="https://www.youtube.com/embed/TMZD1GxAC8E" width="800"></iframe></p>
 {% endraw %}
 
-## 我喜欢Kotlin的10件事
+## <strong>我喜欢Kotlin的10件事。</ strong> <br/>
+
 格雷厄姆·塔克利，凯利达
 
 
@@ -35,7 +37,8 @@ source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-night-in-london-rec
 {% endraw %}
 
 通过许多现实的代码示例，这个实际的举报行程将显示10件让我们喜欢使用Kotlin来实现后台的决定。
-## 表达Kotlin  - 通过代码沟通。
+## <strong>表达性Kotlin  - 通过代码进行沟通。</ strong> <br/>
+
 邓肯麦格雷戈和纳特普雷斯，斯普林格大自然
 
 
@@ -44,7 +47,8 @@ source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-night-in-london-rec
 {% endraw %}
 
 Springer Nature于2015年10月采用了Kotlin一些项目，自3月份开始投产。我们发现这种语言很容易学习，愉快的写作，很有表现力。在这个谈话中，邓肯将挖掘我们的Kotlin代码，以便使用语言功能来传达意图。使用这些技术，开发人员可以花更少的时间尝试了解什么代码，并在更少的代码行中实现更多。
-## 类固醇的枚举：使用密封类构建Kotlin Concursus API。
+## <strong>类固醇的枚举：使用密封类构建Kotlin Concursus API。</ strong>
+
 Dominic Fox，OpenCredo
 
 

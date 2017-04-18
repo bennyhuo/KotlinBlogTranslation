@@ -1,5 +1,5 @@
 ---
-title: Kotlin 1.0 Beta 2 is Out!
+title: "Kotlin 1.0 Beta 2 is Out!"
 date: 2015-11-16 21:01:00
 author: Andrey Breslav
 tags:
@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/kotlin-1-0-beta-2-is-out/
 ---
 
-The first update to our Beta is here! We are stabilizing, so it’s mostly bug-fixing and changes to the standard library.
+The first update to our  [Beta](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/)  is here! We are stabilizing, so it’s mostly bug-fixing and changes to the standard library.
 ## Language changes
 
-We are now enforcing single-instantiation inheritance constraint on type parameters: the same T can not have both List<Int> and List<String> as its upper bounds. This has been always forbidden for classes, now the same check applies for type parameters.
+We are now enforcing <strong>single-instantiation inheritance</strong> constraint on type parameters: the same <code>T</code> can not have both <code>List&lt;Int&gt;</code> and <code>List&lt;String&gt;</code> as its upper bounds. This has been always forbidden for classes, now the same check applies for type parameters.<span id="more-3093"></span>
 Diagnostics were improved for the cases when a smart cast is impossible:
 
 {% raw %}
@@ -56,7 +56,7 @@ Also, the compiler is now smart enough to warn us when a value is always null at
 
 ## Library changes
 
-We cleaning up the APIs of the standard library. Most visible changes this time concern ranges. We intended the common use cases such as “if (x in 1..10)” or “for (i in 1..10)” to remain without changes, but did some renaming and hierarchy rearrangements under the hoods:
+We cleaning up the APIs of the standard library. Most visible changes this time concern ranges. We intended the common use cases such as “<code>if (x in 1..10)</code>” or “<code>for (i in 1..10)</code>” to remain without changes, but did some renaming and hierarchy rearrangements under the hoods:
 
 * Double and Float progressions are dropped
 * Byte and Short progressions are deprecated, the .. operator for bytes and shorts now returns IntRange
@@ -64,8 +64,8 @@ We cleaning up the APIs of the standard library. Most visible changes this time 
 * Progression<T> is deprecated in favor of concrete progression implementations instead: IntProgression, LongProrgession, CharProgression
 * start and end properties in progressions are renamed to first and last
 
-Then, utility extensions for strings were generalized to work with CharSequence where possible.
-The filterIsInstance extension now requires an explicit specification of its type parameter:
+Then, utility extensions for strings were generalized to work with <code>CharSequence</code> where possible.
+The <code>filterIsInstance</code> extension now requires an explicit specification of its type parameter:
 
 {% raw %}
 <p></p>
@@ -81,7 +81,7 @@ foo(list.filterIsInstance<Bar>()) // OK: we are checking for Bar
 <p></p>
 {% endraw %}
 
-NOTE: To reduce the size of the runtime library (which is especially important for Android applications), we removed the kotlin.dom and kotlin.browser packages from the standard library. They are now available as a separate library, kotlinx.dom. If you’re using any of these packages in your project, please add the new library as a dependency and update the import statements in your code (change kotlin.dom and kotlin.browser to kotlinx.dom and kotlinx.browser). Otherwise, the API of the library has not changed.
+NOTE: To reduce the size of the runtime library (which is especially important for Android applications), we removed the kotlin.dom and kotlin.browser packages from the standard library. They are now available as a separate library,  [kotlinx.dom](https://github.com/Kotlin/kotlinx.dom) . If you’re using any of these packages in your project, please add the new library as a dependency and update the import statements in your code (change <code>kotlin.dom</code> and <code>kotlin.browser</code> to <code>kotlinx.dom</code> and <code>kotlinx.browser</code>). Otherwise, the API of the library has not changed.
 Other changes:
 
 * Added
@@ -113,7 +113,7 @@ assert, check and require with non-lazy message argument
 
 ## Dokka
 
-Dokka, the new documentation generation tool for Kotlin projects, has finally reached a full release. Dokka supports mixed-language projects and understands KDoc comments in Kotlin code and JavaDoc comments in Java code. Dokka has plugins for Gradle, Maven and Ant, so you can easily integrate it with the build system of your project. Download Dokka and find more information on the Dokka project site.
+Dokka, the new documentation generation tool for Kotlin projects, has finally reached a full release. Dokka supports mixed-language projects and understands  [KDoc comments](https://kotlinlang.org/docs/reference/kotlin-doc.html)  in Kotlin code and JavaDoc comments in Java code. Dokka has plugins for Gradle, Maven and Ant, so you can easily integrate it with the build system of your project. Download Dokka and find more information on the  [Dokka project site](http://github.com/kotlin/dokka) .
 ## IDE changes
 
 

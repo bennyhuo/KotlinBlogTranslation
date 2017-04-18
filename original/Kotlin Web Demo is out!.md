@@ -1,5 +1,5 @@
 ---
-title: Kotlin Web Demo is out!
+title: "Kotlin Web Demo is out!"
 date: 2012-01-10 19:16:00
 author: Andrey Breslav
 tags:
@@ -27,17 +27,18 @@ Note that the JavaScript back-end is a pre-alpha version, so it may refuse to co
 <p><span id="more-318"></span></p>
 {% endraw %}
 
-Experimental features
-By default, you get error highlighting only when you run your program. But you can try out some of the features we are experimenting with and turn on “as-you-type” error highlighting:
-
+<strong>Experimental features</strong>
+By default, you get error highlighting only when you run your program. But you can try out some of the features we are experimenting with and turn on “as-you-type” error highlighting:<br/>
+<img alt="" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/01/Run-Type-Checker-On.png?w=640&amp;ssl=1"/><br/>
 If you choose “Server”, the editor starts talking to a type checker service hosted on our server. If you choose “Client”, a type checker is loaded as a (so far rather big) Applet which runs on your machine.
-Both “Server” and “Client” options give you code completion as well:
-Please, note that these features are experimental and feel free to report any problems to us.
-Coming soon
+Both “Server” and “Client” options give you code completion as well:<br/>
+<img alt="" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/01/Completion.png?w=640&amp;ssl=1"/>
+Please, note that these features are <strong>experimental</strong> and feel free to report any problems to us.
+<strong>Coming soon</strong>
 This demo will be developed further for you to have more fun. Among other things we plan to add the following:
 
 * Standard Library of extension functions that make using JDK collections and other common APIs more pleasant (things like map()/filter() and so on);
 * Code Challenge: currently we offer a few sample problems in the form of code snippets containing test data. This will be extended to contest-like automated testing system.
 * More Examples: There’s always some more to show off
 
-Have fun!
+ [Have fun!](http://kotlin-demo.jetbrains.com) 

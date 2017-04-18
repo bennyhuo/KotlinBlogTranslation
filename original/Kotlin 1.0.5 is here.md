@@ -1,5 +1,5 @@
 ---
-title: Kotlin 1.0.5 is here
+title: "Kotlin 1.0.5 is here"
 date: 2016-11-08 22:04:00
 author: Dmitry Jemerov
 tags:
@@ -12,12 +12,12 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-0-5-is-here/
 ---
 
-We’re happy to announce that we’ve just released Kotlin 1.0.5, which continues the series of bugfix and tooling updates for Kotlin 1.0.
-We’d like to thank our external contributors whose pull requests were included in this release: Kirill Rakhman, Vladislav Golub, Vsevolod Tolstopyatov, Yoshinori Isogai, takahirom and gitreelike. Thanks to everyone who tried the EAP builds and sent us feedback, too!
-The complete list of changes in the release can be found in the changelog. Some of the changes worth highlighting are:
+We’re happy to announce that we’ve just released <b>Kotlin 1.0.5</b>, which continues the series of bugfix and tooling updates for Kotlin 1.0.
+We’d like to thank our external contributors whose pull requests were included in this release:  [Kirill Rakhman](https://github.com/cypressious) ,  [Vladislav Golub](https://github.com/ensirius) ,  [Vsevolod Tolstopyatov](https://github.com/qwwdfsad) ,  [Yoshinori Isogai](https://github.com/shiraji) ,  [takahirom](https://github.com/takahirom)  and  [gitreelike](https://github.com/gitreelike) . Thanks to everyone who tried the EAP builds and sent us feedback, too!
+The complete list of changes in the release can be found in the  [changelog](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) . Some of the changes worth highlighting are:
 ### Loop to Lambda Conversion
 
-The IntelliJ IDEA plugin can now detect many cases where imperative for loops can be rewritten in a more compact and idiomatic manner using standard library functions such as filter and map. As a simple example, the following snippet:
+The IntelliJ IDEA plugin can now detect many cases where imperative <code>for</code> loops can be rewritten in a more compact and idiomatic manner using standard library functions such as <code>filter</code> and <code>map</code>. As a simple example, the following snippet:
 
 {% raw %}
 <p></p>
@@ -52,10 +52,11 @@ val result = list.filter { it.isNotEmpty() }
 <p></p>
 {% endraw %}
 
-To trigger the conversion, put the caret on the for keyword and press Alt-Enter.
+To trigger the conversion, put the caret on the <code>for</code> keyword and press <kbd>Alt-Enter</kbd>.<br/>
+<span id="more-4350"></span>
 ### Postfix Code Completion
 
-IntelliJ IDEA’s postfix code completion is now supported for Kotlin, with a large array of templates. Note that the feature depends on platform changes made in IntelliJ IDEA 2016.2 and is therefore unavailable in Android Studio 2.2; it will be supported in newer versions of Android Studio based on newer IntelliJ Platform versions.
+IntelliJ IDEA’s  [postfix code completion](https://blog.jetbrains.com/idea/2014/03/postfix-completion/)  is now supported for Kotlin, with a large array of templates. Note that the feature depends on platform changes made in IntelliJ IDEA 2016.2 and is therefore unavailable in Android Studio 2.2; it will be supported in newer versions of Android Studio based on newer IntelliJ Platform versions.
 
 {% raw %}
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2016/11/1.0.5-postfixCompletion.png?ssl=1" rel="attachment wp-att-4358"><img alt="1-0-5-postfixcompletion" class="alignnone size-full wp-image-4358" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2016/11/1.0.5-postfixCompletion.png?resize=640%2C465&amp;ssl=1"/></a></p>
@@ -87,5 +88,5 @@ Kotlin 1.0.5 adds two major new features to the JavaScript backend:
 ### How to update
 
 To update the plugin, use Tools | Kotlin | Configure Kotlin Plugin Updates and press the “Check for updates now” button. Also, don’t forget to update the compiler and standard library version in your Maven and Gradle build scripts.
-As usual, if you run into any problems with the new release, you’re welcome to ask for help on the forums, on Slack (get an invite here), or to report issues in the issue tracker.
+As usual, if you run into any problems with the new release, you’re welcome to ask for help on the  [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite  [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the  [issue tracker](https://youtrack.jetbrains.com/issues/KT) .
 Let’s Kotlin!

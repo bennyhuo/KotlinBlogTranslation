@@ -1,5 +1,5 @@
 ---
-title: [译]Upcoming Change: Syntax For Annotations
+title: "[译]Upcoming Change: Syntax For Annotations"
 date: 2015-04-03 13:13:00
 author: Andrey Breslav
 tags:
@@ -28,7 +28,7 @@ fun setFoo(foo: Foo) { ... }
 <p></p>
 {% endraw %}
 
-但是括号对于一个语言设计者来说是宝贵的，我们真的希望稍后再使用它们，因此我们正在考虑将注释语法更改为类似Java的@
+但是括号对于一个语言设计者而言是宝贵的，我们真的希望稍后再使用它们，因此我们正在考虑将注释语法更改为更类似Java的<code> @ </ code>。
 
 {% raw %}
 <p></p>
@@ -44,7 +44,7 @@ fun setFoo(foo: Foo) { ... }
 <p></p>
 {% endraw %}
 
-注意：不需要[...]或@的简短语法将被保留，所以您仍然可以这样说：
+<strong>注意</ strong>：不需要<code> [...] </ code>或<code> @ </ code>的短语将被保留，所以你仍然可以说这个：
 
 {% raw %}
 <p></p>
@@ -61,10 +61,10 @@ volatile var bar: Bar = ...
 <p></p>
 {% endraw %}
 
-虽然这种变化有一些影响。
+尽管如此，这种变化有一些影响。<span id =“more-2021”> </ span>
 ## 标签
 
-首先，@ -syntax已经在使用，对于标签：
+首先，<code> @ </ code> -syntax已经在使用，对于标签：
 
 {% raw %}
 <p></p>
@@ -83,7 +83,7 @@ for (i in 1..20) {
 <p></p>
 {% endraw %}
 
-因为表达式可以被注释和声明，我们需要在这里改变一些东西。最简单的选择是将@移到标签声明的末尾：
+因为表达式可以被注释和声明，我们需要在这里改变一些东西。最简单的选择是将<code> @ </ code>移到标签声明的末尾：
 
 {% raw %}
 <p></p>
@@ -102,10 +102,10 @@ for (i in 1..20) {
 <p></p>
 {% endraw %}
 
-请注意，使用网站（break @ loop）没有改变，而且看起来还不错
+请注意，使用网站（<code> break @ loop </ code>）没有更改，仍然看起来很不错<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1” src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1”style =“height：1em; max-height：1em;“/>
 ## 定位
 
-我们还在研究如何在生成的.class文件中规定一个注释应该附加什么：
+我们还在研究如何在生成的<code> .class </ code> -file中规定一个注释应该附加什么：
 
 {% raw %}
 <p></p>
@@ -120,7 +120,7 @@ class C(@Ann("arg") var foo: Int)
 <p></p>
 {% endraw %}
 
-我们在这里有很多选项：@Ann注释可以放在
+我们在这里有很多选项：可以放置<code> @Ann </ code>注释
 
 * 存储foo的字段
 * 属性foo本身（不是Java声明）
@@ -164,7 +164,7 @@ class C(@(Ann@field)("arg") var foo: Int)
 * 下降：括号太多
 * 颠倒：@field也是一个注释（是的，Ann是一个注释注释），这意味着更多的可扩展语法和较少的语言概念
 
-另一个选择是使@field注释的参数是该字段的注释：
+另一个选择是使用<code> @field </ code>注释，其参数是该字段的注释：
 
 {% raw %}
 <p></p>
@@ -259,7 +259,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-这不正确解析，因为数据不是一个关键字（既不是打开的，btw），所以我们需要这样写：
+这不正确解析，因为<code>数据</ code>不是一个关键字（既不是<code> open </ code>，btw），所以我们需要这样写：
 
 {% raw %}
 <p></p>
@@ -277,8 +277,8 @@ fun example() {
 <p></p>
 {% endraw %}
 
-现在，如果我想要一个开放的本地课程，或抽象？那些是修饰符，而不是注释，我们不能说@open或@abstract。
-一个选项是允许使用@转义修饰符以及注释：
+现在，如果我想要一个<code> open </ code>本地类，或者<code> abstract </ code>，那该怎么办？那些是<em>修饰符</ em>，而不是注释，我们不能说<code> @open </ code>或<code> @abstract </ code>。
+一个选项是允许使用<code> @ </ code>转义修饰符以及注释：
 
 {% raw %}
 <p></p>
@@ -296,8 +296,11 @@ fun example() {
 <p></p>
 {% endraw %}
 
-其他选项包括允许与类同一行的修饰符，但这并不直接扩展到现在是表达式的函数。在这里查看更多
-## 反馈欢迎
+其他选项包括允许与类同一行</ em>上的修饰符<em>，但这并不直接扩展到函数， [现在表达](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 。查看更多 [这里](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) 
+## 
+
+
+反馈欢迎
 
 你怎么看？
-美国BTW，我们正在制定规范文件草案
+美国BTW，我们正在制定规范文件草案 [这里](https://github.com/JetBrains/kotlin/pull/624) 

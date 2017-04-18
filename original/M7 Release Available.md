@@ -1,5 +1,5 @@
 ---
-title: M7 Release Available
+title: "M7 Release Available"
 date: 2014-03-20 00:00:00
 author: Hadi Hariri
 tags:
@@ -17,10 +17,11 @@ Kotlin M7 is here and with it some long awaited features.
 
 ### Inline support
 
-One of the biggest features of M7 is support for inline functions. Kotlin encourages the use of higher-order functions (some people call this “functional style”) which entails extensive use of lambda expressions. Starting with M7, you can declare a higher-order function as “inline” which means that its body will be inlined at the call site along with any lambdas passed to it. This means that the performance penalty of using such functions is next to nothing. For instance, having a for loop as opposed to using forEach and passing a lambda will have very little difference in terms of speed.
+One of the biggest features of M7 is support for inline functions. Kotlin encourages the use of higher-order functions (some people call this “functional style”) which entails extensive use of lambda expressions. Starting with M7, you can declare a higher-order function as “inline” which means that its body will be inlined at the call site along with any lambdas passed to it. This means that the performance penalty of using such functions is next to nothing. For instance, having a <em>for </em>loop as opposed to using <em>forEach </em>and passing a lambda will have very little difference in terms of speed.
+<span id="more-1439"></span><br/>
 Inlining provides benefits such as the number of generated classes, bytecode size, fewer allocations and fewer megamorphic calls, all of which contribute to these performance gains.
 Many functions from Kotlin’s standard library are now inlined.
-NOTE: If inlining breaks your code (due to compiler bugs, for example), you can switch it off by passing the -inline off command line option to the compiler (see Preferences -> Compiler -> Kotlin Compiler):
+NOTE: If inlining breaks your code (due to compiler bugs, for example), you can switch it off by passing the <i>-inline off </i>command line option to the compiler (see Preferences -> Compiler -> Kotlin Compiler):
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2014/03/inline1.png"><img alt="inline" class="alignnone size-full wp-image-1462" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2014/03/inline1.png?resize=381%2C115&amp;ssl=1"/></a></p>
@@ -28,13 +29,13 @@ NOTE: If inlining breaks your code (due to compiler bugs, for example), you can 
 
 ### toString(), equals() and hashCode() need override directive
 
-When declaring toString(), equals() and hashCode() we now need to prefix them with the override keyword. This is a breaking change from the previous release and applies to all classes. Use the provided quick-fix in the IDE (Alt+Enter on an error) to quickly add “override” to all such methods in project.
+When declaring <em>toString()</em>,<em> equals() </em>and <em>hashCode()</em> we now need to prefix them with the <em>override </em>keyword. This is a <strong>breaking change</strong> from the previous release and applies to all classes. Use the provided quick-fix in the IDE (Alt+Enter on an error) to quickly add “override” to all such methods in project.
 ### “jet” package renamed to “kotlin”
 
-The jet core classes have been renamed to kotlin, which also means that, yes you guessed it, Kotlin is now the official and final name of, well, Kotlin. This is, again, a potentially breaking change. Most imports will happen automatically. In case you encounter any issues, rename the imports manually.
+The <em>jet</em> core classes have been renamed to <em>kotlin</em>, which also means that, yes you guessed it, Kotlin is now the official and final name of, well, Kotlin. This is, again, a potentially <strong>breaking change</strong>. Most imports will happen automatically. In case you encounter any issues, rename the imports manually.
 ### References to local functions
 
-In Kotlin you can reference a function by name using the ::functionName syntax. This is also available now for local functions
+In Kotlin you can reference a function by name using the <em>::functionName</em> syntax. This is also available now for local functions
 
 {% raw %}
 <p></p>
@@ -61,9 +62,9 @@ fun foo() {
 
 ## Interoperability
 
-### [throws] annotation
+### <em>[throws]</em> annotation
 
-You can now decorate a function with the throws annotation to indicate what exceptions should be declared by the function when compiled to the JVM.
+You can now decorate a function with the <em>throws </em>annotation to indicate what exceptions should be declared by the function when compiled to the JVM.
 
 {% raw %}
 <p></p>
@@ -121,8 +122,8 @@ You can now provide overloaded functions and have them compiled to JavaScript. K
 In addition, JavaScript native functions also allow passing extension literals as parameters.
 ## Standard Library
 
-The standard library is being severely reworked. This includes introduction of streams (among other things, this will serve better compatibility with Java 8) and deprecation of some functions.
-Some of the redesign has led to breaking changes to the library API. Most of the functionality is still available, but you may need to fix existing code slightly.
+The standard library is being severely reworked. This includes introduction of <em>streams</em> (among other things, this will serve better compatibility with Java 8) and deprecation of some functions.
+Some of the redesign has led to <strong>breaking changes</strong> to the library API. Most of the functionality is still available, but you may need to fix existing code slightly.
 ## IntelliJ IDEA Enhancements
 
 ### Copy/Paste now inserts imports
@@ -211,5 +212,5 @@ In addition, there are some other bug fixes and features
 * More bootstrapping. We’re using more and more Kotlin in Kotlin.
 * Some more improvements to the Kotlin standard library.
 
-You can find the Compiler and Plugin on our release page on GitHub.
-If you’re using IntelliJ IDEA, you can download the latest plugin from our repository or update it directly via Plugins in IntelliJ IDEA. Kotlin M7 requires IntelliJ IDEA 13.1.
+You can find the Compiler and Plugin on our  [release page on GitHub](https://github.com/JetBrains/kotlin/releases/tag/build-0.7.270) .<br/>
+If you’re using IntelliJ IDEA, you can download the latest plugin from  [our repository](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954)  or update it directly via Plugins in IntelliJ IDEA. Kotlin M7 requires IntelliJ IDEA 13.1.

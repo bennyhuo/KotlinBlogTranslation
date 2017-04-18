@@ -1,5 +1,5 @@
 ---
-title: [译]Announcing Anko for Android
+title: "[译]Announcing Anko for Android"
 date: 2015-04-08 16:20:00
 author: Hadi Hariri
 tags:
@@ -15,7 +15,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/04/announcing-anko-for-androi
 我们很高兴地宣布，我们一直致力于Android开发的图书馆，其中除了别的以外，还可以使用DSL以类型安全和动态的方式创建应用程序界面。
 ## 样品味道
 
-这是一个简单的例子，描述安科的一些可能性。想象一下，我们需要创建一个简单的注册表单，其中包含用户名的EditText和“注册”按钮。使用安科的代码是：
+这是一个简单的例子，描述安科的一些可能性。想象一下，我们需要创建一个简单的注册表单，包括用户名和<注册> <code>按钮</ code>的<code> EditText </ code>。使用安科的代码是：
 
 {% raw %}
 <p></p>
@@ -56,14 +56,14 @@ class MainActivity : Activity() {
 <p><span id="more-1999"></span></p>
 {% endraw %}
 
-安科广泛使用Kotlin的扩展功能和属性，安排在类型安全的构建器中来描述用户界面。作为回报，我们在编译时得到简洁和类型安全。
+安科广泛使用科特林 [扩展功能和属性](http://kotlinlang.org/docs/reference/extensions.html)  安排进去 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html)  来描述用户界面。作为回报，我们在编译时得到简洁和类型安全。
 当然，我们还可以在设计时使用Anko Preview插件来查看预览，这些插件适用于IntelliJ IDEA和Android Studio：
 
 {% raw %}
 <p><img alt="Anko Designer" class="aligncenter size-full wp-image-2007" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/04/Screen-Shot-2015-04-02-at-00.33.22.png?resize=640%2C481&amp;ssl=1"/></p>
 {% endraw %}
 
-如果我们现在想添加另一个文本输入小部件，例如电子邮件，我们可能会创建另一对textView（）和editText（）函数调用。然而，更好的方法是将相应的DSL片段提取为新的功能：
+如果我们现在想添加另一个文本输入小部件，例如电子邮件，我们可能会创建另一对<code> textView（）</ code>和<code> editText（）</ code>函数调用。然而，更好的方法是将相应的DSL片段提取为新的功能：
 
 {% raw %}
 <p></p>
@@ -151,11 +151,11 @@ seekBar {
 <p></p>
 {% endraw %}
 
-具有空体的方法不再需要空的实现。另外，如果为同一个View设置onProgressChanged（）和onStartTrackingTouch（），则这两个“部分定义”的监听器将被合并。
+具有空体的方法不再需要空的实现。另外，如果为相同的View设置<code> onProgressChanged（）</ code>和onStartTrackingTouch（）</ code>，这两个“部分定义”的监听器将被合并。
 ## 不止一个DSL
 
 安科不仅仅是一个DSL，而是一个促进Android开发在不同领域的图书馆。它有许多方法涵盖对话框，异步任务，服务，意图甚至SQLite数据库访问。
-例如，如果要启动新的活动：
+例如，如果要启动新的<code>活动</ code>：
 
 {% raw %}
 <p></p>
@@ -217,7 +217,7 @@ toast("Download is complete!")
 
 ### 现有代码支持
 
-你可以用Java编写你的旧类。此外，如果您仍然希望（或有）编写Kotlin活动类并因为某些原因夸大XML布局，则可以使用View属性和监听器帮助器，这将使事情变得更容易：
+你可以用Java编写你的旧类。此外，如果您仍然希望（或有）编写Kotlin活动类并由于某种原因夸大XML布局，则可以使用<code> View </ code>属性和监听器助手，这将使事情变得更容易：
 
 {% raw %}
 <p></p>
@@ -243,7 +243,7 @@ name.onClick { /* do something */ }
 
 ## 试一试！
 
-安科还处于阿尔法阶段，但是我们希望尽快发布您的反馈意见，所以请试试。我们尽可能简单地做到这一点。它全部发布在Maven Central上，如果您使用Gradle，您可以轻松地将所需的依赖关系添加到build.gradle文件中：
+安科还处于阿尔法阶段，但是我们希望尽快发布您的反馈意见，所以请试试。我们尽可能简单地做到这一点。它全部发布在Maven Central上，如果您使用Gradle，您可以轻松地将所需的依赖项添加到<code> build.gradle </ code>文件中：
 
 {% raw %}
 <p></p>
@@ -260,6 +260,6 @@ dependencies {
 <p></p>
 {% endraw %}
 
-Anko Preview插件可用于IntelliJ IDEA和Android Studio。您可以直接从Plugin Repository下载。
+Anko Preview插件可用于IntelliJ IDEA和Android Studio。您可以 [下载](https://plugins.jetbrains.com/plugin/7734)  它直接从插件存储库。
 有二进制文件针对的是原始Android（SDK版本15，Ice Cream Sandwich）和Android，支持v4软件包。
-此外，最后但并非最不重要的是，与Kotlin相关的所有内容，Anko都是完全开源的。存储库在GitHub上，一如以往的欢迎！
+此外，最后但并非最不重要的是，与Kotlin相关的所有内容，Anko都是完全开源的。存储库已打开 [GitHub](https://github.com/JetBrains/anko)  和往常一样，欢迎贡献！

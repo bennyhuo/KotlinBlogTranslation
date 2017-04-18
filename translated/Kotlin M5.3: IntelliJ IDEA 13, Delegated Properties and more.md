@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin M5.3: IntelliJ IDEA 13, Delegated Properties and more
+title: "[译]Kotlin M5.3: IntelliJ IDEA 13, Delegated Properties and more"
 date: 2013-06-06 10:48:00
 author: Andrey Breslav
 tags:
@@ -12,14 +12,14 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delegated-properties-and-more/
 ---
 
-Kotlin M5.3支持IntelliJ IDEA 13和一些新功能，供您查看。我们正在向强大的运行时支持，包括反射和其他框架启用功能。这个里程碑标志着我们朝这个方向迈出的第一步。
+Kotlin M5.3支持IntelliJ IDEA 13和一些新功能，供您查看。我们正在向强大的运行时支持，包括反射和其他框架启用功能。这个里程碑标志着我们朝这个方向迈出的第一步。 <span id =“more-1060”> </ span>
 ## IntelliJ IDEA 12.1和13
 
-第一个早期访问版本的IntelliJ IDEA 13即将推出，并且我们发布了与这些版本兼容的Kotlin插件。记住这是一个EAP，使用它自己承担风险。当然，也支持好的老版IntelliJ IDEA 12.1。
-注意：有关关于Kotlin在Android Studio中的支持的消息即将推出。
+首次早期访问版本 [IntelliJ IDEA 13](http://blogs.jetbrains.com/idea/2013/05/intellij-idea-13-early-preview-is-out/)  正在出来，我们发行与这些版本兼容的Kotlin插件。记住这是一个EAP，使用它自己承担风险。当然好老了 [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/)  也被支持。
+<strong>注意</ strong>：有关Kotlin支持的一些消息 [Android Studio](http://developer.android.com/sdk/installing/studio.html)  即将到来
 ## 许多改进
 
-像往常一样，M5.3在编译器和IDE中都带来了许多改进。在编译器中，我们仍然主要关注性能，这正在逐渐改善。 IDE会获得新的快速修复和重构，其中一些将在下面介绍。您现在可以导航到覆盖您正在查看的属性（请参阅左侧沟槽中的图标）。编辑器识别KDoc的语法（感谢这个拉动请求）...但是首先，让我们谈谈酷的新语言功能，有些期待已久，有些意想不到的（也许）。
+像往常一样，M5.3在编译器和IDE中都带来了许多改进。在编译器中，我们仍然主要关注性能，这正在逐渐改善。 IDE会获得新的快速修复和重构，其中一些将在下面介绍。您现在可以导航到覆盖您正在查看的属性（请参见左侧沟槽中的图标）。编辑器识别语法 [KDoc](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Doc)  （谢谢 [这个拉请求](https://github.com/JetBrains/kotlin/pull/280) ）...但是首先，让我们谈谈酷的新语言功能，有些期待已久，有些意想不到的（也许）。
 ## 新语言功能：委派属性
 
 我们经常收到以下功能要求：
@@ -30,7 +30,7 @@ Kotlin M5.3支持IntelliJ IDEA 13和一些新功能，供您查看。我们正�
 * 支持<我最喜欢的属性语义> ...
 
 解决这些要求的一个方法就是说生活是艰难的，用户不得不忍受。另一种方式是在语言层面上支持不同类型的属性。我们不喜欢任何一种方法：一方面太多不愉快的用户，另一方面太多的特别功能。所以，我们采取第三种方法：支持涵盖所有这些请求（或许更多）的统一机制，以便特定类型的属性可以在库中实现，而不会改变语言。
-认证委托属性：
+认识<strong>委托属性</ strong>：
 
 {% raw %}
 <p></p>
@@ -46,7 +46,7 @@ class Example {
 <p></p>
 {% endraw %}
 
-有一些新的语法：您可以通过<expression>来表示“val <property name>：<Type>”。后面的表达式是委托，因为与属性对应的get（）和set（）方法将被委派给它。属性委托不必实现任何接口，而是必须提供名为get（）和set（）的方法来调用。例如：
+有一些新的语法：您可以通过<expression>来表示“val <property name>：<Type>”。 </ strong>之后的表达式是<em>委托</ em>，因为与该属性相对应的get（）和set（）方法将被委派给它。属性委托不必实现任何接口，而是必须提供名为get（）和set（）的方法来调用。例如：
 
 {% raw %}
 <p></p>
@@ -98,8 +98,8 @@ e.p = "NEW"
 {% endraw %}
 
 这将打印“新的已分配给”p“在示例@ 33a17727”。
-可能，您已经看到如何使用这种机制来实现懒惰或可观察的东西。尝试一下锻炼，但大部分已经在标准库中完成。
-kotlin.properties.Delegates对象拥有最有用的东西。我们从懒惰开始：
+可能，您已经看到如何使用这种机制来实现懒惰或可观察的东西。尝试一下锻炼，但大部分已经完成了 [标准库](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt) 。
+的 [kotlin.properties.Delegates](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt#L12)  对象拥有最有用的东西。我们从懒惰开始：
 
 {% raw %}
 <p></p>
@@ -120,7 +120,7 @@ class LazySample {
 <p></p>
 {% endraw %}
 
-Delegates.lazy（）是一个函数，它返回一个实现一个延迟属性的委托：第一次调用get（）执行传递给lazy（）的lambda表达式作为参数，并记住结果，后来的get（）调用简单地返回记住的结果。如果你想要线程安全，请改用blockingLazy（）：它保证只在一个线程中计算这些值，所有的线程都会看到相同的值。
+Delegates.lazy（）是一个函数，它返回一个实现一个延迟属性的委托：第一次调用get（）执行传递给lazy（）的lambda表达式作为参数，并记住结果，后来的get（）调用简单地返回记住的结果。如果你想要<strong>线程安全</ strong>，请改用blockingLazy（）：它保证只在一个线程中计算这些值，并且所有的线程都会看到相同的值。
 现在，我们转向观察：
 
 {% raw %}
@@ -232,7 +232,7 @@ println(user.age)  // Prints 25
 
 ## SAM转换的第一步
 
-我们上次介绍了SAM构造函数。当然这还不够，所以我们正在进行全面的SAM转换。该功能尚未完成，但您可以在简单的情况下使用它：
+我们介绍 [SAM构造函数](http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/)  上次。当然这还不够，所以我们正在进行全面的SAM转换。该功能尚未完成，但您可以在简单的情况下使用它：
 
 {% raw %}
 <p></p>
@@ -303,7 +303,7 @@ println(strings.filter(oddLength)) // Prints "[a, abc]"
 {% endraw %}
 
 如果你想使用一个类的成员，你需要限定它，结果将是类型“扩展功能”，例如。 String :: toCharArray为String提供了一个扩展函数。
-请注意，这是早期的工作，所以很多事情还没有工作，例如，重载消歧，类型推断，属性等的支持。最终这个功能将演变成完全类型安全的反思，但是今天我们只是开始工作在上面。
+请注意，这是早期正在进行的工作</ strong>，所以很多事情都没有起作用，例如重载消歧，类型推断，属性等的支持。最终这个功能将演变成完全类型安全的反射，但是今天我们只是开始工作了。
 ## 改变签名重构
 
 当您有很多呼叫站点进行更新时，添加/删除/重新排序功能参数可能很乏味。这就是为什么IDEs证明了一个“变更签名”重构。将光标放在一个函数或构造函数上，然后按Ctrl + F6（Mac上的Cmd + F6），你会得到如下对话框：
@@ -315,7 +315,7 @@ println(strings.filter(oddLength)) // Prints "[a, abc]"
 更改类型，重命名，重新排序或删除参数，并且所有呼叫站点将相应更新。
 ## 快速修复“类型不匹配”等
 
-感谢杰克·周，MichałSapalski，WojciechŁopata以及斯坦福大学领导的开源导师计划的其他学生的贡献，我们现在可以获得很多很好的快速修复。例如，当您遇到类型不匹配错误时，按Alt + Enter并获取一些建议来修复代码：
+感谢贡献 [周杰克](https://github.com/univerio) ， [MichałSapalski](https://github.com/sapal) ， [WojciechŁopata](https://github.com/lopekpl)  和斯坦福大学领导的开源导师计划的其他学生，我们现在得到很多很好的快速修复。例如，当您遇到类型不匹配错误时，按Alt + Enter并获取一些建议来修复代码：
 
 {% raw %}
 <p><img alt="" class="aligncenter" data-recalc-dims="1" src="https://i1.wp.com/www.evernote.com/shard/s171/sh/ff9bd33c-ecd1-4800-91f2-4a69db761a37/f829b15d7de80df501e39b64f6973754/deep/0/Screenshot%206/5/13%206:51%20PM.jpg?w=640&amp;ssl=1"/></p>
@@ -323,7 +323,8 @@ println(strings.filter(oddLength)) // Prints "[a, abc]"
 
 ## 代码转换
 
-另一组有用的IDE操作在等效的代码形式之间进行转换，如：
+另一组有用的IDE操作可在等效的代码形式之间进行转换，如：<br/>
+<span class =“embed-youtube”style =“text-align：center; display：block;”> <iframe allowfullscreen =“true”class =“youtube-player”height =“390”src =“https：// www.youtube.com/embed/Cfwq-pYtiDY?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent“style =”border：0 ;“ type =“text / html”width =“640”> </ iframe> </ span>
 您也可以使用Ctrl + Shift + Up / Down来移动语句或声明：
 
 {% raw %}
@@ -332,5 +333,5 @@ println(strings.filter(oddLength)) // Prints "[a, abc]"
 
 ## 安装
 
-像往常一样，新的插件可以从我们的插件库安装。
-有一个漂亮的Kotlin！
+像往常一样，新的插件可以从中安装 [我们的插件库](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) 。
+<strong>拥有不错的Kotlin！</ strong>

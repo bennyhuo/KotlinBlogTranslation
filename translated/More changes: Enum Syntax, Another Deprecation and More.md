@@ -1,5 +1,5 @@
 ---
-title: [译]More changes: Enum Syntax, Another Deprecation and More
+title: "[译]More changes: Enum Syntax, Another Deprecation and More"
 date: 2015-04-07 13:34:00
 author: Andrey Breslav
 tags:
@@ -82,7 +82,7 @@ enum class Example(...) {
 <p></p>
 {% endraw %}
 
-问题是A和B可以解析为foo（）的注释。所以我们在这里有一些选择。
+问题是可以将<code> A </ code>和<code> B </ code>解析为<code> foo（）</ code>上的注释。所以我们在这里有一些选择。
 我们倾向于在条目和其他成员之间放置一个分隔符：
 
 {% raw %}
@@ -176,7 +176,7 @@ enum class Example {
 
 ## 禁止在表达式中断/继续
 
-我们正在计划在when-expression中实现continue，作为跳转到下一个when-entry。它还没有实现，但是当我们添加代码时，我们希望您的代码保持不变，因此暂时不禁止在没有指向循环的标签的情况下继续使用：
+当</ code> -expressions作为</ code> -entry跳转到下一个<code>时，我们计划在<code>中实现<code> continue </ code>。它还没有实现，但是当我们添加代码时，我们希望您的代码保持不变，因此暂时在<code>中禁止在<code>中使用<code>继续</ code>，而不使用指向的标签循环：
 
 {% raw %}
 <p></p>
@@ -197,8 +197,8 @@ for (...) {
 <p></p>
 {% endraw %}
 
-我们也禁止在未标记的时间内打破。虽然还没有决定是否要允许它，但似乎是一个更好的设计来保持断开并继续对称。
-注意：当“停止匹配和跳出外部”（如在Java和C中的开关中），但是当我们经常返回一个值时，这个简单的解释是内部断开的，而如果我们突破它就是未知的。
+我们还禁止<code>中的<code> break </ code> </ code>。虽然还没有决定是否要允许它，但似乎更好的设计是保持<code> break </ code>和<code> continue </ code>对称。
+注意：当</ code>在“停止匹配并跳出外部”（如Java和C中的<code> switch </ code>）中时，<code> break </ code>的简单解释，但是<code>当</ code>经常返回一个值时，如果我们突破它，这将是未知的。
 
 {% raw %}
 <p><a name="interfaces"></a></p>
@@ -206,5 +206,5 @@ for (...) {
 
 ## 将特征重命名为接口
 
-那么我们很久以前就选择了这个名字，现在我们在Kotlin中所说的“特质”并不是一个特质，就像现在的Java界面一样，所以我们要弃用trait关键字的用法，并且介绍M12接口。
-反馈请求：让火焰开始
+那么我们很久以前就选择了这些名字，现在我们在Kotlin中所说的“特质”并不是一个特质，就像现在的Java接口一样，所以我们不想使用<code> trait < / code>关键字，并在M12中引入<code> interface </ code>。
+反馈请求：让火焰开始<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/ kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“

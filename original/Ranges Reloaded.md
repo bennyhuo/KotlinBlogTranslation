@@ -1,5 +1,5 @@
 ---
-title: Ranges Reloaded
+title: "Ranges Reloaded"
 date: 2013-02-06 14:47:00
 author: Evgeny Gerashchenko
 tags:
@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/ranges-reloaded/
 ---
 
-In Kotlin M5 we have redesigned our ranges a little bit.
-Range expressions are formed with rangeTo functions that have the operator form of .. which are complemented by in and !in. Range is defined for any comparable type (subclass of Comparable), but for number primitives it is optimized. Here are examples of using ranges:
+In  [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/)  we have redesigned our ranges a little bit.<span id="more-855"></span>
+Range expressions are formed with <tt>rangeTo</tt> functions that have the  [operator form of ..](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations)  which are complemented by  [in and !in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) . Range is defined for any comparable type (subclass of <code>Comparable</code>), but for number primitives it is optimized. Here are examples of using ranges:
 
 {% raw %}
 <p></p>
@@ -52,7 +52,7 @@ for (x in 1.0..2.0) print("$x ") // prints "1.0 2.0 "
 <p></p>
 {% endraw %}
 
-What if you want to iterate over numbers in reversed order? It’s simple. You can use downTo() function defined in standard library:
+What if you want to iterate over numbers in reversed order? It’s simple. You can use <tt>downTo()</tt> function defined in standard library:
 
 {% raw %}
 <p></p>
@@ -66,7 +66,7 @@ for (i in 4 downTo 1) print(i) // prints "4321"
 <p></p>
 {% endraw %}
 
-Is it possible to iterate over numbers with arbitrary step, not equal to 1? Sure, step() function will help you:
+Is it possible to iterate over numbers with arbitrary step, not equal to 1? Sure, <tt>step()</tt> function will help you:
 
 {% raw %}
 <p></p>
@@ -86,9 +86,9 @@ for (i in 1.0..2.0 step 0.3) print("$x ") // prints "1.0 1.3 1.6 1.9 "
 
 ## How it works
 
-There are two traits in the library: Range<T> and Progression<N>.
-Range<T> denotes an interval in the mathematical sense, defined for comparable types. It has two endpoints: start and end, which are included in the range. Main operation is contains(), usually used in the form of in/!in operators.
-Progression<N> denotes arithmetic progression, defined for number types. It has start, end and non-zero increment. Progression<N> is a subtype of Iterable<N>, so it can be used in for-loops and functions like map, filter, etc. First element is start, every next element equals previous plus increment. Iteration over Progression is equivalent to an indexed for-loop in Java/JavaScript:
+There are two traits in the library: <tt>Range&lt;T&gt;</tt> and <tt>Progression&lt;N&gt;</tt>.
+<tt>Range&lt;T&gt;</tt> denotes an interval in the mathematical sense, defined for comparable types. It has two endpoints: <tt>start</tt> and <tt>end</tt>, which are included in the range. Main operation is <tt>contains()</tt>, usually used in the form of <tt>in</tt>/<tt>!in</tt> operators.
+<tt>Progression&lt;N&gt;</tt> denotes  [arithmetic progression](http://en.wikipedia.org/wiki/Arithmetic_progression) , defined for number types. It has <tt>start</tt>, <tt>end</tt> and non-zero <tt>increment</tt>. <tt>Progression&lt;N&gt;</tt> is a subtype of <tt>Iterable&lt;N&gt;</tt>, so it can be used in for-loops and functions like <tt>map</tt>, <tt>filter</tt>, etc. First element is <tt>start</tt>, every next element equals previous plus <tt>increment</tt>. Iteration over <tt>Progression</tt> is equivalent to an indexed for-loop in Java/JavaScript:
 
 {% raw %}
 <p></p>
@@ -110,4 +110,4 @@ for (int i = start; i >= end; i += increment) {
 <p></p>
 {% endraw %}
 
-For numbers, the “..” operator creates an object which is both Range and Progression. Result of downTo() and step() functions is always a Progression.
+For numbers, the “<tt>..</tt>” operator creates an object which is both <tt>Range</tt> and <tt>Progression</tt>. Result of <tt>downTo()</tt> and <tt>step()</tt> functions is always a <tt>Progression</tt>.

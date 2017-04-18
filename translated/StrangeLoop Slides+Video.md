@@ -1,5 +1,5 @@
 ---
-title: [译]StrangeLoop Slides+Video
+title: "[译]StrangeLoop Slides+Video"
 date: 2011-11-17 16:47:00
 author: Andrey Breslav
 tags:
@@ -12,4 +12,4 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/11/strangeloop-slidesvideo/
 ---
 
-今年在StrangeLoop上发表的演讲和视频可以在这里找到：
+从我给的谈话的幻灯片和视频 [奇怪的](https://thestrangeloop.com/sessions/the-kotlin-programming-language)  今年是可用的 [这里](http://www.infoq.com/presentations/The-Kotlin-Programming-Language) ：

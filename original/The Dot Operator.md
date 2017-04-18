@@ -1,5 +1,5 @@
 ---
-title: The Dot Operator
+title: "The Dot Operator"
 date: 2013-04-01 10:00:00
 author: Andrey Breslav
 tags:
@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/
 ---
 
-Warning: this is an April Fools’ post
-Point-free style is a big trend in modern functional programming: it allows to manipulate functions without mentioning their arguments which makes the code concise and compositional. Here is an example from Wikipedia:
+<strong>Warning: this is an April Fools’ post</strong>
+ [Point-free](http://en.wikipedia.org/wiki/Point-free_programming)  style is a big trend in modern functional programming: it allows to manipulate functions without mentioning their arguments which makes the code concise and compositional. Here is an example from Wikipedia:
 
 {% raw %}
 <p></p>
@@ -28,10 +28,10 @@ mf = (. map) . (.) . filter
 {% endraw %}
 
 This function, written in Haskell, composes a map() function with a filter() function. As you can see, point-free style largely relies on dots.
-Kotlin is not a functional language per se, but we are happy to borrow useful features from other languages. So, today I’ll write about dots.
+Kotlin is not a functional language per se, but we are happy to borrow useful features from other languages. So, today I’ll write about dots.<span id="more-1007"></span>
 # The Dot
 
-We introduce the dot operator in Kotlin. As usual, it works by convention. If there’s a function like this
+We introduce the <strong>dot</strong> operator in Kotlin. As usual, it works by convention. If there’s a function like this
 
 {% raw %}
 <p></p>
@@ -100,7 +100,7 @@ println(Foo(1).count)
 {% endraw %}
 
 This prints 2, because the dot() function returned a new Foo with an increased counter.
-As you can see, the dot operator gives us a lot of power and addresses most of the issues previously tackled only by aspect-oriented programming.
+As you can see, the dot operator gives us a lot of power and addresses most of the issues previously tackled only by  [aspect-oriented programming](http://en.wikipedia.org/wiki/Aspect-oriented_programming) .
 # Flavors of the Dot
 
 The real power of the dot operator comes in when you declare it with a parameter:
@@ -152,8 +152,8 @@ fun test() {
 <p></p>
 {% endraw %}
 
-One might think that in this example dot() is called three times: one for “a.b”, with the argument BOTTOM, then twice for “1..2”: first with LEFT, and then with RIGHT (these are not two BOTTOMs, because “..” is a single token in Kotlin), but in fact it gets called four times, and the fourth time (in fact it comes first) with TOP as an argument.
-I’m sure you already see why: in Kotlin, we never forget to dot out i’s, and that dot counts as well; its position is clearly TOP (we could introduce a separate tittle() function, but we found it too inconvenient). Tittles above j’s count just as well, same for dots in ; ! ? etc.
+One might think that in this example dot() is called three times: one for “a.b”, with the argument BOTTOM, then twice for “1..2”: first with LEFT, and then with RIGHT (these are not two BOTTOMs, because “..” is a single  [token](http://en.wikipedia.org/wiki/Token_(parser)#Token)  in Kotlin), but in fact it gets called four times, and the fourth time (in fact it comes first) with TOP as an argument.
+I’m sure you already see why: in Kotlin, we never forget to dot out i’s, and that dot counts as well; its position is clearly TOP (we could introduce a separate  [tittle](http://en.wikipedia.org/wiki/Tittle) () function, but we found it too inconvenient). Tittles above j’s count just as well, same for dots in ; ! ? etc.
 # The Depth of the Dot
 
 You may be wondering what happens if dot() is defined like this:
@@ -172,7 +172,7 @@ fun Foo.dot() {
 <p></p>
 {% endraw %}
 
-There is a dot after this, which has type Foo, in the body of Foo.dot() function itself, so dot() should be called recursively at that point and, seemingly, never terminate. This is called a higher-order dot, and is executed only if there’s a function dot1() defined on Foo. If dot1(), in turn, contains a higher-order dot, then dot2() is called and so on:
+There is a dot after <strong>this</strong>, which has type Foo, in the body of Foo.dot() function itself, so dot() should be called recursively at that point and, seemingly, never terminate. This is called a <em>higher-order dot</em>, and is executed only if there’s a function dot1() defined on Foo. If dot1(), in turn, contains a higher-order dot, then dot2() is called and so on:
 
 {% raw %}
 <p></p>
@@ -188,8 +188,8 @@ fun Foo.dot1() {
 <p></p>
 {% endraw %}
 
-This corresponds to Russel’s approach to set theory called type theory (with its notion of a class), which lies the solid foundation for statically-typed object-oriented programming.
+This corresponds to Russel’s approach to set theory called  [type theory](http://en.wikipedia.org/wiki/Type_theory)  (with its notion of a  [class](http://en.wikipedia.org/wiki/Class_(set_theory)) ), which lies the solid foundation for statically-typed object-oriented programming.
 # Conclusion
 
 We are planning to support the dot operator very soon. The first version will be restricted to basic ASCII characters such as . : ; ! ? and, of course i, but in the future we plan to expand it to other characters like ё.
-Have a nice Dot!
+<strong>Have a nice Dot!</strong>

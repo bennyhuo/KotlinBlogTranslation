@@ -1,5 +1,5 @@
 ---
-title: [译]The Road Ahead
+title: "[译]The Road Ahead"
 date: 2012-01-16 10:10:00
 author: Andrey Breslav
 tags:
@@ -12,9 +12,9 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
 ---
 
-众所周知，我们上周推出了我们的第一个公开发布：kotlin-demo.jetbrains.com。而当您（7K +独特访问者）正在玩乐时，我们将继续致力于Kotlin编译器，IDE和标准库。在这篇文章中，我将概述我们的计划。
-你今天可以玩什么
-今天你可以尝试Kotlin的许多功能。其中包括：
+众所周知，我们上周推出了我们的第一个公开发布： [kotlin-demo.jetbrains.com](http://kotlin-demo.jetbrains.com/) 。而当您（7K +独特访问者）正在玩乐时，我们将继续致力于Kotlin编译器，IDE和标准库。在这篇文章中，我将概述我们的计划。 <span id =“more-365”> </ span> <strong> </ strong>
+<strong>您今天可以玩的</ strong>
+今天你可以已经 [尝试](http://kotlin-demo.jetbrains.com/)  科特林的许多功能。其中包括：
 
 * 功能文字（封闭）
 * 扩展功能和属性
@@ -23,17 +23,17 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
 * 一流的代表团
 * 混合Java / Kotlin编码
 
-有关详细信息，请参阅Kotlin文档。
-将事情用于真正的问题揭示了设计的局限性，不一致性和其他缺点，这是很好的，因为我们可以解决它们。关键是在我们发布1.0版本之前，找到并修复几乎所有的东西。发布后，我们将无法引入向后不兼容的更改，因此修复语言将变得困难。所以，请尝试他们，并在下面的评论或问题跟踪器中给我们您的反馈。
-什么让我们很忙
-目前，我们正在稳定IDE和语言基础设施（建筑物等）的现有功能和工作。本月最热门的话题是：
+看到 [Kotlin文档](http://jetbrains.com/kotlin)  更多细节。
+将事情用于真正的问题揭示了设计的局限性，不一致性和其他缺点，这是<strong>好</ strong>，因为那时我们可以 [修复它们](http://blog.jetbrains.com/kotlin/2012/01/the-great-syntactic-shift/) 。关键是在我们发布1.0版本</ strong>之前，找到并修复几乎所有的东西<strong>。发布后，我们将无法引入向后不兼容的更改，因此修复语言将变得困难。所以，请尝试他们，并在下面的评论中或在...中给我们您的反馈</ strong> [问题追踪器](http://youtrack.jetbrains.net/issues/KT) 。
+<strong>什么让我们忙碌</ strong>
+<strong> </ strong>目前，我们正在稳定现有功能，并在IDE和语言基础设施（建筑物等）上工作。本月最热门的话题是：
 
 * 模块：module =编译和依赖关系管理单元;
 * Ant和Maven集成：使用您最喜欢的构建基础设施;
 * 标准库：JDK集合，IO等的实用功能;
 * JavaScript后端：原型还是很早，但是它正在改进。
 
-去做
+<strong> ToDo </ strong>
 当玩Kotlin时，很方便的知道什么还不支持。列表很长，其中一些功能甚至可能会等待2.0：
 
 * 可见性检查：可惜我们没有这些私人，公共等等;
@@ -52,5 +52,5 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
 * Eclipse插件：Kotlin IDE！= IntelliJ IDEA;
 * LLVM后端：将Kotlin编译成本机代码...
 
-即使没有这些东西，你可以有很多的乐趣。尝试扩展功能和闭包，特征和字符串模板等等。解决问题（随着时间的推移我们会加入更多）。
-有一个漂亮的Kotlin！
+即使没有这些东西，你可以有很多的乐趣。尝试使用<strong>扩展功能</ strong>和<strong>关闭</ strong>，<strong> traits </ strong>和<strong>字符串模板</ strong>等等。解决问题（随着时间的推移我们会加入更多）。
+ [有一个漂亮的科特林](http://kotlin-demo.jetbrains.com/) ！

@@ -1,5 +1,5 @@
 ---
-title: [译]Kotlin 1.0.5 is here
+title: "[译]Kotlin 1.0.5 is here"
 date: 2016-11-08 22:04:00
 author: Dmitry Jemerov
 tags:
@@ -12,12 +12,12 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-0-5-is-here/
 ---
 
-我们很高兴地宣布，我们刚刚发布了Kotlin 1.0.5，它继续了Kotlin 1.0的一系列错误修复和工具更新。
-我们要感谢我们的外部贡献者，他们的推荐要求包括在这个版本中：Kirill Rakhman，Vladislav Golub，Vsevolod Tolstopyatov，Yoshinori Isogai，takahirom和gitreelike。感谢所有尝试EAP构建的人，并向我们发送反馈意见！
-发行版中的更改的完整列表可以在更改日志中找到。值得强调的一些变化是：
+我们很高兴地宣布，我们刚刚发布了Kotlin 1.0.5 </ b>，它继续了Kotlin 1.0的一系列错误修复和工具更新。
+我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [基拉里·拉赫曼](https://github.com/cypressious) ， [弗拉季斯拉夫·戈卢布](https://github.com/ensirius) ， [Vsevolod Tolstopyatov](https://github.com/qwwdfsad) ， [Yoshinori Isogai](https://github.com/shiraji) ， [takahirom](https://github.com/takahirom)  和 [gitreelike](https://github.com/gitreelike) 。感谢所有尝试EAP构建的人，并向我们发送反馈意见！
+发布中的完整更改列表可以在 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) 。值得强调的一些变化是：
 ### 循环到λ转换
 
-IntelliJ IDEA插件现在可以检测许多情况，其中命令式循环可以使用标准库函数（如过滤器和映射）以更紧凑和惯用的方式进行重写。作为一个简单的例子，下面的代码段：
+IntelliJ IDEA插件现在可以检测许多情况，其中</ code>循环的命令式<code>可以使用标准库函数（例如<code> filter </ code>和<code> map < / code>。作为一个简单的例子，下面的代码段：
 
 {% raw %}
 <p></p>
@@ -52,10 +52,11 @@ val result = list.filter { it.isNotEmpty() }
 <p></p>
 {% endraw %}
 
-要触发转换，将插入符号放在for关键字上，然后按Alt-Enter。
+要触发转换，将插入符号放在</ code>关键字的<code>上，然后按<kbd> Alt-Enter </ kbd>。<br/>
+<span id =“more-4350”> </ span>
 ### 后缀代码完成
 
-IntelliJ IDEA的后缀代码完成现在支持Kotlin，其中包含大量模板。请注意，该功能取决于IntelliJ IDEA 2016.2中进行的平台更改，因此在Android Studio 2.2中不可用;它将基于较新的IntelliJ Platform版本在较新版本的Android Studio中得到支持。
+IntelliJ IDEA的 [后缀代码完成](https://blog.jetbrains.com/idea/2014/03/postfix-completion/)  现在支持Kotlin，拥有大量模板。请注意，该功能取决于IntelliJ IDEA 2016.2中进行的平台更改，因此在Android Studio 2.2中不可用;它将基于较新的IntelliJ Platform版本在较新版本的Android Studio中得到支持。
 
 {% raw %}
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2016/11/1.0.5-postfixCompletion.png?ssl=1" rel="attachment wp-att-4358"><img alt="1-0-5-postfixcompletion" class="alignnone size-full wp-image-4358" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2016/11/1.0.5-postfixCompletion.png?resize=640%2C465&amp;ssl=1"/></a></p>
@@ -87,5 +88,5 @@ Kotlin 1.0.5为JavaScript后端添加了两个主要的新功能：
 ### 如何更新
 
 要更新插件，请使用工具| Kotlin |配置Kotlin插件更新，然后按“检查更新现在”按钮。另外，别忘了在Maven和Gradle构建脚本中更新编译器和标准库版本。
-像往常一样，如果您遇到新版本的任何问题，欢迎您在论坛上，Slack（在这里获得邀请）或在问题跟踪器中报告问题，寻求帮助。
+像往常一样，如果您遇到新版本的任何问题，欢迎您提供帮助 [论坛](https://discuss.kotlinlang.org/) ，在Slack（获得邀请） [这里](http://kotlinslackin.herokuapp.com/) ），或报告中的问题 [问题追踪器](https://youtrack.jetbrains.com/issues/KT) 。
 让我们来吧！

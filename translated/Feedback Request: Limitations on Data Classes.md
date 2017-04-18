@@ -1,5 +1,5 @@
 ---
-title: [译]Feedback Request: Limitations on Data Classes
+title: "[译]Feedback Request: Limitations on Data Classes"
 date: 2015-09-09 16:26:00
 author: Andrey Breslav
 tags:
@@ -13,10 +13,10 @@ source_url: https://blog.jetbrains.com/kotlin/2015/09/feedback-request-limitatio
 ---
 
 M13即将到来，我们计划稍后一点。这是对Kotlin未来变化的反馈请求。
-我们希望比以后提供Kotlin 1.0，这使我们推迟了一些我们没有足够的信心的设计选择。今天我们讨论数据类。
+我们希望比以后提供Kotlin 1.0，这使我们推迟了一些我们没有足够的信心的设计选择。今天我们讨论<em>数据类</ em>。<span id =“more-2472”> </ span>
 ## 介绍
 
-当简单地存储数据时，数据类的概念被证明是非常有用的。所有你需要的是说：
+的概念 [数据类](http://kotlinlang.org/docs/reference/data-classes.html)  当简单地存储数据时，已被证明非常有用。所有你需要的是说：
 
 {% raw %}
 <p></p>
@@ -31,7 +31,7 @@ data class Foo(val a: A, val b: B)
 <p></p>
 {% endraw %}
 
-你可以免费获得equals（）/ hashCode（），toString（），copy（）和组件函数。
+并且您可以免费获得<code> equals（）/ hashCode（）</ code>，<code> toString（）</ code>，<code> copy（）</ code>和组件函数。
 最常见的用例类似于魅力，但数据类与其他语言功能的交互可能会导致令人惊讶的结果。
 ## 问题
 
@@ -52,13 +52,13 @@ data class Derived(a: A, b: B, val c: C) : Base(a, b)
 <p></p>
 {% endraw %}
 
-现在，在Derived中equals（）或copy（）如何工作？所有众所周知的问题立即出现：
+现在，<code> equals（）</ code>或<code> copy（）</ code>在<code> Derived </ code>中的工作如何？所有众所周知的问题立即出现：
 
 * 如果一个Base的实例等于Derived的实例，如果它们对于a和b具有相同的值？
 * 等于（）的传递性怎么样？
 * 如果我通过Base类型的引用复制Derived的实例？
 
-那么能够实现多重声明的组件函数呢？在这种基本情况下，c简单地成为派生的第三个组成部分似乎或多或少是合乎逻辑的：
+以及组件功能如何启用 [多重声明](http://kotlinlang.org/docs/reference/multi-declarations.html) ？在这种基本情况下，<code> c </ code>简单地成为<code> Derived </ code> <strong>中的第三个组件似乎或多或少是逻辑的：
 
 {% raw %}
 <p></p>
@@ -88,7 +88,7 @@ data class Derived(b: B, a: A, val c: C) : Base(a, b)
 <p></p>
 {% endraw %}
 
-请注意，参数顺序相反：第一个b，比a。现在还不清楚。而且可能会变得更糟：
+请注意，参数顺序相反：first <code> b </ code>，比<code> a </ code>。现在还不清楚。而且可能会变得更糟：
 
 {% raw %}
 <p></p>
@@ -103,7 +103,7 @@ data class Derived(val c: C, b: B, a: A) : Base(a, b)
 <p></p>
 {% endraw %}
 
-现在c先来，继承的component1（）：A只是一个冲突，它不是一个覆盖，但是这样的重载也不合法。
+现在，第一个<code> c </ code>，继承的<code> component1（）：A </ code>只是一个冲突，它不是一个覆盖，但是这样的重载也不合法。
 这些只是一些例子，还有更多的问题，大小。
 ## 我们的策略
 
@@ -128,7 +128,7 @@ data class Derived(val c: C, b: B, a: A) : Base(a, b)
 再次，这个清单中的一些限制可能会稍后解决，但现在我们不想处理这些情况。
 ## 附录。比较数组
 
-这是JVM上长期以来众所周知的问题：equals（）对数组和集合有不同的作用。集合在结构上进行比较，而数组不是，equals（）只是简单地引用相等：this === other。
+这是JVM上一个长期以来的众所周知的问题：<code> equals（）</ code>对于数组和集合的工作方式不同。集合在结构上进行了比较，而数组不是，<code> equals（）</ code>对于他们来说只是采用参考平等：<code> this === other </ code>。
 目前，Kotlin数据类在这个问题上表现不好：
 
 * 如果你声明一个组件是一个数组，它将在结构上进行比较，
@@ -146,8 +146,8 @@ data class Derived(val c: C, b: B, a: A) : Base(a, b)
 * DataClass（arr1）== DataClass（arr2）
 * 或沿着这些线路的其他任何东西，
 
-你可以通过equals（）来比较数组，即循环。
-我们很乐意解决与集合不一致的问题，但是唯一理智的方法就是将它固定在Java中，这超出了任何人的力量，AFAIK
+你可以通过<code> equals（）</ code>来比较数组，也就是说。
+我们很乐意解决与集合不一致的问题，但唯一平凡的修复方式似乎是将它固定在Java中，这超出了任何人的力量，AFAIK <img alt =“:)”class =“wp-smiley” data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl= 1“style =”height：1em; max-height：1em;“/>
 ## 征求反馈意见
 
 请分享您对建议变更的意见。我们或多或少对数组有所了解，对数据类的限制也很有信心，但是对于更广泛的用例来说，总是一个好主意。

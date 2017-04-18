@@ -1,5 +1,5 @@
 ---
-title: Kotlin 1.0 Release Candidate is Out!
+title: "Kotlin 1.0 Release Candidate is Out!"
 date: 2016-02-04 18:39:00
 author: Andrey Breslav
 tags:
@@ -13,14 +13,14 @@ source_url: https://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-release-candida
 ---
 
 Finally, Kotlin has graduated the Beta and we are happy to present the Release Candidate Build!
-NOTE: as we announced earlier, RC requires all code to be recompiled to make sure no code compiled with older versions is kept around (please recompile even if you were on the EAP version!).
-This blog post gives an overview of the changes made since Beta 4. Library changes are the biggest in this build. Also, some bugs have been fixed. Full list of changes is available here.
+<strong>NOTE</strong>: as we  [announced earlier](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) , <strong>RC requires all code to be recompiled</strong> to make sure no code compiled with older versions is kept around (please recompile even if you were on the EAP version!).
+This blog post gives an overview of the changes made since Beta 4. Library changes are the biggest in this build. Also, some bugs have been fixed. Full list of changes is available  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 
 {% raw %}
 <p><img alt="Kotlin 1.0 RC" class="alignnone size-full wp-image-3485" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/02/RC-Banner.png?resize=640%2C330&amp;ssl=1"/></p>
 {% endraw %}
 
-See the discussions on Hacker News and Reddit.
+<em>See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a></em>.
 
 {% raw %}
 <p><span id="more-3453"></span></p>
@@ -33,10 +33,10 @@ First of all, as promised before, there has been a clean-up:
 * All previously deprecated language constructs are now errors, not warnings.
 * All deprecated declarations previously generated in the byte code (such as static fields in interfaces etc) have been removed.
 
-Most other language changes are minor tweaks and bug fixes. Some highlights are given below. See the full list here.
+Most other language changes are minor tweaks and bug fixes. Some highlights are given below. See the full list  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 ### Annotations on delegate fields
 
-The new @delegate: annotation target (use-site) is now supported. For example, to mark the delegate object as @Transient, we can say:
+The new <code>@delegate:</code> annotation target (use-site) is now supported. For example, to mark the delegate object as <code>@Transient</code>, we can say:
 
 {% raw %}
 <p></p>
@@ -57,7 +57,8 @@ class Example {
 In the byte code, the field holding the delegate will be annotated.
 ### Type checking for use-site variance
 
-We have fixed a number of annoying bugs connected with use-site variance (type projections). As a result, the compiler may find some previously missed bugs in your code.
+We have fixed a number of annoying bugs connected with use-site variance (type projections). As a result, the compiler may find some previously missed bugs in your code.<br/>
+
 For example, in the following case:
 
 {% raw %}
@@ -98,9 +99,14 @@ Some improvements to synthesized properties derived from Java’s get/set pairs:
 * such declarations (as well as SAM-converted methods) are now resolved on par with members;
 * support added for Java setters that return values.
 
-Support added for @Nullable/@NotNull annotations from various popular libraries such as javax.annotations, Android SDK, etc.
+Support added for <code>@Nullable/@NotNull</code> annotations from various popular libraries such as <code>javax.annotations</code>, Android SDK, etc.<br/>
+
 EAP users report:
-Android annotations being recognized broke a lot of my code in a good way
+<p>
+
+  Android annotations being recognized broke a lot of my code in a good way
+
+</p>
 And highlighted bug fixes:
 
 * Private top-level Kotlin classes are now compiled to package-private Java classes
@@ -119,7 +125,7 @@ And highlighted bug fixes:
 * associate and associateBy are added to aid construction of maps (instead of toMap/toMapBy)
 * Comparator- and comparison-related functions are moved to kotlin.comparisons package (not imported by default)
 
-More changes here
+More changes  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 
 ## Tooling
 
 To enable Android Extensions in Gradle in a more idiomatic way, we now say:
@@ -137,7 +143,7 @@ apply plugin: 'kotlin-android-extensions'
 <p></p>
 {% endraw %}
 
-in the build.gradle file (individually for each project).
+in the <code>build.gradle</code> file (individually for each project).
 The old way doesn’t work any more and prints fixing instructions to the output.
 ## IDE Changes
 
@@ -164,5 +170,5 @@ For the users of IntelliJ IDEA, automatic updates may not work in the IDE, so yo
 Sorry for the inconvenience.
 ## Stay tuned
 
-The final release is approaching, meanwhile — have a nice Kotlin!
-P.S. See the discussions on Hacker News and Reddit.
+The final release is approaching, meanwhile — have a nice Kotlin! <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+<em>P.S. See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a></em>.

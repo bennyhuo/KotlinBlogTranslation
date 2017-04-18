@@ -1,5 +1,5 @@
 ---
-title: Kotlin Night in London Recordings
+title: "Kotlin Night in London Recordings"
 date: 2016-11-15 14:44:00
 author: Robert Demmer
 tags:
@@ -18,7 +18,8 @@ Kotlin Night in London took place October 12th, 2016 in collaboration with Trifo
 <p><span id="more-4337"></span></p>
 {% endraw %}
 
-## Intro Talk
+## <strong>Intro Talk</strong><br/>
+
 Hadi Hariri, JetBrains
 
 
@@ -26,7 +27,8 @@ Hadi Hariri, JetBrains
 <p><iframe allowfullscreen="" frameborder="0" height="450" src="https://www.youtube.com/embed/TMZD1GxAC8E" width="800"></iframe></p>
 {% endraw %}
 
-## 10 Things I’m loving about Kotlin.
+## <strong>10 Things I’m loving about Kotlin.</strong><br/>
+
 Graham Tackley, Kaleida
 
 
@@ -35,7 +37,8 @@ Graham Tackley, Kaleida
 {% endraw %}
 
 Through lots of real-world code examples, this practical whistle-stop tour will show the 10 things that make us love our decision to use Kotlin to implement our backend.
-## Expressive Kotlin – Communicating Through Code.
+## <strong>Expressive Kotlin – Communicating Through Code.</strong><br/>
+
 Duncan McGregor and Nat Pryce, Springer Nature
 
 
@@ -44,7 +47,8 @@ Duncan McGregor and Nat Pryce, Springer Nature
 {% endraw %}
 
 Springer Nature adopted Kotlin for some projects in October 2015, and have been running in production since March. We’ve found the language to be easy to learn, enjoyable to write, and very expressive. In this talk Duncan will mine our Kotlin code for examples of using language features to communicate intent. Using these techniques, developers can spend less time trying to understand what code does, and achieve more in fewer lines of code.
-## Enums on Steroids: Using Sealed Classes to Build the Kotlin Concursus API.
+## <strong>Enums on Steroids: Using Sealed Classes to Build the Kotlin Concursus API.</strong><br/>
+
 Dominic Fox, OpenCredo
 
 
