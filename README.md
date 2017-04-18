@@ -5,6 +5,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 标题 | 发表时间 | 译文地址 | 译者
 ---|---|---|---
+[Use Kotlin with npm, webpack and react](original/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) |2017-04-18 15:23:00| [译文](translated/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md)| |
 [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) |2017-04-06 23:21:00| [译文](translated/Kotlin%201.1%20Event%20Report.md)| |
 [Kotlin 1.1 is also for Android Developers](original/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) |2017-04-05 16:13:00| [译文](translated/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md)| |
 [Kotlin_Native Tech Preview: Kotlin without a VM](original/Kotlin_Native%20Tech%20Preview%3A%20Kotlin%20without%20a%20VM.md) |2017-04-04 14:42:00| [译文](translated/Kotlin_Native%20Tech%20Preview%3A%20Kotlin%20without%20a%20VM.md)| |
@@ -48,6 +49,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 [Kotlin Digest 2015](original/Kotlin%20Digest%202015.md) |2016-01-19 15:53:00| [译文](translated/Kotlin%20Digest%202015.md)| |
 [Kotlin 1.0 Beta 4 is Out!](original/Kotlin%201.0%20Beta%204%20is%20Out%21.md) |2015-12-22 22:25:00| [译文](translated/Kotlin%201.0%20Beta%204%20is%20Out%21.md)| |
 [Learn Kotlin with “Advent of Code”](original/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) |2015-12-18 22:08:00| [译文](translated/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md)| |
+[Kotlin 1.0 Beta 3 is Out!](original/Kotlin%201.0%20Beta%203%20is%20Out%21.md) |2015-12-07 15:45:00| [译文](translated/Kotlin%201.0%20Beta%203%20is%20Out%21.md)| |
 [Kotlin Eclipse Plugin 0.5.0](original/Kotlin%20Eclipse%20Plugin%200.5.0.md) |2015-12-01 15:57:00| [译文](translated/Kotlin%20Eclipse%20Plugin%200.5.0.md)| |
 [Contest: Go Cross-Platform with Kotlin!](original/Contest%3A%20Go%20Cross-Platform%20with%20Kotlin%21.md) |2015-11-25 18:17:00| [译文](translated/Contest%3A%20Go%20Cross-Platform%20with%20Kotlin%21.md)| |
 [Kotlin 1.0 Beta 2 is Out!](original/Kotlin%201.0%20Beta%202%20is%20Out%21.md) |2015-11-16 21:01:00| [译文](translated/Kotlin%201.0%20Beta%202%20is%20Out%21.md)| |
