@@ -155,7 +155,7 @@ fun count() : Int {
 
 ## 可空性
 
-科特林现在认识到了 [@Nullable和@NotNull注释](http://www.jetbrains.com/idea/documentation/howto.html) ）。如果Java代码说：
+Kotlin现在认识到了 [@Nullable和@NotNull注释](http://www.jetbrains.com/idea/documentation/howto.html) ）。如果Java代码说：
 
 {% raw %}
 <p></p>

@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/01/kotlin-digest-2015/
 ---
 
-科特林的采用在2015年大大增加，我们特别感谢我们的早期采用者，他们不仅使用科特林，而且通过不同的媒介分享他们的经验。我们想强调过去一年中最引人注目的文章和视频。
+Kotlin的采用在2015年大大增加，我们特别感谢我们的早期采用者，他们不仅使用Kotlin，而且通过不同的媒介分享他们的经验。我们想强调过去一年中最引人注目的文章和视频。
 顺便说一下，你可以 [加入我们的松弛](http://kotlinslackin.herokuapp.com/)  并订阅<em> #feed </ em>频道，在那里我们推出了很多有趣的内容。
 
 {% raw %}
@@ -40,7 +40,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/01/kotlin-digest-2015/
 
 * 史诗由杰克·沃顿（Jake Wharton）阅读：“使用Project Kotlin for Android”
 * Android开发者简介Kotlin和Antonio Leiva的全书
-* 还要了解安东尼奥将格子应用程序转换为科特林的经验：第1部分，第2部分
+* 还要了解安东尼奥将格子应用程序转换为Kotlin的经验：第1部分，第2部分
 * 通过Aldo Ziflaj的Kotlin简化Android Java代码
 * 镜子和科林林林烨
 
@@ -49,13 +49,13 @@ source_url: https://blog.jetbrains.com/kotlin/2016/01/kotlin-digest-2015/
 
 * 一些标准功能的大概概述：Cedric Beust探索Kotlin标准库
 * 还要了解关于Cedric开发的Kobalt  - 全面写入Kotlin的新建系统：第1部分，第2部分，第3部分，第4部分
-* 你熟悉类星体吗？一个提供高性能轻量级线程，Go-like频道，Erlang类演员和其他异步编程工具的库。类星体和科特林 - 强大的比赛，还参见了Fabio Tudone的我们的网络研讨会的录音
+* 你熟悉类星体吗？一个提供高性能轻量级线程，Go-like频道，Erlang类演员和其他异步编程工具的库。类星体和Kotlin - 强大的比赛，还参见了Fabio Tudone的我们的网络研讨会的录音
 * Spark是一种用于以最小的努力在Java 8中创建Web应用程序的小框架。阅读关于在JVM上构建API使用Kotlin和Spark：第1部分，第2部分由Travis Spencer
 * Kotlin为Joseph Hager的跨平台移动应用开发
 
 ## 前5名活动录音
 
-2015年，有超过50场有关科特林的谈话和聚会。我们尝试跟踪所有事件（所有可用的幻灯片和录音） [Kotlin活动页面](https://kotlinlang.org/docs/events.html) 。也是即将到来的活动的日历。看一看！
+2015年，有超过50场有关Kotlin的谈话和聚会。我们尝试跟踪所有事件（所有可用的幻灯片和录音） [Kotlin活动页面](https://kotlinlang.org/docs/events.html) 。也是即将到来的活动的日历。看一看！
 
 * 推动Android开发与Kotlin语言由杰克·沃顿
 

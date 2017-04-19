@@ -28,7 +28,7 @@ Kotlin 1.0.2引入了针对Kotlin代码的<b> Android Lint检查</ b>的支持�
 Kotlin 1.0.2支持的检查对应于Android Studio 1.5支持的检查;在下一个版本的Kotlin将支持在Android Studio 2.0中添加或改进的支票。此外，当前版本仅在IDE内运行Lint检查Kotlin代码（作为即时代码检查的一部分，或通过Analyze | Inspect Code在批处理模式下）。在下一个版本中将支持从命令行运行检查。
 ### 紧凑型标准库
 
-与Android开发人员相关的其他一些改进是标准库的大小已经减少了约1500种方法（从大约6600到5100）。即使在这个变化之前，图书馆也是 [小于科特林的主要竞争对手](https://github.com/SidneyXu/AndroidDemoIn4Languages) 现在情况更好了。当然，图书馆仍然是完全二进制兼容的。
+与Android开发人员相关的其他一些改进是标准库的大小已经减少了约1500种方法（从大约6600到5100）。即使在这个变化之前，图书馆也是 [小于Kotlin的主要竞争对手](https://github.com/SidneyXu/AndroidDemoIn4Languages) 现在情况更好了。当然，图书馆仍然是完全二进制兼容的。
 ### Java 7/8支持库
 
 作为在Kotlin 1.1中引入完全支持之前的更好的Java 7/8支持的临时解决方法，我们现在提供支持库，将Java 7和8（例如Stream API）中添加的API作为Kotlin标准的扩展功能图书馆类。见 [论坛帖子](https://discuss.kotlinlang.org/t/jdk7-8-features-in-kotlin-1-0/1625)  有关使用库的说明。

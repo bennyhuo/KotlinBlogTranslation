@@ -418,7 +418,7 @@ JavaScript后端正赶上JVM。 M12增加了支持
 用于Android的Kotlin Gradle插件现在支持JUnit测试。我们需要做的就是遵循 [Java的标准过程](http://tools.android.com/tech-docs/unit-testing-support#TOC-Setting-up-Android-Studio) ，但现在我们可以在Kotlin写我们的测试。
 ### 类星体支持
 
-科特林最近的一些变化使我们的生态系统得到了很大的发展：现在 [类星体](http://docs.paralleluniverse.co/quasar/)  提供光纤（轻量级线程），Go-like频道，Erlang类演员和其他异步工具Kotlin！见公告 [这里](http://blog.paralleluniverse.co/2015/05/29/quasar-pulsar-0-7-0/) 。
+Kotlin最近的一些变化使我们的生态系统得到了很大的发展：现在 [类星体](http://docs.paralleluniverse.co/quasar/)  提供光纤（轻量级线程），Go-like频道，Erlang类演员和其他异步工具Kotlin！见公告 [这里](http://blog.paralleluniverse.co/2015/05/29/quasar-pulsar-0-7-0/) 。
 ## 标准API已更改
 
 M12为标准库添加了新功能：

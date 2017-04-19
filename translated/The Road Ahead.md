@@ -14,7 +14,7 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
 
 众所周知，我们上周推出了我们的第一个公开发布： [kotlin-demo.jetbrains.com](http://kotlin-demo.jetbrains.com/) 。而当您（7K +独特访问者）正在玩乐时，我们将继续致力于Kotlin编译器，IDE和标准库。在这篇文章中，我将概述我们的计划。 <span id =“more-365”> </ span> <strong> </ strong>
 <strong>您今天可以玩的</ strong>
-今天你可以已经 [尝试](http://kotlin-demo.jetbrains.com/)  科特林的许多功能。其中包括：
+今天你可以已经 [尝试](http://kotlin-demo.jetbrains.com/)  Kotlin的许多功能。其中包括：
 
 * 功能文字（封闭）
 * 扩展功能和属性
@@ -53,4 +53,4 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
 * LLVM后端：将Kotlin编译成本机代码...
 
 即使没有这些东西，你可以有很多的乐趣。尝试使用<strong>扩展功能</ strong>和<strong>关闭</ strong>，<strong> traits </ strong>和<strong>字符串模板</ strong>等等。解决问题（随着时间的推移我们会加入更多）。
- [有一个漂亮的科特林](http://kotlin-demo.jetbrains.com/) ！
+ [有一个漂亮的Kotlin](http://kotlin-demo.jetbrains.com/) ！

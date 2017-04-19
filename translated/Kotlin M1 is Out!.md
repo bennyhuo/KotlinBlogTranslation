@@ -27,7 +27,7 @@ Kotlin毕业于官方插件库！
 见 [入门指南](http://confluence.jetbrains.net/display/Kotlin/Getting+Started)  详细信息。
 ## 标准库
 
-科特林的 [标准库](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html)  提供了许多有用的功能，包括现有Java API的增强功能。例如，<span id =“more-514”> </ span>可以使用集合中的map（）/ filter（）/ etc进行批量数据处理：
+Kotlin的 [标准库](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html)  提供了许多有用的功能，包括现有Java API的增强功能。例如，<span id =“more-514”> </ span>可以使用集合中的map（）/ filter（）/ etc进行批量数据处理：
 
 {% raw %}
 <p></p>
@@ -75,7 +75,7 @@ myReentrantLock.read {
 ## 构建工具
 
 我们已经大大改善了Kotlin的Maven Integration。
-首先，科特林的魔法文物现在已经发表了 [repository.jetbrains.com](http://repository.jetbrains.com/) 。<BR/>
+首先，Kotlin的魔法文物现在已经发表了 [repository.jetbrains.com](http://repository.jetbrains.com/) 。<BR/>
 查找构建Kotlin项目以及混合Java / Kotlin代码的说明 [这里](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Maven) 。
 您仍然可以使用Kotlin [蚂蚁](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Ant)  和 [格里芬](https://github.com/griffon/griffon-kotlin-plugin) ， 当然。
 ## 什么是新的

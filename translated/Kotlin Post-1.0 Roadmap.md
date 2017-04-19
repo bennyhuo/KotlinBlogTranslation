@@ -68,4 +68,4 @@ fun foo（）{val x by lazy {...}}
 Android路线图文章已经提到了我们计划在我们的工具中进行的一些改进，例如支持使用Gradle增量编译和支持Android Lint检查。这两个功能都已经在Kotlin 1.0.2 EAP中可用，并且稍后会进一步改进。
 ## 概要
 
-正如你所看到的，有很多令人兴奋的事情来了，有很多机会参与。停止我们 [闲聊聊天](http://kotlinslackin.herokuapp.com/) 试试看 [EAP构建](https://discuss.kotlinlang.org/c/eap) ，文件 [问题](http://youtrack.jetbrains.com/issues/KT)   - 科特林的未来取决于你，我们的用户，我们总是乐意听到你必须说的话。
+正如你所看到的，有很多令人兴奋的事情来了，有很多机会参与。停止我们 [闲聊聊天](http://kotlinslackin.herokuapp.com/) 试试看 [EAP构建](https://discuss.kotlinlang.org/c/eap) ，文件 [问题](http://youtrack.jetbrains.com/issues/KT)   - Kotlin的未来取决于你，我们的用户，我们总是乐意听到你必须说的话。

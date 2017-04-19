@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/
 ---
 
-一些新闻网站告诉你 [科特林](http://kotlin.jetbrains.org)  M2本周早些时候出来。那么现在我们让它成真了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“
+一些新闻网站告诉你 [Kotlin](http://kotlin.jetbrains.org)  M2本周早些时候出来。那么现在我们让它成真了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“
 在里面 [M2候选人](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/)  我告诉过你 [JavaScript](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#js)  和 [Android](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#android)  支持，以及新的 [语言特点](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) 。现在是更多更新，示例和计划的时候了。
 继续 [Kotlin M2安装说明](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/#install) 。
 ## 更多关于语言

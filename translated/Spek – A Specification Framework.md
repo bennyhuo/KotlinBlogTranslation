@@ -34,9 +34,9 @@ Spek是一个规范框架。如果您熟悉茉莉花，摩卡，RSpec或机器�
 * 它 - 验证结果，即Assert
 
 Spek允许您在相同的上下文中拥有多个动作。这是针对相同的<em> </ em>，您可以拥有多个<em>的<em>。它也允许你对同一个动作有更多的断言（<em>它）</ em>。
-## 斯派克不仅仅是科特林
+## 斯派克不仅仅是Kotlin
 
-斯派克写在科特林。您写的规格也将在Kotlin。但是，由于Kotlin与Java完全兼容，您可以使用Spek测试新的和现有的Java代码。
+斯派克写在Kotlin。您写的规格也将在Kotlin。但是，由于Kotlin与Java完全兼容，您可以使用Spek测试新的和现有的Java代码。
 ## 如何运行？
 
 IntelliJ IDEA支持Spek，TeamCity也是如此。还有一个控制台运行器，输出文本和HTML（需要改进）。

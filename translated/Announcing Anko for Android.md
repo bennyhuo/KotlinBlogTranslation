@@ -56,7 +56,7 @@ class MainActivity : Activity() {
 <p><span id="more-1999"></span></p>
 {% endraw %}
 
-安科广泛使用科特林 [扩展功能和属性](http://kotlinlang.org/docs/reference/extensions.html)  安排进去 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html)  来描述用户界面。作为回报，我们在编译时得到简洁和类型安全。
+安科广泛使用Kotlin [扩展功能和属性](http://kotlinlang.org/docs/reference/extensions.html)  安排进去 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html)  来描述用户界面。作为回报，我们在编译时得到简洁和类型安全。
 当然，我们还可以在设计时使用Anko Preview插件来查看预览，这些插件适用于IntelliJ IDEA和Android Studio：
 
 {% raw %}

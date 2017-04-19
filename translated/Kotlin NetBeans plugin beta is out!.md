@@ -273,7 +273,7 @@ Java互操作性
 
 ### 导航
 
-从科特林到科特林：
+从Kotlin到Kotlin：
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/09/navigationK2K.png?ssl=1" rel="attachment wp-att-4266"><img alt="navigationk2k" class="alignnone size-full wp-image-4266" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/09/navigationK2K.png?resize=640%2C160&amp;ssl=1"/></a></p>

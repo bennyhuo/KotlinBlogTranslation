@@ -152,8 +152,8 @@ fun test() {
 <p></p>
 {% endraw %}
 
-有人可能认为在这个例子中，dot（）被调用三次：一个用于“ab”，参数BOTTOM，然后是“1..2”两次：首先用LEFT，然后用RIGHT（这些不是两个BOTTOM ，因为“..”是一个单一的 [令牌](http://en.wikipedia.org/wiki/Token_(parser)#Token)  在科特林），但事实上它被称为四次，第四次（实际上是第一次）与TOP作为参数。
-我相信你已经明白了为什么：在科特林，我们永远不会忘记点点我的，这个点也是如此;其立场显然是TOP（我们可以单独介绍） [滴滴](http://en.wikipedia.org/wiki/Tittle) （）函数，但是我们发现它太不方便了）。在j的计数以上也是一样，点数也相同！ ？等等
+有人可能认为在这个例子中，dot（）被调用三次：一个用于“ab”，参数BOTTOM，然后是“1..2”两次：首先用LEFT，然后用RIGHT（这些不是两个BOTTOM ，因为“..”是一个单一的 [令牌](http://en.wikipedia.org/wiki/Token_(parser)#Token)  在Kotlin），但事实上它被称为四次，第四次（实际上是第一次）与TOP作为参数。
+我相信你已经明白了为什么：在Kotlin，我们永远不会忘记点点我的，这个点也是如此;其立场显然是TOP（我们可以单独介绍） [滴滴](http://en.wikipedia.org/wiki/Tittle) （）函数，但是我们发现它太不方便了）。在j的计数以上也是一样，点数也相同！ ？等等
 # 点的深度
 
 你可能会想知道如果定义了这样的点（），会发生什么：

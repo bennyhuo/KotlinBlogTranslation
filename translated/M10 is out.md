@@ -67,7 +67,7 @@ myTree.findParentOfType<MyTreeNodeType>()
 {% endraw %}
 
 但是，我们需要使用<em>的泛化泛型</ em>来访问一个函数中的类型，而在JVM上，通用的泛型是昂贵的...
-幸运的是，科特林有 [内联函数](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) 现在他们支持<strong> reified </ strong>类型参数，所以我们可以这样写：
+幸运的是，Kotlin有 [内联函数](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) 现在他们支持<strong> reified </ strong>类型参数，所以我们可以这样写：
 
 {% raw %}
 <p></p>
@@ -110,7 +110,7 @@ fun main(s: Array<String>) {
 此功能旨在简化传统上依赖于反思的框架中的代码，我们的内部实验表明它的工作正常。
 ### 检查申报地点差异
 
-科特林有 [申报地点差异](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  从一开始，但编译器长时间缺少通讯员检查。现在他们放在他们的位置：编译器抱怨如果我们在</ strong>或<strong> out </ strong>中声明一个类型参数为<strong>，但在类体中滥用它：
+Kotlin有 [申报地点差异](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  从一开始，但编译器长时间缺少通讯员检查。现在他们放在他们的位置：编译器抱怨如果我们在</ strong>或<strong> out </ strong>中声明一个类型参数为<strong>，但在类体中滥用它：
 
 {% raw %}
 <p></p>

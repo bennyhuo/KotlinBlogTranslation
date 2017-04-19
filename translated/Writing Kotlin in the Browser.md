@@ -15,7 +15,7 @@ source_url: https://blog.jetbrains.com/kotlin/2013/10/writing-kotlin-in-the-brow
 你知道Kotlin可以定位到JavaScript和JVM吗？不要太惊讶，如果你不知道，因为我们没有给它太多的覆盖，尽管已经发货了 [成功的产品](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/)  使用这种功能。但是，这是希望改变的。<span id =“more-1330”> </ span>
 # 基础 - 一个简单的项目
 
-第一步是建立一个新项目。在项目中使用Kotlin时，我们有能力定位到JVM或JavaScript。如果我们在现有项目中添加新的Kotlin文件， [科特林会提示我们这样做](http://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/) 。如果我们开始一个新项目，我们可以在设置向导中选择目标，假设我们使用IntelliJ IDEA。
+第一步是建立一个新项目。在项目中使用Kotlin时，我们有能力定位到JVM或JavaScript。如果我们在现有项目中添加新的Kotlin文件， [Kotlin会提示我们这样做](http://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/) 。如果我们开始一个新项目，我们可以在设置向导中选择目标，假设我们使用IntelliJ IDEA。
 
 {% raw %}
 <p><img alt="image" border="0" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2013/10/image.png?resize=610%2C499&amp;ssl=1" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;"/></p>
@@ -93,5 +93,5 @@ Kotlin提供了一系列专门针对网络的图书馆。在我们的例子中�
 <strong> <span style =“color：＃000000;”> <em> *此API不是最终的，将来很可能会发生变化，可能会更加紧凑。</ em> </ span> / strong>
 # 下一步
 
-这不是所有可能与科特林。我们没有提到的一件事是能够从Kotlin内部调用JavaScript代码，这是我们将在另一个帖子中覆盖的东西，因为这个已经变得太久了！
+这不是所有可能与Kotlin。我们没有提到的一件事是能够从Kotlin内部调用JavaScript代码，这是我们将在另一个帖子中覆盖的东西，因为这个已经变得太久了！
 如果你想玩Kotlin到JavaScript，而不必安装任何东西，你也可以直接尝试 [浏览器](http://kotlin-demo.jetbrains.com) 。和往常一样，给我们您的反馈！

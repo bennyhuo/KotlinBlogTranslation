@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/
 ---
 
-与JVM 100％可互操作，随后使用JavaScript，一直是科特林的首要任务。随着现有代码的数量和丰富的JVM生态系统，具有互操作性和有效性的功能至关重要。<span id =“more-1616”> </ span>
+与JVM 100％可互操作，随后使用JavaScript，一直是Kotlin的首要任务。随着现有代码的数量和丰富的JVM生态系统，具有互操作性和有效性的功能至关重要。<span id =“more-1616”> </ span>
 随着即将发布的M9，我们已经改进了这一点，使集成更加无缝。
 ## 平台类型
 
@@ -77,7 +77,7 @@ public interface SomeFoo {
 <p></p>
 {% endraw %}
 
-当在科特林实施这个时：
+当在Kotlin实施这个时：
 
 {% raw %}
 <p></p>
@@ -115,7 +115,7 @@ object Foo {
 <p></p>
 {% endraw %}
 
-从科特林消费，将是：
+从Kotlin消费，将是：
 
 {% raw %}
 <p></p>

@@ -139,7 +139,7 @@ class Example(
 <p></p>
 {% endraw %}
 
-<strong>注意：这是一个突破性的变化</ strong>。在M13之前，当我们注释主要构造函数的参数时，在它们存储的参数和字段上注释<strong>都是</ strong>。现在它们只写在以下一个（第一个适用的）之一：参数，属性，领域。即如果注释适用于字段和参数，则只会在参数上写入。这在使用Jackson时会出现一些问题，但有一个简单的解决方法：使用特殊的 [杰克逊模块为科特林](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) 。而旧的方式没有一个。
+<strong>注意：这是一个突破性的变化</ strong>。在M13之前，当我们注释主要构造函数的参数时，在它们存储的参数和字段上注释<strong>都是</ strong>。现在它们只写在以下一个（第一个适用的）之一：参数，属性，领域。即如果注释适用于字段和参数，则只会在参数上写入。这在使用Jackson时会出现一些问题，但有一个简单的解决方法：使用特殊的 [杰克逊模块为Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) 。而旧的方式没有一个。
 查找更多信息 [文件](http://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets) 。
 ### 可见性
 
@@ -150,7 +150,7 @@ class Example(
 * 默认可见性（无修饰符）从内部更改为public，
 * 我们终于启用了拒绝在模块外部使用内部声明的检查。
 
-这可能是有争议的，我们选择<code> public </ code>作为默认可见性。 Kotlin是一种类型安全的语言，选择最安全的选项，默认情况下，<code> private </ code>似乎更合乎逻辑。我们完全认识到有利于这一违约的有效论据。但科特林也是一种务实的语言。我会尽量简单解释为什么我们认为<code> public </ code>是正确的默认值。
+这可能是有争议的，我们选择<code> public </ code>作为默认可见性。 Kotlin是一种类型安全的语言，选择最安全的选项，默认情况下，<code> private </ code>似乎更合乎逻辑。我们完全认识到有利于这一违约的有效论据。但Kotlin也是一种务实的语言。我会尽量简单解释为什么我们认为<code> public </ code>是正确的默认值。
 在真正的Java代码库（公开/私有决策明确地采用）中，<code> public </ code>比<code> private </ code>更频繁地出现（代码库中的2.5到5倍）我们检查过， [其中包括Kotlin编译器和IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ）。这意味着我们会让人们在整个地方写出<code> public </ code>来实现他们的设计，这将使Kotlin更加礼节，我们会失去一些从Java获得的宝贵的成果简洁。在我们的经验中，显式的<code> public </ code>打破了许多DSL的流程，并且常常是主要构造函数。所以我们决定默认使用它来保持我们的代码清洁。
 <strong>注意</ strong>：<code> internal </ code>仍然支持，但现在您需要明确指定。
 ### 杂项变更
@@ -259,7 +259,7 @@ $ kotlinc-jvm -module-name com.example.mymodule
 外部注释也不会被使用，所以我们已经为您提供了很多构建配置。
 ## 图书馆
 
-科特林图书馆也在积极发展。 M13带来全功能的反射库：我们现在可以内省课程，他们的成员，参数等。
+Kotlin图书馆也在积极发展。 M13带来全功能的反射库：我们现在可以内省课程，他们的成员，参数等。
 标准库有很多方便的添加
 
 * +和 - 用于集合和其他集合;

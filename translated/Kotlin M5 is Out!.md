@@ -32,7 +32,7 @@ M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息
 # 内部类
 
 内部类</ em>是一个非静态嵌套类，即它包含对外部实例的引用。在Java中，嵌套类默认是内部的，如果不想对外部引用，那么可以使你的类<strong> static </ strong>。有时它会导致内存泄漏，当有人持有对内部类的实例的引用，而不知道它也包含一个外部实例。
-自M5以来，科特林想要你 [明确标记内部类](http://confluence.jetbrains.com/display/Kotlin/Nested+classes) ，默认情况下嵌套类为“static”。这可能会破坏您现有的代码，在IDE中有一个方便的快速解决方案（只需按下Alt + Enter即可）。
+自M5以来，Kotlin想要你 [明确标记内部类](http://confluence.jetbrains.com/display/Kotlin/Nested+classes) ，默认情况下嵌套类为“static”。这可能会破坏您现有的代码，在IDE中有一个方便的快速解决方案（只需按下Alt + Enter即可）。
 
 {% raw %}
 <p><img alt="" class="aligncenter" data-recalc-dims="1" src="https://i0.wp.com/www.evernote.com/shard/s171/sh/b06bbb46-0577-47f3-a715-f3473e1b4f16/e8cb41d5ccdd6ff192c7647619bf47d5/res/df4fb94b-51ea-4923-8538-ea590dbb5467/Add_inner_modifier-20130204-135715.png.jpg?w=640&amp;ssl=1"/></p>
@@ -62,7 +62,7 @@ Exception in thread "main" java.lang.IllegalStateException:
 这可能比NPE好多了，也许。对功能参数进行同样的检查：如果有人将非法通过空值的Kotlin功能称为非法，那么它会提早爆发，尽可能地责怪有罪。
 # Varargs和函数文字
 
-科特林的 [类型安全的建设者](http://confluence.jetbrains.com/display/Kotlin/Type-safe+Groovy-style+builders)   [是](http://karaframework.com/docs/views.html)   [真棒](http://karaframework.com/docs/stylesheets.html) ，特别是如果你注意到它们不是一个内置机制，而只是一个很好的语言特征（主要是扩展函数和高阶函数）的组合。有一件事是在旧版本的Kotlin中打扰构建器的作者：你不能定义一个可以将函数文字作为括号括起来的参数的vararg函数。现在你可以做到：
+Kotlin的 [类型安全的建设者](http://confluence.jetbrains.com/display/Kotlin/Type-safe+Groovy-style+builders)   [是](http://karaframework.com/docs/views.html)   [真棒](http://karaframework.com/docs/stylesheets.html) ，特别是如果你注意到它们不是一个内置机制，而只是一个很好的语言特征（主要是扩展函数和高阶函数）的组合。有一件事是在旧版本的Kotlin中打扰构建器的作者：你不能定义一个可以将函数文字作为括号括起来的参数的vararg函数。现在你可以做到：
 
 {% raw %}
 <p></p>
@@ -108,7 +108,7 @@ css(TD, body = foo)
 
 # 范围
 
-科特林的标准图书馆也在发展，这次我们修改了范围。要提醒您，范围在循环和条件中使用很多：
+Kotlin的标准图书馆也在发展，这次我们修改了范围。要提醒您，范围在循环和条件中使用很多：
 
 {% raw %}
 <p></p>

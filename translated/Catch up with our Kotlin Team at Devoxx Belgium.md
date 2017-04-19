@@ -13,10 +13,10 @@ source_url: https://blog.jetbrains.com/kotlin/2013/11/catch-up-with-our-kotlin-t
 ---
 
 <img alt =“Devoxx Logo”class =“alignright size-full wp-image-1359”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin /files/2013/11/devoxx_logo.jpg?resize=183%2C75&amp;ssl=1"/> JetBrains和Kotlin团队成员Svetlana Isakova和Aleksei Sedunov 11月11日至15日在售罄 [德比克斯比利时](http://www.devoxx.be/#/)  会议。我们邀请您以<strong>在我们的展位</ strong>停止<strong>即兴演示</ strong>，一些<strong>优质礼品</ strong>，并有机会赢得免费个人许可证< / strong>。
-不要错过以下伟大的科特林事件：
+不要错过以下伟大的Kotlin事件：
 <strong> Hackergarten动手编码</ strong>
 11月12日星期二，阿列克谢将参加Hackergarten动手编码活动。他将让您开始使用Kotlin语言，并将帮助您为Kotlin的IntelliJ IDEA编写一个插件。
- [令人困惑的科特林：使您的代码清晰](http://www.devoxx.be/dv13-svetlana-isakova.html?presId=3575) 
+ [令人困惑的Kotlin：使您的代码清晰](http://www.devoxx.be/dv13-svetlana-isakova.html?presId=3575) 
 
 
 

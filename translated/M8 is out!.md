@@ -76,7 +76,7 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-科特林反思的另一面是它与Java的反思的互操作性。例如，要找到一个支持字段或Java方法作为Kotlin属性的getter，您可以这样说：
+Kotlin反思的另一面是它与Java的反思的互操作性。例如，要找到一个支持字段或Java方法作为Kotlin属性的getter，您可以这样说：
 
 {% raw %}
 <p></p>

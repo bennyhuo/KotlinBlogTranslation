@@ -33,7 +33,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 * Kotlin项目的两个问答首席Andrey Breslav在DZone和InfoQ上
 * Kotlin：Rafal Gancarz应该尝试一种新的JVM语言
 * Kotlin：Eric Kolotyluk编程语言的英和杨
-* 科特林 - 詹姆斯·休斯2年
+* Kotlin - 詹姆斯·休斯2年
 
 # Android
 
@@ -69,7 +69,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 * Kotlin for Java Developers：您将会喜欢Kotlin的10项功能
 * 10个功能我希望Java会从Kotlin语言窃取
 * Kotlin  - 爱在第一线
-* 科特林介绍
+* Kotlin介绍
 * Kotlin，取代了我们所爱的语言
 * Kotlin，有点模糊的现代Android友好的编程语言
 
@@ -77,13 +77,13 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
 
 
 * 非常特别，但可能狡猾的Kotlin语言功能
-* 在科特林解决约瑟夫斯问题和更新
+* 在Kotlin解决约瑟夫斯问题和更新
 * Kotlin：将自定义访问器中的列表轻松存储在SharedPreferences中
 * 使用Kotlin扩展进行Rx-ifying
 * 使用Mockito进行Kotlin单元测试（1 / x）
 * 在Android中使用Kotlin进行测试
 
-# 科特林系列
+# Kotlin系列
 
 
 * 胡安·萨拉维亚（Juan Saravia）在开发Android应用程序时开始了关于学习Kotlin的一系列故事

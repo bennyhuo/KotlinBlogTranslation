@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-night-in-london/
 ---
 
-我们抱着另一个 [科特林之夜](https://info.jetbrains.com/Kotlin-Night-London.html) ，但这次在伦敦。我们汇集了已经和目前正在生产中使用Kotlin的社区成员，来和我们谈谈他们的经验。以及分享一些提示和技巧。
+我们抱着另一个 [Kotlin之夜](https://info.jetbrains.com/Kotlin-Night-London.html) ，但这次在伦敦。我们汇集了已经和目前正在生产中使用Kotlin的社区成员，来和我们谈谈他们的经验。以及分享一些提示和技巧。
 与Trifork和GOTO伦敦2016年合作，我们将在CodeNode会议举行的2016年10月12日<strong>举行这个免费活动。我们会谈话，聊天和喝酒
 
 给定的空间是有限的，我们鼓励你 [注册时间较早，而不是稍后](https://info.jetbrains.com/Kotlin-Night-London.html) ！
