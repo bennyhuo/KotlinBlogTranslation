@@ -12,8 +12,4 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/07/hello-world-2/
 ---
 
-今天在 [JVM语言峰会](http://openjdk.java.net/projects/mlvm/jvmlangsummit/) JetBrains正在推出我们一直在努力的新项目近一年。该项目是Kotlin </ strong>，这是JVM的一种新的静态类型编程语言。
-使用Kotlin，我们正在建立多年为不同语言创建开发工具的经验，希望能为当今的环境提供足够高的语言，同时为普通程序员学习提供简单的语言。
-现在，科特林正处于积极的发展之中，无法接近成熟，足以被开发团队以外的任何人使用。你今天可以做的是阅读 [语言文件](http://confluence.jetbrains.net/display/Kotlin/Welcome)  并留下关于语言设计的反馈 - 您喜欢哪些功能，哪些功能丢失，什么是令人困惑的等等。
-有一件事要注意：由于我们是一个开发工具公司，我们正在为语言本身并行地为Kotlin建立一流的IDE支持。一旦语言达到了beta阶段（目前计划在2011年底），我们将根据Apache 2许可证将编译器和开发工具作为开放源代码发布。
-我们之前还有很大的工作，我们很高兴听到你们对我们最新的努力的看法。所以让讨论开始吧！
+在今天的 [JVM 语言峰会](http://openjdk.java.net/projects/mlvm/jvmlangsummit/) 上，JetBrains 公开了已经积极开发近一年的新项目 **Kotlin**，这是一门运行在 JVM 上的新静态类型编程语言。凭借多年为不同语言创建开发工具的经验，我们希望能为当今的环境提供足够高效的语言，同时足够简单以便于普通程序员学习。当前 Kotlin 正在积极开发中但是远未成熟，还不能提供给开发团队以外的人使用。现在能做的是阅读 [语言文档](http://confluence.jetbrains.net/display/Kotlin/Welcome)  并留下关于语言设计的反馈——你喜欢哪些功能、哪些功能缺失、哪里令人困惑等等。有一件事要注意：由于我们是一个开发工具公司，我们同时正在为 Kotlin 语言本身建立一流的 IDE 支持。一旦语言达到了 beta 阶段（目前计划在2011年底），我们会使用 Apache 2 许可证将编译器和开发工具开源。我们接下来还有很多工作，很乐于听到你对我们最近努力成果的看法。所以让我们开始讨论吧！
