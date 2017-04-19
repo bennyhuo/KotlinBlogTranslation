@@ -22,4 +22,4 @@ source_url: https://blog.jetbrains.com/kotlin/2017/04/use-kotlin-with-npm-webpac
 
  [Thinkter](https://github.com/Kotlin/kotlin-fullstack-sample)  是Kotlin内置的现代全栈应用程序的一个例子。后端运行在Jetty并使用 [Ktor](https://github.com/kotlin/ktor) ，由Kotlin团队开发的Kotlin Web应用程序框架。前端使用React; Kotlin的一套React包装是 [作为项目的一部分提供](https://github.com/Kotlin/kotlin-fullstack-sample/tree/master/frontend/src/org/jetbrains/react) 。欢迎您在项目中使用包装器，并根据自己的需要进行调整。请注意，我们正在努力在内部开发React包装器，我们正在考虑将它们作为单独的开源库发布。
 要查看Kotlin React代码如何，您可以查看 [其中的一个组件](https://github.com/Kotlin/kotlin-fullstack-sample/blob/master/frontend/src/org/jetbrains/demo/thinkter/NewThoughtComponent.kt)  的应用程序。
-您对这些版本的反馈非常受欢迎！请在GitHub上提交问题，停止 [论坛](https://discuss.kotlinlang.org/) ，或者加入#javascript频道 [Kotlin Slack](http://slack.kotlinlang.org/) 。
+您对这些版本的反馈非常受欢迎！请在 GitHub 上提交问题，逛逛 [论坛](https://discuss.kotlinlang.org/) ，或者加入 #javascript 频道 [Kotlin Slack](http://slack.kotlinlang.org/) 。
