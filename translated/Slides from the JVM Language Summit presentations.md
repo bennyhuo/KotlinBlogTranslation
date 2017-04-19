@@ -1,5 +1,5 @@
 ---
-title: "[译]Slides from the JVM Language Summit presentations"
+title: "[译] JVM 语言峰会上的演示幻灯片"
 date: 2011-07-20 23:16:00
 author: Dmitry Jemerov
 tags:
