@@ -21,7 +21,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/06/better-annotation-processi
 如 [在上一篇博文中讨论过](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 可以通过在运行<code> javac </ code>之前生成Kotlin类的</ em> </ em>来克服该问题，然后在<code> javac </ code>完成后运行真正的编译。存根只包含声明，没有方法体。 Kotlin编译器用于在内存中创建这样的存根（它们用于Java互操作，当Java代码回溯到Kotlin时），所以我们只需要将它们序列化到磁盘上的文件。
 ## 示例：DBFlow
 
-Stubs支持依赖于注释处理器生成的代码的框架。例如，您现在可以使用 [DBFlow](https://github.com/Raizlabs/DBFlow)  在科特林：
+Stubs支持依赖于注释处理器生成的代码的框架。例如，您现在可以使用 [DBFlow](https://github.com/Raizlabs/DBFlow)  在Kotlin：
 
 {% raw %}
 <p></p>

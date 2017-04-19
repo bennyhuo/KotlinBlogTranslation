@@ -30,5 +30,5 @@ source_url: https://blog.jetbrains.com/kotlin/2013/06/talk-geekout-tallinn-langu
 UPD：
 
 * 幻灯片这个演讲
-* 关于科特林的更多幻灯片和视频
+* 关于Kotlin的更多幻灯片和视频
 

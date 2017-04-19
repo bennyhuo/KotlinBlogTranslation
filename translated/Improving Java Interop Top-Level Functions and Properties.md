@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/
 ---
 
-科特林从第一天起就具有顶级的职能和财产。它们在许多情况下非常方便：从基本实用程序到标准API的扩展。
+Kotlin从第一天起就具有顶级的职能和财产。它们在许多情况下非常方便：从基本实用程序到标准API的扩展。
 但是，Kotlin代码不是唯一的客户端，今天我要解释一下在调用顶级函数和属性时，我们如何计划改进Java互操作。<span id =“more-2398”> < / span>
 ## 基本
 
@@ -157,7 +157,7 @@ val b = computeB()
 {% endraw %}
 
 当我们从Java访问<code> a </ code>或<code> b </ code>时，应该以什么顺序调用它们的初始化程序？事实上，这可能是一个非常复杂的问题，因为<code> computeA（）</ code>和<code> computeB（）</ code>可能彼此依赖（直接或间接地通过其他代码）。他们可能会有副作用，所以这真的很重要。
-所以，科特林的答案是：
+所以，Kotlin的答案是：
 
 * 里面一个文件属性都是从上到下初始化的，
 * 第一次访问此文件中的任何代码。

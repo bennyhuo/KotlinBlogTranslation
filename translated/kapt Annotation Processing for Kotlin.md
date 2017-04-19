@@ -96,7 +96,7 @@ public abstract class BaseApplication extends Application {
 <p></p>
 {% endraw %}
 
-一切都可以写在科特林。这是一个演示匕首使用的示例项目： [kotlin匕首](https://github.com/JetBrains/kotlin-examples/tree/master/gradle/kotlin-dagger)  （您可能需要强制重新下载快照工件）。
+一切都可以写在Kotlin。这是一个演示匕首使用的示例项目： [kotlin匕首](https://github.com/JetBrains/kotlin-examples/tree/master/gradle/kotlin-dagger)  （您可能需要强制重新下载快照工件）。
 ## 反馈
 
 如果您在项目中尝试了<code> kapt </ code>，我们非常感激，并给予我们反馈：

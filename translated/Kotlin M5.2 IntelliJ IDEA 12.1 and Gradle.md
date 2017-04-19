@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
 ---
 
-另一个更新 [科特林](http://kotlin.jetbrains.org/)  今天出来欢迎Kotlin M5.2。 <span id =“more-1038”> </ span>
+另一个更新 [Kotlin](http://kotlin.jetbrains.org/)  今天出来欢迎Kotlin M5.2。 <span id =“more-1038”> </ span>
 ## 支持新的IntelliJ IDEA
 
 Koltin M5.2支持（实际上需要）最近发布 [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/index.html) 。
