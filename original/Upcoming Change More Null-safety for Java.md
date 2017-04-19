@@ -22,7 +22,7 @@ Our battle for combining null-safety and Java interop has been a long one alread
 Now, we are planning to make one more step and use annotations in combination with platform types to <strong>bring back as much type-safety as possible</strong>.<span id="more-2090"></span>
 ## Overview
 
-The details are described in  [this spec-document](https://github.com/JetBrains/kotlin/blob/types-from-annotations/spec-docs/flexible-java-types.md#enhancing-signatures-with-annotated-declarations) , but the overall idea is as follows: whenever we encounter nullability annotations in Java, <em>and they do not conflict with anything</em> around them (like overridden declarations in supertypes), we use precise types. For example:
+The details are described in [this spec-document](https://github.com/JetBrains/kotlin/blob/types-from-annotations/spec-docs/flexible-java-types.md#enhancing-signatures-with-annotated-declarations) , but the overall idea is as follows: whenever we encounter nullability annotations in Java, <em>and they do not conflict with anything</em> around them (like overridden declarations in supertypes), we use precise types. For example:
 
 {% raw %}
 <p></p>

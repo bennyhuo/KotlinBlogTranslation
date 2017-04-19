@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/advanced-features-of-anko/
 ---
 
-上周我们发表了 [一个新版本](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/)  的安科。虽然该库的主要目的是通过DSL创建布局，但即使是XML布局的用户也可以从中受益。今天我们来谈谈Anko的这种“矛盾”的特征。<span id =“more-2135”> </ span>
+上周我们发表了 [一个新版本](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/) 的安科。虽然该库的主要目的是通过DSL创建布局，但即使是XML布局的用户也可以从中受益。今天我们来谈谈Anko的这种“矛盾”的特征。<span id =“more-2135”> </ span>
 ## 意向助手
 
 启动新的<code> Activity </ code>的常见方法是创建一个<code> Intent </ code>，可能会把一些参数放入它，最后将创建的<code> Intent </ code>传递给<code>上下文</ code>的<code> startActivity（）</ code>方法。
@@ -49,7 +49,7 @@ startActivity<SomeActivity>("id" to 5, "name" to "John")
 {% endraw %}
 
 <code> startActivity（）</ code>函数接受将作为<code> Intent </ code>附加参数传递的键值对。另一个功能，即具有类似语义的<code> startActivityForResult（）</ code>也是可用的。
-请参考 [意图生成器函数](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#intent-builder-functions)  参考部分了解更多信息。
+请参考 [意图生成器函数](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#intent-builder-functions) 参考部分了解更多信息。
 ## 热门意图
 
 几乎每个应用程序都有代码，在默认的Web浏览器中加载一个页面，或者使用Android Intent打开一个新的电子邮件屏幕，所以在Anko中有一些辅助功能：
@@ -68,7 +68,7 @@ email("admin@domain.net (mailto:admin@domain.net)", "Here I am!", "Message text"
 <p></p>
 {% endraw %}
 
-其他有用的意图描述在 [有意义的来电者](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#useful-intent-callers)  参考部分
+其他有用的意图描述在 [有意义的来电者](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#useful-intent-callers) 参考部分
 ## 警报对话框
 
 Anko提供了一种声明性的方式来创建带有短信，列表，进度条，甚至使用您自己的DSL布局的警报对话。
@@ -275,7 +275,7 @@ info { "String " + "concatenation" }
 <p></p>
 {% endraw %}
 
-您可以阅读更多关于登录的信息 [记录](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#logging)  参考部分。
+您可以阅读更多关于登录的信息 [记录](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#logging) 参考部分。
 ## 结论
 
 要尝试<code> Anko </ code>，请遵循 [这些说明](https://github.com/JetBrains/anko#using-with-gradle) 。

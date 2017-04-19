@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/01/kotlin-skills-matter-events-in-london-england/
 ---
 
-JetBrains has two free Kotlin events coming to London in April and May. Both sessions will be held at  [Skills Matter eXchange](http://skillsmatter.com/location-details/home/1611/96)  and registration is required. We hope to see you there!
+JetBrains has two free Kotlin events coming to London in April and May. Both sessions will be held at [Skills Matter eXchange](http://skillsmatter.com/location-details/home/1611/96) and registration is required. We hope to see you there!
 <strong><a href="http://skillsmatter.com/podcast/home/introduction-to-kotlin" target="_blank" title="In The Brains of Andrey Breslav: Introduction to Kotlin">In the Brains of Andrey Breslav: Introduction to Kotlin</a></strong>
 Join Andrey for his talk <strong>Wednesday, April 3rd at 18:30</strong> and get an overview of the Kotlin language and the principles behind it. Among other things, the following features will be covered:
 

@@ -14,11 +14,11 @@ source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-1-m04-is-here/
 
 We are glad to present you the fourth milestone of the upcoming Kotlin release. We’re wrapping up the development of the version 1.1, with the final release planned for Q1 2017. Most features are already in decent shape, so it is a good time to try it and give us your feedback. We will appreciate it a lot!
 As with other milestone releases, we give <b>no backwards compatibility guarantees</b> for new language and library features. Anything introduced in milestone releases of 1.1 is <b>subject to change </b>before the final 1.1 release.
-Please do share your feedback regarding the new features or any problems that you may run into with this release, via  [YouTrack](https://youtrack.jetbrains.com/issues/KT) ,  [forums](https://discuss.kotlinlang.org)  and  [Slack](http://kotlinlang.slack.com/) .
+Please do share your feedback regarding the new features or any problems that you may run into with this release, via [YouTrack](https://youtrack.jetbrains.com/issues/KT) , [forums](https://discuss.kotlinlang.org) and [Slack](http://kotlinlang.slack.com/) .
 This milestone brings a significant rework of coroutine syntax and semantics, making coroutines simpler and more flexible. It also contains standard library enhancements, new language features and compiler plugins, numerous features and improvement in the JS backend, and many other fixes and updates.<br/>
 
-The new release also includes all features introduced in the  [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) , including updates for compatibility with <b>Android Studio 2.3 Beta 1</b>.
-The full changelog is available  [here](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md)  and some key changes are listed below:<br/>
+The new release also includes all features introduced in the [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) , including updates for compatibility with <b>Android Studio 2.3 Beta 1</b>.
+The full changelog is available [here](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md) and some key changes are listed below:<br/>
 <span id="more-4405"></span>
 ## Coroutines
 
@@ -98,14 +98,14 @@ async {
 <p></p>
 {% endraw %}
 
-However, futures are just one of many supported use-cases for coroutines. The full overview of the coroutine implementation and their usage samples are available in the revised  [KEEP document](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) .
+However, futures are just one of many supported use-cases for coroutines. The full overview of the coroutine implementation and their usage samples are available in the revised [KEEP document](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) .
 We think that now we have got a great design of coroutines for Kotlin, but we realize that it has not been battle-tested enough. Therefore we are going to release it in 1.1 under an opt-in incubation flag. Starting from this milestone you’ll get “This feature is experimental: coroutines” warning when using coroutines. You can turn off this warning with <code>-Xcoroutines=enable</code> compiler flag or disable this features with <code>-Xcoroutines=error</code> compiler flag. The corresponding setting is also available under Kotlin compiler settings in the IDEA. To set this option for a gradle project you can add <code>kotlin.coroutines=enable</code> or <code>kotlin.coroutines=error</code> to local.properties file at the root of project.
-If you are using  [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)  library please use updated version <code>0.2-alpha-1</code>, adapted to the newest changes in the coroutines design. This version also introduces <code>yieldAll</code> method in the generate scope. Please see the  [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md)  for further details.
+If you are using [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) library please use updated version <code>0.2-alpha-1</code>, adapted to the newest changes in the coroutines design. This version also introduces <code>yieldAll</code> method in the generate scope. Please see the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) for further details.
 ## Language features
 
 ### Type for properties can be inferred from getter
 
-For example in the code below the type for the property <code>foo</code> will be inferred as <code>String</code>. See the issue  [KT-550](https://youtrack.jetbrains.com/issue/KT-550)  for some more details.
+For example in the code below the type for the property <code>foo</code> will be inferred as <code>String</code>. See the issue [KT-550](https://youtrack.jetbrains.com/issue/KT-550) for some more details.
 
 {% raw %}
 <p></p>
@@ -121,7 +121,7 @@ val foo get() = ""
 
 ### Floating point related features, fixes and improvements
 
-Floating point number comparisons now use IEEE 754 compliant comparison where the type is known statically to be <code>Double</code> or <code>Float</code>. For ranges of floating point numbers we’ve introduced specialized <code>ClosedFloatingPointRange</code> interface, which provides its own comparison method, so that extension operations employing ranges, like <code>coerceIn</code>, could be implemented on top of that. Its instances are obtained with the operator <code>..</code> invoked on two <code>Float</code> or <code>Double</code> values. See  [KT-4481](https://youtrack.jetbrains.com/issue/KT-4481)  and  [KT-14651 for details.](https://youtrack.jetbrains.com/issue/KT-14651) <br/>
+Floating point number comparisons now use IEEE 754 compliant comparison where the type is known statically to be <code>Double</code> or <code>Float</code>. For ranges of floating point numbers we’ve introduced specialized <code>ClosedFloatingPointRange</code> interface, which provides its own comparison method, so that extension operations employing ranges, like <code>coerceIn</code>, could be implemented on top of that. Its instances are obtained with the operator <code>..</code> invoked on two <code>Float</code> or <code>Double</code> values. See [KT-4481](https://youtrack.jetbrains.com/issue/KT-4481) and [KT-14651 for details.](https://youtrack.jetbrains.com/issue/KT-14651) <br/>
 
 ### Interception of delegated property binding
 
@@ -156,7 +156,7 @@ class MyUI {
 {% endraw %}
 
 Here method <code>provideDelegate</code> will be called in constructor initializer for class <code>MyUI</code>. So, we can check property consistency at the moment of creation. Earlier such checks were only possible at the moment of calling getter or setter.
-Unfortunately, the feature is not yet properly documented, but you can use  [this draft document](https://github.com/orangy/KEEP/blob/fabb56360f2d7a293ac720cace89cd445da3c919/proposals/attach-to-property.md#createdelegate)  as an initial reference.
+Unfortunately, the feature is not yet properly documented, but you can use [this draft document](https://github.com/orangy/KEEP/blob/fabb56360f2d7a293ac720cace89cd445da3c919/proposals/attach-to-property.md#createdelegate) as an initial reference.
 ### Enhanced nullability of some JDK methods
 
 Some functions in JDK have a nullability contract defined in the documentation, some do not accept null values, some never return null, and yet others can return null sometimes.<br/>
@@ -202,13 +202,13 @@ There is a bunch of new extensions on the <code>String</code> class to convert i
 
 Beware that these functions will box resulting numbers before returning them, as the return type assumes it.
 Also integer conversion functions, like <code>Int.toString()</code>, <code>String.toInt()</code>, <code>String.toIntOrNull()</code>, each got an overload with <code>radix</code> parameter, which allows to specify the base of conversion.
-We would like to thank  [Daniil Vodopian](https://github.com/voddan)  for his substantial contribution to the development of these functions.
+We would like to thank [Daniil Vodopian](https://github.com/voddan) for his substantial contribution to the development of these functions.
 ### onEach
 
 <code>onEach</code> is a small, but useful extension function for collections and sequences, which allows to perform some action, possibly with side-effects, on each element of the collection/sequence in a chain of operations.<br/>
 
 On iterables it behaves like <code>forEach</code> but also returns the iterable instance further. And on sequences it returns a wrapping sequence, which applies the given action lazily as the elements are being iterated.
-Thanks to  [Christian Brüggemann](https://github.com/cbruegg)  for the initial prototype.
+Thanks to [Christian Brüggemann](https://github.com/cbruegg) for the initial prototype.
 ## JavaScript backend
 
 ### <code>external</code> instead of <code>@native</code>
@@ -298,11 +298,11 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-You can check the generated JS code for this snippet for the CommonJS and “plain” module systems  [here](https://gist.github.com/ligee/50d30ad9bca5ea925ff7d913ff232004) .
+You can check the generated JS code for this snippet for the CommonJS and “plain” module systems [here](https://gist.github.com/ligee/50d30ad9bca5ea925ff7d913ff232004) .
 ## How to Try It
 
-<b>In Maven/Gradle:</b> Add  [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1)  as a repository for the build script and your projects; use 1.1-M04 as the version number for the compiler and the standard library.
+<b>In Maven/Gradle:</b> Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M04 as the version number for the compiler and the standard library.
 <b>In IntelliJ IDEA:</b> Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
-The <strong>command-line compiler</strong> can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) .
+The <strong>command-line compiler</strong> can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) .
 <b>On <a href="http://try.kotlinlang.org">try.kotlinlang.org</a></b>. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M04.
 Merry Kotlin!

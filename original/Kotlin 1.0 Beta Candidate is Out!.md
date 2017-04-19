@@ -154,7 +154,7 @@ fun main(args: Array<String>) {
 
 ### Varargs and spread operator
 
-To recap: when calling a <code>vararg</code> function, we can use the  [spread operator](https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs)  that converts an array to a vararg:
+To recap: when calling a <code>vararg</code> function, we can use the [spread operator](https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs) that converts an array to a vararg:
 
 {% raw %}
 <p></p>
@@ -196,7 +196,7 @@ var foo: Foo = ...
 
 ### @UnsafeVariance annotation
 
-Sometimes we need to suppress  [declaration-site variance checks](https://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  in our classes. For example, to make <code>Set.contains</code> typesafe while keeping read-only sets co-variant, we had to do it:
+Sometimes we need to suppress [declaration-site variance checks](https://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) in our classes. For example, to make <code>Set.contains</code> typesafe while keeping read-only sets co-variant, we had to do it:
 
 {% raw %}
 <p></p>
@@ -314,7 +314,7 @@ fun goo(): Goo { throw MyExcepion() } // OK
 
 This is now a warning that will be promoted to error after we migrate our code with <em>Code cleanup</em>
 <strong>Visibility checks</strong> were restricted so that, for example, a public declaration can not expose a local, private or internal type. Access to internal declarations is checked in the compiler as well as in the IDE;
-See more  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-1038) .
+See more [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-1038) .
 ## Collections
 
 The major change in this version is that we have cleaned up collections and other core APIs so that, for example, <code>size</code> is now a property, and <code>contains</code> is type-safe: it takes <code>E</code> instead of <code>Any?</code>. This has been a major effort to make the library feel like Kotlin while keeping it compatible with Java. There’s quite some compiler magic behind it, but we are pleased with the result.

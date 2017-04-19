@@ -32,7 +32,7 @@ var foo: Foo = ...
 <p></p>
 {% endraw %}
 
-The biggest issue is that this syntax clashes with the syntax of  [string templates](http://kotlinlang.org/docs/reference/basic-types.html#string-templates) .
+The biggest issue is that this syntax clashes with the syntax of [string templates](http://kotlinlang.org/docs/reference/basic-types.html#string-templates) .
 So, we decided to change the rules here:
 
 * the $foo syntax will be deprecated and then dropped

@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/10/dsls-in-kotlin-part-1-whats-in-the-toolbox-builders/
 ---
 
-If you have a <em>very nice</em> API, it is the fashion nowadays to call it an <em>internal DSL</em>, because the code that uses such an API reads almost like a language inside your language of choice.  [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html)  serve as one of the most popular examples.
+If you have a <em>very nice</em> API, it is the fashion nowadays to call it an <em>internal DSL</em>, because the code that uses such an API reads almost like a language inside your language of choice. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html) serve as one of the most popular examples.
 Many modern languages provide some advanced means for creating internal DSLs, and Kotlin is no exception here. In this post I will briefly list the features that are useful for this purpose.<br/>
 <span id="more-181"></span>
-Let’s start with  [extension functions](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) . We all are familiar with Java’s utility classes, like java.util.Collections and like. Such classes are simply containers for a bunch of static methods, which are intended to be used with such and such classes. So we end up writing code like this:
+Let’s start with [extension functions](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) . We all are familiar with Java’s utility classes, like java.util.Collections and like. Such classes are simply containers for a bunch of static methods, which are intended to be used with such and such classes. So we end up writing code like this:
 
 {% raw %}
 <p></p>
@@ -64,7 +64,7 @@ fun <T : Comparable<T>> List<T>.sort() {
 <p></p>
 {% endraw %}
 
-Note that I can use a ‘this’ reference that represents my receiver object. See more  [here](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) .
+Note that I can use a ‘this’ reference that represents my receiver object. See more [here](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) .
 Now, what do extension functions give us, DSL creators? First of all you can turn any interface into a fluent one. For example, let’s create a new buffered reader with a given charset:
 
 {% raw %}
@@ -94,7 +94,7 @@ fun InputStream.reader(charset : String) = InputStreamReader(this, charset)
 <p></p>
 {% endraw %}
 
-Then, they play very well together with  [operator overloading](http://confluence.jetbrains.net/display/Kotlin/Operator+overloading) : in Kotlin, most operators, such as plus, minus and so on, are compiled by convention to named function calls. For example, when I say “a + b”, Kotlin reads “a.plus(b)” (see more in our  [docs](http://confluence.jetbrains.net/display/Kotlin/Operator+overloading) ). This means that by adding an extension function named “plus” to my type I can have a binary ‘+’ working on it. For example, I could make my own ‘+’ for list concatenation:
+Then, they play very well together with [operator overloading](http://confluence.jetbrains.net/display/Kotlin/Operator+overloading) : in Kotlin, most operators, such as plus, minus and so on, are compiled by convention to named function calls. For example, when I say “a + b”, Kotlin reads “a.plus(b)” (see more in our [docs](http://confluence.jetbrains.net/display/Kotlin/Operator+overloading) ). This means that by adding an extension function named “plus” to my type I can have a binary ‘+’ working on it. For example, I could make my own ‘+’ for list concatenation:
 
 {% raw %}
 <p></p>
@@ -155,9 +155,7 @@ fun <T> List<T>.get(range : IntRange<Int>) : List<T>
 
 {% raw %}
 <p></p>
-{% endraw %}
-
- [Infix function calls](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Infixcalls)  add more on top of that, because you can say, for example
+{% endraw %} [Infix function calls](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Infixcalls) add more on top of that, because you can say, for example
 
 {% raw %}
 <p></p>
@@ -185,7 +183,7 @@ it.hasPrivilege(WRITE)
 <p></p>
 {% endraw %}
 
-And, of course< you get a whole lot of fun with  [higher-order functions](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Higherorderfunctions)  and  [function literals (i.e. “closures”)](http://confluence.jetbrains.net/display/Kotlin/Function+literals) . For example, check this out:
+And, of course< you get a whole lot of fun with [higher-order functions](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Higherorderfunctions) and [function literals (i.e. “closures”)](http://confluence.jetbrains.net/display/Kotlin/Function+literals) . For example, check this out:
 
 {% raw %}
 <p></p>
@@ -202,7 +200,7 @@ lock (myLock) {
 {% endraw %}
 
 Is this a built-in construct, like Java’s <strong>synchronized</strong> section? No, it’s a function call. It uses a very handy convention: you can pass <em>the last function literal</em> outside the parentheses you put around your argument list. So this call is the same as “lock(myLock, {…})”, but looks prettier.
-More about this example can be found  [here](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Inlinefunctions) .
+More about this example can be found [here](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Inlinefunctions) .
 There’s one other nice convention that makes something very close to LINQ possible:
 
 {% raw %}
@@ -246,5 +244,5 @@ html {
 <p></p>
 {% endraw %}
 
-Is it Groovy? No, it’s Kotlin, and, unlike Groovy, it’s statically typed. Yes, we can do builders like Groovy, but better. <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/> I added a detailed explanation of this example to our wiki; you can find it  [here](http://confluence.jetbrains.net/display/Kotlin/Type-safe+Groovy-style+builders) .
+Is it Groovy? No, it’s Kotlin, and, unlike Groovy, it’s statically typed. Yes, we can do builders like Groovy, but better. <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/> I added a detailed explanation of this example to our wiki; you can find it [here](http://confluence.jetbrains.net/display/Kotlin/Type-safe+Groovy-style+builders) .
 Have a question? Opinion? Suggestion? We really appreciate your comments!

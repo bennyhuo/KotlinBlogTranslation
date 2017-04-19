@@ -31,7 +31,7 @@ Kotlin 1.0.2支持的检查对应于Android Studio 1.5支持的检查;在下一�
 与Android开发人员相关的其他一些改进是标准库的大小已经减少了约1500种方法（从大约6600到5100）。即使在这个变化之前，图书馆也是 [小于Kotlin的主要竞争对手](https://github.com/SidneyXu/AndroidDemoIn4Languages) 现在情况更好了。当然，图书馆仍然是完全二进制兼容的。
 ### Java 7/8支持库
 
-作为在Kotlin 1.1中引入完全支持之前的更好的Java 7/8支持的临时解决方法，我们现在提供支持库，将Java 7和8（例如Stream API）中添加的API作为Kotlin标准的扩展功能图书馆类。见 [论坛帖子](https://discuss.kotlinlang.org/t/jdk7-8-features-in-kotlin-1-0/1625)  有关使用库的说明。
+作为在Kotlin 1.1中引入完全支持之前的更好的Java 7/8支持的临时解决方法，我们现在提供支持库，将Java 7和8（例如Stream API）中添加的API作为Kotlin标准的扩展功能图书馆类。见 [论坛帖子](https://discuss.kotlinlang.org/t/jdk7-8-features-in-kotlin-1-0/1625) 有关使用库的说明。
 ### IntelliJ IDEA插件功能
 
 IntelliJ IDEA插件已经获得了一些主要的新功能：

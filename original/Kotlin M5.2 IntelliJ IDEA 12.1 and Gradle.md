@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
 ---
 
-Another update of  [Kotlin](http://kotlin.jetbrains.org/)  comes out today. Welcome Kotlin M5.2. <span id="more-1038"></span>
+Another update of [Kotlin](http://kotlin.jetbrains.org/) comes out today. Welcome Kotlin M5.2. <span id="more-1038"></span>
 ## Support for New IntelliJ IDEA
 
-Koltin M5.2 supports (in fact, requires) the recently released  [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/index.html) .
+Koltin M5.2 supports (in fact, requires) the recently released [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/index.html) .
 The Kotlin IDE improvements include:
 
 * Kotlin classes in the Class Hierarchy view. Just hit Ctrl+H on a class name to see its descendants and/or parents.
@@ -119,8 +119,8 @@ dependencies {
 <p></p>
 {% endraw %}
 
-More examples & docs can be found  [here](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Gradle) .
+More examples & docs can be found [here](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Gradle) .
 ## Reminder: KAnnotator
 
-Don’t forget that you now have  [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/)  at your service.
+Don’t forget that you now have [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/) at your service.
 <strong>Have a nice Kotlin!</strong>

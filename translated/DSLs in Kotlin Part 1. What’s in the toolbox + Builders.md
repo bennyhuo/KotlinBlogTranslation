@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/10/dsls-in-kotlin-part-1-whats-in-the-toolbox-builders/
 ---
 
-如果您有一个非常好的</ em> API，那么现在将它叫做“内部DSL”就是时尚，因为使用这样的API的代码几乎就像一种语言中的语言的选择。 [流畅的界面](http://martinfowler.com/bliki/FluentInterface.html)  作为最受欢迎的例子之一。
+如果您有一个非常好的</ em> API，那么现在将它叫做“内部DSL”就是时尚，因为使用这样的API的代码几乎就像一种语言中的语言的选择。 [流畅的界面](http://martinfowler.com/bliki/FluentInterface.html) 作为最受欢迎的例子之一。
 许多现代语言为创建内部DSLs提供了一些先进的方法，而Kotlin在这里也不例外。在这篇文章中，我将简要列出对此有用的功能
 <span id =“more-181”> </ span>
 我们开始吧 [扩展功能](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) 。我们都熟悉Java的实用工具类，如java.util.Collections等。这些类是一组静态方法的简单容器，这些静态方法旨在与这样的类一起使用。所以我们最终编写如下代码：
@@ -155,9 +155,7 @@ fun <T> List<T>.get(range : IntRange<Int>) : List<T>
 
 {% raw %}
 <p></p>
-{% endraw %}
-
- [Infix函数调用](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Infixcalls)  加上更多的，因为你可以说，例如
+{% endraw %} [Infix函数调用](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Infixcalls) 加上更多的，因为你可以说，例如
 
 {% raw %}
 <p></p>
@@ -185,7 +183,7 @@ it.hasPrivilege(WRITE)
 <p></p>
 {% endraw %}
 
-而且，当然，你会有很多乐趣 [高阶函数](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Higherorderfunctions)  和 [功能文字（即“封闭”）](http://confluence.jetbrains.net/display/Kotlin/Function+literals) 。例如，请查看：
+而且，当然，你会有很多乐趣 [高阶函数](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Higherorderfunctions) 和 [功能文字（即“封闭”）](http://confluence.jetbrains.net/display/Kotlin/Function+literals) 。例如，请查看：
 
 {% raw %}
 <p></p>

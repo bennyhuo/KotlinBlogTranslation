@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/
 ---
 
-今天我们很高兴地介绍新版本 [安科](https://github.com/JetBrains/anko)   - 促进Android应用程序开发的库。我们很高兴收到了很多反馈，以及一些变化 [0.6](https://github.com/JetBrains/anko/releases/tag/v0.6)  实际上是由社区提出的
+今天我们很高兴地介绍新版本 [安科](https://github.com/JetBrains/anko) - 促进Android应用程序开发的库。我们很高兴收到了很多反馈，以及一些变化 [0.6](https://github.com/JetBrains/anko/releases/tag/v0.6) 实际上是由社区提出的
 <span id =“more-2124”> </ span>
 ## 警告：软件包名称已更改
 
@@ -46,9 +46,7 @@ editText {
 <p></p>
 {% endraw %}
 
-## 配置限定符
-
- [限定词](http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources)  用于支持不同设备，区域设置等的不同布局。
+## 配置限定符 [限定词](http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources) 用于支持不同设备，区域设置等的不同布局。
 Anko的DSL现在支持<code> configuration（）</ code>函数，该函数指定布局的限定符：
 
 {% raw %}
@@ -95,7 +93,7 @@ frameLayout {
 它通过Java Reflection实现。虽然它比普通的DSL功能更慢，但是当您进行原型制作时，会更容易。
 ## appcompat.v7视图和属性
 
-我们已经做出了初步的步骤，以支持<code> appcompat.v7 </ code> Android库。扩展功能为支持包中的<code> View </ code>类和其属性的扩展属性添加到Anko。 [小部件着色](http://android-developers.blogspot.ru/2014/10/appcompat-v21-material-design-for-pre.html)  不支持，我们希望能在以后的版本中实现。
+我们已经做出了初步的步骤，以支持<code> appcompat.v7 </ code> Android库。扩展功能为支持包中的<code> View </ code>类和其属性的扩展属性添加到Anko。 [小部件着色](http://android-developers.blogspot.ru/2014/10/appcompat-v21-material-design-for-pre.html) 不支持，我们希望能在以后的版本中实现。
 ## 移除简单视图的顶级DSL功能
 
 由于不太可能有简单的非容器视图（如TextView）作为活动的内容视图，因此我们删除了<code> Activity </ code>和<code> Fragment </ code>的这些视图的DSL功能，代码>接收器。在不太可能的情况下需要顶级的这种观点，使用<code> UI（）</ code>包装函数：

@@ -42,8 +42,7 @@ Gradle首席执行官Hans Dockter演示了使用Kotlin编写Gradle构建脚本�
 ## 谈话＃2：杰克·沃顿。 <strong>仪器测试机器人</ strong>
 
 像Espresso这样的图书馆可以让UI测试与您的应用程序保持稳定的交互，但是无需管理，这些测试可能难以管理，需要频繁更新。在这个讲话中，杰克介绍了所谓的机器人模式如何帮助您通过Kotlin的语言功能来创建稳定，可读和可维护的测试。
-看到完整的录音以及抄录 [领地](https://realm.io/news/kau-jake-wharton-testing-robots/) 
-## 
+看到完整的录音以及抄录 [领地](https://realm.io/news/kau-jake-wharton-testing-robots/) ## 
 
 
 Talk＃3：Laura Kogler和Rob Fletcher。 <strong> Kotlin测试</ strong>

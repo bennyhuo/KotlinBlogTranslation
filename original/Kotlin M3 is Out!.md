@@ -12,15 +12,15 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/
 ---
 
-Last time I wrote about a new exciting  [feature](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/)  in “the upcoming Kotlin M3”. Today, Kotlin M3 is not “upcoming” any more, it’s here. This post gives an overview of the new milestone.<span id="more-663"></span>
+Last time I wrote about a new exciting [feature](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) in “the upcoming Kotlin M3”. Today, Kotlin M3 is not “upcoming” any more, it’s here. This post gives an overview of the new milestone.<span id="more-663"></span>
 We have redesigned <strong><a href="http://kotlin.jetbrains.org">kotlin.jetbrains.org</a>.</strong> Currently, links from this page point to the familiar docs in our wiki, but this will also improve over time.
 ## Improvements and Bug fixes
 
-Many of  [almost 400 issues we closed](http://youtrack.jetbrains.com/issues/KT?q=%23Kotlin+%23Resolved+resolved+date%3A+2012-07-11+..+2012-09-20)  in this milestone are bug fixes and small enhancements that make Kotlin neater and shinier. A huge improvement has been made in the <strong>type argument inference</strong> algorithm. It’s not finished yet, but is rather good already.
+Many of [almost 400 issues we closed](http://youtrack.jetbrains.com/issues/KT?q=%23Kotlin+%23Resolved+resolved+date%3A+2012-07-11+..+2012-09-20) in this milestone are bug fixes and small enhancements that make Kotlin neater and shinier. A huge improvement has been made in the <strong>type argument inference</strong> algorithm. It’s not finished yet, but is rather good already.
 In M3 we started to profile things and tune <strong>performance</strong> of the IDE as well as the compiler. It will be a lot of work, but eventually everything will be fast and consume little memory. This time most improvements are related to code completion.
 ## Multi-assignment and Data Classes
 
-This is covered in the  [last week’s entry](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) . Long story short, you can write things like this:
+This is covered in the [last week’s entry](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) . Long story short, you can write things like this:
 
 {% raw %}
 <p></p>
@@ -65,8 +65,8 @@ val (x, y) = functionReturningPoint()
 <p></p>
 {% endraw %}
 
-See more in the  [aforementioned post](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) .
-These features enabled us to <strong>deprecate tuples</strong>. They will be removed completely in the next milestone, and you can  [migrate your code automatically](http://blog.jetbrains.com/kotlin/migrating-tuples/)  using the IDE plugin.
+See more in the [aforementioned post](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) .
+These features enabled us to <strong>deprecate tuples</strong>. They will be removed completely in the next milestone, and you can [migrate your code automatically](http://blog.jetbrains.com/kotlin/migrating-tuples/) using the IDE plugin.
 
 {% raw %}
 <p><a name="Collections"></a></p>
@@ -86,7 +86,7 @@ The good old <strong>java.util.ArrayList</strong> is still there, but Kotlin see
 <strong>Also note</strong> that if your old code imported something like <strong>java.util.Collection</strong>, you will get a warning on this import, and will need to remove it.
 ## External annotations
 
-Kotlin makes your programs safer by incorporating  [null-safety](http://confluence.jetbrains.net/display/Kotlin/Null-safety)  into the type system. Since Java doesn’t care that much about this, we need to guard against it by asserting that things returned from Java are not null using the ‘!!’ operator:
+Kotlin makes your programs safer by incorporating [null-safety](http://confluence.jetbrains.net/display/Kotlin/Null-safety) into the type system. Since Java doesn’t care that much about this, we need to guard against it by asserting that things returned from Java are not null using the ‘!!’ operator:
 
 {% raw %}
 <p></p>
@@ -100,9 +100,9 @@ if (file.getName()!!.endsWith(extension)) {...}
 <p></p>
 {% endraw %}
 
-(BTW, the good old sure() function has been removed from the library, and you can  [migrate your code automatically](http://blog.jetbrains.com/kotlin/migrating-sure/) .)
-Many Java methods never actually return null. People use annotations to let the  [tools](http://www.jetbrains.com/idea/documentation/howto.html)  know about it, but what if I’m using a third-party library?
-In Kotlin M3 we support <strong>external annotations</strong>: you can annotate things even if you don’t control their source code. This is done easily  [in the IDE](http://blog.jetbrains.com/kotlin/using-external-annotations/) .
+(BTW, the good old sure() function has been removed from the library, and you can [migrate your code automatically](http://blog.jetbrains.com/kotlin/migrating-sure/) .)
+Many Java methods never actually return null. People use annotations to let the [tools](http://www.jetbrains.com/idea/documentation/howto.html) know about it, but what if I’m using a third-party library?
+In Kotlin M3 we support <strong>external annotations</strong>: you can annotate things even if you don’t control their source code. This is done easily [in the IDE](http://blog.jetbrains.com/kotlin/using-external-annotations/) .
 We’re going to create an automated tool that will <strong>infer</strong> the annotations from the library code. Until then, we use the IDE to add annotations manually.
 ## Local Functions and Classes
 
@@ -192,8 +192,8 @@ tree.ktscript
 {% endraw %}
 
 “ [Shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) ” comments are supported as well.
-Scripts get us close enough to having a  [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) , but we are not there yet. Please, use  [Web Demo](http://kotlin-demo.jetbrains.com)  instead.
+Scripts get us close enough to having a [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) , but we are not there yet. Please, use [Web Demo](http://kotlin-demo.jetbrains.com) instead.
 ## Have a Nice Kotlin!
 
-The new plugin requires IntelliJ IDEA <strong>12</strong>, which is available as an  [EAP build](http://eap.jetbrains.com/idea)  (this version of IntelliJ IDEA is not released yet, there are problems, e.g.  [this issue with Android](http://youtrack.jetbrains.com/issue/KT-2763) ). And don’t forget to update your kotlin-runitme.jar (the IDE will offer you to do so)!
+The new plugin requires IntelliJ IDEA <strong>12</strong>, which is available as an [EAP build](http://eap.jetbrains.com/idea) (this version of IntelliJ IDEA is not released yet, there are problems, e.g. [this issue with Android](http://youtrack.jetbrains.com/issue/KT-2763) ). And don’t forget to update your kotlin-runitme.jar (the IDE will offer you to do so)!
 As usual, your <strong>feedback is very welcome</strong>!

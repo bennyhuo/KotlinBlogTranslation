@@ -16,7 +16,7 @@ While M13 is approaching, we are planning a little ahead. This is a request for 
 We want to deliver Kotlin 1.0 rather sooner than later, and this makes us postpone some design choices we don’t have enough confidence about. Today let’s discuss <em>data classes</em>.<span id="more-2472"></span>
 ## Introduction
 
-The concept of  [data classes](http://kotlinlang.org/docs/reference/data-classes.html)  has proven very useful when it comes to simply storing data. All you need is say:
+The concept of [data classes](http://kotlinlang.org/docs/reference/data-classes.html) has proven very useful when it comes to simply storing data. All you need is say:
 
 {% raw %}
 <p></p>
@@ -58,7 +58,7 @@ Now, how does <code>equals()</code> or <code>copy()</code> work in <code>Derived
 * what about transitivity of equals()?
 * what if I copy an instance of Derived through a reference of type Base?
 
-And what about component functions that enable  [multi-declarations](http://kotlinlang.org/docs/reference/multi-declarations.html) ? It seems more or less logical that <code>c</code> simply becomes the third component in <code>Derived</code> <strong>in this basic case</strong>:
+And what about component functions that enable [multi-declarations](http://kotlinlang.org/docs/reference/multi-declarations.html) ? It seems more or less logical that <code>c</code> simply becomes the third component in <code>Derived</code> <strong>in this basic case</strong>:
 
 {% raw %}
 <p></p>

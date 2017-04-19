@@ -192,7 +192,7 @@ Code Formatting
 
 ## Installation
 
-To give it a try you will need an installation of NetBeans 8.1. The beta version of Kotlin plugin is available from the  [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/68590/kotlin) .
+To give it a try you will need an installation of NetBeans 8.1. The beta version of Kotlin plugin is available from the [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/68590/kotlin) .
 Installation process:
 
 0. Download Kotlin plugin
@@ -348,5 +348,5 @@ To write tests in Kotlin you should have JUnit in the classpath of your project.
 
 ### Feedback Welcome
 
-Your feedback is very important. Feel free to add issues and feature requests in the  [plugin issue tracker](https://github.com/Baratynskiy/kotlin-netbeans/issues) .
+Your feedback is very important. Feel free to add issues and feature requests in the [plugin issue tracker](https://github.com/Baratynskiy/kotlin-netbeans/issues) .
 Just like Kotlin itself, the NetBeans plugin is an open-source project, so your contributions can help it evolve faster.

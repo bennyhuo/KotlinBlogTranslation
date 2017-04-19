@@ -105,6 +105,6 @@ It’s often not enough to debug in terms on lines. Imagine the situation when t
 This release has a significant boost in performance of build and completion on board.
 ## Conclusion
 
-While it might seem that we choose features for release at random it’s not exactly so <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/> Actually we are gradually addressing problems we have in our project with the  [percentage of Kotlin code growing](https://github.com/JetBrains/kotlin-eclipse)  and pretty happy with the result.
-If you have an idea what feature should be implemented next, please  [create an issue](https://youtrack.jetbrains.com/newIssue?project=KT&clearDraft=true&c=Subsystems+Eclipse+Plugin)  in our tracker.
+While it might seem that we choose features for release at random it’s not exactly so <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/> Actually we are gradually addressing problems we have in our project with the [percentage of Kotlin code growing](https://github.com/JetBrains/kotlin-eclipse) and pretty happy with the result.
+If you have an idea what feature should be implemented next, please [create an issue](https://youtrack.jetbrains.com/newIssue?project=KT&clearDraft=true&c=Subsystems+Eclipse+Plugin) in our tracker.
 Have a nice Kotlin in Eclipse!

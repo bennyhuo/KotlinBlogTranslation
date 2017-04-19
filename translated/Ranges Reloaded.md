@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/ranges-reloaded/
 ---
 
-在 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/)  我们已经重新设计了我们的范围。<span id =“more-855”> </ span>
-范围表达式与具有<tt> rangeTo </ tt>函数形成 [操作员形式](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations)  补充 [in和！in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) 。范围是针对任何可比类型（<code> Comparable </ code>的子类）定义的，但是对于数字原语，它被优化。以下是使用范围的示例：
+在 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) 我们已经重新设计了我们的范围。<span id =“more-855”> </ span>
+范围表达式与具有<tt> rangeTo </ tt>函数形成 [操作员形式](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations) 补充 [in和！in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) 。范围是针对任何可比类型（<code> Comparable </ code>的子类）定义的，但是对于数字原语，它被优化。以下是使用范围的示例：
 
 {% raw %}
 <p></p>

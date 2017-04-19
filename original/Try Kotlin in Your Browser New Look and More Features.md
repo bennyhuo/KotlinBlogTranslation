@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/try-kotlin-in-your-browser-new-look-and-more-features/
 ---
 
-We released  [Kotlin Web Demo](http://kotlin-demo.jetbrains.com)  quite a while ago, it did a good job helping people try Kotlin right in the browser and share runnable code with each other. Now, a shiny new version is ready, it’s time to retire the old one.
-Meet  [try.kotlinlang.org](http://try.kotlinlang.org) , as new incarnation of a web-based mini-IDE for Kotlin.<span id="more-2106"></span>
+We released [Kotlin Web Demo](http://kotlin-demo.jetbrains.com) quite a while ago, it did a good job helping people try Kotlin right in the browser and share runnable code with each other. Now, a shiny new version is ready, it’s time to retire the old one.
+Meet [try.kotlinlang.org](http://try.kotlinlang.org) , as new incarnation of a web-based mini-IDE for Kotlin.<span id="more-2106"></span>
 ## Features
 
 The new version brings
@@ -35,12 +35,12 @@ The new version brings
 
 You can log in with your Google, Facebook or Twitter accounts. When logged in, you can create new projects and copy example projects to change them.
 Any saved project (our example or your custom code) can be shared by <strong>simply copy-and-pasting the link from the address bar</strong>.
-For example, here’s a  [link to an example program](http://try.kotlinlang.org/#/Examples/Problems/Sum/Sum.kt) .<br/>
-And this is  [the link to my code about expressing Go’s defer as a Kotlin library](http://try.kotlinlang.org/#/UserProjects/-1984665128/1040749715610173087711460271843) .
+For example, here’s a [link to an example program](http://try.kotlinlang.org/#/Examples/Problems/Sum/Sum.kt) .<br/>
+And this is [the link to my code about expressing Go’s defer as a Kotlin library](http://try.kotlinlang.org/#/UserProjects/-1984665128/1040749715610173087711460271843) .
 ## Old Web Demo
 
 The old Web Demo is retired, and put into a read-only mode for the time being. You can still run your programs, but can not modify them or create new ones.
-All accounts and programs created for Kotlin Web Demo have been migrated to  [try.kotlinlang.org](http://try.kotlinlang.org) .
+All accounts and programs created for Kotlin Web Demo have been migrated to [try.kotlinlang.org](http://try.kotlinlang.org) .
 ## Feedback
 
 Your feedback is welcome, as usual.

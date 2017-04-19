@@ -296,8 +296,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-Other options include allowing modifiers <em>on the same line</em> with the class, but this does not straightforwardly extend to functions, which are  [expressions now](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) . See more  [here](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) 
-## Feedback Welcome
+Other options include allowing modifiers <em>on the same line</em> with the class, but this does not straightforwardly extend to functions, which are [expressions now](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) . See more [here](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) ## Feedback Welcome
 
 What do you think?
-P.S. BTW, we are working on a spec document draft  [here](https://github.com/JetBrains/kotlin/pull/624) 
+P.S. BTW, we are working on a spec document draft [here](https://github.com/JetBrains/kotlin/pull/624) 

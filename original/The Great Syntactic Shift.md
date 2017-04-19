@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/the-great-syntactic-shift/
 ---
 
 As the first public preview of Kotlin is approaching (it will be announced on Jan 10th, 2012, which is <strong>less than a week</strong> from now!), we are putting some things in order…
-In particular, we have reviewed syntactic forms available in the language, and decided to change a few. These changes are incompatible with the old syntax, and we have migrated all our test data, and will update the  [publicly available documentation](http://jetbrains.com/kotlin)  soon.
+In particular, we have reviewed syntactic forms available in the language, and decided to change a few. These changes are incompatible with the old syntax, and we have migrated all our test data, and will update the [publicly available documentation](http://jetbrains.com/kotlin) soon.
 I would like to point out that this is not the last change of this sort. Kotlin is not released yet, and until it is we are constantly gathering feedback and sometimes find out that something needs to be changed. Consequently, there are no backward-compatibility guarantees before the 1.0. We realize how important backward compatibility is, but we’d better be backward compatible to a really good design created according to the needs of real people.
 Here’s an overview of the changes we’ve made.<br/>
 <span id="more-291"></span><br/>

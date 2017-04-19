@@ -49,7 +49,7 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-关于协同程序的好处是，他们可以暂停</ em>而不阻止线程，但它们看起来像正常的顺序代码。请看一下 [详细说明](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md)  和一个专门的例子 [KEEP存储库](https://github.com/Kotlin/kotlin-coroutines)  并评论 [那里的问题](https://github.com/Kotlin/kotlin-coroutines/issues) 。
+关于协同程序的好处是，他们可以暂停</ em>而不阻止线程，但它们看起来像正常的顺序代码。请看一下 [详细说明](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 和一个专门的例子 [KEEP存储库](https://github.com/Kotlin/kotlin-coroutines) 并评论 [那里的问题](https://github.com/Kotlin/kotlin-coroutines/issues) 。
 我们是基于协同程序的库的原型 [这里](https://github.com/Kotlin/kotlinx.coroutines) ，随后被列入标准库。这包括来自Swing中的UI线程的JDK的<code> CompletableFuture </ code>，异步IO（NIO），RxJava和卸载任务。这个回购包含了例子以及图书馆本身。要玩，请按照说明进行操作 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。
 ## 键入别名
 
@@ -121,13 +121,13 @@ fun example(foo: (Bar) -> Foo, bar: Bar) {
 
 DSL和脚本也将受益于此功能。
 阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/25) 。
-我们也允许 [内联属性访问器](https://github.com/Kotlin/KEEP/issues/34)  现在。
+我们也允许 [内联属性访问器](https://github.com/Kotlin/KEEP/issues/34) 现在。
 ## 密封类和数据类的放松规则
 
 我们现在解除对数据类和密封类的限制。
 数据类现在可以从其他类继承。请注意，自动生成的方法可能会覆盖超类中定义的方法！
 对于密封类，我们扩大了可以定义其继承者的范围：在只有密封类本身之前，现在它在同一文件中的任何位置。
-阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/31)  和 [这里](https://github.com/Kotlin/KEEP/issues/31) 。
+阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/31) 和 [这里](https://github.com/Kotlin/KEEP/issues/31) 。
 ## 脚本
 
 您可能听说过，我们很快就可以在Kotlin中编写Gradle构建脚本，这将大大提高IDE编辑脚本的体验，并通过静态类型检查使其更可靠。这个项目促使我们更多地在Kotlin脚本上进行工作：我们正在开发基础架构，以便在不同工具的上下文中使用Kotln脚本，以及简单的命令行支持。
@@ -144,10 +144,10 @@ DSL和脚本也将受益于此功能。
 查找与JavaScript相关的提案 [这里](https://github.com/Kotlin/KEEP/labels/JS) 。
 ## 贡献者
 
-我们非常感谢GitHub用户 [dotlin](https://github.com/dotlin) ， [Valdemar0204](https://github.com/Valdemar0204) ， [ensirius](https://github.com/ensirius)  和 [地理位置](https://github.com/geoand)  为他们对这个版本的贡献！
+我们非常感谢GitHub用户 [dotlin](https://github.com/dotlin) ， [Valdemar0204](https://github.com/Valdemar0204) ， [ensirius](https://github.com/ensirius) 和 [地理位置](https://github.com/geoand) 为他们对这个版本的贡献！
 ## 如何尝试
 
-<strong>在Maven / Gradle </ strong>中。加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1)  （请参阅<em>“设置我！”</ em>下的说明）作为项目的存储库。使用版本1.1-M01作为您的Kotlin文物。
+<strong>在Maven / Gradle </ strong>中。加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) （请参阅<em>“设置我！”</ em>下的说明）作为项目的存储库。使用版本1.1-M01作为您的Kotlin文物。
 <strong>在IDE </ strong>中。如果你正在运行 [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) ，请转到<em>工具→Kotlin→配置Kotlin插件更新</ em>，然后在更新频道下拉列表中选择“Early Access Preview 1.1”
 
 {% raw %}

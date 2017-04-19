@@ -12,9 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/07/a-new-open-source-web-site/
 ---
 
-我们有一个新的网站和一个新的 [域！](http://kotlinlang.org) 
-
-{% raw %}
+我们有一个新的网站和一个新的 [域！](http://kotlinlang.org) {% raw %}
 <p><a href="http://kotlinlang.org"><img alt="Main Page" class="aligncenter size-full wp-image-1585" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2014/07/kotlin.png?resize=633%2C335&amp;ssl=1"/></a></p>
 {% endraw %}
 
@@ -44,9 +42,7 @@ source_url: https://blog.jetbrains.com/kotlin/2014/07/a-new-open-source-web-site
 除了已经移植现有的文档外，我们还有新的教程，视频截屏和更多的文档。我们还列出了所有活动以及外部资源部分，其中介绍了为Kotlin编写的OSS项目。
 ### Kotlin Koans
 
-与网站一起，我们发布了一个新的教程，这是一系列以单元测试失败的形式的练习，可以让您快速上手，不仅使用Kotlin语法，还可以使用一些习语。
- [你能让他们全部通过吗？](http://kotlinlang.org/docs/tutorials/koans.html) 
-## 
+与网站一起，我们发布了一个新的教程，这是一系列以单元测试失败的形式的练习，可以让您快速上手，不仅使用Kotlin语法，还可以使用一些习语。 [你能让他们全部通过吗？](http://kotlinlang.org/docs/tutorials/koans.html) ## 
 
 
 社区资源

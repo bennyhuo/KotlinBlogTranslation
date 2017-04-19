@@ -48,7 +48,7 @@ https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
 <p></p>
 {% endraw %}
 
-我们的 [教程](http://kotlinlang.org/docs/tutorials/getting-started-eclipse.html)  更详细地介绍安装过程。
+我们的 [教程](http://kotlinlang.org/docs/tutorials/getting-started-eclipse.html) 更详细地介绍安装过程。
 ## Eclipse IDE支持
 
 在这里，我们快速概述此版本中提供的功能。
@@ -76,7 +76,7 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png"><img alt="Eclipse Auto-Import Feature" class="alignnone size-full wp-image-1965" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png?resize=393%2C119&amp;ssl=1"/></a></p>
 {% endraw %}
 
-许多 [快速修复](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix)  和 [意图](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions)  在编辑Kotlin源时将会很有用，我们将逐渐增加越来越多的来源。我们从简单的开始，用索引运算符（<code> [...] </ code>）替换<code> get（）</ code>调用：
+许多 [快速修复](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix) 和 [意图](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions) 在编辑Kotlin源时将会很有用，我们将逐渐增加越来越多的来源。我们从简单的开始，用索引运算符（<code> [...] </ code>）替换<code> get（）</ code>调用：
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png"><img alt="Replace 'get' With Index Operator" class="alignnone size-full wp-image-1966" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png?resize=500%2C83&amp;ssl=1"/></a></p>
@@ -121,4 +121,4 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 
 我们可以慢慢地继续实现功能，使插件越来越稳定和强大。但是，我们决定显示早期的阿尔法希望<strong>反馈</ strong>。对我们来说非常重要。
 我们已经有一些问题和功能要求 [跟踪器](https://youtrack.jetbrains.com/search/Kotlin%20Eclipse-19206) 。请填写免费添加更多。谢谢。
-此外，这是一个开放源码的项目，我们期望它比我们的编译器和IntelliJ Plugin更加是一个<strong>社区努力</ strong>，所以你的 [拉请求](https://github.com/JetBrains/kotlin-eclipse/)  非常欢迎
+此外，这是一个开放源码的项目，我们期望它比我们的编译器和IntelliJ Plugin更加是一个<strong>社区努力</ strong>，所以你的 [拉请求](https://github.com/JetBrains/kotlin-eclipse/) 非常欢迎

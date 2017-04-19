@@ -56,7 +56,7 @@ class MainActivity : Activity() {
 <p><span id="more-1999"></span></p>
 {% endraw %}
 
-安科广泛使用Kotlin [扩展功能和属性](http://kotlinlang.org/docs/reference/extensions.html)  安排进去 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html)  来描述用户界面。作为回报，我们在编译时得到简洁和类型安全。
+安科广泛使用Kotlin [扩展功能和属性](http://kotlinlang.org/docs/reference/extensions.html) 安排进去 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html) 来描述用户界面。作为回报，我们在编译时得到简洁和类型安全。
 当然，我们还可以在设计时使用Anko Preview插件来查看预览，这些插件适用于IntelliJ IDEA和Android Studio：
 
 {% raw %}
@@ -260,6 +260,6 @@ dependencies {
 <p></p>
 {% endraw %}
 
-Anko Preview插件可用于IntelliJ IDEA和Android Studio。您可以 [下载](https://plugins.jetbrains.com/plugin/7734)  它直接从插件存储库。
+Anko Preview插件可用于IntelliJ IDEA和Android Studio。您可以 [下载](https://plugins.jetbrains.com/plugin/7734) 它直接从插件存储库。
 有二进制文件针对的是原始Android（SDK版本15，Ice Cream Sandwich）和Android，支持v4软件包。
-此外，最后但并非最不重要的是，与Kotlin相关的所有内容，Anko都是完全开源的。存储库已打开 [GitHub](https://github.com/JetBrains/anko)  和往常一样，欢迎贡献！
+此外，最后但并非最不重要的是，与Kotlin相关的所有内容，Anko都是完全开源的。存储库已打开 [GitHub](https://github.com/JetBrains/anko) 和往常一样，欢迎贡献！

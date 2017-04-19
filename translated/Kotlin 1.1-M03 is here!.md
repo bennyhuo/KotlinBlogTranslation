@@ -122,7 +122,7 @@ table {
 <p></p>
 {% endraw %}
 
-为了解决这个问题，我们添加了<code> @DslMarker </ code>注释，允许在这些情况下更准确地控制可见性范围。有关使用示例请参阅 [使用此功能的kotlinx.html库的预览版本](https://github.com/Kotlin/kotlinx.html/tree/dsl-markers)  （看到 [HtmlTagMarker](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/api.kt#L103) 和 [HTMLTag](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/htmltag.kt#L5) 实现和 [DSL-标记](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/DSL-markers.md)  预览库使用信息）。
+为了解决这个问题，我们添加了<code> @DslMarker </ code>注释，允许在这些情况下更准确地控制可见性范围。有关使用示例请参阅 [使用此功能的kotlinx.html库的预览版本](https://github.com/Kotlin/kotlinx.html/tree/dsl-markers) （看到 [HtmlTagMarker](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/api.kt#L103) 和 [HTMLTag](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/htmltag.kt#L5) 实现和 [DSL-标记](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/DSL-markers.md) 预览库使用信息）。
 ## 标准库统一
 
 不同平台的标准库统一过程正在向前发展。我们已经开始统一1.1-M2中的异常类型，现在在所有平台上都支持一些更常见的类型，可以在<code> kotlin。* </ code>包中使用，默认情况下导入。这些包括：
@@ -145,6 +145,6 @@ JavaScript后端现在支持与JVM后端兼容的以下Kotlin语言功能：
 JavaScript后端现在可以生成更多的静态可检查代码，这对JS代码处理工具（比如minifier，optimizers，linters等）来说更为友善。
 ## 如何尝试
 
-<b>在Maven / Gradle中：</ b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1)  作为构建脚本和项目的存储库;使用1.1-M03作为编译器和标准库的版本号。
+<b>在Maven / Gradle中：</ b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M03作为编译器和标准库的版本号。
 <b>在IntelliJ IDEA中：</ b>转到<i>工具→Kotlin→配置Kotlin插件更新</ i>，然后在<i>更新频道</ i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</ i>。
 开车去Kotlin！

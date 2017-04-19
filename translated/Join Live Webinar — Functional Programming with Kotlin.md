@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/
 ---
 
-加入我们这个<strong> 10月22日星期四，格林尼治标准时间14:00  -  15:00（美国东部时间上午10:00  -  11:00），我们的免费网络研讨会， [Kotlin功能编程](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html)  与麦克赫恩
+加入我们这个<strong> 10月22日星期四，格林尼治标准时间14:00  -  15:00（美国东部时间上午10:00  -  11:00），我们的免费网络研讨会， [Kotlin功能编程](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) 与麦克赫恩
 在这次演讲中，Mike Hearn将通过工作实践的例子，重点介绍功能编程，简要介绍Kotlin的编程。
 涵盖的主题将包括：
 

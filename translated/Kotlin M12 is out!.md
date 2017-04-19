@@ -23,10 +23,10 @@ source_url: https://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/
 
 ## 语言
 
-引入语言和核心库的许多更改都是​​弃用。使用 [“代码清理...”操作](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/)  自动修复项目中的所有警告。
+引入语言和核心库的许多更改都是​​弃用。使用 [“代码清理...”操作](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/) 自动修复项目中的所有警告。
 ### 注释：新语法
 
-和我们一样 [前面提到过](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) ，我们决定为未来更有效的使用预留方括号，并使Java用户的注释语法更加熟悉。所以，从M12开始，我们写<code> @Foo（args）</ code>而不是<code> [Foo（args）] </ code>。更多细节可以找到 [这里](http://kotlinlang.org/docs/reference/annotations.html)  （甚至更多 - 在 [规格文件](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ）。
+和我们一样 [前面提到过](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) ，我们决定为未来更有效的使用预留方括号，并使Java用户的注释语法更加熟悉。所以，从M12开始，我们写<code> @Foo（args）</ code>而不是<code> [Foo（args）] </ code>。更多细节可以找到 [这里](http://kotlinlang.org/docs/reference/annotations.html) （甚至更多 - 在 [规格文件](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ）。
 请注意，在大多数情况下，<code> @ </ code>不需要</ strong>。通常我们编写注释而不进行任何转义：
 
 {% raw %}
@@ -186,7 +186,7 @@ class MyClass(val x: Int) {
 像往常一样，快速修复和“清理代码...”将帮助您。
 ### 枚举类：新语法
 
-的 [枚举的新语法](http://kotlinlang.org/docs/reference/enum-classes.html)  非常接近Java所拥有的。枚举条目现在应以逗号分隔：
+的 [枚举的新语法](http://kotlinlang.org/docs/reference/enum-classes.html) 非常接近Java所拥有的。枚举条目现在应以逗号分隔：
 
 {% raw %}
 <p></p>
@@ -309,9 +309,7 @@ fun foo(c: C) {
 <p></p>
 {% endraw %}
 
-### 功能表达式支持的内联和非本地返回
-
- [函数表达式](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions)  现在在M11中推出的内联电话支持：
+### 功能表达式支持的内联和非本地返回 [函数表达式](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 现在在M11中推出的内联电话支持：
 
 {% raw %}
 <p></p>
@@ -418,7 +416,7 @@ JavaScript后端正赶上JVM。 M12增加了支持
 用于Android的Kotlin Gradle插件现在支持JUnit测试。我们需要做的就是遵循 [Java的标准过程](http://tools.android.com/tech-docs/unit-testing-support#TOC-Setting-up-Android-Studio) ，但现在我们可以在Kotlin写我们的测试。
 ### 类星体支持
 
-Kotlin最近的一些变化使我们的生态系统得到了很大的发展：现在 [类星体](http://docs.paralleluniverse.co/quasar/)  提供光纤（轻量级线程），Go-like频道，Erlang类演员和其他异步工具Kotlin！见公告 [这里](http://blog.paralleluniverse.co/2015/05/29/quasar-pulsar-0-7-0/) 。
+Kotlin最近的一些变化使我们的生态系统得到了很大的发展：现在 [类星体](http://docs.paralleluniverse.co/quasar/) 提供光纤（轻量级线程），Go-like频道，Erlang类演员和其他异步工具Kotlin！见公告 [这里](http://blog.paralleluniverse.co/2015/05/29/quasar-pulsar-0-7-0/) 。
 ## 标准API已更改
 
 M12为标准库添加了新功能：

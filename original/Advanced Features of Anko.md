@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/advanced-features-of-anko/
 ---
 
-Last week we published  [a new version](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/)  of Anko. While the main purpose of this library is creating layouts though a DSL, even the users of XML layouts can benefit from it. Today we are going to talk about such “ambivalent” features of Anko.<span id="more-2135"></span>
+Last week we published [a new version](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/) of Anko. While the main purpose of this library is creating layouts though a DSL, even the users of XML layouts can benefit from it. Today we are going to talk about such “ambivalent” features of Anko.<span id="more-2135"></span>
 ## Intent Helpers
 
 The common way of starting a new <code>Activity</code> is to create an <code>Intent</code>, maybe put some parameters into it, and finally pass the created <code>Intent</code> to the <code>startActivity()</code> method of a <code>Context</code>.
@@ -49,7 +49,7 @@ startActivity<SomeActivity>("id" to 5, "name" to "John")
 {% endraw %}
 
 <code>startActivity()</code> function accepts key-value pairs that will be passed as <code>Intent</code> extra parameters. Another function, <code>startActivityForResult()</code> with similar semantics is also available.
-Please refer to the  [Intent Builder Functions](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#intent-builder-functions)  reference section for more information.
+Please refer to the [Intent Builder Functions](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#intent-builder-functions) reference section for more information.
 ## Popular Intent Shorthands
 
 Almost every application has code that loads a page in the default web browser or opens a new email screen using Android intents, so there are helper functions for this in Anko:
@@ -68,7 +68,7 @@ email("admin@domain.net (mailto:admin@domain.net)", "Here I am!", "Message text"
 <p></p>
 {% endraw %}
 
-Other useful intents are described under the  [Useful Intent Callers](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#useful-intent-callers)  reference section.
+Other useful intents are described under the [Useful Intent Callers](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#useful-intent-callers) reference section.
 ## Alert Dialogs
 
 Anko provides a declarative way of creating alert dialogs with text messages, lists, progress bars and even with your own DSL layout.
@@ -275,8 +275,8 @@ info { "String " + "concatenation" }
 <p></p>
 {% endraw %}
 
-You can read more about logging in the  [Logging](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#logging)  reference section.
+You can read more about logging in the [Logging](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#logging) reference section.
 ## Conclusion
 
-To try <code>Anko</code>, follow  [these instructions](https://github.com/JetBrains/anko#using-with-gradle) .
+To try <code>Anko</code>, follow [these instructions](https://github.com/JetBrains/anko#using-with-gradle) .
 And as usual, your feedback is very welcome.

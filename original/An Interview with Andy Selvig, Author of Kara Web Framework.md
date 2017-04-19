@@ -18,7 +18,7 @@ source_url: https://blog.jetbrains.com/kotlin/2013/01/an-interview-with-andy-sel
 <p><strong> </strong></p>
 {% endraw %}
 
-I’m co-owner of  [Tiny Mission](http://tinymission.com/) , a small web and mobile development company based in Minnesota, USA. In addition to my work at Tiny Mission, I teach a course in mobile application development at the University of Minnesota.
+I’m co-owner of [Tiny Mission](http://tinymission.com/) , a small web and mobile development company based in Minnesota, USA. In addition to my work at Tiny Mission, I teach a course in mobile application development at the University of Minnesota.
 
 {% raw %}
 <p><span id="more-804"></span></p>

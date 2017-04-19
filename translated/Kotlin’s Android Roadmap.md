@@ -14,7 +14,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/03/kotlins-android-roadmap/
 
 ## 介绍
 
-Google最近发布的最有趣的消息之一是Google宣布 [（有限）Java 8支持Android N](http://developer.android.com/preview/j8-jack.html)  与Java的杰克编译器。当然，我们的用户对这些消息如何影响他们很好奇，而这篇博客文章根据Google的公告，概述了我们的计划和我们对Kotlin在Android开发领域的看法。
+Google最近发布的最有趣的消息之一是Google宣布 [（有限）Java 8支持Android N](http://developer.android.com/preview/j8-jack.html) 与Java的杰克编译器。当然，我们的用户对这些消息如何影响他们很好奇，而这篇博客文章根据Google的公告，概述了我们的计划和我们对Kotlin在Android开发领域的看法。
 <span id =“more-3784”> </ span>
 ### Kotlin的Android路线图
 
@@ -22,8 +22,8 @@ Google最近发布的最有趣的消息之一是Google宣布 [（有限）Java 8
 #### 开发工作流程
 
 为了加快开发工作流程，<b>增量编译</ b>来到Kotlin的Gradle插件。这将大大改善构建时间：当源文件更改时，我们只会重新编译这个特定文件，这些文件真的取决于它，而不是整个模块。
-我们接下来要做的是提高Android构建性能，这是提供与Android新的<b> <a href="http://tools.android.com/tech-docs/jackandjill">杰克和吉尔工具链< a> </ b>。现在有一些问题阻止杰克正确处理Kotlin生成的字节码（ [196084年](https://code.google.com/p/android/issues/detail?id=196084)  和 [203531](https://code.google.com/p/android/issues/detail?id=203531) ），但是我们计划与Google团队一起解决问题或提供解决方案。一旦完成，我们将能够在增量编译期间仅使用Jill翻译已更改的类文件，而不是每次翻译所有类文件（这是旧版Android工具中唯一可能的行为）。
-最后但并非最不重要的：<b>即时运行</ b>。目前，冷交换对于Kotlin来说是正常的，但暖和热交换需要进一步调查。我们将竭尽全力尽快解决问题。同时， [适用于Android的JRebel](https://zeroturnaround.com/software/jrebel-for-android/)  Kotlin已经很好了。
+我们接下来要做的是提高Android构建性能，这是提供与Android新的<b> <a href="http://tools.android.com/tech-docs/jackandjill">杰克和吉尔工具链< a> </ b>。现在有一些问题阻止杰克正确处理Kotlin生成的字节码（ [196084年](https://code.google.com/p/android/issues/detail?id=196084) 和 [203531](https://code.google.com/p/android/issues/detail?id=203531) ），但是我们计划与Google团队一起解决问题或提供解决方案。一旦完成，我们将能够在增量编译期间仅使用Jill翻译已更改的类文件，而不是每次翻译所有类文件（这是旧版Android工具中唯一可能的行为）。
+最后但并非最不重要的：<b>即时运行</ b>。目前，冷交换对于Kotlin来说是正常的，但暖和热交换需要进一步调查。我们将竭尽全力尽快解决问题。同时， [适用于Android的JRebel](https://zeroturnaround.com/software/jrebel-for-android/) Kotlin已经很好了。
 #### 运行时大小
 
 我们正在计划对<b>减少kotlin-stdlib的方法计数</ b>的几项改进。我们目前的结果是7'191：<img src =“https://img.shields.io/badge/Methods count-core：6289 | deps：902-e91e63.svg”style =“
@@ -87,4 +87,4 @@ verticalLayout {
 <p></p>
 {% endraw %}
 
-正如你所看到的，Kotlin提供了很多很多的东西来提高你的工作效率，超出Java 8可以为Java 6开发人员提供的。而且也很容易学习 [综合文件](https://kotlinlang.org/docs/reference/) ， [互动练习](http://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin/)  和书籍涵盖两者 [Kotlin一般](https://www.manning.com/books/kotlin-in-action)  和使用 [Kotlin为Android开发](https://leanpub.com/kotlin-for-android-developers) 。所以如果你还没有尝试过Kotlin，现在和任何时候一样好！
+正如你所看到的，Kotlin提供了很多很多的东西来提高你的工作效率，超出Java 8可以为Java 6开发人员提供的。而且也很容易学习 [综合文件](https://kotlinlang.org/docs/reference/) ， [互动练习](http://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin/) 和书籍涵盖两者 [Kotlin一般](https://www.manning.com/books/kotlin-in-action) 和使用 [Kotlin为Android开发](https://leanpub.com/kotlin-for-android-developers) 。所以如果你还没有尝试过Kotlin，现在和任何时候一样好！

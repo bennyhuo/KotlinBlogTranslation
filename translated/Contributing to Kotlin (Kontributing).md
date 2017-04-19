@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/03/contributing-to-kotlin/
 ---
 
-众所周知， [Kotlin](http://jetbrains.com/kotlin)  去 [开源](http://blog.jetbrains.com/kotlin/2012/02/kotlin-goes-open-source-2/)  两周前在这篇文章中，我将为潜在的贡献者提供一些指导，并概述我们已经有的贡献。
+众所周知， [Kotlin](http://jetbrains.com/kotlin) 去 [开源](http://blog.jetbrains.com/kotlin/2012/02/kotlin-goes-open-source-2/) 两周前在这篇文章中，我将为潜在的贡献者提供一些指导，并概述我们已经有的贡献。
 <strong> Kontrbute！</ strong>
 为开源项目做出贡献很容易：
 
@@ -69,11 +69,11 @@ https://github.com/danseid/katchers
 * https://github.com/k33g/kotlin-textmate-bundle
 * https://github.com/danseid/katchers
 
-并记住你的解决方案 [网络演示问题](http://kotlin-demo.jetbrains.com/?folder=Problems&name=Sum)  非常受欢迎，还有新问题。 <strong>只需<a href="http://blog.jetbrains.com/kotlin/2012/02/lets-kode-together/" title="Let's Kode Together!">嘲笑他们</a> </ strong >。
+并记住你的解决方案 [网络演示问题](http://kotlin-demo.jetbrains.com/?folder=Problems&name=Sum) 非常受欢迎，还有新问题。 <strong>只需<a href="http://blog.jetbrains.com/kotlin/2012/02/lets-kode-together/" title="Let's Kode Together!">嘲笑他们</a> </ strong >。
 <strong>更大的东西</ strong>
 如果小额捐款不会招待你，那么你总是可以走大路。有一件非常重要的事情我们无法一一处理。
 有一点是<strong> Eclipse支持</ strong>。我们将尽快启动Kotlin Eclipse插件项目，欢迎您加入并分享您的经验和热情。
-另一件事，或者相当多的事情，是受欢迎的<strong>库和框架</ strong>。支持不会很酷 [玩](http://www.playframework.org/)  在Kotlin？要么 [阿卡](http://akka.io/) ？还是你的名字？
-我们了解这些东西的重要性，并愿意帮助您。看到这个 [阿卡问题](http://youtrack.jetbrains.com/issue/KT-1345?projectKey=KT)  例如。
+另一件事，或者相当多的事情，是受欢迎的<strong>库和框架</ strong>。支持不会很酷 [玩](http://www.playframework.org/) 在Kotlin？要么 [阿卡](http://akka.io/) ？还是你的名字？
+我们了解这些东西的重要性，并愿意帮助您。看到这个 [阿卡问题](http://youtrack.jetbrains.com/issue/KT-1345?projectKey=KT) 例如。
 <strong>要结束</ strong>
 我要感谢每一个kontributor的帮助，我很高兴看到更多的他们来了！

@@ -12,4 +12,4 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/09/video-kotlinjvmls-2011/
 ---
 
-Our slides and video from the JVM Language Summit 2011 is available via  [Dr. Dobb’s](http://drdobbs.com/java/231500204) . Enjoy.
+Our slides and video from the JVM Language Summit 2011 is available via [Dr. Dobb’s](http://drdobbs.com/java/231500204) . Enjoy.

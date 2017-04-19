@@ -13,11 +13,11 @@ source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/
 ---
 
 We are happy to announce the release of Kotlin 1.0.6, the new bugfix and tooling update for Kotlin 1.0. This version brings a significant number of improvements related to the IDE plugin and Android support.
-We’d like to thank our external contributors whose pull requests are included in this release:  [Kirill Rakhman](https://github.com/cypressious)  and  [Yoshinori Isogai](https://github.com/shiraji) . We also want to thank everyone of our EAP users for their feedback. It is really valuable for us, as always.
-You can find the full list of changes in the  [changelog](https://github.com/JetBrains/kotlin/blob/1.0.6/ChangeLog.md#106) . Some of the changes worth highlighting are described below. <span id="more-4429"></span>
+We’d like to thank our external contributors whose pull requests are included in this release: [Kirill Rakhman](https://github.com/cypressious) and [Yoshinori Isogai](https://github.com/shiraji) . We also want to thank everyone of our EAP users for their feedback. It is really valuable for us, as always.
+You can find the full list of changes in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.6/ChangeLog.md#106) . Some of the changes worth highlighting are described below. <span id="more-4429"></span>
 ## Convert <code>try-finally</code> to <code>use()</code> intention
 
-We continue to add intentions for converting code to idiomatic Kotlin. The IDE now automatically suggests to replace <code>try-finally</code> block with the  [use()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html)  call when all the <code>finally</code> block does is closing a resource.<br/>
+We continue to add intentions for converting code to idiomatic Kotlin. The IDE now automatically suggests to replace <code>try-finally</code> block with the [use()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) call when all the <code>finally</code> block does is closing a resource.<br/>
 <img alt="" class="alignnone size-full wp-image-4043" onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try.gif';" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png" width="700"/>
 ## “Add names to call arguments” intention
 
@@ -50,7 +50,7 @@ To enable experimental kapt, just add the following line to your <code>build.gra
 <code>apply plugin: 'kotlin-kapt'</code>
 ## All-open compiler plugin
 
-The <strong>all-open</strong> compiler plugin makes classes annotated with a specific annotation and their members open without the explicit <code>open</code> keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding  [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
+The <strong>all-open</strong> compiler plugin makes classes annotated with a specific annotation and their members open without the explicit <code>open</code> keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
 We provide all-open plugin support both for Gradle and Maven, as well as the IDE integration.
 ### How to use all-open with Gradle
 
@@ -162,7 +162,7 @@ Of course, you can use both <code>kotlin-allopen</code> and <code>kotlin-spring<
 
 ## No-arg compiler plugin
 
-The <b>no-arg</b> compiler plugin generates an additional zero-argument constructor for classes with a specific annotation. The generated constructor is synthetic so it can’t be directly called from Java or Kotlin, but it can be called using reflection. You can see motivating discussion  [here](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) .
+The <b>no-arg</b> compiler plugin generates an additional zero-argument constructor for classes with a specific annotation. The generated constructor is synthetic so it can’t be directly called from Java or Kotlin, but it can be called using reflection. You can see motivating discussion [here](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) .
 ### How to use no-arg in Gradle
 
 The usage is pretty similar to all-open.
@@ -233,6 +233,6 @@ noArg {
 ## How to update
 
 To update the IDEA plugin, use Tools | Kotlin | Configure Kotlin Plugin Updates and press the “Check for updates now” button. Also, don’t forget to update the compiler and standard library version in your Maven and Gradle build scripts.
-The command-line compiler can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.0.6) .
-As usual, if you run into any problems with the new release, you’re welcome to ask for help on the  [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite  [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the  [issue tracker](https://youtrack.jetbrains.com/issues/KT) .
+The command-line compiler can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.0.6) .
+As usual, if you run into any problems with the new release, you’re welcome to ask for help on the [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the [issue tracker](https://youtrack.jetbrains.com/issues/KT) .
 Let’s Kotlin!

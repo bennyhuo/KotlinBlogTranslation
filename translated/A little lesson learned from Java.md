@@ -68,7 +68,7 @@ println(count)
 
 它不循环。并打印“101”，这是迭代范围的大小...
 这是你想的那一点：“他没有说这个难题还没有被Kotlin固定吗？”是的，我做了。
-这个Kotlin程序应该永远循环。而且没有。叹。我已经打开了“新问题”对话框 [跟踪器](http://youtrack.jetbrains.net/issues/KT)  当我太好奇了，看看编译器发出的代码。你知道吗？我没发现什么坏事用Java编写（我今天是你诚实的反编译器），它看起来像这样：
+这个Kotlin程序应该永远循环。而且没有。叹。我已经打开了“新问题”对话框 [跟踪器](http://youtrack.jetbrains.net/issues/KT) 当我太好奇了，看看编译器发出的代码。你知道吗？我没发现什么坏事用Java编写（我今天是你诚实的反编译器），它看起来像这样：
 
 {% raw %}
 <p></p>
@@ -93,4 +93,4 @@ println(count)
 叹。我关闭了我们的“新问题”对话框，并打开了HotSpot的一个...（有些技术性阻止我现在完成报告过程，但是我会在星期一做）。
 现在，我们可以从这个</ strong>中学到什么教训？我不认为我可以从JIT错误中学到很多东西。错误发生 - 这是这里的教训，我想。
 但最初的益智游戏呢？我在高中教帕斯卡，一件我非常喜欢这种语言的是<strong> </ strong>循环，总是在这里终止。我们在Kotlin中不能拥有相同的，因为通常<strong> </ strong>使用可能具有任意逻辑的迭代器。但是我们可以做的是保证一系列数字上的<strong>迭代总是终止</ strong>。
-BTW，如果一个范围只是一个数字的列表，循环将终止，对吗？所以<strong> IS </ strong> a [错误](http://youtrack.jetbrains.net/issue/KT-492)  在Kotlin编译器毕竟。 <img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images /smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em;“/>
+BTW，如果一个范围只是一个数字的列表，循环将终止，对吗？所以<strong> IS </ strong> a [错误](http://youtrack.jetbrains.net/issue/KT-492) 在Kotlin编译器毕竟。 <img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images /smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em;“/>

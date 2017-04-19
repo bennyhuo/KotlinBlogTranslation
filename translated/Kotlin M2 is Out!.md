@@ -12,14 +12,14 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/
 ---
 
-一些新闻网站告诉你 [Kotlin](http://kotlin.jetbrains.org)  M2本周早些时候出来。那么现在我们让它成真了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“
-在里面 [M2候选人](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/)  我告诉过你 [JavaScript](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#js)  和 [Android](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#android)  支持，以及新的 [语言特点](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) 。现在是更多更新，示例和计划的时候了。
+一些新闻网站告诉你 [Kotlin](http://kotlin.jetbrains.org) M2本周早些时候出来。那么现在我们让它成真了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“
+在里面 [M2候选人](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/) 我告诉过你 [JavaScript](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#js) 和 [Android](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#android) 支持，以及新的 [语言特点](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) 。现在是更多更新，示例和计划的时候了。
 继续 [Kotlin M2安装说明](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/#install) 。
 ## 更多关于语言
 
 上一篇文章概述了新的 [语言特点](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) 。这里还有一点：<span id =“more-570”> </ span>
 首先，我想提醒你，在M1我们加了 [“assert not null”运算符：!!](http://confluence.jetbrains.net/display/Kotlin/Null-safety#Null-safety-The%7B%7B%5C%21%5C%21%7D%7Doperator) ，它取代了我们在标准库中使用的sure（）函数。现在，我们从库中删除了sure（），所以有些代码可能会中断，但很容易解决。
-人们不断询问Kotlin是否有列表或地图的<strong>文字</ strong>。答案是：严格来说，不，但我们有功能 [图书馆](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/kotlin/package-summary.html)  这对于那个还不错：
+人们不断询问Kotlin是否有列表或地图的<strong>文字</ strong>。答案是：严格来说，不，但我们有功能 [图书馆](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/kotlin/package-summary.html) 这对于那个还不错：
 
 {% raw %}
 <p></p>
@@ -55,7 +55,7 @@ fun foo(x : Method) {
 {% endraw %}
 
 您只能在此角色中使用此角色中的函数类型，现在可以通过提供一个invoke（）扩展名或成员将任何对象转换为“function”。
-我不得不为在场的所有人道歉 [文件](http://kotlin.jetbrains.org)  然而。一个好消息是，我们正在努力使我们的文档开源以及项目的其余部分。现在，您可以在我们的github中找到源（Confluence wiki格式） [回购](https://github.com/JetBrains/kotlin/tree/master/docs/confluence.jetbrains.com/Kotlin) ，从而为您的拉取请求提供更正/补充。
+我不得不为在场的所有人道歉 [文件](http://kotlin.jetbrains.org) 然而。一个好消息是，我们正在努力使我们的文档开源以及项目的其余部分。现在，您可以在我们的github中找到源（Confluence wiki格式） [回购](https://github.com/JetBrains/kotlin/tree/master/docs/confluence.jetbrains.com/Kotlin) ，从而为您的拉取请求提供更正/补充。
 有关文档的更多消息：我们的KDoc工具快速成熟，感谢 [詹姆斯·斯特拉坎](https://github.com/jstrachan) 。现在它支持搜索和链接到github源 [图书馆](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) 。
 ## 例子
 
@@ -94,7 +94,7 @@ IntelliJ IDEA插件进度非常快。大部分工作都是在幕后完成的（�
 
 由于注释格式有所改变，系统将提示您更新Kotlin库。如果您错过了“更新Kotlin Runtime”气球，请在事件日志中打开消息：<br/>
 <img alt =“”data-recalc-dims =“1”src =“https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Outdated-Kotlin-Runtime.png？ resize = 150％2C129＆amp; ssl = 1“/> <img alt =”“data-recalc-dims =”1“src =”https://i0.wp.com/blog.jetbrains.com/kotlin/files/ 2012/06 / Update-Runtime.png？resize = 150％2C150＆amp; ssl = 1“/>
-<strong>注意</ strong>，您必须卸载M2候选人和任何夜间构建的Kotlin插件或手动构建之前 [安装](http://www.jetbrains.com/idea/plugins/index.html)  M2主要 [插件库](http://plugins.intellij.net/plugin/?idea&pluginId=6954) 。
+<strong>注意</ strong>，您必须卸载M2候选人和任何夜间构建的Kotlin插件或手动构建之前 [安装](http://www.jetbrains.com/idea/plugins/index.html) M2主要 [插件库](http://plugins.intellij.net/plugin/?idea&pluginId=6954) 。
 ## 构建工具：Ant和Maven
 
 我们的 [构建工具集成](http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools) ，包括Maven，改进了一点点的存储库，更容易的设置过程。您可能需要更新您的pom的。参见说明 [这里](http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools) 。

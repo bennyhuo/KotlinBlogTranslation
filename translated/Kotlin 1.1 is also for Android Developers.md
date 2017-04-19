@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-is-also-for-and
 ---
 
 我们对Kotlin 1.1的发布感到非常兴奋。此版本包含的新功能对Java开发人员非常有用，并将JVM开发引向了一个新的可能性世界。
-但这些新功能，如 [协程](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) ， 要么 [键入别名](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md)  （举几个例子），看起来像Android的开发人员的科幻小说。
+但这些新功能，如 [协程](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) ， 要么 [键入别名](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md) （举几个例子），看起来像Android的开发人员的科幻小说。
 我们仍然停留在古老的Java 6中，几乎没有什么改进，迫使我们以其他平台中大多数开发人员几乎被遗忘的方式开发。
 所以一个理所当然的问题是：Kotlin团队能够保持与Java 6的兼容性，同时使所有这些新功能还活着吗？答案是：当然！
 <strong>所有新的东西仍然可用于Java 6，作为Android开发人员的扩展。</ strong>今天，我想向您展示一些，并且如何在开发过程中使您的人生更加容易Android应用程式
@@ -25,7 +25,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-is-also-for-and
 # 键入别名：您可以使您的监听器更易读
 
 当然，类别别名有很多不同的应用。但是，我想到的第一个就是让听众更加可读，同时保持使用lambdas的能力。
-如果你还没听说过 [键入别名](https://github.com/Kotlin/KEEP/issues/4)  以前，它们基本上是将复杂类型重命名为更可读的类型。
+如果你还没听说过 [键入别名](https://github.com/Kotlin/KEEP/issues/4) 以前，它们基本上是将复杂类型重命名为更可读的类型。
 例如，你可以有一个<code> RecyclerViewadapter </ code>，它会收到一个监听器。您可能知道，<code> RecyclerView </ code>没有一个标准的方式来处理项目点击，就像<code> ListView </ code>一样，所以我们必须自己出来。
 让我们想象一下，我们希望有一个可以访问视图的监听器。我们的适配器类可能如下所示：
 

@@ -23,10 +23,10 @@ We are happy to present Kotlin M12, bringing some rather important changes and n
 
 ## Language
 
-Many of the changes introduced to the language and core libraries are deprecations. Use  [“Code Cleanup…” action](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/)  to fix all warnings in your project automatically.
+Many of the changes introduced to the language and core libraries are deprecations. Use [“Code Cleanup…” action](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/) to fix all warnings in your project automatically.
 ### Annotations: New Syntax
 
-As we  [mentioned before](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) , we decided to reserve square brackets for some more productive future uses, and make annotation syntax more familiar to Java users. So, since M12, we write <code>@Foo(args)</code> instead of <code>[Foo(args)]</code>. More details can be found  [here](http://kotlinlang.org/docs/reference/annotations.html)  (even more — in the  [spec document](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ).
+As we [mentioned before](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) , we decided to reserve square brackets for some more productive future uses, and make annotation syntax more familiar to Java users. So, since M12, we write <code>@Foo(args)</code> instead of <code>[Foo(args)]</code>. More details can be found [here](http://kotlinlang.org/docs/reference/annotations.html) (even more — in the [spec document](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ).
 Note that <code>@</code> is <strong>not required</strong> in most cases. Normally we write annotations without any escaping:
 
 {% raw %}
@@ -45,7 +45,7 @@ data class Foo // `data` is an annotation
 The old syntax based on <code>[...]</code> is <em>deprecated</em>, so the compiler will issue warnings on your code. To fix these warnings, press Alt+Enter and run a quick fix (individual or for the whole project). The aforementioned “Code Cleanup…” action also works for the whole project.
 ### Label Syntax Changed
 
-Since M12 <code>@name</code> is an annotation, but it had a meaning before, i.e. it was a  [label](http://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels) . We had to find some other syntax for labels, and now they are declared with <code>@</code> at the end:
+Since M12 <code>@name</code> is an annotation, but it had a meaning before, i.e. it was a [label](http://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels) . We had to find some other syntax for labels, and now they are declared with <code>@</code> at the end:
 
 {% raw %}
 <p></p>
@@ -186,7 +186,7 @@ As our traits are rather limited anyways, and Java’s interfaces are pretty muc
 As usual, quick fixes and “Cleanup Code…” will help you along.
 ### Enum Classes: New Syntax
 
-The  [new syntax for enums](http://kotlinlang.org/docs/reference/enum-classes.html)  is very close to what Java has. Enum entries should now be separated with commas:
+The [new syntax for enums](http://kotlinlang.org/docs/reference/enum-classes.html) is very close to what Java has. Enum entries should now be separated with commas:
 
 {% raw %}
 <p></p>
@@ -264,7 +264,7 @@ strings.map(String::length)
 <p></p>
 {% endraw %}
 
-More details in  [this post](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-function-types-reform) .
+More details in [this post](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-function-types-reform) .
 If you used Kotlin’s function classes (e.g. <code>kotlin.Function1</code>) in your Java code, you will need to make adjustments to it, because from now on these classes reside in the <code>kotlin.jvm.functions</code> package. You can migrate all your Java code by running “Cleanup Code…” with the “Usage of deprecated function classes in Java” inspection.
 ### Smart Casts Made Even Smarter
 
@@ -309,9 +309,7 @@ fun foo(c: C) {
 <p></p>
 {% endraw %}
 
-### Inlining and Non-Local Returns Supported for Function Expressions
-
- [Function expressions](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions)  introduced in M11 are now supported in inline calls:
+### Inlining and Non-Local Returns Supported for Function Expressions [Function expressions](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) introduced in M11 are now supported in inline calls:
 
 {% raw %}
 <p></p>
@@ -411,14 +409,14 @@ JavaScript back-end is catching up with the JVM one. M12 adds support for
 
 ### kapt: Annotation Processing (JSR-269)
 
-As mentioned earlier in  [this post](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) , M12 adds initial support for Annotation Processing, so that frameworks like Dagger 2 work with Kotlin now. The main limitation of the current implementation is that Kotlin code can not refer to any declarations generated by the annotation processors (so, for Dagger you need to write at least one small class in Java).
-We are going to fix this limitation in the future by generating stubs for classes emitted by the Kotlin compiler. Details in the  [aforementioned post](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) .
+As mentioned earlier in [this post](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) , M12 adds initial support for Annotation Processing, so that frameworks like Dagger 2 work with Kotlin now. The main limitation of the current implementation is that Kotlin code can not refer to any declarations generated by the annotation processors (so, for Dagger you need to write at least one small class in Java).
+We are going to fix this limitation in the future by generating stubs for classes emitted by the Kotlin compiler. Details in the [aforementioned post](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) .
 ### Gradle: JUnit Support for Android
 
-Kotlin Gradle plugin for Android now supports JUnit tests. All we need to do is follow  [the standard procedure for Java](http://tools.android.com/tech-docs/unit-testing-support#TOC-Setting-up-Android-Studio) , but now we can write our tests in Kotlin.
+Kotlin Gradle plugin for Android now supports JUnit tests. All we need to do is follow [the standard procedure for Java](http://tools.android.com/tech-docs/unit-testing-support#TOC-Setting-up-Android-Studio) , but now we can write our tests in Kotlin.
 ### Quasar Support
 
-Some of the recent changes in Kotlin enabled a great addition to our ecosystem: now  [Quasar](http://docs.paralleluniverse.co/quasar/)  provides fibers (lightweight threads), Go-like channels, Erlang-like actors, and other asynchronous tools for Kotlin! See the announcement  [here](http://blog.paralleluniverse.co/2015/05/29/quasar-pulsar-0-7-0/) .
+Some of the recent changes in Kotlin enabled a great addition to our ecosystem: now [Quasar](http://docs.paralleluniverse.co/quasar/) provides fibers (lightweight threads), Go-like channels, Erlang-like actors, and other asynchronous tools for Kotlin! See the announcement [here](http://blog.paralleluniverse.co/2015/05/29/quasar-pulsar-0-7-0/) .
 ## Standard APIs Changed
 
 M12 adds new functionality to the standard library:
@@ -430,7 +428,7 @@ M12 adds new functionality to the standard library:
 * MIN_VALUE and MAX_VALUE available for all numeric types for both JVM and JS
 
 As we are working on the Kotlin standard library, some things get changed and/or deprecated. Use quick fixes and the “Cleanup Code…” action to migrate your code. (Please make sure that you have attached the sources of the standard library to your project.)
-The full list of changes is available  [here](https://quip.com/Cy9IAkZtvmjm) .
+The full list of changes is available [here](https://quip.com/Cy9IAkZtvmjm) .
 ## IntelliJ IDEA Plugin
 
 Kotlin IDE now supports the standard <strong>Introduce Parameter</strong> refactoring that turns an expression selected inside a function into a parameter:
@@ -479,7 +477,7 @@ Field Watch Points (only for properties with backing field)
 
 ## Things That Haven’t Made It (Yet)
 
-We are still working on some of the changes we announced earlier, such as  [More Null-safety for Java](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) . Will roll them out as soon as they are ready.
+We are still working on some of the changes we announced earlier, such as [More Null-safety for Java](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) . Will roll them out as soon as they are ready.
 ## More Announcements Coming
 
 There will be some more M12-related material published in the nearest future. Stay tuned!

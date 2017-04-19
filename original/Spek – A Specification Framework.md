@@ -12,13 +12,13 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/02/speka-specification-framework/
 ---
 
-For a while now, a  [few](http://twitter.com/orangy)   [of](http://twitter.com/jonyzzz)   [us](https://plus.google.com/111179551284404865949/about)  have been working on a project called Spek, a framework that allows you to write executable specifications. It allows you to write specifications (i.e. tests) in a more human-readable, and what’s more important, descriptive manner, without having to resort to long test names, underscores or regular expressions.
+For a while now, a [few](http://twitter.com/orangy) [of](http://twitter.com/jonyzzz) [us](https://plus.google.com/111179551284404865949/about) have been working on a project called Spek, a framework that allows you to write executable specifications. It allows you to write specifications (i.e. tests) in a more human-readable, and what’s more important, descriptive manner, without having to resort to long test names, underscores or regular expressions.
 
 {% raw %}
 <p><span id="more-1421"></span></p>
 {% endraw %}
 
-It’s now reached its first milestone where it’s suitable enough to start being used on projects and we’re ready for feedback and feature requests! It even has its  [own site](http://jetbrains.github.io/spek) .
+It’s now reached its first milestone where it’s suitable enough to start being used on projects and we’re ready for feedback and feature requests! It even has its [own site](http://jetbrains.github.io/spek) .
 ## A brief introduction
 
 Spek is a Specification Framework. If you’re familiar with Jasmine, Mocha, RSpec or Machine Specifications, then you’ll immediately see the resemblance.
@@ -47,4 +47,4 @@ IntelliJ IDEA supports Spek, so does TeamCity. There’s also a console runner w
 
 ## Try it
 
-Hoping that you like what you see, head over to the  [Spek web site](http://jetbrains.github.io/spek)  to find out more. It’s still in “EAP” so the more issues reported, the better. And since it’s OSS (Apache 2)  [contributions are more than welcome](http://github.com/jetbrains/spek) .
+Hoping that you like what you see, head over to the [Spek web site](http://jetbrains.github.io/spek) to find out more. It’s still in “EAP” so the more issues reported, the better. And since it’s OSS (Apache 2) [contributions are more than welcome](http://github.com/jetbrains/spek) .

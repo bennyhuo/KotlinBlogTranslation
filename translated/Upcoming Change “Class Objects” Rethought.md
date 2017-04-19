@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/
 ---
 
-<strong> Kotlin M11 </ strong>即将到来，和您中的一些人一样 [表示担忧](https://devnet.jetbrains.com/thread/461012?tstart=0)  关于即将发生的变化，我将介绍M11的一个功能，并要求您提供一些<strong>反馈</ strong>。 <span id =“more-1817”> </ span>
+<strong> Kotlin M11 </ strong>即将到来，和您中的一些人一样 [表示担忧](https://devnet.jetbrains.com/thread/461012?tstart=0) 关于即将发生的变化，我将介绍M11的一个功能，并要求您提供一些<strong>反馈</ strong>。 <span id =“more-1817”> </ span>
 ## 类对象：一个简短的提醒
 
 众所周知，任何Kotlin类都可以有一个关联的 [类对象](http://kotlinlang.org/docs/reference/classes.html#class-objects) ：

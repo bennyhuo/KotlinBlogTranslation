@@ -53,7 +53,7 @@ Var-properties with a backing field and a custom setter are required to be initi
 In the (probably rare) cases when this model is not flexible enough, please consider introducing backing properties (corresponding refactoring is available) or using property delegates.
 ### Operators
 
-As announced  [previously](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) , Kotlin M14 expects functions that are called through operator notation (e.g. <code>plus</code>, <code>iterator</code> etc) to be marked with the <code>operator</code> modifier. Note: when we extend <code>Any</code>, <code>Iterable</code> or <code>Comparable</code>, <code>operator</code> modifiers are inherited automatically, so there’s no need to worry about them. When in need to use a Java method in the operator form, please use extension functions marked <code>operator</code>:
+As announced [previously](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) , Kotlin M14 expects functions that are called through operator notation (e.g. <code>plus</code>, <code>iterator</code> etc) to be marked with the <code>operator</code> modifier. Note: when we extend <code>Any</code>, <code>Iterable</code> or <code>Comparable</code>, <code>operator</code> modifiers are inherited automatically, so there’s no need to worry about them. When in need to use a Java method in the operator form, please use extension functions marked <code>operator</code>:
 
 {% raw %}
 <p></p>
@@ -90,7 +90,7 @@ const val MAX = 239
 <em>Code Cleanup</em> will add missing <code>const</code> modifiers for you.
 ### Annotate file classes
 
-Since M13, top-level functions and properties from each source file are put into a separate class file by default (details  [here](http://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/) ). Now we can annotate these classes by applying a file annotation:
+Since M13, top-level functions and properties from each source file are put into a separate class file by default (details [here](http://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/) ). Now we can annotate these classes by applying a file annotation:
 
 {% raw %}
 <p></p>
@@ -132,7 +132,7 @@ public final class FooKt {
 
 ### Migration from old “package facades”
 
-As we have transitioned to the  [new class-file layout](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) , it’s time to retire the old one. Since M14 old package-facade classes (e.g. <code>FooPackage</code>) are deprecated, and the IDE helps you migrate your Java code to the new scheme through <em>Code Cleanup</em>.
+As we have transitioned to the [new class-file layout](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) , it’s time to retire the old one. Since M14 old package-facade classes (e.g. <code>FooPackage</code>) are deprecated, and the IDE helps you migrate your Java code to the new scheme through <em>Code Cleanup</em>.
 <strong>NOTE</strong>: package facades will be dropped very soon, so make sure to migrate your code.
 The Standard Library (previously <code>kotlin.KotlinPackage</code> class) is being migrated to the new scheme too: see below.
 ### Other language changes

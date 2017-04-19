@@ -20,7 +20,7 @@ source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-
 * 每个类可以有多个超类;
 * 如果一些非抽象成员（属性或方法）从两个超类型继承，则编译器要求用户覆盖它，并手动指定要运行的代码。
 
-（有关更多详情，请参阅我们的 [维基](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416)  截至2011年7月20日）
+（有关更多详情，请参阅我们的 [维基](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416) 截至2011年7月20日）
 这是基本上是臭名昭着的<strong>多重继承</ strong>的故事，我们记得从C ++时代来看，这是一个坏的。让我们看看更近
 <strong>这是关于初始化</ strong>
 我们来看下面的例子：
@@ -137,5 +137,5 @@ c.bar()
 * 一些其他语言，如堡垒，不允许国家的特征;
 * <您最喜欢的语言>
 
-在里面 [下一篇文章](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-2-possible-directions/)  在本系列中，我们将详细讨论选项。
+在里面 [下一篇文章](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-2-possible-directions/) 在本系列中，我们将详细讨论选项。
 现在是你的评论的时候了他们非常的欢迎。

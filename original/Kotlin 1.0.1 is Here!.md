@@ -12,11 +12,11 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/03/kotlin-1-0-1-is-here/
 ---
 
-It’s been a month since we released  [Kotlin 1.0](http://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-released-pragmatic-language-for-jvm-and-android/) , and while our user base roughly doubled during this time, we prepared the first bugfix update.
+It’s been a month since we released [Kotlin 1.0](http://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-released-pragmatic-language-for-jvm-and-android/) , and while our user base roughly doubled during this time, we prepared the first bugfix update.
 Kotlin 1.0.1 starts a series of 1.0.X versions delivering safe bug fixes and performance improvements to the language (as well as other parts of the project), and new features to our tools and integrations. This time it’s only relatively small IDE features, but bigger things are on the horizon for 1.0.2 and later.
 ## Changes in 1.0.1
 
-Please find the full change log  [here](https://github.com/JetBrains/kotlin/releases/tag/1.0.1) . Some numbers and highlights:
+Please find the full change log [here](https://github.com/JetBrains/kotlin/releases/tag/1.0.1) . Some numbers and highlights:
 
 * it’s 47 fixes in the compiler, library and Gradle plugin improvements (performance),
 * Compatibility with Gradle 2.12,
@@ -33,4 +33,4 @@ KT-9697 Move method to companion object and back,
 * KT-9697 Move method to companion object and back,
 * and 39 assorted fixes in the IDE.
 
-We thank the participants of the EAP who tried the preview builds and reported feedback. Please join the  [EAP](https://discuss.kotlinlang.org/t/kotlin-1-0-1-eap/1525)  and let’s make Kotlin better together!
+We thank the participants of the EAP who tried the preview builds and reported feedback. Please join the [EAP](https://discuss.kotlinlang.org/t/kotlin-1-0-1-eap/1525) and let’s make Kotlin better together!

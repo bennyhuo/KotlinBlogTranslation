@@ -15,7 +15,7 @@ source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/
 从现在开始的两个星期内，Kotlin将是一个开源项目的一年。在这个时候，这是一个很大的努力，在社区的巨大帮助下：我们收到了 [164拉请求](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) ，这意味着每隔一天的贡献。今天我们进一步推出了一个Kotlin M5 </ strong>。本博客文章涵盖了此版本中引入的更改。<span id =“more-835”> </ span>
 # 概述
 
-M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息时间），但是我们已经摆脱了 [144个问题](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-12-11+..+2013-02-04)  在跟踪器中。
+M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息时间），但是我们已经摆脱了 [144个问题](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-12-11+..+2013-02-04) 在跟踪器中。
 许多IDE子系统得到了改进，包括JUnit转轮，从Java搜索Kotlin类，为无效的外部注释提供更好的诊断功能，支持新的图标 [达库拉配色方案](http://www.jetbrains.com/idea/) ：
 
 {% raw %}
@@ -42,7 +42,7 @@ M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息
 
 泛型是棘手的，它们与可空类型的组合更复杂。在Java中，一切都是可以空的，例如，考虑一个Java方法foo（ArrayList <String>），Kotlin（在M5之前）用于将它看作是ArrayList <String？>，即集合可以是null，其元素可能是也是。这是我们可以做的最安全的事情，但是它被证明是非常不方便的：如果你在Kotlin中有一个ArrayList <String>，你不能传递给foo（）：ArrayList在它的通用参数中是不变的，因此ArrayList < String>不是ArrayList <String？>的子类型。即使使用KAnnotator，也会造成很大的痛苦。
 所以我们决定更改通用参数类型</ em>的默认策略，并加载ArrayList <String>？在上述情况下。
-此更改可能会破坏现有的一些代码。大部分可以通过删除不需要的问号直接固定。如果你想要旧的类型，你可以 [添加一个外部注释](http://blog.jetbrains.com/kotlin/using-external-annotations/)  到你的Java定义。
+此更改可能会破坏现有的一些代码。大部分可以通过删除不需要的问号直接固定。如果你想要旧的类型，你可以 [添加一个外部注释](http://blog.jetbrains.com/kotlin/using-external-annotations/) 到你的Java定义。
 但安全呢？现在Java代码可能会给你一个空值的集合而不是字符串，而你的Kotlin代码将会失败。这可能会发生，但是我们使它失败：Kotlin检查从Java接收到的数据，并提前失败，并出现如下详细的错误消息：
 
 {% raw %}
@@ -62,7 +62,7 @@ Exception in thread "main" java.lang.IllegalStateException:
 这可能比NPE好多了，也许。对功能参数进行同样的检查：如果有人将非法通过空值的Kotlin功能称为非法，那么它会提早爆发，尽可能地责怪有罪。
 # Varargs和函数文字
 
-Kotlin的 [类型安全的建设者](http://confluence.jetbrains.com/display/Kotlin/Type-safe+Groovy-style+builders)   [是](http://karaframework.com/docs/views.html)   [真棒](http://karaframework.com/docs/stylesheets.html) ，特别是如果你注意到它们不是一个内置机制，而只是一个很好的语言特征（主要是扩展函数和高阶函数）的组合。有一件事是在旧版本的Kotlin中打扰构建器的作者：你不能定义一个可以将函数文字作为括号括起来的参数的vararg函数。现在你可以做到：
+Kotlin的 [类型安全的建设者](http://confluence.jetbrains.com/display/Kotlin/Type-safe+Groovy-style+builders) [是](http://karaframework.com/docs/views.html) [真棒](http://karaframework.com/docs/stylesheets.html) ，特别是如果你注意到它们不是一个内置机制，而只是一个很好的语言特征（主要是扩展函数和高阶函数）的组合。有一件事是在旧版本的Kotlin中打扰构建器的作者：你不能定义一个可以将函数文字作为括号括起来的参数的vararg函数。现在你可以做到：
 
 {% raw %}
 <p></p>
@@ -144,5 +144,5 @@ class Bean(val data: Integer = 0)
 现在，构造函数更加方便：在生成的字节代码中，此类将获得默认构造函数</ em>，即不使用参数（使用默认值）的构造函数。这种情况在使用Java框架（如JAXB）时出现了很多，所以现在Kotlin更加Java友好。
 # 结论
 
-你可以从下载Kotlin M5 [插件库](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) 。这个需要 [IntelliJ IDEA 12](http://www.jetbrains.com/idea/)  （推荐使用最近发布的12.0.3）。
+你可以从下载Kotlin M5 [插件库](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) 。这个需要 [IntelliJ IDEA 12](http://www.jetbrains.com/idea/) （推荐使用最近发布的12.0.3）。
 <strong>有一个很好的Kolin！</ strong>

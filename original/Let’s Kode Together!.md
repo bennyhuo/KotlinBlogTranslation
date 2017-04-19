@@ -12,12 +12,11 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/02/lets-kode-together/
 ---
 
-As  [Kotlin Web Demo](http://kotlin-demo.jetbrains.com/)  is the simplest way to try Kotlin. Today we unveil some new features that make it even more fun.
+As [Kotlin Web Demo](http://kotlin-demo.jetbrains.com/) is the simplest way to try Kotlin. Today we unveil some new features that make it even more fun.
 <strong>HTML5 Canvas</strong>
 We added support for HTML5 Canvas (for the JavaScipt back-end) so that you can now do something like:
 <span id="more-388"></span><br/>
-Watch it in action on YouTube:  [http://youtu.be/iee75Dtw83k](http://youtu.be/iee75Dtw83k) 
-<strong>Note</strong> that in order to use Canvas, you need to select the JavaScript (Canvas) run configuration in the panel on the right.
+Watch it in action on YouTube: [http://youtu.be/iee75Dtw83k](http://youtu.be/iee75Dtw83k) <strong>Note</strong> that in order to use Canvas, you need to select the JavaScript (Canvas) run configuration in the panel on the right.
 <strong>Sharing your programs</strong>
 Also, you can now save a program you wrote in and share a public link to it:
 

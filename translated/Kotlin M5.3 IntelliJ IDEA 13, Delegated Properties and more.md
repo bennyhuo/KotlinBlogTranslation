@@ -15,11 +15,11 @@ source_url: https://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delega
 Kotlin M5.3支持IntelliJ IDEA 13和一些新功能，供您查看。我们正在向强大的运行时支持，包括反射和其他框架启用功能。这个里程碑标志着我们朝这个方向迈出的第一步。 <span id =“more-1060”> </ span>
 ## IntelliJ IDEA 12.1和13
 
-首次早期访问版本 [IntelliJ IDEA 13](http://blogs.jetbrains.com/idea/2013/05/intellij-idea-13-early-preview-is-out/)  正在出来，我们发行与这些版本兼容的Kotlin插件。记住这是一个EAP，使用它自己承担风险。当然好老了 [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/)  也被支持。
-<strong>注意</ strong>：有关Kotlin支持的一些消息 [Android Studio](http://developer.android.com/sdk/installing/studio.html)  即将到来
+首次早期访问版本 [IntelliJ IDEA 13](http://blogs.jetbrains.com/idea/2013/05/intellij-idea-13-early-preview-is-out/) 正在出来，我们发行与这些版本兼容的Kotlin插件。记住这是一个EAP，使用它自己承担风险。当然好老了 [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/) 也被支持。
+<strong>注意</ strong>：有关Kotlin支持的一些消息 [Android Studio](http://developer.android.com/sdk/installing/studio.html) 即将到来
 ## 许多改进
 
-像往常一样，M5.3在编译器和IDE中都带来了许多改进。在编译器中，我们仍然主要关注性能，这正在逐渐改善。 IDE会获得新的快速修复和重构，其中一些将在下面介绍。您现在可以导航到覆盖您正在查看的属性（请参见左侧沟槽中的图标）。编辑器识别语法 [KDoc](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Doc)  （谢谢 [这个拉请求](https://github.com/JetBrains/kotlin/pull/280) ）...但是首先，让我们谈谈酷的新语言功能，有些期待已久，有些意想不到的（也许）。
+像往常一样，M5.3在编译器和IDE中都带来了许多改进。在编译器中，我们仍然主要关注性能，这正在逐渐改善。 IDE会获得新的快速修复和重构，其中一些将在下面介绍。您现在可以导航到覆盖您正在查看的属性（请参见左侧沟槽中的图标）。编辑器识别语法 [KDoc](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Doc) （谢谢 [这个拉请求](https://github.com/JetBrains/kotlin/pull/280) ）...但是首先，让我们谈谈酷的新语言功能，有些期待已久，有些意想不到的（也许）。
 ## 新语言功能：委派属性
 
 我们经常收到以下功能要求：
@@ -99,7 +99,7 @@ e.p = "NEW"
 
 这将打印“新的已分配给”p“在示例@ 33a17727”。
 可能，您已经看到如何使用这种机制来实现懒惰或可观察的东西。尝试一下锻炼，但大部分已经完成了 [标准库](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt) 。
-的 [kotlin.properties.Delegates](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt#L12)  对象拥有最有用的东西。我们从懒惰开始：
+的 [kotlin.properties.Delegates](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt#L12) 对象拥有最有用的东西。我们从懒惰开始：
 
 {% raw %}
 <p></p>
@@ -232,7 +232,7 @@ println(user.age)  // Prints 25
 
 ## SAM转换的第一步
 
-我们介绍 [SAM构造函数](http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/)  上次。当然这还不够，所以我们正在进行全面的SAM转换。该功能尚未完成，但您可以在简单的情况下使用它：
+我们介绍 [SAM构造函数](http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/) 上次。当然这还不够，所以我们正在进行全面的SAM转换。该功能尚未完成，但您可以在简单的情况下使用它：
 
 {% raw %}
 <p></p>
@@ -315,7 +315,7 @@ println(strings.filter(oddLength)) // Prints "[a, abc]"
 更改类型，重命名，重新排序或删除参数，并且所有呼叫站点将相应更新。
 ## 快速修复“类型不匹配”等
 
-感谢贡献 [周杰克](https://github.com/univerio) ， [MichałSapalski](https://github.com/sapal) ， [WojciechŁopata](https://github.com/lopekpl)  和斯坦福大学领导的开源导师计划的其他学生，我们现在得到很多很好的快速修复。例如，当您遇到类型不匹配错误时，按Alt + Enter并获取一些建议来修复代码：
+感谢贡献 [周杰克](https://github.com/univerio) ， [MichałSapalski](https://github.com/sapal) ， [WojciechŁopata](https://github.com/lopekpl) 和斯坦福大学领导的开源导师计划的其他学生，我们现在得到很多很好的快速修复。例如，当您遇到类型不匹配错误时，按Alt + Enter并获取一些建议来修复代码：
 
 {% raw %}
 <p><img alt="" class="aligncenter" data-recalc-dims="1" src="https://i1.wp.com/www.evernote.com/shard/s171/sh/ff9bd33c-ecd1-4800-91f2-4a69db761a37/f829b15d7de80df501e39b64f6973754/deep/0/Screenshot%206/5/13%206:51%20PM.jpg?w=640&amp;ssl=1"/></p>

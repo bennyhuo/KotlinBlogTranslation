@@ -23,7 +23,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/02/kotlin-1-1-beta-2-is-here/
 
 对于JavaScript项目，我们更改了标准库的工件名称。而不是<code> kotlin-js-library </ code>，它现在是<code> kotlin-stdlib-js </ code>。当您更新到1.1 beta 2或更新的版本时，您将需要更新您的Maven和Gradle脚本。
 除此之外，JavaScript的测试支持类（包<code> kotlin.test </ code>）现在被打包为单独的工件，就像以前为Java版本一样。如果您在JS项目中使用kotlin.test，请在<code> kotlin-test-js </ code>上添加依赖关系。
-Kotlin标准库中的协同程序API已被移至<code> kotlin.coroutines.experimental </ code>包;如果您在代码中使用了这些API，则需要更新导入。看到 [安德烈的论坛帖子](https://discuss.kotlinlang.org/t/experimental-status-of-coroutines-in-1-1-and-related-compatibility-concerns/2236)  为了这个变化的背景。
+Kotlin标准库中的协同程序API已被移至<code> kotlin.coroutines.experimental </ code>包;如果您在代码中使用了这些API，则需要更新导入。看到 [安德烈的论坛帖子](https://discuss.kotlinlang.org/t/experimental-status-of-coroutines-in-1-1-and-related-compatibility-concerns/2236) 为了这个变化的背景。
 我们还使您的Gradle项目中的实验协同程序支持变得更加容易。您可以将以下代码片段添加到build.gradle中，而不是编辑gradle.properties：
 
 {% raw %}

@@ -14,13 +14,13 @@ source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-
 
 I’m back from my vacation, and it’s time to get to one one the biggest issues pointed out in the feedback we received during conference presentations and in the comments to the docs. I’m talking about inheritance.
 I plan to write a series of posts on this topic. These posts are intended to provoke a discussion, so that we can benefit from your feedback and come up with a better design.
-This is the first post in the series, and I discuss the design we  [presented in July 2011](http://confluence.jetbrains.net/download/attachments/40702623/JVMLS_workshop_2011.pdf?version=1&modificationDate=1311201781543) . It features the following approach to inheritance:
+This is the first post in the series, and I discuss the design we [presented in July 2011](http://confluence.jetbrains.net/download/attachments/40702623/JVMLS_workshop_2011.pdf?version=1&modificationDate=1311201781543) . It features the following approach to inheritance:
 
 * there were no interfaces, only classes;
 * each class could have multiple superclasses;
 * if some non-abstract member (property or method) was inherited from two of the supertypes, the compiler required the user to override it and specify manually what code to run.
 
-(For more details, see our  [wiki](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416)  as of July 20th 2011.)
+(For more details, see our [wiki](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416) as of July 20th 2011.)
 This is, basically, the infamous <strong>multiple inheritance</strong> story, and we remember from the C++ times that it is sort of bad. Let’s look closer.
 <strong>It’s all about initialization</strong>
 Let’s a look at the following example:
@@ -42,7 +42,7 @@ class Child : Left(3), Right(4) { ... }
 <p></p>
 {% endraw %}
 
-So, we have a  [diamond](http://en.wikipedia.org/wiki/Diamond_problem) : Base at the top, Left and Right on the sides, and Child at the bottom. One thing looks suspicious here: Child initializes its superclasses passing different numbers two them: 3 to Left and 4 to right. Now, they, in turn, initialize Base with those numbers… What is Base initialized with?
+So, we have a [diamond](http://en.wikipedia.org/wiki/Diamond_problem) : Base at the top, Left and Right on the sides, and Child at the bottom. One thing looks suspicious here: Child initializes its superclasses passing different numbers two them: 3 to Left and 4 to right. Now, they, in turn, initialize Base with those numbers… What is Base initialized with?
 
 {% raw %}
 <p><span id="more-74"></span></p>
@@ -124,7 +124,7 @@ So far, so good, but there still is something wrong with this approach…
 <strong>Problem 2:</strong> the implementation of Left assumes it’s initialized with 3, but it may call bar() that is implemented in Right and assumes everything is initialized with 4. This may cause some inconsistent behavior.
 <strong>Problem 3:</strong> being implemented by delegation, deep hierarchies will degrade performance by having long delegation chains.
 <strong>(Im)Possible ways of fixing it</strong>
-Now, how can we fix our design? C++ copes with <strong>Problems 1</strong> and <strong>3</strong> by having  [virtual inheritance](http://en.wikipedia.org/wiki/Virtual_inheritance) . On the Java platform and with separate compilation in mind, I do not think we can get rid of delegation when a class <em>inherits state</em> from two sources, so the <strong>Problem 3</strong> stands for us anyway. And having two flavors of inheritance is no good, as we learned from C++…
+Now, how can we fix our design? C++ copes with <strong>Problems 1</strong> and <strong>3</strong> by having [virtual inheritance](http://en.wikipedia.org/wiki/Virtual_inheritance) . On the Java platform and with separate compilation in mind, I do not think we can get rid of delegation when a class <em>inherits state</em> from two sources, so the <strong>Problem 3</strong> stands for us anyway. And having two flavors of inheritance is no good, as we learned from C++…
 Virtual inheritance does not fix <strong>Problem 2</strong>: being initialized differently, parts of the inherited implementation may make inconsistent assumptions about the overall state of the object. This problem seems intractable in the general case, but let’s be accurate and make sure it really is.
 We could try to guarantee that everything is initialized consistently. In the general case, when we pass arbitrary expressions to Left and Right, there’s no way to be sure they yield same results, even if they are textually the same. Then, we could impose some constraints here. For example: only allow to pass compile-time constants or immutable variables to superclass constructors. In this case the compiler could examine the whole class hierarchy and make sure every base class is initialized consistently. There is a problem, though: if one of the superclasses change its initialization logic even slightly, subclasses may become inconsistent, so this will be a big evolution problem, for example, for libraries.
 And, of course, it would be too restrictive to impose those constraints on all classes. So we end up with two flavors of classes…
@@ -137,5 +137,5 @@ Different languages manage multiple inheritance differently, and I summarize som
 * Some other languages, like Fortress, do not allow state in traits;
 * <Your favorite language here>
 
-In the  [next post](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-2-possible-directions/)  of this series we will discuss the options in detail.
+In the [next post](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-2-possible-directions/) of this series we will discuss the options in detail.
 And now it’s time for your comments. They are very welcome.

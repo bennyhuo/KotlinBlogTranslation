@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/ranges-reloaded/
 ---
 
-In  [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/)  we have redesigned our ranges a little bit.<span id="more-855"></span>
-Range expressions are formed with <tt>rangeTo</tt> functions that have the  [operator form of ..](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations)  which are complemented by  [in and !in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) . Range is defined for any comparable type (subclass of <code>Comparable</code>), but for number primitives it is optimized. Here are examples of using ranges:
+In [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) we have redesigned our ranges a little bit.<span id="more-855"></span>
+Range expressions are formed with <tt>rangeTo</tt> functions that have the [operator form of ..](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations) which are complemented by [in and !in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) . Range is defined for any comparable type (subclass of <code>Comparable</code>), but for number primitives it is optimized. Here are examples of using ranges:
 
 {% raw %}
 <p></p>
@@ -88,7 +88,7 @@ for (i in 1.0..2.0 step 0.3) print("$x ") // prints "1.0 1.3 1.6 1.9 "
 
 There are two traits in the library: <tt>Range&lt;T&gt;</tt> and <tt>Progression&lt;N&gt;</tt>.
 <tt>Range&lt;T&gt;</tt> denotes an interval in the mathematical sense, defined for comparable types. It has two endpoints: <tt>start</tt> and <tt>end</tt>, which are included in the range. Main operation is <tt>contains()</tt>, usually used in the form of <tt>in</tt>/<tt>!in</tt> operators.
-<tt>Progression&lt;N&gt;</tt> denotes  [arithmetic progression](http://en.wikipedia.org/wiki/Arithmetic_progression) , defined for number types. It has <tt>start</tt>, <tt>end</tt> and non-zero <tt>increment</tt>. <tt>Progression&lt;N&gt;</tt> is a subtype of <tt>Iterable&lt;N&gt;</tt>, so it can be used in for-loops and functions like <tt>map</tt>, <tt>filter</tt>, etc. First element is <tt>start</tt>, every next element equals previous plus <tt>increment</tt>. Iteration over <tt>Progression</tt> is equivalent to an indexed for-loop in Java/JavaScript:
+<tt>Progression&lt;N&gt;</tt> denotes [arithmetic progression](http://en.wikipedia.org/wiki/Arithmetic_progression) , defined for number types. It has <tt>start</tt>, <tt>end</tt> and non-zero <tt>increment</tt>. <tt>Progression&lt;N&gt;</tt> is a subtype of <tt>Iterable&lt;N&gt;</tt>, so it can be used in for-loops and functions like <tt>map</tt>, <tt>filter</tt>, etc. First element is <tt>start</tt>, every next element equals previous plus <tt>increment</tt>. Iteration over <tt>Progression</tt> is equivalent to an indexed for-loop in Java/JavaScript:
 
 {% raw %}
 <p></p>

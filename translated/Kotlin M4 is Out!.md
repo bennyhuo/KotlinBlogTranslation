@@ -18,11 +18,11 @@ source_url: https://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/
 Kotlin M4是<strong> JDK7友好</ strong>：我们仍然生成兼容Java6的字节码，但是与JDK7编译相关的一些问题现在已经修复了。
 <strong>类型参数推断</ strong>已经进一步改进，现在<strong>更快</ strong>，更多的加速即将到来。
 <strong>代码完成</ strong>也在许多方面得到改进。享受<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/ images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
-总体而言 [128个问题](http://youtrack.jetbrains.com/issues/KT?p=0&q=%23Resolved+resolved+date%3A+2012-10-11+..+2012-12-01&f=false)  关闭以来 [M3.1](http://blog.jetbrains.com/kotlin/2012/10/dogfooding-kotlin-and-m3-1/)  不在。
+总体而言 [128个问题](http://youtrack.jetbrains.com/issues/KT?p=0&q=%23Resolved+resolved+date%3A+2012-10-11+..+2012-12-01&f=false) 关闭以来 [M3.1](http://blog.jetbrains.com/kotlin/2012/10/dogfooding-kotlin-and-m3-1/) 不在。
 # KAnnotator：注释世界
 
-以来 [M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) ， 您可以使用 [外部注释](http://blog.jetbrains.com/kotlin/using-external-annotations/)  告诉系统你的方法返回/取非空值。即使不使用Kotlin，这种机制也是有用的：你可以打开 [Java的可空性检查](http://www.jetbrains.com/idea/documentation/howto.html)  （我完全建议你这样做）。
-关于这个的一个问题曾经是这样，虽然你可以在编写自己的代码时注释它（我们这样做） [所有](https://github.com/JetBrains/kotlin/blob/master/compiler/frontend/src/org/jetbrains/jet/lang/types/TypeConstructor.java)   [的](https://github.com/JetBrains/intellij-community/blob/master/platform/util/src/com/intellij/util/text/CharArrayUtil.java)   [时间](https://github.com/JetBrains/la-clojure/blob/master/src/org/jetbrains/plugins/clojure/utils/ClojureUtils.java)  在JetBrains），您最喜欢的库没有注释，它是如此之大，您不能手动注释。
+以来 [M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) ， 您可以使用 [外部注释](http://blog.jetbrains.com/kotlin/using-external-annotations/) 告诉系统你的方法返回/取非空值。即使不使用Kotlin，这种机制也是有用的：你可以打开 [Java的可空性检查](http://www.jetbrains.com/idea/documentation/howto.html) （我完全建议你这样做）。
+关于这个的一个问题曾经是这样，虽然你可以在编写自己的代码时注释它（我们这样做） [所有](https://github.com/JetBrains/kotlin/blob/master/compiler/frontend/src/org/jetbrains/jet/lang/types/TypeConstructor.java) [的](https://github.com/JetBrains/intellij-community/blob/master/platform/util/src/com/intellij/util/text/CharArrayUtil.java) [时间](https://github.com/JetBrains/la-clojure/blob/master/src/org/jetbrains/plugins/clojure/utils/ClojureUtils.java) 在JetBrains），您最喜欢的库没有注释，它是如此之大，您不能手动注释。
 这里的关键是“手动”。程序员是一个懒惰的生物，凭借我们的懒惰，我们希望尽可能自动化。而今天，与Kotlin M4一起，我们推出了<strong> KAnnotator </ strong>：一种<strong>自动注释库的工具</ strong>（该工具当然是用Kotlin编写的）。
 简单来说，你的库是一个罐子（或者是一些罐子），你告诉KAnnotator来推断这些jar的注释，然后再收回一堆.xml文件。它们包含方法和字段的注释，例如：
 <img alt =“”class =“aligncenter size-full wp-image-740”data-recalc-dims =“1”sizes =“（max-width：409px）100vw，409px”src =“https：// i0 .wp.com / blog.jetbrains.com / kotlin / files / 2012/12 / annotations.xml_.png？resize = 409％2C149＆amp; ssl = 1“srcset =”https://i0.wp.com/blog。 jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?resize=300%2C109&amp;ssl=1 300w，https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012 /12/annotations.xml_.png?w=409&amp;ssl=1 409w“/>现在，您可以将这些注释附加到项目中，而Java IDE和Kotlin编译器都将看到它们。
@@ -163,5 +163,5 @@ if (foo is List<String>) { // ERROR: can't check!
 <img alt =“”class =“aligncenter size-full wp-image-746”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/files /2012/12/QuickFix.png?resize=190%2C96&amp;ssl=1"/>只需按Alt + Enter就可以出现错误（因为，我相信你总是这样做），并得到它的修正：你需要一个'明星投影“在这里。
 # 下载
 
-Kotlin插件需要IntelliJ IDEA 12，它是在几天前发布的，你可以得到它 [这里](http://www.jetbrains.com/idea/download/index.html)  （<strong>开源</ strong>社区版可用）。您可以从插件库中下载<strong> Kotlin M4 </ strong> [可从IDE访问](http://www.jetbrains.com/idea/plugins/index.html) 。
+Kotlin插件需要IntelliJ IDEA 12，它是在几天前发布的，你可以得到它 [这里](http://www.jetbrains.com/idea/download/index.html) （<strong>开源</ strong>社区版可用）。您可以从插件库中下载<strong> Kotlin M4 </ strong> [可从IDE访问](http://www.jetbrains.com/idea/plugins/index.html) 。
 您的反馈非常受欢迎。 <strong>拥有不错的Kotlin！</ strong>

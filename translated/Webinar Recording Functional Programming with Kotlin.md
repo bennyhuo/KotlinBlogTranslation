@@ -48,8 +48,8 @@ source_url: https://blog.jetbrains.com/kotlin/2015/11/webinar-recording-function
 <code> 25:18 </ code>  - 以功能方式加载数据
 <code> 28:30 </ code>  - 提高数据加载性能
 <code> 33:20 </ code>  - 改善RX风格的UI响应能力
-<code> 40:05 </ code>  - 使用 [公约](https://github.com/mplatvoet/kovenant)  图书馆
-<code> 42:03 </ code>  - 使用 [funKTionale](https://github.com/MarioAriasC/funKTionale)  图书馆
+<code> 40:05 </ code>  - 使用 [公约](https://github.com/mplatvoet/kovenant) 图书馆
+<code> 42:03 </ code>  - 使用 [funKTionale](https://github.com/MarioAriasC/funKTionale) 图书馆
 <code> 44:10 </ code>  - 调用
 <code> 45:35 </ code>  - 问题
 关于主持人：

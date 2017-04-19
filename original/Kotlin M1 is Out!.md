@@ -24,10 +24,10 @@ Kotlin has graduated to the official plugin repository!
 * Kotlin has graduated to the official plugin repository!
 * Standalone Compiler (download here)
 
-See the  [Getting Started guide](http://confluence.jetbrains.net/display/Kotlin/Getting+Started)  for details.
+See the [Getting Started guide](http://confluence.jetbrains.net/display/Kotlin/Getting+Started) for details.
 ## Standard library
 
-Kotlin’s  [Standard Library](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html)  provides many useful functions, including enhancements for existing Java APIs. For example, <span id="more-514"></span>it enables bulk data processing with map()/filter()/etc available on collections:
+Kotlin’s [Standard Library](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) provides many useful functions, including enhancements for existing Java APIs. For example, <span id="more-514"></span>it enables bulk data processing with map()/filter()/etc available on collections:
 
 {% raw %}
 <p></p>
@@ -71,13 +71,13 @@ myReentrantLock.read {
 <p></p>
 {% endraw %}
 
-See the Standard Library API documentation  [here](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) .
+See the Standard Library API documentation [here](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) .
 ## Build tools
 
 We have significantly improved Kotlin’s Maven Integration.
-First of all, Kotlin’s maven artifacts are now published in  [repository.jetbrains.com](http://repository.jetbrains.com/) .<br/>
-Find the instructions for building Kotlin projects as well as mixed Java/Kotlin code  [here](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Maven) .
-You can still use Kotlin with  [Ant](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Ant)  and  [Griffon](https://github.com/griffon/griffon-kotlin-plugin) , of course.
+First of all, Kotlin’s maven artifacts are now published in [repository.jetbrains.com](http://repository.jetbrains.com/) .<br/>
+Find the instructions for building Kotlin projects as well as mixed Java/Kotlin code [here](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Maven) .
+You can still use Kotlin with [Ant](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Ant) and [Griffon](https://github.com/griffon/griffon-kotlin-plugin) , of course.
 ## What’s new
 
 Here I’d like to point out one improvement: the IDEA plugin now does very rich semantic highlighting that can be tweaked in the Settings dialog:
@@ -86,8 +86,8 @@ Here I’d like to point out one improvement: the IDEA plugin now does very rich
 <p style="text-align: center"><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/04/Settings.png"><img alt="" class="alignnone size-medium wp-image-520" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/04/Settings.png?resize=300%2C292&amp;ssl=1"/></a></p>
 {% endraw %}
 
-For the full list of changes, please see the commit history on  [github](https://github.com/JetBrains/kotlin/commits/)  and the closed issues in  [YouTrack](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-02-14+..+2012-04-11) .
-The  [previous post](http://blog.jetbrains.com/kotlin/2012/03/kotlin-m1-candidate/)  provides some details on the following features:
+For the full list of changes, please see the commit history on [github](https://github.com/JetBrains/kotlin/commits/) and the closed issues in [YouTrack](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-02-14+..+2012-04-11) .
+The [previous post](http://blog.jetbrains.com/kotlin/2012/03/kotlin-m1-candidate/) provides some details on the following features:
 
 * JDK API enhancements
 * Code completion for extension functions

@@ -122,7 +122,7 @@ T.apply（f：T.（）→Unit）：T
 ## 构建开放范围
 
 有一个共同的要求，在Kotlin推出正确的范围。我们检查了用例，发现它们大多数都涉及整数范围。在整数的情况下，在结束范围内打开可以用闭合范围表示，其结束值比相应的开放范围的结束小一个。
-要创建这样的范围，您可以使用新引入 [直到](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/until.html)  功能。它返回闭合范围，其值直到指定的结尾，但不包括它，因此：
+要创建这样的范围，您可以使用新引入 [直到](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/until.html) 功能。它返回闭合范围，其值直到指定的结尾，但不包括它，因此：
 <code> 0 until 20 == 0..19 </ code>
 ## 找到vs firstOrNull
 
@@ -147,9 +147,7 @@ Third line"""
 {% endraw %}
 
 现在我们提供了几个函数来从字符串的每一行去除公共空格前缀：<br/>
-trimIndent， [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/trim-margin.html) ， [replaceIndent](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent.html) ， [replaceIndentByMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent-by-margin.html) 
-
-{% raw %}
+trimIndent， [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/trim-margin.html) ， [replaceIndent](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent.html) ， [replaceIndentByMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent-by-margin.html) {% raw %}
 <p></p>
 {% endraw %}
 
@@ -179,7 +177,7 @@ trimIndent， [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/tr
 
 ## 在包装零件之间分配顶层功能
 
-正如我们宣布的那样 [早些时候](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/)  我们正在改变顶层函数和属性如何映射到编译代码中的类文件。在下一个里程碑中，标准库中的所有顶级内容将分布在相应的包装部件之间。我们将保留包含所有顶级函数的<code> KotlinPackage </ code> facade类，但将来它将被废弃和删除。
+正如我们宣布的那样 [早些时候](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) 我们正在改变顶层函数和属性如何映射到编译代码中的类文件。在下一个里程碑中，标准库中的所有顶级内容将分布在相应的包装部件之间。我们将保留包含所有顶级函数的<code> KotlinPackage </ code> facade类，但将来它将被废弃和删除。
 请注意，这些更改仅影响Java代码中顶级Kotlin成员的使用。将提供IDE中的检查来迁移这些用法。
 ## 接下来会下降什么
 

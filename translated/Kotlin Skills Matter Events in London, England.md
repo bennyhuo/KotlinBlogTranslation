@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/01/kotlin-skills-matter-events-in-london-england/
 ---
 
-JetBrains在四月和五月有两次免费的Kotlin活动来到伦敦。两届会议将在 [技能交流](http://skillsmatter.com/location-details/home/1611/96)  需要注册。我们希望看到你在那里！
+JetBrains在四月和五月有两次免费的Kotlin活动来到伦敦。两届会议将在 [技能交流](http://skillsmatter.com/location-details/home/1611/96) 需要注册。我们希望看到你在那里！
 <strong> <a href="http://skillsmatter.com/podcast/home/introduction-to-kotlin" target="_blank" title="在安德烈·布雷斯拉夫的大脑：Kotlin介绍“>在大脑中Andrey Breslav：Kotlin介绍</a> </ strong>
 加入安德烈的讲话<strong> 4月3日星期三18:30 </ strong>，并了解Kotlin语言及其背后原则。其中包括以下功能：
 

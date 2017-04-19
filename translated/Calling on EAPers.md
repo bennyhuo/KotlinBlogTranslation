@@ -24,6 +24,6 @@ source_url: https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/
 目前Kotlin 1.1的第一个EAP可用（<a href="https://youtu.be/4W3ruTWUhpw">协同程序</a>），键入别名，绑定的可调用引用，本地委托属性，Java 7/8支持和<a href="https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/">更多</a>）。今天我们刚刚发布了Kotlin 1.0.4的第一个EAP版本，在编译器和IDE中有很多错误修复，一系列新的意图，检查和quickfix，现在完全兼容于Gradle 2.14.1。有关更多信息，请查看<a href="https://github.com/JetBrains/kotlin/blob/767329fcab8249214c9c77db8ff1b8c1b3bd44b9/ChangeLog.md">完整的Kotlin 1.0.4更改日志</a> </ em>
 ## 给予反馈
 
-Kotlin的大部分团队都可以在我们的公众场合 [松散的社区](http://kotlinslackin.herokuapp.com) ），特别是在#eap频道上，​​我们非常渴望听取您的意见，并帮助您解决任何问题或问题。当然，我们的 [问题追踪器](http://kotl.in/issue)  总是开放的
+Kotlin的大部分团队都可以在我们的公众场合 [松散的社区](http://kotlinslackin.herokuapp.com) ），特别是在#eap频道上，​​我们非常渴望听取您的意见，并帮助您解决任何问题或问题。当然，我们的 [问题追踪器](http://kotl.in/issue) 总是开放的
 Kotlin的主要目标之一，一直是使其成为务实的工业语言。而且它是通过使用Kotlin在许多类型的应用程序和场景，这将有助于我们实现这一目标。为此，我们继续需要您的帮助！
 谢谢你，让我们吧！

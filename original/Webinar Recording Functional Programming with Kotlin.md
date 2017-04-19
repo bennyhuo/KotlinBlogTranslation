@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/webinar-recording-functional-programming-with-kotlin/
 ---
 
-The recording of our October 22nd webinar, <strong>Functional Programming with Kotlin</strong>, is now available on  [JetBrainsTV YouTube channel](https://youtu.be/AhA-Q7MOre0) .
-In this talk, Mike Hearn provides a brief introduction to programming in Kotlin via practical example: creating a textfield with the autocomplete suggestions while typing. Demo project is available on  [GitHub](https://github.com/mikehearn/KotlinFPWebinar) .
+The recording of our October 22nd webinar, <strong>Functional Programming with Kotlin</strong>, is now available on [JetBrainsTV YouTube channel](https://youtu.be/AhA-Q7MOre0) .
+In this talk, Mike Hearn provides a brief introduction to programming in Kotlin via practical example: creating a textfield with the autocomplete suggestions while typing. Demo project is available on [GitHub](https://github.com/mikehearn/KotlinFPWebinar) .
 Topics covered include:
 
 * Use of functional transforms
@@ -33,7 +33,7 @@ Topics covered include:
 <p><span id="more-3081"></span></p>
 {% endraw %}
 
-The video includes the time stamps following the  [agenda announced](http://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/) :<br/>
+The video includes the time stamps following the [agenda announced](http://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/) :<br/>
 <code>00:08</code> — Intoduction and demo application<br/>
 <code>05:00</code> — <code>apply</code> function<br/>
 <code>05:45</code> — Introduce NGram data class<br/>
@@ -48,8 +48,8 @@ The video includes the time stamps following the  [agenda announced](http://blog
 <code>25:18</code> — Load data in a functional way<br/>
 <code>28:30</code> — Improve performance of the data loading<br/>
 <code>33:20</code> — Improve the UI responsiveness in RX style<br/>
-<code>40:05</code> — Using  [Kovenant](https://github.com/mplatvoet/kovenant)  library<br/>
-<code>42:03</code> — Using  [funKTionale](https://github.com/MarioAriasC/funKTionale)  library<br/>
+<code>40:05</code> — Using [Kovenant](https://github.com/mplatvoet/kovenant) library<br/>
+<code>42:03</code> — Using [funKTionale](https://github.com/MarioAriasC/funKTionale) library<br/>
 <code>44:10</code> — Currying<br/>
 <code>45:35</code> — Questions
 About the Presenter:

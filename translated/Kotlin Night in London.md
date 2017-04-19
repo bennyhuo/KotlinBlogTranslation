@@ -39,4 +39,4 @@ source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-night-in-london/
 
 ## GOTO会议和Kotlin研讨会
 
-我们也提供 [GOTO London 2016折扣](https://secure.trifork.com/london-2016/registration/registration.jsp?promotionCode=kotlin100)  这可以用于会议或 [全天Kotlin车间举行](https://gotocon.com/london-2016/presentations/show_presentation.jsp?oid=7892) 。
+我们也提供 [GOTO London 2016折扣](https://secure.trifork.com/london-2016/registration/registration.jsp?promotionCode=kotlin100) 这可以用于会议或 [全天Kotlin车间举行](https://gotocon.com/london-2016/presentations/show_presentation.jsp?oid=7892) 。

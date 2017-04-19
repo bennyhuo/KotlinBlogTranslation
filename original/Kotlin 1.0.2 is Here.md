@@ -28,10 +28,10 @@ Kotlin 1.0.2 introduces support for <b>Android Lint checks</b> for Kotlin code, 
 The set of checks supported in Kotlin 1.0.2 corresponds to the checks supported in Android Studio 1.5; checks added or improved in Android Studio 2.0 will be supported in the next release of Kotlin. Also, the current version runs Lint checks for Kotlin code only inside the IDE (as part of on-the-fly code inspections, or in batch mode through Analyze | Inspect Code). Running checks from the command line will be supported in the next release.
 ### Compact Standard Library
 
-One other improvement relevant for Android developers is that the size of the standard library has been reduced by ~1500 methods (from approximately 6600 to 5100). Even before this change, the library was  [smaller than those of Kotlin’s main competitors](https://github.com/SidneyXu/AndroidDemoIn4Languages) , and now the situation is even better. Of course, the library is still fully binary compatible.
+One other improvement relevant for Android developers is that the size of the standard library has been reduced by ~1500 methods (from approximately 6600 to 5100). Even before this change, the library was [smaller than those of Kotlin’s main competitors](https://github.com/SidneyXu/AndroidDemoIn4Languages) , and now the situation is even better. Of course, the library is still fully binary compatible.
 ### Java 7/8 Support Libraries
 
-As a temporary workaround for better Java 7/8 support before full support is introduced in Kotlin 1.1, we’re now providing support libraries that expose the APIs added in Java 7 and 8 (such as the Stream API) as extension functions on Kotlin standard library classes. See the  [forum post](https://discuss.kotlinlang.org/t/jdk7-8-features-in-kotlin-1-0/1625)  for instructions on using the libraries.
+As a temporary workaround for better Java 7/8 support before full support is introduced in Kotlin 1.1, we’re now providing support libraries that expose the APIs added in Java 7 and 8 (such as the Stream API) as extension functions on Kotlin standard library classes. See the [forum post](https://discuss.kotlinlang.org/t/jdk7-8-features-in-kotlin-1-0/1625) for instructions on using the libraries.
 ### IntelliJ IDEA Plugin features
 
 The IntelliJ IDEA plugin has gained a number of major new features:
@@ -62,13 +62,13 @@ mvn archetype:generate -Dfilter=org.jetbrains.kotlin:
 
 ### Dokka 0.9.8
 
-Together with Kotlin 1.0.2, we’re releasing a new version of  [Dokka](https://github.com/kotlin/dokka) , the Kotlin documentation generation tool. If you’re using Dokka in your project, you need to upgrade Dokka together with Kotlin, because older Dokka versions are incompatible with Kotlin 1.0.2. New features in Dokka 0.9.8 include:
+Together with Kotlin 1.0.2, we’re releasing a new version of [Dokka](https://github.com/kotlin/dokka) , the Kotlin documentation generation tool. If you’re using Dokka in your project, you need to upgrade Dokka together with Kotlin, because older Dokka versions are incompatible with Kotlin 1.0.2. New features in Dokka 0.9.8 include:
 
 * Android Gradle plugin, for generating documentation for Android libraries and applications;
 * Support for generating a javadoc jar file in the Maven plugin.
 
 ### Conclusion
 
-You can see the full list of bugfixes and changes to the compiler, standard library and the tools in the  [changelog](https://github.com/JetBrains/kotlin/blob/1.0.2/ChangeLog.md) .
-While working on the release, we received a lot of valuable feedback from the users of the  [Early Access Preview builds](https://discuss.kotlinlang.org/t/kotlin-1-0-2-eap/1581) . We’re really grateful to everyone who has provided feedback, and we welcome you to join the EAP program for future updates.
-As usual, if you run into any problems with the new release, you’re welcome to ask for help on the  [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite  [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the  [issue tracker](https://youtrack.jetbrains.com/issues/KT) .
+You can see the full list of bugfixes and changes to the compiler, standard library and the tools in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.2/ChangeLog.md) .
+While working on the release, we received a lot of valuable feedback from the users of the [Early Access Preview builds](https://discuss.kotlinlang.org/t/kotlin-1-0-2-eap/1581) . We’re really grateful to everyone who has provided feedback, and we welcome you to join the EAP program for future updates.
+As usual, if you run into any problems with the new release, you’re welcome to ask for help on the [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the [issue tracker](https://youtrack.jetbrains.com/issues/KT) .

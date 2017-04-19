@@ -13,11 +13,11 @@ source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/
 ---
 
 我们很高兴地宣布发布Kotlin 1.0.6，这是Kotlin 1.0的新bug和工具更新。此版本带来了与IDE插件和Android支持相关的大量改进。
-我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [基拉里·拉赫曼](https://github.com/cypressious)  和 [Yoshinori Isogai](https://github.com/shiraji) 。我们也要感谢我们的EAP用户的反馈。这对我们来说真的很有价值。
+我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [基拉里·拉赫曼](https://github.com/cypressious) 和 [Yoshinori Isogai](https://github.com/shiraji) 。我们也要感谢我们的EAP用户的反馈。这对我们来说真的很有价值。
 您可以在其中找到完整的更改列表 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.6/ChangeLog.md#106) 。下面将介绍一些值得突出显示的变化。 <span id =“more-4429”> </ span>
 ## 将<code> try-finally </ code>转换为<code> use（）</ code>意图
 
-我们继续添加将代码转换为惯用Kotlin的意图。 IDE现在自动地建议用...替换<code> try-finally </ code>块 [使用（）](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html)  当所有的<code> finally </ code>块正在关闭资源时调用
+我们继续添加将代码转换为惯用Kotlin的意图。 IDE现在自动地建议用...替换<code> try-finally </ code>块 [使用（）](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) 当所有的<code> finally </ code>块正在关闭资源时调用
 “img alt =”“class =”alignnone size-full wp-image-4043“onmouseout =”this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png'; “ onmouseover =“this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try.gif';” src =“https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png”width =“700”/>
 ## “添加名称来调用参数”意图
 

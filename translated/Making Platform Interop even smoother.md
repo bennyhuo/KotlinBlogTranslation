@@ -250,10 +250,10 @@ averageOfInt(numbers)
 <p></p>
 {% endraw %}
 
-请注意，这是 [不是唯一的用例](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName)  for <em> platformName </ em>。
+请注意，这是 [不是唯一的用例](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) for <em> platformName </ em>。
 ## 私人财产存取者
 
-Kotlin的私人私人财产不再生成属性访问器，这意味着 [冲突](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName)  使用现有的<em> getXYZ </ em>方法
+Kotlin的私人私人财产不再生成属性访问器，这意味着 [冲突](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) 使用现有的<em> getXYZ </ em>方法
 不必要地发生。在Java中执行以下界面：
 
 {% raw %}

@@ -21,7 +21,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/06/better-annotation-processi
 如 [在上一篇博文中讨论过](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 可以通过在运行<code> javac </ code>之前生成Kotlin类的</ em> </ em>来克服该问题，然后在<code> javac </ code>完成后运行真正的编译。存根只包含声明，没有方法体。 Kotlin编译器用于在内存中创建这样的存根（它们用于Java互操作，当Java代码回溯到Kotlin时），所以我们只需要将它们序列化到磁盘上的文件。
 ## 示例：DBFlow
 
-Stubs支持依赖于注释处理器生成的代码的框架。例如，您现在可以使用 [DBFlow](https://github.com/Raizlabs/DBFlow)  在Kotlin：
+Stubs支持依赖于注释处理器生成的代码的框架。例如，您现在可以使用 [DBFlow](https://github.com/Raizlabs/DBFlow) 在Kotlin：
 
 {% raw %}
 <p></p>
@@ -47,7 +47,7 @@ public object ItemRepository {
 {% endraw %}
 
 由DBFLow库提供类似DSL的功能<code> Select（）</ code>，（）</ code>等，DBFlow的注释处理器生成<code> Item_Table </ code>，上面的Kotlin代码可以高兴地参考它！
-完整的例子是可用的 [这里](https://github.com/yanex/kotlin-poc)  （谢谢 [Mickele Moriconi](https://github.com/mickele)  对于初始代码）。
+完整的例子是可用的 [这里](https://github.com/yanex/kotlin-poc) （谢谢 [Mickele Moriconi](https://github.com/mickele) 对于初始代码）。
 请注意，生成存根需要相对较多的工作，因为所有声明必须解决，有时候知道返回类型需要分析表达式（函数或属性初始化程序的主体在<code> = </ code>符号之后）。因此，在<code> kapt </ code>中使用存根减慢了你的构建。这就是为什么<strong>存根默认情况下关闭</ strong>，为了使它们能够在您的 [build.gradle文件](https://github.com/yanex/kotlin-poc/blob/master/app/build.gradle#L41) ：
 
 {% raw %}
@@ -65,7 +65,7 @@ kapt {
 <p></p>
 {% endraw %}
 
-此外，<code> kapt </ code>现在可以处理传递参数到注释处理器。这是一个例子 [AndroidAnnotations](http://androidannotations.org/)  图书馆：
+此外，<code> kapt </ code>现在可以处理传递参数到注释处理器。这是一个例子 [AndroidAnnotations](http://androidannotations.org/) 图书馆：
 
 {% raw %}
 <p></p>
@@ -104,7 +104,7 @@ kapt {
 
 在<code> kapt </ code>上还有一些工作尚待处理。
 注释处理本身最大的问题是支持 [@继承注释](http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Inherited.html) 。我们需要解决<code> javac </ code>，不会将它们传播到二进制类的层次结构中。
-但是真正的问题在于外部的<code> kapt </ code>：许多框架，如 [AndroidAnnotation](http://androidannotations.org/)  并且上述DBFlow想要直接将值注入到字段中，而Kotlin则是关于安全的，并且使这些字段<code> private </ code>正在阻碍。这就是为什么现在我们必须在Java中编写DBFlow“表类” [Item.java](https://github.com/yanex/kotlin-poc/blob/master/app/src/main/java/mobi/porquenao/poc/kotlin/core/Item.java)  在我们的例子中
+但是真正的问题在于外部的<code> kapt </ code>：许多框架，如 [AndroidAnnotation](http://androidannotations.org/) 并且上述DBFlow想要直接将值注入到字段中，而Kotlin则是关于安全的，并且使这些字段<code> private </ code>正在阻碍。这就是为什么现在我们必须在Java中编写DBFlow“表类” [Item.java](https://github.com/yanex/kotlin-poc/blob/master/app/src/main/java/mobi/porquenao/poc/kotlin/core/Item.java) 在我们的例子中
 所以，我们正在考虑一个选择性功能，使得Kotlin生成的类中的非私有字段。
 ## 反馈
 

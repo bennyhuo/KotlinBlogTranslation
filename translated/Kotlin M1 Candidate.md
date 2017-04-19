@@ -15,16 +15,16 @@ source_url: https://blog.jetbrains.com/kotlin/2012/03/kotlin-m1-candidate/
 IntelliJ IDEA 11.1最近发布，我们很高兴地宣布Kotlin IDE插件的里程碑式候选版本。这篇文章概述了上个月发生了什么。
 ## 里程碑候选人构建准备好您的评估
 
-要安装在IntelliJ IDEA 11.1（免费社区版本可用 [这里](http://www.jetbrains.com/idea/) ），请按照说明进行操作 [入门](http://confluence.jetbrains.net/display/Kotlin/Getting+Started)  指南。简而言之：
+要安装在IntelliJ IDEA 11.1（免费社区版本可用 [这里](http://www.jetbrains.com/idea/) ），请按照说明进行操作 [入门](http://confluence.jetbrains.net/display/Kotlin/Getting+Started) 指南。简而言之：
 
 * 使用此插件库：http://www.jetbrains.com/kotlin/eap-plugin-repository/updatePlugins.xml
 * 或从这里下载压缩插件。
 
-您可以随时从我们的夜晚下载Kotlin的每夜建筑物 [构建服务器](http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&tab=artifacts&buildTypeId=bt345)  或自己建立 [来源](https://github.com/jetbrains/kotlin) 。
-现在我们简要介绍一下新的和值得注意的内容。请参阅 [这个博文](http://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/)  对于以前实现的功能。<span id =“more-440”> </ span>
+您可以随时从我们的夜晚下载Kotlin的每夜建筑物 [构建服务器](http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&tab=artifacts&buildTypeId=bt345) 或自己建立 [来源](https://github.com/jetbrains/kotlin) 。
+现在我们简要介绍一下新的和值得注意的内容。请参阅 [这个博文](http://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/) 对于以前实现的功能。<span id =“more-440”> </ span>
 ## 小事情很重要
 
-首先，我们做了很多bug修复，改进和其他重要的事情，很难演示。查看提交历史记录 [github](https://github.com/JetBrains/kotlin/commits/)  和封闭的问题 [YouTrack](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-02-14+..+2012-03-31) 。
+首先，我们做了很多bug修复，改进和其他重要的事情，很难演示。查看提交历史记录 [github](https://github.com/JetBrains/kotlin/commits/) 和封闭的问题 [YouTrack](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-02-14+..+2012-03-31) 。
 ## 图书馆
 
 随着扩展功能的强大，Kotlin使现有的Java API更好。特别是，我们为JDK集合提供增强功能，以便您可以这样说：
@@ -114,7 +114,7 @@ println("""
 
 ## 简单枚举
 
-简单的例子 [枚举类](http://confluence.jetbrains.net/display/Kotlin/Enum+classes)  现在得到支持。例如：
+简单的例子 [枚举类](http://confluence.jetbrains.net/display/Kotlin/Enum+classes) 现在得到支持。例如：
 
 {% raw %}
 <p></p>

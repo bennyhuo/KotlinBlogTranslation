@@ -18,7 +18,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-
 <p><span id="more-3901"></span></p>
 {% endraw %}
 
-该版本中重新编写了代码格式化功能。而不是我们的第一个天真的实现，我们主要设法将高级格式化程序从Kotlin IntelliJ Idea插件移植到Eclipse中。这意味着 [很多修复](https://youtrack.jetbrains.com/issues/KT?q=Formatter%20State:%20Fixed%20Subsystems:%20IDE)  已经在那里，即将到来的改进将自动获取！
+该版本中重新编写了代码格式化功能。而不是我们的第一个天真的实现，我们主要设法将高级格式化程序从Kotlin IntelliJ Idea插件移植到Eclipse中。这意味着 [很多修复](https://youtrack.jetbrains.com/issues/KT?q=Formatter%20State:%20Fixed%20Subsystems:%20IDE) 已经在那里，即将到来的改进将自动获取！
 
 {% raw %}
 <p><img class="size-full" onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.png';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.gif';" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.png"/></p>

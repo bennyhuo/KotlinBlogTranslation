@@ -39,6 +39,4 @@ This demo will be developed further for you to have more fun. Among other things
 
 * Standard Library of extension functions that make using JDK collections and other common APIs more pleasant (things like map()/filter() and so on);
 * Code Challenge: currently we offer a few sample problems in the form of code snippets containing test data. This will be extended to contest-like automated testing system.
-* More Examples: There’s always some more to show off
-
- [Have fun!](http://kotlin-demo.jetbrains.com) 
+* More Examples: There’s always some more to show off [Have fun!](http://kotlin-demo.jetbrains.com) 

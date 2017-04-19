@@ -12,8 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/
 ---
 
-<strong>警告：这是愚人节的帖子</ strong>
- [无点](http://en.wikipedia.org/wiki/Point-free_programming)  风格是现代功能编程中的一个大趋势：它允许操纵函数，而不用提及它们的参数，这使得代码简洁和组合。以下是维基百科的例子：
+<strong>警告：这是愚人节的帖子</ strong> [无点](http://en.wikipedia.org/wiki/Point-free_programming) 风格是现代功能编程中的一个大趋势：它允许操纵函数，而不用提及它们的参数，这使得代码简洁和组合。以下是维基百科的例子：
 
 {% raw %}
 <p></p>
@@ -188,7 +187,7 @@ fun Foo.dot1() {
 <p></p>
 {% endraw %}
 
-这对应于罗素的设定理论的方法 [类型理论](http://en.wikipedia.org/wiki/Type_theory)  （与它的概念 [类](http://en.wikipedia.org/wiki/Class_(set_theory)) ），这是静态类型的面向对象编程的坚实基础。
+这对应于罗素的设定理论的方法 [类型理论](http://en.wikipedia.org/wiki/Type_theory) （与它的概念 [类](http://en.wikipedia.org/wiki/Class_(set_theory)) ），这是静态类型的面向对象编程的坚实基础。
 # 结论
 
 我们计划很快支持点运营商。第一个版本将被限制为基本的ASCII字符，如。 ：; ！ ？当然，我，但在将来我们计划将其扩展到其他角色，如ё。

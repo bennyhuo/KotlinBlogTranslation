@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/
 ---
 
-Join us this <strong>Thursday, October 22nd, 14:00 – 15:00 GMT</strong> (10:00 – 11:00 AM EDT) for our free webinar,  [Functional Programming with Kotlin](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html)  with Mike Hearn
+Join us this <strong>Thursday, October 22nd, 14:00 – 15:00 GMT</strong> (10:00 – 11:00 AM EDT) for our free webinar, [Functional Programming with Kotlin](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) with Mike Hearn
 In this talk, Mike Hearn will provide a brief introduction to programming in Kotlin via worked, practical examples, with a focus on functional programming.
 Topics covered will include:
 
@@ -23,5 +23,5 @@ Topics covered will include:
 * Pattern matching
 * Reactive user interfaces
 
-Everyone is  [welcome](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) !
+Everyone is [welcome](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) !
 You can ask questions to Mike and suggest themes for future webinars in comments.

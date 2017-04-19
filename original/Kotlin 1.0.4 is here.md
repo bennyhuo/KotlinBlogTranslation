@@ -13,8 +13,8 @@ source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-1-0-4-is-here/
 ---
 
 We’re happy to announce the release of a new bugfix and tooling update of Kotlin, version <b>1.0.4</b>. This version brings many improvements related to the IDE and build tools, as well as JavaScript support.
-Once again we’d like to thank our external contributors who implemented some of the features in this release,  [Kirill Rakhman](https://github.com/cypressious)  and  [Yoshinori Isogai](https://github.com/shiraji) , as well as everyone who tried the EAP builds of 1.0.4 and sent us feedback.
-You can find the full list of fixes and improvements in the  [changelog](https://github.com/JetBrains/kotlin/blob/1.0.4/ChangeLog.md) . Some of the changes deserve special mention:
+Once again we’d like to thank our external contributors who implemented some of the features in this release, [Kirill Rakhman](https://github.com/cypressious) and [Yoshinori Isogai](https://github.com/shiraji) , as well as everyone who tried the EAP builds of 1.0.4 and sent us feedback.
+You can find the full list of fixes and improvements in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.4/ChangeLog.md) . Some of the changes deserve special mention:
 ### Language Change: Assignment of ‘val’ in try/catch
 
 In versions of Kotlin before 1.0.4, you could initialize the same <code>val</code> both in the <code>try</code> and <code>catch</code> branches of a <code>try/catch</code> statement. For example, the following code was allowed:
@@ -88,7 +88,7 @@ kapt {
 The new annotation processing still has known issues and may not be compatible with all annotation processors. You should enable it only if you’ve run into problems with the default <code>kapt</code> annotation processing implementation.
 ### JavaScript Backend Improvements
 
-The JavaScript backend can now compile code to modules which are compatible with AMD, CommonJS and UMD module systems. See  [the documentation](http://kotlinlang.org/docs/reference/js-modules.html)  for more details.
+The JavaScript backend can now compile code to modules which are compatible with AMD, CommonJS and UMD module systems. See [the documentation](http://kotlinlang.org/docs/reference/js-modules.html) for more details.
 In addition to that, a limited form of reflection is now supported: you can use the <code>jsClass</code> property to access the runtime class of any object, and <code>jsClass&lt;TypeName&gt;()</code> to get the runtime representation of a specific class. Here’s a more complete example:
 
 {% raw %}
@@ -184,5 +184,5 @@ Many other new intentions, inspections and quickfixes
 ### How to update
 
 To update the plugin, use Tools | Kotlin | Configure Kotlin Plugin Updates and press the “Check for updates now” button. Also, don’t forget to update the compiler and standard library version in your Maven and Gradle build scripts.
-As usual, if you run into any problems with the new release, you’re welcome to ask for help on the  [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite  [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the  [issue tracker](https://youtrack.jetbrains.com/issues/KT) .
+As usual, if you run into any problems with the new release, you’re welcome to ask for help on the [forums](https://discuss.kotlinlang.org/) , on Slack (get an invite [here](http://kotlinslackin.herokuapp.com/) ), or to report issues in the [issue tracker](https://youtrack.jetbrains.com/issues/KT) .
 Let’s Kotlin!

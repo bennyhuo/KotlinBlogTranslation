@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/
 ---
 
-We announced KAnnotator back  [in December](http://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/) : it helps you against NPEs in Java and  [makes your Kotlin code nicer](http://blog.jetbrains.com/kotlin/using-external-annotations/) . Today we are pleased to announce a KAnnotator Plugin for IntelliJ, version 0.1. It is available from the plugin repository.<span id="more-1005"></span>
+We announced KAnnotator back [in December](http://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/) : it helps you against NPEs in Java and [makes your Kotlin code nicer](http://blog.jetbrains.com/kotlin/using-external-annotations/) . Today we are pleased to announce a KAnnotator Plugin for IntelliJ, version 0.1. It is available from the plugin repository.<span id="more-1005"></span>
 ## Why Infer Annotations
 
-An excerpt from an earlier  [blog post](http://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/) , explaining what KAnnotator is:
+An excerpt from an earlier [blog post](http://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/) , explaining what KAnnotator is:
 <p><span style="font-size: 16px">Since Kotlin M3</span><span style="font-size: 16px">, you can use </span><a href="http://blog.jetbrains.com/kotlin/using-external-annotations/">external annotations</a><span style="font-size: 16px"> to tell the system that your methods return/take non-null values. This mechanism is useful even if you don’t use Kotlin: you can turn on </span><a href="http://www.jetbrains.com/idea/documentation/howto.html">nullability inspections for Java</a><span style="font-size: 16px"> too (and I totally recommend you to do so).</span></p>
 <p>One problem about this used to be that, while you can annotate your own code while you write it (and we do it <a href="https://github.com/JetBrains/kotlin/blob/master/compiler/frontend/src/org/jetbrains/jet/lang/types/TypeConstructor.java">all</a> <a href="https://github.com/JetBrains/intellij-community/blob/master/platform/util/src/com/intellij/util/text/CharArrayUtil.java">the</a> <a href="https://github.com/JetBrains/la-clojure/blob/master/src/org/jetbrains/plugins/clojure/utils/ClojureUtils.java">time</a> at JetBrains), your favorite library is not annotated, and it is so big, you can’t annotate it manually.</p>
 <p>The key thing here is that ‘manually’. A programmer is a lazy creature, and by virtue of our laziness, we want to automate as much as we can. <strong>KAnnotator </strong>is a tool that <strong>annotates your libraries automatically</strong> (the tool is written in Kotlin, of course).</p>
@@ -25,7 +25,7 @@ An excerpt from an earlier  [blog post](http://blog.jetbrains.com/kotlin/2012/12
 We used KAnnotator to infer annotations for JDK that ship with Kotlin. Now you can use it as well: to annotate your own libraries.
 ## Install
 
-KAnnotator ships as a separate plugin for  [IntelliJ IDEA 12](http://www.jetbrains.com/idea/)  or higher (both 12.0.4 and 12.1 will work). Note that the Kotlin plugin<strong> is not required</strong>.  To install the plugin, follow the instructions from  [here](http://www.jetbrains.com/idea/plugins/index.html) .
+KAnnotator ships as a separate plugin for [IntelliJ IDEA 12](http://www.jetbrains.com/idea/) or higher (both 12.0.4 and 12.1 will work). Note that the Kotlin plugin<strong> is not required</strong>.  To install the plugin, follow the instructions from [here](http://www.jetbrains.com/idea/plugins/index.html) .
 ## Infer
 
 No you can call Analyze -> Annotate Jar Files… (from either Main menu or context menu)  <img alt="" data-recalc-dims="1" src="https://i2.wp.com/www.evernote.com/shard/s171/sh/8242aa4b-939b-416c-9880-6a6b97f748ce/add22424ad329409984c8f1df963bfde/res/902508da-cf33-453b-9790-c2af86cfa407/skitch.png?w=640&amp;ssl=1"/>

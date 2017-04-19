@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-2-possible-directions/
 ---
 
-在里面 [此系列之前的帖子](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/)  我们讨论了缺点 [我们最初为Kotlin计划的继承模式](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416) 。今天我们将谈谈替代设计。
+在里面 [此系列之前的帖子](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/) 我们讨论了缺点 [我们最初为Kotlin计划的继承模式](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416) 。今天我们将谈谈替代设计。
 请注意，这些帖子旨在引发讨论，以便我们可以从您的反馈中获益，并提出更好的设计。
 <strong>什么是</ strong>
 上一篇文章总结了以下（不完整）的其他语言可用的多重继承问题解决方案列表：
@@ -25,7 +25,7 @@ source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-
 我们都知道Java的方法是坚实的，但是对代码重用造成了严重的限制，所以我们想放宽这些限制，但是不要陷入困境。放宽限制的“第一学位”将是<无状态特征</ strong>（如在Fortress和in [[1]](#Traits) ）：没有状态的特征，没有隐含的覆盖。或者我们可以将状态的遗产交易出来，并获得混合（像在Ruby中）。放宽限制，我们得到<strong> Scala的特征</ strong>，它们具有状态，但没有构造函数的参数，一个特征可能会覆盖另一个特征。然后，我们以<strong>要求</ strong>到CZ的课程（如 [[2]](#CZ) ）。下一步，我猜，已经是不受限制的多重继承，就像在C ++中一样。
 我们将略过对这些解决方案的全面分析，只是对状态进行评论
 <span id =“more-115”> </ span> <br/>
-<strong>状态。</ strong>一个重要的考虑因素是允许在这个或那个表单中允许<strong>多重继承状态</ strong>。一方面，这似乎是非常有用的，但另一方面，它带来了问题。讨论了一个问题 [以前的帖子](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/#Problem2)  以<strong>问题2 </ strong>的名义：
+<strong>状态。</ strong>一个重要的考虑因素是允许在这个或那个表单中允许<strong>多重继承状态</ strong>。一方面，这似乎是非常有用的，但另一方面，它带来了问题。讨论了一个问题 [以前的帖子](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/#Problem2) 以<strong>问题2 </ strong>的名义：
 <p>执行Left假定它用3初始化，但它可能会调用在Right中实现的bar（），并假设所有内容都被初始化为4.这可能会导致一些不一致的行为。</ p>
 另一个问题是，以遗传为单位（类或特征或混合）表示在其中具有构造函数，并且构造函数可能具有副作用，并且重要的是以<strong>可预测顺序</ strong>。
 <strong>问题2 </ strong>非常适用于Scala在trait构造函数中没有参数的方法。不幸的是，构造器副作用的问题仍然存在：改变特征之间的继承关系（例如由图书馆作家完成）可以在创建子类实例时重新排列构造函数的副作用（参见 [这个评论如下](#comment-110) ）。这个问题似乎是不可避免的，无论我们选择多少继承国家的方式，我希望有人能证明我错了！

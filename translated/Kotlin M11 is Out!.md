@@ -39,7 +39,7 @@ class MyView : View {
 <p></p>
 {% endraw %}
 
-请参考 [用户文档](http://kotlinlang.org/docs/reference/classes.html#constructors)  和 [规格文件](https://github.com/JetBrains/kotlin/blob/master/spec-docs/secondary-constructors.md)  更多细节。
+请参考 [用户文档](http://kotlinlang.org/docs/reference/classes.html#constructors) 和 [规格文件](https://github.com/JetBrains/kotlin/blob/master/spec-docs/secondary-constructors.md) 更多细节。
 ### 用于初始化程序块的前缀
 
 另一个改变，也与构造函数有关，它是使用软关键字<code> init </ code>的初始化程序块前缀。<br/>
@@ -86,7 +86,7 @@ class Foo {
 {% endraw %}
 
 旧的语法<strong>已弃用</ strong>，即您会收到警告，而不是错误。此外，IDE提供了一个Alt + Enter快速修复操作，将旧的语法转换为新的语法，可以批量更新整个项目。
-看到 [用户文档](http://kotlinlang.org/docs/reference/classes.html#constructors)  更多细节。
+看到 [用户文档](http://kotlinlang.org/docs/reference/classes.html#constructors) 更多细节。
 ### 伴随对象（类对象重新定位）
 
 大家可能知道，Kotlin类没有静态成员。相反，可能会有一个与类关联的特殊单例<code>对象</ code>，我们用来调用“class object”＆dash;一个相当不幸的术语。所以，我们有点重新设计了这个概念， [与你的帮助](http://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/) ，为其选择另一个名称：<strong>伴侣对象</ strong>。
@@ -184,7 +184,7 @@ val f = fun (x: Int): Int { return x + 1 }
 <p></p>
 {% endraw %}
 
-因此，您可以使用其传统句法形式的函数作为值。看到 [用户文档](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions)  和 [规格文件](https://github.com/JetBrains/kotlin/blob/master/spec-docs/multi-declarations-in-parameters.md#function-expressions)  更多细节。
+因此，您可以使用其传统句法形式的函数作为值。看到 [用户文档](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 和 [规格文件](https://github.com/JetBrains/kotlin/blob/master/spec-docs/multi-declarations-in-parameters.md#function-expressions) 更多细节。
 ### Lambda语法限制（用于未来浓缩）
 
 除其他功能外，函数表达式使我们能够在lambdas的参数中支持<em>多声明</ em>。最终目标（尚未实现）是能够以下列语法过滤列表：
@@ -272,7 +272,7 @@ Kotlin反射API适用于Kotlin和Java类，您可以从Kotlin“转换”为Java
 ## Android扩展
 
 Android用户的好消息：M11带来了一个有用的扩展，使得Kotlin中的Android开发更容易。
-我们都知道<code> findViewById（）</ code>。这是一个臭名昭着的错误和不愉快的代码，很难阅读和支持。在Java中，解决这个问题的方法是通过库来实现 [牛油刀](http://jakewharton.github.io/butterknife/)  和 [AndroidAnnotations](http://androidannotations.org) ，依靠 [JSR 269](https://jcp.org/aboutJava/communityprocess/mrel/jsr269/index2.html) ，但它是一个<code> javac </ code>特定的API，并且在Kotlin（尚）中不支持。
+我们都知道<code> findViewById（）</ code>。这是一个臭名昭着的错误和不愉快的代码，很难阅读和支持。在Java中，解决这个问题的方法是通过库来实现 [牛油刀](http://jakewharton.github.io/butterknife/) 和 [AndroidAnnotations](http://androidannotations.org) ，依靠 [JSR 269](https://jcp.org/aboutJava/communityprocess/mrel/jsr269/index2.html) ，但它是一个<code> javac </ code>特定的API，并且在Kotlin（尚）中不支持。
 自从M11以来，Kotlin有自己的解决方案<code> findViewById（）</ code>问题，这不需要JSR 269：Kotlin编译器的新的<code> kotlin-android-extensions </ code>插件允许你使用<strong>零</ strong>额外的用户代码（无注释或其他类似的东西）和<strong>不需要运行时库</ strong>，以类型安全的方式访问视图。
 要使用此扩展，您需要在Gradle构建中启用它，并在IDE中安装扩展插件。查看更多 [这里](http://kotlinlang.org/docs/tutorials/android-plugin.html) 。
 ## IntelliJ IDEA支持

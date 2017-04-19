@@ -163,7 +163,7 @@ object Foo {
 making the code much cleaner. Same applies to <em>class objects</em>.
 ### Removing roadblocks
 
-Another benefit of <em>platformStatic</em> is removing some showstoppers that existed when using certain Java libraries such as JUnit. In particular, the latter requires a static method in Java when using  [Theories](https://github.com/junit-team/junit/wiki/Theories) . The workaround for this was quite tedious. Fortunately, this is no longer the case. We can use the <em>platformStatic</em> annotation to solve this  [issue](https://youtrack.jetbrains.com/issue/KT-4861) .
+Another benefit of <em>platformStatic</em> is removing some showstoppers that existed when using certain Java libraries such as JUnit. In particular, the latter requires a static method in Java when using [Theories](https://github.com/junit-team/junit/wiki/Theories) . The workaround for this was quite tedious. Fortunately, this is no longer the case. We can use the <em>platformStatic</em> annotation to solve this [issue](https://youtrack.jetbrains.com/issue/KT-4861) .
 
 {% raw %}
 <p></p>
@@ -250,10 +250,10 @@ averageOfInt(numbers)
 <p></p>
 {% endraw %}
 
-Note that this is  [not the only use case](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName)  for <em>platformName</em>.
+Note that this is [not the only use case](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) for <em>platformName</em>.
 ## Private property accessors
 
-Property accessors are no longer generated for private private properties in Kotlin, which means that  [conflicts](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName)  with existing <em>getXYZ</em> methods do<br/>
+Property accessors are no longer generated for private private properties in Kotlin, which means that [conflicts](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) with existing <em>getXYZ</em> methods do<br/>
 not occur if unnecessarily. Take the following interface in Java:
 
 {% raw %}

@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/
 ---
 
-We are happy to announce Kotlin Beta 4, another step towards 1.0! We are now mostly focused on the infrastructure and future-proof changes. Full list of changes is available  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-4583) . More details below.
+We are happy to announce Kotlin Beta 4, another step towards 1.0! We are now mostly focused on the infrastructure and future-proof changes. Full list of changes is available [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-4583) . More details below.
 It’s also time to let you know about what else we are going to do before 1.0.<span id="more-3328"></span>
 ## Improved incremental compilation (Experimental)
 
@@ -25,7 +25,7 @@ We have rolled out a new precise algorithm for dependency detection that makes K
 Soon: same incremental compilation support is coming to Gradle! Stay tuned.
 ## Language
 
-Some highlights from the  [full list of changes](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-4583) .
+Some highlights from the [full list of changes](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-4583) .
 ### Changes in overload resolution
 
 Due to a fix in the overload resolution algorithm, Kotlin now treats SAM-converted Java functions more like members (they used to behave like extensions before). This fix is important, because otherwise many cases were interpreted in cumbersome ways by the compiler.
@@ -129,7 +129,7 @@ Kotlin’s <code>Int::class</code> may correspond to Java’s <code>int.class</c
 Also, we can now say things like <code>IntArray(5) { it * 3 }</code>, i.e. create initialized primitive arrays.
 ### Future change: meaning of null in collections
 
-The later versions of the JDK are making collections more and more null-intolerant. For example, here’s what the  [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-)  says about <code>java.util.Map.computeIfAbsent</code>:
+The later versions of the JDK are making collections more and more null-intolerant. For example, here’s what the [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) says about <code>java.util.Map.computeIfAbsent</code>:
 <p>
 
   If the specified key is not already associated with a value <strong>(or is mapped to null)</strong>, attempts to compute its value using the given mapping function and enters it into this map unless null.

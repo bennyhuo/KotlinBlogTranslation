@@ -14,7 +14,7 @@ source_url: https://blog.jetbrains.com/kotlin/2011/11/a-little-lesson-learned-fr
 
 <em>A post about good books, language design and JIT compilation, in which one bug turns into another and than back…<br/>
 </em>
-Recently I started looking through an excellent book  [“Java™ Puzzlers”](http://www.javapuzzlers.com/) , where Joshua Bloch and Neal Gafter provide a list of Java’s “Traps, Pitfalls, and Corner Cases”, i.e. programs that make you think they do what they really don’t. My idea is to see how many of the puzzlers are ruled out or fixed by Kotlin. I’ve looked through the first 24 items, and 15 of them are fixed in Kotlin, which is over 60%.
+Recently I started looking through an excellent book [“Java™ Puzzlers”](http://www.javapuzzlers.com/) , where Joshua Bloch and Neal Gafter provide a list of Java’s “Traps, Pitfalls, and Corner Cases”, i.e. programs that make you think they do what they really don’t. My idea is to see how many of the puzzlers are ruled out or fixed by Kotlin. I’ve looked through the first 24 items, and 15 of them are fixed in Kotlin, which is over 60%.
 Some of the puzzlers can’t be fixed without severe implications on compatibility with the rest of the world. For example, most of the tricky things about IEEE-745 floating-point numbers. But some other ones, though not fixed in Kotlin yet, may be fixed. One particular example is Puzzler 26 “In the Loop”:
 
 {% raw %}
@@ -68,7 +68,7 @@ println(count)
 
 It does NOT loop. And prints “101”, which is the size of the range of iteration…
 This is the point where you think: “Didn’t he say that this puzzler is not yet fixed by Kotlin?” Yes, I did.
-This Kotlin program SHOULD loop forever. And it does not. Sigh. I have already opened the “New issue” dialog in our  [tracker](http://youtrack.jetbrains.net/issues/KT)  when I got too curious and looked at the code our compiler emits. You know what? I found nothing bad there. Written in Java (I am your honest decompiler today), it would look like this:
+This Kotlin program SHOULD loop forever. And it does not. Sigh. I have already opened the “New issue” dialog in our [tracker](http://youtrack.jetbrains.net/issues/KT) when I got too curious and looked at the code our compiler emits. You know what? I found nothing bad there. Written in Java (I am your honest decompiler today), it would look like this:
 
 {% raw %}
 <p></p>
@@ -93,4 +93,4 @@ How come? Well, I run a 64-bit JVM. Most likely, JIT optimizer makes the loop va
 Sigh. I closed our “New issue” dialog, and opened the HotSpot’s one… (Some technicalities prevent me from finishing the reporting process right now, but I will do it on Monday).
 Now, <strong>what lesson can we learn from this</strong>? I don’t think I can learn much from hitting a JIT bug. Bugs happen — that’s the lesson here, I think.
 But what about the initial puzzler? I teach Pascal at a high school, and one thing I really like about this language is that a <strong>for</strong> loop ALWAYS TERMINATES there. We cannot have the same in Kotlin, because in general <strong>for</strong> uses an iterator that may have arbitrary logic in it. But what we can do is guarantee that <strong>iteration over a range of numbers always terminates</strong>.
-BTW, if a range was just a list of numbers, the loops would terminate, right? So it <strong>IS</strong> a  [bug](http://youtrack.jetbrains.net/issue/KT-492)  in the Kotlin compiler, after all. <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+BTW, if a range was just a list of numbers, the loops would terminate, right? So it <strong>IS</strong> a [bug](http://youtrack.jetbrains.net/issue/KT-492) in the Kotlin compiler, after all. <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>

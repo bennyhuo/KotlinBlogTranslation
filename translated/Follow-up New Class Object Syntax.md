@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/
 ---
 
-在里面 [上一篇文章](http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/)  我解释了以前被称为“类对象”的重新设计：它们现在与普通嵌套对象更加统一，名称（名称可以省略，但编译器将使用默认名称），我们可以写他们的延伸。
+在里面 [上一篇文章](http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/) 我解释了以前被称为“类对象”的重新设计：它们现在与普通嵌套对象更加统一，名称（名称可以省略，但编译器将使用默认名称），我们可以写他们的延伸。
 该职位的目标之一是收集关于我们提出的术语的反馈意见，即“默认对象”，并且许多人在评论中正确地声明该术语具有缺点：对于“默认实例类”。 <strong>现在我们正在寻找一个更好的术语</ strong>，需要更多的反馈...
 <strong>更新</ strong>：感谢大家，在您的帮助下，我们选择了<code> companion </ code>。<span id =“more-1843”> </ span>
 我们正在谈论在<strong>对象</ strong>之前的修饰符：

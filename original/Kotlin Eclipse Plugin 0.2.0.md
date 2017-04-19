@@ -28,11 +28,11 @@ Today we are happy to present a new version of Kotlin plugin for Eclipse. This r
 
 ## Kotlin M12
 
-Starting from this release, Eclipse plugin supports  [Kotlin M12](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) . All existing projects will start using it automatically and new projects will be configured to use it from the beginning. Please take a look at the list of  [changes and deprecations](https://github.com/JetBrains/kotlin/releases/tag/build-0.12.200)  in the language, as some code will probably need to be updated.
+Starting from this release, Eclipse plugin supports [Kotlin M12](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) . All existing projects will start using it automatically and new projects will be configured to use it from the beginning. Please take a look at the list of [changes and deprecations](https://github.com/JetBrains/kotlin/releases/tag/build-0.12.200) in the language, as some code will probably need to be updated.
 ## Convert Java Code to Kotlin
 
 In this release we continue to improve interaction between Java and Kotlin in Eclipse IDE.
-Now it’s possible to try Kotlin in an existing project by converting Java files to Kotlin from IDE in the way our  [online demo](http://try.kotlinlang.org/)  can do it. Nice thing about conversion in the IDE is the ability to convert several files at once. Action is called <em>Convert Java to Kotlin</em> and can be found in the context menu in the <em>Package Explorer</em> view:
+Now it’s possible to try Kotlin in an existing project by converting Java files to Kotlin from IDE in the way our [online demo](http://try.kotlinlang.org/) can do it. Nice thing about conversion in the IDE is the ability to convert several files at once. Action is called <em>Convert Java to Kotlin</em> and can be found in the context menu in the <em>Package Explorer</em> view:
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/06/conversion.png"><img alt="conversion" class="alignnone size-full wp-image-2340" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/06/conversion.png?resize=640%2C403&amp;ssl=1"/></a></p>
@@ -64,4 +64,4 @@ Install this release by drag-and-drop’ing this button to Eclipse:
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Your <strong>feedback</strong> and  [pull requests](https://github.com/JetBrains/kotlin-eclipse)  are welcome!
+Your <strong>feedback</strong> and [pull requests](https://github.com/JetBrains/kotlin-eclipse) are welcome!

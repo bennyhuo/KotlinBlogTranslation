@@ -154,7 +154,7 @@ fun main(args: Array<String>) {
 
 ### Varargs和扩展操作符
 
-要概述：在调用<code> vararg </ code>函数时，我们可以使用 [传播操作员](https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs)  将数组转换为vararg：
+要概述：在调用<code> vararg </ code>函数时，我们可以使用 [传播操作员](https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs) 将数组转换为vararg：
 
 {% raw %}
 <p></p>
@@ -196,7 +196,7 @@ var foo: Foo = ...
 
 ### @UnsafeVariance注释
 
-有时我们需要压制 [申报站点方差检查](https://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  在我们的课上例如，为了使<code> Set.contains </ code>类型安全，同时保持只读集合变量，我们必须这样做：
+有时我们需要压制 [申报站点方差检查](https://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) 在我们的课上例如，为了使<code> Set.contains </ code>类型安全，同时保持只读集合变量，我们必须这样做：
 
 {% raw %}
 <p></p>

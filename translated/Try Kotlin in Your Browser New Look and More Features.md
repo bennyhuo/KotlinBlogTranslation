@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/try-kotlin-in-your-browser-new-look-and-more-features/
 ---
 
-我们发布了 [Kotlin网络演示](http://kotlin-demo.jetbrains.com)  不久之前，它做了一个很好的工作，帮助人们在浏览器中尝试Kotlin，并分享可运行的代码。现在，一个闪亮的新版本已经准备好了，现在是退休的旧版本了。
+我们发布了 [Kotlin网络演示](http://kotlin-demo.jetbrains.com) 不久之前，它做了一个很好的工作，帮助人们在浏览器中尝试Kotlin，并分享可运行的代码。现在，一个闪亮的新版本已经准备好了，现在是退休的旧版本了。
 遇见 [try.kotlinlang.org](http://try.kotlinlang.org) 作为Kotlin的基于Web的迷你IDE的新化身。<span id =“more-2106”> </ span>
 ## 特征
 

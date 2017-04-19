@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-1/
 ---
 
-自从以来，已有足够的改善 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/)  所以我们今天把它们推出M5.1。其中一些事实上并不那么简单，就像使用Scala库一样 [阿卡](http://akka.io/) 。这篇文章快速概述了这些变化。<span id =“more-971”> </ span>
+自从以来，已有足够的改善 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) 所以我们今天把它们推出M5.1。其中一些事实上并不那么简单，就像使用Scala库一样 [阿卡](http://akka.io/) 。这篇文章快速概述了这些变化。<span id =“more-971”> </ span>
 ## 更好地支持Scala类。阿卡
 
 理论上讲，所有JVM语言都很容易互操作。在实践中，似乎有许多小问题使它变得不愉快或几乎不可能。
@@ -112,5 +112,5 @@ public static void main(String[] args) {
 编译器也在改进：一些修复可空类型的角色与泛型交互的范围和针对范围的循环的优化。
 ## 要求
 
-Kotlin M5.1要求 [IntelliJ IDEA 12.0.4](http://www.jetbrains.com/idea/download/index.html)  （不支持12.1的EAP），您可以从插件库中下载。
+Kotlin M5.1要求 [IntelliJ IDEA 12.0.4](http://www.jetbrains.com/idea/download/index.html) （不支持12.1的EAP），您可以从插件库中下载。
 <strong>拥有不错的Kotlin！</ strong>

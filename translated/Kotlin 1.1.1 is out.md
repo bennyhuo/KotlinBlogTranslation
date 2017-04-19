@@ -19,7 +19,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-1-is-out/
 * Kotlin插件现在可以在Gradle插件门户中使用。有关使用说明，请参阅文档。
 * 使用带有接收器的函数类型作为JavaScript外部声明的参数类型不再允许。以前，传递给这些参数的lambdas没有被正确的参数调用，并且在这个问题上没有简单的解决方法，所以现在我们决定禁用这个功能。
 
-我们也更新了Kotlin [蚀](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse)  和 [NetBeans](http://plugins.netbeans.org/plugin/68590/kotlin)  插件包括Kotlin 1.1.1，所以您可以享受新的Kotlin版本的优点，无论您选择IDE。
+我们也更新了Kotlin [蚀](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) 和 [NetBeans](http://plugins.netbeans.org/plugin/68590/kotlin) 插件包括Kotlin 1.1.1，所以您可以享受新的Kotlin版本的优点，无论您选择IDE。
 ## 如何更新
 
 要更新IDEA插件，请使用工具| Kotlin |配置Kotlin插件更新，然后按“检查更新现在”按钮。另外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本

@@ -73,13 +73,13 @@ enum class Side {
 
 ### Static Fields
 
-We covered  [Static constants in Kotlin](http://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/)  previously. With this release, you can now use class objects and have their properties represented as true static fields in Java to assure 100% interoperability.
+We covered [Static constants in Kotlin](http://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/) previously. With this release, you can now use class objects and have their properties represented as true static fields in Java to assure 100% interoperability.
 ## Maven
 
-For those of you using Maven, you’ll be pleased to know that Kotlin is now available on  [Maven Central](http://www.maven.org) . Snapshot repository has also been moved to oss.sonatype.org. For more information about Maven support please see the documentation on  [Maven support](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Maven) .
+For those of you using Maven, you’ll be pleased to know that Kotlin is now available on [Maven Central](http://www.maven.org) . Snapshot repository has also been moved to oss.sonatype.org. For more information about Maven support please see the documentation on [Maven support](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Maven) .
 ## Android Studio Support
 
-You probably heard the news a few months back that Google has been working on a new development IDE called  [Android Studio](http://developer.android.com/sdk/installing/studio.html)  for developing Android applications, based on IntelliJ IDEA Community Edition. With this milestone, we now provide support for this IDE. You now have all the functionality you get for Kotlin in IntelliJ IDEA, in Android Studio also.  <img alt="Android Studio" border="0" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image.png?resize=640%2C477&amp;ssl=1" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px"/> We’ll be taking a more in-depth look at Android Studio support including how to set up Gradle in to work with Kotlin as well as laying out the project in a separate post.
+You probably heard the news a few months back that Google has been working on a new development IDE called [Android Studio](http://developer.android.com/sdk/installing/studio.html) for developing Android applications, based on IntelliJ IDEA Community Edition. With this milestone, we now provide support for this IDE. You now have all the functionality you get for Kotlin in IntelliJ IDEA, in Android Studio also.  <img alt="Android Studio" border="0" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image.png?resize=640%2C477&amp;ssl=1" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px"/> We’ll be taking a more in-depth look at Android Studio support including how to set up Gradle in to work with Kotlin as well as laying out the project in a separate post.
 ## New Refactorings
 
 In addition to supporting Android Studio, we also have some new IDE refactoring available in M6.
@@ -102,4 +102,4 @@ In addition to the above features, this release also brings some other goodies
 * Performance improvements. We have been working to improve performance including faster completion and some other general performance enhancements. More work is needed but we’re on the right track.
 * TestNG. You can now right-click on a class or function and run the test using TestNG (thanks to Jayson Minard).
 
-<span><a href="http://plugins.jetbrains.com/plugin?pr=idea&amp;pluginId=6954">Download</a> it now</span> and give it a try and  [please let us know if you have any issues](http://youtrack.jetbrains.com/issues/kotlin) . Important: If you’re using  [IntelliJ 13 EAP](http://eap.jetbrains.com/idea) , please note you need the latest build to work with this release.
+<span><a href="http://plugins.jetbrains.com/plugin?pr=idea&amp;pluginId=6954">Download</a> it now</span> and give it a try and [please let us know if you have any issues](http://youtrack.jetbrains.com/issues/kotlin) . Important: If you’re using [IntelliJ 13 EAP](http://eap.jetbrains.com/idea) , please note you need the latest build to work with this release.

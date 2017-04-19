@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-is-also-for-and
 ---
 
 We’re all really excited about the release of Kotlin 1.1. The new features this release includes are extremely useful for Java developers and lead JVM development to a new world of possibilities.
-But these new features, such as  [coroutines](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) , or  [type aliases](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md)  (to put a couple of examples), look like science fiction for Android developers.
+But these new features, such as [coroutines](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) , or [type aliases](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md) (to put a couple of examples), look like science fiction for Android developers.
 We’re still stuck in an ancient Java 6 with little improvements that forces us to develop in ways almost forgotten for most developers in any other platforms.
 So a sane question would be: has the Kotlin team been able to keep compatibility to Java 6 while bringing all these new features alive? And the answer is: of course!
 <strong>All the new stuff is still available for Java 6 and, as an extension, for Android developers.</strong> And today, I want to show you some of them, and how they can make your life even easier when developing Android Apps.
@@ -25,7 +25,7 @@ So a sane question would be: has the Kotlin team been able to keep compatibility
 # Type aliases: You can make your listener much more readable
 
 Of course, type aliases have a lot of different applications. But the first that came to my mind was the ability to make listeners more readable while keeping the use of lambdas.
-If you haven’t heard about  [type aliases](https://github.com/Kotlin/KEEP/issues/4)  before, they’re basically a way to rename complex types into more readable ones.
+If you haven’t heard about [type aliases](https://github.com/Kotlin/KEEP/issues/4) before, they’re basically a way to rename complex types into more readable ones.
 For instance, you could have an <code>RecyclerViewadapter</code> which will receive a listener. As you may know, <code>RecyclerView</code> doesn’t have a standard way to deal with item clicks, just as <code>ListView</code> had, so we have to come out with our own.
 Let’s imagine we want a listener that has access to the view. Our adapter class could look like this:
 

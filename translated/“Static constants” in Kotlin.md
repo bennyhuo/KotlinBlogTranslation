@@ -31,7 +31,7 @@ fun bar() {}
 但有时您需要在您的课堂中使用<strong>静态常量</ strong>：例如，要符合某些框架的要求或使用序列化。你怎么在Kotlin这样做？ <span id =“more-1101”> </ span> Kotlin中有两件类似于Java的静态：上述的包级别函数和 [类对象](http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects) 。我将简要解释什么是类对象，然后继续执行静态常量。
 ## 类对象
 
-一个班（不 [内](http://confluence.jetbrains.com/display/Kotlin/Nested+classes)  而不是本地的）或trait最多可以声明一个与其相关联的类对象。例如：
+一个班（不 [内](http://confluence.jetbrains.com/display/Kotlin/Nested+classes) 而不是本地的）或trait最多可以声明一个与其相关联的类对象。例如：
 
 {% raw %}
 <p></p>

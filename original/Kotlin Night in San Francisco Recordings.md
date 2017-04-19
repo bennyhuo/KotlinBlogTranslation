@@ -42,8 +42,7 @@ Hans Dockter, CEO of Gradle demoed the first milestone of writing a Gradle build
 ## Talk #2: Jake Wharton. <strong>Instrumentation Testing Robots</strong>
 
 Libraries like Espresso allow UI tests to have stable interactions with your app, but without discipline these tests can become hard to manage and require frequent updating. In this talk Jake covered how the so-called robot pattern allows you to create stable, readable, and maintainable tests with the aid of Kotlin’s language features.
-See the full recording along with transcribing on  [realm.io](https://realm.io/news/kau-jake-wharton-testing-robots/) 
-## Talk #3: Laura Kogler & Rob Fletcher. <strong>Kotlin Testing</strong>
+See the full recording along with transcribing on [realm.io](https://realm.io/news/kau-jake-wharton-testing-robots/) ## Talk #3: Laura Kogler & Rob Fletcher. <strong>Kotlin Testing</strong>
 
 Spek framework contributor Laura and Spock maintainer Rob demonstrated the current state of Kotlin testing frameworks and discussed expected further advancements in testing support.
 Part1:

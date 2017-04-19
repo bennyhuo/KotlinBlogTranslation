@@ -296,8 +296,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-其他选项包括允许与类同一行</ em>上的修饰符<em>，但这并不直接扩展到函数， [现在表达](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 。查看更多 [这里](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) 
-## 
+其他选项包括允许与类同一行</ em>上的修饰符<em>，但这并不直接扩展到函数， [现在表达](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 。查看更多 [这里](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) ## 
 
 
 反馈欢迎

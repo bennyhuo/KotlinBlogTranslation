@@ -31,4 +31,4 @@ KT-9697将方法移动到伴侣对象并返回，
 * KT-9697将方法移动到伴侣对象并返回，
 * 和IDE中的39种修复。
 
-我们感谢EAP的参与者尝试了预览版本并报告了反馈。请加入 [EAP](https://discuss.kotlinlang.org/t/kotlin-1-0-1-eap/1525)  让我们让Kotlin一起更好！
+我们感谢EAP的参与者尝试了预览版本并报告了反馈。请加入 [EAP](https://discuss.kotlinlang.org/t/kotlin-1-0-1-eap/1525) 让我们让Kotlin一起更好！

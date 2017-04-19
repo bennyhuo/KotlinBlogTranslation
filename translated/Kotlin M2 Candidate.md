@@ -15,7 +15,7 @@ source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
 这是七个星期了 [Kotlin M1发行](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) ，我很高兴邀请您尝试一下Kotlin M2 </ strong>的候选版本！这篇文章概述了即将到来的里程碑版本以及使用说明。
 ## 谢谢你，M1！
 
-我们的M1建设做得相当不错：有了 [800下载](http://plugins.intellij.net/plugin/?id=6954) ，并给我们带来了广泛的反馈 [论坛](http://devnet.jetbrains.com/community/kotlin)  和 [问题追踪器](http://youtrack.jetbrains.net/issues/KT) 。
+我们的M1建设做得相当不错：有了 [800下载](http://plugins.intellij.net/plugin/?id=6954) ，并给我们带来了广泛的反馈 [论坛](http://devnet.jetbrains.com/community/kotlin) 和 [问题追踪器](http://youtrack.jetbrains.net/issues/KT) 。
 似乎你已经有了一些乐趣，我们的目标是更加有趣的<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：// i2 .wp.com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“ >
 ## 什么是新的
 
@@ -118,4 +118,4 @@ fun main(args: Array<String>) {
 <p> </p>
 {% endraw %}
 
-此页面的部分是基于创建的工作进行的修改 [由Google分享](http://code.google.com/policies.html)  并根据术语描述使用 [知识共享3.0归属许可](http://creativecommons.org/licenses/by/3.0/) 。
+此页面的部分是基于创建的工作进行的修改 [由Google分享](http://code.google.com/policies.html) 并根据术语描述使用 [知识共享3.0归属许可](http://creativecommons.org/licenses/by/3.0/) 。

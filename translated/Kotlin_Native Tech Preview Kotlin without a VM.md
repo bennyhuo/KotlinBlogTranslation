@@ -60,6 +60,6 @@ Kotlin / Native旨在为不同的目标平台提供不同的内存管理解决�
 
 ## 如何尝试
 
-我们已经准备了两个具有编译器，样本和文档的档案： [适用于Mac和iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz)  和 [对于Linux和Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) 。
-看看 [Github项目](https://github.com/JetBrains/kotlin-native)  和 [发行说明](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md)  为了指示。
-<strong>我们非常欢迎您的反馈意见</ strong>在＃kotlin本机频道 [公共松弛](https://kotlinlang.slack.com)  （获取您的邀请 [这里](http://slack.kotl.in) 。
+我们已经准备了两个具有编译器，样本和文档的档案： [适用于Mac和iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz) 和 [对于Linux和Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) 。
+看看 [Github项目](https://github.com/JetBrains/kotlin-native) 和 [发行说明](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md) 为了指示。
+<strong>我们非常欢迎您的反馈意见</ strong>在＃kotlin本机频道 [公共松弛](https://kotlinlang.slack.com) （获取您的邀请 [这里](http://slack.kotl.in) 。

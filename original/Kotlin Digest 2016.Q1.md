@@ -20,7 +20,7 @@ We want to thank everyone for their contributions, and highlight some of the mos
 <p><center><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png" rel="attachment wp-att-3826"><img alt="2016Q1Cover" class="alignnone size-full wp-image-3826" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png?resize=640%2C320&amp;ssl=1"/></a></center></p>
 {% endraw %}
 
-By the way, you can  [join us on slack](http://kotlinslackin.herokuapp.com/)  and subscribe to the <em>#feed</em> channel, where we push quite a bit of interesting content as it appears.
+By the way, you can [join us on slack](http://kotlinslackin.herokuapp.com/) and subscribe to the <em>#feed</em> channel, where we push quite a bit of interesting content as it appears.
 
 {% raw %}
 <p><span id="more-3802"></span></p>

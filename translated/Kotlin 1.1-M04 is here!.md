@@ -14,11 +14,11 @@ source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-1-m04-is-here/
 
 我们很高兴向您呈现即将推出的Kotlin发行版的第四个里程碑。我们正在封装版本1.1的开发，最终版本计划于2017年第一季度进行。大多数功能已经形成了体面，所以现在是尝试它的好时机，并给我们您的反馈。我们会很感激！
 与其他里程碑版本一样，我们为新语言和库功能提供<b>无后向兼容性保证</ b>。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改</ b>。
-请分享您关于新功能或您可能遇到的任何问题的反馈，通过此版本 [YouTrack](https://youtrack.jetbrains.com/issues/KT) ， [论坛](https://discuss.kotlinlang.org)  和 [松弛](http://kotlinlang.slack.com/) 。
+请分享您关于新功能或您可能遇到的任何问题的反馈，通过此版本 [YouTrack](https://youtrack.jetbrains.com/issues/KT) ， [论坛](https://discuss.kotlinlang.org) 和 [松弛](http://kotlinlang.slack.com/) 。
 这一里程碑对协同语法和语义进行了重大改造，使协同工作更加简单和灵活。它还包含标准库增强功能，新语言功能和编译器插件，JS后端的许多功能和改进，以及许多其他修补程序和更新。<br/>
 
 新版本还包括所有功能 [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) ，包括与<b> Android Studio 2.3 Beta 1 </ b>兼容的更新。
-完整的更新日志可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md)  以下列出了一些关键变化：
+完整的更新日志可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md) 以下列出了一些关键变化：
 <span id =“more-4405”> </ span>
 ## 协调程序
 
@@ -100,12 +100,12 @@ async {
 
 然而，期货只是协同程序支持的多种用例之一。协调实现的完整概述及其使用示例可在修订版中获得 [KEEP文件](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 。
 我们认为现在我们已经有了一个很棒的Kotlin协同设计，但是我们意识到它还没有经过足够的测试。因此，我们将在1.1中发布选择性孵化标志。从这个里程碑开始，您将在使用协同程序时获得“此功能是实验性的：协同程序”警告。您可以使用<code> -Xcoroutines = enable </ code>编译器标志关闭此警告，或者使用<code> -Xcoroutines = error </ code>编译器标志禁用此功能。相应的设置也可以在IDEA中的Kotlin编译器设置下使用。要为gradle项目设置此选项，您可以在项目根目录中添加<code> kotlin.coroutines = enable </ code>或<code> kotlin.coroutines = error </ code>到local.properties文件。
-如果你正在使用 [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)  图书馆请使用更新版本<code> 0.2-alpha-1 </ code>，适应协同设计的最新更改。此版本还在生成范围中引入了<code> yieldAll </ code>方法。请看 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md)  详细信息。
+如果你正在使用 [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) 图书馆请使用更新版本<code> 0.2-alpha-1 </ code>，适应协同设计的最新更改。此版本还在生成范围中引入了<code> yieldAll </ code>方法。请看 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 详细信息。
 ## 语言功能
 
 ### 属性类型可以从吸气剂推断出来
 
-例如在下面的代码中，属性<code> foo </ code>的类型将被推断为<code> String </ code>。看到这个问题 [KT-550](https://youtrack.jetbrains.com/issue/KT-550)  更多的细节。
+例如在下面的代码中，属性<code> foo </ code>的类型将被推断为<code> String </ code>。看到这个问题 [KT-550](https://youtrack.jetbrains.com/issue/KT-550) 更多的细节。
 
 {% raw %}
 <p></p>
@@ -121,7 +121,7 @@ val foo get() = ""
 
 ### 浮点相关功能，修复和改进
 
-浮点数比较现在使用IEEE 754兼容比较，其中类型是静态地被认为是<code> Double </ code>或<code> Float </ code>。对于浮点数范围，我们引入了专门的<code> ClosedFloatingPointRange </ code>接口，它提供了自己的比较方法，因此使用范围的扩展操作（如<code> coerceIn </ code>）可以在上面实现的。它的实例是通过在两个<code> Float </ code>或<code> Double </ code>值上调用的运算符<code> .. </ code>获得的。看到 [KT-4481](https://youtrack.jetbrains.com/issue/KT-4481)  和 [KT-14651了解详情。](https://youtrack.jetbrains.com/issue/KT-14651) <br/>
+浮点数比较现在使用IEEE 754兼容比较，其中类型是静态地被认为是<code> Double </ code>或<code> Float </ code>。对于浮点数范围，我们引入了专门的<code> ClosedFloatingPointRange </ code>接口，它提供了自己的比较方法，因此使用范围的扩展操作（如<code> coerceIn </ code>）可以在上面实现的。它的实例是通过在两个<code> Float </ code>或<code> Double </ code>值上调用的运算符<code> .. </ code>获得的。看到 [KT-4481](https://youtrack.jetbrains.com/issue/KT-4481) 和 [KT-14651了解详情。](https://youtrack.jetbrains.com/issue/KT-14651) <br/>
 ### 
 拦截委托属性绑定
 
@@ -156,7 +156,7 @@ class MyUI {
 {% endraw %}
 
 这里在<code> MyUI </ code>的构造函数初始化器中调用方法<code> provideDelegate </ code>。因此，我们可以在创建时检查物业一致性。早期这种检查只能在呼吸吸气器或吸气器的时候才可以。
-不幸的是，该功能尚未正确记录，但可以使用 [本草案文件](https://github.com/orangy/KEEP/blob/fabb56360f2d7a293ac720cace89cd445da3c919/proposals/attach-to-property.md#createdelegate)  作为初始参考。
+不幸的是，该功能尚未正确记录，但可以使用 [本草案文件](https://github.com/orangy/KEEP/blob/fabb56360f2d7a293ac720cace89cd445da3c919/proposals/attach-to-property.md#createdelegate) 作为初始参考。
 ### 增强了一些JDK方法的可空性
 
 JDK中的一些功能在文档中定义了可空性契约，有些功能不接受null值，有些不会返回null，而其他函数可能会有时返回null。
@@ -198,13 +198,13 @@ ofNullable，它需要一个可空值，并返回一个可选的不可空类型�
 
 请注意，这些函数将在返回它们之前输入结果数字，因为返回类型假定它。
 还有整数转换函数，如<code> Int.toString（）</ code>，<code> String.toInt（）</ code>，<code> String.toIntOrNull（）</ code> <code> radix </ code>参数，它允许指定转换的基础。
-我们要感谢 [丹尼尔·沃多皮](https://github.com/voddan)  为实现这些功能的发展作出了重大贡献。
+我们要感谢 [丹尼尔·沃多皮](https://github.com/voddan) 为实现这些功能的发展作出了重大贡献。
 ### 在各个
 
 <code> onEach </ code>是用于集合和序列的小而有用的扩展函数，它允许在操作链中的集合/序列的每个元素上执行一些可能具有副作用的操作。 />
 
 对于迭代，它的行为类似于<code> forEach </ code>，而且还可以进一步返回迭代实例。在序列上，它返回一个包装序列，它在元素被迭代时懒惰地应用给定的动作。
-谢谢 [ChristianBrüggemann](https://github.com/cbruegg)  为初始原型。
+谢谢 [ChristianBrüggemann](https://github.com/cbruegg) 为初始原型。
 ## JavaScript后端
 
 ### <code> external </ code>，而不是<code> @native </ code>
@@ -297,7 +297,7 @@ fun main(args: Array<String>) {
 您可以为CommonJS和“plain”模块系统检查此代码段生成的JS代码 [这里](https://gist.github.com/ligee/50d30ad9bca5ea925ff7d913ff232004) 。
 ## 如何尝试
 
-<b>在Maven / Gradle中：</ b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1)  作为构建脚本和项目的存储库;使用1.1-M04作为编译器和标准库的版本号。
+<b>在Maven / Gradle中：</ b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M04作为编译器和标准库的版本号。
 <b>在IntelliJ IDEA中：</ b>转到<i>工具→Kotlin→配置Kotlin插件更新</ i>，然后在<i>更新频道</ i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</ i>。
 <strong>命令行编译器</ strong>可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) 。
 <b> <a href="http://try.kotlinlang.org"> try.kotlinlang.org </a> </ b>。使用右下角的下拉列表将编译器版本更改为1.1-M04。

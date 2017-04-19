@@ -25,7 +25,7 @@ source_url: https://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/
 我们使用KAnnotator来推断与Kotlin一起提供的JDK的注释。现在你也可以使用它：注释你自己的库。
 ## 安装
 
-KAnnotator作为一个单独的插件 [IntelliJ IDEA 12](http://www.jetbrains.com/idea/)  以上（12.0.4和12.1都可以工作）。请注意，Kotlin插件<strong>不是必需的</ strong>。要安装插件，请按照以下说明进行操作 [这里](http://www.jetbrains.com/idea/plugins/index.html) 。
+KAnnotator作为一个单独的插件 [IntelliJ IDEA 12](http://www.jetbrains.com/idea/) 以上（12.0.4和12.1都可以工作）。请注意，Kotlin插件<strong>不是必需的</ strong>。要安装插件，请按照以下说明进行操作 [这里](http://www.jetbrains.com/idea/plugins/index.html) 。
 ## 推断
 
 不，您可以调用Analyze  - > Annotate Jar Files ...（从主菜单或上下文菜单）<img alt =“”data-recalc-dims =“1”src =“https://i2.wp.com/www。 eSCSI.com/shard/s171/sh/8242aa4b-939b-416c-9880-6a6b97f748ce/add22424ad329409984c8f1df963bfde/res/902508da-cf33-453b-9790-c2af86cfa407/skitch.png?w=640&amp;ssl=1“/>

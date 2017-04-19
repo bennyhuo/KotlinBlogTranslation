@@ -129,7 +129,7 @@ Kotlin的<code> Int :: class </ code>可能在不同的上下文中对应于Java
 此外，我们现在可以说如<code> IntArray（5）{it * 3} </ code>，即创建初始化的基元数组。
 ### 未来的变化：集合中的null的含义
 
-JDK的更新版本使得集合越来越不容忍。例如，这是什么 [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-)  关于<code> java.util.Map.computeIfAbsent </ code>：
+JDK的更新版本使得集合越来越不容忍。例如，这是什么 [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) 关于<code> java.util.Map.computeIfAbsent </ code>：
 <p>
 
   如果指定的键尚未与值<strong>（或映射到null）</ strong>相关联，则尝试使用给定的映射函数计算其值，并将其输入到此映射中，除非为null。

@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-java-statics-result-expressions-and-more/
 ---
 
-Thank you all for the feedback we got on the  [previous call](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) ! Here comes another round of changes and adjustments. Your opinions and use cases are welcome.<span id="more-2707"></span>
+Thank you all for the feedback we got on the [previous call](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) ! Here comes another round of changes and adjustments. Your opinions and use cases are welcome.<span id="more-2707"></span>
 ## Java Statics and Inheritance
 
 We are going to improve interoperability with Java statics in Kotlin by allowing Kotlin subclasses to access static members of their superclasses: we will now be able to use constants, nested classes and static utilities defined up the inheritance tree. Same for members of companion objects of supertypes.
@@ -144,7 +144,7 @@ More formally: a supertype or an element of a declaration must be (effectively) 
 ## Marking result expressions
 
 This one is not really decided, and very debatable indeed, but it can’t be added after 1.0, so we have been thinking about it for some time:
-As some of you  [rightfully observed](https://youtrack.jetbrains.com/issue/KT-8695) , it may be difficult at times to see what expressions are used as results of blocks or lambdas.
+As some of you [rightfully observed](https://youtrack.jetbrains.com/issue/KT-8695) , it may be difficult at times to see what expressions are used as results of blocks or lambdas.
 We are considering prefixing such result expressions with the <code>^</code> symbol (or maybe some other prefix) to make them visible, in the following cases:
 
 * expression is a result of a multi-line block or lambda, AND

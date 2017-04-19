@@ -12,15 +12,11 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/02/lets-kode-together/
 ---
 
-如 [Kotlin网络演示](http://kotlin-demo.jetbrains.com/)  是尝试Kotlin的最简单的方法。今天我们推出一些新功能，使其更加有趣。
+如 [Kotlin网络演示](http://kotlin-demo.jetbrains.com/) 是尝试Kotlin的最简单的方法。今天我们推出一些新功能，使其更加有趣。
 <strong> HTML5 Canvas </ strong>
 我们添加了对HTML5 Canvas的支持（对于JavaScipt后端），以便您现在可以执行以下操作：
 <span id =“more-388”> </ span> <br/>
-在YouTube上观看它： [http://youtu.be/iee75Dtw83k](http://youtu.be/iee75Dtw83k) 
-
-
-
-<strong>注意</ strong>，为了使用Canvas，您需要在右侧的面板中选择JavaScript（Canvas）运行配置。
+在YouTube上观看它： [http://youtu.be/iee75Dtw83k](http://youtu.be/iee75Dtw83k) <strong>注意</ strong>，为了使用Canvas，您需要在右侧的面板中选择JavaScript（Canvas）运行配置。
 <strong>共享您的节目</ strong>
 此外，您现在可以保存您写入的程序并共享一个公共链接：
 

@@ -212,5 +212,5 @@ In addition, there are some other bug fixes and features
 * More bootstrapping. We’re using more and more Kotlin in Kotlin.
 * Some more improvements to the Kotlin standard library.
 
-You can find the Compiler and Plugin on our  [release page on GitHub](https://github.com/JetBrains/kotlin/releases/tag/build-0.7.270) .<br/>
-If you’re using IntelliJ IDEA, you can download the latest plugin from  [our repository](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954)  or update it directly via Plugins in IntelliJ IDEA. Kotlin M7 requires IntelliJ IDEA 13.1.
+You can find the Compiler and Plugin on our [release page on GitHub](https://github.com/JetBrains/kotlin/releases/tag/build-0.7.270) .<br/>
+If you’re using IntelliJ IDEA, you can download the latest plugin from [our repository](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) or update it directly via Plugins in IntelliJ IDEA. Kotlin M7 requires IntelliJ IDEA 13.1.

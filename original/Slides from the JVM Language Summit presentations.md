@@ -13,4 +13,4 @@ source_url: https://blog.jetbrains.com/kotlin/2011/07/slides-from-the-jvm-langua
 ---
 
 Just a quick note: we’ve published the slides from the presentation and workshop that we gave on the JVM Language Summit.<br/>
-The  [presentation](http://confluence.jetbrains.net/download/attachments/40702623/JVMLS_talk_2011.pdf?version=1&modificationDate=1311201742425)  covers higher-order functions and typesafe builders, and the  [workshop](http://confluence.jetbrains.net/download/attachments/40702623/JVMLS_workshop_2011.pdf?version=1&modificationDate=1311201781543)  covers classes, multiple inheritance, generics and class objects.
+The [presentation](http://confluence.jetbrains.net/download/attachments/40702623/JVMLS_talk_2011.pdf?version=1&modificationDate=1311201742425) covers higher-order functions and typesafe builders, and the [workshop](http://confluence.jetbrains.net/download/attachments/40702623/JVMLS_workshop_2011.pdf?version=1&modificationDate=1311201781543) covers classes, multiple inheritance, generics and class objects.

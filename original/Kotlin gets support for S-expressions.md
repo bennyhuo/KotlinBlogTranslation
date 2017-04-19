@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/04/kotlin-gets-support-for-s-expressions/
 ---
 
-Kotlin is always happy to learn from other programming languages, and this is why we decided to support  [S-expressions](http://en.wikipedia.org/wiki/S-expression) , the empowering concept of  [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) .
-The main motivation behind this is the compatibility with  [Clojure](http://clojure.org/) , the LISP for the JVM. Clojure is well-known for its solid libraries, particularly the ones used for concurrency and read-only data structures.
+Kotlin is always happy to learn from other programming languages, and this is why we decided to support [S-expressions](http://en.wikipedia.org/wiki/S-expression) , the empowering concept of  [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) .
+The main motivation behind this is the compatibility with [Clojure](http://clojure.org/) , the LISP for the JVM. Clojure is well-known for its solid libraries, particularly the ones used for concurrency and read-only data structures.
 To facilitate interoperability with LISP (and Clo<em>j</em>ure libraries in particular), Kotlin now allows expressions like this one:
 
 {% raw %}
@@ -142,7 +142,7 @@ And the following code demonstrates closures:
 
 ## Try it out!
 
-You can find the above examples (and some more)  [here](http://kotlin-demo.jetbrains.com/?publicLink=104074971561017308771-1697121195) . They are runnable, and you can play with the code. <strong>Disclaimer</strong>: it’s only a prototype.
+You can find the above examples (and some more) [here](http://kotlin-demo.jetbrains.com/?publicLink=104074971561017308771-1697121195) . They are runnable, and you can play with the code. <strong>Disclaimer</strong>: it’s only a prototype.
 ## Limitations
 
 Unfortunately, at this stage our support for S-expressions is somewhat limited. Due to some issues connected with parsing, an S-expression can only be of <strong>odd length</strong>. We are working on removing this limitation.
@@ -163,4 +163,4 @@ Also, when defining a named function as an S-expression, its name has to be prec
 
 ## Dot Operator
 
-Many of you were waiting eagerly for us to release the  [Dot operator](http://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/) . Now it’s implemented, compiler and IDE plugin are downloadable  [here]( https://github.com/JetBrains/kotlin/releases/tag/dot-operator) , thanks to  [jgl87](https://github.com/JetBrains/kotlin/pull/430) .
+Many of you were waiting eagerly for us to release the [Dot operator](http://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/) . Now it’s implemented, compiler and IDE plugin are downloadable [here]( https://github.com/JetBrains/kotlin/releases/tag/dot-operator) , thanks to [jgl87](https://github.com/JetBrains/kotlin/pull/430) .

@@ -159,7 +159,7 @@ when injecting JavaScript language:
 
 ## Summary
 
-In addition to <em>dynamic</em> and <em>js</em>, we also introduced support for <em>nativeGetter,nativeSetter</em> and <em>nativeInvoke</em> annotations for JavaScript, which we already covered in the  [M10 release post](http://blog.jetbrains.com/kotlin/2014/12/m10-is-out/) .
+In addition to <em>dynamic</em> and <em>js</em>, we also introduced support for <em>nativeGetter,nativeSetter</em> and <em>nativeInvoke</em> annotations for JavaScript, which we already covered in the [M10 release post](http://blog.jetbrains.com/kotlin/2014/12/m10-is-out/) .
 These new features are all provided for better interoperability with JavaScript, but they do not trump any plans to continue to provide strongly-typed support for existing libraries and frameworks in JavaScript.
 <strong>[1]</strong><br/>
 “dynamic” is a soft keyword:

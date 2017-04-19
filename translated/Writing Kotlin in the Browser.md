@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/10/writing-kotlin-in-the-browser/
 ---
 
-你知道Kotlin可以定位到JavaScript和JVM吗？不要太惊讶，如果你不知道，因为我们没有给它太多的覆盖，尽管已经发货了 [成功的产品](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/)  使用这种功能。但是，这是希望改变的。<span id =“more-1330”> </ span>
+你知道Kotlin可以定位到JavaScript和JVM吗？不要太惊讶，如果你不知道，因为我们没有给它太多的覆盖，尽管已经发货了 [成功的产品](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/) 使用这种功能。但是，这是希望改变的。<span id =“more-1330”> </ span>
 # 基础 - 一个简单的项目
 
 第一步是建立一个新项目。在项目中使用Kotlin时，我们有能力定位到JVM或JavaScript。如果我们在现有项目中添加新的Kotlin文件， [Kotlin会提示我们这样做](http://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/) 。如果我们开始一个新项目，我们可以在设置向导中选择目标，假设我们使用IntelliJ IDEA。
@@ -55,7 +55,7 @@ source_url: https://blog.jetbrains.com/kotlin/2013/10/writing-kotlin-in-the-brow
 <p><img alt="image" border="0" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/10/image4.png?resize=275%2C154&amp;ssl=1" style="padding-top: 0px; padding-left: 0px; margin: 0px; padding-right: 0px; border-width: 0px;"/></p>
 {% endraw %}
 
-在开发期间，我们需要最新版本的这些文件，因此我们希望将这些文件放在我们的<em> web / js / app </ em>文件夹中。我们可以在很多方面做到这一点 [IntelliJ IDEA工件](http://www.jetbrains.com/idea/webhelp/artifact.html)  或Maven / Gradle。在我们的例子中，我们只是使用一个工件。我们可以设置一个将相应的文件复制到所需的输出位置，另外还将最初复制到<em>脚本</ em>文件夹的<em> kotlin.js </ em>文件复制到同一位置*。
+在开发期间，我们需要最新版本的这些文件，因此我们希望将这些文件放在我们的<em> web / js / app </ em>文件夹中。我们可以在很多方面做到这一点 [IntelliJ IDEA工件](http://www.jetbrains.com/idea/webhelp/artifact.html) 或Maven / Gradle。在我们的例子中，我们只是使用一个工件。我们可以设置一个将相应的文件复制到所需的输出位置，另外还将最初复制到<em>脚本</ em>文件夹的<em> kotlin.js </ em>文件复制到同一位置*。
 <strong> <em> <span style =“font-size：x-small;”> *这是一次一次性操作，所以一个更好的选择是将此文件的输出位置直接定义到所需的输出文件夹该项目。我们这样做是为了逐步解释事情。 </ span> </ em> </ strong>
 ## 与DOM元素交互
 

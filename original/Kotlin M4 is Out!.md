@@ -12,17 +12,17 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/
 ---
 
-Today we roll out Kotlin M4 (from under  [snow](http://www.google.ru/imgres?um=1&hl=en&newwindow=1&sa=N&tbo=d&biw=1320&bih=1106&tbm=isch&tbnid=q5-uJPbVI3jRFM:&imgrefurl=http://mr-stroy.com/news/498/45&docid=hUulWRZZmtitkM&imgurl=http://mr-stroy.com/uploads/images/sneg-spb.jpg&w=784&h=500&ei=sG28UMayC4nZ4QT22IDYCw&zoom=1&iact=hc&vpx=4&vpy=288&dur=1347&hovh=179&hovw=281&tx=179&ty=150&sig=101271244132511519226&page=1&tbnh=139&tbnw=206&start=0&ndsp=36&ved=1t:429,r:6,s:0,i:102) ). This post gives an overview of new features and other things this milestone brings.<span id="more-731"></span>
+Today we roll out Kotlin M4 (from under [snow](http://www.google.ru/imgres?um=1&hl=en&newwindow=1&sa=N&tbo=d&biw=1320&bih=1106&tbm=isch&tbnid=q5-uJPbVI3jRFM:&imgrefurl=http://mr-stroy.com/news/498/45&docid=hUulWRZZmtitkM&imgurl=http://mr-stroy.com/uploads/images/sneg-spb.jpg&w=784&h=500&ei=sG28UMayC4nZ4QT22IDYCw&zoom=1&iact=hc&vpx=4&vpy=288&dur=1347&hovh=179&hovw=281&tx=179&ty=150&sig=101271244132511519226&page=1&tbnh=139&tbnw=206&start=0&ndsp=36&ved=1t:429,r:6,s:0,i:102) ). This post gives an overview of new features and other things this milestone brings.<span id="more-731"></span>
 # Improvements Here and There
 
 Kotlin M4 is <strong>JDK7-friendly</strong>: we still generate Java6-compatible byte codes, but some issues related to compiling against JDK7 are now fixed.
 <strong>Type argument inference</strong> has been improved even more, it is now <strong>faster</strong>, and more speedups are coming.
 <strong>Code completion</strong> has been improved in many ways, too. Enjoy <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
-Overall, it is  [128 issues](http://youtrack.jetbrains.com/issues/KT?p=0&q=%23Resolved+resolved+date%3A+2012-10-11+..+2012-12-01&f=false)  closed since  [M3.1](http://blog.jetbrains.com/kotlin/2012/10/dogfooding-kotlin-and-m3-1/)  was out.
+Overall, it is [128 issues](http://youtrack.jetbrains.com/issues/KT?p=0&q=%23Resolved+resolved+date%3A+2012-10-11+..+2012-12-01&f=false) closed since [M3.1](http://blog.jetbrains.com/kotlin/2012/10/dogfooding-kotlin-and-m3-1/) was out.
 # KAnnotator: Annotate the world
 
-Since  [M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , you can use  [external annotations](http://blog.jetbrains.com/kotlin/using-external-annotations/)  to tell the system that your methods return/take non-null values. This mechanism is useful even if you don’t use Kotlin: you can turn on  [nullability inspections for Java](http://www.jetbrains.com/idea/documentation/howto.html)  too (and I totally recommend you to do so).
-One problem about this used to be that, while you can annotate your own code while you write it (and we do it  [all](https://github.com/JetBrains/kotlin/blob/master/compiler/frontend/src/org/jetbrains/jet/lang/types/TypeConstructor.java)   [the](https://github.com/JetBrains/intellij-community/blob/master/platform/util/src/com/intellij/util/text/CharArrayUtil.java)   [time](https://github.com/JetBrains/la-clojure/blob/master/src/org/jetbrains/plugins/clojure/utils/ClojureUtils.java)  at JetBrains), your favorite library is not annotated, and it is so big, you can’t annotate it manually.
+Since [M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , you can use [external annotations](http://blog.jetbrains.com/kotlin/using-external-annotations/) to tell the system that your methods return/take non-null values. This mechanism is useful even if you don’t use Kotlin: you can turn on [nullability inspections for Java](http://www.jetbrains.com/idea/documentation/howto.html) too (and I totally recommend you to do so).
+One problem about this used to be that, while you can annotate your own code while you write it (and we do it [all](https://github.com/JetBrains/kotlin/blob/master/compiler/frontend/src/org/jetbrains/jet/lang/types/TypeConstructor.java) [the](https://github.com/JetBrains/intellij-community/blob/master/platform/util/src/com/intellij/util/text/CharArrayUtil.java) [time](https://github.com/JetBrains/la-clojure/blob/master/src/org/jetbrains/plugins/clojure/utils/ClojureUtils.java) at JetBrains), your favorite library is not annotated, and it is so big, you can’t annotate it manually.
 The key thing here is that ‘manually’. A programmer is a lazy creature, and by virtue of our laziness, we want to automate as much as we can. And today, along with Kotlin M4, we roll out <strong>KAnnotator</strong>: a tool that <strong>annotates your libraries automatically</strong> (the tool is written in Kotlin, of course).
 How it works, in a nutshell: you have your library as a jar (or a number of jars), you tell KAnnotator to <em>infer</em> annotations for these jars, and get a bunch of .xml files back. They contain annotations for methods and fields, for example:
 <img alt="" class="aligncenter size-full wp-image-740" data-recalc-dims="1" sizes="(max-width: 409px) 100vw, 409px" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?resize=409%2C149&amp;ssl=1" srcset="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?resize=300%2C109&amp;ssl=1 300w, https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?w=409&amp;ssl=1 409w"/>Now, you can attach these annotations to your project, and both Java IDE and Kotlin compiler will see them.
@@ -34,7 +34,7 @@ KAnnotator is <strong>just started</strong>, and it will grow much smarter, but 
 
 # Copy Your Data
 
-Kotlin M3 introduced  [data classes](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) , a nice way to represent your data. A popular request was to be able to copy an instance of a data class and selectively <strong>change</strong> some of its properties, <strong>while keeping the object immutable</strong>.
+Kotlin M3 introduced [data classes](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) , a nice way to represent your data. A popular request was to be able to copy an instance of a data class and selectively <strong>change</strong> some of its properties, <strong>while keeping the object immutable</strong>.
 In Kotlin M4 you can do this:
 
 {% raw %}
@@ -55,7 +55,7 @@ fun Person.asMarried(newLastName: String)
 Every data class gets a copy() function that has <em>default values</em> for all parameters, so that you can specify only those ones you want to change. Since Kotlin supports <em>named arguments</em>, all you need to do is say ‘copy(property1 = v1, property3 = v2)’, and all the other properties will be copied, while ‘property1’ and ‘property3’ will be changed.
 # Declaration-site variance in… Java
 
-There will be a separate post on this, but I’ll give a short announcement here. We all know that Java makes you write ‘List<? extends Foo>’  [whenever you don’t mean to modify that list](http://www.eecs.qmul.ac.uk/~mmh/APD/bloch/generics.pdf) . As you  [know](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , Kotlin has declaration-site variance and read-only interfaces for collections, so that ‘List<String>’ can go where ‘List<Object>’ is expected. Now, when you have this function in Kotlin:
+There will be a separate post on this, but I’ll give a short announcement here. We all know that Java makes you write ‘List<? extends Foo>’ [whenever you don’t mean to modify that list](http://www.eecs.qmul.ac.uk/~mmh/APD/bloch/generics.pdf) . As you [know](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , Kotlin has declaration-site variance and read-only interfaces for collections, so that ‘List<String>’ can go where ‘List<Object>’ is expected. Now, when you have this function in Kotlin:
 
 {% raw %}
 <p></p>
@@ -163,5 +163,5 @@ So the user is stuck: a type argument doesn’t work, and no argument doesn’t 
 <img alt="" class="aligncenter size-full wp-image-746" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/12/QuickFix.png?resize=190%2C96&amp;ssl=1"/>Just press Alt+Enter on the error (as, I am sure, you always do), and get it fixed: you need a ‘star projection’ here.
 # Download
 
-Kotlin plugin requires IntelliJ IDEA 12, it was released a few days ago, and you can get it  [here](http://www.jetbrains.com/idea/download/index.html)  (<strong>Open Source</strong> Community Edition is available). You can download <strong>Kotlin M4</strong> from the plugin repository, which is  [accessible from your IDE](http://www.jetbrains.com/idea/plugins/index.html) .
+Kotlin plugin requires IntelliJ IDEA 12, it was released a few days ago, and you can get it [here](http://www.jetbrains.com/idea/download/index.html) (<strong>Open Source</strong> Community Edition is available). You can download <strong>Kotlin M4</strong> from the plugin repository, which is [accessible from your IDE](http://www.jetbrains.com/idea/plugins/index.html) .
 Your feedback is very welcome. <strong>Have a nice Kotlin!</strong>

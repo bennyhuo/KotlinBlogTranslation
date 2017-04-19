@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlinnative-tech-preview-
 ---
 
 We are happy to announce the first Technology Preview of <strong>Kotlin/Native</strong> that compiles Kotlin directly to machine code. The Kotlin/Native compiler produces standalone executables that can run without any virtual machine.
-It is not a fully functional release yet, but you can already play with the technology and take a look at its source code  [here](https://github.com/JetBrains/kotlin-native/) . The compiler is available under the Apache 2 OSS license.
+It is not a fully functional release yet, but you can already play with the technology and take a look at its source code [here](https://github.com/JetBrains/kotlin-native/) . The compiler is available under the Apache 2 OSS license.
 
 {% raw %}
 <p><img alt="KotlinNative" class="alignnone size-full wp-image-4889" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/04/KotlinNative.png" width="800"/><br/>
@@ -27,7 +27,7 @@ Our vision for inter-platform code reuse is the following: one can write entire 
 Note that we do not intend to make arbitrary Kotlin/JVM programs runnable on Kotlin/Native or Kotlin/JS. It would be equivalent to implementing another JVM, which is both a lot of work and a lot of limitations for the runtime. We are going another way: providing a common language for all platforms while enabling creation of common libraries through seamless interoperability with platform code.
 ## Technology
 
-Kotlin/Native uses the LLVM compiler infrastructure to generate machine code. In this preview, we support the following  [target platforms](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md#supported-platforms) :
+Kotlin/Native uses the LLVM compiler infrastructure to generate machine code. In this preview, we support the following [target platforms](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md#supported-platforms) :
 
 * Mac OS X 10.10 and later (x86-64)
 * x86-64 Ubuntu Linux (14.04, 16.04 and later), other Linux flavours may work as well
@@ -35,7 +35,7 @@ Kotlin/Native uses the LLVM compiler infrastructure to generate machine code. In
 * Raspberry Pi, cross-compiled on Linux host
 
 More platforms can be added relatively easily, as long as the LLVM support is available for them. We will probably support a few more platforms out-of-the-box in the future.
-As usual, interoperability is among our top priorities, and Kotlin/Native can efficiently call C functions and pass/get data to/from them. You can generate Kotlin bindings from a C header files at build time and get fast type-safe access to any API native to the target platform. See detailed instructions  [here](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/INTEROP.md) .
+As usual, interoperability is among our top priorities, and Kotlin/Native can efficiently call C functions and pass/get data to/from them. You can generate Kotlin bindings from a C header files at build time and get fast type-safe access to any API native to the target platform. See detailed instructions [here](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/INTEROP.md) .
 ### Memory management
 
 Kotlin/Native is designed to potentially enable different memory management solutions for different target platforms. For example, in the future it may make sense to have a tracing GC for server/desktop platforms, while ARC makes a lot more sense on iOS. Some platforms may only need manual memory management, and get an even smaller Kotlin/Native runtime in return.
@@ -60,6 +60,6 @@ We are currently working on the core technology for Kotlin/Native which is the s
 
 ## How to try
 
-We’ve prepared two archives with compiler, samples and documentation:  [for Mac and iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz)  and  [for Linux and Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) .
-Check out the  [Github project](https://github.com/JetBrains/kotlin-native)  and  [Release Notes](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md)  for instructions.
-<strong>Your feedback is very welcome</strong> in the #kotlin-native channel on our  [public Slack](https://kotlinlang.slack.com)  (Get your invite  [here](http://slack.kotl.in) .
+We’ve prepared two archives with compiler, samples and documentation: [for Mac and iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz) and [for Linux and Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) .
+Check out the [Github project](https://github.com/JetBrains/kotlin-native) and [Release Notes](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md) for instructions.
+<strong>Your feedback is very welcome</strong> in the #kotlin-native channel on our [public Slack](https://kotlinlang.slack.com) (Get your invite [here](http://slack.kotl.in) .

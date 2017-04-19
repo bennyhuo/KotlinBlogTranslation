@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/kotlin-1-0-beta-2-is-out/
 ---
 
-我们的第一次更新 [测试版](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/)  在这儿！我们正在稳定，所以它主要是错误修复和标准库的更改。
+我们的第一次更新 [测试版](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) 在这儿！我们正在稳定，所以它主要是错误修复和标准库的更改。
 ## 语言变化
 
 我们现在对类型参数强制执行<strong>单实例继承</ strong>约束：相同的<code> T </ code>不能同时具有<code> List＆lt; Int＆gt; </ code>和<code> List＆lt ; String＆gt; </ code>作为其上限。对于类，这一直被禁止，现在对类型参数也是一样的。<span id =“more-3093”> </ span>
@@ -113,7 +113,7 @@ FileTreeWalk.filter，File.recurse，BufferedReader.lines和lineIterator
 
 ## Dokka
 
-Kotlin项目的新文档生成工具Dokka终于达成了全面的发布。 Dokka支持混合语言项目和理解 [KDoc评论](https://kotlinlang.org/docs/reference/kotlin-doc.html)  在Kotlin代码和JavaDoc中的Java代码注释。 Dokka具有Gradle，Maven和Ant的插件，因此您可以轻松地将其与项目的构建系统集成。下载Dokka并找到更多的信息 [Dokka项目网站](http://github.com/kotlin/dokka) 。
+Kotlin项目的新文档生成工具Dokka终于达成了全面的发布。 Dokka支持混合语言项目和理解 [KDoc评论](https://kotlinlang.org/docs/reference/kotlin-doc.html) 在Kotlin代码和JavaDoc中的Java代码注释。 Dokka具有Gradle，Maven和Ant的插件，因此您可以轻松地将其与项目的构建系统集成。下载Dokka并找到更多的信息 [Dokka项目网站](http://github.com/kotlin/dokka) 。
 ## IDE更改
 
 

@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/kotlin-1-0-beta-2-is-out/
 ---
 
-The first update to our  [Beta](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/)  is here! We are stabilizing, so it’s mostly bug-fixing and changes to the standard library.
+The first update to our [Beta](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) is here! We are stabilizing, so it’s mostly bug-fixing and changes to the standard library.
 ## Language changes
 
 We are now enforcing <strong>single-instantiation inheritance</strong> constraint on type parameters: the same <code>T</code> can not have both <code>List&lt;Int&gt;</code> and <code>List&lt;String&gt;</code> as its upper bounds. This has been always forbidden for classes, now the same check applies for type parameters.<span id="more-3093"></span>
@@ -81,7 +81,7 @@ foo(list.filterIsInstance<Bar>()) // OK: we are checking for Bar
 <p></p>
 {% endraw %}
 
-NOTE: To reduce the size of the runtime library (which is especially important for Android applications), we removed the kotlin.dom and kotlin.browser packages from the standard library. They are now available as a separate library,  [kotlinx.dom](https://github.com/Kotlin/kotlinx.dom) . If you’re using any of these packages in your project, please add the new library as a dependency and update the import statements in your code (change <code>kotlin.dom</code> and <code>kotlin.browser</code> to <code>kotlinx.dom</code> and <code>kotlinx.browser</code>). Otherwise, the API of the library has not changed.
+NOTE: To reduce the size of the runtime library (which is especially important for Android applications), we removed the kotlin.dom and kotlin.browser packages from the standard library. They are now available as a separate library, [kotlinx.dom](https://github.com/Kotlin/kotlinx.dom) . If you’re using any of these packages in your project, please add the new library as a dependency and update the import statements in your code (change <code>kotlin.dom</code> and <code>kotlin.browser</code> to <code>kotlinx.dom</code> and <code>kotlinx.browser</code>). Otherwise, the API of the library has not changed.
 Other changes:
 
 * Added
@@ -113,7 +113,7 @@ assert, check and require with non-lazy message argument
 
 ## Dokka
 
-Dokka, the new documentation generation tool for Kotlin projects, has finally reached a full release. Dokka supports mixed-language projects and understands  [KDoc comments](https://kotlinlang.org/docs/reference/kotlin-doc.html)  in Kotlin code and JavaDoc comments in Java code. Dokka has plugins for Gradle, Maven and Ant, so you can easily integrate it with the build system of your project. Download Dokka and find more information on the  [Dokka project site](http://github.com/kotlin/dokka) .
+Dokka, the new documentation generation tool for Kotlin projects, has finally reached a full release. Dokka supports mixed-language projects and understands [KDoc comments](https://kotlinlang.org/docs/reference/kotlin-doc.html) in Kotlin code and JavaDoc comments in Java code. Dokka has plugins for Gradle, Maven and Ant, so you can easily integrate it with the build system of your project. Download Dokka and find more information on the [Dokka project site](http://github.com/kotlin/dokka) .
 ## IDE changes
 
 

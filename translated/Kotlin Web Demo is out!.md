@@ -39,6 +39,4 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/kotlin-web-demo-is-out/
 
 * 标准库扩展功能，使JDK集合和其他常见API更加愉快（像map（）/ filter（）等））;
 * 代码挑战：目前，我们以包含测试数据的代码片段的形式提供了一些示例问题。这将扩展到比赛自动化测试系统。
-* 更多示例：总是有更多的炫耀
-
- [玩的开心！](http://kotlin-demo.jetbrains.com) 
+* 更多示例：总是有更多的炫耀 [玩的开心！](http://kotlin-demo.jetbrains.com) 

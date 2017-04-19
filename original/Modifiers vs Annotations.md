@@ -79,4 +79,4 @@ annotation(repeatable = true) class MyRepeatableAnnotation
 We are going to require all annotations to be prefixed with “@”.
 Incidentally, some annotations will be turned into modifiers: for example, <code>data</code> and <code>inline</code>.
 <strong>Your feedback is welcome</strong>: we would like to know if we are missing something here, in your opinion.
-Special thanks to the author and contributors to  [this forum thread](https://devnet.jetbrains.com/message/5549947) .
+Special thanks to the author and contributors to [this forum thread](https://devnet.jetbrains.com/message/5549947) .

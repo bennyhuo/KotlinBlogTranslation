@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/
 ---
 
 It’s been almost two months since Kotlin 1.0 was released, and the team is now switching from stabilisation and bug fixes to new feature work, so it’s a great time to talk about our plans for the future.
-We’ve already published our  [Android roadmap](http://blog.jetbrains.com/kotlin/2016/03/kotlins-android-roadmap/) , but there are many other areas where we’re applying our efforts. Our current development is organised in two main branches:
+We’ve already published our [Android roadmap](http://blog.jetbrains.com/kotlin/2016/03/kotlins-android-roadmap/) , but there are many other areas where we’re applying our efforts. Our current development is organised in two main branches:
 
 * Kotlin 1.0.x which will be a series of releases containing bug fixes, updates to tooling, IDE support and other areas which do not affect the core language. 1.0.x releases will be published on a regular basis once every several weeks.
 * Kotlin 1.1 which will contain major new language features, along with all the improvements from the 1.0.x branch. This will be a feature-driven release, and we aren’t announcing any specific time frame for it.
@@ -68,4 +68,4 @@ In the IDE space, our current priorities are as follows:
 The Android roadmap post already mentioned some of the improvements that we plan to make in our tools, such as support for incremental compilation with Gradle and support for Android Lint checks. Both of these features are already available in Kotlin 1.0.2 EAP, and will receive further improvements later on.
 ## Summary
 
-As you can see, there are quite a lot of exciting things coming, and there’s plenty of opportunity for you to get involved. Stop by our  [Slack chat](http://kotlinslackin.herokuapp.com/) , try out the  [EAP builds](https://discuss.kotlinlang.org/c/eap) , file  [issues](http://youtrack.jetbrains.com/issues/KT)  – the future of Kotlin depends on you, our users, and we’re always happy to hear anything that you have to say.
+As you can see, there are quite a lot of exciting things coming, and there’s plenty of opportunity for you to get involved. Stop by our [Slack chat](http://kotlinslackin.herokuapp.com/) , try out the [EAP builds](https://discuss.kotlinlang.org/c/eap) , file [issues](http://youtrack.jetbrains.com/issues/KT) – the future of Kotlin depends on you, our users, and we’re always happy to hear anything that you have to say.

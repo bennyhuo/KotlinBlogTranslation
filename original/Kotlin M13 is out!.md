@@ -55,10 +55,10 @@ class Example {
 
 Both <code>foo</code> and <code>bar</code> have no initializers, but at the same time declare a non-null type. If we try to read them before they are initialized, an exception will be thrown, but as soon as they are initialized by a DI framework (Guice, Dagger or Spring, for example), they can be read as normal properties.
 Such properties can also be used for other use cases (such as JUnit <code>setUp</code> initialization). Note that <code>val</code>‘s can be marked <code>lateinit</code> as well as <code>var</code>‘s. Unlike <code>var</code>s, they can not be assigned freely in the code, but a framework can inject values into them without obstacles, because the underlying JVM fields are not marked as <code>final</code>.
-See more in the  [language docs](http://kotlinlang.org/docs/reference/properties.html#late-initialized-properties) .
+See more in the [language docs](http://kotlinlang.org/docs/reference/properties.html#late-initialized-properties) .
 ### Sealed classes
 
-Many people ask if Kotlin supports  [Algebraic Data Types (ADTs)](https://en.wikipedia.org/wiki/Algebraic_data_type) . The answer has always been: “Yes, ADTs can be expressed as classes in Kotlin, and <code>when</code> is practically as good as pattern matching”. Now we have added a bit more type-safety to it: with <code>sealed</code> classes we can make sure that all cases are enumerated in <code>when</code>:
+Many people ask if Kotlin supports [Algebraic Data Types (ADTs)](https://en.wikipedia.org/wiki/Algebraic_data_type) . The answer has always been: “Yes, ADTs can be expressed as classes in Kotlin, and <code>when</code> is practically as good as pattern matching”. Now we have added a bit more type-safety to it: with <code>sealed</code> classes we can make sure that all cases are enumerated in <code>when</code>:
 
 {% raw %}
 <p></p>
@@ -89,10 +89,10 @@ fun Pet.saySomething(): String {
 
 Note that <code>else</code> is not required in the example above: since <code>Pet</code> is a sealed class, the compiler knows that it has <em>no subclasses other than <code>Dog</code> and <code>Cat</code></em>. So we can be sure that all cases have been checked and <code>else</code> is not needed. Incidentally, if you forget to cover some cases, the compiler will report an error and remind you to do it, or resort to <code>else</code>.
 For now only classes nested into the sealed class can extend it, but we will later relax this restriction and allow subclasses in the same source file.
-For more details see the  [docs](http://kotlinlang.org/docs/reference/classes.html#sealed-classes) .
+For more details see the [docs](http://kotlinlang.org/docs/reference/classes.html#sealed-classes) .
 ### Annotations require “@”
 
-Modifiers and annotations have been separated syntactically (see this  [blog post](http://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/) ) in M13. We now require a <code>@</code> for annotations, and all annotation classes are supposed to be named starting with a capital letter (which brings better uniformity with Java).
+Modifiers and annotations have been separated syntactically (see this [blog post](http://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/) ) in M13. We now require a <code>@</code> for annotations, and all annotation classes are supposed to be named starting with a capital letter (which brings better uniformity with Java).
 Thus, library annotations such as <code>@Throws</code>, or <code>@Volatile</code> are renamed. We also renamed <code>@platformName</code> to <code>@JvmName</code> and <code>@platformStatic</code> to <code>@JvmStatic</code>.
 Some former annotations have become modifiers:
 
@@ -110,7 +110,7 @@ crossiniline — instead of former @inlineOption(ONLY_LOCAL_RETURNS)
 
 This change is transparent for most users since annotations that haven’t changed their names looked like modifiers before.
 The old syntax and classes are deprecated.
-The  [Code Cleanup IDE action](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/)  will help you migrate your code.
+The [Code Cleanup IDE action](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/) will help you migrate your code.
 ### Annotation targets and other options
 
 Kotlin now supports the following annotation options (expressed as annotations on annotation classes):
@@ -120,7 +120,7 @@ Kotlin now supports the following annotation options (expressed as annotations o
 * @MustBeDocumented – a marker that says that this annotation is a part of the API of the annotated element, and must be displayed in the generated documentation;
 * @Repeatable – a marker that says that this annotation may be used multiple times on the same element.
 
-See more in the  [docs](http://kotlinlang.org/docs/reference/annotations.html#annotation-declaration) .
+See more in the [docs](http://kotlinlang.org/docs/reference/annotations.html#annotation-declaration) .
 Additionally, we can now specify an optional target for annotations at use sites:
 
 {% raw %}
@@ -139,8 +139,8 @@ class Example(
 <p></p>
 {% endraw %}
 
-<strong>NOTE: this is a breaking change</strong>. Before M13 when we annotated parameters of primary constructors, annotations were written <strong>both</strong> on parameters and fields they are stored in. Now they are only written on one of the following (the first applicable): parameter, property, field. I.e. if the annotation is applicable to both field and parameter, it will only be written on the parameter now. This presents some issues when using Jackson, but there is an easy workaround: use the special  [Jackson module for Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) . And the old way didn’t have one.
-Find more information in the  [docs](http://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets) .
+<strong>NOTE: this is a breaking change</strong>. Before M13 when we annotated parameters of primary constructors, annotations were written <strong>both</strong> on parameters and fields they are stored in. Now they are only written on one of the following (the first applicable): parameter, property, field. I.e. if the annotation is applicable to both field and parameter, it will only be written on the parameter now. This presents some issues when using Jackson, but there is an easy workaround: use the special [Jackson module for Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) . And the old way didn’t have one.
+Find more information in the [docs](http://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets) .
 ### Visibilities
 
 We have revisited our access modifier/visibility model. From now on:
@@ -151,7 +151,7 @@ We have revisited our access modifier/visibility model. From now on:
 * we finally enabled the checks that reject usages of internal declarations outside a module.
 
 This may seem controversial that we chose <code>public</code> as default visibility. Kotlin being a type-safe language, choosing the safest option, <code>private</code>, by default may seem more logical. And we totally realize there are valid arguments in favour of this default. But Kotlin is also a pragmatic language. I’ll try to explain briefly why we believe <code>public</code> is the right default.
-In real Java code bases (where public/private decisions are taken explicitly), <code>public</code> occurs a lot more often than <code>private</code> (2.5 to 5 times more often in the code bases that we examined,  [including Kotlin compiler and IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ). This means that we’d make people write <code>public</code> all over the place to implement their designs, that would make Kotlin a lot more ceremonial, and we’d lose some of the precious ground won from Java in terms of brevity. In our experience explicit <code>public</code> breaks the flow of many DSLs and very often — of primary constructors. So we decided to use it by default to keep our code clean.
+In real Java code bases (where public/private decisions are taken explicitly), <code>public</code> occurs a lot more often than <code>private</code> (2.5 to 5 times more often in the code bases that we examined, [including Kotlin compiler and IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ). This means that we’d make people write <code>public</code> all over the place to implement their designs, that would make Kotlin a lot more ceremonial, and we’d lose some of the precious ground won from Java in terms of brevity. In our experience explicit <code>public</code> breaks the flow of many DSLs and very often — of primary constructors. So we decided to use it by default to keep our code clean.
 <strong>NOTE</strong>: <code>internal</code> remains supported, but now you need to specify it explicitly.
 ### Miscellaneous changes
 
@@ -195,7 +195,7 @@ fun demo(bean: JBean) {
 Access to such properties is optimized so that <code>bean.foo</code> compiles to <code>bean.getFoo()</code> without any intermediate calls.
 ### New layout of .class files for top-level declarations
 
-A few months ago we announced  [this change](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/)  and now it’s done:
+A few months ago we announced [this change](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) and now it’s done:
 
 * By default, each Kotlin source file (e.g. myFile.kt) produces a class file with the same name, capitalized and suffixed with “Kt”: MyFileKt;
 * Top-level functions and properties defined in that file are accessible in Java through this class name (instead of the problematic FooPackage);
@@ -250,12 +250,11 @@ $ kotlinc-jvm -module-name com.example.mymodule
 * <kotlinc modulename="com.example.mymodule"/>
 * $ kotlinc-jvm -module-name com.example.mymodule
 
-More information can be found  [here](http://kotlinlang.org/docs/reference/java-interop.html#package-level-functions) .
+More information can be found [here](http://kotlinlang.org/docs/reference/java-interop.html#package-level-functions) .
 ### Null-safety in Java interop
 
-We first announced this  [a while ago](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) . Now we can use <code>@NotNull</code> and <code>@Nullable</code> in Java and Kotlin recognizes them so that misuse results in compilation errors rather than warnings.
-As a consequence, using Java collections has become a lot safer: we can not put a <code>null</code> into an <code>ArrayList&lt;String&gt;</code> any more.
- [Platform types](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/)  are kept in place, because annotations are often missing and sometimes wrong (violate inheritance rules, for example), so by default no static null-checks are imposed onto Java code.
+We first announced this [a while ago](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) . Now we can use <code>@NotNull</code> and <code>@Nullable</code> in Java and Kotlin recognizes them so that misuse results in compilation errors rather than warnings.
+As a consequence, using Java collections has become a lot safer: we can not put a <code>null</code> into an <code>ArrayList&lt;String&gt;</code> any more. [Platform types](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) are kept in place, because annotations are often missing and sometimes wrong (violate inheritance rules, for example), so by default no static null-checks are imposed onto Java code.
 External annotations are not used either, so we have spared you quite some build configuration.
 ## Libraries
 
@@ -268,7 +267,7 @@ The standard library has got many convenient additions including
 More on this is a separate post too.
 ## Tools
 
-<strong>Compiler daemon.</strong> We announced  [support for Gradle Daemon](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/)  a while ago and your feedback has been positive: compilation times seem to go down up to a factor of three. We keep working on compilation performance, and since M13 a daemon similar to Gradle’s is used in IntelliJ IDEA as well. This feature is marked “experimental” for now, so you need to tick a box in the <em>Preferences</em> dialog to switch it on:
+<strong>Compiler daemon.</strong> We announced [support for Gradle Daemon](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) a while ago and your feedback has been positive: compilation times seem to go down up to a factor of three. We keep working on compilation performance, and since M13 a daemon similar to Gradle’s is used in IntelliJ IDEA as well. This feature is marked “experimental” for now, so you need to tick a box in the <em>Preferences</em> dialog to switch it on:
 <p>
   Build, execution, deployment -&gt; Compiler -&gt; Kotlin compiler -&gt; Keep compiler process alive between invocations (experimental)
 </p>

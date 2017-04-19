@@ -125,8 +125,7 @@ EAP用户报告：
 * 添加关联和关联以帮助构建地图（而不是toMap / toMapBy）
 * 比较器和比较相关功能被移动到kotlin.comparisons包（默认情况下不导入）
 
-更多变化 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 
-## 
+更多变化 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) ## 
 
 
 模具

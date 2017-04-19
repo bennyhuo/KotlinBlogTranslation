@@ -33,5 +33,5 @@ Kotlin 1.1版本被社区热烈的满足。为了演示Kotlin 1.1的新功能，
 
 “img alt =”future_features_collage_2“class =”size-full wp-image-4907 aligncenter“src =”https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/04/collage_2.png“width =”800“ /> <br/>
 
-我们还向所有社区提供了对Kotlin未来的影响。活动组织者收到了测量工具包，活动参与者可以在离线模式中对最期望的功能发表看法。调查得到很多关注，我们现在已经把它放在网上，听取更广泛的社区。现在你可以 [在Kotlin的未来有你的发言](https://docs.google.com/forms/d/e/1FAIpQLSdnCgBonEV5pwN8L903BzdYb9Baf0dpwsJ5YrKnxLveiLFkEQ/viewform)  线上！
+我们还向所有社区提供了对Kotlin未来的影响。活动组织者收到了测量工具包，活动参与者可以在离线模式中对最期望的功能发表看法。调查得到很多关注，我们现在已经把它放在网上，听取更广泛的社区。现在你可以 [在Kotlin的未来有你的发言](https://docs.google.com/forms/d/e/1FAIpQLSdnCgBonEV5pwN8L903BzdYb9Baf0dpwsJ5YrKnxLveiLFkEQ/viewform) 线上！
 请注意，您更有可能在v1.2中看不到这些功能，但我们会在确定工作优先级时考虑您的意见。

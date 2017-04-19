@@ -67,7 +67,7 @@ myTree.findParentOfType<MyTreeNodeType>()
 {% endraw %}
 
 But then we’d need <em>reified generics</em> to access that type inside a function, and on the JVM reified generics are expensive…
-Fortunately, Kotlin has  [inline functions](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) , and they now support <strong>reified</strong> type parameters, so we can write something like this:
+Fortunately, Kotlin has [inline functions](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) , and they now support <strong>reified</strong> type parameters, so we can write something like this:
 
 {% raw %}
 <p></p>
@@ -110,7 +110,7 @@ Normal functions (not marked as <code>inline</code>) can not have reified parame
 This feature is intended to simplify code in frameworks that traditionally rely on reflection, and our internal experiments show that it’s working well.
 ### Checks for declaration-site variance
 
-Kotlin has  [declaration-site variance](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  from the very beginning, but the correspondent checks have been missing from the compiler for a long time. Now they are put in their place: the compiler complains if we declare a type parameter as <strong>in</strong> or <strong>out</strong>, but misuse it in the class body:
+Kotlin has [declaration-site variance](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) from the very beginning, but the correspondent checks have been missing from the compiler for a long time. Now they are put in their place: the compiler complains if we declare a type parameter as <strong>in</strong> or <strong>out</strong>, but misuse it in the class body:
 
 {% raw %}
 <p></p>
@@ -163,7 +163,7 @@ private fun copyTo(other: C<T>) {
 This is a <strong>breaking change</strong>: some code that compiled previously may break, but not fixing it is likely to result in run-time exceptions anyways, so the compiler errors will be of some value to you <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 ### Type inference supports use-site variance
 
-Type argument inference has been improved to accommodate  [use-site variance](http://kotlinlang.org/docs/reference/generics.html#type-projections)  more comfortably. Now you can call a generic function, e.g. <code>reverseInPlace()</code> on a projected type, such as <code>Array&lt;out Number&gt;</code>:
+Type argument inference has been improved to accommodate [use-site variance](http://kotlinlang.org/docs/reference/generics.html#type-projections) more comfortably. Now you can call a generic function, e.g. <code>reverseInPlace()</code> on a projected type, such as <code>Array&lt;out Number&gt;</code>:
 
 {% raw %}
 <p></p>
@@ -199,10 +199,10 @@ fun <T> Array<T>.reverseInPlace() {
 <p></p>
 {% endraw %}
 
-The underlying mechanism was proposed initially by Ross Tate in his  [paper on “Mixed-Site Variance”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) .
+The underlying mechanism was proposed initially by Ross Tate in his [paper on “Mixed-Site Variance”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) .
 ### Varargs translated to projected arrays
 
-Another <strong>breaking change</strong> comes in the form of a fix to a obscure, but sometimes  [rather](https://youtrack.jetbrains.com/issue/KT-5534)   [annoying](https://youtrack.jetbrains.com/issue/KT-2163)  issue: when we have a function that takes a vararg of <code>String?</code>, we really want to be able to pass an array of <code>String</code> to it, don’t we? Before M10 it was impossible, because vararg of T were compiled to <code>Array&lt;T&gt;</code>, now they are compiled to <code>Array&lt;out T&gt;</code>, and the following code works:
+Another <strong>breaking change</strong> comes in the form of a fix to a obscure, but sometimes [rather](https://youtrack.jetbrains.com/issue/KT-5534) [annoying](https://youtrack.jetbrains.com/issue/KT-2163) issue: when we have a function that takes a vararg of <code>String?</code>, we really want to be able to pass an array of <code>String</code> to it, don’t we? Before M10 it was impossible, because vararg of T were compiled to <code>Array&lt;T&gt;</code>, now they are compiled to <code>Array&lt;out T&gt;</code>, and the following code works:
 
 {% raw %}
 <p></p>
@@ -242,7 +242,7 @@ fun interopJS(obj: dynamic): dynamic {
 <p></p>
 {% endraw %}
 
-We’ll cover dynamic in more details along with usage scenarios and limitations in a separate blog post. For technicalities see the  [spec document](https://github.com/JetBrains/kotlin/blob/master/spec-docs/dynamic-types.md) .
+We’ll cover dynamic in more details along with usage scenarios and limitations in a separate blog post. For technicalities see the [spec document](https://github.com/JetBrains/kotlin/blob/master/spec-docs/dynamic-types.md) .
 ### New Annotations
 
 We’ve added a series of annotations to make JavaScript interop easier, in particular <em>nativeInvoke, nativeGetter</em> and <em>nativeSetter</em>.
@@ -342,7 +342,7 @@ Now, we can mark properties as <code>[platformStatic]</code> so that their acces
 Properties on any object now produce static fields so that they can easily be consumed from Java even without the need to decorate them with <em>platformStatic</em> annotations.
 ### JNI and [native]
 
-Kotlin now supports JNI via <code>[native]</code> annotation, defined in <code>kotlin.jvm</code> package (see the spec document  [here](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) .). To declare a native method, simply put the annotation on it:
+Kotlin now supports JNI via <code>[native]</code> annotation, defined in <code>kotlin.jvm</code> package (see the spec document [here](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) .). To declare a native method, simply put the annotation on it:
 
 {% raw %}
 <p></p>
@@ -365,7 +365,7 @@ class NativeExample {
 <p></p>
 {% endraw %}
 
-Here’s an  [example](https://github.com/ligee/kotlin-ndk-samples/blob/master/hello-jni/src/com/example/hellojni/HelloJni.kt)  of using native declarations with Android and NDK.
+Here’s an [example](https://github.com/ligee/kotlin-ndk-samples/blob/master/hello-jni/src/com/example/hellojni/HelloJni.kt) of using native declarations with Android and NDK.
 ## IntelliJ IDEA improvements
 
 Some more improvements in the IntelliJ IDEA area, including:
@@ -385,9 +385,7 @@ During debug sessions, when evaluating expressions, casts are automatically adde
 
 ### Copy reference
 
-We can now obtain the complete reference for any Kotlin symbol, much like we do with  [IntelliJ IDEA in Java code](https://www.jetbrains.com/idea/help/cutting-copying-and-pasting.html) 
-
-{% raw %}
+We can now obtain the complete reference for any Kotlin symbol, much like we do with [IntelliJ IDEA in Java code](https://www.jetbrains.com/idea/help/cutting-copying-and-pasting.html) {% raw %}
 <p><img alt="Copy Reference" class="aligncenter size-full wp-image-1711" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2014/12/copy-reference-no-retina.png?resize=457%2C269&amp;ssl=1"/></p>
 {% endraw %}
 
@@ -456,4 +454,4 @@ If you run Kotlin code with coverage, the Editor now marks covered and uncovered
 The IDE plugin can now automatically configure Maven projects to work with Kotlin/JS. Also, if you have an outdated version of Kotlin’s runtime library, the IDE will ask you to update it, and you can now chose to use a library located in the plugin distribution, instead of copying one into your project.
 ## Summary
 
-To install M10, update the plugin in your IntelliJ IDEA 14 (or earlier versions), and as always you can find the plugin in our plugin repository. You can also download the standalone compiler from the  [release page](https://github.com/JetBrains/kotlin/releases/tag/build-0.10.4) .
+To install M10, update the plugin in your IntelliJ IDEA 14 (or earlier versions), and as always you can find the plugin in our plugin repository. You can also download the standalone compiler from the [release page](https://github.com/JetBrains/kotlin/releases/tag/build-0.10.4) .

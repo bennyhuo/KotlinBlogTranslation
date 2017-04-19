@@ -110,7 +110,7 @@ crossiniline  - 而不是以前的@inlineOption（ONLY_LOCAL_RETURNS）
 
 对于大多数用户，此更改是透明的，因为未更改其名称的注释看起来像修饰符之前。
 旧的语法和类已被弃用。
-的 [代码清理IDE操作](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/)  将帮助您迁移代码。
+的 [代码清理IDE操作](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/) 将帮助您迁移代码。
 ### 注释目标和其他选项
 
 Kotlin现在支持以下注释选项（表示为注释类的注释）：
@@ -195,7 +195,7 @@ fun demo(bean: JBean) {
 对这些属性的访问进行了优化，以便<code> bean.foo </ code>编译为<code> bean.getFoo（）</ code>，无需任何中间调用。
 ### 顶层声明的.class文件的新布局
 
-几个月前我们宣布了 [这个变化](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/)  现在已经完成了：
+几个月前我们宣布了 [这个变化](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) 现在已经完成了：
 
 * 默认情况下，每个Kotlin源文件（例如myFile.kt）生成一个具有相同名称，大小写并后缀为“Kt”的类文件：MyFileKt;
 * 该文件中定义的顶级函数和属性可以通过Java类通过此类名来访问（而不是有问题的FooPackage）;
@@ -254,8 +254,7 @@ $ kotlinc-jvm -module-name com.example.mymodule
 ### Java互操作中的空安全
 
 我们首先宣布这个 [不久以前](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) 。现在我们可以在Java中使用<code> @NotNull </ code>和<code> @Nullable </ code>，而Kotlin会认识到这些错误，导致编译错误而不是警告。
-因此，使用Java集合变得更加安全：我们不能将<code> null </ code>放入<code> ArrayList＆lt; String＆gt; </ code>中。
- [平台类型](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/)  由于注释常常丢失，有时会出错（例如违反继承规则），因此默认情况下不会对Java代码施加静态空检。
+因此，使用Java集合变得更加安全：我们不能将<code> null </ code>放入<code> ArrayList＆lt; String＆gt; </ code>中。 [平台类型](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) 由于注释常常丢失，有时会出错（例如违反继承规则），因此默认情况下不会对Java代码施加静态空检。
 外部注释也不会被使用，所以我们已经为您提供了很多构建配置。
 ## 图书馆
 
@@ -268,7 +267,7 @@ Kotlin图书馆也在积极发展。 M13带来全功能的反射库：我们现�
 更多的这是一个单独的职位。
 ## 工具
 
-<strong>编译器守护进程。</ strong>我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/)  前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</ em>对话框中的一个框，将其打开：
+<strong>编译器守护进程。</ strong>我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</ em>对话框中的一个框，将其打开：
 <p>
   构建，执行，部署 - ＆gt;编译器 - ＆gt; Kotlin编译器 - ＆gt;在调用之前保持编译器进程（实验）
 </ p>

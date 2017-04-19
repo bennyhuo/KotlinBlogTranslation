@@ -19,10 +19,10 @@ As of today, Kotlin 1.1 has finally reached the release candidate stage. This me
 <span id="more-4589"></span></p>
 {% endraw %}
 
-The only new feature in the release candidate is the <code>takeUnless</code> function – a counterpart of  [takeIf](https://kotlinlang.org/docs/reference/whatsnew11.html#takeif-and-also)  (added earlier in 1.1) but with an inverted condition. As for bugfixes, there’s much more, and the  [changelog](https://github.com/JetBrains/kotlin/blob/1.1-rc/ChangeLog.md)  gives you a complete list. Among other things, we’ve fixed several performance problems in the IDE – both long-standing sore points and recent regressions.
+The only new feature in the release candidate is the <code>takeUnless</code> function – a counterpart of [takeIf](https://kotlinlang.org/docs/reference/whatsnew11.html#takeif-and-also) (added earlier in 1.1) but with an inverted condition. As for bugfixes, there’s much more, and the [changelog](https://github.com/JetBrains/kotlin/blob/1.1-rc/ChangeLog.md) gives you a complete list. Among other things, we’ve fixed several performance problems in the IDE – both long-standing sore points and recent regressions.
 ## Migration Notes
 
-As we  [noted](https://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/)  earlier, all binaries produced by pre-release versions are outlawed by the compiler: you’re now <b>required to recompile</b> everything that was compiled by 1.1‑M0x and Beta’s. All the code from 1.0.x is, of course, perfectly fine without recompilation.
+As we [noted](https://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/) earlier, all binaries produced by pre-release versions are outlawed by the compiler: you’re now <b>required to recompile</b> everything that was compiled by 1.1‑M0x and Beta’s. All the code from 1.0.x is, of course, perfectly fine without recompilation.
 Up until now, you could run the Kotlin compiler under any version of Java starting with Java 6, but this is about to change – starting with one of the first 1.1.x updates, the compiler will only run under Java 8 or 9. To prepare you for the migration, the compiler now emits a warning if you run it under Java 6 or 7. Note that this only affects the build environment; <b>the compiled code is still compatible with Java 6 by default</b>, and we have no plans to remove the support for that.
 The <code>.javaClass</code> extension property is now deprecated. As a replacement, please use <code>::class.java</code>. The IDE offers a quickfix to update usages, both individually and across the entire project.
 To reduce the size of the JavaScript standard library, we’ve deprecated a lot of helper functions in the <code>kotlin.dom</code> and <code>kotlin.dom.build</code> packages, and we’re going to remove them in a future update.
@@ -32,6 +32,6 @@ To reduce the size of the JavaScript standard library, we’ve deprecated a lot 
 <b>In IntelliJ IDEA:</b> Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
 <strong>In Eclipse</strong>: install the plugin with the following update site<br/>
 <code>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/0.8.0</code>
-<strong>The command-line compiler</strong> can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-rc) .
+<strong>The command-line compiler</strong> can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-rc) .
 <b>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></b>.
 Let’s Kotlin!

@@ -18,7 +18,7 @@ We are happy to present a new release of our plugin for Eclipse IDE. Along with 
 <p><span id="more-3901"></span></p>
 {% endraw %}
 
-The code formatting feature was rebuilt in this release. Instead of our first naive implementation we have mostly managed to port the advanced formatter from the Kotlin IntelliJ Idea plugin into Eclipse. This means that  [a lot of fixes](https://youtrack.jetbrains.com/issues/KT?q=Formatter%20State:%20Fixed%20Subsystems:%20IDE)  are already there and upcoming improvements will be picked up automatically!
+The code formatting feature was rebuilt in this release. Instead of our first naive implementation we have mostly managed to port the advanced formatter from the Kotlin IntelliJ Idea plugin into Eclipse. This means that [a lot of fixes](https://youtrack.jetbrains.com/issues/KT?q=Formatter%20State:%20Fixed%20Subsystems:%20IDE) are already there and upcoming improvements will be picked up automatically!
 
 {% raw %}
 <p><img class="size-full" onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.png';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.gif';" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.png"/></p>

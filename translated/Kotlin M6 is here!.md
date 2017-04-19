@@ -73,13 +73,13 @@ enum class Side {
 
 ### 静态字段
 
-我们覆盖 [Kotlin中的静态常数](http://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/)  先前。使用此版本，您现在可以使用类对象，并将其属性表示为Java中的真静态字段，以确保100％的互操作性。
+我们覆盖 [Kotlin中的静态常数](http://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/) 先前。使用此版本，您现在可以使用类对象，并将其属性表示为Java中的真静态字段，以确保100％的互操作性。
 ## Maven
 
 对于那些使用Maven的人，您将很高兴知道Kotlin现在可以使用 [Maven Central](http://www.maven.org) 。快照存储库也被移动到oss.sonatype.org。有关Maven支持的更多信息，请参阅文档 [Maven支持](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools#KotlinBuildTools-Maven) 。
 ## Android Studio支持
 
-几个月后，您可能已经听到这个消息，Google一直在研究一个新的开发IDE [Android Studio](http://developer.android.com/sdk/installing/studio.html)  用于开发基于IntelliJ IDEA社区版的Android应用程序。有了这个里程碑，我们现在为这个IDE提供支持。现在，您还可以在Android Studio中为IntelliJ IDEA中的Kotlin提供所有功能。 <img alt =“Android Studio”border =“0”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image .png？resize = 640％2C477＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“/>深入了解Android Studio支持，包括如何将Gradle设置为与Kotlin合作，以及在单独的文章中布置该项目。
+几个月后，您可能已经听到这个消息，Google一直在研究一个新的开发IDE [Android Studio](http://developer.android.com/sdk/installing/studio.html) 用于开发基于IntelliJ IDEA社区版的Android应用程序。有了这个里程碑，我们现在为这个IDE提供支持。现在，您还可以在Android Studio中为IntelliJ IDEA中的Kotlin提供所有功能。 <img alt =“Android Studio”border =“0”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image .png？resize = 640％2C477＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“/>深入了解Android Studio支持，包括如何将Gradle设置为与Kotlin合作，以及在单独的文章中布置该项目。
 ## 新的重构
 
 除了支持Android Studio，我们还在M6中提供了一些新的IDE重构。

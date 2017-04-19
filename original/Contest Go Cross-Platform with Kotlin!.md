@@ -13,8 +13,8 @@ source_url: https://blog.jetbrains.com/kotlin/2015/11/contest-go-cross-platform-
 ---
 
 Hi All,
-Have you ever heard about  [RoboVM](https://robovm.com) ? It lets you create beautiful native apps for iOS & Android, allowing you to share code between platforms. RoboVM translates Java bytecode into native ARM or x86 code.<br/>
-The latest  [RoboVM release](https://robovm.com/robovm-1-11-released-experimental-bitcode-support-ios-9-and-kotlin/)  makes it super easy to get up and running with Kotlin! And today you have a good incentive to play with it, by taking part in the first ever Kotlin Mobile contest! Simply install the  [RoboVM plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/7588?pr=idea)  or  [download RoboVM Studio](https://robovm.com/download/) , and create a cross-platform Kotlin app.<span id="more-3149"></span>
+Have you ever heard about [RoboVM](https://robovm.com) ? It lets you create beautiful native apps for iOS & Android, allowing you to share code between platforms. RoboVM translates Java bytecode into native ARM or x86 code.<br/>
+The latest [RoboVM release](https://robovm.com/robovm-1-11-released-experimental-bitcode-support-ios-9-and-kotlin/) makes it super easy to get up and running with Kotlin! And today you have a good incentive to play with it, by taking part in the first ever Kotlin Mobile contest! Simply install the [RoboVM plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/7588?pr=idea) or [download RoboVM Studio](https://robovm.com/download/) , and create a cross-platform Kotlin app.<span id="more-3149"></span>
 ## How to Enter
 
 
@@ -23,7 +23,7 @@ The latest  [RoboVM release](https://robovm.com/robovm-1-11-released-experimenta
 * Tweet your entry using this link:
 “I just submitted my app for the @robovm @jetbrains Kotlin Contest: https://robovm.com/kotlin-contest”
 
-Don’t have a Mac for iOS development? No problem – we’re accepting Android-only apps as well!  [IntelliJ IDEA](https://www.jetbrains.com/idea/)  Ultimate and Community edition both have great support for building Android apps with Kotlin on Windows and Linux! Also, if you’re not a RoboVM customers, please note that you can simply use the  [free 30-day trial of RoboVM](https://robovm.com/download/)  to enter the contest. You do not need to make any purchases.<br/>
+Don’t have a Mac for iOS development? No problem – we’re accepting Android-only apps as well! [IntelliJ IDEA](https://www.jetbrains.com/idea/) Ultimate and Community edition both have great support for building Android apps with Kotlin on Windows and Linux! Also, if you’re not a RoboVM customers, please note that you can simply use the [free 30-day trial of RoboVM](https://robovm.com/download/) to enter the contest. You do not need to make any purchases.<br/>
  
 ## How to win
 
@@ -47,5 +47,5 @@ Any applicable taxes due on winnings to be paid by prize recipient.
 {% endraw %}
 
 All apps must be submitted by <strong>end of day PST December 14th 2015</strong>! The teams at RoboVM and JetBrains will pick the winners from all submissions. A valid entry consists of your <strong>tweet</strong> pointing to your <strong>app’s GitHub repository</strong>. Only one prize will be awarded per participant, and per GitHub repository. Bonus points for cross-platform apps, development logs in form of tweets or blog posts which we’ll happily promote, as well as code quality! Winners will be announced on the RoboVM and Kotlin blogs as well as on Twitter, and will be contacted via GitHub.
-Don’t have Kotlin experience? Join 800+ community members on  [Slack](http://kotlinslackin.herokuapp.com/)  and ask questions!
+Don’t have Kotlin experience? Join 800+ community members on [Slack](http://kotlinslackin.herokuapp.com/) and ask questions!
 Good luck!

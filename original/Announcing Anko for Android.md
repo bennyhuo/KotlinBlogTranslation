@@ -56,7 +56,7 @@ class MainActivity : Activity() {
 <p><span id="more-1999"></span></p>
 {% endraw %}
 
-Anko makes extensive use of Kotlin’s  [extension functions and properties](http://kotlinlang.org/docs/reference/extensions.html)  arranged into  [type-safe builders](http://kotlinlang.org/docs/reference/type-safe-builders.html)  to describe the user interface. In return, we get conciseness and type-safety at compile time.
+Anko makes extensive use of Kotlin’s [extension functions and properties](http://kotlinlang.org/docs/reference/extensions.html) arranged into [type-safe builders](http://kotlinlang.org/docs/reference/type-safe-builders.html) to describe the user interface. In return, we get conciseness and type-safety at compile time.
 Of course, we can also see a preview during design time using the Anko Preview plugin, available for both IntelliJ IDEA and Android Studio:
 
 {% raw %}
@@ -260,6 +260,6 @@ dependencies {
 <p></p>
 {% endraw %}
 
-The Anko Preview plugin is available both for IntelliJ IDEA and Android Studio. You can  [download](https://plugins.jetbrains.com/plugin/7734)  it directly from the Plugin Repository.
+The Anko Preview plugin is available both for IntelliJ IDEA and Android Studio. You can [download](https://plugins.jetbrains.com/plugin/7734) it directly from the Plugin Repository.
 There are binaries targeting both raw Android (SDK version 15, Ice Cream Sandwich) and Android with a support-v4 package.
-Also, last but not least, much like everything related to Kotlin, Anko is fully Open Source. The repository is on  [GitHub](https://github.com/JetBrains/anko)  and as always, contributions are welcome!
+Also, last but not least, much like everything related to Kotlin, Anko is fully Open Source. The repository is on [GitHub](https://github.com/JetBrains/anko) and as always, contributions are welcome!

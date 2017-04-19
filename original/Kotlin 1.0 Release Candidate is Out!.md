@@ -13,8 +13,8 @@ source_url: https://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-release-candida
 ---
 
 Finally, Kotlin has graduated the Beta and we are happy to present the Release Candidate Build!
-<strong>NOTE</strong>: as we  [announced earlier](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) , <strong>RC requires all code to be recompiled</strong> to make sure no code compiled with older versions is kept around (please recompile even if you were on the EAP version!).
-This blog post gives an overview of the changes made since Beta 4. Library changes are the biggest in this build. Also, some bugs have been fixed. Full list of changes is available  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
+<strong>NOTE</strong>: as we [announced earlier](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) , <strong>RC requires all code to be recompiled</strong> to make sure no code compiled with older versions is kept around (please recompile even if you were on the EAP version!).
+This blog post gives an overview of the changes made since Beta 4. Library changes are the biggest in this build. Also, some bugs have been fixed. Full list of changes is available [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 
 {% raw %}
 <p><img alt="Kotlin 1.0 RC" class="alignnone size-full wp-image-3485" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/02/RC-Banner.png?resize=640%2C330&amp;ssl=1"/></p>
@@ -33,7 +33,7 @@ First of all, as promised before, there has been a clean-up:
 * All previously deprecated language constructs are now errors, not warnings.
 * All deprecated declarations previously generated in the byte code (such as static fields in interfaces etc) have been removed.
 
-Most other language changes are minor tweaks and bug fixes. Some highlights are given below. See the full list  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
+Most other language changes are minor tweaks and bug fixes. Some highlights are given below. See the full list [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 ### Annotations on delegate fields
 
 The new <code>@delegate:</code> annotation target (use-site) is now supported. For example, to mark the delegate object as <code>@Transient</code>, we can say:
@@ -125,8 +125,7 @@ And highlighted bug fixes:
 * associate and associateBy are added to aid construction of maps (instead of toMap/toMapBy)
 * Comparator- and comparison-related functions are moved to kotlin.comparisons package (not imported by default)
 
-More changes  [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 
-## Tooling
+More changes [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) ## Tooling
 
 To enable Android Extensions in Gradle in a more idiomatic way, we now say:
 

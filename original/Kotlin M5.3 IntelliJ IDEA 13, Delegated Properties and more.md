@@ -15,11 +15,11 @@ source_url: https://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delega
 Kotlin M5.3 brings support for IntelliJ IDEA 13 and some new features for you to check out. We are moving towards powerful runtime support, including reflection and other framework-enabling features. This milestone marks our first steps in that direction.  <span id="more-1060"></span>
 ## IntelliJ IDEA 12.1 and 13
 
-First early access versions of  [IntelliJ IDEA 13](http://blogs.jetbrains.com/idea/2013/05/intellij-idea-13-early-preview-is-out/)  are coming out, and we ship a Kotlin plugin compatible with these versions. Remember it’s an EAP, use it at your own risk. Of course, good old  [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/)  is supported as well.
-<strong>Note</strong>: Some news about Kotlin support in  [Android Studio](http://developer.android.com/sdk/installing/studio.html)  are coming soon.
+First early access versions of [IntelliJ IDEA 13](http://blogs.jetbrains.com/idea/2013/05/intellij-idea-13-early-preview-is-out/) are coming out, and we ship a Kotlin plugin compatible with these versions. Remember it’s an EAP, use it at your own risk. Of course, good old [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/) is supported as well.
+<strong>Note</strong>: Some news about Kotlin support in [Android Studio](http://developer.android.com/sdk/installing/studio.html) are coming soon.
 ## Many Improvements
 
-As usual M5.3 brings many improvements both in the compiler and the IDE. In the compiler we are still mostly concerned with performance, which is gradually improving. The IDE gets new quick fixes and refactorings, some of which are described below. You can now navigate to properties overriding the one you are looking at (see icons in the left gutter). The editor recognizes the syntax of  [KDoc](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Doc)  (thanks to  [this pull request](https://github.com/JetBrains/kotlin/pull/280) )… But first, let’s talk about cool new language features, some long awaited, some unexpected (maybe).
+As usual M5.3 brings many improvements both in the compiler and the IDE. In the compiler we are still mostly concerned with performance, which is gradually improving. The IDE gets new quick fixes and refactorings, some of which are described below. You can now navigate to properties overriding the one you are looking at (see icons in the left gutter). The editor recognizes the syntax of [KDoc](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Doc) (thanks to [this pull request](https://github.com/JetBrains/kotlin/pull/280) )… But first, let’s talk about cool new language features, some long awaited, some unexpected (maybe).
 ## New Language Feature: Delegated Properties
 
 We often get feature requests like:
@@ -98,8 +98,8 @@ e.p = "NEW"
 {% endraw %}
 
 This prints “NEW has been assigned to ‘p’ in Example@33a17727”.
-Probably, you already see how to implement things like lazy or observable with this mechanism. Try it as a metter of exercise, but most of it is already done in the  [standard library](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt) .
-The  [kotlin.properties.Delegates](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt#L12)  object holds the most useful stuff. Let’s start with lazy:
+Probably, you already see how to implement things like lazy or observable with this mechanism. Try it as a metter of exercise, but most of it is already done in the [standard library](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt) .
+The [kotlin.properties.Delegates](https://github.com/JetBrains/kotlin/blob/build-0.5.742/libraries/stdlib/src/kotlin/properties/Delegation.kt#L12) object holds the most useful stuff. Let’s start with lazy:
 
 {% raw %}
 <p></p>
@@ -232,7 +232,7 @@ There are other use cases, and probably numerous improvements to these ones. Fan
 
 ## First Steps in SAM Conversions
 
-We introduced  [SAM constructors](http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/)  last time. Of course, this is not enough, so we are working on full SAM conversions. The feature is not finished yet, but you can already use it in simple case like this:
+We introduced [SAM constructors](http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/) last time. Of course, this is not enough, so we are working on full SAM conversions. The feature is not finished yet, but you can already use it in simple case like this:
 
 {% raw %}
 <p></p>
@@ -315,7 +315,7 @@ Adding/removing/reordering function parameters may be tedious when you have a lo
 Change type, rename, reorder or delete parameters and all your call sites will be updates accordingly.
 ## Quick Fixes for “Type Mismatch” etc
 
-Thanks to contributions by  [Jack Zhou](https://github.com/univerio) ,  [Michał Sapalski](https://github.com/sapal) ,  [Wojciech Łopata](https://github.com/lopekpl)  and other students of Open Source Mentorship program led by Stanford University, we now get many cool quick fixes. For example, when you get a type mismatch error, hit Alt+Enter and get some proposals to fix your code:
+Thanks to contributions by [Jack Zhou](https://github.com/univerio) , [Michał Sapalski](https://github.com/sapal) , [Wojciech Łopata](https://github.com/lopekpl) and other students of Open Source Mentorship program led by Stanford University, we now get many cool quick fixes. For example, when you get a type mismatch error, hit Alt+Enter and get some proposals to fix your code:
 
 {% raw %}
 <p><img alt="" class="aligncenter" data-recalc-dims="1" src="https://i1.wp.com/www.evernote.com/shard/s171/sh/ff9bd33c-ecd1-4800-91f2-4a69db761a37/f829b15d7de80df501e39b64f6973754/deep/0/Screenshot%206/5/13%206:51%20PM.jpg?w=640&amp;ssl=1"/></p>
@@ -333,5 +333,5 @@ You can also use Ctrl+Shift+Up/Down to move statements or declarations:
 
 ## Installation
 
-As usual, the new plugin can be installed from  [our plugin repository](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) .
+As usual, the new plugin can be installed from [our plugin repository](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) .
 <strong>Have a nice Kotlin!</strong>

@@ -82,7 +82,7 @@ class Poll(val json: Map<String, *>) {
 ## Observable and vetoable properties
 
 We have fixed a nuisance with observable delegates: the callback handler passed to observable property was called before the property value was changed. Now it is invoked after. It’s worth noting that callbacks are now inlined into these delegates, thus usages of observable and vetoable delegates now cost one object allocation less.
-Read more about standard delegates in the  [reference](http://kotlinlang.org/docs/reference/delegated-properties.html#standard-delegates) .
+Read more about standard delegates in the [reference](http://kotlinlang.org/docs/reference/delegated-properties.html#standard-delegates) .
 ## Completing the change of Char arithmetic
 
 In M13 we’re finalizing the semantic changes of arithmetic operations on the <code>Char</code> type. Only three arithmetic operations on <code>Char</code> are left:
@@ -122,7 +122,7 @@ T.apply(f: T.() → Unit): T
 ## Constructing open ranges
 
 There was a common request to introduce right-open ranges in Kotlin. We have examined use-cases and found that most of them are involving integer ranges. In case of integers an opened at the end range can be represented with a closed range, whose end value is one less than the corresponding open range’s end.<br/>
-To create such ranges you can use newly introduced  [until](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/until.html)  function. It returns closed range with values up to the specified end but not including it, so that:
+To create such ranges you can use newly introduced [until](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/until.html) function. It returns closed range with values up to the specified end but not including it, so that:
 <code>0 until 20 == 0..19</code>
 ## find vs firstOrNull
 
@@ -147,9 +147,7 @@ Third line"""
 {% endraw %}
 
 Now we provide several functions to strip common whitespace prefix from each line of a string:<br/>
-trimIndent,  [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/trim-margin.html) ,  [replaceIndent](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent.html) ,  [replaceIndentByMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent-by-margin.html) 
-
-{% raw %}
+trimIndent, [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/trim-margin.html) , [replaceIndent](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent.html) , [replaceIndentByMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/replace-indent-by-margin.html) {% raw %}
 <p></p>
 {% endraw %}
 
@@ -171,12 +169,12 @@ trimIndent,  [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/tri
 ## Dropping deprecated API
 
 In M13 we have dropped some of previously deprecated APIs: streams, extension methods for iterators, <code>FunctionalList</code>, <code>FunctionalQueue</code> and <code>StringTemplate</code>.
-The full list of changes is available  [here](https://quip.com/I4BbAdzPTzCx) .
+The full list of changes is available [here](https://quip.com/I4BbAdzPTzCx) .
 # Plans for M14
 
 ## Distributing top-level functions between package parts
 
-As we have announced  [earlier](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/)  we’re changing the way how top-level functions and properties are mapped to class files in compiled code. In the next milestone all the top-level stuff in Standard Library is going to be distributed between corresponding package parts. We’ll keep the <code>KotlinPackage</code> facade class that contains all top-level functions, but it will be deprecated and removed in the future.
+As we have announced [earlier](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) we’re changing the way how top-level functions and properties are mapped to class files in compiled code. In the next milestone all the top-level stuff in Standard Library is going to be distributed between corresponding package parts. We’ll keep the <code>KotlinPackage</code> facade class that contains all top-level functions, but it will be deprecated and removed in the future.
 Note that these changes only affect usages of top-level Kotlin members from Java code. An inspection in the IDE will be provided to migrate these usages.
 ## What’s going to be dropped next
 

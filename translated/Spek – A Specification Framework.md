@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/02/speka-specification-framework/
 ---
 
-一会儿现在，a [很少](http://twitter.com/orangy)   [的](http://twitter.com/jonyzzz)   [我们](https://plus.google.com/111179551284404865949/about)  一直在开发一个名为Spek的项目，这个框架允许您编写可执行规范。它允许您以更人性化的方式编写规范（即测试），而且更重要的是描述性的方式，而无需使用长测试名称，下划线或正则表达式。
+一会儿现在，a [很少](http://twitter.com/orangy) [的](http://twitter.com/jonyzzz) [我们](https://plus.google.com/111179551284404865949/about) 一直在开发一个名为Spek的项目，这个框架允许您编写可执行规范。它允许您以更人性化的方式编写规范（即测试），而且更重要的是描述性的方式，而无需使用长测试名称，下划线或正则表达式。
 
 {% raw %}
 <p><span id="more-1421"></span></p>
@@ -47,4 +47,4 @@ IntelliJ IDEA支持Spek，TeamCity也是如此。还有一个控制台运行器�
 
 ## 尝试一下
 
-希望你喜欢你看到的，转过身来 [Spek网站](http://jetbrains.github.io/spek)  了解更多。它仍然在“EAP”，所以报告的问题越多越好。而且由于它是OSS（Apache 2） [贡献不止一个](http://github.com/jetbrains/spek) 。
+希望你喜欢你看到的，转过身来 [Spek网站](http://jetbrains.github.io/spek) 了解更多。它仍然在“EAP”，所以报告的问题越多越好。而且由于它是OSS（Apache 2） [贡献不止一个](http://github.com/jetbrains/spek) 。

@@ -33,7 +33,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-eclipse-plugin-0-5-
 
 ## 语义突出显示
 
-随着新版本的Kotlin插件，使用语义代码突出显示，生活越来越丰富多彩。现在我们与Java编辑器共享大多数设置，因此Kotlin代码将重用您最喜欢的颜色主题。切换到Eclipse <em>黑暗主题</ em>并配置突出显示 [Eclipse颜色主题](http://eclipsecolorthemes.org/)  还支持插件。
+随着新版本的Kotlin插件，使用语义代码突出显示，生活越来越丰富多彩。现在我们与Java编辑器共享大多数设置，因此Kotlin代码将重用您最喜欢的颜色主题。切换到Eclipse <em>黑暗主题</ em>并配置突出显示 [Eclipse颜色主题](http://eclipsecolorthemes.org/) 还支持插件。
 ## 改名
 
 我们现在支持<em>重命名</ em>重构。有一件事情是异常先进的：它可以跨语言工作：Kotlin声明可以从Java和Kotlin中的任何用法重命名！相同的重命名Java声明

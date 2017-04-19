@@ -110,7 +110,7 @@ fun main(s: Array<String>) {
 此功能旨在简化传统上依赖于反思的框架中的代码，我们的内部实验表明它的工作正常。
 ### 检查申报地点差异
 
-Kotlin有 [申报地点差异](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance)  从一开始，但编译器长时间缺少通讯员检查。现在他们放在他们的位置：编译器抱怨如果我们在</ strong>或<strong> out </ strong>中声明一个类型参数为<strong>，但在类体中滥用它：
+Kotlin有 [申报地点差异](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) 从一开始，但编译器长时间缺少通讯员检查。现在他们放在他们的位置：编译器抱怨如果我们在</ strong>或<strong> out </ strong>中声明一个类型参数为<strong>，但在类体中滥用它：
 
 {% raw %}
 <p></p>
@@ -163,7 +163,7 @@ private fun copyTo(other: C<T>) {
 这是一个<strong>破坏变化</ strong>：以前编译的一些代码可能会中断，但是不能修复它可能会导致运行时异常，所以编译器错误将对你有一些价值<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/ simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
 ### 类型推断支持使用方差
 
-类型参数推断已被改进以适应 [使用方差](http://kotlinlang.org/docs/reference/generics.html#type-projections)  更舒适现在您可以调用通用功能，例如一个投影类型的<code> reverseInPlace（）</ code>，例如<code> Array＆lt; out Number＆gt; </ code>：
+类型参数推断已被改进以适应 [使用方差](http://kotlinlang.org/docs/reference/generics.html#type-projections) 更舒适现在您可以调用通用功能，例如一个投影类型的<code> reverseInPlace（）</ code>，例如<code> Array＆lt; out Number＆gt; </ code>：
 
 {% raw %}
 <p></p>
@@ -202,7 +202,7 @@ fun <T> Array<T>.reverseInPlace() {
 最初由罗斯·泰特（Ross Tate）提出的基本机制 [“混合场地差异”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) 。
 ### Varargs转换为投影阵列
 
-另一个<strong>突破性变化</ strong>的形式是对一个晦涩的修复，但有时候 [相反](https://youtrack.jetbrains.com/issue/KT-5534)   [烦人的](https://youtrack.jetbrains.com/issue/KT-2163)  问题：当我们有一个使用<code> String？</ code>的变量的函数时，我们真的希望能够将<code> String </ code>的数组传递给它，不是吗？在M10之前是不可能的，因为T的vararg被编译为<code> Array＆lt; T＆gt; </ code>，现在它们被编译为<code> Array＆lt; out T＆gt; </ code>，并且以下代码工作：
+另一个<strong>突破性变化</ strong>的形式是对一个晦涩的修复，但有时候 [相反](https://youtrack.jetbrains.com/issue/KT-5534) [烦人的](https://youtrack.jetbrains.com/issue/KT-2163) 问题：当我们有一个使用<code> String？</ code>的变量的函数时，我们真的希望能够将<code> String </ code>的数组传递给它，不是吗？在M10之前是不可能的，因为T的vararg被编译为<code> Array＆lt; T＆gt; </ code>，现在它们被编译为<code> Array＆lt; out T＆gt; </ code>，并且以下代码工作：
 
 {% raw %}
 <p></p>
@@ -365,7 +365,7 @@ class NativeExample {
 <p></p>
 {% endraw %}
 
-这是一个 [例](https://github.com/ligee/kotlin-ndk-samples/blob/master/hello-jni/src/com/example/hellojni/HelloJni.kt)  使用Android和NDK的原生声明。
+这是一个 [例](https://github.com/ligee/kotlin-ndk-samples/blob/master/hello-jni/src/com/example/hellojni/HelloJni.kt) 使用Android和NDK的原生声明。
 ## IntelliJ IDEA改进
 
 IntelliJ IDEA领域的一些改进包括：
@@ -385,9 +385,7 @@ IntelliJ IDEA领域的一些改进包括：
 
 ### 复制参考
 
-我们现在可以获得任何Kotlin符号的完整参考，就像我们一样 [IntelliJ IDEA在Java代码中](https://www.jetbrains.com/idea/help/cutting-copying-and-pasting.html) 
-
-{% raw %}
+我们现在可以获得任何Kotlin符号的完整参考，就像我们一样 [IntelliJ IDEA在Java代码中](https://www.jetbrains.com/idea/help/cutting-copying-and-pasting.html) {% raw %}
 <p><img alt="Copy Reference" class="aligncenter size-full wp-image-1711" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2014/12/copy-reference-no-retina.png?resize=457%2C269&amp;ssl=1"/></p>
 {% endraw %}
 

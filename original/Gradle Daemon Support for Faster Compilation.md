@@ -16,10 +16,10 @@ We are currently working on improving compilation times. Today we are happy to i
 ## Background
 
 Among other things, loading classes of the compiler and warmup activities of the JVM seem to contribute a lot to the time it takes <code>kotlinc</code> to run. This is why we are looking into ways of using the same compiler instance over and over again: no need for loading gives better compilation times.
-Since other tools running on the JVM seem to suffer from the same issues, there’s substantial infrastructure facilitating such things. Gradle has its  [Daemon](https://docs.gradle.org/current/userguide/gradle_daemon.html) , a long-running process (actually, it can be many processes) whose essential function is to keep tools loaded and therefore run them without the startup costs of class loading and JIT-compilation.
+Since other tools running on the JVM seem to suffer from the same issues, there’s substantial infrastructure facilitating such things. Gradle has its [Daemon](https://docs.gradle.org/current/userguide/gradle_daemon.html) , a long-running process (actually, it can be many processes) whose essential function is to keep tools loaded and therefore run them without the startup costs of class loading and JIT-compilation.
 ## Try it out
 
-We have fixed some issues that prevented Kotlin to leverage this functionality. It works reliably in Gradle 2.4 and higher (for Gradle upgrade instructions see  [Gradle docs](https://docs.gradle.org/current/userguide/gradle_wrapper.html) ). Android Studio uses the daemon by default, so you don’t have much to do, simply specify Kotlin version “0.12.1230” in your <code>build.gradle</code> file:
+We have fixed some issues that prevented Kotlin to leverage this functionality. It works reliably in Gradle 2.4 and higher (for Gradle upgrade instructions see [Gradle docs](https://docs.gradle.org/current/userguide/gradle_wrapper.html) ). Android Studio uses the daemon by default, so you don’t have much to do, simply specify Kotlin version “0.12.1230” in your <code>build.gradle</code> file:
 
 {% raw %}
 <p></p>

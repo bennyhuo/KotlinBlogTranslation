@@ -12,10 +12,10 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/10/writing-kotlin-in-the-browser/
 ---
 
-Did you know that Kotlin can target JavaScript as well as the JVM? Don’t be too surprised if you didn’t know, as we’ve not been giving it too much coverage, despite already shipping a  [successful product](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/)  that uses this capability. But here’s hoping to change things.<span id="more-1330"></span>
+Did you know that Kotlin can target JavaScript as well as the JVM? Don’t be too surprised if you didn’t know, as we’ve not been giving it too much coverage, despite already shipping a [successful product](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/) that uses this capability. But here’s hoping to change things.<span id="more-1330"></span>
 # The Basics – A Simple Project
 
-First step is to set up a new project. When using Kotlin in a project, we have the ability to target either the JVM or JavaScript. If we’re adding a new Kotlin file to an existing project,  [Kotlin will prompt us for this](http://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/) . If we’re starting a new project, we can choose the target during the setup wizard, assuming we’re using IntelliJ IDEA.
+First step is to set up a new project. When using Kotlin in a project, we have the ability to target either the JVM or JavaScript. If we’re adding a new Kotlin file to an existing project, [Kotlin will prompt us for this](http://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/) . If we’re starting a new project, we can choose the target during the setup wizard, assuming we’re using IntelliJ IDEA.
 
 {% raw %}
 <p><img alt="image" border="0" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2013/10/image.png?resize=610%2C499&amp;ssl=1" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;"/></p>
@@ -55,7 +55,7 @@ When we write Kotlin code,the compiler will generate some JavaScript which needs
 <p><img alt="image" border="0" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/10/image4.png?resize=275%2C154&amp;ssl=1" style="padding-top: 0px; padding-left: 0px; margin: 0px; padding-right: 0px; border-width: 0px;"/></p>
 {% endraw %}
 
-During development we need to have an up to date version of these files so ideally we’d like to have these located in our <em>web/js/app </em>folder. We can do this in many ways, either using  [IntelliJ IDEA artifacts](http://www.jetbrains.com/idea/webhelp/artifact.html)  or Maven/Gradle. In our case we’re just going to use an artifact. We can set one up to copy the corresponding files to the desired output location and additional also copy the <em>kotlin.js</em> file that was originally copied to the <em>script </em>folder to the same location*.
+During development we need to have an up to date version of these files so ideally we’d like to have these located in our <em>web/js/app </em>folder. We can do this in many ways, either using [IntelliJ IDEA artifacts](http://www.jetbrains.com/idea/webhelp/artifact.html) or Maven/Gradle. In our case we’re just going to use an artifact. We can set one up to copy the corresponding files to the desired output location and additional also copy the <em>kotlin.js</em> file that was originally copied to the <em>script </em>folder to the same location*.
 <strong><em><span style="font-size: x-small;">*This is a one-time operation so a better alternative is to define the output location of this file directly to our required output folder when setting up the project. We have done it this way to explain things step by step. </span></em></strong>
 ## Interacting with DOM Elements
 
@@ -94,4 +94,4 @@ This is placed inside the same module as the application and we can call it refe
 # Next Steps
 
 That’s not all that is possible with Kotlin. One thing we haven’t mentioned is the ability to call JavaScript code from within Kotlin and that is something we’ll be covering in a another post, as this one has already become too long!
-If you want to play with Kotlin to JavaScript without having to install anything, you can also try it directly in the  [browser](http://kotlin-demo.jetbrains.com) . And as always, give us your feedback!
+If you want to play with Kotlin to JavaScript without having to install anything, you can also try it directly in the [browser](http://kotlin-demo.jetbrains.com) . And as always, give us your feedback!

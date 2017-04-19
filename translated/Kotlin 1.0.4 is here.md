@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-1-0-4-is-here/
 ---
 
 我们很高兴地宣布发布Kotlin版本<b> 1.0.4 </ b>的新错误修复和工具更新。该版本带来了与IDE和构建工具相关的许多改进，以及JavaScript支持。
-我们再次感谢我们的外部贡献者在本版本中实现了一些功能， [基拉里·拉赫曼](https://github.com/cypressious)  和 [Yoshinori Isogai](https://github.com/shiraji) ，以及所有尝试EAP构建1.0.4的用户，并向我们发送反馈。
+我们再次感谢我们的外部贡献者在本版本中实现了一些功能， [基拉里·拉赫曼](https://github.com/cypressious) 和 [Yoshinori Isogai](https://github.com/shiraji) ，以及所有尝试EAP构建1.0.4的用户，并向我们发送反馈。
 您可以在其中找到修复和改进的完整列表 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.4/ChangeLog.md) 。有些更改值得特别提及：
 ### 语言变化：在try / catch中赋值'val'
 
@@ -88,7 +88,7 @@ kapt {
 新的注解处理仍然存在已知问题，可能与所有注释处理器不兼容。只有当您遇到缺省的<code> kapt </ code>注解处理实现问题时，才应启用它。
 ### JavaScript后端改进
 
-JavaScript后端现在可以将代码编译为与AMD，CommonJS和UMD模块系统兼容的模块。看到 [文件](http://kotlinlang.org/docs/reference/js-modules.html)  更多细节。
+JavaScript后端现在可以将代码编译为与AMD，CommonJS和UMD模块系统兼容的模块。看到 [文件](http://kotlinlang.org/docs/reference/js-modules.html) 更多细节。
 此外，现在支持有限形式的反射：您可以使用<code> jsClass </ code>属性来访问任何对象的运行时类，并且<code> jsClass＆lt; TypeName＆gt;（）</ code>以获取特定类的运行时表示。这是一个更完整的例子：
 
 {% raw %}

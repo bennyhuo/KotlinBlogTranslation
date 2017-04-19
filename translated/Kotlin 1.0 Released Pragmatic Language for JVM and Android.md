@@ -99,8 +99,8 @@ JetBrains是Kotlin目前的主要支持者：我们投入了大量精力开发�
 工具更新和错误修复将作为增量更新发布，即1.0.X.更大的变化将首先通过早期访问计划（EAP），然后将作为1.1发布。
 ## 如何开始
 
-使用该语言的最简单的方法是通过其<strong>在线迷你IDE：<a href="https://try.kotlinlang.org"> try.kotl.in </a> </ strong>，其中包括 [Koans](http://try.kotlinlang.org/koans)   - 一组介绍性问题，它们引导您完成语言的基础知识</ strong>。
-在您的机器上使用Kotlin（和Koans可以完成 [离线](https://kotlinlang.org/docs/tutorials/koans.html)  ）：
+使用该语言的最简单的方法是通过其<strong>在线迷你IDE：<a href="https://try.kotlinlang.org"> try.kotl.in </a> </ strong>，其中包括 [Koans](http://try.kotlinlang.org/koans) - 一组介绍性问题，它们引导您完成语言的基础知识</ strong>。
+在您的机器上使用Kotlin（和Koans可以完成 [离线](https://kotlinlang.org/docs/tutorials/koans.html) ）：
 
 * IntelliJ IDEA（终极或社区）：只需在Java项目中创建Kotlin项目或Kotlin文件;
 * Android Studio：通过插件管理器安装插件;
@@ -109,7 +109,7 @@ JetBrains是Kotlin目前的主要支持者：我们投入了大量精力开发�
 注意：如果您运行的是较旧版本，则可能需要将Kotlin插件更新为1.0。
 要了解概念的速度，可以使用语言<strong>文档和教程</ strong> [官方网站](https://kotlinlang.org) 。我们社区成员提供的伟大文章和介绍可以在这里找到 [2015年摘要](http://blog.jetbrains.com/kotlin/2016/01/kotlin-digest-2015/) 。
 如果您将Kotlin引入到Java项目中，您可以使用IDE中内置的<strong> Java-to-Kotlin转换器</ strong>，帮助逐步轻松迁移。
-最后但并非最不重要的是，请确保您加入我们的讨论 [论坛](https://devnet.jetbrains.com/community/kotlin)  要么 [松弛](http://kotlinslackin.herokuapp.com/) 。
+最后但并非最不重要的是，请确保您加入我们的讨论 [论坛](https://devnet.jetbrains.com/community/kotlin) 要么 [松弛](http://kotlinslackin.herokuapp.com/) 。
 再次，<strong>我们要感谢大家</ strong>。没有社区，我们不可能做到这一点。
 有一个漂亮的Kotlin！ <strong>现在</ strong> <img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“
 美国<em>请参阅有关<a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/"> Reddit </a>和<a href =“https：//新闻的讨论。 ycombinator.com/item?id=11103087">黑客新闻</a> </ em>

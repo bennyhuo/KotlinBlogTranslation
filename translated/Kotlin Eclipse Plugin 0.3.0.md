@@ -105,6 +105,6 @@ Kotlin允许您以一种很简单的方式声明方法，现在Eclipse可以通�
 此版本在船上构建和完成的性能有显着提升。
 ## 结论
 
-虽然我们可能会随机选择功能进行发布，但并不完全如此<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：//i2.wp .com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“我们正在逐渐解决我们在项目中遇到的问题 [Kotlin码的百分比增长](https://github.com/JetBrains/kotlin-eclipse)  对结果很满意。
-如果你有一个想法，下一步应该实现什么功能 [创造一个问题](https://youtrack.jetbrains.com/newIssue?project=KT&clearDraft=true&c=Subsystems+Eclipse+Plugin)  在我们的追踪器
+虽然我们可能会随机选择功能进行发布，但并不完全如此<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：//i2.wp .com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“我们正在逐渐解决我们在项目中遇到的问题 [Kotlin码的百分比增长](https://github.com/JetBrains/kotlin-eclipse) 对结果很满意。
+如果你有一个想法，下一步应该实现什么功能 [创造一个问题](https://youtrack.jetbrains.com/newIssue?project=KT&clearDraft=true&c=Subsystems+Eclipse+Plugin) 在我们的追踪器
 在Eclipse中有一个漂亮的Kotlin！

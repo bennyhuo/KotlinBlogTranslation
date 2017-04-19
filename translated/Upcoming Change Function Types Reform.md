@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-function-types-reform/
 ---
 
-Kotlin M12可能会带来另一个变化，这对Kotlin实施一个有用的反思库至关重要。简而言之，我们将统一<code> FunctionX </ code>和<code> ExtensionFunctionX </ code>在运行时以相同的方式表示，但不会影响我们创建的能力 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html)  和其他类似DSL的结构。<span id =“more-2062”> </ span>
+Kotlin M12可能会带来另一个变化，这对Kotlin实施一个有用的反思库至关重要。简而言之，我们将统一<code> FunctionX </ code>和<code> ExtensionFunctionX </ code>在运行时以相同的方式表示，但不会影响我们创建的能力 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html) 和其他类似DSL的结构。<span id =“more-2062”> </ span>
 ## 为什么
 
 目前，在<code> kotlin </ code>包<code> kotlin-runtime.jar </ code>中有与<code> FunctionX </ code>相关的23 * 2 = 46类文件和46个更多的类文件相关到<code> ExtensionFunctionX </ code>（<code> X </ code>是0到22之间的数字）。这是很多类文件，但是在<code> kotlin.reflect </ code>包（<code> KFunctionX </ code>，<code> KMemberFunctionX </ code>中有46 * 3 = 138个类文件>，<code> KExtensionFunctionX </ code>），这是顶部的<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：// i2 .wp.com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“ >
@@ -23,7 +23,7 @@ Kotlin M12可能会带来另一个变化，这对Kotlin实施一个有用的反�
 这里的一个重要约束是在Java </ strong>中实现Kotlin函数必须保持简单：Java 8 lambdas应该可以工作，在早期版本的Java <code>新的Function2（）{...} </ code>中只有在代码中的<code> invoke（）</ code>方法就足够了。
 ## 怎么样
 
-所有230个功能类文件将被单个接口替代 [功能](https://github.com/JetBrains/kotlin/blob/spec-function-types/spec-docs/function-types.md#function-trait)  这将代表运行时的所有功能（+我们将保留23个接口<code> kotlin.jvm.FunctionX </ code>，以方便在Java中轻松创建Kotlin函数）。共赢得超过200个类文件。
+所有230个功能类文件将被单个接口替代 [功能](https://github.com/JetBrains/kotlin/blob/spec-function-types/spec-docs/function-types.md#function-trait) 这将代表运行时的所有功能（+我们将保留23个接口<code> kotlin.jvm.FunctionX </ code>，以方便在Java中轻松创建Kotlin函数）。共赢得超过200个类文件。
 现在，函数值（“<code>（A） - ＆gt; B </ code>”）和扩展函数值（“<code> A.（） - > B </ code>”）在运行时相同的类型，这将允许使用它们几乎可互换。静态类型系统只会区分特征（例如，编译器将为任何X创建虚构的“类”代码FunctionX </ code>，这将仅在编译时才会存在，永远不会作为类文件发布）。
 由于编译时类型与运行时类型不完全相同，所以需要在<code>之类的运算符（<code>）中进行几个调整，因为</ code>是必需的，但它们不会影响不是静态地知道涉及函数类型。
 函数和扩展函数类型之间的语法区别将被保留（通过将<code> A（）→B </ code>与注释的函数类型相结合）：当lambda是类型时 - 根据预期的类型进行检查，该类型是扩展函数，类型推断会将<code>这个</ code> -receiver添加到其签名中，而对于正常的函数，它会添加一个参数：
@@ -61,4 +61,4 @@ builder {
 
 这些变化会使功能的反思成为可能（即，<code> KClass </ code>将最终具有<code> getFunctions（）</ code>），并且使用函数对象将更加直观。
 <strong>除非您直接引用<code> ExtensionFunctionX </ code>类型（例如，例如<code> ExtensionFucntion0＆lt; Foo，Unit＆gt; </ code>），否则您不需要更改代码中的任何内容</ strong> 。
-有关详细信息，请参阅 [规格文件](https://github.com/JetBrains/kotlin/pull/636/files)  （您可以对源进行评论，或者按“查看”进行渲染降价）。
+有关详细信息，请参阅 [规格文件](https://github.com/JetBrains/kotlin/pull/636/files) （您可以对源进行评论，或者按“查看”进行渲染降价）。

@@ -16,7 +16,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing
 
 请查看<a href="http://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/">更好的注释处理：在kapt中支持存根</ a> </ strong>
 由于有很多要求支持 [Java注释处理](https://www.jcp.org/en/jsr/detail?id=269) ，我们正在努力，第一个结果准备好<strong>进行预览</ strong>。这是早期反馈的呼吁。 <span id =“more-2143”> </ span>
-我们计划在5月底公布对M12的JSR 269注解处理的初步支持。同时，大部分工作已经完成，您可以使用Gradle的Kotlin插件的<code> SNAPSHOT </ code>版本进行测试。支持是有限的，但是 [匕首2](http://google.github.io/dagger/)  作品<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/ images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
+我们计划在5月底公布对M12的JSR 269注解处理的初步支持。同时，大部分工作已经完成，您可以使用Gradle的Kotlin插件的<code> SNAPSHOT </ code>版本进行测试。支持是有限的，但是 [匕首2](http://google.github.io/dagger/) 作品<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/ images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
 ## 注释处理基础
 
 JSR 269为Java编译器<em>注释处理器</ em>定义了一种特殊类型插件的API。这样一个插件可以大致地向编译器询问“使用@Foo注释什么代码元素（类，方法，字段）”？编译器返回一组代表注释元素的对象。然后，处理器可以检查它们，并<strong>生成一些新的代码</ strong>，该代码将在与注释代码相同的过程中被编译。诀窍在于，生成的代码可以由手写代码</ strong>使用，尽管编译器开始工作时不存在。
@@ -96,7 +96,7 @@ public abstract class BaseApplication extends Application {
 <p></p>
 {% endraw %}
 
-一切都可以写在Kotlin。这是一个演示匕首使用的示例项目： [kotlin匕首](https://github.com/JetBrains/kotlin-examples/tree/master/gradle/kotlin-dagger)  （您可能需要强制重新下载快照工件）。
+一切都可以写在Kotlin。这是一个演示匕首使用的示例项目： [kotlin匕首](https://github.com/JetBrains/kotlin-examples/tree/master/gradle/kotlin-dagger) （您可能需要强制重新下载快照工件）。
 ## 反馈
 
 如果您在项目中尝试了<code> kapt </ code>，我们非常感激，并给予我们反馈：
