@@ -148,4 +148,4 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 [The Kotlin issue tracker is now public](original/The%20Kotlin%20issue%20tracker%20is%20now%20public.md) |2011-08-03 10:24:00| [译文](translated/The%20Kotlin%20issue%20tracker%20is%20now%20public.md)| |
 [Why JetBrains needs Kotlin](original/Why%20JetBrains%20needs%20Kotlin.md) |2011-08-02 15:52:00| [译文](translated/Why%20JetBrains%20needs%20Kotlin.md)| |
 [Slides from the JVM Language Summit presentations](original/Slides%20from%20the%20JVM%20Language%20Summit%20presentations.md) |2011-07-20 23:16:00| [译文](translated/Slides%20from%20the%20JVM%20Language%20Summit%20presentations.md)| |
-[Hello World](original/Hello%20World.md) |2011-07-19 22:13:00| [译文](translated/Hello%20World.md)| |
+[Hello World](original/Hello%20World.md) |2011-07-19 22:13:00| [译文](translated/Hello%20World.md)| [DemoJameson](http://www.demojameson.com) |
