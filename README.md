@@ -5,8 +5,8 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 | 标题                                       | 发表时间                | 译文地址                                     | 译者                                       |
 | ---------------------------------------- | ------------------- | ---------------------------------------- | ---------------------------------------- |
-| [Use Kotlin with npm, webpack and react](original/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | 2017-04-18 15:23:00 | [译文](translated/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) |                                          |
-| [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) | 2017-04-06 23:21:00 | [译文](translated/Kotlin%201.1%20Event%20Report.md) |                                          |
+| [Use Kotlin with npm, webpack and react](original/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | 2017-04-18 15:23:00 | [译文](translated/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | [Liu PeiPei](https://github.com/lsanotes) |
+| [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) | 2017-04-06 23:21:00 | [译文](translated/Kotlin%201.1%20Event%20Report.md) | [Liu PeiPei](https://github.com/lsanotes) |
 | [Kotlin 1.1 is also for Android Developers](original/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | 2017-04-05 16:13:00 | [译文](translated/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) |                                          |
 | [Kotlin_Native Tech Preview Kotlin without a VM](original/Kotlin_Native%20Tech%20Preview%20Kotlin%20without%20a%20VM.md) | 2017-04-04 14:42:00 | [译文](translated/Kotlin_Native%20Tech%20Preview%20Kotlin%20without%20a%20VM.md) |                                          |
 | [Kotlin 1.1 Event in Your City](original/Kotlin%201.1%20Event%20in%20Your%20City.md) | 2017-03-21 21:51:00 | [译文](translated/Kotlin%201.1%20Event%20in%20Your%20City.md) |                                          |
@@ -48,7 +48,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Kotlin 1.0 Release Candidate is Out!](original/Kotlin%201.0%20Release%20Candidate%20is%20Out%21.md) | 2016-02-04 18:39:00 | [译文](translated/Kotlin%201.0%20Release%20Candidate%20is%20Out%21.md) |                                          |
 | [Kotlin Digest 2015](original/Kotlin%20Digest%202015.md) | 2016-01-19 15:53:00 | [译文](translated/Kotlin%20Digest%202015.md) |                                          |
 | [Kotlin 1.0 Beta 4 is Out!](original/Kotlin%201.0%20Beta%204%20is%20Out%21.md) | 2015-12-22 22:25:00 | [译文](translated/Kotlin%201.0%20Beta%204%20is%20Out%21.md) |                                          |
-| [Learn Kotlin with “Advent of Code”](original/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | 2015-12-18 22:08:00 | [译文](translated/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | [团子](https://github.com/pye52) |
+| [Learn Kotlin with “Advent of Code”](original/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | 2015-12-18 22:08:00 | [译文](translated/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | [团子](https://github.com/pye52)           |
 | [Kotlin 1.0 Beta 3 is Out!](original/Kotlin%201.0%20Beta%203%20is%20Out%21.md) | 2015-12-07 15:45:00 | [译文](translated/Kotlin%201.0%20Beta%203%20is%20Out%21.md) |                                          |
 | [Kotlin Eclipse Plugin 0.5.0](original/Kotlin%20Eclipse%20Plugin%200.5.0.md) | 2015-12-01 15:57:00 | [译文](translated/Kotlin%20Eclipse%20Plugin%200.5.0.md) |                                          |
 | [Contest Go Cross-Platform with Kotlin!](original/Contest%20Go%20Cross-Platform%20with%20Kotlin%21.md) | 2015-11-25 18:17:00 | [译文](translated/Contest%20Go%20Cross-Platform%20with%20Kotlin%21.md) |                                          |
@@ -91,21 +91,21 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Upcoming Change “Class Objects” Rethought](original/Upcoming%20Change%20%E2%80%9CClass%20Objects%E2%80%9D%20Rethought.md) | 2015-03-11 16:11:00 | [译文](translated/Upcoming%20Change%20%E2%80%9CClass%20Objects%E2%80%9D%20Rethought.md) |                                          |
 | [MCE2015 Kotlin Session and JetBrains Booth](original/MCE2015%20Kotlin%20Session%20and%20JetBrains%20Booth.md) | 2015-01-15 14:32:00 | [译文](translated/MCE2015%20Kotlin%20Session%20and%20JetBrains%20Booth.md) |                                          |
 | [JavaScript Interop](original/JavaScript%20Interop.md) | 2014-12-24 09:57:00 | [译文](translated/JavaScript%20Interop.md) |                                          |
-| [M10 is out](original/M10%20is%20out.md) | 2014-12-17 15:02:00 | [译文](translated/M10%20is%20out.md) |                                          |
-| [M9 is here!](original/M9%20is%20here%21.md) | 2014-10-15 18:38:00 | [译文](translated/M9%20is%20here%21.md) |                                          |
+| [M10 is out](original/M10%20is%20out.md) | 2014-12-17 15:02:00 | [译文](translated/M10%20is%20out.md)       |                                          |
+| [M9 is here!](original/M9%20is%20here%21.md) | 2014-10-15 18:38:00 | [译文](translated/M9%20is%20here%21.md)    |                                          |
 | [Making Platform Interop even smoother](original/Making%20Platform%20Interop%20even%20smoother.md) | 2014-10-06 13:20:00 | [译文](translated/Making%20Platform%20Interop%20even%20smoother.md) |                                          |
-| [M9 is coming](original/M9%20is%20coming.md) | 2014-10-01 22:10:00 | [译文](translated/M9%20is%20coming.md) |                                          |
+| [M9 is coming](original/M9%20is%20coming.md) | 2014-10-01 22:10:00 | [译文](translated/M9%20is%20coming.md)     |                                          |
 | [Full-Day Kotlin Workshop October 6th in Malmö, Sweden](original/Full-Day%20Kotlin%20Workshop%20October%206th%20in%20Malmo%CC%88%2C%20Sweden.md) | 2014-08-20 14:53:00 | [译文](translated/Full-Day%20Kotlin%20Workshop%20October%206th%20in%20Malmo%CC%88%2C%20Sweden.md) |                                          |
 | [A New Open Source Web Site](original/A%20New%20Open%20Source%20Web%20Site.md) | 2014-07-15 09:00:00 | [译文](translated/A%20New%20Open%20Source%20Web%20Site.md) |                                          |
-| [M8 is out!](original/M8%20is%20out%21.md) | 2014-07-02 00:00:00 | [译文](translated/M8%20is%20out%21.md) |                                          |
+| [M8 is out!](original/M8%20is%20out%21.md) | 2014-07-02 00:00:00 | [译文](translated/M8%20is%20out%21.md)     |                                          |
 | [Kotlin gets support for S-expressions](original/Kotlin%20gets%20support%20for%20S-expressions.md) | 2014-04-01 18:33:00 | [译文](translated/Kotlin%20gets%20support%20for%20S-expressions.md) |                                          |
 | [M7 Release Available](original/M7%20Release%20Available.md) | 2014-03-20 00:00:00 | [译文](translated/M7%20Release%20Available.md) |                                          |
 | [Spek – A Specification Framework](original/Spek%20%E2%80%93%20A%20Specification%20Framework.md) | 2014-02-17 17:20:00 | [译文](translated/Spek%20%E2%80%93%20A%20Specification%20Framework.md) |                                          |
-| [M6.2 Available](original/M6.2%20Available.md) | 2013-12-06 15:55:00 | [译文](translated/M6.2%20Available.md) |                                          |
+| [M6.2 Available](original/M6.2%20Available.md) | 2013-12-06 15:55:00 | [译文](translated/M6.2%20Available.md)     |                                          |
 | [Catch up with our Kotlin Team at Devoxx Belgium](original/Catch%20up%20with%20our%20Kotlin%20Team%20at%20Devoxx%20Belgium.md) | 2013-11-04 12:36:00 | [译文](translated/Catch%20up%20with%20our%20Kotlin%20Team%20at%20Devoxx%20Belgium.md) |                                          |
 | [Writing Kotlin in the Browser](original/Writing%20Kotlin%20in%20the%20Browser.md) | 2013-10-16 08:00:00 | [译文](translated/Writing%20Kotlin%20in%20the%20Browser.md) |                                          |
 | [How to configure Kotlin in your project](original/How%20to%20configure%20Kotlin%20in%20your%20project.md) | 2013-10-07 14:34:00 | [译文](translated/How%20to%20configure%20Kotlin%20in%20your%20project.md) |                                          |
-| [M6.1 Released](original/M6.1%20Released.md) | 2013-10-03 00:00:00 | [译文](translated/M6.1%20Released.md) |                                          |
+| [M6.1 Released](original/M6.1%20Released.md) | 2013-10-03 00:00:00 | [译文](translated/M6.1%20Released.md)      |                                          |
 | [Working with Kotlin in Android Studio](original/Working%20with%20Kotlin%20in%20Android%20Studio.md) | 2013-08-26 18:49:00 | [译文](translated/Working%20with%20Kotlin%20in%20Android%20Studio.md) |                                          |
 | [Kotlin M6 is here!](original/Kotlin%20M6%20is%20here%21.md) | 2013-08-12 21:09:00 | [译文](translated/Kotlin%20M6%20is%20here%21.md) |                                          |
 | [Mixed-Site Variance in Kotlin](original/Mixed-Site%20Variance%20in%20Kotlin.md) | 2013-06-26 12:00:00 | [译文](translated/Mixed-Site%20Variance%20in%20Kotlin.md) |                                          |
@@ -117,9 +117,9 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [The Dot Operator](original/The%20Dot%20Operator.md) | 2013-04-01 10:00:00 | [译文](translated/The%20Dot%20Operator.md) |                                          |
 | [KAnnotator 0.1 is out](original/KAnnotator%200.1%20is%20out.md) | 2013-03-29 14:42:00 | [译文](translated/KAnnotator%200.1%20is%20out.md) |                                          |
 | [Kotlin Session and JetBrains Booth at 33rd Degree Conference](original/Kotlin%20Session%20and%20JetBrains%20Booth%20at%2033rd%20Degree%20Conference.md) | 2013-03-01 09:09:00 | [译文](translated/Kotlin%20Session%20and%20JetBrains%20Booth%20at%2033rd%20Degree%20Conference.md) |                                          |
-| [Kotlin M5.1](original/Kotlin%20M5.1.md) | 2013-02-27 11:03:00 | [译文](translated/Kotlin%20M5.1.md) |                                          |
+| [Kotlin M5.1](original/Kotlin%20M5.1.md) | 2013-02-27 11:03:00 | [译文](translated/Kotlin%20M5.1.md)        |                                          |
 | [“Surround with…” comes to Kotlin](original/%E2%80%9CSurround%20with%E2%80%A6%E2%80%9D%20comes%20to%20Kotlin.md) | 2013-02-26 09:20:00 | [译文](translated/%E2%80%9CSurround%20with%E2%80%A6%E2%80%9D%20comes%20to%20Kotlin.md) |                                          |
-| [Ranges Reloaded](original/Ranges%20Reloaded.md) | 2013-02-06 14:47:00 | [译文](translated/Ranges%20Reloaded.md) |                                          |
+| [Ranges Reloaded](original/Ranges%20Reloaded.md) | 2013-02-06 14:47:00 | [译文](translated/Ranges%20Reloaded.md)    |                                          |
 | [Kotlin M5 is Out!](original/Kotlin%20M5%20is%20Out%21.md) | 2013-02-04 14:30:00 | [译文](translated/Kotlin%20M5%20is%20Out%21.md) |                                          |
 | [An Interview with Andy Selvig, Author of Kara Web Framework](original/An%20Interview%20with%20Andy%20Selvig%2C%20Author%20of%20Kara%20Web%20Framework.md) | 2013-01-31 10:12:00 | [译文](translated/An%20Interview%20with%20Andy%20Selvig%2C%20Author%20of%20Kara%20Web%20Framework.md) |                                          |
 | [Kotlin Skills Matter Events in London, England](original/Kotlin%20Skills%20Matter%20Events%20in%20London%2C%20England.md) | 2013-01-28 09:51:00 | [译文](translated/Kotlin%20Skills%20Matter%20Events%20in%20London%2C%20England.md) |                                          |
@@ -136,7 +136,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Contributing to Kotlin (Kontributing)](original/Contributing%20to%20Kotlin%20%28Kontributing%29.md) | 2012-03-01 09:04:00 | [译文](translated/Contributing%20to%20Kotlin%20%28Kontributing%29.md) |                                          |
 | [Kotlin Goes Open Source!](original/Kotlin%20Goes%20Open%20Source%21.md) | 2012-02-14 10:32:00 | [译文](translated/Kotlin%20Goes%20Open%20Source%21.md) |                                          |
 | [Let’s Kode Together!](original/Let%E2%80%99s%20Kode%20Together%21.md) | 2012-02-13 09:07:00 | [译文](translated/Let%E2%80%99s%20Kode%20Together%21.md) |                                          |
-| [The Road Ahead](original/The%20Road%20Ahead.md) | 2012-01-16 10:10:00 | [译文](translated/The%20Road%20Ahead.md) |                                          |
+| [The Road Ahead](original/The%20Road%20Ahead.md) | 2012-01-16 10:10:00 | [译文](translated/The%20Road%20Ahead.md)   |                                          |
 | [Kotlin Web Demo is out!](original/Kotlin%20Web%20Demo%20is%20out%21.md) | 2012-01-10 19:16:00 | [译文](translated/Kotlin%20Web%20Demo%20is%20out%21.md) |                                          |
 | [The Great Syntactic Shift](original/The%20Great%20Syntactic%20Shift.md) | 2012-01-04 09:38:00 | [译文](translated/The%20Great%20Syntactic%20Shift.md) |                                          |
 | [StrangeLoop Slides+Video](original/StrangeLoop%20Slides%2BVideo.md) | 2011-11-17 16:47:00 | [译文](translated/StrangeLoop%20Slides%2BVideo.md) |                                          |
@@ -148,4 +148,4 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [The Kotlin issue tracker is now public](original/The%20Kotlin%20issue%20tracker%20is%20now%20public.md) | 2011-08-03 10:24:00 | [译文](translated/The%20Kotlin%20issue%20tracker%20is%20now%20public.md) |                                          |
 | [Why JetBrains needs Kotlin](original/Why%20JetBrains%20needs%20Kotlin.md) | 2011-08-02 15:52:00 | [译文](translated/Why%20JetBrains%20needs%20Kotlin.md) | [DemoJameson](http://www.demojameson.com) |
 | [Slides from the JVM Language Summit presentations](original/Slides%20from%20the%20JVM%20Language%20Summit%20presentations.md) | 2011-07-20 23:16:00 | [译文](translated/Slides%20from%20the%20JVM%20Language%20Summit%20presentations.md) | [DemoJameson](http://www.demojameson.com) |
-| [Hello World](original/Hello%20World.md) | 2011-07-19 22:13:00 | [译文](translated/Hello%20World.md) | [DemoJameson](http://www.demojameson.com) |
+| [Hello World](original/Hello%20World.md) | 2011-07-19 22:13:00 | [译文](translated/Hello%20World.md)        | [DemoJameson](http://www.demojameson.com) |
