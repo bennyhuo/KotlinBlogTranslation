@@ -9,7 +9,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) | 2017-04-06 23:21:00 | [译文](translated/Kotlin%201.1%20Event%20Report.md) | [Liu PeiPei](https://github.com/lsanotes) |
 | [Kotlin 1.1 is also for Android Developers](original/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | 2017-04-05 16:13:00 | [译文](translated/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | [DemoJameson](http://www.demojameson.com) |
 | [Kotlin_Native Tech Preview Kotlin without a VM](original/Kotlin_Native%20Tech%20Preview%20Kotlin%20without%20a%20VM.md) | 2017-04-04 14:42:00 | [译文](translated/Kotlin_Native%20Tech%20Preview%20Kotlin%20without%20a%20VM.md) |                                          |
-| [Kotlin 1.1 Event in Your City](original/Kotlin%201.1%20Event%20in%20Your%20City.md) | 2017-03-21 21:51:00 | [译文](translated/Kotlin%201.1%20Event%20in%20Your%20City.md) |                                          |
+| [Kotlin 1.1 Event in Your City](original/Kotlin%201.1%20Event%20in%20Your%20City.md) | 2017-03-21 21:51:00 | [译文](translated/Kotlin%201.1%20Event%20in%20Your%20City.md) |   SnakEys                                       |
 | [Kotlin 1.0.7 is out](original/Kotlin%201.0.7%20is%20out.md) | 2017-03-15 22:21:00 | [译文](translated/Kotlin%201.0.7%20is%20out.md) |                                          |
 | [Announcing KotlinConf](original/Announcing%20KotlinConf.md) | 2017-03-14 21:57:00 | [译文](translated/Announcing%20KotlinConf.md) |                                          |
 | [Kotlin 1.1.1 is out](original/Kotlin%201.1.1%20is%20out.md) | 2017-03-14 20:29:00 | [译文](translated/Kotlin%201.1.1%20is%20out.md) |   SnakEys                                       |
