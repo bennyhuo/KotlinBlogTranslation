@@ -12,7 +12,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Kotlin 1.1 Event in Your City](original/Kotlin%201.1%20Event%20in%20Your%20City.md) | 2017-03-21 21:51:00 | [译文](translated/Kotlin%201.1%20Event%20in%20Your%20City.md) |                                          |
 | [Kotlin 1.0.7 is out](original/Kotlin%201.0.7%20is%20out.md) | 2017-03-15 22:21:00 | [译文](translated/Kotlin%201.0.7%20is%20out.md) |                                          |
 | [Announcing KotlinConf](original/Announcing%20KotlinConf.md) | 2017-03-14 21:57:00 | [译文](translated/Announcing%20KotlinConf.md) |                                          |
-| [Kotlin 1.1.1 is out](original/Kotlin%201.1.1%20is%20out.md) | 2017-03-14 20:29:00 | [译文](translated/Kotlin%201.1.1%20is%20out.md) |                                          |
+| [Kotlin 1.1.1 is out](original/Kotlin%201.1.1%20is%20out.md) | 2017-03-14 20:29:00 | [译文](translated/Kotlin%201.1.1%20is%20out.md) |   SnakEys                                       |
 | [Kotlin 1.1 Event](original/Kotlin%201.1%20Event.md) | 2017-03-06 17:43:00 | [译文](translated/Kotlin%201.1%20Event.md) |                                          |
 | [Kotlin 1.1 Released with JavaScript Support, Coroutines and more](original/Kotlin%201.1%20Released%20with%20JavaScript%20Support%2C%20Coroutines%20and%20more.md) | 2017-03-01 17:12:00 | [译文](translated/Kotlin%201.1%20Released%20with%20JavaScript%20Support%2C%20Coroutines%20and%20more.md) |                                          |
 | [Kotlin 1.1 Release Candidate is Here](original/Kotlin%201.1%20Release%20Candidate%20is%20Here.md) | 2017-02-17 13:37:00 | [译文](translated/Kotlin%201.1%20Release%20Candidate%20is%20Here.md) |                                          |
