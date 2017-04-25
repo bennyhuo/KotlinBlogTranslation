@@ -1,6 +1,9 @@
 # coding=utf-8
 import os
 from datetime import datetime
+
+import sys
+
 from dateutils import dateutils
 import urllib
 
@@ -20,7 +23,8 @@ sortedKeys = fileMap.keys()
 sortedKeys.sort(reverse=True)
 
 
-readme = open("README.md", "w")
+#readme = open("README.md", "w")
+readme = sys.stdout
 
 head = """Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原文以及经过谷歌翻译的译文，如果愿意参加到翻译当中，请加 QQ 群讨论：162452394
 
