@@ -12,14 +12,14 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-2-is-out/
 ---
 
-我们很高兴宣布Kotlin 1.1.2正式发布了，这也是Kotlin 1.1的第二次修补程序和工具更新。此次更新不仅提升了编译器和IntelliJ IDEA插件的性能，同时也在工具中增加了新的特性，当然还有各方面的问题修复。 此外，Kotlin 1.1.2也提升了与Android Gradle插件版本2.4.0-alpha的兼容性。
+我们很高兴宣布Kotlin 1.1.2正式发布了，这也是Kotlin 1.1的第二次 Bug 修复和工具更新。此次更新不仅提升了编译器和 IntelliJ IDEA 插件的性能，同时也在工具中增加了新的特性，当然还有各方面的问题修复。 此外，Kotlin 1.1.2也提升了与Android Gradle插件版本2.4.0-alpha的兼容性。
 本次发布版本的所有更新可在[更新日志](https://github.com/JetBrains/kotlin/blob/1.1.2/ChangeLog.md)中查看。  
 在这里要感谢所有外部的贡献者，他们提交的pull request也包含于该版本中：[Yoshinori Isogai](https://github.com/shiraji)，[Jonathan Leitschuh](https://github.com/JLLeitschuh)和[Kirill Rakhman](https://github.com/cypressious) 。感谢所有尝试EAP构建并向我们发送反馈意见的人！
 ## 迁移说明
 
-Kotlin编译器现在也需要基于JDK 8运行。但您应该不必在意这一点改变，因为大多数其他Java开发工具（比如Gradle和Android工具）也需要JDK 8，因此您肯定已经安装了JDK 8。对于由编译器生成的代码，仍然默认兼容Java 1.6，而且我们也没有计划要放弃对生成的Java 1.6兼容性字节码的支持。    
+Kotlin编译器现在也需要基于JDK 8运行。但您应该不需要在意这一点改变，因为大多数其他Java开发工具（比如Gradle和Android工具）也需要JDK 8，因此您肯定已经安装了JDK 8。对于由编译器生成的代码，仍然默认兼容Java 1.6，而且我们也没有计划要放弃对生成的Java 1.6兼容性字节码的支持。    
 
-一个内部类不能再声明一个对象，这种对象将能够访问外部类的实例，由于一个对象始终是一个单例，因此这在概念上是不可能的，同样的行为对于内部密封类也被禁止。然而这只是临时方案，在我们添加了在其外部类而非内部类中声明内部密封类的子类的可能性时，将会删除该限制。([KT-16232](https://youtrack.jetbrains.com/issue/KT-16232)，[KT-16233](https://youtrack.jetbrains.com/issue/KT-16233)）    
+内部类当中不能再声明 object，因为这个 object 将能够访问外部类的实例，我们知道 object 始终是一个单例，因此这在理论上是行不通的。同样的，内部密封类也是不被允许的。然而这只是临时方案，在我们添加了在其外部类而非内部类中声明内部密封类的子类的可能性时，将会删除该限制。([KT-16232](https://youtrack.jetbrains.com/issue/KT-16232)，[KT-16233](https://youtrack.jetbrains.com/issue/KT-16233)）    
 
 现在使用一个名称完全由下划线字符组成的声明时将必须使用反引号。([KT-16264](https://youtrack.jetbrains.com/issue/KT-16264)）
 
@@ -31,19 +31,11 @@ Kotlin编译器现在也需要基于JDK 8运行。但您应该不必在意这一
 
 从Kotlin 1.1.2开始，以前用于IntelliJ IDEA和Gradle构建的增量编译现在也支持Maven。启用该功能时，需要使用-D命令行参数或<code>proterties</code>标记设置<code>kotlin.compiler.incremental</code>属性为true：
 
-{% raw %}
-<p></p>
-{% endraw %}
-
 ```kotlin
 <properties>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 </properties>
 ```
-
-{% raw %}
-<p></p>
-{% endraw %}
 
 ## Maven注解处理
 
