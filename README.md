@@ -4,7 +4,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 | 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址 |
 | ---------------------------------------- | ------------------- | ---------------------------------------- | ---------------------------------------- |---|
-|[Kotlin 1.1.2 is out](original/Kotlin%201.1.2%20is%20out.md) |2017-04-25 21:19:00| [译文](translated/Kotlin%201.1.2%20is%20out.md)| | |
+|[Kotlin 1.1.2 is out](original/Kotlin%201.1.2%20is%20out.md) |2017-04-25 21:19:00| [译文](translated/Kotlin%201.1.2%20is%20out.md)| [SnakEys](https://github.com/SnakeEys)  | |
 | [Use Kotlin with npm, webpack and react](original/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | 2017-04-18 15:23:00 | [译文](translated/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | [Liu PeiPei](https://github.com/lsanotes) | [[译]Use Kotlin with npm, webpack and react](https://www.kotliner.cn/2017/04/18/Use%20Kotlin%20with%20npm,%20webpack%20and%20react/) |
 | [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) | 2017-04-06 23:21:00 | [译文](translated/Kotlin%201.1%20Event%20Report.md) | [Liu PeiPei](https://github.com/lsanotes) | [[译]Kotlin 1.1 Event Report](https://www.kotliner.cn/2017/04/06/Kotlin%201.1%20Event%20Report/) |
 | [Kotlin 1.1 is also for Android Developers](original/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | 2017-04-05 16:13:00 | [译文](translated/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | [DemoJameson](http://www.demojameson.com) | [[译]Kotlin 1.1 也适用于 Android 开发者](https://www.kotliner.cn/2017/04/05/Kotlin%201.1%20is%20also%20for%20Android%20Developers/) |
