@@ -12,14 +12,16 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-2-is-out/
 ---
 
-我们很高兴地宣布发布Kotlin 1.1.2，Kotlin 1.1的第二个修补程序和工具更新。该更新为编译器和IntelliJ IDEA插件，工具中的几个新功能以及所有领域的许多错误修复带来性能改进。 Kotlin 1.1.2还带来了与Android Gradle插件版本2.4.0-alpha的兼容性。
-此版本中完整的更改列表可以在 [更新日志](https://github.com/JetBrains/kotlin/blob/1.1.2/ChangeLog.md) 。
-我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [Yoshinori Isogai](https://github.com/shiraji) ， [乔纳森·雷茨楚](https://github.com/JLLeitschuh)  和 [基拉里·拉赫曼](https://github.com/cypressious) 。感谢所有尝试EAP构建的人，并向我们发送反馈意见！
+我们很高兴宣布Kotlin 1.1.2正式发布了，这也是Kotlin 1.1的第二次修补程序和工具更新。此次更新不仅提升了编译器和IntelliJ IDEA插件的性能，同时也在工具中增加了新的特性，当然还有各方面的问题修复。 此外，Kotlin 1.1.2也提升了与Android Gradle插件版本2.4.0-alpha的兼容性。
+本次发布版本的所有更新可在[更新日志](https://github.com/JetBrains/kotlin/blob/1.1.2/ChangeLog.md)中查看。  
+在这里要感谢所有外部的贡献者，他们提交的pull request也包含于该版本中：[Yoshinori Isogai](https://github.com/shiraji)，[Jonathan Leitschuh](https://github.com/JLLeitschuh)和[Kirill Rakhman](https://github.com/cypressious) 。感谢所有尝试EAP构建并向我们发送反馈意见的人！
 ## 迁移说明
 
-Kotlin编译器现在需要运行JDK 8。您不应该注意到任何更改，因为大多数其他Java开发工具（如Gradle和Android工具链）也需要JDK 8，因此您几乎肯定已经安装了。对于由编译器生成的代码，Java 1.6兼容性仍然是默认值，我们没有计划放弃生成Java 1.6兼容字节码的支持。
-一个内部类不能再声明一个对象。这样的对象将能够访问外部类实例，这在概念上是不可能的，因为对象始终是单例。内部密封类也被禁止。这是一个暂时的限制，当我们添加在其外部类中声明内部类的内部类的可能性，而不在内部类本身时，这将被删除。 （ [KT-16232](https://youtrack.jetbrains.com/issue/KT-16232) ， [KT-16233](https://youtrack.jetbrains.com/issue/KT-16233) ）
-使用一个名称完全由下划线字符组成的声明，现在总是需要反引号。 （ [KT-16264](https://youtrack.jetbrains.com/issue/KT-16264) ）
+Kotlin编译器现在也需要基于JDK 8运行。但您应该不必在意这一点改变，因为大多数其他Java开发工具（比如Gradle和Android工具）也需要JDK 8，因此您肯定已经安装了JDK 8。对于由编译器生成的代码，仍然默认兼容Java 1.6，而且我们也没有计划要放弃对生成的Java 1.6兼容性字节码的支持。    
+
+一个内部类不能再声明一个对象，这种对象将能够访问外部类的实例，由于一个对象始终是一个单例，因此这在概念上是不可能的，同样的行为对于内部密封类也被禁止。然而这只是临时方案，在我们添加了在其外部类而非内部类中声明内部密封类的子类的可能性时，将会删除该限制。([KT-16232](https://youtrack.jetbrains.com/issue/KT-16232)，[KT-16233](https://youtrack.jetbrains.com/issue/KT-16233)）    
+
+现在使用一个名称完全由下划线字符组成的声明时将必须使用反引号。([KT-16264](https://youtrack.jetbrains.com/issue/KT-16264)）
 
 {% raw %}
 <p><span id="more-4945"></span></p>
@@ -27,7 +29,7 @@ Kotlin编译器现在需要运行JDK 8。您不应该注意到任何更改，因
 
 ## Maven增量编译
 
-由于Kotlin 1.1.2，以前可用于IntelliJ IDEA和Gradle构建的增量编译现在支持Maven。要启用，请使用-D命令行参数或<code>属性</ code>标记将<code> kotlin.compiler.incremental </ code>属性设置为true：
+从Kotlin 1.1.2开始，以前用于IntelliJ IDEA和Gradle构建的增量编译现在也支持Maven。启用该功能时，需要使用-D命令行参数或<code>proterties</code>标记设置<code>kotlin.compiler.incremental</code>属性为true：
 
 {% raw %}
 <p></p>
@@ -37,16 +39,15 @@ Kotlin编译器现在需要运行JDK 8。您不应该注意到任何更改，因
 <properties>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 </properties>
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-## Maven注释处理
+## Maven注解处理
 
-Kotlin的注释处理工具kapt现在可以从Maven构建中调用。在<code> compile </ code>之前，只需从kotlin-maven-plugin中添加<code> kapt </ code>目标的执行：
+现在可以从Maven构建中调用Kotlin的注解处理工具kapt了，只需要在<code>compile</code>前，从kotlin-maven-plugin中添加<code>kapt</code>的执行目标：
 
 {% raw %}
 <p></p>
@@ -73,24 +74,29 @@ Kotlin的注释处理工具kapt现在可以从Maven构建中调用。在<code> c
         </annotationProcessorPaths>
     </configuration>
 </execution>
- 
+
+
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
- [这里](https://github.com/JetBrains/kotlin-examples/blob/master/maven/dagger-maven-example/pom.xml)  是具有Java-Kotlin代码支持和测试的POM文件的完整示例。
-请注意，IntelliJ IDEA自己的构建系统仍然不支持<code> kapt </ code>。当您要重新运行注释处理时，从“Maven Projects”工具栏启动构建。
+在[这里](https://github.com/JetBrains/kotlin-examples/blob/master/maven/dagger-maven-example/pom.xml)查看具有Java-Kotlin代码支持和测试的POM文件完整示例。  
+
+请注意，IntelliJ IDEA自己的构建系统仍然不支持<code>kapt</code>。当您要重新运行注解处理时，需要从“Maven Projects”工具栏中启动构建。
 ## 内联方法重构
 
 我们终于在Kotlin代码中实现了Inline方法（Function）的支持。
 ## 其他IDE改进
 
-我们在1.1.x时间范围内的很大一部分工作致力于提高IntelliJ IDEA插件的性能。在1.1.2版本中，我们发布了几项主要的性能改进，主要影响到响应性，我们已经为1.1.3版本提供了额外的重大改进。
-除此之外，我们已经在此版本中实施了大量新的检测，quickfix和小型IDE功能。特别值得一提的是，在编辑器中支持折叠Android String资源引用，以及用于处理Android API版本问题的新的quickfix。
+在1.1.x时间范围内，我们很大一部分的工作是致力于提高IntelliJ IDEA插件的性能。在此次发布的1.1.2版本中，我们对几项主要性能进行了改进，主要涉及输入响应，同时我们也已经为后续1.1.3版本进行了额外的重大改进。  
+
+除此之外，我们还在此版本中进行了大量新的检测，快速解决方案和小型IDE功能。特别值得一提的是，在编辑器中支持折叠Android String资源引用，以及新的用于处理Android API版本问题的问题解决方案。
 ## 如何更新
 
-要更新插件，请使用工具| Kotlin |配置Kotlin插件更新，然后按“检查更新现在”按钮。另外，别忘了在Maven和Gradle构建脚本中更新编译器和标准库版本。
-像往常一样，如果您遇到新版本的任何问题，欢迎您提供帮助 [论坛](https://discuss.kotlinlang.org/) ，在Slack（获得邀请） [这里](http://kotlinslackin.herokuapp.com/) ），或报告中的问题 [问题追踪器](https://youtrack.jetbrains.com/issues/KT) 。
+要更新IDEA插件，在菜单栏中依次选择 Tools | Kotlin | Configure Kotlin Plugin Update，然后点击“Check for updates now”按钮。另外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本
+
+命令行编译器可以从 [Github发布页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1.1) 页面下载。
+像往常一样，如果您在新版本中遇到任何问题，您可以在 [论坛](https://discuss.kotlinlang.org/) 中寻求帮助，在Slack([获取邀请](http://kotlinslackin.herokuapp.com/))、或者在[问题追踪器](https://youtrack.jetbrains.com/issues/KT)提出问题 。  
 让我们来吧！
