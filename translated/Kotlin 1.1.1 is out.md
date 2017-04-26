@@ -10,9 +10,10 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-1-is-out/
+translator: SnakEys
 ---
 
-今天我们发布了针对<strong> Kotlin 1.1 </strong>的第一个bug修复更新。此更新的主要重点是解决导致错误代码生成的回归；我们希望尽可能快地修复此问题。详细内容请查看[更新日志](https://github.com/JetBrains/kotlin/blob/1.1.1/ChangeLog.md) 。
+今天我们发布了针对<strong> Kotlin 1.1 </strong>的第一个bug修复更新。此更新的重点是解决导致错误代码生成的回归；我们希望尽可能快地修复此问题。详细内容请查看[更新日志](https://github.com/JetBrains/kotlin/blob/1.1.1/ChangeLog.md) 。
 重点更新如下：
 
 * 默认情况下，已启用Gradle增量编译。如果需要，您仍然可以按照文档描述禁用此功能。

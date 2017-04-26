@@ -10,9 +10,10 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/
+translator: SnakEys
 ---
 
-在Kotlin类的设计中没有包含“静态成员(static member)”内容。假设在类中有一个函数，那么该函数只能通过这个类的实例调用。而如果函数与任何类的实例并没有关联，那么就可以在类之外、包级进行定义（我们称之为包级函数--package-level functions）：
+“静态成员(static member)” 没有包含在Kotlin类的设计中，假设在类中有一个函数，那么该函数只能通过这个类的实例调用。而如果函数与任何类的实例并没有关联，那么就可以在类之外、包级进行定义（我们称之为包级函数--package-level functions）：
 
 {% raw %}
 <p></p>
@@ -138,4 +139,4 @@ System.out.println(Foo.bar);
 
 这对您的Kotlin代码而言没有任何区别：一切都能正常运行。即便在Java中老掉牙的Foo.object$.getBar()，但是现在也可以在你的类中使用真正的静态常量了。  
 
-感谢。
+感谢使用 Kotlin。
