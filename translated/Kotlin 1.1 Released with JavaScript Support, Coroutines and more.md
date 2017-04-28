@@ -36,7 +36,7 @@ Kotlin 1.1今天正式发布了，这让Kotlin有能力适用于更多的应用�
 
 其次，我们引入了<em><strong>协程(coroutines)</strong></em>的概念。作为线程的轻量级替代方案，协程在应用程序后端可以具有更大可扩展性，从而支持单个JVM实例上的大量工作负载。除此之外，协程对于实现异步行为具有强大的表现力，这对于在任何平台上构建响应式用户交互界面而言极其重要。  
 
-下面我们将进一步介绍这两大功能。其他部分如[type aliases](http://kotlinlang.org/docs/reference/whatsnew11.html#type-aliases)，[callable references](http://kotlinlang.org/docs/reference/whatsnew11.html#bound-callable-references)，[destructuring in lambdas](http://kotlinlang.org/docs/reference/whatsnew11.html#destructuring-in-lambdas)等详细内容可在[新内容](http://kotlinlang.org/docs/reference/whatsnew11.html)查看，并有完整示例！
+下面我们将进一步介绍这两大功能。其他部分如[type aliases](http://kotlinlang.org/docs/reference/whatsnew11.html#type-aliases)，[callable references](http://kotlinlang.org/docs/reference/whatsnew11.html#bound-callable-references)，[destructuring in lambdas](http://kotlinlang.org/docs/reference/whatsnew11.html#destructuring-in-lambdas)等详情可在[全新内容](http://kotlinlang.org/docs/reference/whatsnew11.html)查看，并有完整示例！
 ## 协程(Coroutines)
 
 在Kotlin中协程使非阻塞式异步代码与简单的同步代码一样简单。  
@@ -134,10 +134,10 @@ P.S 跨平台运行是Kotlin的战略方向，伴随着1.1的发布，我们可�
 
 <strong>Eclipse</strong>：使用[Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) 安装插件。  
 
-<strong>命令行编译器</strong>可以从[Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1)下载。  
+<strong>命令行编译器</strong>可以从[Github发布页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1)下载。  
 
-<strong>兼容性</strong>：Kotlin 1.1语言和标准库[向后兼容(modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) ：如果使用1.0版本编译运行，1.1版本仍然可以运行。为了帮助大型团队有规律的更新，我们在编译器中新增禁用新功能的开关。详细踩坑文档在[这里](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)查看。  
+<strong>兼容性</strong>：Kotlin 1.1语言和标准库[向后兼容(modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) ：如果使用1.0版本编译运行，1.1版本仍然可以运行。为了帮助大型团队有规律的更新，我们在编译器中新增禁用新功能的开关。查看[踩坑文档](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)。  
 
-<em><strong>尽情享受Kotlin！</strong></em>  
+<em><strong>请尽情享受Kotlin！</strong></em>  
 
 P.S: 在[Reddit](https://www.reddit.com/r/programming/comments/5wvpv8/kotlin_11_released_with_javascript_support/)和[Hacker News](https://news.ycombinator.com/item?id=13763483)上加入讨论吧！
