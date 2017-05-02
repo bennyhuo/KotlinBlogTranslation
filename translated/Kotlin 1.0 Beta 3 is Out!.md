@@ -50,7 +50,7 @@ when {
  
 ```
 
-许多人倾向于认为条件“ foo.isValid(), foo.isReady()”表示 `foo.isValid() == true and foo.isReady() == true`，而实际上逗号是指**or**。解决方法很简单：只需使用**||**:
+许多人倾向于认为条件 `foo.isValid(), foo.isReady()` 表示 `foo.isValid() == true and foo.isReady() == true`，而实际上逗号是指 **or**。解决方法很简单：只需使用 **||**:
 
 ```kotlin
 when {
@@ -132,16 +132,22 @@ class FreeActivity : AppCompatActivity() {
 
 
 * Android Extensions插件已被合并到Kotlin插件中，不再需要单独安装
+  <img src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/12/Screen-Shot-2015-12-02-at-19.54.03.png?w=640&amp;ssl=1" alt="Screen Shot 2015-12-02 at 19.54.03" width="640" height="437">
+  
 * 创建新的Gradle项目时，我们添加了选择Kotlin的选项：
+
 * 调试器：stacktrace导航功能现在支持跟踪内联函数的堆栈帧。同时对内联函数的步进调试功能进行了一系列的改进。
 
-
-![示例](https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif)
-
-
 * 添加了三个快速初始化新属性的*Quick Fixes*：
-* **Introduce Variable**（Ctrl + Alt + V / Cmd + Alt + V）现在支持**结构声明(multi-declarations)**：
-* 同时**Introduce Variable**还能使用于lambda或匿名函数中：
-* Beta 3开始支持从字符串模板中使用Variable / Parameter / Property / Function
-* 最后，添加了一个实验功能 - 对IDE中的Kotlin脚本文件（.kts）的基本支持
+<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640';" width="640" height="172">
 
+* **Introduce Variable**（Ctrl + Alt + V / Cmd + Alt + V）现在支持**结构声明(multi-declarations)**：
+<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/destructuring.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/destructuring.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/destructuring.png?w=640';" width="640" height="172">
+
+* 同时**Introduce Variable**还能使用于lambda或匿名函数中：
+<img src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/12/container.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/container.gif';" onmouseout="this.src='https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/12/container.png?w=640';" width="640" height="197">
+
+* Beta 3开始支持从字符串模板中使用Variable / Parameter / Property / Function
+<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/templates.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/templates.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/templates.png?w=640';" width="640" height="197">
+
+* 最后，添加了一个实验功能 - 对IDE中的Kotlin脚本文件（.kts）的基本支持
