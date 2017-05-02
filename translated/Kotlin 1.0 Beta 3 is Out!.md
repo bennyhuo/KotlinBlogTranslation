@@ -13,13 +13,13 @@ source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-3-is-out/
 ---
 
 我们很高兴发布了Kotlin 1.0 Beta的另一个更新。我们正在努力完善标准库，抛弃了过时已久的设计结构，同时修复了bugs，改进性能和为下一个版本作准备。
-完整的更新历史在 [这里](https://youtrack.jetbrains.com/issues/KT?q=%23Major+%23Critical+%23Resolved+-Obsolete+-%7BEclipse+Plugin%7D+resolved+date%3A+2015-11-16+..+2015-11-30) 。<BR/>
+完整的更新历史在 [这里](https://youtrack.jetbrains.com/issues/KT?q=%23Major+%23Critical+%23Resolved+-Obsolete+-%7BEclipse+Plugin%7D+resolved+date%3A+2015-11-16+..+2015-11-30) 。
 
-最新的issue在 [这里](https://youtrack.jetbrains.com/issues/KT?q=%23Major+%23Critical+%23Resolved+-Obsolete+-%7BEclipse+Plugin%7D+resolved+date%3A+2015-11-16+..+2015-11-30) 。<span id =“more-3263”> </ span>
+最新的issue在 [这里](https://youtrack.jetbrains.com/issues/KT?q=%23Major+%23Critical+%23Resolved+-Obsolete+-%7BEclipse+Plugin%7D+resolved+date%3A+2015-11-16+..+2015-11-30) 。
 ## Library变更
 
 我们努力在1.0版本到来之前让标准库变得更加完美。这意味着进行一些尝试，所以会有新的部分被弃用，有新的函数被添加。我们计划在1.0版本（或RC）中对标准库进行一次最后的清理：删除所有已过时和其他遗留的东西。
-这里我们只关心一个需要注意的[变化](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595)：现在<code>contains()</code>和其他类似的扩展方法接受集合元素的父类型。
+这里我们只关心一个需要注意的[变化](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595)：现在`contains()`和其他类似的扩展方法接受集合元素的父类型。
 
 ```kotlin
 // strs: Collection<String>
@@ -32,10 +32,10 @@ str.contains(i) // ERROR (in fact, a deprecation warning, but will be an error s
  
 ```
 
-我们发现以前建议的<code>containsRaw</code>方法比较低效，使用<code>contains()</code>更加合适，同时保证了兼容性。请注意，集合接口本身是完整的，所有这些都是通过扩展功能完成的。请使用*Code Cleanup*来迁移代码。
+我们发现以前建议的`containsRaw`方法比较低效，使用`contains()`更加合适，同时保证了兼容性。请注意，集合接口本身是完整的，所有这些都是通过扩展功能完成的。请使用*Code Cleanup*来迁移代码。
 ## 语言变化
 
-一些需要注意的语言变化，完整列表在[这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595) 。<BR/>
+一些需要注意的语言变化，完整列表在[这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595) 。
 
 许多我们以前不推荐的实现现在会报错。请使用*Code Cleanup*进行迁移。
 ### When表达式
@@ -50,7 +50,7 @@ when {
  
 ```
 
-许多人倾向于认为条件“<code> foo.isValid(), foo.isReady()</code>”表示<code> foo </code>**isValid**()和**isReady()**都为true，而实际上逗号是指<em>or</ em>。解决方法很简单：只需使用<code> || </code>:
+许多人倾向于认为条件“ foo.isValid(), foo.isReady()”表示 `foo.isValid() == true and foo.isReady() == true`，而实际上逗号是指**or**。解决方法很简单：只需使用**||**:
 
 ```kotlin
 when {
@@ -60,7 +60,7 @@ when {
  
 ```
 
-*Code Cleanup*</ em>会自动迁移。
+*Code Cleanup*会自动迁移。
 ### 注释
 
 一个bug已被修复，现在我们可以在注解的参数中使用默认值：
@@ -75,8 +75,8 @@ annotation class Example(
 
 ### 枚举值()
 
-最近我们将传统的Java的<code> Enum.values()</code>更改为一个属性：<code> Enum.values </code>，但现在我们将回滚这个更改，因为有一个没有注意到的角落：枚举中的常量可能被命名为<code>values</code>，然后便没有办法访问其中的任何一个。我们考虑了不同的方案，最后决定将<code>values</code>改回函数是最干净的。
-所以，现在不推荐使用<code>values</code>属性，也不推荐使用<code> values()</code>函数。
+最近我们将传统的Java的`Enum.values()`更改为一个属性：`Enum.values `，但现在我们将回滚这个更改，因为有一个没有注意到的角落：枚举中的常量可能被命名为`values`，然后便没有办法访问其中的任何一个。我们考虑了不同的方案，最后决定将`values`改回函数是最干净的。
+所以，现在不推荐使用`values`属性，也不推荐使用` values()`函数。
 ### 可见性和作用域
 
 我们正在清理和修正小问题的可见性和作用域
@@ -93,7 +93,7 @@ annotation class Example(
 
 我们合并了IntelliJ IDEA的主要Kotlin插件和Android的*Kotlin*扩展插件。后者现在已经过时了，因为它的功能可以从Kotlin插件获取。
 此外，我们还添加了对Android **productFlavors**的支持：现在，来自不同flavors的属性可以在不同的包中使用。
-例如，我们可以在code> build.gradle </code>文件中存在两种flavors：
+例如，我们可以在` build.gradle`文件中存在两种flavors：
 
 ```kotlin
 productFlavors {
@@ -107,7 +107,7 @@ productFlavors {
  
 ```
 
-现在，我们不仅可以在<code>main source set</code>中的布局使用合成属性，还可以在flavor布局使用合成属性：
+现在，我们不仅可以在**main source set**中的布局使用合成属性，还可以在flavor布局使用合成属性：
 
 ```kotlin
 // Import synthetic properties for the `activity_free.xml` layout in the `free` flavor
@@ -127,16 +127,19 @@ class FreeActivity : AppCompatActivity() {
  
 ```
 
-请注意，<code>main source set</code>的所有布局现在位于<code> kotlinx.android.synthetic.main </code>包之下，旧的包命名约定已被弃用。
+请注意，**main source set**的所有布局现在位于`kotlinx.android.synthetic.main`包之下，旧的包命名约定已被弃用。
 ## IDE中的新功能
 
 
 * Android Extensions插件已被合并到Kotlin插件中，不再需要单独安装
 * 创建新的Gradle项目时，我们添加了选择Kotlin的选项：
-* 调试器：stacktrace导航现在支持跟踪内联函数的堆栈帧。同时通过内联函数进行了一系列的改进。
-* 添加了三个快速初始化新属性的方式：
-* 变量引入（Ctrl + Alt + V / Cmd + Alt + V）现在支持多声明表达式：
-* 现在允许在lambda或匿名函数中为表达式选择容器：
-* Beta 3开始支持从字符串模板片段使用Variable / Parameter / Property / Function
+* 调试器：stacktrace导航功能现在支持跟踪内联函数的堆栈帧。同时对内联函数的步进调试功能进行了一系列的改进。
+``` 
+<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640"onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif';"onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640';" width="640" height="172">
+```
+* 添加了三个快速初始化新属性的*Quick Fixes*：
+* **Introduce Variable**（Ctrl + Alt + V / Cmd + Alt + V）现在支持**结构声明(multi-declarations)**：
+* 同时**Introduce Variable**还能使用于lambda或匿名函数中：
+* Beta 3开始支持从字符串模板中使用Variable / Parameter / Property / Function
 * 最后，添加了一个实验功能 - 对IDE中的Kotlin脚本文件（.kts）的基本支持
 
