@@ -9,7 +9,10 @@ reward: false
 reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
-source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/
+source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/  
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys  
+
 ---
 Kotlin 1.1除了为您的项目带来新特性之外，还是您与当地社区进行线下交流学习、了解Kotlin的未来与发展的绝好机会。  
 您可以组织社区的小伙伴们，一起参与Jetbrains团队在<strong>3月23日</strong>举办的Kotlin直播活动。为了适应不同时区，我们准备了两个直播流，分别是<strong>欧洲中部时间[CET]下午5点/7点(太平洋夏季时间[PDT]上午9点/11点)</strong>。  
