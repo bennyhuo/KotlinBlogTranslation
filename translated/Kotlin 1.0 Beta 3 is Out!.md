@@ -139,15 +139,15 @@ class FreeActivity : AppCompatActivity() {
 * 调试器：stacktrace导航功能现在支持跟踪内联函数的堆栈帧。同时对内联函数的步进调试功能进行了一系列的改进。
 
 * 添加了三个快速初始化新属性的*Quick Fixes*：
-<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640';" width="640" height="172">
+  <img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640';" width="640" height="172">
 
 * **Introduce Variable**（Ctrl + Alt + V / Cmd + Alt + V）现在支持**结构声明(multi-declarations)**：
-<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/destructuring.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/destructuring.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/destructuring.png?w=640';" width="640" height="172">
+  <img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/destructuring.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/destructuring.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/destructuring.png?w=640';" width="640" height="172">
 
 * 同时**Introduce Variable**还能使用于lambda或匿名函数中：
-<img src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/12/container.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/container.gif';" onmouseout="this.src='https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/12/container.png?w=640';" width="640" height="197">
+  <img src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/12/container.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/container.gif';" onmouseout="this.src='https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/12/container.png?w=640';" width="640" height="197">
 
 * Beta 3开始支持从字符串模板中使用Variable / Parameter / Property / Function
-<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/templates.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/templates.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/templates.png?w=640';" width="640" height="197">
+  <img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/templates.png?w=640" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/templates.gif';" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/templates.png?w=640';" width="640" height="197">
 
 * 最后，添加了一个实验功能 - 对IDE中的Kotlin脚本文件（.kts）的基本支持
