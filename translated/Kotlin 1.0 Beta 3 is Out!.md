@@ -134,9 +134,7 @@ class FreeActivity : AppCompatActivity() {
 * Android Extensions插件已被合并到Kotlin插件中，不再需要单独安装
 * 创建新的Gradle项目时，我们添加了选择Kotlin的选项：
 * 调试器：stacktrace导航功能现在支持跟踪内联函数的堆栈帧。同时对内联函数的步进调试功能进行了一系列的改进。
-``` 
-<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640"onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif';"onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640';" width="640" height="172">
-```
+  <img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640"onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/12/init.gif';"onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/12/init.png?w=640';" width="640" height="172">
 * 添加了三个快速初始化新属性的*Quick Fixes*：
 * **Introduce Variable**（Ctrl + Alt + V / Cmd + Alt + V）现在支持**结构声明(multi-declarations)**：
 * 同时**Introduce Variable**还能使用于lambda或匿名函数中：
