@@ -14,7 +14,7 @@ translator: ahong222
 translator_url: https://github.com/ahong222
 ---
 
-截至今天，Kotlin 1.1 终于到了候选版本（RC）阶段。这意味着大部分开发工作都已经完成，我们对此结果感到满意，很快就会发布 Kotlin 1.1 正式版。我们已经在内部对此版本进行了大量测试，但现实世界总是比任何测试环境更加多样化，因此我们需要您的帮助。请尝试这个版本，让我们知道你的体验！
+截至今天，Kotlin 1.1 终于到了候选版本（RC）阶段。这意味着大部分开发工作都已经完成，我们对此结果感到满意，很快就会发布 Kotlin 1.1 正式版。我们已经在内部对此版本进行了大量测试，但现实世界总是比任何测试环境更加多样化，因此我们需要您的帮助。请尝试这个版本，让我们知道您的体验！
 
 {% raw %}
 <p><img alt="11RC-01" class="alignnone size-full wp-image-4599" height="251" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/02/11RC-01.png" width="1300"/><br/>
