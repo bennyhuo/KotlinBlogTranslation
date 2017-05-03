@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/08/full-day-kotlin-workshop-october-6th-in-malmo-sweden/
+translator:
+translator_url:
 ---
 
 <em><a href="http://www.edument.se/en/events/event/kotlin-workshop"><img alt="Edument_1" class="size-full wp-image-1596 alignleft" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2014/08/Edument_1.jpg?resize=250%2C65&amp;ssl=1"/></a></em><strong><a href="http://www.edument.se/en/events/event/kotlin-workshop" target="_blank" title="Full-Day Kotlin Workshop, October 6th in Malmo, Sweden">Edument</a></strong>, a JetBrains Training and Consulting Partner, will be providing a full day of Kotlin hacking on <strong>Monday, October 6, 2014,</strong> in the lovely city of Malmö.
