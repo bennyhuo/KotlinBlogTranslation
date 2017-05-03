@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/02/kotlin-1-1-release-candidate-is-here/
+translator:
+translator_url:
 ---
 
 截至今天，Kotlin 1.1终于达到了候选人候选人阶段。这意味着我们的大部分开发工作都已经完成，我们对结果感到满意，我们很快将它们作为最终的Kotlin 1.1版本发布。我们已经在内部对此版本进行了大量测试，但现实世界总是比任何测试环境更加多样化，因此我们需要您的帮助。请尝试这个版本，让我们知道你的经验！

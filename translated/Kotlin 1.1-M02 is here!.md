@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/10/kotlin-1-1-m02-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布Kotlin 1.1的第二个里程碑版本。这个版本带来了一个期待已久的新语言功能，在lambdas </strong>中进行破解，以及1.1-M1中引入的功能的许多改进，包括类型别名，协程和绑定引用。新版本还包括Kotlin 1.0.4和1.0.5-eap-66中引入的所有工具功能，并且与IntelliJ IDEA 2016.3 EAP和Android Studio 2.2完全兼容。

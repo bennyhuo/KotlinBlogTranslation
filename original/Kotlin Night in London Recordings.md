@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-night-in-london-recordings/
+translator:
+translator_url:
 ---
 
 Kotlin Night in London took place October 12th, 2016 in collaboration with Trifork and GOTO London 2016. We would like to thank everyone who took the time to join us and make the event such a great success. For those who couldn’t attend or who want to rewatch the talks, the video recordings are now available for your viewing pleasure.

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/
+translator:
+translator_url:
 ---
 
 <strong>This post is largely outdated.<br/>

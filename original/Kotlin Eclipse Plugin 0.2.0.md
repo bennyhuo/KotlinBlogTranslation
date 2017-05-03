@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/kotlin-eclipse-plugin-0-2-0-2/
+translator:
+translator_url:
 ---
 
 # Kotlin Eclipse Plugin 0.2.0

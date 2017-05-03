@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/eclipse-plugin-alpha-is-out/
+translator:
+translator_url:
 ---
 
 IntelliJ IDEA中的Kotlin支持一直是我们的首要任务之一，但是我们也一直致力于Eclipse的支持，今天我们很高兴地介绍这一努力的第一个<strong> alpha </strong>结果。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布发布Kotlin 1.0.6，这是Kotlin 1.0的新bug和工具更新。此版本带来了与IDE插件和Android支持相关的大量改进。

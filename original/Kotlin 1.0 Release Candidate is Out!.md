@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-release-candidate-is-out/
+translator:
+translator_url:
 ---
 
 Finally, Kotlin has graduated the Beta and we are happy to present the Release Candidate Build!

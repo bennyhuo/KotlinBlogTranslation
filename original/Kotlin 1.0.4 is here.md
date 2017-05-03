@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-1-0-4-is-here/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the release of a new bugfix and tooling update of Kotlin, version <b>1.0.4</b>. This version brings many improvements related to the IDE and build tools, as well as JavaScript support.

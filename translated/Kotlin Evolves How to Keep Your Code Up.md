@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/kotlin-evolves-how-to-keep-your-code-up/
+translator:
+translator_url:
 ---
 
 Kotlin正在进行定稿，作为此过程的一部分，我们将<strong>清理</strong>：修改语言及其库。最大的变化是在 [M12](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) ，但还有更多的来临。要点是在我们发布1.0之前执行所有必要的突破性更改，以便我们可以在发布后保持语言和库<strong>向后兼容</strong>。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/10/writing-kotlin-in-the-browser/
+translator:
+translator_url:
 ---
 
 Did you know that Kotlin can target JavaScript as well as the JVM? Don’t be too surprised if you didn’t know, as we’ve not been giving it too much coverage, despite already shipping a [successful product](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/) that uses this capability. But here’s hoping to change things.<span id="more-1330"></span>

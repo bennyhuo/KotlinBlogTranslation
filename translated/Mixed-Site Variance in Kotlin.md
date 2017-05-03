@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/mixed-site-variance-in-kotlin/
+translator:
+translator_url:
 ---
 
 <img alt =“”class =“alignleft”data-recalc-dims =“1”src =“https://i2.wp.com/www.geoffwilkins.net/images/feynman/feynman-blackboard.jpg?resize = 360％2C272＆amp; ssl = 1“/>类型系统...我们都知道他们很酷。在静态语言（如Kotlin）中，类型系统是负责早期检测错误的系统。许多工具（例如具有重构能力的IDE）也依赖于类型系统。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/
+translator:
+translator_url:
 ---
 
 与JVM 100％可互操作，随后使用JavaScript，一直是Kotlin的首要任务。随着现有代码的数量和丰富的JVM生态系统，具有互操作性和有效性的功能至关重要。<span id =“more-1616”> </span>

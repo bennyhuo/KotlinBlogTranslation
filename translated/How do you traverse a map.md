@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/
+translator:
+translator_url:
 ---
 
 自从我上次在Kotlin M2上博客以来已经有一段时间了。现在，炎热的夏天已经过去了，而<strong> M3 </strong>将很快出局。在这篇文章中，我描述了M3中增加的两个小功能，使我们的生活更轻松，并将导致语言的简化。

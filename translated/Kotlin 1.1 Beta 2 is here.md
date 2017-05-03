@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/02/kotlin-1-1-beta-2-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布Kotlin 1.1的第二个测试版。请尝试新版本 - 您的反馈对于确保我们可以提供质量版本至关重要。

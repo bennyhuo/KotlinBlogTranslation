@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/02/lets-kode-together/
+translator:
+translator_url:
 ---
 
 如 [Kotlin网络演示](http://kotlin-demo.jetbrains.com/) 是尝试Kotlin的最简单的方法。今天我们推出一些新功能，使其更加有趣。

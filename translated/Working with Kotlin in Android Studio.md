@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/08/working-with-kotlin-in-android-studio/
+translator:
+translator_url:
 ---
 
 随着M6的发布， [我们宣布支持Android Studio](http://blog.jetbrains.com/kotlin/?p=1155) 。我们来深入了解如何使用Android Studio和Kotlin开始运行。<span id =“more-1234”> </span>

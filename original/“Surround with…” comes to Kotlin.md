@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/surround-with-comes-to-kotlin/
+translator:
+translator_url:
 ---
 
 Great news for fans of Intellij IDEA: “Surroud with…” action is now available for Kotlin!

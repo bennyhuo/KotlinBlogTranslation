@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-is-also-for-android-developers/
+translator: DemoJameson
+translator_url: http://www.demojameson.com
 ---
 
 Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。

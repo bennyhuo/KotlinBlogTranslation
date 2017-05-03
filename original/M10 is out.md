@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/12/m10-is-out/
+translator:
+translator_url:
 ---
 
 Right before the festivities start, we’ve managed to release the next milestone of Kotlin, adding <strong>dynamic types</strong> and more. Let’s see what M10 brings us. <span id="more-1708"></span>

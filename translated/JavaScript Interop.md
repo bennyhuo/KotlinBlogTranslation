@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/12/javascript-interop/
+translator:
+translator_url:
 ---
 
 当使用JavaScript，即创建一个可编译为JavaScript的Kotlin应用程序时，我们经常需要与JavaScript中的现有库进行互操作。虽然Kotlin已经为此提供了支持，但我们在M10中添加了更多的选项，使互操作性更加容易

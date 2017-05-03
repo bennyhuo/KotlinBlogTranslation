@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/
+translator:
+translator_url:
 ---
 
 加入我们这个<strong> 10月22日星期四，格林尼治标准时间14:00  -  15:00（美国东部时间上午10:00  -  11:00），我们的免费网络研讨会， [Kotlin功能编程](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) 与麦克赫恩

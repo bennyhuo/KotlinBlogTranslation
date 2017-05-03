@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-function-types-reform/
+translator:
+translator_url:
 ---
 
 Kotlin M12 will likely bring another change that is crucial for implementing a useful reflection library for Kotlin. In short, we are going to unify <code>FunctionX</code> and <code>ExtensionFunctionX</code> to be represented in the same way at runtime, but it will not affect our ability to create [type-safe builders](http://kotlinlang.org/docs/reference/type-safe-builders.html) and other DSL-like constructs.<span id="more-2062"></span>

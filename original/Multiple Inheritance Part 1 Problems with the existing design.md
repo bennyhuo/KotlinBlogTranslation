@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/
+translator:
+translator_url:
 ---
 
 I’m back from my vacation, and it’s time to get to one one the biggest issues pointed out in the feedback we received during conference presentations and in the comments to the docs. I’m talking about inheritance.

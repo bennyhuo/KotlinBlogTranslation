@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/
+translator:
+translator_url:
 ---
 
 Kotlin has had top-level functions and properties from day one. They are very convenient in many cases: from basic utilities to extensions for standard APIs.

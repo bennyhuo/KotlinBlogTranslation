@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations/
+translator:
+translator_url:
 ---
 
 Kotlin的注释语法灵感来自C＃，它围绕着它们的方括号：

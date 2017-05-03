@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-2-is-out/
+translator:
+translator_url:
 ---
 
 我们很高兴宣布Kotlin 1.1.2正式发布了，这也是Kotlin 1.1的第二次 Bug 修复和工具更新。此次更新不仅提升了编译器和 IntelliJ IDEA 插件的性能，同时也在工具中增加了新的特性，当然还有各方面的问题修复。 此外，Kotlin 1.1.2也提升了与Android Gradle插件版本2.4.0-alpha的兼容性。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/10/m9-is-coming/
+translator:
+translator_url:
 ---
 
 We’ve been working hard on the next upcoming release for Kotlin, M9, and it contains quite a good number of new features and some important changes.<span id="more-1625"></span>

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/02/our-first-book-about-kotlin-is-out/
+translator:
+translator_url:
 ---
 
 We’re happy to announce that [Kotlin in Action](https://www.manning.com/books/kotlin-in-action) – a book about Kotlin written by the members of the Kotlin team – is now out, as both a eBook and a printed book. The book is written for experienced Java developers and covers all aspects of the language, without focusing on any specific problem domain. We received a lot of positive feedback about the book during Manning’s Early Access Preview program, so we hope that you’ll enjoy it too!

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/whats-new-in-standard-library-m13-and-m14/
+translator:
+translator_url:
 ---
 
 标准图书馆继续发展：

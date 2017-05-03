@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/
+translator:
+translator_url:
 ---
 
 我们正在努力改进编译时间。今天我们很高兴邀请您尝试使用Gradle守护进程的Kotlin <code> 0.12.1230 </code>。它消除了启动成本，并且您的构建运行速度更快。 <span id =“more-2419”> </span>

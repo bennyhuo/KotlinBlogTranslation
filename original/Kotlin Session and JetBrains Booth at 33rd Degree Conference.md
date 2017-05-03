@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/03/kotlin-session-and-jetbrains-booth-at-33rd-degree-conference/
+translator:
+translator_url:
 ---
 
 JetBrains and Kotlin are participating in the 33rd Degree Conference in <strong>Warsaw, Poland</strong>. Join 1,200 attendees <strong>March 13-15</strong> for [92 sessions](http://2013.33degree.org/main/schedule) from [58 speakers](http://2013.33degree.org/speaker/list) . Come by our booth and learn what’s new in <strong>Project Kotlin</strong>, as well as the upcoming <strong><a href="http://blogs.jetbrains.com/idea/category/eap-releases/" target="_blank" title="IntelliJ IDEA 12.1">IntelliJ IDEA 12.1 release</a></strong>. Be sure to mark your calendar for our <strong>two sessions</strong> with JetBrains Technical Evangelist [Hadi Hariri](https://twitter.com/hhariri) .

@@ -10,10 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1/  
-
 translator: SnakEys  
 translator_url: https://github.com/SnakeEys
-
 ---
 
 <div style =“margin：0px; padding：10px; border-color：＃f0f0f0; display：inline-block; border-width：1px; border-style：solid; font-size：10”>我们社区的成员将这篇博文翻译成几种语言：<br/>

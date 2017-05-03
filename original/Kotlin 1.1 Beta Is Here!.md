@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/01/kotlin-1-1-beta-is-here/
+translator:
+translator_url:
 ---
 
 Congratulations! Today Kotlin 1.1 has reached Beta, and this means that

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-night-recordings/
+translator:
+translator_url:
 ---
 
 5月17日，我们与国家和Netflix合作，在旧金山举行了晚会。感谢今天晚上加入我们的每个人！有很好的讲话和重要的公告，好消息是他们都记录下来：

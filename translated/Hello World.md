@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/07/hello-world-2/
+translator: DemoJameson
+translator_url: http://www.demojameson.com
 ---
 
 在今天的 [JVM 语言峰会](http://openjdk.java.net/projects/mlvm/jvmlangsummit/) 上，JetBrains 公开了已经积极开发近一年的新项目 **Kotlin**，这是一门运行在 JVM 上的新静态类型编程语言。

@@ -11,6 +11,7 @@ reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/
 translator: SnakEys
+translator_url:
 ---
 
 “静态成员(static member)” 没有包含在Kotlin类的设计中，假设在类中有一个函数，那么该函数只能通过这个类的实例调用。而如果函数与任何类的实例并没有关联，那么就可以在类之外、包级进行定义（我们称之为包级函数--package-level functions）：

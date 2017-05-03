@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-1/
+translator:
+translator_url:
 ---
 
 自从以来，已有足够的改善 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) 所以我们今天把它们推出M5.1。其中一些事实上并不那么简单，就像使用Scala库一样 [阿卡](http://akka.io/) 。这篇文章快速概述了这些变化。<span id =“more-971”> </span>

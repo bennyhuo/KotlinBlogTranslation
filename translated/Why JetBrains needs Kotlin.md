@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/08/why-jetbrains-needs-kotlin/
+translator: DemoJameson
+translator_url: http://www.demojameson.com
 ---
 
 动机是人们在学习或使用新的编程语言时首先要问的问题。 Kotlin 文档对于这门语言为何出现已经做了相当详细的说明。尽管如此，我们还是乐于让大家更加清楚 JetBrains 希望从这门语言上获得什么。这门语言的开发显然是项长期的工作，我们明确意识到需要多年才能达成目标。而以下就是为什么我们愿意做这个投入的原因。

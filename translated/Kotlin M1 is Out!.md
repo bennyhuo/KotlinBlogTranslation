@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/
+translator:
+translator_url:
 ---
 
 今天，我们很高兴地宣布：M1：Kotlin的第一个里程碑版本</strong>

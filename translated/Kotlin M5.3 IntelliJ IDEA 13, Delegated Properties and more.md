@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delegated-properties-and-more/
+translator:
+translator_url:
 ---
 
 Kotlin M5.3支持IntelliJ IDEA 13和一些新功能，供您查看。我们正在向强大的运行时支持，包括反射和其他框架启用功能。这个里程碑标志着我们朝这个方向迈出的第一步。 <span id =“more-1060”> </span>

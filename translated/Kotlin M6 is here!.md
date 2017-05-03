@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/08/kotlin-m6-is-here/
+translator:
+translator_url:
 ---
 
 我们已经达到了我们的第六个里程碑，在商店方面，在语言改进和工具方面都有一些很好的功能。<span id =“more-1155”> </span>

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-1-is-out/
+translator:
+translator_url:
 ---
 
 Today we’re releasing the first bugfix update for <strong>Kotlin 1.1</strong>. The primary focus of this update is to address regressions causing incorrect code generation; we wanted to get those fixes out as quickly as possible. The details are available in the [changelog](https://github.com/JetBrains/kotlin/blob/1.1.1/ChangeLog.md) .

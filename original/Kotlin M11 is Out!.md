@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/kotlin-m11-is-out/
+translator:
+translator_url:
 ---
 
 Today we are releasing a new milestone: Kotlin M11, which brings such long-awaited features as <strong>secondary constructors</strong>, a first glimpse of true <strong>reflection</strong> support for Kotlin and much more. <span id="more-1836"></span>

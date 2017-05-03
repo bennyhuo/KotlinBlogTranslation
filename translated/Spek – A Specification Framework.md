@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/02/speka-specification-framework/
+translator:
+translator_url:
 ---
 
 一会儿现在，a [很少](http://twitter.com/orangy) [的](http://twitter.com/jonyzzz) [我们](https://plus.google.com/111179551284404865949/about) 一直在开发一个名为Spek的项目，这个框架允许您编写可执行规范。它允许您以更人性化的方式编写规范（即测试），而且更重要的是描述性的方式，而无需使用长测试名称，下划线或正则表达式。

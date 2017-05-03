@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-java-statics-result-expressions-and-more/
+translator:
+translator_url:
 ---
 
 Thank you all for the feedback we got on the [previous call](http://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/) ! Here comes another round of changes and adjustments. Your opinions and use cases are welcome.<span id="more-2707"></span>

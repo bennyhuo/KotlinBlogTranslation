@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/the-great-syntactic-shift/
+translator:
+translator_url:
 ---
 
 随着Kotlin的第一次公开预览即将到来（将于2012年1月10日公布，这是<strong>不到一周</strong>从现在开始！），我们正在把一些事情按顺序排列

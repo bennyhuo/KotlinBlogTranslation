@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/10/kotlin-m14-is-out/
+translator:
+translator_url:
 ---
 
 With the release approaching, we switch to shorter milestones. Meet M14 that brings the following changes:

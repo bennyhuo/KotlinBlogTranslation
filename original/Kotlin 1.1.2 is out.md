@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-2-is-out/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the release of Kotlin 1.1.2, the second bugfix and tooling update for Kotlin 1.1. The update brings performance improvements to the compiler and the IntelliJ IDEA plugin, several new features in the tools, and lots of bugfixes in all areas. Kotlin 1.1.2 also brings compatibility with version 2.4.0-alpha of the Android Gradle plugin.

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/02/our-first-book-about-kotlin-is-out/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布 [Kotlin在行动](https://www.manning.com/books/kotlin-in-action) - 关于Kotlin队成员撰写的关于Kotlin的书 - 现在已经出版了，作为一本电子书和一本印刷书。这本书是为经验丰富的Java开发人员编写的，涵盖了语言的所有方面，而不专注于任何特定的问题领域。在Manning早期访问预览计划期间，我们收到了很多有关该书的积极反馈，因此我们希望您也可以享受！

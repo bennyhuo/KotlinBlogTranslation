@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/04/kotlin-gets-support-for-s-expressions/
+translator:
+translator_url:
 ---
 
 Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决定支持 [S表达式](http://en.wikipedia.org/wiki/S-expression) ，赋权的概念 [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) 。

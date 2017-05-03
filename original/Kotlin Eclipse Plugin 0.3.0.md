@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/kotlin-eclipse-plugin-0-3-0/
+translator:
+translator_url:
 ---
 
 We are happy to announce Kotlin Eclipse Plugin version 0.3.0. This release is loaded with new features:

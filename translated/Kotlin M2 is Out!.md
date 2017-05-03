@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/
+translator:
+translator_url:
 ---
 
 一些新闻网站告诉你 [Kotlin](http://kotlin.jetbrains.org) M2本周早些时候出来。那么现在我们让它成真了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“

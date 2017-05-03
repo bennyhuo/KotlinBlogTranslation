@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/meet-the-kotlin-team-at-gradle-summit/
+translator:
+translator_url:
 ---
 
 你可能已经听到这个消息，宣布你很快就能够 [将您的Gradle构建脚本和插件写入Kotlin](https://blog.jetbrains.com/kotlin/2016/05/gradle-meets-kotlin/) 。在旧金山的Kotlin之夜，来自Gradle的Hans Dockter演示了支持的第一个原型。在最初公布之后，我们继续与Gradle团队携手合作，精简原型，并使其更接近发行版。和下周，在 [帕洛阿尔托梯级峰会](https://gradlesummit.com/) 我们将分享我们进展的细节。

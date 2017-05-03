@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/fibers-and-actors-in-kotlin-with-quasar/
+translator:
+translator_url:
 ---
 
 在里面 [上一篇文章](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) 我们提到了 [类星体](http://docs.paralleluniverse.co/quasar/) 库现在支持Kotlin，为光纤（轻量级线程），Go-like频道，Erlang类演员和其他异步工具提供了极好的支持。

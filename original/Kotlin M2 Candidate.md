@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
+translator:
+translator_url:
 ---
 
 It’s been seven weeks since [Kotlin M1 release](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) , and I’m happy to invite you to try out a candidate build of <strong>Kotlin M2</strong>! This post gives an overview of the upcoming milestone release along with come usage instructions.

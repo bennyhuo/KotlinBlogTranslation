@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
+translator:
+translator_url:
 ---
 
 另一个更新 [Kotlin](http://kotlin.jetbrains.org/) 今天出来欢迎Kotlin M5.2。 <span id =“more-1038”> </span>

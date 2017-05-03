@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/01/mce2015-kotlin-session-and-jetbrains-booth/
+translator:
+translator_url:
 ---
 
 <strong>February 5th and 6th</strong>, MCE2015 takes control of the iconic Kinoteka cinema at the <strong>Palace of Culture and Science in Warsaw, Poland</strong>. Initially a conference for developers by developers, this year’s event expands to embrace all mobile creators – developers, designers and tech leaders.

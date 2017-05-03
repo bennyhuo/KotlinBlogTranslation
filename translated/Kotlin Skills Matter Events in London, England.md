@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/01/kotlin-skills-matter-events-in-london-england/
+translator:
+translator_url:
 ---
 
 JetBrains在四月和五月有两次免费的Kotlin活动来到伦敦。两届会议将在 [技能交流](http://skillsmatter.com/location-details/home/1611/96) 需要注册。我们希望看到你在那里！

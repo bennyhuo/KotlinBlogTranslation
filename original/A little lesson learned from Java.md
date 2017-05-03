@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/11/a-little-lesson-learned-from-java/
+translator:
+translator_url:
 ---
 
 <em>A post about good books, language design and JIT compilation, in which one bug turns into another and than back…<br/>

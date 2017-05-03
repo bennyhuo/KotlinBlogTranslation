@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/01/announcing-the-support-program-for-kotlin-user-groups-and-events/
+translator:
+translator_url:
 ---
 
 今天我们推出了一个新的 [社区部分在我们的网站](https://kotlinlang.org/community/) ！

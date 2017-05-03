@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/
+translator:
+translator_url:
 ---
 
 除了Kotlin 1.1为您的项目带来的新功能之外，与您的当地社区和朋友会面，了解Kotlin未来发布的新机会和影响，这也是一个很好的理由。

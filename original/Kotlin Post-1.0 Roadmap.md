@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/
+translator:
+translator_url:
 ---
 
 It’s been almost two months since Kotlin 1.0 was released, and the team is now switching from stabilisation and bug fixes to new feature work, so it’s a great time to talk about our plans for the future.

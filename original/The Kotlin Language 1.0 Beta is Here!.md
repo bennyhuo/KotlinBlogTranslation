@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/
+translator:
+translator_url:
 ---
 
 We are extremely pleased to present <strong>Kotlin 1.0 Beta</strong> for JVM and Android!

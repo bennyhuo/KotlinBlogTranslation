@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/webinar-recording-quasar-efficient-and-elegant-fibers-channels-and-actors/
+translator:
+translator_url:
 ---
 
 我们的9月16日网络研讨会纪录片：高效优雅的光纤，频道和演员</strong>现在可以在 [JetBrainsTV YouTube频道](https://youtu.be/Nmob2MB2Qo8) 。

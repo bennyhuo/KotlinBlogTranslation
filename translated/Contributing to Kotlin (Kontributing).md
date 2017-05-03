@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/03/contributing-to-kotlin/
+translator:
+translator_url:
 ---
 
 众所周知， [Kotlin](http://jetbrains.com/kotlin) 去 [开源](http://blog.jetbrains.com/kotlin/2012/02/kotlin-goes-open-source-2/) 两周前在这篇文章中，我将为潜在的贡献者提供一些指导，并概述我们已经有的贡献。

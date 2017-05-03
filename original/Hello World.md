@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/07/hello-world-2/
+translator:
+translator_url:
 ---
 
 Today at the [JVM Language Summit](http://openjdk.java.net/projects/mlvm/jvmlangsummit/) , JetBrains is unveiling the new project we’ve been working on for almost a year now. The project is <strong>Kotlin</strong>, a new statically typed programming language for the JVM.

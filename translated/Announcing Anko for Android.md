@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/announcing-anko-for-android/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布，我们一直致力于Android开发的图书馆，其中除了别的以外，还可以使用DSL以类型安全和动态的方式创建应用程序界面。

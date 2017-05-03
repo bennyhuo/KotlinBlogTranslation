@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/
+translator:
+translator_url:
 ---
 
 Last time I wrote about a new exciting [feature](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) in “the upcoming Kotlin M3”. Today, Kotlin M3 is not “upcoming” any more, it’s here. This post gives an overview of the new milestone.<span id="more-663"></span>

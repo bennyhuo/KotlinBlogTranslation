@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/contest-go-cross-platform-with-kotlin/
+translator:
+translator_url:
 ---
 
 Hi All,

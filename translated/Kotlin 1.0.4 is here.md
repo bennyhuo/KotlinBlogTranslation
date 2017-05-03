@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-1-0-4-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布发布Kotlin版本<b> 1.0.4 </b>的新错误修复和工具更新。该版本带来了与IDE和构建工具相关的许多改进，以及JavaScript支持。

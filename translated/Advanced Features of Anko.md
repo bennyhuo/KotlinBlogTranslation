@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/advanced-features-of-anko/
+translator:
+translator_url:
 ---
 
 上周我们发表了 [一个新版本](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/) 的安科。虽然该库的主要目的是通过DSL创建布局，但即使是XML布局的用户也可以从中受益。今天我们来谈谈Anko的这种“矛盾”的特征。<span id =“more-2135”> </span>

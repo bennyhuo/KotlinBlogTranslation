@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/02/kotlin-1-1-beta-2-is-here/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the second beta of Kotlin 1.1. Please give the new version a try – your feedback is essential for ensuring that we can deliver a quality release.

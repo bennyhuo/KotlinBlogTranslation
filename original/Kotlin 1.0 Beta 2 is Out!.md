@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/kotlin-1-0-beta-2-is-out/
+translator:
+translator_url:
 ---
 
 The first update to our [Beta](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) is here! We are stabilizing, so it’s mostly bug-fixing and changes to the standard library.

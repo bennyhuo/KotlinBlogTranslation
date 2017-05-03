@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/03/kotlin-m1-candidate/
+translator:
+translator_url:
 ---
 
 IntelliJ IDEA 11.1 has been recently released, and we are happy to announce a milestone candidate build for Kotlin IDE plugin, too. This post gives an overview of what happened over the last month.

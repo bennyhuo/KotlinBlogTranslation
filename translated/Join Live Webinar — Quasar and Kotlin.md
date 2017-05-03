@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/join-live-webinar-quasar-and-kotlin/
+translator:
+translator_url:
 ---
 
 加入我们

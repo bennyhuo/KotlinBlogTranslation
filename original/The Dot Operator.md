@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/
+translator:
+translator_url:
 ---
 
 <strong>Warning: this is an April Fools’ post</strong> [Point-free](http://en.wikipedia.org/wiki/Point-free_programming) style is a big trend in modern functional programming: it allows to manipulate functions without mentioning their arguments which makes the code concise and compositional. Here is an example from Wikipedia:

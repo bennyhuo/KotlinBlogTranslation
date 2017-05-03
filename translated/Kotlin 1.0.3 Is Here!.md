@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地介绍Kotlin 1.0.3 </strong>。这个更新不是全新的和闪亮的功能，更多的是关于错误修复，工具改进和性能提升。这就是为什么你会喜欢它😉看看充分 [更改日志](https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md) 并通过子系统发布统计信息：

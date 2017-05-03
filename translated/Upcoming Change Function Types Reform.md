@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-function-types-reform/
+translator:
+translator_url:
 ---
 
 Kotlin M12可能会带来另一个变化，这对Kotlin实施一个有用的反思库至关重要。简而言之，我们将统一<code> FunctionX </code>和<code> ExtensionFunctionX </code>在运行时以相同的方式表示，但不会影响我们创建的能力 [类型安全的建设者](http://kotlinlang.org/docs/reference/type-safe-builders.html) 和其他类似DSL的结构。<span id =“more-2062”> </span>

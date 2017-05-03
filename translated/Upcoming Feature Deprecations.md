@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-changes-and-more/
+translator:
+translator_url:
 ---
 
 当我们完成语言设计时，许多事情都要被清理，其中包括最初设计的（通常是部分的）实现的功能，但是不是值得支持的。

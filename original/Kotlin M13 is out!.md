@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/
+translator:
+translator_url:
 ---
 
 It’s been a long summer, and we have a lot to tell you about Kotlin M13 (details below):

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/
+translator:
+translator_url:
 ---
 
 We announced KAnnotator back [in December](http://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/) : it helps you against NPEs in Java and [makes your Kotlin code nicer](http://blog.jetbrains.com/kotlin/using-external-annotations/) . Today we are pleased to announce a KAnnotator Plugin for IntelliJ, version 0.1. It is available from the plugin repository.<span id="more-1005"></span>

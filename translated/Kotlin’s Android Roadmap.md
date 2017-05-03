@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/03/kotlins-android-roadmap/
+translator:
+translator_url:
 ---
 
 ## 介绍

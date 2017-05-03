@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-2-possible-directions/
+translator:
+translator_url:
 ---
 
 在里面 [此系列之前的帖子](http://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/) 我们讨论了缺点 [我们最初为Kotlin计划的继承模式](http://confluence.jetbrains.net/pages/viewpage.action?pageId=41484416) 。今天我们将谈谈替代设计。

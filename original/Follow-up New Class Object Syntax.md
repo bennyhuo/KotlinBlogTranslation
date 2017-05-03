@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/
+translator:
+translator_url:
 ---
 
 In the [previous post](http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/) I explained the rethought design of what used to be called “class objects”: they are now more uniform with normal nested objects, have names (name may be omitted, but a default one will be used by the compiler), and we can write extensions to them.

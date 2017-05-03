@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/
+translator:
+translator_url:
 ---
 
 我们宣布KAnnotator回来了 [在十二月](http://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/) ：它可以帮助您抵御Java中的NPE [使您的Kotlin代码更好](http://blog.jetbrains.com/kotlin/using-external-annotations/) 。今天，我们很高兴地宣布IntelliJ的0.1版本的KAnnator插件。它可以从插件库中获得。<span id =“more-1005”> </span>

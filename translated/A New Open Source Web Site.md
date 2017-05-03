@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/07/a-new-open-source-web-site/
+translator:
+translator_url:
 ---
 
 我们有一个新的网站和一个新的 [域！](http://kotlinlang.org) {% raw %}

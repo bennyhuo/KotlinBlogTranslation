@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/03/m7-release-available/
+translator:
+translator_url:
 ---
 
 Kotlin M7 is here and with it some long awaited features.

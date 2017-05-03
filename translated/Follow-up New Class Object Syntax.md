@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/
+translator:
+translator_url:
 ---
 
 在里面 [上一篇文章](http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/) 我解释了以前被称为“类对象”的重新设计：它们现在与普通嵌套对象更加统一，名称（名称可以省略，但编译器将使用默认名称），我们可以写他们的延伸。

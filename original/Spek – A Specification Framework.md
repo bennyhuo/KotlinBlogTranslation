@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/02/speka-specification-framework/
+translator:
+translator_url:
 ---
 
 For a while now, a [few](http://twitter.com/orangy) [of](http://twitter.com/jonyzzz) [us](https://plus.google.com/111179551284404865949/about) have been working on a project called Spek, a framework that allows you to write executable specifications. It allows you to write specifications (i.e. tests) in a more human-readable, and what’s more important, descriptive manner, without having to resort to long test names, underscores or regular expressions.

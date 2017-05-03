@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
+translator:
+translator_url:
 ---
 
 众所周知，我们上周推出了我们的第一个公开发布： [kotlin-demo.jetbrains.com](http://kotlin-demo.jetbrains.com/) 。而当您（7K +独特访问者）正在玩乐时，我们将继续致力于Kotlin编译器，IDE和标准库。在这篇文章中，我将概述我们的计划。 <span id =“more-365”> </span> <strong> </strong>

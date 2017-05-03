@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/call-for-feedback-upcoming-changes-in-kotlin/
+translator:
+translator_url:
 ---
 
 如前所述，我们正在使用语言设计，这篇文章是即将到来的更改的主要内容+请求您的反馈。<span id =“more-2657”> </span>

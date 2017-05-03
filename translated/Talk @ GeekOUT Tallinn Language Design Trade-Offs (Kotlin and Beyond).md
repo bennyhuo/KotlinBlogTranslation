@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/talk-geekout-tallinn-language-design-trade-offs-kotlin-and-beyond/
+translator:
+translator_url:
 ---
 
 这个星期我正在说话 [GeekOUT塔林](http://geekout.ee/) 和我的同事Mikhail Vink和Sergey Karashevich星期四举行了一个15分钟的演示，告诉你JetBrains的IDE中的酷东西。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/10/kotlin-1-1-m02-is-here/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the second milestone release of Kotlin 1.1. This release brings one long-awaited new language feature, <strong>destructuring in lambdas</strong>, as well as many improvements to features introduced in 1.1-M1, including type aliases, coroutines and bound references. The new release also includes all tooling features introduced in Kotlin 1.0.4 and 1.0.5-eap-66, and is fully compatible with IntelliJ IDEA 2016.3 EAP and Android Studio 2.2.

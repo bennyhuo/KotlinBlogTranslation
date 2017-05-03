@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-1-m04-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴向您呈现即将推出的Kotlin发行版的第四个里程碑。我们正在封装版本1.1的开发，最终版本计划于2017年第一季度进行。大多数功能已经形成了体面，所以现在是尝试它的好时机，并给我们您的反馈。我们会很感激！

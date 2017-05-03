@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/03/kotlin-session-and-jetbrains-booth-at-33rd-degree-conference/
+translator:
+translator_url:
 ---
 
 JetBrains和Kotlin正在波兰华沙参加第33届学术大会</strong>。加入1,200名参加者<strong> 3月13日至15日</strong> [92次会议](http://2013.33degree.org/main/schedule) 从 [58个音箱](http://2013.33degree.org/speaker/list) 。来我们的展台，了解<strong>项目Kotlin </strong>中的新功能，以及即将发布的<strong href =“http://blogs.jetbrains.com/idea/category/eap-releases/” “target =”_ blank“title =”IntelliJ IDEA 12.1“> IntelliJ IDEA 12.1版本</a> </strong>。请务必使用JetBrains技术传播者为您的<strong>两个会话</strong>标记您的日历 [哈迪哈里里](https://twitter.com/hhariri) 。

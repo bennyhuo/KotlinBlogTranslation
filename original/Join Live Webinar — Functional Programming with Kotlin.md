@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/
+translator:
+translator_url:
 ---
 
 Join us this <strong>Thursday, October 22nd, 14:00 – 15:00 GMT</strong> (10:00 – 11:00 AM EDT) for our free webinar, [Functional Programming with Kotlin](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) with Mike Hearn

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/
+translator:
+translator_url:
 ---
 
 <strong>警告：这是愚人节的帖子</strong> [无点](http://en.wikipedia.org/wiki/Point-free_programming) 风格是现代功能编程中的一个大趋势：它允许操纵函数，而不用提及它们的参数，这使得代码简洁和组合。以下是维基百科的例子：

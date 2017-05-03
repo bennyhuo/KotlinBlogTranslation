@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/
+translator:
+translator_url:
 ---
 
 Kotlin 1.0发布以来已经差不多两个月了，现在团队正在从稳定和错误修复转变为新功能，所以现在是谈谈我们未来计划的好时机。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/01/kotlin-digest-2015/
+translator:
+translator_url:
 ---
 
 Kotlin的采用在2015年大大增加，我们特别感谢我们的早期采用者，他们不仅使用Kotlin，而且通过不同的媒介分享他们的经验。我们想强调过去一年中最引人注目的文章和视频。

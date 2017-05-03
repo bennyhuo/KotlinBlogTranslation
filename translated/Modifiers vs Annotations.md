@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/
+translator:
+translator_url:
 ---
 
 这是另一个单挑和反馈的呼吁。我们一直在讨论有关Kotlin注释语法的选项，推出实验，收集反馈。当我们现在完成语言的定义时，我们以前推迟的许多痛点就是浮出水面。我们必须作出决定，有时以防御的方式。在这篇文章中，我将概述我们所选择的选项以及我们所提供的决策。

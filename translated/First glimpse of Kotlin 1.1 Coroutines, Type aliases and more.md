@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/
+translator:
+translator_url:
 ---
 
 虽然Kotlin 1.0.X版本不断提供增量更新和工具功能，但我们正在研究Kotlin 1.1中的新语言功能。今天，我们展示了1.1的第一个预览版本，它远离Beta，但勇敢和好奇的人可以玩新的令人兴奋的事情（希望能给我们提供宝贵的反馈）。

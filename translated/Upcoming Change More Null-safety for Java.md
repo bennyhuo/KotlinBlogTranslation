@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/
+translator:
+translator_url:
 ---
 
 我们结合零安全和Java互操作的战斗已经很久了：

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-1-m03-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布即将到来的Kotlin1.1的第三个里程碑。此版本带来了新的语言功能，以及JavaScript后端，编译器和IDEA插件中的改进和修复。新版本还包括Kotlin 1.0.5中引入的所有工具功能，并与IntelliJ IDEA 2016.3 EAP和Android Studio 2.2和2.3兼容。

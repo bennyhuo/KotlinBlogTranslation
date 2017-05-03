@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/talk-geekout-tallinn-language-design-trade-offs-kotlin-and-beyond/
+translator:
+translator_url:
 ---
 
 This week I’m speaking at [GeekOUT Tallin](http://geekout.ee/) , and my colleagues Mikhail Vink and Sergey Karashevich are holding a 15-minute DEMO on Thursday, telling you about cool stuff in JetBrains’ IDEs.

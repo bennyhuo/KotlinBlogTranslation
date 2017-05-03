@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/
+translator:
+translator_url:
 ---
 
 从现在开始的两个星期内，Kotlin将是一个开源项目的一年。在这个时候，这是一个很大的努力，在社区的巨大帮助下：我们收到了 [164拉请求](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) ，这意味着每隔一天的贡献。今天我们进一步推出了一个Kotlin M5 </strong>。本博客文章涵盖了此版本中引入的更改。<span id =“more-835”> </span>

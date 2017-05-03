@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/
+translator:
+translator_url:
 ---
 
 We are happy to announce the release of Kotlin 1.0.6, the new bugfix and tooling update for Kotlin 1.0. This version brings a significant number of improvements related to the IDE plugin and Android support.

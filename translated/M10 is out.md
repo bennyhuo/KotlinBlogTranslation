@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/12/m10-is-out/
+translator:
+translator_url:
 ---
 
 在庆祝活动开始之前，我们设法发布了Kotlin的下一个里程碑，添加了<strong>动态类型</strong>等等。我们来看看M10带给我们什么。 <span id =“more-1708”> </span>

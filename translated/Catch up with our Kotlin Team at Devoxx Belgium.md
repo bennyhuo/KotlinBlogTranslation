@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/11/catch-up-with-our-kotlin-team-at-devoxx-belgium/
+translator:
+translator_url:
 ---
 
 <img alt =“Devoxx Logo”class =“alignright size-full wp-image-1359”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin /files/2013/11/devoxx_logo.jpg?resize=183%2C75&amp;ssl=1"/> JetBrains和Kotlin团队成员Svetlana Isakova和Aleksei Sedunov 11月11日至15日在售罄 [德比克斯比利时](http://www.devoxx.be/#/) 会议。我们邀请您以<strong>在我们的展位</strong>停止<strong>即兴演示</strong>，一些<strong>优质礼品</strong>，并有机会赢得免费个人许可证< / strong>。

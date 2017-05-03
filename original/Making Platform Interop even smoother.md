@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/
+translator:
+translator_url:
 ---
 
 Being 100% interoperable with the JVM, and subsequently with JavaScript, has always been among Kotlin’s top priorities. With the amount of existing code, and a rich JVM ecosystem, having the ability of interoperating and leveraging these is crucial.<span id="more-1616"></span>

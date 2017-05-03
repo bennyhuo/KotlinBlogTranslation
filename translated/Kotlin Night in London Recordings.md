@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-night-in-london-recordings/
+translator:
+translator_url:
 ---
 
 伦敦Kotlin之夜于2016年10月12日与Trifork和GOTO London 2016合作举行。我们要感谢所有花时间加入我们并让事件取得圆满成功的人。对于那些无法参加或想要重新进行会谈的人，视频录像现在可以让您欣赏。

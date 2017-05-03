@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin/
+translator:
+translator_url:
 ---
 
 我们总是说Kotlin真的很容易学习。这是！但这不仅仅是语言：学习材料也有所不同。今天我们正在朝这个方向迈出另一个重要的一步。我们很高兴地介绍Kotlin教育插件。

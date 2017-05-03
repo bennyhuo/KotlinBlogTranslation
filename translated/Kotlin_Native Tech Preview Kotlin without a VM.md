@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlinnative-tech-preview-kotlin-without-a-vm/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布将Kotlin / Native </strong>的第一个技术预览直接编译到机器代码。 Kotlin / Native编译器生成独立的可执行文件，可以在没有任何虚拟机的情况下运行。

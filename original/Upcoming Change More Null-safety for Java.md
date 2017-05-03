@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/
+translator:
+translator_url:
 ---
 
 Our battle for combining null-safety and Java interop has been a long one already:

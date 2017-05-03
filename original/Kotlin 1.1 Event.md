@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/
+translator:
+translator_url:
 ---
 
 In addition to the new features that Kotlin 1.1 brings to your projects, it is also a good reason to meet up with your local community and friends to learn about new opportunities behind the release and impact on the future of Kotlin.

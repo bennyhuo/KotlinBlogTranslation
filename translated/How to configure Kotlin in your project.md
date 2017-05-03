@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/
+translator:
+translator_url:
 ---
 
 Kotlin可以和Java自由混合。这意味着您可以轻松地将Kotlin代码添加到现有的Java项目中。所有你需要做的是创建一个新的Kotlin文件（* .kt），并告诉环境使用Kotlin。如果您使用IntelliJ IDEA，则可以自动为您提供此功能。<span id =“more-1247”> </span>

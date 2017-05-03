@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/
+translator:
+translator_url:
 ---
 
 在JetBrains，我们一直相信我们的早期访问计划的工具，让开发人员有机会在准备好后立即使用最新的功能或修复程序。我们已经遵循了与Kotlin相同的理念，当然知道用语言，一些决定可能会困扰你的生活。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/
+translator:
+translator_url:
 ---
 
 Kotlin从第一天起就具有顶级的职能和财产。它们在许多情况下非常方便：从基本实用程序到标准API的扩展。

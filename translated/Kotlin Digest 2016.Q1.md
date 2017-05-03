@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
+translator:
+translator_url:
 ---
 
 欢迎2011年第一季度的科腾林摘要。在本季度，Kotlin 1.0被发布，自然收到的文章和报道数量大幅增加。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-0-5-is-here/
+translator:
+translator_url:
 ---
 
 We’re happy to announce that we’ve just released <b>Kotlin 1.0.5</b>, which continues the series of bugfix and tooling updates for Kotlin 1.0.

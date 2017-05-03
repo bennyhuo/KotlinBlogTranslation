@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布发布Kotlin 1.0.2，这是Kotlin的第二个修补程序和工具更新。除编译器和语言错误修复外，Kotlin 1.0.2还为IDE和构建工具添加了许多主要功能。

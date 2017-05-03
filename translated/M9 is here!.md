@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/10/m9-is-here/
+translator:
+translator_url:
 ---
 
 M9已经到来，它带来了许多新功能和重要变化。我们已经 [突出显示这些](http://blog.jetbrains.com/kotlin/2014/10/m9-is-coming/) 和 [覆盖别人的细节](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) 。我们深入了解其他一些改进

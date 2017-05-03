@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布Kotlin Beta 4，向1.0的另一个步骤！我们现在主要关注基础设施和面向未​​来的变化。完整的更改列表可用 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-4583) 。更多细节如下。

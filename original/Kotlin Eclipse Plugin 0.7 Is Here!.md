@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-is-here/
+translator:
+translator_url:
 ---
 
 We are happy to present a new release of our plugin for Eclipse IDE. Along with the support for Kotlin <strong>1.0.2</strong> compiler, this update brings very important features and improvements.

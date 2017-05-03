@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/
+translator:
+translator_url:
 ---
 
 上次我写了一个新的令人兴奋的 [特征](http://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/) 在“即将到来的KotlinM3”。今天，Kotlin M3不是“即将到来”，就在这里。这篇文章概述了新的里程碑。<span id =“more-663”> </span>

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/more-deprecations-coming/
+translator:
+translator_url:
 ---
 
 There are two more items on the language cleanup list: backing-field syntax and static type assertion operator.<span id="more-2040"></span>

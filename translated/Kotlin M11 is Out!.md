@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/kotlin-m11-is-out/
+translator:
+translator_url:
 ---
 
 今天，我们发布了一个新的里程碑：Kotlin M11，带来了诸如<strong>次要构造器</strong>等久经久待的功能，第一眼就是对Kotlin的真正反映</strong>支持。 <span id =“more-1836”> </span>

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/kotlin-1-0-beta-2-is-out/
+translator:
+translator_url:
 ---
 
 我们的第一次更新 [测试版](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) 在这儿！我们正在稳定，所以它主要是错误修复和标准库的更改。

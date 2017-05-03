@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/more-deprecations-coming/
+translator:
+translator_url:
 ---
 
 语言清理列表中还有两个项目：后台字段语法和静态类型断言运算符。<span id =“more-2040”> </span>

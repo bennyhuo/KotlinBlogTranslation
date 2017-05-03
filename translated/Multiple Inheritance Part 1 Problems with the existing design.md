@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/08/multiple-inheritance-part-1-problems-with-the-existing-design/
+translator:
+translator_url:
 ---
 
 我从假期回来，现在是在会议演示文稿和文档评论中收到的反馈中指出的最大问题之一。我在谈论继承。

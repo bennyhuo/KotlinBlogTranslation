@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
+translator:
+translator_url:
 ---
 
 这是七个星期了 [Kotlin M1发行](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) ，我很高兴邀请您尝试一下Kotlin M2 </strong>的候选版本！这篇文章概述了即将到来的里程碑版本以及使用说明。

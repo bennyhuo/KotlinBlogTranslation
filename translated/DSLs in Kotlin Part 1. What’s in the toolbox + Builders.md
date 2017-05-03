@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/10/dsls-in-kotlin-part-1-whats-in-the-toolbox-builders/
+translator:
+translator_url:
 ---
 
 如果您有一个非常好的</em> API，那么现在将它叫做“内部DSL”就是时尚，因为使用这样的API的代码几乎就像一种语言中的语言的选择。 [流畅的界面](http://martinfowler.com/bliki/FluentInterface.html) 作为最受欢迎的例子之一。

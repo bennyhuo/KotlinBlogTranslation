@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/01/mce2015-kotlin-session-and-jetbrains-booth/
+translator:
+translator_url:
 ---
 
 <strong> 2月5日和6日</strong>，MCE2015在波兰华沙的<strong>文化与科学宫控制了标志性的Kinoteka电影。最初，由开发商开发的开发者大会，今年的活动将扩大到所有移动创作者 - 开发人员，设计师和技术领导者。

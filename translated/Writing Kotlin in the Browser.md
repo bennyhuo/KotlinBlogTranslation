@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/10/writing-kotlin-in-the-browser/
+translator:
+translator_url:
 ---
 
 你知道Kotlin可以定位到JavaScript和JVM吗？不要太惊讶，如果你不知道，因为我们没有给它太多的覆盖，尽管已经发货了 [成功的产品](http://blog.jetbrains.com/webide/2012/08/liveedit-plugin-features-in-detail/) 使用这种功能。但是，这是希望改变的。<span id =“more-1330”> </span>

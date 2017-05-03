@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-night-recordings/
+translator:
+translator_url:
 ---
 
 On May 17th we held an evening event at San Francisco in cooperation with Realm and Netflix. Thanks to everyone who joined us this evening! There were great talks and important announcements, and the good news is that all of them were recorded:

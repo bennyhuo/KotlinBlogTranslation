@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/
+translator:
+translator_url:
 ---
 
 我们宣布 [kapt](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 之前，Kotlin的注释处理工具，并讨论了其局限性。现在，大部分<strong>限制正在消失，</code>可以使用<code> 0.1-SNAPSHOT </code>预览版本的<code> kapt </code>更新版本。<span id =“ more-2385“> </span>

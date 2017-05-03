@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/feedback-request-limitations-on-data-classes/
+translator:
+translator_url:
 ---
 
 M13即将到来，我们计划稍后一点。这是对Kotlin未来变化的反馈请求。

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/
+translator:
+translator_url:
 ---
 
 This is another heads-up and a call for feedback. We have been discussing options regarding Kotlin’s annotation syntax for quite some time already, rolling out experiments, gathering feedback. As we are finalizing the language now, many pain points that we used to postpone are surfacing. We have to make decisions, and sometimes in a defensive way. In this post I will give an overview of the options we have and the decisions we are provisioning.

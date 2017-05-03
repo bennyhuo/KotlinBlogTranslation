@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/webinar-recording-functional-programming-with-kotlin/
+translator:
+translator_url:
 ---
 
 我们的十月二十二日网络研讨会<strong>功能编程与Kotlin </strong>的录音现已上线 [JetBrainsTV YouTube频道](https://youtu.be/AhA-Q7MOre0) 。
