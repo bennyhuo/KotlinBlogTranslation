@@ -28,7 +28,7 @@ translator_url: https://github.com/ahong222
 
 在这之前，您可以从 Java 6 开始，以任何版本的 Java 运行 Kotlin 编译器，但这从第一个 1.1.x 更新开始有变化，编译器将仅在 Java 8 或 9 下运行。为您准备迁移，编译器现在会在 Java 6 或 7 下运行时发出警告。请注意，这仅影响构建环境；**编译代码默认情况下仍然与 Java 6 兼容**，我们没有计划删除对它的支持。
 
-现在不推荐使用 `.javaClass` 扩展属性。作为替代，请使用 `:: class.java`。IDE 提供了一个 quickfix 来更新写法，单独的修改或者更新整个项目。
+现在不推荐使用 `.javaClass` 扩展属性。作为替代，请使用 `::class.java`。IDE 提供了一个 quickfix 来更新写法，单独的修改或者更新整个项目。
 
 为了减小 JavaScript 标准库的大小，我们已经将 `kotlin.dom` 和 `kotlin.dom.build` 包中的大量辅助函数注解为不推荐使用了，然后在将来的更新中删除它们。
 
