@@ -15,7 +15,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/04/announcing-anko-for-androi
 我们很高兴地宣布，我们一直致力于Android开发的图书馆，其中除了别的以外，还可以使用DSL以类型安全和动态的方式创建应用程序界面。
 ## 样品味道
 
-这是一个简单的例子，描述安科的一些可能性。想象一下，我们需要创建一个简单的注册表单，包括用户名和<注册> <code>按钮</ code>的<code> EditText </ code>。使用安科的代码是：
+这是一个简单的例子，描述安科的一些可能性。想象一下，我们需要创建一个简单的注册表单，包括用户名和<注册> <code>按钮</code>的<code> EditText </code>。使用安科的代码是：
 
 {% raw %}
 <p></p>
@@ -63,7 +63,7 @@ class MainActivity : Activity() {
 <p><img alt="Anko Designer" class="aligncenter size-full wp-image-2007" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/04/Screen-Shot-2015-04-02-at-00.33.22.png?resize=640%2C481&amp;ssl=1"/></p>
 {% endraw %}
 
-如果我们现在想添加另一个文本输入小部件，例如电子邮件，我们可能会创建另一对<code> textView（）</ code>和<code> editText（）</ code>函数调用。然而，更好的方法是将相应的DSL片段提取为新的功能：
+如果我们现在想添加另一个文本输入小部件，例如电子邮件，我们可能会创建另一对<code> textView（）</code>和<code> editText（）</code>函数调用。然而，更好的方法是将相应的DSL片段提取为新的功能：
 
 {% raw %}
 <p></p>
@@ -151,11 +151,11 @@ seekBar {
 <p></p>
 {% endraw %}
 
-具有空体的方法不再需要空的实现。另外，如果为相同的View设置<code> onProgressChanged（）</ code>和onStartTrackingTouch（）</ code>，这两个“部分定义”的监听器将被合并。
+具有空体的方法不再需要空的实现。另外，如果为相同的View设置<code> onProgressChanged（）</code>和onStartTrackingTouch（）</code>，这两个“部分定义”的监听器将被合并。
 ## 不止一个DSL
 
 安科不仅仅是一个DSL，而是一个促进Android开发在不同领域的图书馆。它有许多方法涵盖对话框，异步任务，服务，意图甚至SQLite数据库访问。
-例如，如果要启动新的<code>活动</ code>：
+例如，如果要启动新的<code>活动</code>：
 
 {% raw %}
 <p></p>
@@ -217,7 +217,7 @@ toast("Download is complete!")
 
 ### 现有代码支持
 
-你可以用Java编写你的旧类。此外，如果您仍然希望（或有）编写Kotlin活动类并由于某种原因夸大XML布局，则可以使用<code> View </ code>属性和监听器助手，这将使事情变得更容易：
+你可以用Java编写你的旧类。此外，如果您仍然希望（或有）编写Kotlin活动类并由于某种原因夸大XML布局，则可以使用<code> View </code>属性和监听器助手，这将使事情变得更容易：
 
 {% raw %}
 <p></p>
@@ -243,7 +243,7 @@ name.onClick { /* do something */ }
 
 ## 试一试！
 
-安科还处于阿尔法阶段，但是我们希望尽快发布您的反馈意见，所以请试试。我们尽可能简单地做到这一点。它全部发布在Maven Central上，如果您使用Gradle，您可以轻松地将所需的依赖项添加到<code> build.gradle </ code>文件中：
+安科还处于阿尔法阶段，但是我们希望尽快发布您的反馈意见，所以请试试。我们尽可能简单地做到这一点。它全部发布在Maven Central上，如果您使用Gradle，您可以轻松地将所需的依赖项添加到<code> build.gradle </code>文件中：
 
 {% raw %}
 <p></p>

@@ -62,7 +62,7 @@ Kotlin 1.1的最大消息是
 
 ## 弃用
 
-我们弃用了我们用于<code>％</ code>运算符的不幸的名称<code> mod </ code>，并将其替换为语法正确的＆code＆remot =例如<code> java.math.BigInteger </ code>。弃用警告和工具将引导您完成迁移过程。
+我们弃用了我们用于<code>％</code>运算符的不幸的名称<code> mod </code>，并将其替换为语法正确的＆code＆remot =例如<code> java.math.BigInteger </code>。弃用警告和工具将引导您完成迁移过程。
 ## JavaScript
 
 很简单：可以将完整的Kotlin语言编译成JavaScript。这并不意味着我们已将所有的JDK移植到浏览器中：语言和标准库不与JDK结合使用，但您可以在JS上使用Kotlin字符串，集合，序列，数组和其他核心API JVM / Android。
@@ -70,7 +70,7 @@ Kotlin 1.1的最大消息是
 我们将在Kotlin 1.2及更高版本中投入大量精力，使JavaScript工具顺利而有用。我们的目标是使Kotlin能够实现愉快的全套堆栈开发。
 ## 协调程序
 
-老实说，很难过度强调协调程序。未来已经到来，我们坚持下去：我们需要非阻塞异步API来跟上我们正在处理的数据量。我们已经通过回调地狱征服了，但是我们应该更好。我们想简单地按照自然的顺序编写代码逻辑，让编译器为我们指定不同步。这是协同程序的关键：异步/等待，生成/收益，非阻塞IO，Rx和更多的带来在<em>挂起功能的单一统一范例</ em>。这样的函数（或lambda）表示可以暂停（不阻塞任何线程）并稍后恢复的计算。
+老实说，很难过度强调协调程序。未来已经到来，我们坚持下去：我们需要非阻塞异步API来跟上我们正在处理的数据量。我们已经通过回调地狱征服了，但是我们应该更好。我们想简单地按照自然的顺序编写代码逻辑，让编译器为我们指定不同步。这是协同程序的关键：异步/等待，生成/收益，非阻塞IO，Rx和更多的带来在<em>挂起功能的单一统一范例</em>。这样的函数（或lambda）表示可以暂停（不阻塞任何线程）并稍后恢复的计算。
 
 {% raw %}
 <p></p>
@@ -99,11 +99,11 @@ future {
 * 库完全控制着暂停和恢复计算的所有方面：线程，异常和计算的其他方面是完全可定制的。
 
 我们为有趣的常见用例写了一套图书馆： [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) [阅读更多关于协程](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 这里。
-<strong>重要的注释</ strong>。凭借所带来的所有好处，Kotlin协同程序是一个相当新的设计，需要大量的战斗测试，才能确定它的100％正确和完整。这就是为什么我们会在“实验性”选择标志下发布。我们不希望语言规则发生变化，但API可能需要在Kotlin 1.2中进行一些调整。
+<strong>重要的注释</strong>。凭借所带来的所有好处，Kotlin协同程序是一个相当新的设计，需要大量的战斗测试，才能确定它的100％正确和完整。这就是为什么我们会在“实验性”选择标志下发布。我们不希望语言规则发生变化，但API可能需要在Kotlin 1.2中进行一些调整。
 
 * 命令行：-Xcoroutines = enabled
 * Gradle：kotlin.coroutines =在gradle.properties或local.properties中启用
-* Maven：<configuration> <args> <arg> -Xcoroutines = enable </ arg> </ args> </ configuration>
+* Maven：<configuration> <args> <arg> -Xcoroutines = enable </arg> </args> </configuration>
 * IDE：使用快速修复（Alt + Enter）或修改facet选项（项目结构 - >模块 - >您的模块 - >编译器 - >协程（实验））
 
 ## 标准图书馆，工具和框架
@@ -113,9 +113,9 @@ Kotlin的标准库正在更新 [许多有用的实用程序](https://kotlinlang.
 我们现在支持JSR 223 [Spring框架](https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0) 以及类型安全的DSL和其他事情。
 ## 如何尝试
 
-与其他预发行版本一样，我们为Kotlin 1.1-Beta提供了<strong>无后向兼容性保证</ strong>。此外，当我们达到最终RC时，由发行版本生成的所有二进制文件将被编译器禁止：您需要重新编译1.1-M0x和Beta编译的所有内容（1.0.x中的所有代码都是完美的罚款没有重新编译）。
-<strong>在Maven / Gradle中：</ strong>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用<code> 1.1.0-beta-17 </ code>作为编译器和标准库的版本号。
-<strong>在IntelliJ IDEA中：</ strong>转到<em>工具→Kotlin→配置Kotlin插件更新</ em>，然后在<em>更新频道</ em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</ em>。
+与其他预发行版本一样，我们为Kotlin 1.1-Beta提供了<strong>无后向兼容性保证</strong>。此外，当我们达到最终RC时，由发行版本生成的所有二进制文件将被编译器禁止：您需要重新编译1.1-M0x和Beta编译的所有内容（1.0.x中的所有代码都是完美的罚款没有重新编译）。
+<strong>在Maven / Gradle中：</strong>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用<code> 1.1.0-beta-17 </code>作为编译器和标准库的版本号。
+<strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
 命令行编译器可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta) 。
-<strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </ strong>。使用右下角的下拉列表将编译器版本更改为1.1-Beta。
+<strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表将编译器版本更改为1.1-Beta。
 让我们来吧！

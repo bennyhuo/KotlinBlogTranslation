@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/
 ---
 
 除了Kotlin 1.1为您的项目带来的新功能之外，与您的当地社区和朋友会面，了解Kotlin未来发布的新机会和影响，这也是一个很好的理由。
-您可以在3月23日<strong> </ strong>上与JetBrains团队及社区一起组织Kotlin 1.1活动。我们将举行两场现场直播会议，以适应不同的时区。您可以在CEL（上午9点和11点PDT）</ strong>下午5点或晚上7点加入直播。 [让我们知道你的活动](https://docs.google.com/forms/d/e/1FAIpQLSf6iXcrIpaNIqeeUJI2L6pntS5yy_iI01PbrO9gTMmX0kg5Lw/viewform) 所以我们可以在博客上公布。
+您可以在3月23日<strong> </strong>上与JetBrains团队及社区一起组织Kotlin 1.1活动。我们将举行两场现场直播会议，以适应不同的时区。您可以在CEL（上午9点和11点PDT）</strong>下午5点或晚上7点加入直播。 [让我们知道你的活动](https://docs.google.com/forms/d/e/1FAIpQLSf6iXcrIpaNIqeeUJI2L6pntS5yy_iI01PbrO9gTMmX0kg5Lw/viewform) 所以我们可以在博客上公布。
 
 {% raw %}
 <p><img alt="1600" class="size-full wp-image-4739 aligncenter" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2017/03/1600.png?resize=640%2C320&amp;ssl=1"/></p>

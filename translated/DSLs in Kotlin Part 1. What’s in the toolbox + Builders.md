@@ -12,9 +12,9 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/10/dsls-in-kotlin-part-1-whats-in-the-toolbox-builders/
 ---
 
-如果您有一个非常好的</ em> API，那么现在将它叫做“内部DSL”就是时尚，因为使用这样的API的代码几乎就像一种语言中的语言的选择。 [流畅的界面](http://martinfowler.com/bliki/FluentInterface.html) 作为最受欢迎的例子之一。
+如果您有一个非常好的</em> API，那么现在将它叫做“内部DSL”就是时尚，因为使用这样的API的代码几乎就像一种语言中的语言的选择。 [流畅的界面](http://martinfowler.com/bliki/FluentInterface.html) 作为最受欢迎的例子之一。
 许多现代语言为创建内部DSLs提供了一些先进的方法，而Kotlin在这里也不例外。在这篇文章中，我将简要列出对此有用的功能
-<span id =“more-181”> </ span>
+<span id =“more-181”> </span>
 我们开始吧 [扩展功能](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) 。我们都熟悉Java的实用工具类，如java.util.Collections等。这些类是一组静态方法的简单容器，这些静态方法旨在与这样的类一起使用。所以我们最终编写如下代码：
 
 {% raw %}
@@ -30,9 +30,9 @@ int index = Collections.binarySearch(list, x);
 <p></p>
 {% endraw %}
 
-这看起来不是很漂亮。静态导入使它更漂亮，但它们并不能解决一个重要的可发现性问题</ em>：我们都使用IDE编写完整的代码完成功能来浏览API：
+这看起来不是很漂亮。静态导入使它更漂亮，但它们并不能解决一个重要的可发现性问题</em>：我们都使用IDE编写完整的代码完成功能来浏览API：
 <img alt =“IDEA中的代码完成”class =“alignnone size-full wp-image-220”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com /kotlin/files/2011/09/Screen-shot-2011-10-04-at-15.42.18-.png?resize=582%2C143&amp;ssl=1“/>
-发现这些效用函数也不是很酷吗？因此，即使foo（）不是a的类的成员，所以我们以“a.foo（）”的形式调用<em>扩展函数</ em>。例如，集合中的这些效用函数可以定义为扩展函数，如下所示：
+发现这些效用函数也不是很酷吗？因此，即使foo（）不是a的类的成员，所以我们以“a.foo（）”的形式调用<em>扩展函数</em>。例如，集合中的这些效用函数可以定义为扩展函数，如下所示：
 
 {% raw %}
 <p></p>
@@ -199,7 +199,7 @@ lock (myLock) {
 <p></p>
 {% endraw %}
 
-这是一个内置的构造，如Java的<strong>同步</ strong>部分？不，这是一个函数调用。它使用非常方便的约定：您可以将最后一个函数文字</ em>传递到您的参数列表周围的括号之外。所以这个电话与“lock（myLock，{...}”）相同，但看起来更漂亮。
+这是一个内置的构造，如Java的<strong>同步</strong>部分？不，这是一个函数调用。它使用非常方便的约定：您可以将最后一个函数文字</em>传递到您的参数列表周围的括号之外。所以这个电话与“lock（myLock，{...}”）相同，但看起来更漂亮。
 有关这个例子的更多信息可以找到 [这里](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Inlinefunctions) 。
 还有一个很好的约会，使得非常接近LINQ的东西可能：
 

@@ -21,7 +21,7 @@ IntelliJ IDEA 11.1最近发布，我们很高兴地宣布Kotlin IDE插件的里�
 * 或从这里下载压缩插件。
 
 您可以随时从我们的夜晚下载Kotlin的每夜建筑物 [构建服务器](http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&tab=artifacts&buildTypeId=bt345) 或自己建立 [来源](https://github.com/jetbrains/kotlin) 。
-现在我们简要介绍一下新的和值得注意的内容。请参阅 [这个博文](http://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/) 对于以前实现的功能。<span id =“more-440”> </ span>
+现在我们简要介绍一下新的和值得注意的内容。请参阅 [这个博文](http://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/) 对于以前实现的功能。<span id =“more-440”> </span>
 ## 小事情很重要
 
 首先，我们做了很多bug修复，改进和其他重要的事情，很难演示。查看提交历史记录 [github](https://github.com/JetBrains/kotlin/commits/) 和封闭的问题 [YouTrack](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-02-14+..+2012-03-31) 。
@@ -58,7 +58,7 @@ fun main(args : Array<String>) {
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png"><img alt="" class="alignnone size-full wp-image-485" data-recalc-dims="1" sizes="(max-width: 501px) 100vw, 501px" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?resize=501%2C144&amp;ssl=1" srcset="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?resize=300%2C86&amp;ssl=1 300w, https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?w=501&amp;ssl=1 501w"/></a></p>
 {% endraw %}
 
-并在那里查看<strong> doc评论</ strong>：
+并在那里查看<strong> doc评论</strong>：
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png"><img alt="" class="alignnone size-full wp-image-486" data-recalc-dims="1" sizes="(max-width: 476px) 100vw, 476px" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?resize=476%2C297&amp;ssl=1" srcset="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?resize=300%2C187&amp;ssl=1 300w, https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?w=476&amp;ssl=1 476w"/></a></p>

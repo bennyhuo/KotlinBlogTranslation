@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/
 ---
 
-从现在开始的两个星期内，Kotlin将是一个开源项目的一年。在这个时候，这是一个很大的努力，在社区的巨大帮助下：我们收到了 [164拉请求](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) ，这意味着每隔一天的贡献。今天我们进一步推出了一个Kotlin M5 </ strong>。本博客文章涵盖了此版本中引入的更改。<span id =“more-835”> </ span>
+从现在开始的两个星期内，Kotlin将是一个开源项目的一年。在这个时候，这是一个很大的努力，在社区的巨大帮助下：我们收到了 [164拉请求](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) ，这意味着每隔一天的贡献。今天我们进一步推出了一个Kotlin M5 </strong>。本博客文章涵盖了此版本中引入的更改。<span id =“more-835”> </span>
 # 概述
 
 M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息时间），但是我们已经摆脱了 [144个问题](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-12-11+..+2013-02-04) 在跟踪器中。
@@ -28,10 +28,10 @@ M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息
 
 在旧版本的Kotlin中，每个包含顶级函数或声明的属性的包都被编译为一个名为“namespace”的类，其中顶级声明由静态方法表示。当您在Java中使用了多个这些“命名空间”类时，您遇到了名称冲突：您不能将两个具有相同名称的类导入同一个编译单元。搭配Kotlin M5包 [课程以相应的软件包命名](http://confluence.jetbrains.com/display/Kotlin/Java+interoperability#Javainteroperability-Packagelevelfunctions) ，这给了他们不同的名字，并解决了这个问题。
 命名约定如下：package“org.example”获取一个类“org.example.ExamplePackage”。即，我们采用简单的包名称，将其大小写，附加“Package”，并将该类放入包中。到目前为止，它的效果很好。
-注意：由于此更改，您旧版本的<strong> kotlin-runtime.jar </ strong>将无法再工作。编译器将抱怨“不兼容的ABI版本”，IDE将提出用新的运行时jar替换旧的运行时jar。
+注意：由于此更改，您旧版本的<strong> kotlin-runtime.jar </strong>将无法再工作。编译器将抱怨“不兼容的ABI版本”，IDE将提出用新的运行时jar替换旧的运行时jar。
 # 内部类
 
-内部类</ em>是一个非静态嵌套类，即它包含对外部实例的引用。在Java中，嵌套类默认是内部的，如果不想对外部引用，那么可以使你的类<strong> static </ strong>。有时它会导致内存泄漏，当有人持有对内部类的实例的引用，而不知道它也包含一个外部实例。
+内部类</em>是一个非静态嵌套类，即它包含对外部实例的引用。在Java中，嵌套类默认是内部的，如果不想对外部引用，那么可以使你的类<strong> static </strong>。有时它会导致内存泄漏，当有人持有对内部类的实例的引用，而不知道它也包含一个外部实例。
 自M5以来，Kotlin想要你 [明确标记内部类](http://confluence.jetbrains.com/display/Kotlin/Nested+classes) ，默认情况下嵌套类为“static”。这可能会破坏您现有的代码，在IDE中有一个方便的快速解决方案（只需按下Alt + Enter即可）。
 
 {% raw %}
@@ -41,7 +41,7 @@ M5是一个短暂的里程碑（你应该从这个术语中减去新年的休息
 # Java泛型和可空性
 
 泛型是棘手的，它们与可空类型的组合更复杂。在Java中，一切都是可以空的，例如，考虑一个Java方法foo（ArrayList <String>），Kotlin（在M5之前）用于将它看作是ArrayList <String？>，即集合可以是null，其元素可能是也是。这是我们可以做的最安全的事情，但是它被证明是非常不方便的：如果你在Kotlin中有一个ArrayList <String>，你不能传递给foo（）：ArrayList在它的通用参数中是不变的，因此ArrayList < String>不是ArrayList <String？>的子类型。即使使用KAnnotator，也会造成很大的痛苦。
-所以我们决定更改通用参数类型</ em>的默认策略，并加载ArrayList <String>？在上述情况下。
+所以我们决定更改通用参数类型</em>的默认策略，并加载ArrayList <String>？在上述情况下。
 此更改可能会破坏现有的一些代码。大部分可以通过删除不需要的问号直接固定。如果你想要旧的类型，你可以 [添加一个外部注释](http://blog.jetbrains.com/kotlin/using-external-annotations/) 到你的Java定义。
 但安全呢？现在Java代码可能会给你一个空值的集合而不是字符串，而你的Kotlin代码将会失败。这可能会发生，但是我们使它失败：Kotlin检查从Java接收到的数据，并提前失败，并出现如下详细的错误消息：
 
@@ -141,8 +141,8 @@ class Bean(val data: Integer = 0)
 <p></p>
 {% endraw %}
 
-现在，构造函数更加方便：在生成的字节代码中，此类将获得默认构造函数</ em>，即不使用参数（使用默认值）的构造函数。这种情况在使用Java框架（如JAXB）时出现了很多，所以现在Kotlin更加Java友好。
+现在，构造函数更加方便：在生成的字节代码中，此类将获得默认构造函数</em>，即不使用参数（使用默认值）的构造函数。这种情况在使用Java框架（如JAXB）时出现了很多，所以现在Kotlin更加Java友好。
 # 结论
 
 你可以从下载Kotlin M5 [插件库](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) 。这个需要 [IntelliJ IDEA 12](http://www.jetbrains.com/idea/) （推荐使用最近发布的12.0.3）。
-<strong>有一个很好的Kolin！</ strong>
+<strong>有一个很好的Kolin！</strong>

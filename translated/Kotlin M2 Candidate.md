@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
 ---
 
-这是七个星期了 [Kotlin M1发行](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) ，我很高兴邀请您尝试一下Kotlin M2 </ strong>的候选版本！这篇文章概述了即将到来的里程碑版本以及使用说明。
+这是七个星期了 [Kotlin M1发行](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) ，我很高兴邀请您尝试一下Kotlin M2 </strong>的候选版本！这篇文章概述了即将到来的里程碑版本以及使用说明。
 ## 谢谢你，M1！
 
 我们的M1建设做得相当不错：有了 [800下载](http://plugins.intellij.net/plugin/?id=6954) ，并给我们带来了广泛的反馈 [论坛](http://devnet.jetbrains.com/community/kotlin) 和 [问题追踪器](http://youtrack.jetbrains.net/issues/KT) 。
@@ -36,12 +36,12 @@ source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
 和往常一样 [修复了很多错误](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-04-12+..+2012-06-07) 。我想指出，我们正在研究IDE的性能。在M2方面有所改善，并将在下一个里程碑上达到真正的速度。
 ## 语言特点
 
-现在Kotlin尊重<strong>可见性修饰符</ strong>。我们有四个：
+现在Kotlin尊重<strong>可见性修饰符</strong>。我们有四个：
 
 * 私人，保护，公开 - 像往常一样，
 * 内部 - 在模块内可见（这不仅仅是一个包）。
 
-您现在可以将<strong>数组值传递给vararg函数</ strong>：
+您现在可以将<strong>数组值传递给vararg函数</strong>：
 
 {% raw %}
 <p></p>
@@ -62,7 +62,7 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-<strong>传播</ strong>操作符将“数组”转换为变量列表。与Java不同，这并不表示任何丑角。
+<strong>传播</strong>操作符将“数组”转换为变量列表。与Java不同，这并不表示任何丑角。
 稍后会有更多的好东西。
 ## IDE中的JavaScript支持
 

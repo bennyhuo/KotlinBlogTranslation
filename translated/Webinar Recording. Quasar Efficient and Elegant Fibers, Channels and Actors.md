@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/webinar-recording-quasar-efficient-and-elegant-fibers-channels-and-actors/
 ---
 
-我们的9月16日网络研讨会纪录片：高效优雅的光纤，频道和演员</ strong>现在可以在 [JetBrainsTV YouTube频道](https://youtu.be/Nmob2MB2Qo8) 。
+我们的9月16日网络研讨会纪录片：高效优雅的光纤，频道和演员</strong>现在可以在 [JetBrainsTV YouTube频道](https://youtu.be/Nmob2MB2Qo8) 。
 在本次网络研讨会中，Fabio Tudone展示了如何使用Quasar来创建高度并发的软件。他涵盖了Kotlin语法的基础知识，并展示了Quasar如何使用Kotlin的优势来提供简洁明了的API。
 演示项目可用 [GitHub](https://github.com/circlespainter/quasar-kotlin-jetbrains-webinar/releases) 。
 视频包括跟随的时间戳 [议程公布](http://blog.jetbrains.com/kotlin/2015/09/join-live-webinar-quasar-and-kotlin/) ：
@@ -34,4 +34,4 @@ source_url: https://blog.jetbrains.com/kotlin/2015/09/webinar-recording-quasar-e
 关于主持人：
 感谢所有与会者的问题！如果还有一些，请联系法比奥或我们的团队。
 欢迎您提出未来网络研讨会的主题。
-我们来吧kotlin！</ em>
+我们来吧kotlin！</em>

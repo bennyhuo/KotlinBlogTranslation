@@ -27,11 +27,11 @@ source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-night-in-london/
 {% endraw %}
 
 有关会谈的详细信息，请查看 [活动页面](https://info.jetbrains.com/Kotlin-Night-London.html) 。
-17:30  -  18:00  -  <strong>注册和欢迎</ strong>
-18:00  -  18:45  -  <strong>我喜欢Kotlin的10件事情。 </ strong>格雷厄姆·塔克利（Graham Tackley） Kaleida </ em>
-18:45  -  19:30  -  <strong>表达Kotlin。 </ strong> </ em> Nat Pryce和Duncan McGregor，Springer Nature </ em>
-19:30  -  20:00  -  <strong>零食和饮料</ strong>
-20:00  -  20:45  -  <strong>使用密封类构建Concursus API。 Dominic Fox，OpenCredo </ em> </ strong>
+17:30  -  18:00  -  <strong>注册和欢迎</strong>
+18:00  -  18:45  -  <strong>我喜欢Kotlin的10件事情。 </strong>格雷厄姆·塔克利（Graham Tackley） Kaleida </em>
+18:45  -  19:30  -  <strong>表达Kotlin。 </strong> </em> Nat Pryce和Duncan McGregor，Springer Nature </em>
+19:30  -  20:00  -  <strong>零食和饮料</strong>
+20:00  -  20:45  -  <strong>使用密封类构建Concursus API。 Dominic Fox，OpenCredo </em> </strong>
 
 {% raw %}
 <p> </p>

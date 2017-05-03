@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/
 ---
 
-自从我上次在Kotlin M2上博客以来已经有一段时间了。现在，炎热的夏天已经过去了，而<strong> M3 </ strong>将很快出局。在这篇文章中，我描述了M3中增加的两个小功能，使我们的生活更轻松，并将导致语言的简化。
+自从我上次在Kotlin M2上博客以来已经有一段时间了。现在，炎热的夏天已经过去了，而<strong> M3 </strong>将很快出局。在这篇文章中，我描述了M3中增加的两个小功能，使我们的生活更轻松，并将导致语言的简化。
 ## 你如何穿越地图？
 
 假设你有一个这样的地图：
@@ -29,7 +29,7 @@ val counts: Map<User, Int> = database.howManyDocumentsEachUserHas()
 <p></p>
 {% endraw %}
 
-你做什么来遍历它并处理每个条目？ <span id =“more-628”> </ span>可能会想到以下几点：
+你做什么来遍历它并处理每个条目？ <span id =“more-628”> </span>可能会想到以下几点：
 
 {% raw %}
 <p></p>
@@ -86,13 +86,13 @@ for ((user, count) in counts) {
 <p></p>
 {% endraw %}
 
-看起来像我们想要的，但是<strong>我们该怎么做？</ strong>
+看起来像我们想要的，但是<strong>我们该怎么做？</strong>
 ## 配对对象
 
-要迭代一些东西，我们必须提供一个iterator（）函数。由于地图没有一个，它将是一个扩展功能。应该怎么回事？一个选项将是对（例如Tuple2的对象）的迭代器。明显的缺点是需要为地图中的每个条目<strong>创建一个新对象</ strong>。 <strong>我们可以做得更好吗？</ strong>
+要迭代一些东西，我们必须提供一个iterator（）函数。由于地图没有一个，它将是一个扩展功能。应该怎么回事？一个选项将是对（例如Tuple2的对象）的迭代器。明显的缺点是需要为地图中的每个条目<strong>创建一个新对象</strong>。 <strong>我们可以做得更好吗？</strong>
 ## Kotlin的多重声明
 
-Kotlin M3引入了一个我们称之为<strong>多声明</ strong>的新概念。你可以写这样的东西：
+Kotlin M3引入了一个我们称之为<strong>多声明</strong>的新概念。你可以写这样的东西：
 
 {% raw %}
 <p></p>
@@ -138,8 +138,8 @@ for ((a, b) in collection) { ... }
 <p></p>
 {% endraw %}
 
-变量a和b获取由集合元素调用的component1（）和component2（）返回的值。不用说，<strong>这些功能可以是扩展名</ strong>。
-<strong>注意</ strong>：即将到来的Kotlin M3将提供多种声明，目前您可以使用我们的夜间版本来尝试。
+变量a和b获取由集合元素调用的component1（）和component2（）返回的值。不用说，<strong>这些功能可以是扩展名</strong>。
+<strong>注意</strong>：即将到来的Kotlin M3将提供多种声明，目前您可以使用我们的夜间版本来尝试。
 ## 回到地图
 
 现在，让我们回到地图的例子。现在很容易：我们可以简单地为Map.Entry提供组件功能，上面的例子将会起作用。
@@ -173,7 +173,7 @@ class User(val name: String, val age: Int)
 <p></p>
 {% endraw %}
 
-但是经常我们需要一些更多的代码：一个明显的equals（）/ hashCode（）对，一个toString（）和现在的组件函数。我们有很多支持的请求，现在Kotlin编译器支持的<strong>数据</ strong>注释：
+但是经常我们需要一些更多的代码：一个明显的equals（）/ hashCode（）对，一个toString（）和现在的组件函数。我们有很多支持的请求，现在Kotlin编译器支持的<strong>数据</strong>注释：
 
 {% raw %}
 <p></p>
@@ -187,10 +187,10 @@ data class User(val name: String, val age: Int)
 <p></p>
 {% endraw %}
 
-此类获取<strong>组件函数</ strong>，在主构造函数中声明的每个属性一个<strong>自动生成</ strong>（这已经实现），对于数据通用的所有其他好处都是相同的： strong> toString（）</ strong>，<strong> equals（）</ strong>和<strong> hashCode（）</ strong>（即将在那里）。
+此类获取<strong>组件函数</strong>，在主构造函数中声明的每个属性一个<strong>自动生成</strong>（这已经实现），对于数据通用的所有其他好处都是相同的： strong> toString（）</strong>，<strong> equals（）</strong>和<strong> hashCode（）</strong>（即将在那里）。
 ## 多个返回值
 
-如何从函数返回多个东西？有些人认为<strong>元组</ strong>提供了一个很好的方法，但是与Map.Entry相同的问题：tuple组件没有名称，所以调用站点被空白“_1”和“_2”或非常相似的东西。因此，使用数据类来处理多个回报似乎更好：
+如何从函数返回多个东西？有些人认为<strong>元组</strong>提供了一个很好的方法，但是与Map.Entry相同的问题：tuple组件没有名称，所以调用站点被空白“_1”和“_2”或非常相似的东西。因此，使用数据类来处理多个回报似乎更好：
 
 {% raw %}
 <p></p>
@@ -220,8 +220,8 @@ fun test() {
 {% endraw %}
 
 无论我们是否决定使用多声明，名称都不会丢失：它们在数据类中声明。
-有些人抱怨需要提供返回的实体的名称，但在许多情况下，很高兴认识到这件事情</ em> </ strong> ...
+有些人抱怨需要提供返回的实体的名称，但在许多情况下，很高兴认识到这件事情</em> </strong> ...
 ## 结论
 
-我们讨论了在<strong> Kotlin M3 </ strong>中引入的新功能。 <strong>多声明</ strong>允许短时间绑定多个名称，例如，以不错的方式遍历地图条目，而不需要创建不需要的对象。 <strong>数据类</ strong>可以使用简单处理数据但附带所有必要功能的类的一行定义。
-<strong>您的反馈非常受欢迎</ strong>，像往常一样。更多关于即将到来的M3和我们未来计划中出现的新内容，敬请期待下周。
+我们讨论了在<strong> Kotlin M3 </strong>中引入的新功能。 <strong>多声明</strong>允许短时间绑定多个名称，例如，以不错的方式遍历地图条目，而不需要创建不需要的对象。 <strong>数据类</strong>可以使用简单处理数据但附带所有必要功能的类的一行定义。
+<strong>您的反馈非常受欢迎</strong>，像往常一样。更多关于即将到来的M3和我们未来计划中出现的新内容，敬请期待下周。

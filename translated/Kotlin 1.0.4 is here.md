@@ -12,12 +12,12 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-1-0-4-is-here/
 ---
 
-我们很高兴地宣布发布Kotlin版本<b> 1.0.4 </ b>的新错误修复和工具更新。该版本带来了与IDE和构建工具相关的许多改进，以及JavaScript支持。
+我们很高兴地宣布发布Kotlin版本<b> 1.0.4 </b>的新错误修复和工具更新。该版本带来了与IDE和构建工具相关的许多改进，以及JavaScript支持。
 我们再次感谢我们的外部贡献者在本版本中实现了一些功能， [基拉里·拉赫曼](https://github.com/cypressious) 和 [Yoshinori Isogai](https://github.com/shiraji) ，以及所有尝试EAP构建1.0.4的用户，并向我们发送反馈。
 您可以在其中找到修复和改进的完整列表 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.4/ChangeLog.md) 。有些更改值得特别提及：
 ### 语言变化：在try / catch中赋值'val'
 
-在1.0版之前的Kotlin版本中，您可以在<code> try </ code>和<code> catch </ code>分支中初始化相同的<code> val </ code> catch </ code>语句。例如，允许以下代码：
+在1.0版之前的Kotlin版本中，您可以在<code> try </code>和<code> catch </code>分支中初始化相同的<code> val </code> catch </code>语句。例如，允许以下代码：
 
 {% raw %}
 <p></p>
@@ -38,8 +38,8 @@ catch(e: Exception) {
 <p></p>
 {% endraw %}
 
-实际上，最后一个变量可以被分配两次，并且可以观察到两个不同的值（例如，如果<code> try </ code>语句中的值在lambda中被捕获）。在Java中，不允许使用等效代码。
-为了保持一致的语义，在<code> try </ code>和<code> catch </ code>分支<b>中分配相同的<code> val </ code>的代码成为警告</ b> Kotlin 1.0.4并将在版本1.0.5中<b>成为错误</ b>。在大多数情况下，可以通过将代码转换为表达式来轻松修复代码，IDE将<b>提供一个quickfix </ b>来自动转换此代码。上述示例将转换为：
+实际上，最后一个变量可以被分配两次，并且可以观察到两个不同的值（例如，如果<code> try </code>语句中的值在lambda中被捕获）。在Java中，不允许使用等效代码。
+为了保持一致的语义，在<code> try </code>和<code> catch </code>分支<b>中分配相同的<code> val </code>的代码成为警告</b> Kotlin 1.0.4并将在版本1.0.5中<b>成为错误</b>。在大多数情况下，可以通过将代码转换为表达式来轻松修复代码，IDE将<b>提供一个quickfix </b>来自动转换此代码。上述示例将转换为：
 
 {% raw %}
 <p></p>
@@ -67,8 +67,8 @@ catch(e: Exception) {
 ### 新实验注释处理
 
 Kotlin 1.0.4包含了一个新的注解处理API的实验实现。要启用它，请将以下内容添加到您的build.gradle中：
-<code>应用插件：'kotlin-kapt'</ code>
-您还需要<b>删除</ b>启用旧注释处理的代码段：
+<code>应用插件：'kotlin-kapt'</code>
+您还需要<b>删除</b>启用旧注释处理的代码段：
 
 {% raw %}
 <p></p>
@@ -85,11 +85,11 @@ kapt {
 <p></p>
 {% endraw %}
 
-新的注解处理仍然存在已知问题，可能与所有注释处理器不兼容。只有当您遇到缺省的<code> kapt </ code>注解处理实现问题时，才应启用它。
+新的注解处理仍然存在已知问题，可能与所有注释处理器不兼容。只有当您遇到缺省的<code> kapt </code>注解处理实现问题时，才应启用它。
 ### JavaScript后端改进
 
 JavaScript后端现在可以将代码编译为与AMD，CommonJS和UMD模块系统兼容的模块。看到 [文件](http://kotlinlang.org/docs/reference/js-modules.html) 更多细节。
-此外，现在支持有限形式的反射：您可以使用<code> jsClass </ code>属性来访问任何对象的运行时类，并且<code> jsClass＆lt; TypeName＆gt;（）</ code>以获取特定类的运行时表示。这是一个更完整的例子：
+此外，现在支持有限形式的反射：您可以使用<code> jsClass </code>属性来访问任何对象的运行时类，并且<code> jsClass＆lt; TypeName＆gt;（）</code>以获取特定类的运行时表示。这是一个更完整的例子：
 
 {% raw %}
 <p></p>

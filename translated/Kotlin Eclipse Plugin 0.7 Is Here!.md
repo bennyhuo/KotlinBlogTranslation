@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-is-here/
 ---
 
-我们很高兴为Eclipse IDE提供一个新版本的插件。除了支持Kotlin <strong> 1.0.2 </ strong>编译器，此更新带来非常重要的功能和改进。
+我们很高兴为Eclipse IDE提供一个新版本的插件。除了支持Kotlin <strong> 1.0.2 </strong>编译器，此更新带来非常重要的功能和改进。
 
 {% raw %}
 <p><span id="more-3901"></span></p>
@@ -25,7 +25,7 @@ source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-
 {% endraw %}
 
 新线自动缩进也从这个代码重用中受益，现在显示出更加可预测和聪明的行为。
-可以添加缺少的类，从0.1.0版本逐个导入一个快速修复，现在我们通过引入<em>组织导入</ em>功能进行了改进。它将清理未使用的导入，为文件中使用的类添加缺少的导入，并使用它们。
+可以添加缺少的类，从0.1.0版本逐个导入一个快速修复，现在我们通过引入<em>组织导入</em>功能进行了改进。它将清理未使用的导入，为文件中使用的类添加缺少的导入，并使用它们。
 
 {% raw %}
 <p><img class="size-full" onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/organize.png';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/organize.gif';" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/organize.png" width="800"/></p>

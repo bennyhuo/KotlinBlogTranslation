@@ -33,7 +33,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/
 ### Late-init属性
 
 使用Kotlin将框架注入到Java字段（即依赖注入，Mocking，序列化和其他框架）中的最大问题之一是曾经不具有在构造函数中未初始化的非空类型的属性。
-现在，我们介​​绍<code> lateinit </ code>属性：
+现在，我们介​​绍<code> lateinit </code>属性：
 
 {% raw %}
 <p></p>
@@ -53,12 +53,12 @@ class Example {
 <p></p>
 {% endraw %}
 
-<code> foo </ code>和<code> bar </ code>都没有初始化器，但同时声明非空类型。如果我们在初始化之前尝试读取它们，将抛出异常，但是只要它们被DI框架（Guice，Dagger或Spring）初始化，它们就可以作为普通属性读取。
-这样的属性也可以用于其他用例（如JUnit <code> setUp </ code>初始化）。请注意，<code> val </ code>可以被标记为<code> lateinit </ code>以及<code> var </ code>。不同于<code> var </ code>，它们不能在代码中自由分配，但框架可以将值注入到无障碍中，因为底层JVM字段未标记为<code> final </ code>。
+<code> foo </code>和<code> bar </code>都没有初始化器，但同时声明非空类型。如果我们在初始化之前尝试读取它们，将抛出异常，但是只要它们被DI框架（Guice，Dagger或Spring）初始化，它们就可以作为普通属性读取。
+这样的属性也可以用于其他用例（如JUnit <code> setUp </code>初始化）。请注意，<code> val </code>可以被标记为<code> lateinit </code>以及<code> var </code>。不同于<code> var </code>，它们不能在代码中自由分配，但框架可以将值注入到无障碍中，因为底层JVM字段未标记为<code> final </code>。
 看到更多的 [语言文档](http://kotlinlang.org/docs/reference/properties.html#late-initialized-properties) 。
 ### 密封课程
 
-很多人问Kotlin是否支持 [代数数据类型（ADT）](https://en.wikipedia.org/wiki/Algebraic_data_type) 。答案一直是：“是的，ADT可以表示为Kotlin中的类，当</ code>与模式匹配实际上一样好时，可以使用<code>。现在我们已经添加了一些更安全的类型：使用<code>密封的</ code>类，我们可以确保在<code>中列举</ code>时所有的情况都是：
+很多人问Kotlin是否支持 [代数数据类型（ADT）](https://en.wikipedia.org/wiki/Algebraic_data_type) 。答案一直是：“是的，ADT可以表示为Kotlin中的类，当</code>与模式匹配实际上一样好时，可以使用<code>。现在我们已经添加了一些更安全的类型：使用<code>密封的</code>类，我们可以确保在<code>中列举</code>时所有的情况都是：
 
 {% raw %}
 <p></p>
@@ -87,13 +87,13 @@ fun Pet.saySomething(): String {
 <p></p>
 {% endraw %}
 
-请注意，上述示例中不需要<code> else </ code>：因为<code> Pet </ code>是一个密封类，编译器知道除<code> Dog < / code>和<code> Cat </ code> </ em>。所以我们可以确保所有的情况都被检查，并且不需要<code> else </ code>。顺便说一下，如果你忘记覆盖某些情况，编译器会报告一个错误，并提醒你这样做，或者诉诸<code> else </ code>。
+请注意，上述示例中不需要<code> else </code>：因为<code> Pet </code>是一个密封类，编译器知道除<code> Dog < / code>和<code> Cat </code> </em>。所以我们可以确保所有的情况都被检查，并且不需要<code> else </code>。顺便说一下，如果你忘记覆盖某些情况，编译器会报告一个错误，并提醒你这样做，或者诉诸<code> else </code>。
 现在只有嵌入到密封类中的类可以扩展它，但是我们稍后会放宽这个限制，并允许在同一个源文件中的子类。
 有关详细信息，请参阅 [文件](http://kotlinlang.org/docs/reference/classes.html#sealed-classes) 。
 ### 注释需要“@”
 
-修饰符和注释已经在语法上分离（参见 [博客文章](http://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/) ）在M13。我们现在需要一个<code> @ </ code>来注释，所有注释类都应该以大写字母开头命名（这使Java具有更好的统一性）。
-因此，重命名诸如<code> @Throws </ code>或<code> @Volatile </ code>的库注释。我们还将<code> @platformName </ code>重命名为<code> @JvmName </ code>和<code> @platformStatic </ code>到<code> @JvmStatic </ code>。
+修饰符和注释已经在语法上分离（参见 [博客文章](http://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/) ）在M13。我们现在需要一个<code> @ </code>来注释，所有注释类都应该以大写字母开头命名（这使Java具有更好的统一性）。
+因此，重命名诸如<code> @Throws </code>或<code> @Volatile </code>的库注释。我们还将<code> @platformName </code>重命名为<code> @JvmName </code>和<code> @platformStatic </code>到<code> @JvmStatic </code>。
 一些以前的注释已经成为修饰符：
 
 * 数据
@@ -139,7 +139,7 @@ class Example(
 <p></p>
 {% endraw %}
 
-<strong>注意：这是一个突破性的变化</ strong>。在M13之前，当我们注释主要构造函数的参数时，在它们存储的参数和字段上注释<strong>都是</ strong>。现在它们只写在以下一个（第一个适用的）之一：参数，属性，领域。即如果注释适用于字段和参数，则只会在参数上写入。这在使用Jackson时会出现一些问题，但有一个简单的解决方法：使用特殊的 [杰克逊模块为Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) 。而旧的方式没有一个。
+<strong>注意：这是一个突破性的变化</strong>。在M13之前，当我们注释主要构造函数的参数时，在它们存储的参数和字段上注释<strong>都是</strong>。现在它们只写在以下一个（第一个适用的）之一：参数，属性，领域。即如果注释适用于字段和参数，则只会在参数上写入。这在使用Jackson时会出现一些问题，但有一个简单的解决方法：使用特殊的 [杰克逊模块为Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) 。而旧的方式没有一个。
 查找更多信息 [文件](http://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets) 。
 ### 可见性
 
@@ -150,9 +150,9 @@ class Example(
 * 默认可见性（无修饰符）从内部更改为public，
 * 我们终于启用了拒绝在模块外部使用内部声明的检查。
 
-这可能是有争议的，我们选择<code> public </ code>作为默认可见性。 Kotlin是一种类型安全的语言，选择最安全的选项，默认情况下，<code> private </ code>似乎更合乎逻辑。我们完全认识到有利于这一违约的有效论据。但Kotlin也是一种务实的语言。我会尽量简单解释为什么我们认为<code> public </ code>是正确的默认值。
-在真正的Java代码库（公开/私有决策明确地采用）中，<code> public </ code>比<code> private </ code>更频繁地出现（代码库中的2.5到5倍）我们检查过， [其中包括Kotlin编译器和IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ）。这意味着我们会让人们在整个地方写出<code> public </ code>来实现他们的设计，这将使Kotlin更加礼节，我们会失去一些从Java获得的宝贵的成果简洁。在我们的经验中，显式的<code> public </ code>打破了许多DSL的流程，并且常常是主要构造函数。所以我们决定默认使用它来保持我们的代码清洁。
-<strong>注意</ strong>：<code> internal </ code>仍然支持，但现在您需要明确指定。
+这可能是有争议的，我们选择<code> public </code>作为默认可见性。 Kotlin是一种类型安全的语言，选择最安全的选项，默认情况下，<code> private </code>似乎更合乎逻辑。我们完全认识到有利于这一违约的有效论据。但Kotlin也是一种务实的语言。我会尽量简单解释为什么我们认为<code> public </code>是正确的默认值。
+在真正的Java代码库（公开/私有决策明确地采用）中，<code> public </code>比<code> private </code>更频繁地出现（代码库中的2.5到5倍）我们检查过， [其中包括Kotlin编译器和IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ）。这意味着我们会让人们在整个地方写出<code> public </code>来实现他们的设计，这将使Kotlin更加礼节，我们会失去一些从Java获得的宝贵的成果简洁。在我们的经验中，显式的<code> public </code>打破了许多DSL的流程，并且常常是主要构造函数。所以我们决定默认使用它来保持我们的代码清洁。
+<strong>注意</strong>：<code> internal </code>仍然支持，但现在您需要明确指定。
 ### 杂项变更
 
 
@@ -166,7 +166,7 @@ class Example(
 
 ### Java get / set对现在被视为属性
 
-人们一直在要求这个功能很长一段时间，花了我们一段时间才搞清楚。现在，当我们使用通过约定定义属性的Java类（例如，<code> getFoo（）</ code>，或者可能是<code> setFoo（）</ code>）时，Kotlin会自动定义相应的扩展属性：
+人们一直在要求这个功能很长一段时间，花了我们一段时间才搞清楚。现在，当我们使用通过约定定义属性的Java类（例如，<code> getFoo（）</code>，或者可能是<code> setFoo（）</code>）时，Kotlin会自动定义相应的扩展属性：
 
 {% raw %}
 <p></p>
@@ -192,7 +192,7 @@ fun demo(bean: JBean) {
 <p></p>
 {% endraw %}
 
-对这些属性的访问进行了优化，以便<code> bean.foo </ code>编译为<code> bean.getFoo（）</ code>，无需任何中间调用。
+对这些属性的访问进行了优化，以便<code> bean.foo </code>编译为<code> bean.getFoo（）</code>，无需任何中间调用。
 ### 顶层声明的.class文件的新布局
 
 几个月前我们宣布了 [这个变化](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) 现在已经完成了：
@@ -203,7 +203,7 @@ fun demo(bean: JBean) {
 * 您可以在源文件上指定一个@file：JvmName（“CustomName”）注释来更改类的名称;
 * 如果额外添加了@file：JvmMultifileClass注释，许多文件可以共享相同的JVM名称。
 
-为了使这个更改工作，我们必须引入一个新的资源文件，这是编译Kotlin代码所需的Kotlin二进制文件。它的名字是<code> META-INF /＆lt; module_name＆gt; .kotlin_module </ code>。 <strong>确保这些<code> .kotlin_module </ code>文件不会被包装过程剥离。</ strong>另外，确保模块名不会在您的项目中冲突：
+为了使这个更改工作，我们必须引入一个新的资源文件，这是编译Kotlin代码所需的Kotlin二进制文件。它的名字是<code> META-INF /＆lt; module_name＆gt; .kotlin_module </code>。 <strong>确保这些<code> .kotlin_module </code>文件不会被包装过程剥离。</strong>另外，确保模块名不会在您的项目中冲突：
 
 * 在Maven中，我们使用groupId和artifactId作为模块名，但可以说
 
@@ -253,8 +253,8 @@ $ kotlinc-jvm -module-name com.example.mymodule
 更多信息可以找到 [这里](http://kotlinlang.org/docs/reference/java-interop.html#package-level-functions) 。
 ### Java互操作中的空安全
 
-我们首先宣布这个 [不久以前](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) 。现在我们可以在Java中使用<code> @NotNull </ code>和<code> @Nullable </ code>，而Kotlin会认识到这些错误，导致编译错误而不是警告。
-因此，使用Java集合变得更加安全：我们不能将<code> null </ code>放入<code> ArrayList＆lt; String＆gt; </ code>中。 [平台类型](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) 由于注释常常丢失，有时会出错（例如违反继承规则），因此默认情况下不会对Java代码施加静态空检。
+我们首先宣布这个 [不久以前](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) 。现在我们可以在Java中使用<code> @NotNull </code>和<code> @Nullable </code>，而Kotlin会认识到这些错误，导致编译错误而不是警告。
+因此，使用Java集合变得更加安全：我们不能将<code> null </code>放入<code> ArrayList＆lt; String＆gt; </code>中。 [平台类型](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) 由于注释常常丢失，有时会出错（例如违反继承规则），因此默认情况下不会对Java代码施加静态空检。
 外部注释也不会被使用，所以我们已经为您提供了很多构建配置。
 ## 图书馆
 
@@ -267,11 +267,11 @@ Kotlin图书馆也在积极发展。 M13带来全功能的反射库：我们现�
 更多的这是一个单独的职位。
 ## 工具
 
-<strong>编译器守护进程。</ strong>我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</ em>对话框中的一个框，将其打开：
+<strong>编译器守护进程。</strong>我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</em>对话框中的一个框，将其打开：
 <p>
   构建，执行，部署 - ＆gt;编译器 - ＆gt; Kotlin编译器 - ＆gt;在调用之前保持编译器进程（实验）
-</ p>
-<strong>增量编译</ strong>是我们为提高Kotlin编译时间而采取的另一个方向。 M13带来：
+</p>
+<strong>增量编译</strong>是我们为提高Kotlin编译时间而采取的另一个方向。 M13带来：
 
 * 内联函数的增量编译：现在如果您更改内联函数的主体，则仅重新编译使用它的类;
 * 对私有成员的更改不会导致重新编译其他文件。

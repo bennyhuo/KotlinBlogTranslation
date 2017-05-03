@@ -33,10 +33,10 @@ source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-eclipse-plugin-0-5-
 
 ## 语义突出显示
 
-随着新版本的Kotlin插件，使用语义代码突出显示，生活越来越丰富多彩。现在我们与Java编辑器共享大多数设置，因此Kotlin代码将重用您最喜欢的颜色主题。切换到Eclipse <em>黑暗主题</ em>并配置突出显示 [Eclipse颜色主题](http://eclipsecolorthemes.org/) 还支持插件。
+随着新版本的Kotlin插件，使用语义代码突出显示，生活越来越丰富多彩。现在我们与Java编辑器共享大多数设置，因此Kotlin代码将重用您最喜欢的颜色主题。切换到Eclipse <em>黑暗主题</em>并配置突出显示 [Eclipse颜色主题](http://eclipsecolorthemes.org/) 还支持插件。
 ## 改名
 
-我们现在支持<em>重命名</ em>重构。有一件事情是异常先进的：它可以跨语言工作：Kotlin声明可以从Java和Kotlin中的任何用法重命名！相同的重命名Java声明
+我们现在支持<em>重命名</em>重构。有一件事情是异常先进的：它可以跨语言工作：Kotlin声明可以从Java和Kotlin中的任何用法重命名！相同的重命名Java声明
 <img data-recalc-dims =“1”onmouseout =“this.src ='https：//i2.wp.com/blog.jetbrains.com/kotlin/files/2015/11/rename.png？w = 640 ';“ onmouseover =“this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/11/rename.gif';” src =“https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/11/rename.png?w=640”/>
 ## 标记发生
 
@@ -44,9 +44,9 @@ source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-eclipse-plugin-0-5-
 <img data-recalc-dims =“1”onmouseout =“this.src ='https：//i2.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mark.png？w = 640 ';“ onmouseover =“this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/11/mark.gif';” src =“https：//i2.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mark.png?w=640”/>
 ## 提取变量
 
-现在可以使用<em>提取局部变量</ em>重构来从所选表达式创建局部变量
+现在可以使用<em>提取局部变量</em>重构来从所选表达式创建局部变量
 <img data-recalc-dims =“1”onmouseout =“this.src ='https：//i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/extract.png？w = 640 ';“ onmouseover =“this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/11/extract.gif';” src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/extract.png?w=640”/>
 ## 导航到Kotlin标准库
 
-来自Kotlin代码的Kotlin标准库的引用现在可以导航。激活<em>开放宣言</ em>对使用的操作将打开通讯记录文件，并在图书馆的源代码中显示声明。<br/>
+来自Kotlin代码的Kotlin标准库的引用现在可以导航。激活<em>开放宣言</em>对使用的操作将打开通讯记录文件，并在图书馆的源代码中显示声明。<br/>
 <img data-recalc-dims =“1”onmouseout =“this.src ='https：//i0.wp.com/blog.jetbrains.com/kotlin/files/2015/11/navifation.png？w = 640 ';“ onmouseover =“this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/11/navigation.gif';” src =“https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/11/navifation.png?w=640”/>

@@ -13,7 +13,7 @@ source_url: https://blog.jetbrains.com/kotlin/2012/10/dogfooding-kotlin-and-m3-1
 ---
 
 发布后 [Kotlin M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) 我们马上就开始了 [狗食](http://en.wikipedia.org/wiki/Eating_your_own_dog_food) Kotlin工作 [KAnnotator](https://github.com/abreslav/kannotator) - 一个静态分析工具，将自动推断图书馆的无效注释 - 帮助我们极大地优先考虑问题。因此，我们推出了修补程序更新： [KotlinM3.1](http://plugins.intellij.net/plugin?pr=idea&pluginId=6954) （ [关闭问题清单](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-09-12+..+2012-10-10) ）。我们建议用最新的方式运行它 [IntelliJ IDEA 12 EAP](http://confluence.jetbrains.com/display/IDEADEV/IDEA+12+EAP) 。
-几个亮点：<span id =“more-710”> </ span>
+几个亮点：<span id =“more-710”> </span>
 
 * 一堆烦人的例外和性能问题。
 * 参考内部枚举固定。

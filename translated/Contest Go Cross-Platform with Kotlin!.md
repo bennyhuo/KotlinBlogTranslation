@@ -14,7 +14,7 @@ source_url: https://blog.jetbrains.com/kotlin/2015/11/contest-go-cross-platform-
 
 大家好，
 你听说过吗 [RoboVM](https://robovm.com) ？它可以让您为iOS和Android创建美丽的本地应用程序，从而允许您在平台之间共享代码。 RoboVM将Java字节码转换为本机ARM或x86代码
-最新的 [RoboVM发行](https://robovm.com/robovm-1-11-released-experimental-bitcode-support-ios-9-and-kotlin/) 使它与Kotlin起步和运行非常容易！今天你有很好的动力玩，参加第一次Kotlin Mobile比赛！只需安装 [IntelliJ IDEA的RoboVM插件](https://plugins.jetbrains.com/plugin/7588?pr=idea) 要么 [下载RoboVM Studio](https://robovm.com/download/) ，并创建一个跨平台Kotlin应用程序。<span id =“more-3149”> </ span>
+最新的 [RoboVM发行](https://robovm.com/robovm-1-11-released-experimental-bitcode-support-ios-9-and-kotlin/) 使它与Kotlin起步和运行非常容易！今天你有很好的动力玩，参加第一次Kotlin Mobile比赛！只需安装 [IntelliJ IDEA的RoboVM插件](https://plugins.jetbrains.com/plugin/7588?pr=idea) 要么 [下载RoboVM Studio](https://robovm.com/download/) ，并创建一个跨平台Kotlin应用程序。<span id =“more-3149”> </span>
 ## 如何进入
 
 
@@ -46,6 +46,6 @@ source_url: https://blog.jetbrains.com/kotlin/2015/11/contest-go-cross-platform-
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mac-mini-sphero2-games.png"><img alt="mac-mini-sphero2-games" class="alignnone size-full wp-image-3151" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mac-mini-sphero2-games.png?resize=640%2C420&amp;ssl=1"/></a></p>
 {% endraw %}
 
-所有应用程序必须由2015年12月14日（星期日）的<strong>结束日期</ strong>提交！ RoboVM和JetBrains的团队将从所有提交中挑选获奖者。有效的条目包含您的<strong> tweet </ strong>，指向您的<strong>应用程序的GitHub存储库</ strong>。每个参与者和每个GitHub资料库只能获得一个奖项。跨平台应用程序的积分，我们将高兴推广的tweet或博客帖子的开发日志，以及代码质量！获奖者将在RoboVM和Kotlin博客以及Twitter上公布，并将通过GitHub联系。
+所有应用程序必须由2015年12月14日（星期日）的<strong>结束日期</strong>提交！ RoboVM和JetBrains的团队将从所有提交中挑选获奖者。有效的条目包含您的<strong> tweet </strong>，指向您的<strong>应用程序的GitHub存储库</strong>。每个参与者和每个GitHub资料库只能获得一个奖项。跨平台应用程序的积分，我们将高兴推广的tweet或博客帖子的开发日志，以及代码质量！获奖者将在RoboVM和Kotlin博客以及Twitter上公布，并将通过GitHub联系。
 没有Kotlin经验？加入800多个社区成员 [松弛](http://kotlinslackin.herokuapp.com/) 并提问！
 祝你好运！

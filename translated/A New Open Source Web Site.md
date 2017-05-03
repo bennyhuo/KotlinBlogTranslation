@@ -21,7 +21,7 @@ source_url: https://blog.jetbrains.com/kotlin/2014/07/a-new-open-source-web-site
 
 它是开源的
 
-开发一种开源语言，没有开源网站和文档是没有意义的。我们通过逐渐将所有旧站点从以前的平台移植到Jekyll。新网站全部以Markdown（实际上是Kramdown，Markdown的风格）编写，并在GitHub上托管。事实上，我们已经很容易做出贡献。几乎每一页都有一个编辑页图标：<span id =“more-1560”> </ span>
+开发一种开源语言，没有开源网站和文档是没有意义的。我们通过逐渐将所有旧站点从以前的平台移植到Jekyll。新网站全部以Markdown（实际上是Kramdown，Markdown的风格）编写，并在GitHub上托管。事实上，我们已经很容易做出贡献。几乎每一页都有一个编辑页图标：<span id =“more-1560”> </span>
 
 {% raw %}
 <p><img alt="EditPage" class="aligncenter size-full wp-image-1562" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2014/07/EditPage.png?resize=314%2C149&amp;ssl=1"/></p>

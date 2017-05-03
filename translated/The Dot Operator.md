@@ -12,7 +12,7 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/
 ---
 
-<strong>警告：这是愚人节的帖子</ strong> [无点](http://en.wikipedia.org/wiki/Point-free_programming) 风格是现代功能编程中的一个大趋势：它允许操纵函数，而不用提及它们的参数，这使得代码简洁和组合。以下是维基百科的例子：
+<strong>警告：这是愚人节的帖子</strong> [无点](http://en.wikipedia.org/wiki/Point-free_programming) 风格是现代功能编程中的一个大趋势：它允许操纵函数，而不用提及它们的参数，这使得代码简洁和组合。以下是维基百科的例子：
 
 {% raw %}
 <p></p>
@@ -27,10 +27,10 @@ mf = (. map) . (.) . filter
 {% endraw %}
 
 这个函数用Haskell编写，它构成了一个带有filter（）函数的map（）函数。如您所见，无点式的风格主要依靠点。
-Kotlin本身不是功能性语言，但我们很乐意借用其他语言的实用功能。所以，今天我会写点点。<span id =“more-1007”> </ span>
+Kotlin本身不是功能性语言，但我们很乐意借用其他语言的实用功能。所以，今天我会写点点。<span id =“more-1007”> </span>
 # 点
 
-我们在Kotlin中介绍<strong>点</ strong>运算符。像往常一样，它按照惯例工作。如果有这样的功能
+我们在Kotlin中介绍<strong>点</strong>运算符。像往常一样，它按照惯例工作。如果有这样的功能
 
 {% raw %}
 <p></p>
@@ -171,7 +171,7 @@ fun Foo.dot() {
 <p></p>
 {% endraw %}
 
-在<strong>这个</ strong>之间有一个点，它在Foo.dot（）函数本身中具有Foo类型，所以在这一点上应该递归调用dot（），并且似乎从不终止。这被称为高阶点</ em>，只有在Foo上定义了一个函数dot1（）时才执行。如果dot1（）又包含高阶点，则调用dot2（）等等：
+在<strong>这个</strong>之间有一个点，它在Foo.dot（）函数本身中具有Foo类型，所以在这一点上应该递归调用dot（），并且似乎从不终止。这被称为高阶点</em>，只有在Foo上定义了一个函数dot1（）时才执行。如果dot1（）又包含高阶点，则调用dot2（）等等：
 
 {% raw %}
 <p></p>
@@ -191,4 +191,4 @@ fun Foo.dot1() {
 # 结论
 
 我们计划很快支持点运营商。第一个版本将被限制为基本的ASCII字符，如。 ：; ！ ？当然，我，但在将来我们计划将其扩展到其他角色，如ё。
-<strong>有一个不错的点！</ strong>
+<strong>有一个不错的点！</strong>

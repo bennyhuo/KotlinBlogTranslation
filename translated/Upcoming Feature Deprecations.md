@@ -13,14 +13,14 @@ source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-changes-and-more/
 ---
 
 当我们完成语言设计时，许多事情都要被清理，其中包括最初设计的（通常是部分的）实现的功能，但是不是值得支持的。
-在即将到来的M12里程碑中，我们将不赞成使用这些功能，因此您可以在完全删除代码之前迁移代码。<span id =“more-1996”> </ span>
+在即将到来的M12里程碑中，我们将不赞成使用这些功能，因此您可以在完全删除代码之前迁移代码。<span id =“more-1996”> </span>
 ## 所需类
 
 有些人可能已经听说过这个功能：Kotlin的特质可以“扩展”类（我们实际上使用术语“require”）。
 从技术上讲，这意味着当一个类扩展这样的特征时，它必须（直接或间接地）扩展所需的类。这个功能很少使用，所以我们弃用它。
 ## 捕获类型参数
 
-当通用类<code> Outer </ code>具有<strong>内部</ strong>类<code> Inner </ code>时，Java允许我们使用<code> Outer </ code>代码> Inner </ code>：
+当通用类<code> Outer </code>具有<strong>内部</strong>类<code> Inner </code>时，Java允许我们使用<code> Outer </code>代码> Inner </code>：
 
 {% raw %}
 <p></p>
@@ -91,7 +91,7 @@ class Derived : Base(), List<Int> { // no error
 <p></p>
 {% endraw %}
 
-请注意，Kotlin中的<code> List </ code>是共同的。
+请注意，Kotlin中的<code> List </code>是共同的。
 尽管如此，逻辑上，我们知道这几乎没有任何用例，但支持这一点涉及到很多编译器的魔法，并且断开了Java的互操作，所以我们要放弃这个。
 ## 更多的鄙视来了
 

@@ -17,9 +17,9 @@ source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/
 继续 [Kotlin M2安装说明](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-is-out/#install) 。
 ## 更多关于语言
 
-上一篇文章概述了新的 [语言特点](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) 。这里还有一点：<span id =“more-570”> </ span>
+上一篇文章概述了新的 [语言特点](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) 。这里还有一点：<span id =“more-570”> </span>
 首先，我想提醒你，在M1我们加了 [“assert not null”运算符：!!](http://confluence.jetbrains.net/display/Kotlin/Null-safety#Null-safety-The%7B%7B%5C%21%5C%21%7D%7Doperator) ，它取代了我们在标准库中使用的sure（）函数。现在，我们从库中删除了sure（），所以有些代码可能会中断，但很容易解决。
-人们不断询问Kotlin是否有列表或地图的<strong>文字</ strong>。答案是：严格来说，不，但我们有功能 [图书馆](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/kotlin/package-summary.html) 这对于那个还不错：
+人们不断询问Kotlin是否有列表或地图的<strong>文字</strong>。答案是：严格来说，不，但我们有功能 [图书馆](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/kotlin/package-summary.html) 这对于那个还不错：
 
 {% raw %}
 <p></p>
@@ -60,7 +60,7 @@ fun foo(x : Method) {
 ## 例子
 
 如上所述，这个里程碑中的大事情是IDE和Android中的JavaScript支持。从示例开始总是很好，所以这里有一组您可以在IDE中打开的项目。请，找到一些说明 [上一篇文章](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/) 。
-<strong> JavaScript </ strong>的示例：
+<strong> JavaScript </strong>的示例：
 
 * 你好，世界！
 * 生物（HTML5 Canvas）：看它运行
@@ -68,7 +68,7 @@ fun foo(x : Method) {
 * 交通信号灯：看到它正在运行
 * 还要注意James Strachan的koolapp，值得一个单独的职位，我希望能在那里很快。现在，请参阅自述文件。
 
-<strong> Android </ strong>的示例：
+<strong> Android </strong>的示例：
 
 * 你好，世界！
 * 标签蛇和维基重写的例子可以在这里找到Kotlin。
@@ -86,7 +86,7 @@ IntelliJ IDEA插件进度非常快。大部分工作都是在幕后完成的（�
 * 此外，我们更改了IDE图标，现在他们非常好。更多关于这个话题的工作。
 
 我们在下一个里程碑上的优先事项是IDE性能和改进对Java类的零安全支持。
-<strong> <a name="install">安装M2插件</a> </ strong>：如果您安装了M1，则会自动从 [插件库](http://plugins.intellij.net/plugin/?idea&pluginId=6954) 。它每天检查一次更新，所以如果你不想等待，手动启动检查：
+<strong> <a name="install">安装M2插件</a> </strong>：如果您安装了M1，则会自动从 [插件库](http://plugins.intellij.net/plugin/?idea&pluginId=6954) 。它每天检查一次更新，所以如果你不想等待，手动启动检查：
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Check-For-Updates.png"><img alt="" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Check-For-Updates.png?resize=150%2C150&amp;ssl=1"/></a></p>
@@ -94,7 +94,7 @@ IntelliJ IDEA插件进度非常快。大部分工作都是在幕后完成的（�
 
 由于注释格式有所改变，系统将提示您更新Kotlin库。如果您错过了“更新Kotlin Runtime”气球，请在事件日志中打开消息：<br/>
 <img alt =“”data-recalc-dims =“1”src =“https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Outdated-Kotlin-Runtime.png？ resize = 150％2C129＆amp; ssl = 1“/> <img alt =”“data-recalc-dims =”1“src =”https://i0.wp.com/blog.jetbrains.com/kotlin/files/ 2012/06 / Update-Runtime.png？resize = 150％2C150＆amp; ssl = 1“/>
-<strong>注意</ strong>，您必须卸载M2候选人和任何夜间构建的Kotlin插件或手动构建之前 [安装](http://www.jetbrains.com/idea/plugins/index.html) M2主要 [插件库](http://plugins.intellij.net/plugin/?idea&pluginId=6954) 。
+<strong>注意</strong>，您必须卸载M2候选人和任何夜间构建的Kotlin插件或手动构建之前 [安装](http://www.jetbrains.com/idea/plugins/index.html) M2主要 [插件库](http://plugins.intellij.net/plugin/?idea&pluginId=6954) 。
 ## 构建工具：Ant和Maven
 
 我们的 [构建工具集成](http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools) ，包括Maven，改进了一点点的存储库，更容易的设置过程。您可能需要更新您的pom的。参见说明 [这里](http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools) 。
