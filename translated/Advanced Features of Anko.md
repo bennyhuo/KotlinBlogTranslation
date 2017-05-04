@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-上周我们发表了 [一个新版本](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/) 的安科。虽然该库的主要目的是通过DSL创建布局，但即使是XML布局的用户也可以从中受益。今天我们来谈谈Anko的这种“矛盾”的特征。<span id =“more-2135”> </span>
+上周我们发表了 [一个新版本](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/) 的安科。虽然该库的主要目的是通过 DSL 创建布局，但即使是 XML 布局的用户也可以从中受益。今天我们来谈谈 Anko 的这种“矛盾”的特征。<span id =“more-2135”> </span>
 ## 意向助手
 
 启动新的`Activity`的常见方法是创建一个`Intent`，可能会把一些参数放入它，最后将创建的`Intent`传递给`上下文`的`startActivity（）`方法。
@@ -52,7 +52,7 @@ startActivity<SomeActivity>("id" to 5, "name" to "John")
 请参考 [意图生成器函数](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#intent-builder-functions) 参考部分了解更多信息。
 ## 热门意图
 
-几乎每个应用程序都有代码，在默认的Web浏览器中加载一个页面，或者使用Android Intent打开一个新的电子邮件屏幕，所以在Anko中有一些辅助功能：
+几乎每个应用程序都有代码，在默认的 Web 浏览器中加载一个页面，或者使用 Android Intent 打开一个新的电子邮件屏幕，所以在 Anko 中有一些辅助功能：
 
 {% raw %}
 <p></p>
@@ -70,7 +70,7 @@ email("admin@domain.net (mailto:admin@domain.net)", "Here I am!", "Message text"
 其他有用的意图描述在 [有意义的来电者](https://github.com/JetBrains/anko/blob/master/doc/ADVANCED.md#useful-intent-callers) 参考部分
 ## 警报对话框
 
-Anko提供了一种声明性的方式来创建带有短信，列表，进度条，甚至使用您自己的DSL布局的警报对话。
+Anko 提供了一种声明性的方式来创建带有短信，列表，进度条，甚至使用您自己的 DSL 布局的警报对话。
 对于一个简单的文本警报，底部有几个按钮，您只需要：
 
 {% raw %}
@@ -120,7 +120,7 @@ indeterminateProgressDialog("Fetching the data…")
 <p></p>
 {% endraw %}
 
-另外，如上所述，您可以在对话框中使用Anko的DSL来创建自定义布局：
+另外，如上所述，您可以在对话框中使用 Anko 的 DSL 来创建自定义布局：
 
 {% raw %}
 <p></p>
@@ -148,7 +148,7 @@ alert {
 
 ## 服务
 
-通过`上下文`的扩展属性可以在Anko中提供Android系统服务，例如`WifiManager`，`LocationManager`或`Vibrator` ：
+通过`上下文`的扩展属性可以在 Anko 中提供 Android 系统服务，例如`WifiManager`，`LocationManager`或`Vibrator` ：
 
 {% raw %}
 <p></p>
@@ -184,7 +184,7 @@ async(someExecutor) { // omit the parameter to use the default executor
 <p></p>
 {% endraw %}
 
-如果你想回到`async（）`中的UI线程，你可以使用`uiThread（）`函数。
+如果你想回到`async（）`中的 UI 线程，你可以使用`uiThread（）`函数。
 
 {% raw %}
 <p></p>
@@ -203,7 +203,7 @@ async {
 <p></p>
 {% endraw %}
 
-`uiThread（）`在`async（）`中有一个特殊的语义：`async（）`不保存`Context`实例，只有一个`WeakReference`，所以即使lambda执行永远不会完成，`Context`实例也不会泄漏。
+`uiThread（）`在`async（）`中有一个特殊的语义：`async（）`不保存`Context`实例，只有一个`WeakReference`，所以即使 lambda 执行永远不会完成，`Context`实例也不会泄漏。
 
 {% raw %}
 <p></p>
@@ -229,7 +229,7 @@ async {
 
 ## 记录
 
-Android SDK提供了由几种记录方法组成的`android.util.Log`类。用法很简单，但是这些方法需要传递一个tag参数，实际的日志消息必须是一个`String`。您可以通过使用`AnkoLogger` trait来摆脱这一点：
+Android SDK 提供了由几种记录方法组成的`android.util.Log`类。用法很简单，但是这些方法需要传递一个 tag 参数，实际的日志消息必须是一个`String`。您可以通过使用`AnkoLogger` trait 来摆脱这一点：
 
 {% raw %}
 <p></p>
@@ -249,7 +249,7 @@ class SomeActivity : Activity(), AnkoLogger {
 {% endraw %}
 
 默认标签名称是一个类名（在这种情况下为`SomeActivity`），但您可以通过覆盖`AnkoLogger`的`loggerTag`属性轻松更改它。
-每个方法有两个版本：plain和“lazy”（只有当`Log.isLoggable（tag，Log.INFO）`是`true`）时，将会执行lambda。
+每个方法有两个版本：plain 和“lazy”（只有当`Log.isLoggable（tag，Log.INFO）`是`true`）时，将会执行 lambda。
 
 {% raw %}
 <p></p>

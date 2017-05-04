@@ -14,11 +14,11 @@ translator:
 translator_url:
 ---
 
-与JVM 100％可互操作，随后使用JavaScript，一直是Kotlin的首要任务。随着现有代码的数量和丰富的JVM生态系统，具有互操作性和有效性的功能至关重要。<span id =“more-1616”> </span>
-随着即将发布的M9，我们已经改进了这一点，使集成更加无缝。
+与 JVM 100％可互操作，随后使用 JavaScript，一直是 Kotlin 的首要任务。随着现有代码的数量和丰富的 JVM 生态系统，具有互操作性和有效性的功能至关重要。<span id =“more-1616”> </span>
+随着即将发布的 M9，我们已经改进了这一点，使集成更加无缝。
 ## 平台类型
 
-处理空值是涉及Java互操作性的最大问题之一。几乎任何Java方法可能会返回null，所以Kotlin将Java类型视为可以为空的，我们还是要求使用安全调用（？。）运算符或notnull-assertion（!!）来避免编译错误：
+处理空值是涉及 Java 互操作性的最大问题之一。几乎任何 Java 方法可能会返回 null，所以 Kotlin 将 Java 类型视为可以为空的，我们还是要求使用安全调用（？。）运算符或 notnull-assertion（!!）来避免编译错误：
 
 {% raw %}
 <p></p>
@@ -47,7 +47,7 @@ fun nullAllowed(value: String?) {}
 <p></p>
 {% endraw %}
 
-在第一种情况下，Kotlin编译器会发出错误。这意味着对*nullNotAllowed*的调用将需要：
+在第一种情况下，Kotlin 编译器会发出错误。这意味着对*nullNotAllowed*的调用将需要：
 
 {% raw %}
 <p></p>
@@ -62,8 +62,8 @@ nullNotAllowed(x!!)
 <p></p>
 {% endraw %}
 
-从M9开始，情况就不一样了。这允许更清洁的代码，并避免过度使用？和!!操作员在与Java进行交互时。
-同样的方式，在实现Java接口时，可能具有潜在的空参数的方法不再需要在Kotlin中将这些声明声明为可空。例如，给出：
+从 M9 开始，情况就不一样了。这允许更清洁的代码，并避免过度使用？和!!操作员在与 Java 进行交互时。
+同样的方式，在实现 Java 接口时，可能具有潜在的空参数的方法不再需要在 Kotlin 中将这些声明声明为可空。例如，给出：
 
 {% raw %}
 <p></p>
@@ -79,7 +79,7 @@ public interface SomeFoo {
 <p></p>
 {% endraw %}
 
-当在Kotlin实施这个时：
+当在 Kotlin 实施这个时：
 
 {% raw %}
 <p></p>
@@ -98,9 +98,9 @@ public class SomeInterestingFoo(): SomeFoo {
 {% endraw %}
 
 参数*输入*不再需要类型为*String？*。您可以选择使用*String*还是*String？*  - 取决于其实际含义。在这个例子中，我们选择*输入*不为空，并且*数据*为空。
-## 使用platformStatic的注释方法
+## 使用 platformStatic 的注释方法
 
-Kotlin有*对象声明*，可以看作单身人士。这些都是从Java中消耗的，尽管不是最好的语法。给定：
+Kotlin 有*对象声明*，可以看作单身人士。这些都是从 Java 中消耗的，尽管不是最好的语法。给定：
 
 {% raw %}
 <p></p>
@@ -117,7 +117,7 @@ object Foo {
 <p></p>
 {% endraw %}
 
-从Kotlin消费，将是：
+从 Kotlin 消费，将是：
 
 {% raw %}
 <p></p>
@@ -131,7 +131,7 @@ Foo.bar()
 <p></p>
 {% endraw %}
 
-而从Java它将看起来像这样：
+而从 Java 它将看起来像这样：
 
 {% raw %}
 <p></p>
@@ -145,7 +145,7 @@ Foo.INSTANCE$.bar()
 <p></p>
 {% endraw %}
 
-随着下一个版本，我们可以通过简单地向函数声明添加一个注释，从与Kotlin相同的方式从Java调用该方法：
+随着下一个版本，我们可以通过简单地向函数声明添加一个注释，从与 Kotlin 相同的方式从 Java 调用该方法：
 
 {% raw %}
 <p></p>
@@ -165,7 +165,7 @@ object Foo {
 使代码更清洁。同样适用于*类对象*。
 ### 去除包版广告
 
-*platformStatic*的另一个好处是在使用某些Java库（例如JUnit）时删除了一些存在的showstoppers。特别地，后者在使用时需要Java中的静态方法 [理论](https://github.com/junit-team/junit/wiki/Theories) 。对此的解决方法相当乏味。幸运的是，情况已经不再如此。我们可以使用*platformStatic*注释来解决这个问题 [问题](https://youtrack.jetbrains.com/issue/KT-4861) 。
+*platformStatic*的另一个好处是在使用某些 Java 库（例如 JUnit）时删除了一些存在的 showstoppers。特别地，后者在使用时需要 Java 中的静态方法 [理论](https://github.com/junit-team/junit/wiki/Theories) 。对此的解决方法相当乏味。幸运的是，情况已经不再如此。我们可以使用*platformStatic*注释来解决这个问题 [问题](https://youtrack.jetbrains.com/issue/KT-4861) 。
 
 {% raw %}
 <p></p>
@@ -196,7 +196,7 @@ public class TestDoubling {
 <p></p>
 {% endraw %}
 
-## 利用platformName重载函数
+## 利用 platformName 重载函数
 
 当有重载的方法使用泛型，如：
 
@@ -218,7 +218,7 @@ fun Iterable<Int>.average(): Double {
 <p></p>
 {% endraw %}
 
-当从Kotlin调用这些可能时，尝试从Java调用它们是由于类型擦除而有问题的。类似于*platformStatic*，我们引入了允许重命名该函数的*platformName*注释，以便在从Java调用时，使用新的给定名称：
+当从 Kotlin 调用这些可能时，尝试从 Java 调用它们是由于类型擦除而有问题的。类似于*platformStatic*，我们引入了允许重命名该函数的*platformName*注释，以便在从 Java 调用时，使用新的给定名称：
 
 {% raw %}
 <p></p>
@@ -238,7 +238,7 @@ platformName("averageOfInt") fun Iterable<Int>.average(): Int {
 <p></p>
 {% endraw %}
 
-现在可以从Java调用如下：
+现在可以从 Java 调用如下：
 
 {% raw %}
 <p></p>
@@ -255,8 +255,8 @@ averageOfInt(numbers)
 请注意，这是 [不是唯一的用例](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) for *platformName*。
 ## 私人财产存取者
 
-Kotlin的私人私人财产不再生成属性访问器，这意味着 [冲突](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) 使用现有的*getXYZ*方法
-不必要地发生。在Java中执行以下界面：
+Kotlin 的私人私人财产不再生成属性访问器，这意味着 [冲突](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) 使用现有的*getXYZ*方法
+不必要地发生。在 Java 中执行以下界面：
 
 {% raw %}
 <p></p>
@@ -272,7 +272,7 @@ public interface SomeFoo {
 <p></p>
 {% endraw %}
 
-如果我们要在Kotlin中实现这个接口，而我们的类有一个名为*bar*的私有属性，在M8和以前的版本中它会引起冲突，我们必须将属性命名为与< em> bar*。从M9开始，情况就不一样了。因此，以下代码完全有效：
+如果我们要在 Kotlin 中实现这个接口，而我们的类有一个名为*bar*的私有属性，在 M8 和以前的版本中它会引起冲突，我们必须将属性命名为与< em> bar*。从 M9 开始，情况就不一样了。因此，以下代码完全有效：
 
 {% raw %}
 <p></p>
@@ -292,6 +292,6 @@ public class SomeInterestingFoo(private val bar: String): SomeFoo {
 
 ## 概要
 
-随着M9中的这些变化，我们已经删除了一些障碍，更重要的是使Java和Kotlin之间的互操作性更加清晰。虽然这些改进可以使消费现有的Java代码更加愉快，但它也允许在Kotlin中编写新的库和功能以及从Java中消耗这些库的更好的体验。
+随着 M9 中的这些变化，我们已经删除了一些障碍，更重要的是使 Java 和 Kotlin 之间的互操作性更加清晰。虽然这些改进可以使消费现有的 Java 代码更加愉快，但它也允许在 Kotlin 中编写新的库和功能以及从 Java 中消耗这些库的更好的体验。
 和往常一样，我们会喜欢反馈。让我们知道你的想法。
-注意：M9尚未发布，但您可以在<a href="https://teamcity.jetbrains.com/project.html?projectId=Kotlin&amp;tab=projectOverview">夜间版本中找到这些功能</a>*
+注意：M9 尚未发布，但您可以在<a href="https://teamcity.jetbrains.com/project.html?projectId=Kotlin&amp;tab=projectOverview">夜间版本中找到这些功能</a>*

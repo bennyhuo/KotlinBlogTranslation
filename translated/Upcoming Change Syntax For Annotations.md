@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-Kotlin的注释语法灵感来自C＃，它围绕着它们的方括号：
+Kotlin 的注释语法灵感来自 C＃，它围绕着它们的方括号：
 
 {% raw %}
 <p></p>
@@ -29,7 +29,7 @@ fun setFoo(foo: Foo) { ... }
 <p></p>
 {% endraw %}
 
-但是括号对于一个语言设计者而言是宝贵的，我们真的希望稍后再使用它们，因此我们正在考虑将注释语法更改为更类似Java的`@`。
+但是括号对于一个语言设计者而言是宝贵的，我们真的希望稍后再使用它们，因此我们正在考虑将注释语法更改为更类似 Java 的`@`。
 
 {% raw %}
 <p></p>
@@ -63,7 +63,7 @@ volatile var bar: Bar = ...
 尽管如此，这种变化有一些影响。<span id =“more-2021”> </span>
 ## 标签
 
-首先，`@` -syntax已经在使用，对于标签：
+首先，`@` -syntax 已经在使用，对于标签：
 
 {% raw %}
 <p></p>
@@ -102,7 +102,7 @@ for (i in 1..20) {
 请注意，使用网站（`break @ loop`）没有更改，仍然看起来很不错<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1” src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1”style =“height：1em; max-height：1em;“/>
 ## 定位
 
-我们还在研究如何在生成的`.class` -file中规定一个注释应该附加什么：
+我们还在研究如何在生成的`.class` -file 中规定一个注释应该附加什么：
 
 {% raw %}
 <p></p>
@@ -118,11 +118,11 @@ class C(@Ann("arg") var foo: Int)
 
 我们在这里有很多选项：可以放置`@Ann`注释
 
-* 存储foo的字段
-* 属性foo本身（不是Java声明）
-* foo的吸气剂
-* foo的设置者
-* C的主要构造函数的参数foo
+* 存储 foo 的字段
+* 属性 foo 本身（不是 Java 声明）
+* foo 的吸气剂
+* foo 的设置者
+* C 的主要构造函数的参数 foo
 
 一些注释只适用于，例如，字段，对于那些没有问题，但有些允许许多可能的目标。为了表达意图，需要一些额外的语法。
 一个选项是将注释类型名称与目标文件前缀：
@@ -140,7 +140,7 @@ class C(@field:Ann("arg") var foo: Int)
 {% endraw %}
 
 （许多目标可以用逗号分隔）
-另一个选择是做Scala做的事情：
+另一个选择是做 Scala 做的事情：
 
 {% raw %}
 <p></p>
@@ -156,7 +156,7 @@ class C(@(Ann@field)("arg") var foo: Int)
 
 
 * 下降：括号太多
-* 颠倒：@field也是一个注释（是的，Ann是一个注释注释），这意味着更多的可扩展语法和较少的语言概念
+* 颠倒：@field 也是一个注释（是的，Ann 是一个注释注释），这意味着更多的可扩展语法和较少的语言概念
 
 另一个选择是使用`@field`注释，其参数是该字段的注释：
 
@@ -227,7 +227,7 @@ val foo: Int = 1
 
 
 * 缺点：在这里没有办法减轻重复
-* 缺点：它很可能成为一个模糊的语法（像$ backingField），它很少被使用，并且被工具支持很差
+* 缺点：它很可能成为一个模糊的语法（像 $ backingField），它很少被使用，并且被工具支持很差
 
 ## 本地声明注释
 
@@ -289,4 +289,4 @@ fun example() {
 反馈欢迎
 
 你怎么看？
-美国BTW，我们正在制定规范文件草案 [这里](https://github.com/JetBrains/kotlin/pull/624) 
+美国 BTW，我们正在制定规范文件草案 [这里](https://github.com/JetBrains/kotlin/pull/624) 

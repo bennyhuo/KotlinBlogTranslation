@@ -15,7 +15,7 @@ translator_url:
 ---
 
 在 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) 我们已经重新设计了我们的范围。<span id =“more-855”> </span>
-范围表达式与具有<tt> rangeTo </tt>函数形成 [操作员形式](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations) 补充 [in和！in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) 。范围是针对任何可比类型（`Comparable`的子类）定义的，但是对于数字原语，它被优化。以下是使用范围的示例：
+范围表达式与具有<tt> rangeTo </tt>函数形成 [操作员形式](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations) 补充 [in 和！in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) 。范围是针对任何可比类型（`Comparable`的子类）定义的，但是对于数字原语，它被优化。以下是使用范围的示例：
 
 {% raw %}
 <p></p>
@@ -36,7 +36,7 @@ if (str in "island".."isle") println(str)
 <p></p>
 {% endraw %}
 
-数值范围有额外的功能：可以迭代。编译器在Java的索引for循环的简单模拟中关心转换，而不需要额外的开销。例子：
+数值范围有额外的功能：可以迭代。编译器在 Java 的索引 for 循环的简单模拟中关心转换，而不需要额外的开销。例子：
 
 {% raw %}
 <p></p>
@@ -68,7 +68,7 @@ for (i in 4 downTo 1) print(i) // prints "4321"
 <p></p>
 {% endraw %}
 
-可以用任意步长迭代数字，不等于1？当然，<tt> step（）</tt>功能会帮助你：
+可以用任意步长迭代数字，不等于 1？当然，<tt> step（）</tt>功能会帮助你：
 
 {% raw %}
 <p></p>
@@ -90,7 +90,7 @@ for (i in 1.0..2.0 step 0.3) print("$x ") // prints "1.0 1.3 1.6 1.9 "
 
 库中有两个特征：<tt> Range＆lt; T＆gt; </tt>和<tt>进展＆lt; N＆gt; </tt>。
 <tt>范围＆lt; T＆gt; </tt>表示数学意义上的间隔，用于可比类型。它有两个端点：<tt> start </tt>和<tt> end </tt>，它们包含在范围内。主要操作是<tt> contains（）</tt>，通常在</tt> / <tt>！中的</tt>操作符中以<tt>的形式使用。
-<tt>进展＆lt; N＆gt; </tt>表示 [算术进展](http://en.wikipedia.org/wiki/Arithmetic_progression) ，定义为数字类型。它具有<tt> start </tt>，<tt> end </tt>和非零<tt>增量</tt>。 <tt>进展＆lt; N＆gt; </tt>是<tt> Iterable＆lt; N＆gt; </tt>的子类型，因此它可以用于for循环和诸如<tt> map </tt>，<tt > filter </tt>等等。第一个元素是<tt> start </tt>，每个下一个元素等于上一个加号<tt>增量</tt>。在<tt>进化中的迭代</tt>相当于Java / JavaScript中的索引for循环：
+<tt>进展＆lt; N＆gt; </tt>表示 [算术进展](http://en.wikipedia.org/wiki/Arithmetic_progression) ，定义为数字类型。它具有<tt> start </tt>，<tt> end </tt>和非零<tt>增量</tt>。 <tt>进展＆lt; N＆gt; </tt>是<tt> Iterable＆lt; N＆gt; </tt>的子类型，因此它可以用于 for 循环和诸如<tt> map </tt>，<tt > filter </tt>等等。第一个元素是<tt> start </tt>，每个下一个元素等于上一个加号<tt>增量</tt>。在<tt>进化中的迭代</tt>相当于 Java / JavaScript 中的索引 for 循环：
 
 {% raw %}
 <p></p>

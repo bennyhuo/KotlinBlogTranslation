@@ -14,4 +14,4 @@ translator:
 translator_url:
 ---
 
-我们的幻灯片和视频从JVM语言峰会2011可通过 [Dob博士的](http://drdobbs.com/java/231500204) 。请享用。
+我们的幻灯片和视频从 JVM 语言峰会 2011 可通过 [Dob 博士的](http://drdobbs.com/java/231500204) 。请享用。

@@ -14,7 +14,7 @@ translator: DemoJameson
 translator_url: http://www.demojameson.com
 ---
 
-Kotlin 1.1的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。
+Kotlin 1.1 的发布令人们感到非常兴奋。此版本包含的新功能对 Java 开发者非常有用，并将 引领 JVM 走向一个充满发展潜力的新世界。
 
 但有些新功能，如 [coroutine](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 和 [type alias](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md)（下文有几个例子）对于 Android 开发者来说就像科幻小说。
 

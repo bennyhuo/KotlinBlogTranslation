@@ -14,9 +14,9 @@ translator:
 translator_url:
 ---
 
-我们很高兴地宣布Kotlin Eclipse插件版本0.3.0。此版本加载了新功能：
+我们很高兴地宣布 Kotlin Eclipse 插件版本 0.3.0。此版本加载了新功能：
 
-* Kotlin M13支持
+* Kotlin M13 支持
 * 查找参考
 * 参数提示
 * 选择封闭/下一个/上一个元素
@@ -38,7 +38,7 @@ translator_url:
 
 ## 查找参考
 
-任何开发人员日常活动中非常常见的任务是查找对整个项目中的函数，属性或类的引用。通过Java和Kotlin代码中的Kotlin声明的使用，在0.3.0搜索中查找参考*。并且为Java声明运行*查找参考*也会显示在Kotlin中的用法！相同的`Ctrl + Shift + G /⇧⌘G`快捷方式适用于两种语言。
+任何开发人员日常活动中非常常见的任务是查找对整个项目中的函数，属性或类的引用。通过 Java 和 Kotlin 代码中的 Kotlin 声明的使用，在 0.3.0 搜索中查找参考*。并且为 Java 声明运行*查找参考*也会显示在 Kotlin 中的用法！相同的`Ctrl + Shift + G /⇧⌘G`快捷方式适用于两种语言。
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/references_cover_new.png?w=600';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/references_new.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/references_cover_new.png?w=600"/></p>
@@ -46,7 +46,7 @@ translator_url:
 
 ## 参数提示
 
-Kotlin Eclipse插件现在支持参数提示。要查找功能参数或其名称和类型的顺序，请将光标放在括号内，然后按`Ctrl + Shift + Space /⇧^Space`可查看提示。
+Kotlin Eclipse 插件现在支持参数提示。要查找功能参数或其名称和类型的顺序，请将光标放在括号内，然后按`Ctrl + Shift + Space /⇧^Space`可查看提示。
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/parameters_cover.png?w=480';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/parameters.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/parameters_cover.png?w=480"/></p>
@@ -54,16 +54,16 @@ Kotlin Eclipse插件现在支持参数提示。要查找功能参数或其名称
 
 ## 选择封闭元素
 
-一些IDE功能被证明是真的上瘾，一旦习惯了，如果不存在，你总是会想念他们。一个很好的例子是选择封闭元素*。选择“功能参数”，“语句”，“功能体”或“全班”更方便，而不是考虑选择开始和结束。
+一些 IDE 功能被证明是真的上瘾，一旦习惯了，如果不存在，你总是会想念他们。一个很好的例子是选择封闭元素*。选择“功能参数”，“语句”，“功能体”或“全班”更方便，而不是考虑选择开始和结束。
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/selection_cover_new.png?w=495';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/selection_new.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/selection_cover_new.png?w=495"/></p>
 {% endraw %}
 
-请注意，Kotlin也支持*选择下一个/上一个元素*操作。
+请注意，Kotlin 也支持*选择下一个/上一个元素*操作。
 ## 覆盖/实施成员
 
-由于0.3.0 Kotlin Eclipse插件可以帮助解决非常频繁的“未实现”错误。 *快速修复*菜单（`Ctrl + 1` /⌘1）有一个*实现成员*项目，将在选择后生成所有缺少的声明。
+由于 0.3.0 Kotlin Eclipse 插件可以帮助解决非常频繁的“未实现”错误。 *快速修复*菜单（`Ctrl + 1` /⌘1）有一个*实现成员*项目，将在选择后生成所有缺少的声明。
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/09/implement_fix_cover.png?w=450';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/implement_fix.gif';" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/09/implement_fix_cover.png?w=450"/></p>
@@ -77,7 +77,7 @@ Kotlin Eclipse插件现在支持参数提示。要查找功能参数或其名称
 
 ## 身体转换快速修复
 
-Kotlin允许您以一种很简单的方式声明方法，现在Eclipse可以通过快速修复（`Ctrl + 1` /⌘1）将一个表单转换为另一个表单。
+Kotlin 允许您以一种很简单的方式声明方法，现在 Eclipse 可以通过快速修复（`Ctrl + 1` /⌘1）将一个表单转换为另一个表单。
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/body_convert_cover_new.png?w=335';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/body_convert_new.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/body_convert_cover_new.png?w=335"/></p>
@@ -88,7 +88,7 @@ Kotlin允许您以一种很简单的方式声明方法，现在Eclipse可以通�
 几个重要的调试器功能已经准备好尝试了。
 ### 跑到线
 
-在调试程序时，跳过一些代码并停止执行特定行是一个非常常见的任务。这非常像“一次性断点”，但是在击中之后删除断点是乏味的。这就是为什么调试器具有运行到行*（`Ctrl + R` /⌘R）功能的原因，现在也支持Kotlin代码。
+在调试程序时，跳过一些代码并停止执行特定行是一个非常常见的任务。这非常像“一次性断点”，但是在击中之后删除断点是乏味的。这就是为什么调试器具有运行到行*（`Ctrl + R` /⌘R）功能的原因，现在也支持 Kotlin 代码。
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/09/run_to_cursor_cover.png?w=630';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/run_to_cursor.gif';" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/09/run_to_cursor_cover.png?w=630"/></p>
@@ -107,6 +107,6 @@ Kotlin允许您以一种很简单的方式声明方法，现在Eclipse可以通�
 此版本在船上构建和完成的性能有显着提升。
 ## 结论
 
-虽然我们可能会随机选择功能进行发布，但并不完全如此<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：//i2.wp .com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“我们正在逐渐解决我们在项目中遇到的问题 [Kotlin码的百分比增长](https://github.com/JetBrains/kotlin-eclipse) 对结果很满意。
+虽然我们可能会随机选择功能进行发布，但并不完全如此<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https：//i2.wp .com / blog.jetbrains.com / kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“我们正在逐渐解决我们在项目中遇到的问题 [Kotlin 码的百分比增长](https://github.com/JetBrains/kotlin-eclipse) 对结果很满意。
 如果你有一个想法，下一步应该实现什么功能 [创造一个问题](https://youtrack.jetbrains.com/newIssue?project=KT&clearDraft=true&c=Subsystems+Eclipse+Plugin) 在我们的追踪器
-在Eclipse中有一个漂亮的Kotlin！
+在 Eclipse 中有一个漂亮的 Kotlin！

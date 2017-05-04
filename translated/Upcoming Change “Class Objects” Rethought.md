@@ -14,10 +14,10 @@ translator:
 translator_url:
 ---
 
-**Kotlin M11**即将到来，和您中的一些人一样 [表示担忧](https://devnet.jetbrains.com/thread/461012?tstart=0) 关于即将发生的变化，我将介绍M11的一个功能，并要求您提供一些**反馈**。 <span id =“more-1817”> </span>
+**Kotlin M11**即将到来，和您中的一些人一样 [表示担忧](https://devnet.jetbrains.com/thread/461012?tstart=0) 关于即将发生的变化，我将介绍 M11 的一个功能，并要求您提供一些**反馈**。 <span id =“more-1817”> </span>
 ## 类对象：一个简短的提醒
 
-众所周知，任何Kotlin类都可以有一个关联的 [类对象](http://kotlinlang.org/docs/reference/classes.html#class-objects) ：
+众所周知，任何 Kotlin 类都可以有一个关联的 [类对象](http://kotlinlang.org/docs/reference/classes.html#class-objects) ：
 
 {% raw %}
 <p></p>
@@ -37,7 +37,7 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-一个*类对象*的成员大概类似于Java / C＃类的*静态成员*，因为它们可以在类名上被调用：
+一个*类对象*的成员大概类似于 Java / C＃类的*静态成员*，因为它们可以在类名上被调用：
 
 {% raw %}
 <p></p>
@@ -51,8 +51,8 @@ KotlinClass.classObjectMember()
 <p></p>
 {% endraw %}
 
-（您可以使用`[platformStatic]`注释来使这些成员实际上从Java中看到`static`。）
-事实上，Kotlin的*类对象*和Java的静态不一样，因为*类对象是**对象***，即它们可以扩展类，实现traits并在运行时作为*值*：
+（您可以使用`[platformStatic]`注释来使这些成员实际上从 Java 中看到`static`。）
+事实上，Kotlin 的*类对象*和 Java 的静态不一样，因为*类对象是**对象***，即它们可以扩展类，实现 traits 并在运行时作为*值*：
 
 {% raw %}
 <p></p>
@@ -98,7 +98,7 @@ class KotlinClass {
 
 ## 为什么选择默认对象
 
-**注意**：此处提供的所有语法均为**临时**（我们已实施，但可能会决定在M11之前更改）。
+**注意**：此处提供的所有语法均为**临时**（我们已实施，但可能会决定在 M11 之前更改）。
 不幸的措辞不是这个变化的唯一原因。事实上，我们重新设计了这个概念，使其与普通物体更为统一。
 请注意，类可以（并且总是可以）嵌套到它中的许多对象（通常的，命名的单例）：
 
@@ -171,14 +171,14 @@ fun KotlinClass.Default.bar() { ... }
 <p></p>
 {% endraw %}
 
-这可以称为`KotlinClass.bar（）`。这就是我们为内置类（如`Int`）实现特定于平台的扩展。 `Int.MAX_VALUE`是仅在JVM上定义的`Int.Default`的扩展（JS ony具有浮点数，因此`Int.MAX_VALUE`是没有意义）。
+这可以称为`KotlinClass.bar（）`。这就是我们为内置类（如`Int`）实现特定于平台的扩展。 `Int.MAX_VALUE`是仅在 JVM 上定义的`Int.Default`的扩展（JS ony 具有浮点数，因此`Int.MAX_VALUE`是没有意义）。
 ## 概要
 
 
 * 我们正在改变以前称为“类对象”的语法和概念负载：它们现在是默认对象。
 
-旧的语法将被废弃，并保持一段时间，以便您可以迁移您的代码（IDE将在其中为您提供帮助）。
-* 旧的语法将被废弃，并保持一段时间，以便您可以迁移您的代码（IDE将在其中为您提供帮助）。
+旧的语法将被废弃，并保持一段时间，以便您可以迁移您的代码（IDE 将在其中为您提供帮助）。
+* 旧的语法将被废弃，并保持一段时间，以便您可以迁移您的代码（IDE 将在其中为您提供帮助）。
 * 新概念与普通命名对象是一致的。
 * 您现在可以将扩展名写入可以在类名上调用的默认对象。
 
