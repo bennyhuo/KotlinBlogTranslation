@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/static-constants-in-kotlin/
+translator:
+translator_url:
 ---
 
 Kotlin is designed so that there’s no such thing as a “static member” in a class. If you have a function in a class, it can only be called on instances of this class. If you need something that is not attached to an instance of any class, you define it in a package, outside any class (we call it package-level functions):

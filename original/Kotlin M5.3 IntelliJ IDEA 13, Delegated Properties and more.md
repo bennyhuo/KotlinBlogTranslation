@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delegated-properties-and-more/
+translator:
+translator_url:
 ---
 
 Kotlin M5.3 brings support for IntelliJ IDEA 13 and some new features for you to check out. We are moving towards powerful runtime support, including reflection and other framework-enabling features. This milestone marks our first steps in that direction.  <span id="more-1060"></span>

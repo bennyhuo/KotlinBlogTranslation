@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-census-call-to-action/
+translator:
+translator_url:
 ---
 
 Many times we’re asked by people working with or planning to work with Kotlin, what our adoption rate is and who’s using Kotlin and what for.

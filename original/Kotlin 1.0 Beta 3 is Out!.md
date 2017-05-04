@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-3-is-out/
+translator:
+translator_url:
 ---
 
 We are glad to present another update of Kotlin 1.0 Beta. We are working towards finalizing the standard library and getting rid of old deprecated constructs in the language, as well as bug fixes, performance improvements and future-proof checks.

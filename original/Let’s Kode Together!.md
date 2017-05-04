@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/02/lets-kode-together/
+translator:
+translator_url:
 ---
 
 As [Kotlin Web Demo](http://kotlin-demo.jetbrains.com/) is the simplest way to try Kotlin. Today we unveil some new features that make it even more fun.

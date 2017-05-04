@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/08/kotlin-m6-is-here/
+translator:
+translator_url:
 ---
 
 We’ve reached our sixth milestone, and with it, have some great features in store, both in terms of language improvements as well as tooling.<span id="more-1155"></span>

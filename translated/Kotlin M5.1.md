@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-1/
+translator:
+translator_url:
 ---
 
-自从以来，已有足够的改善 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) 所以我们今天把它们推出M5.1。其中一些事实上并不那么简单，就像使用Scala库一样 [阿卡](http://akka.io/) 。这篇文章快速概述了这些变化。<span id =“more-971”> </ span>
+自从以来，已有足够的改善 [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) 所以我们今天把它们推出M5.1。其中一些事实上并不那么简单，就像使用Scala库一样 [阿卡](http://akka.io/) 。这篇文章快速概述了这些变化。<span id =“more-971”> </span>
 ## 更好地支持Scala类。阿卡
 
 理论上讲，所有JVM语言都很容易互操作。在实践中，似乎有许多小问题使它变得不愉快或几乎不可能。
@@ -51,9 +53,9 @@ fun foo(var x: Int) {
 <p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="390" src="https://www.youtube.com/embed/JY-Vx8FjtIM?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" style="border:0;" type="text/html" width="640"></iframe></span></p>
 {% endraw %}
 
-## 支持Java的<strong>保护静态</ strong>方法
+## 支持Java的<strong>保护静态</strong>方法
 
-一些Java框架（如Android）依赖于受保护的静态方法在子类中可用。虽然这似乎是一个有问题的模式，但Kotlin现在支持它（仅适用于Java兼容性），即如果您在Kotlin中扩展此类，则可以访问Java类的<strong>受保护的静态</ strong>成员。
+一些Java框架（如Android）依赖于受保护的静态方法在子类中可用。虽然这似乎是一个有问题的模式，但Kotlin现在支持它（仅适用于Java兼容性），即如果您在Kotlin中扩展此类，则可以访问Java类的<strong>受保护的静态</strong>成员。
 ## 匿名对象
 
 考虑以下代码（使用Kotlin模拟到匿名内部类）：
@@ -73,7 +75,7 @@ val x = object : A() { ... }
 x的类型是什么？它曾经是匿名类型，但如果您从外部使用x，则无法访问它：类型无效。现在该类型将为A.这仅适用于从外部可以看到的属性，即如果x是局部变量，它将仍然具有匿名类型，因为它是无害的。
 ## 类对象可以从Java使用
 
-Kotlin类没有静态成员，而是<a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">类对象</a> </ em>：
+Kotlin类没有静态成员，而是<a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">类对象</a> </em>：
 
 {% raw %}
 <p></p>
@@ -113,4 +115,4 @@ public static void main(String[] args) {
 ## 要求
 
 Kotlin M5.1要求 [IntelliJ IDEA 12.0.4](http://www.jetbrains.com/idea/download/index.html) （不支持12.1的EAP），您可以从插件库中下载。
-<strong>拥有不错的Kotlin！</ strong>
+<strong>拥有不错的Kotlin！</strong>

@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/07/m8-is-out/
+translator:
+translator_url:
 ---
 
-自上次发布以来，这是一个非常忙碌的几个月，我们一直在努力进行实质性改进，特别是在速度方面。我们对这个版本有很多好处。让我们开始吧<span id =“more-1509”> </ span>
+自上次发布以来，这是一个非常忙碌的几个月，我们一直在努力进行实质性改进，特别是在速度方面。我们对这个版本有很多好处。让我们开始吧<span id =“more-1509”> </span>
 ## JVM
 
 ### 物业反思
@@ -148,7 +150,7 @@ inline fun <T> guardedValue(
 <p></p>
 {% endraw %}
 
-我们的guardedValue（）是一个内联函数。现在，<b> lock </ b>参数具有默认值（为每个值创建一个新的ReentrantLock）。然后，此函数内的对象表达式“捕获”<b>计算</ b>参数，并直接在创建的匿名类内嵌。这导致只有一个类和一个对象每个值发出（并存储），而不是非内联情况的两个类和两个对象。
+我们的guardedValue（）是一个内联函数。现在，<b> lock </b>参数具有默认值（为每个值创建一个新的ReentrantLock）。然后，此函数内的对象表达式“捕获”<b>计算</b>参数，并直接在创建的匿名类内嵌。这导致只有一个类和一个对象每个值发出（并存储），而不是非内联情况的两个类和两个对象。
 
 {% raw %}
 <p><a name="platformName"></a></p>
@@ -189,8 +191,8 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-原因是<em> x </ em>的getter具有相同的名称（getX）和签名（不需要参数，返回Int）作为其旁边声明的函数，JVM不允许在类文件中使用这样的东西。
-另一种情况是<em>意外覆盖</ em>：
+原因是<em> x </em>的getter具有相同的名称（getX）和签名（不需要参数，返回Int）作为其旁边声明的函数，JVM不允许在类文件中使用这样的东西。
+另一种情况是<em>意外覆盖</em>：
 
 {% raw %}
 <p></p>
@@ -226,7 +228,7 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-人们可能会想知道为什么我们不会自动重命名其中一个功能，而不是发出错误？答案在于Java互操作性的领域（没有人喜欢编译器发明的名称）和二进制兼容性（事物的名称绝不能静默地改变，或者所有依赖的代码将意外地破坏）。另一方面，您可以使用<em> platformName </ em>注释手动指定所需的JVM名称：
+人们可能会想知道为什么我们不会自动重命名其中一个功能，而不是发出错误？答案在于Java互操作性的领域（没有人喜欢编译器发明的名称）和二进制兼容性（事物的名称绝不能静默地改变，或者所有依赖的代码将意外地破坏）。另一方面，您可以使用<em> platformName </em>注释手动指定所需的JVM名称：
 
 {% raw %}
 <p></p>
@@ -245,10 +247,10 @@ fun getX() = 1
 {% endraw %}
 
 请注意，对于Kotlin客户端，此代码不会更改，但Java客户端必须使用平台名称（doGetX）而不是Kotlin名称（getX）。
-<b>警告：</ b>这是一个<b> break </ b>更改，您现有的一些代码可能需要修复。
+<b>警告：</b>这是一个<b> break </b>更改，您现有的一些代码可能需要修复。
 ### 支持瞬态，同步和strictfp
 
-除了长期可用的<em> </ em>之外。我们现在支持<em> transient </ em>，<em>同步</ em>和<em> strictfp </ em>作为注释。语义与Java类似：
+除了长期可用的<em> </em>之外。我们现在支持<em> transient </em>，<em>同步</em>和<em> strictfp </em>作为注释。语义与Java类似：
 
 {% raw %}
 <p></p>
@@ -281,7 +283,7 @@ class FlagDemo {
 
 ## 语言变化
 
-一些语言变化，所有这些变化都是<b>破坏变化</ b>，重要的是要注意：
+一些语言变化，所有这些变化都是<b>破坏变化</b>，重要的是要注意：
 
 * 私有的一个包现在意味着私有的当前包中的模块。在其他模块中具有相同名称的软件包将不会看到这些定义。请注意，程序包是嵌套的，因此同一个模块中的子包也可以看到privates。
 * 扩展属性不能具有后缀字段。这是从来没有建议过的。

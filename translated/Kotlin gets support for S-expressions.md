@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/04/kotlin-gets-support-for-s-expressions/
+translator:
+translator_url:
 ---
 
 Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决定支持 [S表达式](http://en.wikipedia.org/wiki/S-expression) ，赋权的概念 [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) 。
@@ -38,7 +40,7 @@ Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决�
 <p></p>
 {% endraw %}
 
-这只是给你的味道。现在，我们逐一解释这些结构。<span id =“more-1505”> </ span>
+这只是给你的味道。现在，我们逐一解释这些结构。<span id =“more-1505”> </span>
 ## S表达式解释
 
 首先，只添加一个新的句法结构，即S表达式。它有形式
@@ -71,7 +73,7 @@ Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决�
 {% endraw %}
 
 请注意，文字（'1'，'3'）可以与其他表达式（例如“两”）混合。
-LISP原来代表<strong> LIS </ strong> t <strong> P </ strong>加密，所以列表的文字非常重要：
+LISP原来代表<strong> LIS </strong> t <strong> P </strong>加密，所以列表的文字非常重要：
 
 {% raw %}
 <p></p>
@@ -142,10 +144,10 @@ Lambda表达式还具有LISP格式：
 
 ## 试试看！
 
-你可以找到上面的例子（还有一些） [这里](http://kotlin-demo.jetbrains.com/?publicLink=104074971561017308771-1697121195) 。他们是可运行的，你可以玩代码。 <strong>免责声明</ strong>：它只是一个原型。
+你可以找到上面的例子（还有一些） [这里](http://kotlin-demo.jetbrains.com/?publicLink=104074971561017308771-1697121195) 。他们是可运行的，你可以玩代码。 <strong>免责声明</strong>：它只是一个原型。
 ## 限制
 
-不幸的是，在这个阶段我们对S表达式的支持有限。由于与解析相关的一些问题，S表达式只能是<strong>奇数长度</ strong>。我们正在努力消除这个限制。
+不幸的是，在这个阶段我们对S表达式的支持有限。由于与解析相关的一些问题，S表达式只能是<strong>奇数长度</strong>。我们正在努力消除这个限制。
 另外，当将命名函数定义为S表达式时，其名称必须在前面带有一个点（不要与下面提到的点运算符混淆）：
 
 {% raw %}

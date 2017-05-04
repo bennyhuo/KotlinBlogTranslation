@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-1/
+translator:
+translator_url:
 ---
 
 There have been enough little improvements since [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) so that we are rolling them out as M5.1 today. Some of them are not so little in fact, like enabling the use of Scala libraries, such as [Akka](http://akka.io/) . This post gives a quick overview of these changes.<span id="more-971"></span>

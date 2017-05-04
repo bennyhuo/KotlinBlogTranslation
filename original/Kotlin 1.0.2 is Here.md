@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the release of Kotlin 1.0.2, the second bugfix and tooling update for Kotlin. In addition to compiler and language bugfixes, Kotlin 1.0.2 adds a number of major features to the IDE and the build tools.

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/
+translator:
+translator_url:
 ---
 
 We are delighted to present <strong>Kotlin 1.0.3</strong>. This update is not full of brand new and shiny features, it is more about bug fixes, tooling improvements and performance boosts. That’s why you’ll like it 😉 Take a look at the full [change log](https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md) and issues stats by subsystem:

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
+translator:
+translator_url:
 ---
 
 Another update of [Kotlin](http://kotlin.jetbrains.org/) comes out today. Welcome Kotlin M5.2. <span id="more-1038"></span>

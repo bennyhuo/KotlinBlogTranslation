@@ -10,10 +10,12 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/join-live-webinar-quasar-and-kotlin/
+translator:
+translator_url:
 ---
 
 加入我们
-<strong>星期三，9月16日，16:00  -  17:00 CET </ strong>（10:00  -  11:00 AM EDT）为我们的免费网络研讨会， [类星体：高效优雅的纤维，渠道和演员](http://info.jetbrains.com/Kotlin-Webinar-September2015-registration.html) 与Fabio Tudone。
+<strong>星期三，9月16日，16:00  -  17:00 CET </strong>（10:00  -  11:00 AM EDT）为我们的免费网络研讨会， [类星体：高效优雅的纤维，渠道和演员](http://info.jetbrains.com/Kotlin-Webinar-September2015-registration.html) 与Fabio Tudone。
 类星体纤维为JVM提供真正的轻量级线程，以及类似Erlang的演员，Go-like频道和Dataflow编程：这意味着我们可以有效地使用直接阻止API和常规的基于堆栈的控制流程，而不是提交繁琐和传染性的异步和单体风格。
 在介绍了关于光纤，它们的工作原理和Quasar的额外抽象之后，我们将探讨Quasar如何使用Kotlin
 

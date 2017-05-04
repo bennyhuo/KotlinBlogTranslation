@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/
+translator:
+translator_url:
 ---
 
 Today we are glad to present the new version of [Anko](https://github.com/JetBrains/anko) — a library which facilitates Android application development. We are happy to have received lots of feedback, and some of the changes in [0.6](https://github.com/JetBrains/anko/releases/tag/v0.6) were actually proposed by the community.<br/>

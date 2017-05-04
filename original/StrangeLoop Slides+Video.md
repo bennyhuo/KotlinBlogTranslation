@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/11/strangeloop-slidesvideo/
+translator:
+translator_url:
 ---
 
 Slides and video from the talk I gave at [StrangeLoop](https://thestrangeloop.com/sessions/the-kotlin-programming-language) this year is available [here](http://www.infoq.com/presentations/The-Kotlin-Programming-Language) :<br/>

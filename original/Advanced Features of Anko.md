@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/advanced-features-of-anko/
+translator:
+translator_url:
 ---
 
 Last week we published [a new version](http://blog.jetbrains.com/kotlin/2015/04/anko-0-6-is-released/) of Anko. While the main purpose of this library is creating layouts though a DSL, even the users of XML layouts can benefit from it. Today we are going to talk about such “ambivalent” features of Anko.<span id="more-2135"></span>

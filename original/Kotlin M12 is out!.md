@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/
+translator:
+translator_url:
 ---
 
 We are happy to present Kotlin M12, bringing some rather important changes and new features:

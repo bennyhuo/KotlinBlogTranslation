@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/how-do-you-traverse-a-map/
+translator:
+translator_url:
 ---
 
 It’s been a while since I blogged last time on Kotlin M2. Now, the hot summer has passed, and <strong>M3</strong> will be out very soon. In this post I describe two small features added in M3 that make our lives easier and will lead to simplification of the language.

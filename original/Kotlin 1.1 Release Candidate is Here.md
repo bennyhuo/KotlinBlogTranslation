@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/02/kotlin-1-1-release-candidate-is-here/
+translator:
+translator_url:
 ---
 
 As of today, Kotlin 1.1 has finally reached the release candidate stage. This means that most of our development work is done, we’re happy with the results, and we’ll soon publish them as a final Kotlin 1.1 release. We’ve done a lot of testing for this release internally, but the real world is always more varied than any test environment, so we need your help. Please try this build, and let us know about your experience!

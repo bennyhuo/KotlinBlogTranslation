@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/kotlin-evolves-how-to-keep-your-code-up/
+translator:
+translator_url:
 ---
 
 Kotlin is undergoing finalization, and as part of the process we are <strong>cleaning up</strong>: revising the language and its libraries. The biggest changes have been made in [M12](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) , but some more are coming. The point is to perform all the necessary breaking changes before we release 1.0, so that we can keep the language and libraries <strong>backwards-compatible</strong> after the release.

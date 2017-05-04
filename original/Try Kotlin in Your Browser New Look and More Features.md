@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/try-kotlin-in-your-browser-new-look-and-more-features/
+translator:
+translator_url:
 ---
 
 We released [Kotlin Web Demo](http://kotlin-demo.jetbrains.com) quite a while ago, it did a good job helping people try Kotlin right in the browser and share runnable code with each other. Now, a shiny new version is ready, it’s time to retire the old one.

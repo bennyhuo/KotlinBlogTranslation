@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/10/dsls-in-kotlin-part-1-whats-in-the-toolbox-builders/
+translator:
+translator_url:
 ---
 
 If you have a <em>very nice</em> API, it is the fashion nowadays to call it an <em>internal DSL</em>, because the code that uses such an API reads almost like a language inside your language of choice. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html) serve as one of the most popular examples.

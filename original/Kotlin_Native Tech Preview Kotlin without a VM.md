@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlinnative-tech-preview-kotlin-without-a-vm/
+translator:
+translator_url:
 ---
 
 We are happy to announce the first Technology Preview of <strong>Kotlin/Native</strong> that compiles Kotlin directly to machine code. The Kotlin/Native compiler produces standalone executables that can run without any virtual machine.

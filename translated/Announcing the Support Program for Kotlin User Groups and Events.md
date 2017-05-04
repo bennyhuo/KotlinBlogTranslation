@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/01/announcing-the-support-program-for-kotlin-user-groups-and-events/
+translator:
+translator_url:
 ---
 
 今天我们推出了一个新的 [社区部分在我们的网站](https://kotlinlang.org/community/) ！
@@ -20,7 +22,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/01/announcing-the-support-pro
 
 它将为您提供组织Kotlin相关活动的准则，以及JetBrains管理的支持说明。我们现在很高兴地宣布，我们已经正式确定了Kotlin周围的用户组和活动的支持流程。
 令人兴奋的是，到2016年，全球超过15万的开发商尝试了Kotlin。我们现在有一个惊人的社区，这使我们能够举办Kotlin专门的会谈和聚会。我们还举行了两场Kotlin之夜：第一场 [在旧金山](https://blog.jetbrains.com/kotlin/2016/06/kotlin-night-recordings/) 另一个 [在伦敦](https://blog.jetbrains.com/kotlin/2016/09/kotlin-night-in-london/) 。更好的是，你，社区，开始组织这些活动，我们在这里帮助。看到更多Kotlin夜的需求也是很好的。
-<span id =“more-4539”> </ span> <br/>
+<span id =“more-4539”> </span> <br/>
 
 我们提供以下程序：
 ## [Kotlin用户组支持计划](https://kotlinlang.org/community/user-groups.html) [我们感谢您的工作，并希望能帮助您找到合作伙伴和演讲者，并帮助您推广您的活动。我们可以给你赃物，并给你一个建议。请](https://docs.google.com/forms/d/e/1FAIpQLSdkLbD_SPbXZDVW2nQPgUiLCW4HOSXysOVK1jPLcShPfyhkNA/viewform) 填写您的用户组的表单 [ 或者随时通过](mailto:alina@jetbrains.com) 电子邮件。

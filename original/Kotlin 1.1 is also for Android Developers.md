@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-is-also-for-android-developers/
+translator:
+translator_url:
 ---
 
 We’re all really excited about the release of Kotlin 1.1. The new features this release includes are extremely useful for Java developers and lead JVM development to a new world of possibilities.

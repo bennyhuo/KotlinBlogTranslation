@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/kotlin-web-demo-is-out/
+translator:
+translator_url:
 ---
 
 It’s been a little more than a year since the first commit was pushed to our source control, and we are happy to announce the first public preview of Kotlin.

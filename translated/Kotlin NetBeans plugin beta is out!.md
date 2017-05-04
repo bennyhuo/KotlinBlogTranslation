@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-netbeans-plugin-beta-is-out/
+translator:
+translator_url:
 ---
 
 今天我们很高兴地介绍NetBeans IDE的Kotlin插件的第一个BETA版本。

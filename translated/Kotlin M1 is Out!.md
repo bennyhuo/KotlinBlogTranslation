@@ -10,13 +10,15 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/
+translator:
+translator_url:
 ---
 
-今天，我们很高兴地宣布：M1：Kotlin的第一个里程碑版本</ strong>
+今天，我们很高兴地宣布：M1：Kotlin的第一个里程碑版本</strong>
 Kotlin的主页（ [kotlin.jetbrains.org](http://kotlin.jetbrains.org) ）提供有关语言的完整详细信息。在这篇文章中，我提供了与里程碑版本相关的一些亮点。
 ## 盒子里有什么东西
 
-Kotlin以IntelliJ IDEA </ strong>的<strong>独立编译器</ strong>和<strong>插件的形式出现。
+Kotlin以IntelliJ IDEA </strong>的<strong>独立编译器</strong>和<strong>插件的形式出现。
 
 * IntelliJ IDEA插件
 
@@ -27,7 +29,7 @@ Kotlin毕业于官方插件库！
 见 [入门指南](http://confluence.jetbrains.net/display/Kotlin/Getting+Started) 详细信息。
 ## 标准库
 
-Kotlin的 [标准库](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) 提供了许多有用的功能，包括现有Java API的增强功能。例如，<span id =“more-514”> </ span>可以使用集合中的map（）/ filter（）/ etc进行批量数据处理：
+Kotlin的 [标准库](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/index.html) 提供了许多有用的功能，包括现有Java API的增强功能。例如，<span id =“more-514”> </span>可以使用集合中的map（）/ filter（）/ etc进行批量数据处理：
 
 {% raw %}
 <p></p>
@@ -41,7 +43,7 @@ val minors = users.filter { it.age < 21 }
 <p></p>
 {% endraw %}
 
-或者您可以简单地</ em>从java.io.File中读取文本：
+或者您可以简单地</em>从java.io.File中读取文本：
 
 {% raw %}
 <p></p>

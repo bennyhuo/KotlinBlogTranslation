@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/10/how-to-configure-kotlin-in-your-project/
+translator:
+translator_url:
 ---
 
 Kotlin can be freely mixed with Java. That means that you can easily add Kotlin code to an existing Java project. All you need to do is create a new Kotlin file (*.kt) and tell the environment to use Kotlin. If you’re using IntelliJ IDEA, it can do this for you automatically.<span id="more-1247"></span>

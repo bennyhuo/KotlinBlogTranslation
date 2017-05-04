@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-1-m03-is-here/
+translator:
+translator_url:
 ---
 
 We are pleased to announce the third milestone of the upcoming Kotlin 1.1. This release brings new language features as well as improvements and fixes in the JavaScript backend, compiler and IDEA plugin. The new release also includes all tooling features introduced in Kotlin 1.0.5, and is compatible with IntelliJ IDEA 2016.3 EAP and Android Studio 2.2 and 2.3.

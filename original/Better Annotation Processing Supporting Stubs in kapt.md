@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/
+translator:
+translator_url:
 ---
 
 We announced [kapt](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) , an Annotation Processing Tool for Kotlin, some time ago, and discussed its limitations. Now most of the <strong>limitations are going away</strong> with the updated version of <code>kapt</code> that is available as a <code>0.1-SNAPSHOT</code> preview.<span id="more-2385"></span>

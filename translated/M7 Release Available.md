@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/03/m7-release-available/
+translator:
+translator_url:
 ---
 
 Kotlin M7在这里和它一些期待已久的功能。
@@ -17,11 +19,11 @@ Kotlin M7在这里和它一些期待已久的功能。
 
 ### 内联支持
 
-M7的最大特点之一是支持内联功能。 Kotlin鼓励使用高阶函数（有些人称之为“功能性样式”），这需要大量使用lambda表达式。从M7开始，您可以将更高阶的函数声明为“内联”，这意味着它的正文将在调用站点以及传递给它的任何lambdas内联。这意味着使用这些功能的性能损失是无关紧要的。例如，使用<em> </ em>循环而不是使用<em> forEach </ em>并传递一个lambda在速度方面几乎没有区别。
-<span id =“more-1439”> </ span> <br/>
+M7的最大特点之一是支持内联功能。 Kotlin鼓励使用高阶函数（有些人称之为“功能性样式”），这需要大量使用lambda表达式。从M7开始，您可以将更高阶的函数声明为“内联”，这意味着它的正文将在调用站点以及传递给它的任何lambdas内联。这意味着使用这些功能的性能损失是无关紧要的。例如，使用<em> </em>循环而不是使用<em> forEach </em>并传递一个lambda在速度方面几乎没有区别。
+<span id =“more-1439”> </span> <br/>
 内联提供的优点包括生成的类的数量，字节码大小，更少的分配和更少的变形调用，所有这些都有助于这些性能提升。
 Kotlin标准库的许多功能现在已经被列入了。
-注意：如果内联中断代码（例如由于编译器错误），可以通过将<i> -inline off </ i>命令行选项传递给编译器来关闭它（请参阅首选项 - >编译器 - > Kotlin编译器）：
+注意：如果内联中断代码（例如由于编译器错误），可以通过将<i> -inline off </i>命令行选项传递给编译器来关闭它（请参阅首选项 - >编译器 - > Kotlin编译器）：
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2014/03/inline1.png"><img alt="inline" class="alignnone size-full wp-image-1462" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2014/03/inline1.png?resize=381%2C115&amp;ssl=1"/></a></p>
@@ -29,13 +31,13 @@ Kotlin标准库的许多功能现在已经被列入了。
 
 ### toString（），equals（）和hashCode（）需要override指令
 
-当声明<em> toString（）</ em>，<em> equals（）</ em>和<em> hashCode（）</ em>时，我们现在需要使用<em>覆盖</ em>关键词。这是以前版本中的<strong>突破性变化</ strong>，适用于所有类。使用IDE中提供的快速修复（Alt + Enter错误）快速添加“覆盖”到项目中的所有这些方法。
+当声明<em> toString（）</em>，<em> equals（）</em>和<em> hashCode（）</em>时，我们现在需要使用<em>覆盖</em>关键词。这是以前版本中的<strong>突破性变化</strong>，适用于所有类。使用IDE中提供的快速修复（Alt + Enter错误）快速添加“覆盖”到项目中的所有这些方法。
 ### “jet”包更名为“kotlin”
 
-核心类已被重命名为“kotlin”，这也意味着，是的，你猜到了，Kotlin现在是Kotlin的官方和最终名字。这也是一个潜在的<strong>破坏性变化</ strong>。大多数进口将自动发生。如果遇到任何问题，请手动重命名导入。
+核心类已被重命名为“kotlin”，这也意味着，是的，你猜到了，Kotlin现在是Kotlin的官方和最终名字。这也是一个潜在的<strong>破坏性变化</strong>。大多数进口将自动发生。如果遇到任何问题，请手动重命名导入。
 ### 参考本地功能
 
-在Kotlin中，您可以使用<em> :: functionName </ em>语法通过名称引用函数。这也适用于本地功能
+在Kotlin中，您可以使用<em> :: functionName </em>语法通过名称引用函数。这也适用于本地功能
 
 {% raw %}
 <p></p>
@@ -62,9 +64,9 @@ fun foo() {
 
 ## 互操作性
 
-### <em> [throws] </ em>注释
+### <em> [throws] </em>注释
 
-现在，您可以使用<em> throws </ em>注释来装饰函数，以指示当编译为JVM时该函数应声明哪些异常。
+现在，您可以使用<em> throws </em>注释来装饰函数，以指示当编译为JVM时该函数应声明哪些异常。
 
 {% raw %}
 <p></p>
@@ -122,8 +124,8 @@ void connect(String host) throws SocketException {
 此外，JavaScript本机功能还允许将扩展文字作为参数传递。
 ## 标准库
 
-标准图书馆正在重新加工。这包括引入<em>流</ em>（除其他外，这将有助于更好地与Java 8的兼容性）和某些功能的弃用。
-某些重新设计已导致库API破坏</ strong> </ strong>。大多数功能仍然可用，但您可能需要稍微修复现有代码。
+标准图书馆正在重新加工。这包括引入<em>流</em>（除其他外，这将有助于更好地与Java 8的兼容性）和某些功能的弃用。
+某些重新设计已导致库API破坏</strong> </strong>。大多数功能仍然可用，但您可能需要稍微修复现有代码。
 ## IntelliJ IDEA增强功能
 
 ### 现在复制/粘贴插入导入

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-event-report/
+translator:
+translator_url:
 ---
 
 Kotlin 1.1 版本发布在社区反响很好。为了演示 Kotlin 1.1 的新功能，JetBrains 提供了一个在线活动。所有感兴趣的人都可以观看 Andrey Breslav 的在线直播演示，并在 Q&A 环节获得他们关心的问题的答案。

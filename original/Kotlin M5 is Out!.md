@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/
+translator:
+translator_url:
 ---
 
 In two weeks from now it will be one year since Kotlin started out as an open source project. It’s been a lot of hard work over this time, with a huge help of the community: we received [164 pull requests](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) , which means a contribution every other day or so. Today we make another step and roll out <strong>Kotlin M5</strong>. This blog post covers the changes introduced in this release.<span id="more-835"></span>

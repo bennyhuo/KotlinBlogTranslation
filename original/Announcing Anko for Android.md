@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/announcing-anko-for-android/
+translator:
+translator_url:
 ---
 
 We’re excited to announce a library we’ve been working on for Android development, which, among other things allows the creation of Application Interfaces in a type-safe and dynamic way using a DSL.

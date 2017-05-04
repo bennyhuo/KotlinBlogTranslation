@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/
+translator:
+translator_url:
 ---
 
 Welcome the Kotlin Digest of Q1 2016. It was in this quarter that Kotlin 1.0 was released, and naturally the number of articles and coverage received has substantially increased.<br/>

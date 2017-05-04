@@ -10,10 +10,12 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/feedback-request-limitations-on-data-classes/
+translator:
+translator_url:
 ---
 
 M13即将到来，我们计划稍后一点。这是对Kotlin未来变化的反馈请求。
-我们希望比以后提供Kotlin 1.0，这使我们推迟了一些我们没有足够的信心的设计选择。今天我们讨论<em>数据类</ em>。<span id =“more-2472”> </ span>
+我们希望比以后提供Kotlin 1.0，这使我们推迟了一些我们没有足够的信心的设计选择。今天我们讨论<em>数据类</em>。<span id =“more-2472”> </span>
 ## 介绍
 
 的概念 [数据类](http://kotlinlang.org/docs/reference/data-classes.html) 当简单地存储数据时，已被证明非常有用。所有你需要的是说：
@@ -31,7 +33,7 @@ data class Foo(val a: A, val b: B)
 <p></p>
 {% endraw %}
 
-并且您可以免费获得<code> equals（）/ hashCode（）</ code>，<code> toString（）</ code>，<code> copy（）</ code>和组件函数。
+并且您可以免费获得<code> equals（）/ hashCode（）</code>，<code> toString（）</code>，<code> copy（）</code>和组件函数。
 最常见的用例类似于魅力，但数据类与其他语言功能的交互可能会导致令人惊讶的结果。
 ## 问题
 
@@ -52,13 +54,13 @@ data class Derived(a: A, b: B, val c: C) : Base(a, b)
 <p></p>
 {% endraw %}
 
-现在，<code> equals（）</ code>或<code> copy（）</ code>在<code> Derived </ code>中的工作如何？所有众所周知的问题立即出现：
+现在，<code> equals（）</code>或<code> copy（）</code>在<code> Derived </code>中的工作如何？所有众所周知的问题立即出现：
 
 * 如果一个Base的实例等于Derived的实例，如果它们对于a和b具有相同的值？
 * 等于（）的传递性怎么样？
 * 如果我通过Base类型的引用复制Derived的实例？
 
-以及组件功能如何启用 [多重声明](http://kotlinlang.org/docs/reference/multi-declarations.html) ？在这种基本情况下，<code> c </ code>简单地成为<code> Derived </ code> <strong>中的第三个组件似乎或多或少是逻辑的：
+以及组件功能如何启用 [多重声明](http://kotlinlang.org/docs/reference/multi-declarations.html) ？在这种基本情况下，<code> c </code>简单地成为<code> Derived </code> <strong>中的第三个组件似乎或多或少是逻辑的：
 
 {% raw %}
 <p></p>
@@ -88,7 +90,7 @@ data class Derived(b: B, a: A, val c: C) : Base(a, b)
 <p></p>
 {% endraw %}
 
-请注意，参数顺序相反：first <code> b </ code>，比<code> a </ code>。现在还不清楚。而且可能会变得更糟：
+请注意，参数顺序相反：first <code> b </code>，比<code> a </code>。现在还不清楚。而且可能会变得更糟：
 
 {% raw %}
 <p></p>
@@ -103,7 +105,7 @@ data class Derived(val c: C, b: B, a: A) : Base(a, b)
 <p></p>
 {% endraw %}
 
-现在，第一个<code> c </ code>，继承的<code> component1（）：A </ code>只是一个冲突，它不是一个覆盖，但是这样的重载也不合法。
+现在，第一个<code> c </code>，继承的<code> component1（）：A </code>只是一个冲突，它不是一个覆盖，但是这样的重载也不合法。
 这些只是一些例子，还有更多的问题，大小。
 ## 我们的策略
 
@@ -128,7 +130,7 @@ data class Derived(val c: C, b: B, a: A) : Base(a, b)
 再次，这个清单中的一些限制可能会稍后解决，但现在我们不想处理这些情况。
 ## 附录。比较数组
 
-这是JVM上一个长期以来的众所周知的问题：<code> equals（）</ code>对于数组和集合的工作方式不同。集合在结构上进行了比较，而数组不是，<code> equals（）</ code>对于他们来说只是采用参考平等：<code> this === other </ code>。
+这是JVM上一个长期以来的众所周知的问题：<code> equals（）</code>对于数组和集合的工作方式不同。集合在结构上进行了比较，而数组不是，<code> equals（）</code>对于他们来说只是采用参考平等：<code> this === other </code>。
 目前，Kotlin数据类在这个问题上表现不好：
 
 * 如果你声明一个组件是一个数组，它将在结构上进行比较，
@@ -146,7 +148,7 @@ data class Derived(val c: C, b: B, a: A) : Base(a, b)
 * DataClass（arr1）== DataClass（arr2）
 * 或沿着这些线路的其他任何东西，
 
-你可以通过<code> equals（）</ code>来比较数组，也就是说。
+你可以通过<code> equals（）</code>来比较数组，也就是说。
 我们很乐意解决与集合不一致的问题，但唯一平凡的修复方式似乎是将它固定在Java中，这超出了任何人的力量，AFAIK <img alt =“:)”class =“wp-smiley” data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl= 1“style =”height：1em; max-height：1em;“/>
 ## 征求反馈意见
 

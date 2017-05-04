@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/01/kotlin-digest-2015/
+translator:
+translator_url:
 ---
 
 Kotlin’s adoption significantly increased in 2015, and we are especially grateful to our early adopters, who not only used Kotlin, but shared their experiences through different mediums. We’d like to highlight the most notable articles and videos of the past year.

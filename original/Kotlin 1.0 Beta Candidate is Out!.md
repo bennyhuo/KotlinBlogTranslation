@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/10/kotlin-1-0-beta-candidate-is-out/
+translator:
+translator_url:
 ---
 
 We are happy to present Kotlin <strong>Beta Candidate</strong>. An official 1.0 Beta will be out soon. By now, the binary format is finalized, no major language changes are planned, and only a few changes in the standard library are coming.

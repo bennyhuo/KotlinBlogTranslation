@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/the-great-syntactic-shift/
+translator:
+translator_url:
 ---
 
 As the first public preview of Kotlin is approaching (it will be announced on Jan 10th, 2012, which is <strong>less than a week</strong> from now!), we are putting some things in order…

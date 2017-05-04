@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/06/mixed-site-variance-in-kotlin/
+translator:
+translator_url:
 ---
 
 <img alt="" class="alignleft" data-recalc-dims="1" src="https://i2.wp.com/www.geoffwilkins.net/images/feynman/feynman-blackboard.jpg?resize=360%2C272&amp;ssl=1"/>Type systems… We all know they are cool. In a static language, like Kotlin, the type system is the one responsible for early detection of errors. Many tools (e.g. an IDE with its refactoring abilities) also rely on the type system.

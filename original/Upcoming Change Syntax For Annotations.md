@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations/
+translator:
+translator_url:
 ---
 
 Kotlin’s syntax for annotations was inspired by C#, which surrounds them with square brackets:

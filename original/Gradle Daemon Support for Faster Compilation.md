@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/
+translator:
+translator_url:
 ---
 
 We are currently working on improving compilation times. Today we are happy to invite you to try Kotlin <code>0.12.1230</code> making use of the Gradle Daemon. It eliminates startup costs, and your builds run faster. <span id="more-2419"></span>

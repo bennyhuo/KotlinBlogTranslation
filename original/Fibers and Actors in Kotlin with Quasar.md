@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/06/fibers-and-actors-in-kotlin-with-quasar/
+translator:
+translator_url:
 ---
 
 In the [previous post](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) we mentioned that the [Quasar](http://docs.paralleluniverse.co/quasar/) library now supports Kotlin, providing awesome support for fibers (lightweight threads), Go-like channels, Erlang-like actors, and other asynchronous tools.

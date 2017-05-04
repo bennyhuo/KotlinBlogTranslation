@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/
+translator:
+translator_url:
 ---
 
 At JetBrains we’ve always believed in our Early Access Program for our tools, giving developers a chance to use the latest features or fixes as soon as they’re ready. We’ve followed the same philosophy with Kotlin, knowing of course that with a language, some decisions can haunt you for life.

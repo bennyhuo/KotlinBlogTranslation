@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/09/kotlin-night-in-london/
+translator:
+translator_url:
 ---
 
 We’re holding another [Kotlin Night](https://info.jetbrains.com/Kotlin-Night-London.html) , but this time in London. We’ve brought together members of the community that have been and are currently using Kotlin in production, to come and speak to us about their experiences. As well as share some tips and tricks.

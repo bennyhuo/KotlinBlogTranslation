@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/12/javascript-interop/
+translator:
+translator_url:
 ---
 
 When working with JavaScript, i.e. creating a Kotlin application that compiles down to JavaScript, we often need to interoperate with existing libraries in JavaScript. While Kotlin already provides support for this, we’ve added a few more options in M10 to make interoperability even easier.<br/>

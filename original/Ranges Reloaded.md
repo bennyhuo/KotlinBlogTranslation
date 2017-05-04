@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/ranges-reloaded/
+translator:
+translator_url:
 ---
 
 In [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) we have redesigned our ranges a little bit.<span id="more-855"></span>

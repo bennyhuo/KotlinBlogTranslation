@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/01/an-interview-with-andy-selvig-author-of-kara-web-framework/
+translator:
+translator_url:
 ---
 
 <strong><img alt="" class="alignright size-medium wp-image-806" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/01/headshot.jpg?resize=210%2C158&amp;ssl=1"/>1. Hello Andy, thank you for taking the time to join us. Can you tell us a bit about yourself? </strong>

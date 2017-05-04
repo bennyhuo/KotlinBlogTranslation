@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-event-report/
+translator:
+translator_url:
 ---
 
 The Kotlin 1.1 release was warmly met by the community. To demonstrate the new features in Kotlin 1.1, JetBrains offered an online event. All those interested were able to watch a live stream of Andrey Breslav’s demo presentation and get their questions answered during a Q&A session.

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/07/m8-is-out/
+translator:
+translator_url:
 ---
 
 It’s been a really busy couple of months since the last release and we’ve been working hard on making substantial improvements, particularly in terms of speed. We have a lot of goodies for this release. Let’s get started<span id="more-1509"></span>

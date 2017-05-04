@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin/
+translator:
+translator_url:
 ---
 
 We always said that Kotlin is really easy to learn. And it is! But it’s not only about the language: learning materials make a difference too. Today we are making another important step in this direction. We are happy to present Kotlin Educational Plugin.

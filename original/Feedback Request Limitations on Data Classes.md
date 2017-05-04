@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/feedback-request-limitations-on-data-classes/
+translator:
+translator_url:
 ---
 
 While M13 is approaching, we are planning a little ahead. This is a request for feedback on some future changes in Kotlin.

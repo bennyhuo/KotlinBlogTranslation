@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/09/free-kotlin-webinar-on-wednesday-october-10th/
+translator:
+translator_url:
 ---
 
 Join me (Andrey Breslav) and [Hadi Hariri](http://www.jetbrains.com/devnet/academy/experts/Hadi_Hariri.html) in a [webinar](https://www4.gotomeeting.com/register/662905759) about [Kotlin M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) . We will discuss the new features and our plans, give some demos and answer <strong>your questions</strong>.

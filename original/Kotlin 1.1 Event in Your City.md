@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-in-your-city-2/
+translator:
+translator_url:
 ---
 
 We are holding the [Kotlin 1.1 event on March 23](https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/#more-4726) . Tune in to the live stream [at JetBrains TV](http://jb.gg/kotlinevent1_1) and see <strong>Andrey Breslav’s demo presentation</strong> about the key features of Kotlin 1.1, including coroutines, JavaScript back-end and more.

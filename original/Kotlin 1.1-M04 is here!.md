@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-1-m04-is-here/
+translator:
+translator_url:
 ---
 
 We are glad to present you the fourth milestone of the upcoming Kotlin release. We’re wrapping up the development of the version 1.1, with the final release planned for Q1 2017. Most features are already in decent shape, so it is a good time to try it and give us your feedback. We will appreciate it a lot!

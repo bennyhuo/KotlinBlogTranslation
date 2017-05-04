@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/
+translator:
+translator_url:
 ---
 
 <strong>Kotlin M11</strong> is coming very soon, and as some of you [expressed concerns](https://devnet.jetbrains.com/thread/461012?tstart=0) about being informed about the upcoming changes, I will describe one of the features of M11 and ask you for some <strong>feedback</strong>. <span id="more-1817"></span>

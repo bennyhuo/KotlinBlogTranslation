@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/the-road-ahead/
+translator:
+translator_url:
 ---
 
 As you all know, we rolled out our first public release last week: [kotlin-demo.jetbrains.com](http://kotlin-demo.jetbrains.com/) . And while you (7K+ unique visitors) are having fun with it, we keep working on the Kotlin compiler, IDE and standard library.  In this post, I’ll give an overview of our plans.  <span id="more-365"></span> <strong></strong>

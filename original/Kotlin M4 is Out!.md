@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/12/kotlin-m4-is-out/
+translator:
+translator_url:
 ---
 
 Today we roll out Kotlin M4 (from under [snow](http://www.google.ru/imgres?um=1&hl=en&newwindow=1&sa=N&tbo=d&biw=1320&bih=1106&tbm=isch&tbnid=q5-uJPbVI3jRFM:&imgrefurl=http://mr-stroy.com/news/498/45&docid=hUulWRZZmtitkM&imgurl=http://mr-stroy.com/uploads/images/sneg-spb.jpg&w=784&h=500&ei=sG28UMayC4nZ4QT22IDYCw&zoom=1&iact=hc&vpx=4&vpy=288&dur=1347&hovh=179&hovw=281&tx=179&ty=150&sig=101271244132511519226&page=1&tbnh=139&tbnw=206&start=0&ndsp=36&ved=1t:429,r:6,s:0,i:102) ). This post gives an overview of new features and other things this milestone brings.<span id="more-731"></span>

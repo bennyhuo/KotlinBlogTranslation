@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
+translator:
+translator_url:
 ---
 
-另一个更新 [Kotlin](http://kotlin.jetbrains.org/) 今天出来欢迎Kotlin M5.2。 <span id =“more-1038”> </ span>
+另一个更新 [Kotlin](http://kotlin.jetbrains.org/) 今天出来欢迎Kotlin M5.2。 <span id =“more-1038”> </span>
 ## 支持新的IntelliJ IDEA
 
 Koltin M5.2支持（实际上需要）最近发布 [IntelliJ IDEA 12.1](http://www.jetbrains.com/idea/download/index.html) 。
@@ -32,7 +34,7 @@ Kotlin IDE的改进包括：
 
 ## SAM构造函数
 
-当使用Java库时，现在可以通过调用它来创建SAM接口（一个具有<strong> S </ strong> ingle <strong> A </ strong> bstract <strong> M </ strong>方法）的实例命名并传递函数文字。例如：
+当使用Java库时，现在可以通过调用它来创建SAM接口（一个具有<strong> S </strong> ingle <strong> A </strong> bstract <strong> M </strong>方法）的实例命名并传递函数文字。例如：
 
 {% raw %}
 <p></p>
@@ -46,7 +48,7 @@ SwingUtilities.invokeLater(Runnable { doItNow() })
 <p></p>
 {% endraw %}
 
-<strong>这仅适用于Java类</ strong>。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个<em>合成的</ em>函数
+<strong>这仅适用于Java类</strong>。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个<em>合成的</em>函数
 
 {% raw %}
 <p></p>
@@ -123,4 +125,4 @@ dependencies {
 ## 提醒：KAnnotator
 
 别忘了你现在有了 [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/) 乐意效劳。
-<strong>拥有不错的Kotlin！</ strong>
+<strong>拥有不错的Kotlin！</strong>

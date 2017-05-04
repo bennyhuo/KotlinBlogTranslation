@@ -10,10 +10,12 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-1-m03-is-here/
+translator:
+translator_url:
 ---
 
 我们很高兴地宣布即将到来的Kotlin1.1的第三个里程碑。此版本带来了新的语言功能，以及JavaScript后端，编译器和IDEA插件中的改进和修复。新版本还包括Kotlin 1.0.5中引入的所有工具功能，并与IntelliJ IDEA 2016.3 EAP和Android Studio 2.2和2.3兼容。
-与其他里程碑版本一样，我们为新语言和库功能提供<b>无后向兼容性保证</ b>。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改</ b>。
+与其他里程碑版本一样，我们为新语言和库功能提供<b>无后向兼容性保证</b>。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改</b>。
 请分享您关于新功能或您可能遇到的任何问题的反馈，通过此版本 [YouTrack](https://youtrack.jetbrains.com/issues/KT) ， [论坛](https://discuss.kotlinlang.org) 和 [松弛](http://kotlinlang.slack.com/) 。
 1.1-M03的完整更新日期可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M03/ChangeLog.md) 。
 
@@ -122,16 +124,16 @@ table {
 <p></p>
 {% endraw %}
 
-为了解决这个问题，我们添加了<code> @DslMarker </ code>注释，允许在这些情况下更准确地控制可见性范围。有关使用示例请参阅 [使用此功能的kotlinx.html库的预览版本](https://github.com/Kotlin/kotlinx.html/tree/dsl-markers) （看到 [HtmlTagMarker](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/api.kt#L103) 和 [HTMLTag](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/htmltag.kt#L5) 实现和 [DSL-标记](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/DSL-markers.md) 预览库使用信息）。
+为了解决这个问题，我们添加了<code> @DslMarker </code>注释，允许在这些情况下更准确地控制可见性范围。有关使用示例请参阅 [使用此功能的kotlinx.html库的预览版本](https://github.com/Kotlin/kotlinx.html/tree/dsl-markers) （看到 [HtmlTagMarker](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/api.kt#L103) 和 [HTMLTag](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/htmltag.kt#L5) 实现和 [DSL-标记](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/DSL-markers.md) 预览库使用信息）。
 ## 标准库统一
 
-不同平台的标准库统一过程正在向前发展。我们已经开始统一1.1-M2中的异常类型，现在在所有平台上都支持一些更常见的类型，可以在<code> kotlin。* </ code>包中使用，默认情况下导入。这些包括：
+不同平台的标准库统一过程正在向前发展。我们已经开始统一1.1-M2中的异常类型，现在在所有平台上都支持一些更常见的类型，可以在<code> kotlin。* </code>包中使用，默认情况下导入。这些包括：
 
 * ArrayList，HashSet，LinkedHashSet，HashMap，LinkedTashMap在kotlin.collections中
 * 在kotlin.text中附加和StringBuilder
 * 比较器在kotlin.com对比
 
-在JVM上，这些只是来自<code> java.util </ code>和<code> java.lang </ code>的旧旧类型的typealiases
+在JVM上，这些只是来自<code> java.util </code>和<code> java.lang </code>的旧旧类型的typealiases
 ## JavaScript后端中支持新语言功能
 
 JavaScript后端现在支持与JVM后端兼容的以下Kotlin语言功能：
@@ -145,6 +147,6 @@ JavaScript后端现在支持与JVM后端兼容的以下Kotlin语言功能：
 JavaScript后端现在可以生成更多的静态可检查代码，这对JS代码处理工具（比如minifier，optimizers，linters等）来说更为友善。
 ## 如何尝试
 
-<b>在Maven / Gradle中：</ b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M03作为编译器和标准库的版本号。
-<b>在IntelliJ IDEA中：</ b>转到<i>工具→Kotlin→配置Kotlin插件更新</ i>，然后在<i>更新频道</ i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</ i>。
+<b>在Maven / Gradle中：</b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M03作为编译器和标准库的版本号。
+<b>在IntelliJ IDEA中：</b>转到<i>工具→Kotlin→配置Kotlin插件更新</i>，然后在<i>更新频道</i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</i>。
 开车去Kotlin！

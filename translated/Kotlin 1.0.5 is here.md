@@ -10,14 +10,16 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-0-5-is-here/
+translator:
+translator_url:
 ---
 
-我们很高兴地宣布，我们刚刚发布了Kotlin 1.0.5 </ b>，它继续了Kotlin 1.0的一系列错误修复和工具更新。
+我们很高兴地宣布，我们刚刚发布了Kotlin 1.0.5 </b>，它继续了Kotlin 1.0的一系列错误修复和工具更新。
 我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [基拉里·拉赫曼](https://github.com/cypressious) ， [弗拉季斯拉夫·戈卢布](https://github.com/ensirius) ， [Vsevolod Tolstopyatov](https://github.com/qwwdfsad) ， [Yoshinori Isogai](https://github.com/shiraji) ， [takahirom](https://github.com/takahirom) 和 [gitreelike](https://github.com/gitreelike) 。感谢所有尝试EAP构建的人，并向我们发送反馈意见！
 发布中的完整更改列表可以在 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) 。值得强调的一些变化是：
 ### 循环到λ转换
 
-IntelliJ IDEA插件现在可以检测许多情况，其中</ code>循环的命令式<code>可以使用标准库函数（例如<code> filter </ code>和<code> map < / code>。作为一个简单的例子，下面的代码段：
+IntelliJ IDEA插件现在可以检测许多情况，其中</code>循环的命令式<code>可以使用标准库函数（例如<code> filter </code>和<code> map < / code>。作为一个简单的例子，下面的代码段：
 
 {% raw %}
 <p></p>
@@ -52,8 +54,8 @@ val result = list.filter { it.isNotEmpty() }
 <p></p>
 {% endraw %}
 
-要触发转换，将插入符号放在</ code>关键字的<code>上，然后按<kbd> Alt-Enter </ kbd>。<br/>
-<span id =“more-4350”> </ span>
+要触发转换，将插入符号放在</code>关键字的<code>上，然后按<kbd> Alt-Enter </kbd>。<br/>
+<span id =“more-4350”> </span>
 ### 后缀代码完成
 
 IntelliJ IDEA的 [后缀代码完成](https://blog.jetbrains.com/idea/2014/03/postfix-completion/) 现在支持Kotlin，拥有大量模板。请注意，该功能取决于IntelliJ IDEA 2016.2中进行的平台更改，因此在Android Studio 2.2中不可用;它将基于较新的IntelliJ Platform版本在较新版本的Android Studio中得到支持。

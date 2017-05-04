@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/kotlin-web-demo-is-out/
+translator:
+translator_url:
 ---
 
 自从第一次提交到我们的源代码管理以来，已经有一年多了，我们很高兴地宣布Kotlin的第一个公开预览。
@@ -27,14 +29,14 @@ source_url: https://blog.jetbrains.com/kotlin/2012/01/kotlin-web-demo-is-out/
 <p><span id="more-318"></span></p>
 {% endraw %}
 
-<strong>实验功能</ strong>
+<strong>实验功能</strong>
 默认情况下，只有运行程序时才会显示错误突出显示。但是，您可以尝试我们正在尝试的一些功能，并打开“as-you-type”错误，突出显示：<br/>
 <img alt =“”data-recalc-dims =“1”src =“https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/01/Run-Type-Checker-On。 png？w = 640＆amp; ssl = 1“/> <br/>
 如果选择“服务器”，编辑器将开始与我们服务器上托管的类型检查服务进行通信。如果您选择“客户端”，则会将类型检查器作为您的计算机上运行的（相当大的）Applet加载。
 “服务器”和“客户”选项都可以为您完成代码：<br/>
 <img alt =“”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/01/Completion.png?w=640&amp; ssl = 1“/>
-请注意，这些功能是<strong>实验性</ strong>，并随时向我们报告任何问题。
-<strong>即将推出</ strong>
+请注意，这些功能是<strong>实验性</strong>，并随时向我们报告任何问题。
+<strong>即将推出</strong>
 此演示将进一步开发，让您有更多的乐趣。除此之外，我们还计划添加以下内容：
 
 * 标准库扩展功能，使JDK集合和其他常见API更加愉快（像map（）/ filter（）等））;

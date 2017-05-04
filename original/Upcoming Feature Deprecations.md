@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/upcoming-changes-and-more/
+translator:
+translator_url:
 ---
 
 As we are finalizing the language design, many things have to be cleaned up, and among these are features that were initially designed and (often partly) implemented, but turned out not to be worth the trouble supporting them.
