@@ -70,4 +70,4 @@ Kotlin和Scala显然有很多相似之处，但是他们的范围匿名功能的
 <span style =“font-size：16px”>我们绝对寻找更多的贡献者。任何有兴趣的人都可以查看我们的<a href="http://youtrack.codebetter.com/issues/Kara" target="_blank" title="Kara on YouTrack"> YouTrack页面</a>。有一些功能需要在那里实现。</span>
 **11。谢谢你花时间和我们聊天安迪。还有什么别的你想和读者分享吗？**
 <img alt =“”class =“alignright size-medium wp-image-822”data-recalc-dims =“1”sizes =“（max-width：300px）100vw，300px”src =“https：// i1 .wp.com / blog.jetbrains.com / kotlin / files / 2013/01 / karaframework.com_.png？resize = 300％2C236＆amp; ssl = 1“srcset =”https://i1.wp.com/blog。 jetbrains.com/kotlin/files/2013/01/karaframework.com_.png?resize=300%2C236&amp;ssl=1 300w，https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013 /01/karaframework.com_.png?w=962&amp;ssl=1 962w“/>我希望大家都会看看卡拉，看看我们提供什么。到目前为止，我对Kotlin社区有了很好的经验，并希望能够使Kotlin和Kara成为制作现代Web应用程序的绝佳方式。
-有关详细信息，请访问<a href="http://www.karaframework.com" target="_blank" title="Kara Web Framework"> KaraFramework.com </a>。</em>
+有关详细信息，请访问<a href="http://www.karaframework.com" target="_blank" title="Kara Web Framework"> KaraFramework.com </a>。*

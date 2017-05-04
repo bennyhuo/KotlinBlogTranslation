@@ -35,7 +35,7 @@ If you’re not familiar, let me briefly explain:
 * On – Execute the action, i.e. Act
 * It – Validate the results, i.e. Assert
 
-Spek allows you to have more than one action for the same context. That is for the same <em>given </em>you can have multiple <em>on’s</em>. It also allows you to have more than assertion (<em>it) </em>for the same action.
+Spek allows you to have more than one action for the same context. That is for the same *given*you can have multiple *on’s*. It also allows you to have more than assertion (*it) *for the same action.
 ## Spek is not only for Kotlin
 
 Spek is written in Kotlin. Specifications you write will also be in Kotlin. However, as Kotlin is 100% compatible with Java, you can test new and existing Java code with Spek.

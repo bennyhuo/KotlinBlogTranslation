@@ -43,7 +43,7 @@ data class Foo // `data` is an annotation
 <p></p>
 {% endraw %}
 
-基于`[...]`的旧语法已被弃用</em>，因此编译器将在您的代码上发出警告。要修复这些警告，请按Alt + Enter并运行快速修复（个人或整个项目）。上述“代码清理...”动作也适用于整个项目。
+基于`[...]`的旧语法已被弃用*，因此编译器将在您的代码上发出警告。要修复这些警告，请按Alt + Enter并运行快速修复（个人或整个项目）。上述“代码清理...”动作也适用于整个项目。
 ### 标签语法已更改
 
 由于M12 `@name`是一个注释，但它之前有一个含义，即它是一个 [标签](http://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels) 。我们不得不为标签找到一些其他语法，现在他们在最后用`@`声明：
@@ -65,7 +65,7 @@ loop@ for (i in 1..100) {
 <p></p>
 {% endraw %}
 
-所以，`loop @` <em>声明一个标签，`break @ loop` <em>使用</em>。
+所以，`loop @` *声明一个标签，`break @ loop` *使用*。
 ### 注释中的类文字
 
 在M12之前，Kotlin中的注释被允许使用`java.lang.Class`，例如：
@@ -142,7 +142,7 @@ fun introspect(jann: JavaAnnotation) {
 现在，当我们需要将一个`KClass`转换成一个`java.lang.Class`时，我们可以调用它们的`.java`。 `Foo :: class.java`或`jann.value.java`。
 ### 注释主要构造函数
 
-我们决定使主构造函数的语法更加规则，现在主构造函数的<em>完整表单</em>包括`构造函数`关键字：
+我们决定使主构造函数的语法更加规则，现在主构造函数的*完整表单*包括`构造函数`关键字：
 
 {% raw %}
 <p></p>

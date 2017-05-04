@@ -23,5 +23,5 @@ We’re happy to announce that [Kotlin in Action](https://www.manning.com/books/
 <span id="more-4582"></span><br/>
 
 Two chapters from the book, covering Kotlin’s type system and its support for domain-specific languages, are available as a [free preview](https://www.manning.com/books/kotlin-in-action#downloads) on the publisher’s Web site. And in our online mini-IDE for Kotlin, you can try out all examples from the book, starting from the [very first one](http://try.kotlinlang.org/#/Kotlin%20in%20Action/chapter%201/1.1/1.1_ATasteOfKotlin.kt) , also for free.
-To accompany the release of the book, Manning is offering a special discount, valid today only: you can get half off the book if you enter the code <em>dotd021017au</em> during checkout.
+To accompany the release of the book, Manning is offering a special discount, valid today only: you can get half off the book if you enter the code *dotd021017au* during checkout.
 Happy reading, and have a nice Kotlin!

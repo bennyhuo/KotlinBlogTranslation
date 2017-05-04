@@ -24,7 +24,7 @@ translator_url:
 ## 语言
 
 我们正在用语言变化来包装，所以在M14中没有什么真正戏剧性的。
-**注意**：我们正在删除以前不推荐使用的功能和功能，因此请确保在安装M14之前运行代码清理</em>。
+**注意**：我们正在删除以前不推荐使用的功能和功能，因此请确保在安装M14之前运行代码清理*。
 ### 背景领域
 
 旧的`$ propertyName`语法已弃用。要访问getter / setter内的后备字段，请使用`字段`合成变量：
@@ -68,7 +68,7 @@ operator fun JavaClass.plus(other: JavaClass): JavaClass = this.plus(other)
 <p></p>
 {% endraw %}
 
-使用<em>代码清理</em>可以自动向项目中使用的所有运算符添加修饰符。
+使用*代码清理*可以自动向项目中使用的所有运算符添加修饰符。
 注意：Infix功能将在最近的将来迁移到相同的方案。
 ### 编译时常数
 
@@ -86,7 +86,7 @@ const val MAX = 239
 <p></p>
 {% endraw %}
 
-代码清理</em>将为您添加缺少的`const`修饰符。
+代码清理*将为您添加缺少的`const`修饰符。
 ### 注释文件类
 
 由于M13，默认情况下，每个源文件的顶级函数和属性都将放在一个单独的类文件中（详细信息 [这里](http://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/) ）。现在我们可以通过应用文件注释来注释这些类：
@@ -129,7 +129,7 @@ public final class FooKt {
 
 ### 从旧的“包装外观”迁移
 
-当我们转向了 [新的类文件布局](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) ，现在是退休老人的时候了。由于M14旧程序包外观类（例如`FooPackage`）已被弃用，IDE可帮助您通过代码清理</em>将Java代码迁移到新的方案。
+当我们转向了 [新的类文件布局](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) ，现在是退休老人的时候了。由于M14旧程序包外观类（例如`FooPackage`）已被弃用，IDE可帮助您通过代码清理*将Java代码迁移到新的方案。
 **注意**：包立面将很快丢弃，因此请务必迁移您的代码。
 标准库（以前的`kotlin.KotlinPackage`类）也被迁移到新的方案中：见下文。
 ### 其他语言变化
@@ -157,7 +157,7 @@ public final class FooKt {
 在API文档中查看更多内容。
 ## IDE更改
 
-像往常一样，IDE可以帮助您通过<em>代码清理</em>从M13无缝迁移。 M14还有几个新的便捷功能：
+像往常一样，IDE可以帮助您通过*代码清理*从M13无缝迁移。 M14还有几个新的便捷功能：
 
 * 如上所述，在某些情况下，我们需要私人支持属性。您可以通过意图行动轻松介绍：
 

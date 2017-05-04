@@ -28,14 +28,14 @@ Although it’s only a start and many things will be improved over time, it alre
 
 ## Installation
 
-To give it a try you will need a clean installation of [Eclipse Luna](https://www.eclipse.org/downloads/) . The Kotlin plugin is available from the <em>Eclipse Marketplace</em>. The easiest way to install the Kotlin plugin is to **drag-and-drop this button into a running Eclipse window**:
+To give it a try you will need a clean installation of [Eclipse Luna](https://www.eclipse.org/downloads/) . The Kotlin plugin is available from the *Eclipse Marketplace*. The easiest way to install the Kotlin plugin is to **drag-and-drop this button into a running Eclipse window**:
 
 {% raw %}
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a><br/>
 <span id="more-1945"></span></p>
 {% endraw %}
 
-Alternatively, you can use <em>Help -&gt; Eclipse Marketplace…</em> menu, or the following update site:
+Alternatively, you can use *Help -&gt; Eclipse Marketplace…* menu, or the following update site:
 
 {% raw %}
 <p></p>
@@ -62,7 +62,7 @@ You can start by creating a new Kotlin project or adding a Kotlin file to an exi
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/New-Kotlin-File-in-Context-Menu.png"><img alt="New Kotlin File in Context Menu" class="alignnone size-full wp-image-1957" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/New-Kotlin-File-in-Context-Menu.png?resize=640%2C194&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Diagnostics (errors and warnings) reported by Kotlin are displayed in the <em>Problems View</em>:
+Diagnostics (errors and warnings) reported by Kotlin are displayed in the *Problems View*:
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/03/skitch.png"><img alt="Problems View in Action" class="alignnone size-full wp-image-1959" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/03/skitch.png?resize=640%2C241&amp;ssl=1"/></a></p>
@@ -71,7 +71,7 @@ Diagnostics (errors and warnings) reported by Kotlin are displayed in the <em>Pr
 ### Editor
 
 The basic editor features such as code highlighting and formatting are supported. Basic code completion is also supported, but it needs further improvements.
-<em>Auto-import</em> for unresolved classes both from Java and Kotlin is already there:
+*Auto-import* for unresolved classes both from Java and Kotlin is already there:
 
 {% raw %}
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png"><img alt="Eclipse Auto-Import Feature" class="alignnone size-full wp-image-1965" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png?resize=393%2C119&amp;ssl=1"/></a></p>
@@ -85,13 +85,13 @@ Many [quick-fixes](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/
 
 ### Navigation
 
-<em>Open Declaration</em> is the only navigation action that is supported in this release:
+*Open Declaration* is the only navigation action that is supported in this release:
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/eclipse-references.png"><img alt="Eclipse References" class="alignnone size-full wp-image-1969" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/eclipse-references.png?resize=592%2C159&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Also, you can navigate to declarations in Kotlin files with <em>Outline View</em> and search for Kotlin files by name in <em>Open Resource</em> window.
+Also, you can navigate to declarations in Kotlin files with *Outline View* and search for Kotlin files by name in *Open Resource* window.
 ### Debugger
 
 With our plugin installed, Eclipse JDT debugger gets initial support for Kotlin. Again, there’s much to be improved, but you can
@@ -107,7 +107,7 @@ With our plugin installed, Eclipse JDT debugger gets initial support for Kotlin.
 
 ### Unit Testing
 
-If you already have JUnit 3 or JUnit 4 in the classpath, you can write your tests in Kotlin. <em>Run -&gt; Run As -&gt; Kotlin JUnit Test</em> in the main menu starts testing and opens results in the <em>JUnit View</em>.
+If you already have JUnit 3 or JUnit 4 in the classpath, you can write your tests in Kotlin. *Run -&gt; Run As -&gt; Kotlin JUnit Test* in the main menu starts testing and opens results in the *JUnit View*.
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-01.39.29.png"><img alt="Eclipse Tests Demonstation" class="alignnone size-full wp-image-1962" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-01.39.29.png?resize=560%2C199&amp;ssl=1"/></a></p>

@@ -14,8 +14,7 @@ translator:
 translator_url:
 ---
 
-<em>A post about good books, language design and JIT compilation, in which one bug turns into another and than back…<br/>
-</em>
+*A post about good books, language design and JIT compilation, in which one bug turns into another and than back…<br/>*
 Recently I started looking through an excellent book [“Java™ Puzzlers”](http://www.javapuzzlers.com/) , where Joshua Bloch and Neal Gafter provide a list of Java’s “Traps, Pitfalls, and Corner Cases”, i.e. programs that make you think they do what they really don’t. My idea is to see how many of the puzzlers are ruled out or fixed by Kotlin. I’ve looked through the first 24 items, and 15 of them are fixed in Kotlin, which is over 60%.
 Some of the puzzlers can’t be fixed without severe implications on compatibility with the rest of the world. For example, most of the tricky things about IEEE-745 floating-point numbers. But some other ones, though not fixed in Kotlin yet, may be fixed. One particular example is Puzzler 26 “In the Loop”:
 

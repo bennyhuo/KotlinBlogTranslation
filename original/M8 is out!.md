@@ -191,8 +191,8 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-The reason is that the getter for <em>x</em> has the same name (getX) and signature (takes no parameters, returns Int) as the function declared next to it and JVM does not allow such things in class files.
-Another case is an <em>accidental override</em>:
+The reason is that the getter for *x* has the same name (getX) and signature (takes no parameters, returns Int) as the function declared next to it and JVM does not allow such things in class files.
+Another case is an *accidental override*:
 
 {% raw %}
 <p></p>
@@ -228,7 +228,7 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-One may wonder why wouldn’t we, say, rename one of the functions automatically instead of emitting an error? The answers lie in the realm of Java interoperability (nobody likes names invented by the compiler) and binary compatibility (names of things must never change silently, or all dependent code will unexpectedly break). On the other hand, you can specify desired JVM names manually with the <em>platformName</em> annotation:
+One may wonder why wouldn’t we, say, rename one of the functions automatically instead of emitting an error? The answers lie in the realm of Java interoperability (nobody likes names invented by the compiler) and binary compatibility (names of things must never change silently, or all dependent code will unexpectedly break). On the other hand, you can specify desired JVM names manually with the *platformName* annotation:
 
 {% raw %}
 <p></p>
@@ -250,7 +250,7 @@ Note that nothing changes when for the Kotlin clients of this code, but Java cli
 **WARNING:** This is a **breaking** change, some of your existing code may need to be fixed.
 ### Support for transient, synchronized and strictfp
 
-In addition to the long-available <em>volatile</em>. We now support <em>transient</em>, <em>synchronized</em> and <em>strictfp</em> as annotations. The semantics are exactly like in Java:
+In addition to the long-available *volatile*. We now support *transient*, *synchronized* and *strictfp* as annotations. The semantics are exactly like in Java:
 
 {% raw %}
 <p></p>

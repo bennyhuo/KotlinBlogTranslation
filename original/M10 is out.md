@@ -54,7 +54,7 @@ myTree.findParentOfType(javaClass<MyTreeNodeType>())
 <p></p>
 {% endraw %}
 
-What we actually want is simply <em>pass a type</em> to this function, i.e. call is like this:
+What we actually want is simply *pass a type* to this function, i.e. call is like this:
 
 {% raw %}
 <p></p>
@@ -68,7 +68,7 @@ myTree.findParentOfType<MyTreeNodeType>()
 <p></p>
 {% endraw %}
 
-But then we’d need <em>reified generics</em> to access that type inside a function, and on the JVM reified generics are expensive…
+But then we’d need *reified generics* to access that type inside a function, and on the JVM reified generics are expensive…
 Fortunately, Kotlin has [inline functions](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) , and they now support **reified** type parameters, so we can write something like this:
 
 {% raw %}
@@ -128,7 +128,7 @@ class C<out T> {
 <p></p>
 {% endraw %}
 
-In this example, since T is declared as **out** (i.e. the class is <em>covariant</em> in T), we are not allowed to take it as a parameter to the `foo()` function, we can only return it.
+In this example, since T is declared as **out** (i.e. the class is *covariant* in T), we are not allowed to take it as a parameter to the `foo()` function, we can only return it.
 Note that a **private** declaration is allowed to violate variance restrictions, for example:
 
 {% raw %}
@@ -145,7 +145,7 @@ class C<out T>(t: T) {
 <p></p>
 {% endraw %}
 
-Although `foo`‘s setter takes T as as an argument, and thus violates the **out** restriction on it, the compiler allows this and makes sure that only <em>the same instance</em> of `C` has access to `foo`. This means that the following function in `C` would not compile:
+Although `foo`‘s setter takes T as as an argument, and thus violates the **out** restriction on it, the compiler allows this and makes sure that only *the same instance* of `C` has access to `foo`. This means that the following function in `C` would not compile:
 
 {% raw %}
 <p></p>
@@ -226,7 +226,7 @@ takeVararg(*strs)
 JavaScript gets an important update in this version with support for dynamic types.
 ### Dynamic support
 
-Sometimes the best way to talk to dynamic languages is dynamically. This is why we’ve introduced the soft keyword <em>dynamic</em> which allows us to declare types as dynamic. Currently this is only supported when targeting JavaScript, not the JVM.
+Sometimes the best way to talk to dynamic languages is dynamically. This is why we’ve introduced the soft keyword *dynamic* which allows us to declare types as dynamic. Currently this is only supported when targeting JavaScript, not the JVM.
 When interoperating with JavaScript we can now have functions take as parameters, or return, a dynamic type
 
 {% raw %}
@@ -247,7 +247,7 @@ fun interopJS(obj: dynamic): dynamic {
 We’ll cover dynamic in more details along with usage scenarios and limitations in a separate blog post. For technicalities see the [spec document](https://github.com/JetBrains/kotlin/blob/master/spec-docs/dynamic-types.md) .
 ### New Annotations
 
-We’ve added a series of annotations to make JavaScript interop easier, in particular <em>nativeInvoke, nativeGetter</em> and <em>nativeSetter</em>.
+We’ve added a series of annotations to make JavaScript interop easier, in particular *nativeInvoke, nativeGetter* and *nativeSetter*.
 If a function `bar` is annotated with `nativeInvoke`, its calls `foo.bar()` are translated to `foo()` in JavaScript. For example:
 
 {% raw %}
@@ -269,7 +269,7 @@ f.invoke(1) // also translates to f(1)
 <p></p>
 {% endraw %}
 
-Much the same way, we can use <em>nativeGetter</em> and <em>nativeSetter</em> to get index-access available in JavaScript:
+Much the same way, we can use *nativeGetter* and *nativeSetter* to get index-access available in JavaScript:
 
 {% raw %}
 <p></p>
@@ -312,10 +312,10 @@ We can use these annotations in the following cases:
 
 ### Kotlin.js output – breaking change
 
-Previously, when creating a new project, the kotlin.js runtime would be created in a folder named <em>scripts</em>. As of M10, this file is created on first compilation and is placed in the output folder (defaults to <em>out</em>). This provides for a much easier deployment scenario as library and project output is now located under the same root folder.
+Previously, when creating a new project, the kotlin.js runtime would be created in a folder named *scripts*. As of M10, this file is created on first compilation and is placed in the output folder (defaults to *out*). This provides for a much easier deployment scenario as library and project output is now located under the same root folder.
 ### New no-stdlib option to kotlin-js compiler – breaking change
 
-We now provide a command line option for the kotlin-js compiler, namely <em>no-stdlib</em>. Without specifying this option, the compiler uses the bundled standard library. This is a change of behaviour from M9.
+We now provide a command line option for the kotlin-js compiler, namely *no-stdlib*. Without specifying this option, the compiler uses the bundled standard library. This is a change of behaviour from M9.
 ### js code
 
 We can now output JavaScript code directly inside Kotlin code
@@ -341,7 +341,7 @@ As you can see, we’ve added a lot of new improvements for JavaScript in this r
 Now, we can mark properties as `[platformStatic]` so that their accessors become visible from Java as static methods.
 ### Static fields in objects
 
-Properties on any object now produce static fields so that they can easily be consumed from Java even without the need to decorate them with <em>platformStatic</em> annotations.
+Properties on any object now produce static fields so that they can easily be consumed from Java even without the need to decorate them with *platformStatic* annotations.
 ### JNI and [native]
 
 Kotlin now supports JNI via `[native]` annotation, defined in `kotlin.jvm` package (see the spec document [here](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) .). To declare a native method, simply put the annotation on it:
@@ -379,7 +379,7 @@ We’ve enhanced incremental compilation and with M10 it now supports dependenci
 Now, when we recompile Kotlin code while debugging it, it gets smoothly re-loaded into the debugee process.
 ### Evaluate Expression: Completion improvements
 
-During debug sessions, when evaluating expressions, casts are automatically added as needed. For instance when downcasting from <em>Any</em> to a specific type.
+During debug sessions, when evaluating expressions, casts are automatically added as needed. For instance when downcasting from *Any* to a specific type.
 
 {% raw %}
 <p><img alt="Completion Casts" class="aligncenter size-full wp-image-1716" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2014/12/completion.png?resize=564%2C126&amp;ssl=1"/></p>
@@ -421,7 +421,7 @@ class Derived<X>: Base<List<X>> {
 <p></p>
 {% endraw %}
 
-If the signature of <em>Base.baseMethod</em> is changed to <em>baseMethod&lt;T&gt;(t: List&lt;T&gt;, k: K?)</em> then the signature of <em>Derived.baseMethod</em> is appropriately changed to <em>&gt;baseMethod&lt;Y&gt;(a: List&lt;Y&gt;, b: List&lt;X&gt;?)</em>
+If the signature of *Base.baseMethod* is changed to *baseMethod&lt;T&gt;(t: List&lt;T&gt;, k: K?)* then the signature of *Derived.baseMethod* is appropriately changed to *&gt;baseMethod&lt;Y&gt;(a: List&lt;Y&gt;, b: List&lt;X&gt;?)*
 ### Completion improvements
 
 Completions items ordering has been improved, immediate members are now highlighted. Smart completion now finds inheritors of expected types. Completion performance severely improved.
@@ -447,7 +447,7 @@ object Hello {
 <p></p>
 {% endraw %}
 
-Just right-click the object and select <em>Run …</em>
+Just right-click the object and select *Run …*
 ### Code Coverage highlighting in the Editor
 
 If you run Kotlin code with coverage, the Editor now marks covered and uncovered lines for you (available in IntelliJ IDEA 14 only).

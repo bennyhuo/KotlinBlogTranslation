@@ -44,4 +44,4 @@ Our candidates are:
 
 We’d be very grateful if you **shared your thoughts** about these candidates in the comments.
 Thanks!
-<em>P.S. There was a proposal of simply using a naming convention instead of a modifier. <a href="http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/#comment-32447">This comment</a> explains why we decided in favour of a modifier. Also note that this convention would be used a lot more often than others, and others are subject to reconsideration under the upcoming language design review.</em>
+*P.S. There was a proposal of simply using a naming convention instead of a modifier. <a href="http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/#comment-32447">This comment</a> explains why we decided in favour of a modifier. Also note that this convention would be used a lot more often than others, and others are subject to reconsideration under the upcoming language design review.*

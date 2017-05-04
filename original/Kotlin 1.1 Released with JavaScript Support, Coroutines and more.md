@@ -30,14 +30,14 @@ Our vision for Kotlin is to enable the use of a single expressive, performant, s
 <p><span id="more-4611"></span></p>
 {% endraw %}
 
-First, the <em>JavaScript target</em> is no longer experimental, and supports all Kotlin language features, a large part of the  standard library, as well as JavaScript interoperability. This allows you to migrate the browser frontend of your applications to Kotlin, while continuing to use modern JavaScript development frameworks such as React.
-Second, we’re introducing support for <em>coroutines</em>. As a lightweight alternative to threads, coroutines enable much more scalable application backends, supporting massive workloads on a single JVM instance. In addition to that, coroutines are a very expressive tool for implementing asynchronous behavior, which is important for building responsive user interfaces on all platforms.
+First, the *JavaScript target* is no longer experimental, and supports all Kotlin language features, a large part of the  standard library, as well as JavaScript interoperability. This allows you to migrate the browser frontend of your applications to Kotlin, while continuing to use modern JavaScript development frameworks such as React.
+Second, we’re introducing support for *coroutines*. As a lightweight alternative to threads, coroutines enable much more scalable application backends, supporting massive workloads on a single JVM instance. In addition to that, coroutines are a very expressive tool for implementing asynchronous behavior, which is important for building responsive user interfaces on all platforms.
 Below we describe these two changes further. In other news: we’ve added  [type aliases](http://kotlinlang.org/docs/reference/whatsnew11.html#type-aliases) ,  [bound callable references](http://kotlinlang.org/docs/reference/whatsnew11.html#bound-callable-references) ,  [destructuring in lambdas](http://kotlinlang.org/docs/reference/whatsnew11.html#destructuring-in-lambdas)  and more. See the details in our  [What’s new](http://kotlinlang.org/docs/reference/whatsnew11.html)  page (check out the runnable examples!).
 ## Coroutines
 
 Coroutines in Kotlin make non-blocking asynchronous code as straightforward as plain synchronous code.
-Asynchronous programming is taking over the world, and the only thing that is holding us back is that non-blocking code adds considerable complexity to our systems. Kotlin now offers means to tame this complexity by making coroutines first-class citizens in the language through the single primitive: <em>suspending functions</em>. Such a function (or lambda) represents a computation that can be suspended (without blocking any threads) and resumed later.
-Technically, coroutines are light-weight means of cooperative multi-tasking (very similar to  [fibers](https://en.wikipedia.org/wiki/Fiber_(computer_science)) ). In other words, they are just <em>much better threads</em>: almost free to start and keep around, extremely cheap to suspend (suspension is for coroutines what blocking is for threads), very easy to compose and customize.
+Asynchronous programming is taking over the world, and the only thing that is holding us back is that non-blocking code adds considerable complexity to our systems. Kotlin now offers means to tame this complexity by making coroutines first-class citizens in the language through the single primitive: *suspending functions*. Such a function (or lambda) represents a computation that can be suspended (without blocking any threads) and resumed later.
+Technically, coroutines are light-weight means of cooperative multi-tasking (very similar to  [fibers](https://en.wikipedia.org/wiki/Fiber_(computer_science)) ). In other words, they are just *much better threads*: almost free to start and keep around, extremely cheap to suspend (suspension is for coroutines what blocking is for threads), very easy to compose and customize.
 We designed coroutines for maximum flexibility: very little is fixed in the language, and very much can be done as a library. The  [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)  project features libraries on top of Rx, CompletableFuture, NIO, JavaFx and Swing. Similar libraries can be written for Android and JavaScript. Even many built-in constructs available in other languages can now be expressed as Kotlin libraries. This includes generators/yield from Python, channels/select from Go and async/await from C#:
 
 {% raw %}
@@ -115,9 +115,9 @@ P.S. Running on multiple platforms is a strategic direction for Kotlin. With 1.1
 As always, you can **try Kotlin online** at  [try.kotlinlang.org](http://try.kotlinlang.org/) .
 **In Maven/Gradle**: Use `1.1.0` as the version number for the compiler and the standard library. See the docs  [here](http://kotlinlang.org/docs/reference/using-gradle.html) .
 **In IntelliJ IDEA**: 2017.1 has Kotlin 1.1 bundled, in earlier versions Install or update the Kotlin plugin to version 1.1.
-**In Android Studio**: Install or update the plugin through <em>Plugin Manager</em>.
+**In Android Studio**: Install or update the plugin through *Plugin Manager*.
 **In Eclipse**: install the plugin using  [Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) .
 **The command-line compiler** can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1) .
 **Compatibility**. In Kotlin 1.1 the language and the standard library are  [backwards compatible (modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) : if something compiled and ran in 1.0, it will keep working in 1.1. To aid big teams that update gradually, we provide a compiler switch that disables new features.  [Here](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)  is a document covering possible pitfalls.
-<em>Have a nice Kotlin!</em>
+*Have a nice Kotlin!*
 P.S. See discussions on  [Reddit](https://www.reddit.com/r/programming/comments/5wvpv8/kotlin_11_released_with_javascript_support/)  and  [Hacker News](https://news.ycombinator.com/item?id=13763483) 

@@ -173,7 +173,7 @@ fun Foo.dot() {
 <p></p>
 {% endraw %}
 
-There is a dot after **this**, which has type Foo, in the body of Foo.dot() function itself, so dot() should be called recursively at that point and, seemingly, never terminate. This is called a <em>higher-order dot</em>, and is executed only if there’s a function dot1() defined on Foo. If dot1(), in turn, contains a higher-order dot, then dot2() is called and so on:
+There is a dot after **this**, which has type Foo, in the body of Foo.dot() function itself, so dot() should be called recursively at that point and, seemingly, never terminate. This is called a *higher-order dot*, and is executed only if there’s a function dot1() defined on Foo. If dot1(), in turn, contains a higher-order dot, then dot2() is called and so on:
 
 {% raw %}
 <p></p>

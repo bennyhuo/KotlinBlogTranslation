@@ -15,7 +15,7 @@ translator_url:
 ---
 
 Kotlin’s adoption significantly increased in 2015, and we are especially grateful to our early adopters, who not only used Kotlin, but shared their experiences through different mediums. We’d like to highlight the most notable articles and videos of the past year.
-By the way, you can [join us on slack](http://kotlinslackin.herokuapp.com/) and subscribe to the <em>#feed</em> channel, where we push quite a bit of interesting content as it appears.
+By the way, you can [join us on slack](http://kotlinslackin.herokuapp.com/) and subscribe to the *#feed* channel, where we push quite a bit of interesting content as it appears.
 
 {% raw %}
 <p><img alt="Kotlin Digest 2015" class="alignnone size-full wp-image-3501" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/01/Digest-2015-Cover.png?resize=640%2C320&amp;ssl=1"/></p>
@@ -98,4 +98,4 @@ In 2015 there were more than 50 talks and meetups about kotlin. We try to keep t
 <p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/011AL3Z6VmM" width="560"></iframe></p>
 {% endraw %}
 
-Thanks for watching and <em>let’s kotlin</em>
+Thanks for watching and *let’s kotlin*

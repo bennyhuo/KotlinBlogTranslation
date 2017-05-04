@@ -70,7 +70,7 @@ var foo: Foo? = makeFoo() // initializer required
 <p></p>
 {% endraw %}
 
-If we really need to initialize such a property in the constructor, we’d have to introduce a <em>backing property</em>:
+If we really need to initialize such a property in the constructor, we’d have to introduce a *backing property*:
 
 {% raw %}
 <p></p>

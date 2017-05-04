@@ -48,7 +48,7 @@ SwingUtilities.invokeLater(Runnable { doItNow() })
 <p></p>
 {% endraw %}
 
-**This works only for Java classes**. In fact, it is not a part of the language, but a feature of how Java classes are loaded into Kotlin: we define a <em>synthesized</em> function
+**This works only for Java classes**. In fact, it is not a part of the language, but a feature of how Java classes are loaded into Kotlin: we define a *synthesized* function
 
 {% raw %}
 <p></p>

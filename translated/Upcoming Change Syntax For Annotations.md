@@ -265,7 +265,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-现在，如果我想要一个`open`本地类，或者`abstract`，那该怎么办？那些是<em>修饰符</em>，而不是注释，我们不能说`@open`或`@abstract`。
+现在，如果我想要一个`open`本地类，或者`abstract`，那该怎么办？那些是*修饰符*，而不是注释，我们不能说`@open`或`@abstract`。
 一个选项是允许使用`@`转义修饰符以及注释：
 
 {% raw %}
@@ -283,7 +283,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-其他选项包括允许与类同一行</em>上的修饰符<em>，但这并不直接扩展到函数， [现在表达](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 。查看更多 [这里](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) ## 
+其他选项包括允许与类同一行*上的修饰符*，但这并不直接扩展到函数， [现在表达](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 。查看更多 [这里](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) ## 
 
 
 反馈欢迎

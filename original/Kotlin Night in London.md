@@ -30,10 +30,10 @@ Given spaces are limited, we encourage you to [sign up sooner rather than later]
 
 For details on talks, please check the [event page](https://info.jetbrains.com/Kotlin-Night-London.html) .
 17:30 – 18:00 – **Registration and Welcome**
-18:00 – 18:45 –** 10 Things I’m loving about Kotlin. **<em>Graham Tackley. Kaleida</em>
-18:45 – 19:30 –  **Expressive Kotlin. **<em>Nat Pryce and Duncan McGregor, Springer Nature</em>
+18:00 – 18:45 –** 10 Things I’m loving about Kotlin. ***Graham Tackley. Kaleida*
+18:45 – 19:30 –  **Expressive Kotlin. ***Nat Pryce and Duncan McGregor, Springer Nature*
 19:30 – 20:00 – **Snacks and Drinks**
-20:00 – 20:45 – **Using Sealed Classes to build Concursus API. **<em>Dominic Fox, OpenCredo</em>
+20:00 – 20:45 – **Using Sealed Classes to build Concursus API. ***Dominic Fox, OpenCredo*
 
 {% raw %}
 <p> </p>

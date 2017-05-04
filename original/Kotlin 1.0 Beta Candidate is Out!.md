@@ -54,7 +54,7 @@ Some operator names have been changed to avoid ambiguities:
 * we should now use unaryPlus and unaryMinus instead of just plus and minus for unary functions, i.e. -Foo() is now Foo().unaryMinus();
 * for delegated properties, getValue and setValue should be used instead of just get and set.
 
-The <em>Code cleanup</em> action will help you migrate your code.
+The *Code cleanup* action will help you migrate your code.
 Also, operator signatures are now checked by the compiler at the declaration site. Some of these checks may be relaxed in the future, but we believe that what we have now is a pretty good starting point.
 ### Imports from objects
 
@@ -169,7 +169,7 @@ fun bar(vararg args: String) {
 <p></p>
 {% endraw %}
 
-The semantics of the <em>spread operator</em> have been fixed so that it always guarantees that an array that `foo` sees will not be modified or observed by the “outside world”. We can assume that a defensive copy is made every time the spread operator is used (in fact, some optimizations may be implemented later to reduce memory traffic).
+The semantics of the *spread operator* have been fixed so that it always guarantees that an array that `foo` sees will not be modified or observed by the “outside world”. We can assume that a defensive copy is made every time the spread operator is used (in fact, some optimizations may be implemented later to reduce memory traffic).
 As a result, authors of Kotlin libraries can rely on the vararg arrays being safe to store without defensive copying.<br/>
 **NOTE**: This guarantee is not fulfilled when Kotlin functions are called from java, because no spread operators are used there. This means that if a function is intended to be used from both Java and Kotlin, its contract for Java clients should include a note that the array should be copied before being passed to it.
 ### “sparam” annotation target has been renamed to “setparam”
@@ -233,7 +233,7 @@ fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
 <p></p>
 {% endraw %}
 
-**Dynamic type checks for arrays**. Array element types are reified in Java, but their Kotlin-specific properties, like nullability, is not. So, we removed the special treatment of arrays that allowed checks like `a is Array&lt;String&gt;`, and now arrays work as all other generic classes: we can check for `a is Array&lt;*&gt;` and a cast like `a as Array&lt;String&gt;` is marked as unchecked. We added a JVM-specific function `isArrayOf&lt;T&gt;()` that check that a given array can contain elements of type `T` <em>in Java</em>:
+**Dynamic type checks for arrays**. Array element types are reified in Java, but their Kotlin-specific properties, like nullability, is not. So, we removed the special treatment of arrays that allowed checks like `a is Array&lt;String&gt;`, and now arrays work as all other generic classes: we can check for `a is Array&lt;*&gt;` and a cast like `a as Array&lt;String&gt;` is marked as unchecked. We added a JVM-specific function `isArrayOf&lt;T&gt;()` that check that a given array can contain elements of type `T` *in Java*:
 
 {% raw %}
 <p></p>
@@ -267,7 +267,7 @@ fun Foo.getValue(thisRef: Bar, property: KProperty<*>): Baz? {
 <p></p>
 {% endraw %}
 
-<em>Code cleanup</em> will help you migrate.
+*Code cleanup* will help you migrate.
 **Callable references**. Some usages of `::` are forbidden for now, to be enabled later when we implement bound references. Most notably, `::foo` should not be used for now when `foo` is a member of a class. Only `MyClass::foo` should be used. References to members of objects are also unsupported temporarily (they will work as bound references too). We can use lambdas as a workaround for the time being.
 **If-expressions**. We unified the semantics of `if` and `when` by requiring an `else` when `if` is used as an expression:
 
@@ -301,7 +301,7 @@ fun goo(): Goo { throw MyExcepion() } // OK
 <p></p>
 {% endraw %}
 
-This is now a warning that will be promoted to error after we migrate our code with <em>Code cleanup</em>
+This is now a warning that will be promoted to error after we migrate our code with *Code cleanup*
 **Visibility checks** were restricted so that, for example, a public declaration can not expose a local, private or internal type. Access to internal declarations is checked in the compiler as well as in the IDE;
 See more [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-1038) .
 ## Collections
@@ -326,7 +326,7 @@ if (1 in strs) { // 'strs' is a set of strings, can't contain an Int
 {% endraw %}
 
 Analogous code works in Java, because `Set&lt;E&gt;.contains` (which `in` is compiled to) takes `Object`, not `E`, the element type of the set. This has proven to be error-prone, so we decided to make Kotlin collection interfaces safer (while keeping full compatibility with Java collections). As a result, our `contains` takes an `E`, and the example above is incorrect in Kotlin.
-At the moment the Kotlin compiler reports a deprecation warning on `in` in the example above, because we have provided transitional extension functions in the standard library to help everyone migrate, but soon this will be an error. <em>Code cleanup</em> is our friend here: it will replace `1 in strs` with `strs.containsRaw(1)`. `containsRaw` is a new function in the standard library that we can use when we <em>really need</em> the Java-like behavior: we can check membership of any object in any set by using `containsRaw`.
+At the moment the Kotlin compiler reports a deprecation warning on `in` in the example above, because we have provided transitional extension functions in the standard library to help everyone migrate, but soon this will be an error. *Code cleanup* is our friend here: it will replace `1 in strs` with `strs.containsRaw(1)`. `containsRaw` is a new function in the standard library that we can use when we *really need* the Java-like behavior: we can check membership of any object in any set by using `containsRaw`.
 Bottomline:
 
 * Collection.contains, Map.get and some other collection methods are now safer;

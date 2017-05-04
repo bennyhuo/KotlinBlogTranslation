@@ -113,13 +113,13 @@ In fact, it’s all a little trickier: top-level functions and properties become
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/06/PackageFacade.png"><img alt="PackageFacade" class="alignleft size-full wp-image-2400" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/06/PackageFacade.png?resize=640%2C309&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Every source file is compiled into a <em>separate class file</em>. Even when they are in the same package. Those per-source-file classes are called **package-parts**. They contain all the actual byte code of methods and declare all the fields. So, <em>all implementation resides in package-parts</em>.
+Every source file is compiled into a *separate class file*. Even when they are in the same package. Those per-source-file classes are called **package-parts**. They contain all the actual byte code of methods and declare all the fields. So, *all implementation resides in package-parts*.
 Then, a single **package-facade** class is generated that declares all the top-level functions and properties (again), and delegates implementations to the package-parts.
 ## Why
 
 **Why have a single facade**. This is something we are going to change, but here’s the reasoning we followed a few years ago when we made this decision: having a single entry point class for Java clients seems to be as simple as it gets. Also, moving functions from one file to another doesn’t break anything since we refer to them only through the facade, don’t we? **Win-win, isn’t it?** Well, not quite in fact, but we’ll get to it later, and for now will just explain the rest of the design taking the need for a facade for granted.
 **Why package-parts**. The main reason is initialization order for static fields. Indeed, consider these two files:
-<em>file1.kt</em>:
+*file1.kt*:
 
 {% raw %}
 <p></p>
@@ -135,7 +135,7 @@ val a = computeA()
 <p></p>
 {% endraw %}
 
-<em>file2.kt</em>:
+*file2.kt*:
 
 {% raw %}
 <p></p>
@@ -160,8 +160,8 @@ So, Kotlin’s answer is:
 Loops may happen (and lead to errors), but this is inevitable and Java has it the same way with statics, doesn’t it? So the implementation piggybacks on the Java’s semantics for static class initializers: every file has its own package-part, which declares all the fields and initializes them in the `&lt;clinit&gt;` method (that corresponds to the `static {...}` initializer in the Java language). Thus fields are initialized upon first access. And we get thread-safety for free, which is a big plus. If not for package parts, we couldn’t make it work.
 ## Package-part names
 
-As you might have noticed in the picture above, package-parts tend to have weird names, such as `BarPackage$file1$0fbe61c7.class`. This consists, obviously, of a package-facade name (`BarPackage`), a short name of the source file (`file1`) and a hash-code of the <em>absolute path to the source file</em>. Yes, an ABSOLUTE path. There’s no other way to be sure that two package-part names won’t clash.
-If you ever saw an exception stack trace from a Kotlin program, you probably noticed those hashes, they are just ugly. The bigger problem is that they may change when the project is built <em>on another machine</em> (which is not unlikely to have the source tree located in another directory). This may cause trouble, and it did, a few times.
+As you might have noticed in the picture above, package-parts tend to have weird names, such as `BarPackage$file1$0fbe61c7.class`. This consists, obviously, of a package-facade name (`BarPackage`), a short name of the source file (`file1`) and a hash-code of the *absolute path to the source file*. Yes, an ABSOLUTE path. There’s no other way to be sure that two package-part names won’t clash.
+If you ever saw an exception stack trace from a Kotlin program, you probably noticed those hashes, they are just ugly. The bigger problem is that they may change when the project is built *on another machine* (which is not unlikely to have the source tree located in another directory). This may cause trouble, and it did, a few times.
 ## Package-facade names, again
 
 Now it’s time to talk about REAL trouble that keeps biting us and our users more or less all the time. Let’s face it: **package-facade names do clash**.
@@ -190,7 +190,7 @@ Consequently:
 * renaming a file requires the clients to be recompiled, unless you have customized the class name with the annotation.
 
 **Example 1**. By default, each file is compiled to a class named after it:
-<em>file1.kt</em>:
+*file1.kt*:
 
 {% raw %}
 <p></p>
@@ -261,7 +261,7 @@ public class Utils {
 
 regardless of the source file name.
 **Example 3**. We can hide many package-parts generated for individual files behind a facade by specifying the same JVM name for many files:
-<em>file1.kt</em>:
+*file1.kt*:
 
 {% raw %}
 <p></p>
@@ -278,7 +278,7 @@ fun foo() {...}
 <p></p>
 {% endraw %}
 
-<em>file2.kt</em>:
+*file2.kt*:
 
 {% raw %}
 <p></p>

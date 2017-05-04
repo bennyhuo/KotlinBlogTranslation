@@ -39,4 +39,4 @@ Kotlin插件会检查包含Kotlin文件的所有模块是否正确配置。如�
 所选模块的配置文件将按照所述进行更改 [这里](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools) 。
 如果偶然你想念一个通知，你可以随时通过IntelliJ IDEA的事件日志访问它
 <img alt =“事件日志中的通知”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/09/7.jpg？ w = 640＆amp; ssl = 1“/>另请注意，只有在您的项目中**在源根目录下有Kotlin文件**，通知才会出现。
-<em>对于Gradle用户</em>：您的Kotlin文件应该在名为“kotlin”的源代码根目录下
+*对于Gradle用户*：您的Kotlin文件应该在名为“kotlin”的源代码根目录下

@@ -28,7 +28,7 @@ The full changelog for 1.1 M01 is available [here](https://github.com/JetBrains/
 
 We all know that blocking is bad under a high load, that polling is a no-go, and the world is becoming more and more push-based and asynchronous. Many languages (starting with C# in 2012) support asynchronous programming through dedicated language constructs such as `async`/`await` keywords. In Kotlin, we generalized this concept so that libraries can define their own versions of such constructs, and `async` is not a keyword, but simply a function.
 This design allows for integration of different asynchronous APIs: futures/promises, callback-passing, etc. It is also general enough to express lazy generators (`yield`) and cover some other use cases.
-So, meet one of the bigger features of Kotlin 1.1: <em>coroutines</em>. This is a traditional CS term for “program components that generalize subroutines for nonpreemptive multitasking”, but we’ll not dive into theory here <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+So, meet one of the bigger features of Kotlin 1.1: *coroutines*. This is a traditional CS term for “program components that generalize subroutines for nonpreemptive multitasking”, but we’ll not dive into theory here <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 
 {% raw %}
 <p></p>
@@ -50,7 +50,7 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-The great thing about coroutines is that they can <em>suspend</em> without blocking a thread, and yet they look like normal sequential code. Please see a [detailed description](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) and examples in a dedicated [KEEP repository](https://github.com/Kotlin/kotlin-coroutines) and comment on the [issues there](https://github.com/Kotlin/kotlin-coroutines/issues) .
+The great thing about coroutines is that they can *suspend* without blocking a thread, and yet they look like normal sequential code. Please see a [detailed description](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) and examples in a dedicated [KEEP repository](https://github.com/Kotlin/kotlin-coroutines) and comment on the [issues there](https://github.com/Kotlin/kotlin-coroutines/issues) .
 We are prototyping coroutine-based libraries [here](https://github.com/Kotlin/kotlinx.coroutines) , to be later included with the Standard Library. This includes JDK’s `CompletableFuture`, asynchronous IO (NIO), RxJava, and off-loading tasks from the UI thread in Swing. The repo contains examples as well as the libraries themselves. To play with it, follow the instructions in the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) .
 ## Type aliases
 
@@ -88,11 +88,11 @@ typealias Weight = Double
 <p></p>
 {% endraw %}
 
-it won’t do us much good, because `Length` can be freely assigned to `Weight` and vice versa. In fact, they can both be assigned to and from a regular `Double`. We understand the importance of such use cases, and are planning to cover them in the future, most likely through <em>value classes</em>, but that’s another story. For now we only have type aliases.
+it won’t do us much good, because `Length` can be freely assigned to `Weight` and vice versa. In fact, they can both be assigned to and from a regular `Double`. We understand the importance of such use cases, and are planning to cover them in the future, most likely through *value classes*, but that’s another story. For now we only have type aliases.
 Read more and comment [here](https://github.com/Kotlin/KEEP/issues/4) .
 ## Bound callable references
 
-In Kotlin 1.0 one can obtain a reference to a function (or property) like this: `String::length`, i.e. using a name of the containing class. In 1.1 we are adding <em>bound references</em>: i.e. we’ll be able to say `mystr::length` where `mystr` is a variable (or any other expression). Such references are bound to their receiver, and thus are a special case of partial function application (that we are not supporting in the general case, at least for now).
+In Kotlin 1.0 one can obtain a reference to a function (or property) like this: `String::length`, i.e. using a name of the containing class. In 1.1 we are adding *bound references*: i.e. we’ll be able to say `mystr::length` where `mystr` is a variable (or any other expression). Such references are bound to their receiver, and thus are a special case of partial function application (that we are not supporting in the general case, at least for now).
 Read more and comment [here](https://github.com/Kotlin/KEEP/issues/5) .
 ## Local delegated properties & Inline properties
 
@@ -145,14 +145,14 @@ Find the proposals related to JavaScript [here](https://github.com/Kotlin/KEEP/l
 We are very grateful to GitHub users [dotlin](https://github.com/dotlin) , [Valdemar0204](https://github.com/Valdemar0204) , [ensirius](https://github.com/ensirius) and [geoand](https://github.com/geoand) for their contributions to this version!
 ## How to try it
 
-**In Maven/Gradle**. Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) (see instructions under <em>“Set me up!”</em>) as a repository to your project. Use version 1.1-M01 for your Kotlin artifacts.
-**In the IDE**. If you are running [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) , go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list:
+**In Maven/Gradle**. Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) (see instructions under *“Set me up!”*) as a repository to your project. Use version 1.1-M01 for your Kotlin artifacts.
+**In the IDE**. If you are running [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) , go to *Tools → Kotlin → Configure Kotlin Plugin Updates*, then select “Early Access Preview 1.1” in the *Update channel* drop-down list:
 
 {% raw %}
 <p><img alt="Configure-Plugin-Updates" class="aligncenter size-small wp-image-4085" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Configure-Plugin-Updates.png?w=400&amp;ssl=1"/></p>
 {% endraw %}
 
-Press <em>Check for updates</em> in the same dialog, and, when the new version is show, <em>Install</em>.
+Press *Check for updates* in the same dialog, and, when the new version is show, *Install*.
 **On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a>**. Use the drop-down list at the bottom-right corner to change the compiler version:<br/>
 <img alt="Screen Shot 2016-07-14 at 20.23.48" class="alignnone size-full wp-image-4121" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Screen-Shot-2016-07-14-at-20.23.48.png?resize=640%2C549&amp;ssl=1"/>
 **With SDKMan**. Run `sdk install kotlin 1.1-M01`.

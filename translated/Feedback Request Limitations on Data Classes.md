@@ -15,7 +15,7 @@ translator_url:
 ---
 
 M13即将到来，我们计划稍后一点。这是对Kotlin未来变化的反馈请求。
-我们希望比以后提供Kotlin 1.0，这使我们推迟了一些我们没有足够的信心的设计选择。今天我们讨论<em>数据类</em>。<span id =“more-2472”> </span>
+我们希望比以后提供Kotlin 1.0，这使我们推迟了一些我们没有足够的信心的设计选择。今天我们讨论*数据类*。<span id =“more-2472”> </span>
 ## 介绍
 
 的概念 [数据类](http://kotlinlang.org/docs/reference/data-classes.html) 当简单地存储数据时，已被证明非常有用。所有你需要的是说：

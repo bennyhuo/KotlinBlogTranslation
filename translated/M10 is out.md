@@ -54,7 +54,7 @@ myTree.findParentOfType(javaClass<MyTreeNodeType>())
 <p></p>
 {% endraw %}
 
-我们实际想要的是简单地将类型</em>传递给此功能，即调用如下：
+我们实际想要的是简单地将类型*传递给此功能，即调用如下：
 
 {% raw %}
 <p></p>
@@ -68,7 +68,7 @@ myTree.findParentOfType<MyTreeNodeType>()
 <p></p>
 {% endraw %}
 
-但是，我们需要使用<em>的泛化泛型</em>来访问一个函数中的类型，而在JVM上，通用的泛型是昂贵的...
+但是，我们需要使用*的泛化泛型*来访问一个函数中的类型，而在JVM上，通用的泛型是昂贵的...
 幸运的是，Kotlin有 [内联函数](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) 现在他们支持**reified**类型参数，所以我们可以这样写：
 
 {% raw %}
@@ -128,7 +128,7 @@ class C<out T> {
 <p></p>
 {% endraw %}
 
-在这个例子中，由于T在T中被声明为**out**（即类是<em> covariant </em>），我们不允许将它作为`foo的参数（）`函数，我们只能返回它。
+在这个例子中，由于T在T中被声明为**out**（即类是*covariant*），我们不允许将它作为`foo的参数（）`函数，我们只能返回它。
 请注意，**私人**声明可以违反方差限制，例如：
 
 {% raw %}
@@ -145,7 +145,7 @@ class C<out T>(t: T) {
 <p></p>
 {% endraw %}
 
-虽然`foo`的设置器将T作为参数，因此违反了**out**限制，编译器允许这样做，并确保只有同一个实例</em> `C`可以访问`foo`。这意味着`C`中的以下函数将无法编译：
+虽然`foo`的设置器将T作为参数，因此违反了**out**限制，编译器允许这样做，并确保只有同一个实例* `C`可以访问`foo`。这意味着`C`中的以下函数将无法编译：
 
 {% raw %}
 <p></p>
@@ -226,7 +226,7 @@ takeVararg(*strs)
 JavaScript在此版本中获得重要更新，支持动态类型。
 ### 动态支持
 
-有时与动态语言交谈的最佳方式是动态的。这就是为什么我们引入了软键盘<em>动态</em>，这样我们可以将类型声明为动态的。目前，这仅在定位JavaScript而不是JVM时才受支持。
+有时与动态语言交谈的最佳方式是动态的。这就是为什么我们引入了软键盘*动态*，这样我们可以将类型声明为动态的。目前，这仅在定位JavaScript而不是JVM时才受支持。
 当与JavaScript进行互操作时，我们现在可以使用函数作为参数，或返回动态类型
 
 {% raw %}
@@ -247,7 +247,7 @@ fun interopJS(obj: dynamic): dynamic {
 我们将在单独的博客文章中详细介绍动态更多细节以及使用场景和限制。对于技术性见 [规格文件](https://github.com/JetBrains/kotlin/blob/master/spec-docs/dynamic-types.md) 。
 ### 新注释
 
-我们添加了一系列注释，使JavaScript互操作更简单，特别是nativeInvoke，nativeGetter </em>和<em> nativeSetter </em>。
+我们添加了一系列注释，使JavaScript互操作更简单，特别是nativeInvoke，nativeGetter*和*nativeSetter*。
 如果使用`nativeInvoke`注释了一个函数`bar`，它的调用`foo.bar（）`将被转换为`foo（）`在JavaScript中。例如：
 
 {% raw %}
@@ -269,7 +269,7 @@ f.invoke(1) // also translates to f(1)
 <p></p>
 {% endraw %}
 
-同样的方式，我们可以使用NativeGetter </em>和<em> nativeSetter </em>来获取JavaScript中的索引访问权限：
+同样的方式，我们可以使用NativeGetter*和*nativeSetter*来获取JavaScript中的索引访问权限：
 
 {% raw %}
 <p></p>
@@ -312,10 +312,10 @@ a[2] = 3 // translates to a[2] = 3
 
 ### Kotlin.js输出突破变化
 
-以前，在创建新项目时，将在名为<em> scripts </em>的文件夹中创建kotlin.js运行时。从M10开始，这个文件是在第一次编译时创建的，并且被放置在输出文件夹（默认为<em> out </em>）中。这提供了一个更容易的部署场景，因为库和项目输出现在位于同一根文件夹下。
+以前，在创建新项目时，将在名为*scripts*的文件夹中创建kotlin.js运行时。从M10开始，这个文件是在第一次编译时创建的，并且被放置在输出文件夹（默认为*out*）中。这提供了一个更容易的部署场景，因为库和项目输出现在位于同一根文件夹下。
 ### kotlin-js编译器的新no-stdlib选项 - 打破变化
 
-我们现在为kotlin-js编译器提供一个命令行选项，即<em> no-stdlib </em>。没有指定此选项，编译器使用捆绑的标准库。这是M9行为的改变。
+我们现在为kotlin-js编译器提供一个命令行选项，即*no-stdlib*。没有指定此选项，编译器使用捆绑的标准库。这是M9行为的改变。
 ### js代码
 
 我们现在可以直接在Kotlin代码中输出JavaScript代码
@@ -341,7 +341,7 @@ js("var value = document.getElementById('item')")
 现在，我们可以将属性标记为`[platformStatic]`，以便它们的访问者从Java可视为静态方法。
 ### 对象中的静态字段
 
-任何对象的属性现在都会产生静态字段，以便它们可以轻松地从Java消费，即使不需要使用<em> platformStatic </em>注释进行装饰。
+任何对象的属性现在都会产生静态字段，以便它们可以轻松地从Java消费，即使不需要使用*platformStatic*注释进行装饰。
 ### JNI和[本地]
 
 Kotlin现在通过`[native]`注释支持JNI，在`kotlin.jvm`包中定义（参见规范文档 [这里](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) 。）。要声明本机方法，只需将注释放在其上：
@@ -379,7 +379,7 @@ IntelliJ IDEA领域的一些改进包括：
 现在，当我们在调试的时候重新编译Kotlin代码，它顺利地被重新加载到了难民程序中。
 ### 评估表达：完成改进
 
-在调试会话期间，在评估表达式时，根据需要自动添加转换。例如，当从<em>任何</em>下载到特定类型时。
+在调试会话期间，在评估表达式时，根据需要自动添加转换。例如，当从*任何*下载到特定类型时。
 
 {% raw %}
 <p><img alt="Completion Casts" class="aligncenter size-full wp-image-1716" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2014/12/completion.png?resize=564%2C126&amp;ssl=1"/></p>
@@ -424,7 +424,7 @@ class Derived<X>: Base<List<X>> {
 <p></p>
 {% endraw %}
 
-如果<em> Base.baseMethod </em>的签名被更改为<em>派生的签名，那么将其更改为<em> baseMethod＆lt; T＆gt;（t：List＆lt; T＆gt;，k：K？）。碱性方法</em>适当地更改为<em>＆gt; baseMethod＆lt; Y＆gt;（a：List＆lt; Y＆gt;，b：List＆lt; X＆gt;？
+如果*Base.baseMethod*的签名被更改为*派生的签名，那么将其更改为*baseMethod＆lt; T＆gt;（t：List＆lt; T＆gt;，k：K？）。碱性方法*适当地更改为*＆gt; baseMethod＆lt; Y＆gt;（a：List＆lt; Y＆gt;，b：List＆lt; X＆gt;？
 ### 完成改进
 
 完成项目订购已得到改进，现在突出显示立即成员。智能完成现在可以找到预期类型的​​继承者。完成表现严重改善。
@@ -450,7 +450,7 @@ object Hello {
 <p></p>
 {% endraw %}
 
-只需右键单击该对象，然后选择<em>运行... </em>
+只需右键单击该对象，然后选择*运行...*
 ### 编辑器中的代码覆盖率突出显示
 
 如果您运行Kotlin代码与覆盖，编辑器现在标记覆盖和未覆盖的行（仅适用于IntelliJ IDEA 14）。

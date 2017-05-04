@@ -125,7 +125,7 @@ val b = aAndB.component2()
 <p></p>
 {% endraw %}
 
-The component1() and component2() functions are another example of the principle of <em>conventions</em> widely used in Kotlin (e.g. operators like + and *, for-loops etc.). Anything can be on the right-hand side of a multi-assignment, as long as the required number of component functions can be called on it. And, of course, there can be component3() and component4() and so on.
+The component1() and component2() functions are another example of the principle of *conventions* widely used in Kotlin (e.g. operators like + and *, for-loops etc.). Anything can be on the right-hand side of a multi-assignment, as long as the required number of component functions can be called on it. And, of course, there can be component3() and component4() and so on.
 The same thing works in a for-loop: when you say
 
 {% raw %}
@@ -222,7 +222,7 @@ fun test() {
 {% endraw %}
 
 No matter whether we decide to use a multi-declaration or not, the names are not lost: they are declared in the data class.
-Some people complain about the need to come up with the name for the returned entity, but in many cases it is good to realize **<em>what this thing is</em>**…
+Some people complain about the need to come up with the name for the returned entity, but in many cases it is good to realize ***what this thing is***…
 ## Conclusion
 
 We discussed new features introduced in **Kotlin M3**. **Multi-declarations** allow to bind several names shortly, and, as an example, traverse map entries in a nice way without creating unneeded objects. **Data classes** enable one-line definitions of classes that simply handle data and yet come with all the necessary functions attached.

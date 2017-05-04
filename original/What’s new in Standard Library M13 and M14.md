@@ -95,7 +95,7 @@ All other binary operations involving `Char` were deprecated in M12 and now are 
 ## Plus and minus operators for collections
 
 `plus` operation on collections is not new, but it was defined so that its return type and behavior were not intuitive: for example, when adding an element to a set, you would receive a list having that element concatenated to all elements of the set, possibly resulting in that element to be duplicated.<br/>
-Now return type of plus operation depends on the type of <em>first</em> operand:
+Now return type of plus operation depends on the type of *first* operand:
 
 * for Iterable, Collection and List the result is List, and operation is a concatenation
 * for Array the result is Array, and operation is concatenation
@@ -110,7 +110,7 @@ Also we have introduced `minus` operation. It has the same relation between type
 
 ## New scope functions: apply and run
 
-Prior to M13 there were two so-called <em>scope functions</em> in the Standard Library: `let` and `with`. We call them scope functions, because their only purpose is to modify scope of a function passed as the last parameter. For example, to bring the parameter of scope function to the receiver of function parameter in case of `with`, and vice versa in case of `let`.<br/>
+Prior to M13 there were two so-called *scope functions* in the Standard Library: `let` and `with`. We call them scope functions, because their only purpose is to modify scope of a function passed as the last parameter. For example, to bring the parameter of scope function to the receiver of function parameter in case of `with`, and vice versa in case of `let`.<br/>
 Now you have two more scope functions at your disposal:
 
 * one that passes its receiver to the receiver of its function parameter:

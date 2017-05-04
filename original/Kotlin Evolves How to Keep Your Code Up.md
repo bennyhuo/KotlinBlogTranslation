@@ -28,12 +28,12 @@ As mentioned above, there are two kinds of deprecation warnings: language deprec
 <span id="more-2358"></span>
 ### Quick Fixes
 
-With a <em>Quick Fix</em> you can fix a deprecation warning when you press `Alt+Enter` on it: available options will appear that fix an individual warning or all such warnings in the entire project. Deprecated language constructs and library functions will be replaced by newer versions.
+With a *Quick Fix* you can fix a deprecation warning when you press `Alt+Enter` on it: available options will appear that fix an individual warning or all such warnings in the entire project. Deprecated language constructs and library functions will be replaced by newer versions.
 Please note that for the quick fix to work correctly on library functions, **the sources of the standard library must be attached to your project**.
 ### Project-Wide Code Cleanup
 
-Quick fixes are good when you have located the deprecated usage already, but since we have deprecated a lot of things recently, it may not be a viable option to look for each individual usage. In such a case, you can apply these fixes in bulk with an IDE action “<em>Analyze | Code Cleanup</em>“.
-We provide an inspection named “<em>Usage of redundant or deprecated syntax or deprecated symbols</em>“. During the Cleanup, this inspection automatically replaces usages of obsolete language features or unnecessarily verbose code constructs with compact and up-to-date syntax, and usages of deprecated symbols — with their proposed substitutions.
+Quick fixes are good when you have located the deprecated usage already, but since we have deprecated a lot of things recently, it may not be a viable option to look for each individual usage. In such a case, you can apply these fixes in bulk with an IDE action “*Analyze | Code Cleanup*“.
+We provide an inspection named “*Usage of redundant or deprecated syntax or deprecated symbols*“. During the Cleanup, this inspection automatically replaces usages of obsolete language features or unnecessarily verbose code constructs with compact and up-to-date syntax, and usages of deprecated symbols — with their proposed substitutions.
 ### Manual Rewrite
 
 In rare cases some deprecated usages can not be fixed automagically. These include usages of language constructs and library symbols that will be dropped without alternatives or can’t be rewritten without breaking the code, or when there are several options of rewriting the code, so that explicit choice is required.

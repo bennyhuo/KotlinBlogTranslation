@@ -74,7 +74,7 @@ Numerous popular JS libraries will be available through typed headers (converted
 We’ll dedicate a lot of effort in Kotlin 1.2 and beyond to making the JavaScript tooling smooth and helpful. Our goal is to enable pleasant full-stack development with Kotlin.
 ## Coroutines
 
-Honestly, it’s hard to over-emphasize coroutines. The future has come, and we are stuck with it: we need non-blocking asynchronous APIs to keep up with the loads of data we are processing. We’ve been through callback hell and conquered it, but we deserve better. We want to simply write the code following its natural <em>sequential</em> logic, and let the compiler figure the asynchrony out for us. This is what coroutines are about: async/await, generate/yield, non-blocking IO, Rx and much more brought under the single unified paradigm of a <em>suspending function</em>. Such a function (or lambda) represents a computation that can be suspended (without blocking any threads) and resumed later.
+Honestly, it’s hard to over-emphasize coroutines. The future has come, and we are stuck with it: we need non-blocking asynchronous APIs to keep up with the loads of data we are processing. We’ve been through callback hell and conquered it, but we deserve better. We want to simply write the code following its natural *sequential* logic, and let the compiler figure the asynchrony out for us. This is what coroutines are about: async/await, generate/yield, non-blocking IO, Rx and much more brought under the single unified paradigm of a *suspending function*. Such a function (or lambda) represents a computation that can be suspended (without blocking any threads) and resumed later.
 
 {% raw %}
 <p></p>
@@ -118,7 +118,7 @@ We now support JSR 223, which is utilized by [the Spring Framework](https://spri
 
 As with other pre-release versions, we give **no backward compatibility guarantees** for Kotlin 1.1‑Beta. Moreover, when we reach final RC, all binaries produced by pre-release versions will be outlawed by the compiler: you’ll be required to recompile everything that was compiled by 1.1‑M0x and Beta (all the code from 1.0.x is perfectly fine without recompilation).
 **In Maven/Gradle:** Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use `1.1.0-beta-17` as the version number for the compiler and the standard library.
-**In IntelliJ IDEA:** Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
+**In IntelliJ IDEA:** Go to *Tools → Kotlin → Configure Kotlin Plugin Updates*, then select “Early Access Preview 1.1” in the *Update channel* drop-down list, then press *Check for updates*.
 The command-line compiler can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta) .
 **On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a>**. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1‑Beta.
 Let’s Kotlin!

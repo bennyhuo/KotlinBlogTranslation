@@ -15,7 +15,7 @@ translator_url:
 ---
 
 Kotlin的采用在2015年大大增加，我们特别感谢我们的早期采用者，他们不仅使用Kotlin，而且通过不同的媒介分享他们的经验。我们想强调过去一年中最引人注目的文章和视频。
-顺便说一下，你可以 [加入我们的松弛](http://kotlinslackin.herokuapp.com/) 并订阅<em> #feed </em>频道，在那里我们推出了很多有趣的内容。
+顺便说一下，你可以 [加入我们的松弛](http://kotlinslackin.herokuapp.com/) 并订阅*#feed*频道，在那里我们推出了很多有趣的内容。
 
 {% raw %}
 <p><img alt="Kotlin Digest 2015" class="alignnone size-full wp-image-3501" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/01/Digest-2015-Cover.png?resize=640%2C320&amp;ssl=1"/></p>
@@ -98,4 +98,4 @@ Kotlin的采用在2015年大大增加，我们特别感谢我们的早期采用�
 <p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/011AL3Z6VmM" width="560"></iframe></p>
 {% endraw %}
 
-感谢您的观看和<em>让我们的kotlin </em>
+感谢您的观看和*让我们的kotlin*

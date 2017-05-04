@@ -70,7 +70,7 @@ println(Foo.bar)
 <p></p>
 {% endraw %}
 
-注意我们无法使用Foo的<em>实例</em>访问bar：
+注意我们无法使用Foo的*实例*访问bar：
 
 {% raw %}
 <p></p>
@@ -85,7 +85,7 @@ println(foo.bar) // compilation error
 <p></p>
 {% endraw %}
 
-因为bar并非Foo的成员，而是属于Foo的类对象；类对象是与所在的类<em>相联的</em>单独实体，并且不与其实例共享成员。因此也不能通过类名直接访问baz：
+因为bar并非Foo的成员，而是属于Foo的类对象；类对象是与所在的类*相联的*单独实体，并且不与其实例共享成员。因此也不能通过类名直接访问baz：
 
 {% raw %}
 <p></p>
@@ -99,7 +99,7 @@ prinltn(Foo.baz) // error
 <p></p>
 {% endraw %}
 
-因为baz是Foo的成员，不属于它的类对象，所以只能通过Foo的<em>实例</em>访问baz。  
+因为baz是Foo的成员，不属于它的类对象，所以只能通过Foo的*实例*访问baz。  
 
 现在，我们来看看类对象的工作原理。首先，存在一个为类对象单独生成的JVM类，bar便是该类的成员。假设用Java的方式访问类对象：
 

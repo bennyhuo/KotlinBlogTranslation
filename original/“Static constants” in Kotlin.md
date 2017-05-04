@@ -67,7 +67,7 @@ println(Foo.bar)
 <p></p>
 {% endraw %}
 
-Note that we can not call bar on an <em>instance </em>of Foo:
+Note that we can not call bar on an *instance*of Foo:
 
 {% raw %}
 <p></p>
@@ -82,7 +82,7 @@ println(foo.bar) // compilation error
 <p></p>
 {% endraw %}
 
-That’s because bar is not a member of Foo, only of its class object. Class object is a separate entity <em>associated</em> with the class, and does not share members with its instances. Neither can we call baz on the class name:
+That’s because bar is not a member of Foo, only of its class object. Class object is a separate entity *associated* with the class, and does not share members with its instances. Neither can we call baz on the class name:
 
 {% raw %}
 <p></p>
@@ -96,7 +96,7 @@ prinltn(Foo.baz) // error
 <p></p>
 {% endraw %}
 
-This is because baz is a member of Foo, not of its class object, so you can only call baz on <em>instances </em>of Foo.
+This is because baz is a member of Foo, not of its class object, so you can only call baz on *instances*of Foo.
 Now, let’s look at how class objects work. First, there’s a separate JVM class generated for a class object, and bar is a member of that class. If you access class objects from Java, you have to say something like this:
 
 {% raw %}

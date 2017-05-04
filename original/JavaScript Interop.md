@@ -41,14 +41,14 @@ jquery.getJSON(KotlinCommitsURL) { commits ->
 <p></p>
 {% endraw %}
 
-The code above calls <em>getJSON</em> function on <em>jQuery</em> to return a list of commits from GitHub. The function takes a lambda with a single parameter, which is the actual commits. Each entry in this list is in turn a commit entry with its own fields such as <em>html_url</em> or <em>commit.message</em>.
-In the code <em>jQuery, commits</em> and <em>commit</em> are all dynamic, which means that anything we call on these will be resolved at runtime, i.e. by the JavaScript interpreter. This allows for two things:
+The code above calls *getJSON* function on *jQuery* to return a list of commits from GitHub. The function takes a lambda with a single parameter, which is the actual commits. Each entry in this list is in turn a commit entry with its own fields such as *html_url* or *commit.message*.
+In the code *jQuery, commits* and *commit* are all dynamic, which means that anything we call on these will be resolved at runtime, i.e. by the JavaScript interpreter. This allows for two things:
 
 * Not have to use a strongly-typed library to work with jQuery
 * Be able to consume model that hasn’t previously been defined
 
 The second ability is quite useful since it means that we don’t have to create intermediate strongly-typed classes to consume HTTP endpoints.
-Of course, we could even use language constructs such as <em>for</em> loops to do the same thing, not only using the <em>forEach</em> extensions function.
+Of course, we could even use language constructs such as *for* loops to do the same thing, not only using the *forEach* extensions function.
 
 {% raw %}
 <p></p>
@@ -71,7 +71,7 @@ jquery.getJSON(KotlinCommitsURL) { commits ->
 <p></p>
 {% endraw %}
 
-In order for this code to work however, we still need to declare <em>jQuery</em> as dynamic, and mark it with the corresponding native equivalent for Kotlin to call
+In order for this code to work however, we still need to declare *jQuery* as dynamic, and mark it with the corresponding native equivalent for Kotlin to call
 
 {% raw %}
 <p></p>
@@ -86,7 +86,7 @@ val jquery : dynamic = noImpl
 <p></p>
 {% endraw %}
 
-The <em>noImpl</em> is required since non-nullable variables in Kotlin need initializing, which in this case would be throwing an exception, however this never occurs since it is effectively being compiled down to JavaScript and called on the client-side. The <em>native</em> annotation which already existed pre-M10 is telling Kotlin what the identifier is equivalent to in JavaScript.
+The *noImpl* is required since non-nullable variables in Kotlin need initializing, which in this case would be throwing an exception, however this never occurs since it is effectively being compiled down to JavaScript and called on the client-side. The *native* annotation which already existed pre-M10 is telling Kotlin what the identifier is equivalent to in JavaScript.
 ### Operators
 
 When declaring dynamic types, certain operators act natively in JavaScript, such as for instance index accessors:
@@ -122,7 +122,7 @@ elements[i]
 in JavaScript.
 ## Inlining JavaScript code
 
-Another feature we added in M10 is the ability to inline some native JavaScript code in Kotlin code. We can do this using the <em>js</em> function:
+Another feature we added in M10 is the ability to inline some native JavaScript code in Kotlin code. We can do this using the *js* function:
 
 {% raw %}
 <p></p>
@@ -138,10 +138,10 @@ Another feature we added in M10 is the ability to inline some native JavaScript 
 <p></p>
 {% endraw %}
 
-The second line inserts <em>console.log(‘Calling JavaScript’)</em> in the output resulting from compilation, interlining JavaScript with Kotlin code.
+The second line inserts *console.log(‘Calling JavaScript’)* in the output resulting from compilation, interlining JavaScript with Kotlin code.
 ## Language Injections
 
-M10 also added Language Injection support in IntelliJ IDEA for Kotlin. And while this applies to any string and any language, not just JavaScript, it definitely proves useful when using <em>js</em>, allowing this:
+M10 also added Language Injection support in IntelliJ IDEA for Kotlin. And while this applies to any string and any language, not just JavaScript, it definitely proves useful when using *js*, allowing this:
 
 {% raw %}
 <p><img alt="js-string" class="aligncenter size-full wp-image-1776" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2014/12/js-string.png?resize=363%2C44&amp;ssl=1"/></p>
@@ -161,7 +161,7 @@ when injecting JavaScript language:
 
 ## Summary
 
-In addition to <em>dynamic</em> and <em>js</em>, we also introduced support for <em>nativeGetter,nativeSetter</em> and <em>nativeInvoke</em> annotations for JavaScript, which we already covered in the [M10 release post](http://blog.jetbrains.com/kotlin/2014/12/m10-is-out/) .
+In addition to *dynamic* and *js*, we also introduced support for *nativeGetter,nativeSetter* and *nativeInvoke* annotations for JavaScript, which we already covered in the [M10 release post](http://blog.jetbrains.com/kotlin/2014/12/m10-is-out/) .
 These new features are all provided for better interoperability with JavaScript, but they do not trump any plans to continue to provide strongly-typed support for existing libraries and frameworks in JavaScript.
 **[1]**<br/>
 “dynamic” is a soft keyword:

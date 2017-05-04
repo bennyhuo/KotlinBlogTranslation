@@ -15,7 +15,7 @@ translator_url:
 ---
 
 While M13 is approaching, we are planning a little ahead. This is a request for feedback on some future changes in Kotlin.
-We want to deliver Kotlin 1.0 rather sooner than later, and this makes us postpone some design choices we don’t have enough confidence about. Today let’s discuss <em>data classes</em>.<span id="more-2472"></span>
+We want to deliver Kotlin 1.0 rather sooner than later, and this makes us postpone some design choices we don’t have enough confidence about. Today let’s discuss *data classes*.<span id="more-2472"></span>
 ## Introduction
 
 The concept of [data classes](http://kotlinlang.org/docs/reference/data-classes.html) has proven very useful when it comes to simply storing data. All you need is say:

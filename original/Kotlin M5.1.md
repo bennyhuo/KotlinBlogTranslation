@@ -75,7 +75,7 @@ val x = object : A() { ... }
 What is the type of x? It used to be the anonymous type, but if you use x from the outside, you can not access it: the type is not valid. Now the type will be A. This applies only to properties that can be seen from the outside, i.e. if x is a local variable it will still have the anonymous type, since it is harmless.
 ## Class Objects are Usable from Java
 
-Kotlin classes do not have static members, but rather have <em><a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">class objects</a></em>:
+Kotlin classes do not have static members, but rather have *<a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">class objects</a>*:
 
 {% raw %}
 <p></p>

@@ -53,7 +53,7 @@ data class Point(val x: Int, val y: Int)
 <p></p>
 {% endraw %}
 
-Here Point automatically gets toString(), equals()/hashCode() and <em>component functions</em> that enable you to write this:
+Here Point automatically gets toString(), equals()/hashCode() and *component functions* that enable you to write this:
 
 {% raw %}
 <p></p>
@@ -76,7 +76,7 @@ These features enabled us to **deprecate tuples**. They will be removed complete
 
 ## Collections
 
-Static JVM languages tend to come up with their own collections libraries, because Java collections do not make use of the cool features these languages have. So we get really cool collections, that are, unfortunately, <em>incompatible</em>, which makes us wrap them or copy when using Java APIs.
+Static JVM languages tend to come up with their own collections libraries, because Java collections do not make use of the cool features these languages have. So we get really cool collections, that are, unfortunately, *incompatible*, which makes us wrap them or copy when using Java APIs.
 Kotlin has many fancy features, but we are eager to interoperate smoothly with Java, and, it turns out, we can have this cake and eat it too. Meet Kotlin’s collections:
 <img alt="" class="aligncenter size-full wp-image-665" data-recalc-dims="1" sizes="(max-width: 723px) 100vw, 723px" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/09/Collections.png?resize=640%2C335&amp;ssl=1" srcset="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/09/Collections.png?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/09/Collections.png?w=723&amp;ssl=1 723w"/>As you can see, the basic structure here is very much like what **java.util** gives us, but with a few important differences:
 

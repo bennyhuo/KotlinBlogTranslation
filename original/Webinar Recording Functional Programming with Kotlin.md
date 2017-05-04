@@ -57,4 +57,4 @@ The video includes the time stamps following the [agenda announced](http://blog.
 About the Presenter:
 Thanks to all the attendees for the questions! If you still have some, please, contact Mike or our team.
 You are welcome to suggest themes for future webinars in comments.
-<em>Let’s kotlin!</em>
+*Let’s kotlin!*

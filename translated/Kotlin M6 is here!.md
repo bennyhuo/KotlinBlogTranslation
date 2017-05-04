@@ -38,10 +38,10 @@ SwingUtilities.invokeLater { doItNow() }
 <p></p>
 {% endraw %}
 
-并且现在在任何SAM接口（即Callable（），Comparator（）等）上。 <em> Runnable </em>功能仍然适用于需要的情况。
+并且现在在任何SAM接口（即Callable（），Comparator（）等）上。 *Runnable*功能仍然适用于需要的情况。
 ### 注释改进
 
-您现在可以使用<em>枚举</em>类型的注释，以及使用<em> vararg </em>传递可变数量的参数的数组。
+您现在可以使用*枚举*类型的注释，以及使用*vararg*传递可变数量的参数的数组。
 
 {% raw %}
 <p></p>
@@ -55,7 +55,7 @@ annotation class validate(val side: Side, vararg val props: String)
 <p></p>
 {% endraw %}
 
-其中<em>侧面</em>可以是枚举
+其中*侧面*可以是枚举
 
 {% raw %}
 <p></p>
@@ -90,7 +90,7 @@ enum class Side {
 您可以使用简单的按键使内联变量。 <img alt =“image”border =“0”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image1。 png？resize = 381％2C162＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“
 ### 拆分/连接属性声明
 
-如你所知，Kotlin允许在声明上初始化属性。 IntelliJ IDEA现在允许我们使用<em> Split属性声明意图</em>轻松地将其重构为两个单独的表达式，或者使用<em> Edit | Join Lines </em>重新连接。 <img alt =“image”border =“0”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image2。 png？resize = 247％2C68＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“
+如你所知，Kotlin允许在声明上初始化属性。 IntelliJ IDEA现在允许我们使用*Split属性声明意图*轻松地将其重构为两个单独的表达式，或者使用*Edit | Join Lines*重新连接。 <img alt =“image”border =“0”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image2。 png？resize = 247％2C68＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“
 ### 安全删除
 
 您现在可以安全地删除项目中未引用的符号，包括检查注释和字符串中的引用<img alt =“image”border =“0”data-recalc-dims =“1”src =“https：// i0.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image3.png?resize=189%2C164&amp;ssl=1“style =”padding-top：0px; padding-left：0px; padding -  right：0px; border-width：0px“/>

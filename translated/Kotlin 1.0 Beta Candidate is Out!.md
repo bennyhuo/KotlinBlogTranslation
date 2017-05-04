@@ -54,7 +54,7 @@ fun testInfix() = Foo() bar Foo()
 * 我们现在应该使用unaryPlus和unaryMinus，而不是仅仅加上和减去一元函数，即-Foo（）现在是Foo（）。unaryMinus（）;
 * 对于委派的属性，应该使用getValue和setValue，而不是仅仅获取和设置。
 
-<em>代码清理</em>操作将帮助您迁移代码。
+*代码清理*操作将帮助您迁移代码。
 此外，操作员签名现在由声明站点上的编译器进行检查。这些检查中的一些可能在将来放松，但我们相信现在我们现在是一个很好的起点。
 ### 从对象导入
 
@@ -169,7 +169,7 @@ fun bar(vararg args: String) {
 <p></p>
 {% endraw %}
 
-<em>扩展运算符</em>的语义已被修复，以便始终保证`foo`看到的数组不会被“外部世界”修改或观察。我们可以假设每次使用扩展运算符时都会做出防御性拷贝（实际上，稍后可能会实现一些优化来减少内存流量）。
+*扩展运算符*的语义已被修复，以便始终保证`foo`看到的数组不会被“外部世界”修改或观察。我们可以假设每次使用扩展运算符时都会做出防御性拷贝（实际上，稍后可能会实现一些优化来减少内存流量）。
 因此，Kotlin图书馆的作者可以依赖于安全地存储的vararg数组，而无需防御性复制
 **注意**：当Kotlin函数从java调用时，由于没有使用任何扩展操作符，因此不能满足此保证。这意味着如果一个函数旨在从Java和Kotlin两者中使用，那么它的Java客户端的合同应该包含一个注释，该数组应该在传递给它之前被复制。
 ### “sparam”注释目标已重命名为“setparam”
@@ -233,7 +233,7 @@ fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
 <p></p>
 {% endraw %}
 
-**数组的动态类型检查**。数组元素类型在Java中被引用，但是它们的Kotlin特定属性（如可空性）不是。因此，我们删除了允许像`a为Array＆lt; String＆gt;`的检查的数组的特殊处理，现在数组作为所有其他通用类工作：我们可以检查`a是Array * ;`和像`a的转换像Array＆lt; String＆gt;`被标记为未选中。我们添加了一个特定于JVM的函数`isArrayOf＆lt; T＆gt;（）`，以确定给定的数组可以包含Java </em>中的`T` <em>类型的元素：
+**数组的动态类型检查**。数组元素类型在Java中被引用，但是它们的Kotlin特定属性（如可空性）不是。因此，我们删除了允许像`a为Array＆lt; String＆gt;`的检查的数组的特殊处理，现在数组作为所有其他通用类工作：我们可以检查`a是Array * ;`和像`a的转换像Array＆lt; String＆gt;`被标记为未选中。我们添加了一个特定于JVM的函数`isArrayOf＆lt; T＆gt;（）`，以确定给定的数组可以包含Java*中的`T` *类型的元素：
 
 {% raw %}
 <p></p>
@@ -267,7 +267,7 @@ fun Foo.getValue(thisRef: Bar, property: KProperty<*>): Baz? {
 <p></p>
 {% endraw %}
 
-代码清理</em>将帮助您进行迁移。
+代码清理*将帮助您进行迁移。
 **可调用引用**。现在禁止使用`::`的一些用法，稍后在实现绑定引用时启用。最值得注意的是，当`foo`是类的成员时，现在不应该使用`:: foo`应该使用`MyClass :: foo`。对对象成员的引用也暂时不受支持（它们也将作为绑定引用）。我们可以暂时使用lambdas作为解决方法。
 **If-expressions**。当`if`用作表达式时，通过要求`else` `if`和`时统一了`的语义。
 
@@ -301,7 +301,7 @@ fun goo(): Goo { throw MyExcepion() } // OK
 <p></p>
 {% endraw %}
 
-这是一个警告，在我们使用<em>代码清理</em>迁移我们的代码后，这些警告会被提升为错误
+这是一个警告，在我们使用*代码清理*迁移我们的代码后，这些警告会被提升为错误
 **可见性检查**被限制，例如，公共声明不能公开本地，私有或内部类型。访问内部声明在编译器以及IDE中进行检查;
 查看更多 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-1038) 。
 ## 集合
@@ -326,7 +326,7 @@ if (1 in strs) { // 'strs' is a set of strings, can't contain an Int
 {% endraw %}
 
 类似的代码在Java中起作用，因为`Set＆lt; E＆gt; .contains`（`中的`被编译为）需要`Object`，而不是`/ code>，集合的元素类型。这被证明是容易出错的，所以我们决定让Kotlin收集接口更安全（同时保持与Java集合的完全兼容性）。因此，我们的`包含`需要一个`E`，上面的例子在Kotlin中是不正确的。
-目前，Kotlin编译器在上述示例中报告了`中的`的弃用警告，因为我们在标准库中提供了过渡扩展功能，以帮助每个人迁移，但是很快这将是一个错误。 <em>代码清理</em>是我们的朋友：它将用`strs.containsRaw（1）`替换strs`中的`1。 `containsRaw`是标准库中的一个新功能，当我们真正需要</em>类似Java的行为时，我们可以使用它们：我们可以使用< code> containsRaw`。
+目前，Kotlin编译器在上述示例中报告了`中的`的弃用警告，因为我们在标准库中提供了过渡扩展功能，以帮助每个人迁移，但是很快这将是一个错误。 *代码清理*是我们的朋友：它将用`strs.containsRaw（1）`替换strs`中的`1。 `containsRaw`是标准库中的一个新功能，当我们真正需要*类似Java的行为时，我们可以使用它们：我们可以使用< code> containsRaw`。
 底线：
 
 * Collection.contains，Map.get和其他一些收集方法现在更安全;

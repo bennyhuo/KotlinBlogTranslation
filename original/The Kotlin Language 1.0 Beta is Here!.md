@@ -73,7 +73,7 @@ Everything stated above applies to the JVM/Android support only. The JavaScript 
 
 ## Frameworks, interop and migration
 
-Virtually **any Java or Android framework or library works** smoothly with Kotlin. Among others, this includes <em>Spring MVC</em>, <em>Vaadin</em>, <em>Vert.x</em> and <em>Jackson</em>. Many Android frameworks require annotation processing that is available in Kotlin through [kapt](http://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/) that supports <em>Dagger 2</em>, <em>DataBinding</em>, <em>DBFlow</em>, <em>ButterKnife</em>, <em>AndroidAnnotations</em> and others.
+Virtually **any Java or Android framework or library works** smoothly with Kotlin. Among others, this includes *Spring MVC*, *Vaadin*, *Vert.x* and *Jackson*. Many Android frameworks require annotation processing that is available in Kotlin through [kapt](http://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/) that supports *Dagger 2*, *DataBinding*, *DBFlow*, *ButterKnife*, *AndroidAnnotations* and others.
 Kotlin has its **own frameworks and libraries** developed by JetBrains and the community. Some examples: [Anko](https://github.com/JetBrains/anko) , [RxKotlin](https://github.com/ReactiveX/RxKotlin) , [funKtionale](https://github.com/MarioAriasC/funKTionale) , [kohesive](https://github.com/kohesive/) , [kovenant](https://github.com/mplatvoet/kovenant) , the [Kobalt](http://beust.com/kobalt) build tool, and [much more](https://kotlinlang.org/docs/resources.html) .
 A **converter** built-in to the IDE helps migrate the source code from Java to Kotlin.
 ## Try it
@@ -94,4 +94,4 @@ Command line: download the compiler here
 * News: Blog, Twitter
 * Issue tracker
 
-**<em>Have a nice Kotlin!</em>**
+***Have a nice Kotlin!***

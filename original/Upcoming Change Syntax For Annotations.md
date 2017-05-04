@@ -265,7 +265,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-Now, what if I want an `open` local class, or `abstract`? Those are <em>modifiers</em>, not annotations, and we can’t say `@open` or `@abstract`.
+Now, what if I want an `open` local class, or `abstract`? Those are *modifiers*, not annotations, and we can’t say `@open` or `@abstract`.
 One option is to allow escaping modifiers with `@` as well as annotations:
 
 {% raw %}
@@ -283,7 +283,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-Other options include allowing modifiers <em>on the same line</em> with the class, but this does not straightforwardly extend to functions, which are [expressions now](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) . See more [here](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) ## Feedback Welcome
+Other options include allowing modifiers *on the same line* with the class, but this does not straightforwardly extend to functions, which are [expressions now](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) . See more [here](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md#reserving-space-for-future-syntactic-changes) ## Feedback Welcome
 
 What do you think?
 P.S. BTW, we are working on a spec document draft [here](https://github.com/JetBrains/kotlin/pull/624) 

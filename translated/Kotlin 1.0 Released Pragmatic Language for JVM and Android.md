@@ -21,7 +21,7 @@ translator_url:
 <p><center><img alt="Kotlin" class="alignnone size-full wp-image-3688" data-recalc-dims="1" margin-left="auto" margin-right="auto" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/02/1_0_Banner.png?resize=640%2C320&amp;ssl=1"/></center></p>
 {% endraw %}
 
-<em>请参阅有关<a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/"> Reddit </a>和<a href =“https：//新闻的讨论。 ycombinator.com/item?id=11103087">黑客新闻</a> </em>
+*请参阅有关<a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/"> Reddit </a>和<a href =“https：//新闻的讨论。 ycombinator.com/item?id=11103087">黑客新闻</a>*
 
 {% raw %}
 <p><span id="more-3507"></span></p>
@@ -41,16 +41,16 @@ Kotlin的关键重点之一是互操作性和无缝支持**混合Java + Kotlin�
 ## 务实的意思是什么？
 
 了解自己的核心价值观对于任何长期的项目都至关重要。如果我选择一个字来描述Kotlin的设计，那就是**实用主义**。这就是为什么在早期我们说Kotlin对发明或研究并不多。我们最终发明了很多东西，但这并不是项目的重点。当然，我们正在构建一个防止错误**的**类型系统，以及促进代码重用**的**抽象机制。但是，我们（务实）的方式是通过**专注于用例**使语言成为**良好工具**。
-特别地，这种方法使我们立即引入与现有代码和基础架构的互操作性至关重要的概念。重新编写世界正确的方式</em>，从头开始 - 从来没有想过？我做了很多次:)而且，如果不是针对Java互操作，Maven集成，Android兼容性，Kotlin将会更容易设计和开发。在许多方面肯定会更加优雅。但优雅，虽然高度赞赏，但不是这里的主要目标，**主要目标是有用的**。而我们的用户不得不重新学习，重新创造，从头开始重新做，越能重复使用，越好。
-那么，为什么Kotlin没有自己的软件包管理器或者自己的构建系统？</em> <br/>
+特别地，这种方法使我们立即引入与现有代码和基础架构的互操作性至关重要的概念。重新编写世界正确的方式*，从头开始 - 从来没有想过？我做了很多次:)而且，如果不是针对Java互操作，Maven集成，Android兼容性，Kotlin将会更容易设计和开发。在许多方面肯定会更加优雅。但优雅，虽然高度赞赏，但不是这里的主要目标，**主要目标是有用的**。而我们的用户不得不重新学习，重新创造，从头开始重新做，越能重复使用，越好。
+那么，为什么Kotlin没有自己的软件包管理器或者自己的构建系统？* <br/>
 
  - 因为已经有Maven和Gradle，并且重新使用大量的插件对许多项目来说至关重要
 
- - 为什么我们投入大量时间和精力来制作JDK兼容的收藏界面？从零开始重新设计收藏集的容易程度越来越大？</em>
+ - 为什么我们投入大量时间和精力来制作JDK兼容的收藏界面？从零开始重新设计收藏集的容易程度越来越大？*
 
  - 由于吨和吨的Java代码与JDK集合一起工作，并且在边界上转换数据将是一个痛苦
 
- - 为什么Kotlin支持Java 6字节代码？</em> <br/>
+ - 为什么Kotlin支持Java 6字节代码？* <br/>
 
  - 因为很多人还在运行Java 6（Android，最引人注目的是Android，而不是Android）。
 对于我们来说，实用主义是关于**创建用户体验**，而不是单独的语言或图书馆。许多语言设计决策是在诸如“这不妨碍增量编译”之类的限制下进行的，“如果这增加了APK方法计数会怎么样？”，“IDE将如何突出显示此类型？”和许多更像这些。因此，我们为我们的**工具以及语言**感到自豪。
@@ -114,4 +114,4 @@ JetBrains是Kotlin目前的主要支持者：我们投入了大量精力开发�
 最后但并非最不重要的是，请确保您加入我们的讨论 [论坛](https://devnet.jetbrains.com/community/kotlin) 要么 [松弛](http://kotlinslackin.herokuapp.com/) 。
 再次，**我们要感谢大家**。没有社区，我们不可能做到这一点。
 有一个漂亮的Kotlin！ **现在** <img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com /kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em; max-height：1em“
-美国<em>请参阅有关<a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/"> Reddit </a>和<a href =“https：//新闻的讨论。 ycombinator.com/item?id=11103087">黑客新闻</a> </em>
+美国*请参阅有关<a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/"> Reddit </a>和<a href =“https：//新闻的讨论。 ycombinator.com/item?id=11103087">黑客新闻</a>*

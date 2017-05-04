@@ -41,12 +41,12 @@ str.contains(i) // ERROR (in fact, a deprecation warning, but will be an error s
 <p></p>
 {% endraw %}
 
-We found that the previously proposed `containsRaw` approach is inefficient, and opted for making `contains()` a bit more permissive, while keeping the initially intended safety. Note that the collection interfaces themselves are intact, and all this is done solely through extension functions. Use <em>Code Cleanup</em> to migrate your code.
+We found that the previously proposed `containsRaw` approach is inefficient, and opted for making `contains()` a bit more permissive, while keeping the initially intended safety. Note that the collection interfaces themselves are intact, and all this is done solely through extension functions. Use *Code Cleanup* to migrate your code.
 ## Language Changes
 
 Some highlights from the language changes, the full list is available [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595) .<br/>
 
-Many things that we deprecated before, have now become errors. Use <em>Code Cleanup</em> to migrate.
+Many things that we deprecated before, have now become errors. Use *Code Cleanup* to migrate.
 ### When expressions
 
 This kind of code has proven to be problematic, so we decided to deprecate it:
@@ -66,7 +66,7 @@ when {
 <p></p>
 {% endraw %}
 
-Many people tend to think that the condition “`foo.isValid(), foo.isReady()`” means that `foo` is **both** valid **and** ready, while actually the comma means <em>or</em>. The workaround is trivial: simply use `||` instead:
+Many people tend to think that the condition “`foo.isValid(), foo.isReady()`” means that `foo` is **both** valid **and** ready, while actually the comma means *or*. The workaround is trivial: simply use `||` instead:
 
 {% raw %}
 <p></p>
@@ -83,7 +83,7 @@ when {
 <p></p>
 {% endraw %}
 
-<em>Code Cleanup</em> will migrate it for you.
+*Code Cleanup* will migrate it for you.
 ### Annotations
 
 A bug has been fixed that prevented us from using arrays in default values for annotation parameters:
@@ -122,7 +122,7 @@ We are cleaning up and fixing minor issues in visibilities and scoping rules, so
 
 ## Android Extensions
 
-We have merged the main Kotlin plugin for IntelliJ IDEA and the <em>Kotlin Extensions For Android</em> plugin. The latter is now obsolete as its functionality is available from the main Kotlin plugin.
+We have merged the main Kotlin plugin for IntelliJ IDEA and the *Kotlin Extensions For Android* plugin. The latter is now obsolete as its functionality is available from the main Kotlin plugin.
 Also, we have added support for Android **product flavors**: now properties from different flavours are available in different packages.
 For example, if we have two flavors in the `build.gradle` file:
 

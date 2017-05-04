@@ -127,7 +127,7 @@ class KotlinClass {
 {% endraw %}
 
 Accessing members of `Obj1` requires qualification: `KotlinClass.Obj1.foo()`. For members of `Obj2` the object name is optional: `KotlinClass.foo()`.
-One last step: the name of a <em>companion object</em> can be omitted (the compiler will use the default name `Companion` in this case):
+One last step: the name of a *companion object* can be omitted (the compiler will use the default name `Companion` in this case):
 
 {% raw %}
 <p></p>
@@ -146,8 +146,8 @@ class KotlinClass {
 {% endraw %}
 
 Now you can still refer to its members though the name of the containing class: `KotlinClass.foo()`, or through full qualification: `KotlinClass.Companion.foo()`.
-As you can see, unlike what we used to have with <em>class objects</em>, <em>companion objects</em> are completely uniform with normal objects.
-Another important benefit is that now every object <em>has a name</em> (again, `Companion` is used when the name of a <em>companion object</em> is omitted), which enables **writing extension function for companion objects**:
+As you can see, unlike what we used to have with *class objects*, *companion objects* are completely uniform with normal objects.
+Another important benefit is that now every object *has a name* (again, `Companion` is used when the name of a *companion object* is omitted), which enables **writing extension function for companion objects**:
 
 {% raw %}
 <p></p>
@@ -181,7 +181,7 @@ val f = fun (x: Int): Int { return x + 1 }
 So, you can use a function, in its traditional syntactic form, as a value. See [user docs](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) and the [spec document](https://github.com/JetBrains/kotlin/blob/master/spec-docs/multi-declarations-in-parameters.md#function-expressions) for more details.
 ### Lambda Syntax Restricted (for future enrichment)
 
-Among other things, function expressions enable us to make a step toward supporting <em>multi-declarations</em> in parameters of lambdas. The final goal (not implemented yet) is to be able to, say, filter a list of pairs with the syntax like this:
+Among other things, function expressions enable us to make a step toward supporting *multi-declarations* in parameters of lambdas. The final goal (not implemented yet) is to be able to, say, filter a list of pairs with the syntax like this:
 
 {% raw %}
 <p></p>
@@ -206,7 +206,7 @@ Whenever you really need one of these, please switch to using function expressio
 The IDE provides a quick-fix that migrates your code automatically.
 ### Labeled Returns in Lambdas
 
-For a long time there was a restriction on using `return` expressions in lambdas: a <em>local</em> `return` was only allowed if the lambda has an explicit return type specified. This was caused by a limitation in the type inference algorithm. Now, the restriction is removed, and we can use local returns freely:
+For a long time there was a restriction on using `return` expressions in lambdas: a *local* `return` was only allowed if the lambda has an explicit return type specified. This was caused by a limitation in the type inference algorithm. Now, the restriction is removed, and we can use local returns freely:
 
 {% raw %}
 <p></p>
@@ -229,7 +229,7 @@ Importing is one of the least-visible language features for IDE users, but it ha
 In M11 we made the order of *-imports (also called “on-demand imports”) insignificant, and made some other tweaks that enabled us to implement efficient automatic management of import directives in the IDE.
 ## Reflection
 
-Implementing Kotlin-specific reflection (rather than making you use Java reflection on Kotlin classes) is a long-running project that has required a lot of work in the compiler. Essentially, we have to factor out a large portion of the compiler and ship it as part of the runtime. This includes: loading Kotlin-specific metadata from the binaries, representing Kotlin symbols as objects (historically, we call them <em>descriptors</em>), loading Java declarations as Kotlin ones (because Kotlin reflection should work on Java objects too) and so on.
+Implementing Kotlin-specific reflection (rather than making you use Java reflection on Kotlin classes) is a long-running project that has required a lot of work in the compiler. Essentially, we have to factor out a large portion of the compiler and ship it as part of the runtime. This includes: loading Kotlin-specific metadata from the binaries, representing Kotlin symbols as objects (historically, we call them *descriptors*), loading Java declarations as Kotlin ones (because Kotlin reflection should work on Java objects too) and so on.
 At last, we present the first results of this work: the ability to introspect properties, provided through a new kotlin-reflect.jar that ships with the compiler (a lot more functionality will be added soon).
 ### The New Reflection Jar
 
@@ -258,7 +258,7 @@ See more in the [user docs](http://kotlinlang.org/docs/reference/reflection.html
 Kotlin reflection API works both for Kotlin and Java classes, and you can “convert” from Kotlin to Java reflection objects and back. For example, you can say `kClass.java` and get a `java.lang.Class` instance, and vice versa: `jlClass.kotlin` gives you a `KClass` instance.
 ## @Nullable and @NotNull in Java
 
-As always, Java interop is a big priority for us, and this time we are improving on the <em>platform types</em> feature we shipped in [M9](http://blog.jetbrains.com/kotlin/2014/10/m9-is-here/) : now the compiler issues warnings on misuse of Java values annotated as `@Nullable` and `@NotNull`. This is not as strict as it used to be before M9, but it doesn’t break as often either.
+As always, Java interop is a big priority for us, and this time we are improving on the *platform types* feature we shipped in [M9](http://blog.jetbrains.com/kotlin/2014/10/m9-is-here/) : now the compiler issues warnings on misuse of Java values annotated as `@Nullable` and `@NotNull`. This is not as strict as it used to be before M9, but it doesn’t break as often either.
 Next step would be to issue Java nullability errors in a safe way (so that an error can always be fixed reasonably), and this is planned for the next milestone.
 ## Android Extensions
 

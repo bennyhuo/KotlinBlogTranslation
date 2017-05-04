@@ -43,7 +43,7 @@ data class Foo // `data` is an annotation
 <p></p>
 {% endraw %}
 
-The old syntax based on `[...]` is <em>deprecated</em>, so the compiler will issue warnings on your code. To fix these warnings, press Alt+Enter and run a quick fix (individual or for the whole project). The aforementioned “Code Cleanup…” action also works for the whole project.
+The old syntax based on `[...]` is *deprecated*, so the compiler will issue warnings on your code. To fix these warnings, press Alt+Enter and run a quick fix (individual or for the whole project). The aforementioned “Code Cleanup…” action also works for the whole project.
 ### Label Syntax Changed
 
 Since M12 `@name` is an annotation, but it had a meaning before, i.e. it was a [label](http://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels) . We had to find some other syntax for labels, and now they are declared with `@` at the end:
@@ -65,7 +65,7 @@ loop@ for (i in 1..100) {
 <p></p>
 {% endraw %}
 
-So, `loop@` <em>declares</em> a label, and `break@loop` <em>uses</em> it.
+So, `loop@` *declares* a label, and `break@loop` *uses* it.
 ### Class Literals in Annotations
 
 Before M12, annotations in Kotlin were allowed to use `java.lang.Class`, for example:
@@ -142,7 +142,7 @@ fun introspect(jann: JavaAnnotation) {
 Now, when we need to turn a `KClass` into a `java.lang.Class`, we can call `.java` on it, e.g. `Foo::class.java` or `jann.value.java`.
 ### Annotated Primary Constructors
 
-We decided to make primary constructor syntax more regular, and now the <em>full form</em> of the primary constructor includes the `constructor` keyword:
+We decided to make primary constructor syntax more regular, and now the *full form* of the primary constructor includes the `constructor` keyword:
 
 {% raw %}
 <p></p>

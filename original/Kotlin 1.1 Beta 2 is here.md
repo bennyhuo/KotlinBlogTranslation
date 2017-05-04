@@ -69,7 +69,7 @@ To enable the compatibility mode:
 ## How to try it
 
 **In Maven/Gradle:** Add `http://dl.bintray.com/kotlin/kotlin-eap-1.1` as a repository for the build script and your projects; use `1.1.0-beta-38` as the version number for the compiler and the standard library.
-**In IntelliJ IDEA:** Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
+**In IntelliJ IDEA:** Go to *Tools → Kotlin → Configure Kotlin Plugin Updates*, then select “Early Access Preview 1.1” in the *Update channel* drop-down list, then press *Check for updates*.
 The command-line compiler can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta2) .
 **On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a>**. Will be available soon.
 Let’s Kotlin!

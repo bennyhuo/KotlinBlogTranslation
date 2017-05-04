@@ -48,7 +48,7 @@ class Example {
 <p></p>
 {% endraw %}
 
-有一些新的语法：您可以通过<expression>来表示“val <property name>：<Type>”。**之后的表达式是<em>委托</em>，因为与该属性相对应的get（）和set（）方法将被委派给它。属性委托不必实现任何接口，而是必须提供名为get（）和set（）的方法来调用。例如：
+有一些新的语法：您可以通过<expression>来表示“val <property name>：<Type>”。**之后的表达式是*委托*，因为与该属性相对应的get（）和set（）方法将被委派给它。属性委托不必实现任何接口，而是必须提供名为get（）和set（）的方法来调用。例如：
 
 {% raw %}
 <p></p>

@@ -26,7 +26,7 @@ Overall, it is [128 issues](http://youtrack.jetbrains.com/issues/KT?p=0&q=%23Res
 Since [M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , you can use [external annotations](http://blog.jetbrains.com/kotlin/using-external-annotations/) to tell the system that your methods return/take non-null values. This mechanism is useful even if you don’t use Kotlin: you can turn on [nullability inspections for Java](http://www.jetbrains.com/idea/documentation/howto.html) too (and I totally recommend you to do so).
 One problem about this used to be that, while you can annotate your own code while you write it (and we do it [all](https://github.com/JetBrains/kotlin/blob/master/compiler/frontend/src/org/jetbrains/jet/lang/types/TypeConstructor.java) [the](https://github.com/JetBrains/intellij-community/blob/master/platform/util/src/com/intellij/util/text/CharArrayUtil.java) [time](https://github.com/JetBrains/la-clojure/blob/master/src/org/jetbrains/plugins/clojure/utils/ClojureUtils.java) at JetBrains), your favorite library is not annotated, and it is so big, you can’t annotate it manually.
 The key thing here is that ‘manually’. A programmer is a lazy creature, and by virtue of our laziness, we want to automate as much as we can. And today, along with Kotlin M4, we roll out **KAnnotator**: a tool that **annotates your libraries automatically** (the tool is written in Kotlin, of course).
-How it works, in a nutshell: you have your library as a jar (or a number of jars), you tell KAnnotator to <em>infer</em> annotations for these jars, and get a bunch of .xml files back. They contain annotations for methods and fields, for example:
+How it works, in a nutshell: you have your library as a jar (or a number of jars), you tell KAnnotator to *infer* annotations for these jars, and get a bunch of .xml files back. They contain annotations for methods and fields, for example:
 <img alt="" class="aligncenter size-full wp-image-740" data-recalc-dims="1" sizes="(max-width: 409px) 100vw, 409px" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?resize=409%2C149&amp;ssl=1" srcset="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?resize=300%2C109&amp;ssl=1 300w, https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/12/annotations.xml_.png?w=409&amp;ssl=1 409w"/>Now, you can attach these annotations to your project, and both Java IDE and Kotlin compiler will see them.
 KAnnotator is **just started**, and it will grow much smarter, but today we already have a full JDK annotated with it, available in the new Kotlin plugin. It will propose to add them to your JDK once you open any Kotlin file in the editor:
 
@@ -54,7 +54,7 @@ fun Person.asMarried(newLastName: String)
 <p></p>
 {% endraw %}
 
-Every data class gets a copy() function that has <em>default values</em> for all parameters, so that you can specify only those ones you want to change. Since Kotlin supports <em>named arguments</em>, all you need to do is say ‘copy(property1 = v1, property3 = v2)’, and all the other properties will be copied, while ‘property1’ and ‘property3’ will be changed.
+Every data class gets a copy() function that has *default values* for all parameters, so that you can specify only those ones you want to change. Since Kotlin supports *named arguments*, all you need to do is say ‘copy(property1 = v1, property3 = v2)’, and all the other properties will be copied, while ‘property1’ and ‘property3’ will be changed.
 # Declaration-site variance in… Java
 
 There will be a separate post on this, but I’ll give a short announcement here. We all know that Java makes you write ‘List<? extends Foo>’ [whenever you don’t mean to modify that list](http://www.eecs.qmul.ac.uk/~mmh/APD/bloch/generics.pdf) . As you [know](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , Kotlin has declaration-site variance and read-only interfaces for collections, so that ‘List<String>’ can go where ‘List<Object>’ is expected. Now, when you have this function in Kotlin:
@@ -145,7 +145,7 @@ if (foo is List) { // ERROR!
 <p></p>
 {% endraw %}
 
-the compiler complains that List must have a type argument, ‘List<String>’ for example. But generics are erased, and we can’t check if something is a list <em>of strings</em>, all we know at runtime is that it is a list. And the compiler knows that too:
+the compiler complains that List must have a type argument, ‘List<String>’ for example. But generics are erased, and we can’t check if something is a list *of strings*, all we know at runtime is that it is a list. And the compiler knows that too:
 
 {% raw %}
 <p></p>

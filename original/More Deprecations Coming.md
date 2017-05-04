@@ -17,7 +17,7 @@ translator_url:
 There are two more items on the language cleanup list: backing-field syntax and static type assertion operator.<span id="more-2040"></span>
 ## Backing Fields
 
-When you have a property and you don’t implement at least one of its accessors (`get` or `set`) manually, such a property gets a <em>backing field</em>, i.e. a piece of storage holding its value:
+When you have a property and you don’t implement at least one of its accessors (`get` or `set`) manually, such a property gets a *backing field*, i.e. a piece of storage holding its value:
 
 {% raw %}
 <p></p>
@@ -51,7 +51,7 @@ $foo = 2
 
 This may be needed to bypass the custom accessor(s).
 This feature is rather rarely used, and also clashes visually with string templates (`"$foo"`, surprisingly, has nothing to do with backing fields), so we want to get rid of it.
-In case you really need it, your workaround is <em>backing property</em>:
+In case you really need it, your workaround is *backing property*:
 
 {% raw %}
 <p></p>
@@ -87,5 +87,5 @@ foo(bar, null: Baz)
 <p></p>
 {% endraw %}
 
-The type after colon in an expression specifies the <em>expected static type</em> of it, i.e. this is not a cast, but simply an instruction to the compiler to make sure that the static type of this expression is actually “Bar”. The fact that it’s hard to explain has something to do with this being rarely used (I think Kotlin’s test data is the only major client). So, we are withdrawing this syntax, and maybe will make use of it later (possibilities include array/list slices and C-style ternary conditionals).
+The type after colon in an expression specifies the *expected static type* of it, i.e. this is not a cast, but simply an instruction to the compiler to make sure that the static type of this expression is actually “Bar”. The fact that it’s hard to explain has something to do with this being rarely used (I think Kotlin’s test data is the only major client). So, we are withdrawing this syntax, and maybe will make use of it later (possibilities include array/list slices and C-style ternary conditionals).
 In case you needed this syntax to disambiguate your overloads, `as` is a good workaround.

@@ -30,10 +30,10 @@ translator_url:
 
 有关会谈的详细信息，请查看 [活动页面](https://info.jetbrains.com/Kotlin-Night-London.html) 。
 17:30  -  18:00  -  **注册和欢迎**
-18:00  -  18:45  -  **我喜欢Kotlin的10件事情。**格雷厄姆·塔克利（Graham Tackley） Kaleida </em>
-18:45  -  19:30  -  **表达Kotlin。** </em> Nat Pryce和Duncan McGregor，Springer Nature </em>
+18:00  -  18:45  -  **我喜欢Kotlin的10件事情。**格雷厄姆·塔克利（Graham Tackley） Kaleida*
+18:45  -  19:30  -  **表达Kotlin。*** Nat Pryce和Duncan McGregor，Springer Nature*
 19:30  -  20:00  -  **零食和饮料**
-20:00  -  20:45  -  **使用密封类构建Concursus API。 Dominic Fox，OpenCredo </em>**
+20:00  -  20:45  -  **使用密封类构建Concursus API。 Dominic Fox，OpenCredo***
 
 {% raw %}
 <p> </p>

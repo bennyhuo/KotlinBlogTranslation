@@ -43,7 +43,7 @@ val minors = users.filter { it.age < 21 }
 <p></p>
 {% endraw %}
 
-或者您可以简单地</em>从java.io.File中读取文本：
+或者您可以简单地*从java.io.File中读取文本：
 
 {% raw %}
 <p></p>

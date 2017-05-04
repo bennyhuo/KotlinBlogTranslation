@@ -65,7 +65,7 @@ IntelliJ IDEA插件已经扩展到支持新的1.1语言功能，新的重构“�
 ## 如何尝试
 
 **在Maven / Gradle中：**将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用1.1-M02作为编译器和标准库的版本号。
-**在IntelliJ IDEA中：**转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
+**在IntelliJ IDEA中：**转到*工具→Kotlin→配置Kotlin插件更新*，然后在*更新频道*下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按*检查更新*。
 **<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。使用右下角的下拉列表将编译器版本更改为1.1-M02。
 **使用SDKMan**。运行`sdk install kotlin 1.1-M02`。
 如果你正在使用 [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) 图书馆请使用更新版本的0.1-alpha-2，它几乎相同，但是它与1.1-M02编译器重新编译。你可以跟随更新 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。

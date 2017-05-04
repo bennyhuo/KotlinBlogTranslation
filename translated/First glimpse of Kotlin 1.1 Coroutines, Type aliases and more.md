@@ -28,7 +28,7 @@ translator_url:
 
 我们都知道，在高负载下阻塞是坏的，轮询是一个不停的，世界正在变得越来越多的基于推动和异步。许多语言（2012年以C＃开头）通过专用语言结构支持异步编程，例如`async` / `等待`关键字。在Kotlin中，我们概括了这个概念，以便库可以定义自己的这样的结构版本，而`async`不是一个关键字，而只是一个函数。
 这种设计允许不同异步API的集成：期货/承诺，回调传递等。表达延迟生成器（`yield`）并涵盖其他一些用例也是一般的。
-所以，满足Kotlin 1.1的更大功能之一：<em>协同程序</em>。这是一个传统的CS术语，用于“泛化非优先多任务的子程序的程序组件”，但是我们不会在这里介绍理论<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1 “src =”https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em ; max-height：1em;“/>
+所以，满足Kotlin 1.1的更大功能之一：*协同程序*。这是一个传统的CS术语，用于“泛化非优先多任务的子程序的程序组件”，但是我们不会在这里介绍理论<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1 “src =”https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em ; max-height：1em;“/>
 
 {% raw %}
 <p></p>
@@ -50,7 +50,7 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-关于协同程序的好处是，他们可以暂停</em>而不阻止线程，但它们看起来像正常的顺序代码。请看一下 [详细说明](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 和一个专门的例子 [KEEP存储库](https://github.com/Kotlin/kotlin-coroutines) 并评论 [那里的问题](https://github.com/Kotlin/kotlin-coroutines/issues) 。
+关于协同程序的好处是，他们可以暂停*而不阻止线程，但它们看起来像正常的顺序代码。请看一下 [详细说明](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 和一个专门的例子 [KEEP存储库](https://github.com/Kotlin/kotlin-coroutines) 并评论 [那里的问题](https://github.com/Kotlin/kotlin-coroutines/issues) 。
 我们是基于协同程序的库的原型 [这里](https://github.com/Kotlin/kotlinx.coroutines) ，随后被列入标准库。这包括来自Swing中的UI线程的JDK的`CompletableFuture`，异步IO（NIO），RxJava和卸载任务。这个回购包含了例子以及图书馆本身。要玩，请按照说明进行操作 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。
 ## 键入别名
 
@@ -88,11 +88,11 @@ typealias Weight = Double
 <p></p>
 {% endraw %}
 
-它不会让我们做得很好，因为`Length`可以自由分配给`Weight`，反之亦然。实际上，它们都可以被分配给一个常规的`Double`。我们了解这种用例的重要性，并计划在未来对其进行覆盖，最有可能通过<em>价值类</em>，但这是另一个故事。现在我们只有类型别名。
+它不会让我们做得很好，因为`Length`可以自由分配给`Weight`，反之亦然。实际上，它们都可以被分配给一个常规的`Double`。我们了解这种用例的重要性，并计划在未来对其进行覆盖，最有可能通过*价值类*，但这是另一个故事。现在我们只有类型别名。
 阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/4) 。
 ## 绑定的可引用引用
 
-在Kotlin 1.0中，可以获得对这样的函数（或属性）的引用：`String :: length`，即使用包含类的名称。在1.1中，我们添加了<em>绑定引用</em>：即我们可以说`mystr :: length`其中`mystr`是一个变量表达）。这样的引用被绑定到它们的接收者，因此是部分功能应用的特殊情况（在一般情况下，至少现在我们不支持）。
+在Kotlin 1.0中，可以获得对这样的函数（或属性）的引用：`String :: length`，即使用包含类的名称。在1.1中，我们添加了*绑定引用*：即我们可以说`mystr :: length`其中`mystr`是一个变量表达）。这样的引用被绑定到它们的接收者，因此是部分功能应用的特殊情况（在一般情况下，至少现在我们不支持）。
 阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/5) 。
 ## 本地委托属性和内联属性
 
@@ -145,14 +145,14 @@ DSL和脚本也将受益于此功能。
 我们非常感谢GitHub用户 [dotlin](https://github.com/dotlin) ， [Valdemar0204](https://github.com/Valdemar0204) ， [ensirius](https://github.com/ensirius) 和 [地理位置](https://github.com/geoand) 为他们对这个版本的贡献！
 ## 如何尝试
 
-**在Maven / Gradle**中。加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) （请参阅<em>“设置我！”</em>下的说明）作为项目的存储库。使用版本1.1-M01作为您的Kotlin文物。
-**在IDE**中。如果你正在运行 [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) ，请转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在更新频道下拉列表中选择“Early Access Preview 1.1”
+**在Maven / Gradle**中。加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) （请参阅*“设置我！”*下的说明）作为项目的存储库。使用版本1.1-M01作为您的Kotlin文物。
+**在IDE**中。如果你正在运行 [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) ，请转到*工具→Kotlin→配置Kotlin插件更新*，然后在更新频道下拉列表中选择“Early Access Preview 1.1”
 
 {% raw %}
 <p><img alt="Configure-Plugin-Updates" class="aligncenter size-small wp-image-4085" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Configure-Plugin-Updates.png?w=400&amp;ssl=1"/></p>
 {% endraw %}
 
-在同一对话框中按<em>检查更新</em>，当新版本显示时，<em>安装</em>。
+在同一对话框中按*检查更新*，当新版本显示时，*安装*。
 **<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。使用右下角的下拉列表更改编译器版本：<br/>
 “img alt =”屏幕截图2016-07-14在20.23.48“class =”alignnone size-full wp-image-4121“data-recalc-dims =”1“src =”https：//i0.wp。 com / blog.jetbrains.com / kotlin / files / 2016/07 / Screen-Shot-2016-07-14-at-20.23.48.png？resize = 640％2C549＆amp; ssl = 1“/>
 **使用SDKMan**。运行`sdk install kotlin 1.1-M01`。

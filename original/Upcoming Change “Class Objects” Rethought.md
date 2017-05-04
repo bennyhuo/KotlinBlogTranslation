@@ -37,7 +37,7 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Members of a <em>class object</em> are roughly analogous to <em>static members</em> of Java/C# classes, as they can be called on the class name:
+Members of a *class object* are roughly analogous to *static members* of Java/C# classes, as they can be called on the class name:
 
 {% raw %}
 <p></p>
@@ -52,7 +52,7 @@ KotlinClass.classObjectMember()
 {% endraw %}
 
 (You can even use the `[platformStatic]` annotation to make those member actually `static` when seen from Java.)
-In fact, Kotlin’s <em>class objects</em> and Java’s statics are not at all the same, because <em>class objects are **objects**</em>, i.e. they can extend classes, implement traits and serve as <em>values</em> at runtime:
+In fact, Kotlin’s *class objects* and Java’s statics are not at all the same, because *class objects are **objects***, i.e. they can extend classes, implement traits and serve as *values* at runtime:
 
 {% raw %}
 <p></p>
@@ -118,7 +118,7 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Now, one of these objects may be declared with the `default` modifier, which means that its members can be accessed directly through class name, i.e. <em>by default</em>:
+Now, one of these objects may be declared with the `default` modifier, which means that its members can be accessed directly through class name, i.e. *by default*:
 
 {% raw %}
 <p></p>
@@ -137,7 +137,7 @@ class KotlinClass {
 {% endraw %}
 
 Accessing members of `Obj1` requires qualification: `KotlinClass.Obj1.foo()`, for members of `Obj2` the object name is optional: `KotlinClass.foo()`.
-One last step: the name of a <em>default object</em> can be omitted (the compiler will use the default name `Default` in this case):
+One last step: the name of a *default object* can be omitted (the compiler will use the default name `Default` in this case):
 
 {% raw %}
 <p></p>
@@ -156,8 +156,8 @@ class KotlinClass {
 {% endraw %}
 
 Now you can still refer to its members though the name of the containing class: `KotlinClass.foo()`, or through full qualification: `KotlinClass.Default.foo()`.
-As you can see, unlike what we used to have with <em>class objects</em>, <em>default objects</em> are completely uniform with normal objects.
-Another important benefit is that now every object <em>has a name</em> (again, `Default` is used when the name of a <em>default object</em> is omitted), which enables **writing extension function for default objects**:
+As you can see, unlike what we used to have with *class objects*, *default objects* are completely uniform with normal objects.
+Another important benefit is that now every object *has a name* (again, `Default` is used when the name of a *default object* is omitted), which enables **writing extension function for default objects**:
 
 {% raw %}
 <p></p>

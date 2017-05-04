@@ -44,4 +44,4 @@ class KotlinClass {
 
 如果您在评论中**分享了这些候选人的想法**，我们将非常感激。
 谢谢！
-</p>有一个建议是简单地使用命名约定而不是修饰符。 <a href="http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/#comment-32447">此评论</a>解释了为什么我们决定赞成一个修饰符还要注意的是，这个约定将比其他公约更频繁地使用，其他的在接下来的语言设计审查中被重新考虑。</em>
+</p>有一个建议是简单地使用命名约定而不是修饰符。 <a href="http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/#comment-32447">此评论</a>解释了为什么我们决定赞成一个修饰符还要注意的是，这个约定将比其他公约更频繁地使用，其他的在接下来的语言设计审查中被重新考虑。*

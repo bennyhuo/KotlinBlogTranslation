@@ -191,8 +191,8 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-原因是<em> x </em>的getter具有相同的名称（getX）和签名（不需要参数，返回Int）作为其旁边声明的函数，JVM不允许在类文件中使用这样的东西。
-另一种情况是<em>意外覆盖</em>：
+原因是*x*的getter具有相同的名称（getX）和签名（不需要参数，返回Int）作为其旁边声明的函数，JVM不允许在类文件中使用这样的东西。
+另一种情况是*意外覆盖*：
 
 {% raw %}
 <p></p>
@@ -228,7 +228,7 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-人们可能会想知道为什么我们不会自动重命名其中一个功能，而不是发出错误？答案在于Java互操作性的领域（没有人喜欢编译器发明的名称）和二进制兼容性（事物的名称绝不能静默地改变，或者所有依赖的代码将意外地破坏）。另一方面，您可以使用<em> platformName </em>注释手动指定所需的JVM名称：
+人们可能会想知道为什么我们不会自动重命名其中一个功能，而不是发出错误？答案在于Java互操作性的领域（没有人喜欢编译器发明的名称）和二进制兼容性（事物的名称绝不能静默地改变，或者所有依赖的代码将意外地破坏）。另一方面，您可以使用*platformName*注释手动指定所需的JVM名称：
 
 {% raw %}
 <p></p>
@@ -250,7 +250,7 @@ fun getX() = 1
 **警告：**这是一个**break**更改，您现有的一些代码可能需要修复。
 ### 支持瞬态，同步和strictfp
 
-除了长期可用的<em> </em>之外。我们现在支持<em> transient </em>，<em>同步</em>和<em> strictfp </em>作为注释。语义与Java类似：
+除了长期可用的**之外。我们现在支持*transient*，*同步*和*strictfp*作为注释。语义与Java类似：
 
 {% raw %}
 <p></p>

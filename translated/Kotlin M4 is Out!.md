@@ -54,7 +54,7 @@ fun Person.asMarried(newLastName: String)
 <p></p>
 {% endraw %}
 
-每个数据类都获取一个copy（）函数，所有参数都有<em>默认值</em>，以便您只能指定要更改的那些。由于Kotlin支持<em>命名参数</em>，所有你需要做的就是'copy（property1 = v1，property3 = v2）'，所有的其他属性将被复制，而'property1'和'property3'将会改变
+每个数据类都获取一个copy（）函数，所有参数都有*默认值*，以便您只能指定要更改的那些。由于Kotlin支持*命名参数*，所有你需要做的就是'copy（property1 = v1，property3 = v2）'，所有的其他属性将被复制，而'property1'和'property3'将会改变
 # 声明站点方差... Java
 
 这将有一个单独的职位，但我会在这里给出一个简短的公告。我们都知道Java让你写“List”？扩展Foo>' [每当你不意味着修改该列表](http://www.eecs.qmul.ac.uk/~mmh/APD/bloch/generics.pdf) 。当你 [知道](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) ，Kotlin具有用于集合的声明位置方差和只读接口，因此'List <String>'可以转到'List <Object>'的位置。现在，当您在Kotlin中有此功能时：
@@ -145,7 +145,7 @@ if (foo is List) { // ERROR!
 <p></p>
 {% endraw %}
 
-编译器会抱怨List必须有一个类型参数“List <String>”。但是泛型被删除，我们不能检查某些东西是字符串</em>的列表，所有我们在运行时知道的是它是一个列表。编译器也知道：
+编译器会抱怨List必须有一个类型参数“List <String>”。但是泛型被删除，我们不能检查某些东西是字符串*的列表，所有我们在运行时知道的是它是一个列表。编译器也知道：
 
 {% raw %}
 <p></p>

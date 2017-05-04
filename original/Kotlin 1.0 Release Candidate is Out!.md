@@ -22,7 +22,7 @@ This blog post gives an overview of the changes made since Beta 4. Library chang
 <p><img alt="Kotlin 1.0 RC" class="alignnone size-full wp-image-3485" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/02/RC-Banner.png?resize=640%2C330&amp;ssl=1"/></p>
 {% endraw %}
 
-<em>See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a></em>.
+*See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a>*.
 
 {% raw %}
 <p><span id="more-3453"></span></p>
@@ -168,4 +168,4 @@ Sorry for the inconvenience.
 ## Stay tuned
 
 The final release is approaching, meanwhile — have a nice Kotlin! <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
-<em>P.S. See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a></em>.
+*P.S. See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a>*.

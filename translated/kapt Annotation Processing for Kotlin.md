@@ -21,7 +21,7 @@ translator_url:
 我们计划在5月底公布对M12的JSR 269注解处理的初步支持。同时，大部分工作已经完成，您可以使用Gradle的Kotlin插件的`SNAPSHOT`版本进行测试。支持是有限的，但是 [匕首2](http://google.github.io/dagger/) 作品<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/ images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
 ## 注释处理基础
 
-JSR 269为Java编译器<em>注释处理器</em>定义了一种特殊类型插件的API。这样一个插件可以大致地向编译器询问“使用@Foo注释什么代码元素（类，方法，字段）”？编译器返回一组代表注释元素的对象。然后，处理器可以检查它们，并**生成一些新的代码**，该代码将在与注释代码相同的过程中被编译。诀窍在于，生成的代码可以由手写代码**使用，尽管编译器开始工作时不存在。
+JSR 269为Java编译器*注释处理器*定义了一种特殊类型插件的API。这样一个插件可以大致地向编译器询问“使用@Foo注释什么代码元素（类，方法，字段）”？编译器返回一组代表注释元素的对象。然后，处理器可以检查它们，并**生成一些新的代码**，该代码将在与注释代码相同的过程中被编译。诀窍在于，生成的代码可以由手写代码**使用，尽管编译器开始工作时不存在。
 为了以Java语言支持注释处理，有一些选项：
 **One。**重新实现JSR 269 API。这需要一些工作，但不是很难。问题是在**混合项目**中没有帮助：最终我们需要处理来自**Java和Kotlin代码的**中的注释元素，并且仅支持Kotlin中的JSR 269不是那么多的收获。
 **两个。**从Kotlin源生成Java源，然后将其馈送到Java编译器，然后再运行处理器。当然，将Kotlin转换为完全工作的Java代码（方法体的翻译将非常痛苦）太难了，但是真正需要的只是**声明**。这是方式 [Groovy做到了](https://gradle.org/docs/2.4-rc-1/release-notes#support-for-“annotation-processing”-of-groovy-code) ：通过从Groovy代码生成Java“stub”，并将它们提供给Java编译器。这对于Kotlin也是有效的，但需要两个编译器运行：首先生成存根，然后再次编译生成的代码。参考处理器生成的类是可能的，但在某些情况下会出现问题（从使用生成代码的右侧表达式推断属性/函数类型，同时生成存根）。

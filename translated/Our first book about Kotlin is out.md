@@ -23,5 +23,5 @@ translator_url:
 <span id =“more-4582”> </span> <br/>
 
 该书的两个章节涵盖了Kotlin的类型系统及其对领域特定语言的支持 [免费预览](https://www.manning.com/books/kotlin-in-action#downloads) 在发布商的网站上。而在我们的Kotlin的迷你IDE中，您可以尝试从书中的所有例子 [第一个](http://try.kotlinlang.org/#/Kotlin%20in%20Action/chapter%201/1.1/1.1_ATasteOfKotlin.kt) ，也是免费的。
-为了配合这本书的发行，曼宁提供特别折扣，仅限今天有效：如果您在结帐期间输入代码</em> dotd021017au </em>，则可以将其减半。
+为了配合这本书的发行，曼宁提供特别折扣，仅限今天有效：如果您在结帐期间输入代码* dotd021017au*，则可以将其减半。
 快乐的阅读，并有一个很好的Kotlin！

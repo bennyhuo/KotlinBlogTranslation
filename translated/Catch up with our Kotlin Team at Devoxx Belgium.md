@@ -29,4 +29,4 @@ translator_url:
 <p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="390" src="https://www.youtube.com/embed/1PyBhozpQvw?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" style="border:0;" type="text/html" width="640"></iframe></span></p>
 {% endraw %}
 
-对于完整的Devoxx Belgium 2013信息，请访问：<a href="http://www.devoxx.be/" target="_blank" title="Devoxx Belgium 2013"> http：//www.devoxx。是/ </a>。</em>
+对于完整的Devoxx Belgium 2013信息，请访问：<a href="http://www.devoxx.be/" target="_blank" title="Devoxx Belgium 2013"> http：//www.devoxx。是/ </a>。*

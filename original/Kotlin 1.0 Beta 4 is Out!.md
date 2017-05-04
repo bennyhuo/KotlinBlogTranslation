@@ -81,7 +81,7 @@ We are planning to add new features in the future releases of Kotlin, so we deci
 * async is reserved in front of “{” and “fun“
 
 So, now, instead of `async {...}` we’ll have to say `async () {...}`. We understand that it’s not as clean, but we didn’t find a better option. Code completion will insert `()` automatically.
-<em>Code Cleanup</em> will help you migrate existing code.
+*Code Cleanup* will help you migrate existing code.
 ### Java Wildcards
 
 There were issues with how Kotlin translated variant types, e.g. whether a `List&lt;Foo&gt;` should be `List&lt;? extends Foo&gt;` in Java or simply `List&lt;Foo&gt;`. Subtleties details aside, we did the following:

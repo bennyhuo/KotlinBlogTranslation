@@ -127,7 +127,7 @@ class KotlinClass {
 {% endraw %}
 
 访问`Obj1`的成员需要资格：`KotlinClass.Obj1.foo（）`。对于`Obj2`的成员，对象名称是可选的：`KotlinClass.foo（）`。
-最后一步：可以省略<em>协同对象</em>的名称（在这种情况下，编译器将使用默认名称`Companion`）：
+最后一步：可以省略*协同对象*的名称（在这种情况下，编译器将使用默认名称`Companion`）：
 
 {% raw %}
 <p></p>
@@ -146,8 +146,8 @@ class KotlinClass {
 {% endraw %}
 
 现在，您仍然可以通过包含类的名称来引用其成员：`KotlinClass.foo（）`，或通过完整的资格：`KotlinClass.Companion.foo（）`。
-正如你所看到的，与我们以前使用的</em>类对象</em>不同，伴随对象</em>与普通对象完全一致。
-另一个重要的好处是，现在每个对象<em>都有一个名字</em>（当省略一个<em>协同对象</em>的名称时，再次使用`Companion`），启用协同对象**书写扩展功能**：
+正如你所看到的，与我们以前使用的*类对象*不同，伴随对象*与普通对象完全一致。
+另一个重要的好处是，现在每个对象*都有一个名字*（当省略一个*协同对象*的名称时，再次使用`Companion`），启用协同对象**书写扩展功能**：
 
 {% raw %}
 <p></p>
@@ -181,7 +181,7 @@ val f = fun (x: Int): Int { return x + 1 }
 因此，您可以使用其传统句法形式的函数作为值。看到 [用户文档](http://kotlinlang.org/docs/reference/lambdas.html#function-expressions) 和 [规格文件](https://github.com/JetBrains/kotlin/blob/master/spec-docs/multi-declarations-in-parameters.md#function-expressions) 更多细节。
 ### Lambda语法限制（用于未来浓缩）
 
-除其他功能外，函数表达式使我们能够在lambdas的参数中支持<em>多声明</em>。最终目标（尚未实现）是能够以下列语法过滤列表：
+除其他功能外，函数表达式使我们能够在lambdas的参数中支持*多声明*。最终目标（尚未实现）是能够以下列语法过滤列表：
 
 {% raw %}
 <p></p>
@@ -206,7 +206,7 @@ pairs.filter { (a, b) -> a != b }
 IDE提供了快速修复，自动迁移代码。
 ### Lambdas的标签退货
 
-长久以来，在lambdas中使用`return`表达式有一个限制：只有当lambda具有显式的返回类型时才允许使用<em> local </em> `return`指定。这是由类型推理算法的限制引起的。现在，限制被删除，我们可以自由地使用本地退货：
+长久以来，在lambdas中使用`return`表达式有一个限制：只有当lambda具有显式的返回类型时才允许使用*local* `return`指定。这是由类型推理算法的限制引起的。现在，限制被删除，我们可以自由地使用本地退货：
 
 {% raw %}
 <p></p>
@@ -229,7 +229,7 @@ list.map {
 在M11中，我们将* -imports（也称为“按需导入”）的顺序不重要，并进行了一些其他调整，使我们能够在IDE中实现对导入指令的高效自动管理。
 ## 反射
 
-实现Kotlin特定的反射（而不是让您在Kotlin类上使用Java反射）是一个长期运行的项目，需要在编译器中进行大量的工作。基本上，我们必须考虑到大部分的编译器，并将其作为运行时的一部分。这包括：从二进制文件中加载Kotlin特定的元数据，将Kotlin符号表示为对象（历史上我们称之为<em>描述符</em>），将Java声明加载为Kotlin（因为Kotlin反射也适用于Java对象）等等。
+实现Kotlin特定的反射（而不是让您在Kotlin类上使用Java反射）是一个长期运行的项目，需要在编译器中进行大量的工作。基本上，我们必须考虑到大部分的编译器，并将其作为运行时的一部分。这包括：从二进制文件中加载Kotlin特定的元数据，将Kotlin符号表示为对象（历史上我们称之为*描述符*），将Java声明加载为Kotlin（因为Kotlin反射也适用于Java对象）等等。
 最后，我们介绍这项工作的第一个结果：通过编译器附带的一个新的kotlin-reflection.jar提供内省属性的能力（即将添加更多的功能）。
 ### 新反思罐
 
@@ -258,7 +258,7 @@ val c = MyClass::class
 Kotlin反射API适用于Kotlin和Java类，您可以从Kotlin“转换”为Java反射对象并返回。例如，您可以说`kClass.java`并获取一个`java.lang.Class`实例，反之亦然：`jlClass.kotlin`给你一个`KClass`实例。
 ## @Nullable和@NotNull在Java
 
-和往常一样，Java互操作是我们的首要任务，这一次我们正在改进我们发货的<em>平台类型</em>功能 [M9](http://blog.jetbrains.com/kotlin/2014/10/m9-is-here/) ：现在，编译器发出警告滥用Java值注释为`@Nullable`和`@NotNull`。这并不像以前在M9之前那样严格，但是也不会像往常一样破裂。
+和往常一样，Java互操作是我们的首要任务，这一次我们正在改进我们发货的*平台类型*功能 [M9](http://blog.jetbrains.com/kotlin/2014/10/m9-is-here/) ：现在，编译器发出警告滥用Java值注释为`@Nullable`和`@NotNull`。这并不像以前在M9之前那样严格，但是也不会像往常一样破裂。
 下一步是以安全的方式发布Java可空性错误（从而总是可以合理地修复错误），这是为下一个里程碑计划的。
 ## Android扩展
 

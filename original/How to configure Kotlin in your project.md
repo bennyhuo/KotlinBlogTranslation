@@ -39,4 +39,4 @@ Once again, you need click the link in the notification, choose the modules to c
 Configuration files for selected modules will be changed as described [here](http://confluence.jetbrains.com/display/Kotlin/Kotlin+Build+Tools) .
 If by chance you miss a notification, you can always access it via the Event Log in IntelliJ IDEA.<br/>
 <img alt="Notification in Event Log" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/09/7.jpg?w=640&amp;ssl=1"/>Also please note that the notification will appear only if you **have Kotlin files under source root** in your project.
-<em>For Gradle Users</em>: Your Kotlin files should be under a source root named ‘kotlin’
+*For Gradle Users*: Your Kotlin files should be under a source root named ‘kotlin’

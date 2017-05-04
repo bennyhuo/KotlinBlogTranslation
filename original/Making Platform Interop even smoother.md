@@ -32,7 +32,7 @@ val x = javaCanReturnNull() // Java call that can return null
 <p></p>
 {% endraw %}
 
-on trying to pass the value <em>x</em> to the following functions:
+on trying to pass the value *x* to the following functions:
 
 {% raw %}
 <p></p>
@@ -47,7 +47,7 @@ fun nullAllowed(value: String?) {}
 <p></p>
 {% endraw %}
 
-in the first case, Kotlin compiler would issue an error. This means that the call to <em>nullNotAllowed</em> would need to be:
+in the first case, Kotlin compiler would issue an error. This means that the call to *nullNotAllowed* would need to be:
 
 {% raw %}
 <p></p>
@@ -97,10 +97,10 @@ public class SomeInterestingFoo(): SomeFoo {
 <p></p>
 {% endraw %}
 
-the parameter <em>input</em> no longer has to be of type <em>String?</em>. You can choose to make it either <em>String</em> or <em>String?</em> — depending on its actual meaning. In this example we chose <em>input</em> to be not-null, and <em>data</em> to be nullable.
+the parameter *input* no longer has to be of type *String?*. You can choose to make it either *String* or *String?* — depending on its actual meaning. In this example we chose *input* to be not-null, and *data* to be nullable.
 ## Annotating methods with platformStatic
 
-Kotlin has <em>object declarations</em> which can be viewed as singletons. And these are consumable from Java, albeit not with the nicest syntax. Given:
+Kotlin has *object declarations* which can be viewed as singletons. And these are consumable from Java, albeit not with the nicest syntax. Given:
 
 {% raw %}
 <p></p>
@@ -162,10 +162,10 @@ object Foo {
 <p></p>
 {% endraw %}
 
-making the code much cleaner. Same applies to <em>class objects</em>.
+making the code much cleaner. Same applies to *class objects*.
 ### Removing roadblocks
 
-Another benefit of <em>platformStatic</em> is removing some showstoppers that existed when using certain Java libraries such as JUnit. In particular, the latter requires a static method in Java when using [Theories](https://github.com/junit-team/junit/wiki/Theories) . The workaround for this was quite tedious. Fortunately, this is no longer the case. We can use the <em>platformStatic</em> annotation to solve this [issue](https://youtrack.jetbrains.com/issue/KT-4861) .
+Another benefit of *platformStatic* is removing some showstoppers that existed when using certain Java libraries such as JUnit. In particular, the latter requires a static method in Java when using [Theories](https://github.com/junit-team/junit/wiki/Theories) . The workaround for this was quite tedious. Fortunately, this is no longer the case. We can use the *platformStatic* annotation to solve this [issue](https://youtrack.jetbrains.com/issue/KT-4861) .
 
 {% raw %}
 <p></p>
@@ -218,7 +218,7 @@ fun Iterable<Int>.average(): Double {
 <p></p>
 {% endraw %}
 
-While calling these from Kotlin is possible, trying to invoke these from Java is problematic due to type erasure. Similar to <em>platformStatic</em>, we’ve introduced the <em>platformName</em> annotation that allows to rename the function so that when invoked from Java, the new given name is used:
+While calling these from Kotlin is possible, trying to invoke these from Java is problematic due to type erasure. Similar to *platformStatic*, we’ve introduced the *platformName* annotation that allows to rename the function so that when invoked from Java, the new given name is used:
 
 {% raw %}
 <p></p>
@@ -252,10 +252,10 @@ averageOfInt(numbers)
 <p></p>
 {% endraw %}
 
-Note that this is [not the only use case](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) for <em>platformName</em>.
+Note that this is [not the only use case](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) for *platformName*.
 ## Private property accessors
 
-Property accessors are no longer generated for private private properties in Kotlin, which means that [conflicts](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) with existing <em>getXYZ</em> methods do<br/>
+Property accessors are no longer generated for private private properties in Kotlin, which means that [conflicts](http://blog.jetbrains.com/kotlin/2014/07/m8-is-out/#platformName) with existing *getXYZ* methods do<br/>
 not occur if unnecessarily. Take the following interface in Java:
 
 {% raw %}
@@ -272,7 +272,7 @@ public interface SomeFoo {
 <p></p>
 {% endraw %}
 
-If we are to implement this interface in Kotlin and our class has a private property named <em>bar</em>, in M8 and previous versions it causes a conflict, and we’d have to name the property to something different than <em>bar</em>. Starting with M9, this is no longer the case. As such, the code below is perfectly valid:
+If we are to implement this interface in Kotlin and our class has a private property named *bar*, in M8 and previous versions it causes a conflict, and we’d have to name the property to something different than *bar*. Starting with M9, this is no longer the case. As such, the code below is perfectly valid:
 
 {% raw %}
 <p></p>
@@ -294,4 +294,4 @@ public class SomeInterestingFoo(private val bar: String): SomeFoo {
 
 With these changes coming in M9 we’ve removed some roadblocks and more importantly aimed at making the interoperability between Java and Kotlin much cleaner. And while these improvements can make consuming existing Java code more pleasant, it also allows for an even better experience of writing new libraries and functionality in Kotlin and consuming these from Java.
 As always, we’d love feedback. Let us know what you think.
-<em>Note: M9 has not been released yet, but you can find these features on <a href="https://teamcity.jetbrains.com/project.html?projectId=Kotlin&amp;tab=projectOverview">the nightly builds</a></em>
+*Note: M9 has not been released yet, but you can find these features on <a href="https://teamcity.jetbrains.com/project.html?projectId=Kotlin&amp;tab=projectOverview">the nightly builds</a>*

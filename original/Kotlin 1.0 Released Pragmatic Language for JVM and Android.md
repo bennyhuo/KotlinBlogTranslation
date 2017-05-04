@@ -21,7 +21,7 @@ It’s been a long and exciting road but we’ve finally reached the first big 1
 <p><center><img alt="Kotlin" class="alignnone size-full wp-image-3688" data-recalc-dims="1" margin-left="auto" margin-right="auto" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/02/1_0_Banner.png?resize=640%2C320&amp;ssl=1"/></center></p>
 {% endraw %}
 
-<em>See discussions on <a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/">Reddit</a> and <a href="https://news.ycombinator.com/item?id=11103087">Hacker News</a></em>
+*See discussions on <a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/">Reddit</a> and <a href="https://news.ycombinator.com/item?id=11103087">Hacker News</a>*
 
 {% raw %}
 <p><span id="more-3507"></span></p>
@@ -41,16 +41,16 @@ One of the key focuses of Kotlin has been interoperability and seamless support 
 ## What does pragmatic mean?
 
 Understanding one’s core values is crucial for any long-running project. If I were to choose one word to describe Kotlin’s design, it would be **pragmatism**. This is why, early on, we said that Kotlin is not so much about invention or research. We ended up inventing quite a few things, but this was never the point of the project. Of course we were building a **type system that prevents bugs**, and **abstraction mechanisms that facilitate code reuse**, as anybody in our position would. But our (pragmatic) way of doing it was through **focusing on use cases** to make the language a **good tool**.
-In particular, this approach lead us immediately to the notion that **interoperability with existing code and infrastructure is crucial**. Re-writing the world <em>the right way</em>, all from scratch — who never wished to? I did, quite a few times :) And Kotlin would have been a whole lot easier to design and develop if not for the Java interop, Maven integration, Android compatibility! It would definitely be more elegant in many ways. But elegance, though highly appreciated, is not the primary goal here, **the primary goal is being useful**. And the less our users have to re-learn, re-invent, re-do from scratch, the more they can re-use, the better.
-— <em>So, why doesn’t Kotlin have its own package manager, or its own build system?</em><br/>
+In particular, this approach lead us immediately to the notion that **interoperability with existing code and infrastructure is crucial**. Re-writing the world *the right way*, all from scratch — who never wished to? I did, quite a few times :) And Kotlin would have been a whole lot easier to design and develop if not for the Java interop, Maven integration, Android compatibility! It would definitely be more elegant in many ways. But elegance, though highly appreciated, is not the primary goal here, **the primary goal is being useful**. And the less our users have to re-learn, re-invent, re-do from scratch, the more they can re-use, the better.
+— *So, why doesn’t Kotlin have its own package manager, or its own build system?*<br/>
 
 — Because there’s already Maven and Gradle, and re-using their huge number of plugins is crucial for many projects.<br/>
 
-— <em>Why did we invest a lot of time and effort into making JDK-compatible collection interfaces, when it was so much easier to just redesign collections from scratch?</em><br/>
+— *Why did we invest a lot of time and effort into making JDK-compatible collection interfaces, when it was so much easier to just redesign collections from scratch?*<br/>
 
 — Because tons and tons of Java code work with JDK collections, and converting data on the boundary would be a pain.<br/>
 
-— <em>Why does Kotlin support Java 6 byte code?</em><br/>
+— *Why does Kotlin support Java 6 byte code?*<br/>
 
 — Because many people are still running Java 6 (Android, most notably, but not only Android).
 For us pragmatism is about **creating user experience**, not a language or a library alone. Many of the language design decisions were made under constraints like “Won’t this impede incremental compilation?”, “What if this increases APK method counts?”, “How will the IDE highlight this as-you-type?”, and many more like these. As a result, we are proud of our **tooling as well as the language**.
@@ -114,4 +114,4 @@ If you’re introducing Kotlin to your Java project, you can make use of the **J
 Last but not least, make sure you join the discussions on our [Forum](https://devnet.jetbrains.com/community/kotlin) or [Slack](http://kotlinslackin.herokuapp.com/) .
 Once again, **we want to thank everyone**. We couldn’t have done this without the community.
 Have a nice Kotlin! **Now** <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
-P.S. <em>See discussions on <a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/">Reddit</a> and <a href="https://news.ycombinator.com/item?id=11103087">Hacker News</a></em>
+P.S. *See discussions on <a href="https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/">Reddit</a> and <a href="https://news.ycombinator.com/item?id=11103087">Hacker News</a>*

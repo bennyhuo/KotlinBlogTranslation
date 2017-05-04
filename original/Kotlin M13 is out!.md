@@ -87,7 +87,7 @@ fun Pet.saySomething(): String {
 <p></p>
 {% endraw %}
 
-Note that `else` is not required in the example above: since `Pet` is a sealed class, the compiler knows that it has <em>no subclasses other than `Dog` and `Cat`</em>. So we can be sure that all cases have been checked and `else` is not needed. Incidentally, if you forget to cover some cases, the compiler will report an error and remind you to do it, or resort to `else`.
+Note that `else` is not required in the example above: since `Pet` is a sealed class, the compiler knows that it has *no subclasses other than `Dog` and `Cat`*. So we can be sure that all cases have been checked and `else` is not needed. Incidentally, if you forget to cover some cases, the compiler will report an error and remind you to do it, or resort to `else`.
 For now only classes nested into the sealed class can extend it, but we will later relax this restriction and allow subclasses in the same source file.
 For more details see the [docs](http://kotlinlang.org/docs/reference/classes.html#sealed-classes) .
 ### Annotations require “@”
@@ -263,7 +263,7 @@ The standard library has got many convenient additions including
 More on this is a separate post too.
 ## Tools
 
-**Compiler daemon.** We announced [support for Gradle Daemon](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) a while ago and your feedback has been positive: compilation times seem to go down up to a factor of three. We keep working on compilation performance, and since M13 a daemon similar to Gradle’s is used in IntelliJ IDEA as well. This feature is marked “experimental” for now, so you need to tick a box in the <em>Preferences</em> dialog to switch it on:
+**Compiler daemon.** We announced [support for Gradle Daemon](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) a while ago and your feedback has been positive: compilation times seem to go down up to a factor of three. We keep working on compilation performance, and since M13 a daemon similar to Gradle’s is used in IntelliJ IDEA as well. This feature is marked “experimental” for now, so you need to tick a box in the *Preferences* dialog to switch it on:
 <p>
   Build, execution, deployment -&gt; Compiler -&gt; Kotlin compiler -&gt; Keep compiler process alive between invocations (experimental)
 </p>

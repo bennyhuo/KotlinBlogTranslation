@@ -53,7 +53,7 @@ data class Point(val x: Int, val y: Int)
 <p></p>
 {% endraw %}
 
-这里Point自动获取toString（），equals（）/ hashCode（）和<em>组件函数</em>，使您能够写入：
+这里Point自动获取toString（），equals（）/ hashCode（）和*组件函数*，使您能够写入：
 
 {% raw %}
 <p></p>
@@ -76,7 +76,7 @@ val (x, y) = functionReturningPoint()
 
 ## 集合
 
-静态JVM语言倾向于提出自己的集合库，因为Java集合不会使用这些语言的酷功能。所以我们得到非常酷的集合，不幸的是，不兼容的</em>，这使得我们在使用Java API时封装它们或复制。
+静态JVM语言倾向于提出自己的集合库，因为Java集合不会使用这些语言的酷功能。所以我们得到非常酷的集合，不幸的是，不兼容的*，这使得我们在使用Java API时封装它们或复制。
 Kotlin有很多奇特的功能，但是我们渴望与Java平滑地进行互操作，事实证明，我们也可以吃这个蛋糕。认识Kotlin的系列：
 <img alt =“”class =“aligncenter size-full wp-image-665”data-recalc-dims =“1”sizes =“（max-width：723px）100vw，723px”src =“https：// i0 .wp.com / blog.jetbrains.com / kotlin / files / 2012/09 / Collections.png？resize = 640％2C335＆amp; ssl = 1“srcset =”https://i0.wp.com/blog.jetbrains。 com / kotlin / files / 2012/09 / Collections.png？resize = 300％2C157＆amp; ssl = 1 300w，https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/09/Collections .png？w = 723＆amp; ssl = 1 723w“/>正如你所看到的，这里的基本结构非常像**java.util**给我们，但有一些重要的区别：
 

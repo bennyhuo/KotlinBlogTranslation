@@ -30,18 +30,18 @@ Kotlin 1.1今天正式发布了，这让Kotlin有能力适用于更多的应用�
 <p><span id="more-4611"></span></p>
 {% endraw %}
 
-首先，<em>**JavaScript支持**</em>的“试验性”标签已被移除，并且支持所有Kotlin语言特性、标准库的大部分内容以及JavaScript互操作性。这意味着开发者可以完全使用Kotlin来编写整个WEB应用，同时继续使用JavaScript的开发框架（比如React）。  
+首先，***JavaScript支持***的“试验性”标签已被移除，并且支持所有Kotlin语言特性、标准库的大部分内容以及JavaScript互操作性。这意味着开发者可以完全使用Kotlin来编写整个WEB应用，同时继续使用JavaScript的开发框架（比如React）。  
 
-其次，我们引入了<em>**协程(coroutines)**</em>的概念。作为线程的轻量级替代方案，协程在应用程序后端可以具有更大可扩展性，从而支持单个JVM实例上的大量工作负载。除此之外，协程对于实现异步行为具有强大的表现力，这对于在任何平台上构建响应式用户交互界面而言极其重要。  
+其次，我们引入了***协程(coroutines)***的概念。作为线程的轻量级替代方案，协程在应用程序后端可以具有更大可扩展性，从而支持单个JVM实例上的大量工作负载。除此之外，协程对于实现异步行为具有强大的表现力，这对于在任何平台上构建响应式用户交互界面而言极其重要。  
 
 下面我们将进一步介绍这两大功能。其他部分如[type aliases](http://kotlinlang.org/docs/reference/whatsnew11.html#type-aliases)，[callable references](http://kotlinlang.org/docs/reference/whatsnew11.html#bound-callable-references)，[destructuring in lambdas](http://kotlinlang.org/docs/reference/whatsnew11.html#destructuring-in-lambdas)等详情可在[最新消息](http://kotlinlang.org/docs/reference/whatsnew11.html)查看，试试完整的可运行示例代码！
 ## 协程(Coroutines)
 
 在Kotlin中协程使非阻塞式异步代码与同步代码一样易于理解。  
 
-异步编程正当风靡，唯一让我们思虑的是，非阻塞式代码大量增加了系统的复杂性。 而Kotlin现在提供了简化这种复杂性的方法，通过单原子让协程在语言中成为一等公民：<em>**挂起函数**</em>。这种类型的函数（或lambda）表示在计算运行中可以被挂起（不阻塞任何线程），而后也能继续恢复运行。  
+异步编程正当风靡，唯一让我们思虑的是，非阻塞式代码大量增加了系统的复杂性。 而Kotlin现在提供了简化这种复杂性的方法，通过单原子让协程在语言中成为一等公民：***挂起函数***。这种类型的函数（或lambda）表示在计算运行中可以被挂起（不阻塞任何线程），而后也能继续恢复运行。  
 
-从技术上说，协程是多任务协作的轻量级解决方案（类似于[fibers](https://en.wikipedia.org/wiki/Fiber_(computer_science))）。换言之，他们只是<em>**更好的线程**</em>：可以任意的启动和保留，且挂起的消耗极其之低（挂起之于协程，如阻塞之于线程），非常易于组合与订制。  
+从技术上说，协程是多任务协作的轻量级解决方案（类似于[fibers](https://en.wikipedia.org/wiki/Fiber_(computer_science))）。换言之，他们只是***更好的线程***：可以任意的启动和保留，且挂起的消耗极其之低（挂起之于协程，如阻塞之于线程），非常易于组合与订制。  
 
 我们对于协程的设计以实现最大的灵活性为目标：在语言中固化的部分少，而且可以作为库来实现很多功能。[kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)项目在Rx，CompletableFuture，NIO，JavaFx和Swing上均有设计功能库，甚至可以为Android和JavaScript编写类似的库。即使在其​​他语言中许多内置构建现在也可以用Kotlin库来编写。包括Python的generators/yield，来自Go的channels/select以及C＃的async/await:
 
@@ -128,7 +128,7 @@ P.S 跨平台运行是Kotlin的战略方向，伴随着1.1的发布，我们可�
 
 **IntelliJ IDEA**：2017.1已包含Kotlin 1.1；旧版本则需要安装Kotlin插件或更新到1.1版本。  
 
-**Android Studio**：通过<em>**Plugin Manager**</em>安装或更新插件。  
+**Android Studio**：通过***Plugin Manager***安装或更新插件。  
 
 **Eclipse**：使用[Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) 安装插件。  
 
@@ -136,6 +136,6 @@ P.S 跨平台运行是Kotlin的战略方向，伴随着1.1的发布，我们可�
 
 **兼容性**：Kotlin 1.1语言和标准库[向后兼容(modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) ：如果使用1.0版本编译运行，1.1版本仍然可以运行。为了帮助大型团队有规律的更新，我们在编译器中新增禁用新功能的开关。查看[踩坑文档](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)。  
 
-<em>**请尽情享受Kotlin！**</em>  
+***请尽情享受Kotlin！***  
 
 P.S: 在[Reddit](https://www.reddit.com/r/programming/comments/5wvpv8/kotlin_11_released_with_javascript_support/)和[Hacker News](https://news.ycombinator.com/item?id=13763483)上加入讨论吧！

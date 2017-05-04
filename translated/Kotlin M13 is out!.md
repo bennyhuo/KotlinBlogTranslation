@@ -87,7 +87,7 @@ fun Pet.saySomething(): String {
 <p></p>
 {% endraw %}
 
-请注意，上述示例中不需要`else`：因为`Pet`是一个密封类，编译器知道除`Dog < / code>和`Cat` </em>。所以我们可以确保所有的情况都被检查，并且不需要`else`。顺便说一下，如果你忘记覆盖某些情况，编译器会报告一个错误，并提醒你这样做，或者诉诸`else`。
+请注意，上述示例中不需要`else`：因为`Pet`是一个密封类，编译器知道除`Dog < / code>和`Cat`*。所以我们可以确保所有的情况都被检查，并且不需要`else`。顺便说一下，如果你忘记覆盖某些情况，编译器会报告一个错误，并提醒你这样做，或者诉诸`else`。
 现在只有嵌入到密封类中的类可以扩展它，但是我们稍后会放宽这个限制，并允许在同一个源文件中的子类。
 有关详细信息，请参阅 [文件](http://kotlinlang.org/docs/reference/classes.html#sealed-classes) 。
 ### 注释需要“@”
@@ -263,7 +263,7 @@ Kotlin图书馆也在积极发展。 M13带来全功能的反射库：我们现�
 更多的这是一个单独的职位。
 ## 工具
 
-**编译器守护进程。**我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</em>对话框中的一个框，将其打开：
+**编译器守护进程。**我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”*对话框中的一个框，将其打开：
 <p>
   构建，执行，部署 - ＆gt;编译器 - ＆gt; Kotlin编译器 - ＆gt;在调用之前保持编译器进程（实验）
 </p>

@@ -20,7 +20,7 @@ I would like to point out that this is not the last change of this sort. Kotlin 
 Here’s an overview of the changes we’ve made.<br/>
 <span id="more-291"></span><br/>
 **The Namespace is dead. Long live the Package.**
-The concept of <em>namespaces</em> evolved into something so close to Java packages, that we decided to rename it. The **namespace** keyword is replaced by **package** keyword. Additionally, <em>namespace blocks</em> are no longer supported.
+The concept of *namespaces* evolved into something so close to Java packages, that we decided to rename it. The **namespace** keyword is replaced by **package** keyword. Additionally, *namespace blocks* are no longer supported.
 **The Arrow loses weight**
 An arrow is used in function literals and **when** expressions. Some languages use a “fat arrow” (=>) and some use a “thin arrow” (->). Initially, we used the fat one, but is has some unfortunate interactions with comparisons, like this:
 

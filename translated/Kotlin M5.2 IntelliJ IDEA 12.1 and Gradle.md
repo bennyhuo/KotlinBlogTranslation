@@ -48,7 +48,7 @@ SwingUtilities.invokeLater(Runnable { doItNow() })
 <p></p>
 {% endraw %}
 
-**这仅适用于Java类**。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个<em>合成的</em>函数
+**这仅适用于Java类**。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个*合成的*函数
 
 {% raw %}
 <p></p>

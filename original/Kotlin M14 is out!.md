@@ -24,7 +24,7 @@ With the release approaching, we switch to shorter milestones. Meet M14 that bri
 ## Language
 
 We are wrapping up with the language changes, so nothing really dramatic has happened in M14.
-**NOTE**: We are dropping previously deprecated features and functions, so make sure to have run <em>Code Cleanup</em> before you install M14.
+**NOTE**: We are dropping previously deprecated features and functions, so make sure to have run *Code Cleanup* before you install M14.
 ### Backing fields
 
 The old `$propertyName` syntax is deprecated. To access backing fields inside getter/setter, use the `field` synthetic variable:
@@ -68,7 +68,7 @@ operator fun JavaClass.plus(other: JavaClass): JavaClass = this.plus(other)
 <p></p>
 {% endraw %}
 
-Use <em>Code Cleanup</em> to add modifiers to all the operators used in your project automatically.
+Use *Code Cleanup* to add modifiers to all the operators used in your project automatically.
 Note: Infix functions will be migrated to the same scheme in the nearest future.
 ### Compile-time constants
 
@@ -86,7 +86,7 @@ const val MAX = 239
 <p></p>
 {% endraw %}
 
-<em>Code Cleanup</em> will add missing `const` modifiers for you.
+*Code Cleanup* will add missing `const` modifiers for you.
 ### Annotate file classes
 
 Since M13, top-level functions and properties from each source file are put into a separate class file by default (details [here](http://blog.jetbrains.com/kotlin/2015/09/kotlin-m13-is-out/) ). Now we can annotate these classes by applying a file annotation:
@@ -129,7 +129,7 @@ public final class FooKt {
 
 ### Migration from old “package facades”
 
-As we have transitioned to the [new class-file layout](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) , it’s time to retire the old one. Since M14 old package-facade classes (e.g. `FooPackage`) are deprecated, and the IDE helps you migrate your Java code to the new scheme through <em>Code Cleanup</em>.
+As we have transitioned to the [new class-file layout](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) , it’s time to retire the old one. Since M14 old package-facade classes (e.g. `FooPackage`) are deprecated, and the IDE helps you migrate your Java code to the new scheme through *Code Cleanup*.
 **NOTE**: package facades will be dropped very soon, so make sure to migrate your code.
 The Standard Library (previously `kotlin.KotlinPackage` class) is being migrated to the new scheme too: see below.
 ### Other language changes
@@ -157,7 +157,7 @@ For the Java standpoint, Kotlin’s standard library is now organized into utili
 See more in the API docs.
 ## IDE Changes
 
-As usual, the IDE helps you migrate seamlessly from M13 via <em>Code cleanup</em>. Also there are several new handy features in M14:
+As usual, the IDE helps you migrate seamlessly from M13 via *Code cleanup*. Also there are several new handy features in M14:
 
 * As mentioned above, there in some cases we need private backing properties. You can easily introduce them via intention action:
 

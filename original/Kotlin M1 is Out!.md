@@ -43,7 +43,7 @@ val minors = users.filter { it.age < 21 }
 <p></p>
 {% endraw %}
 
-Or you can <em>simply</em> read text from a java.io.File:
+Or you can *simply* read text from a java.io.File:
 
 {% raw %}
 <p></p>

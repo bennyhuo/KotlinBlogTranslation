@@ -73,7 +73,7 @@ Kotlin将不会停留在Beta版，1.0即将来临。
 
 ## 框架，互操作和迁移
 
-任何Java或Android框架或图书馆几乎可以与Kotlin平滑地工作**。其中包括Spring MVC </em>，Vaadin </em>，</em>和<em>杰克逊</em>。许多Android框架需要通过Kotlin可用的注释处理 [kapt](http://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/) 它支持<em> Dagger 2 </em>，<em> DataBinding </em>，<em> DBFlow </em>，</em> ButterKnife </em>，<em> AndroidAnnotations </em>等。
+任何Java或Android框架或图书馆几乎可以与Kotlin平滑地工作**。其中包括Spring MVC*，Vaadin*，*和*杰克逊*。许多Android框架需要通过Kotlin可用的注释处理 [kapt](http://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/) 它支持*Dagger 2*，*DataBinding*，*DBFlow*，* ButterKnife*，*AndroidAnnotations*等。
 Kotlin拥有由JetBrains和社区开发的**自己的框架和库**。一些例子： [安科](https://github.com/JetBrains/anko) ， [RxKotlin](https://github.com/ReactiveX/RxKotlin) ， [funKtionale](https://github.com/MarioAriasC/funKTionale) ， [kohesive](https://github.com/kohesive/) ， [约柜](https://github.com/mplatvoet/kovenant) ， [科巴尔特](http://beust.com/kobalt) 构建工具和 [多得多](https://kotlinlang.org/docs/resources.html) 。
 内置IDE的**转换器**有助于将源代码从Java迁移到Kotlin。
 ## 尝试一下
@@ -94,4 +94,4 @@ Eclipse：通过Marketplace安装插件
 * 新闻：博客，Twitter
 * 问题追踪器
 
-**<em>有一个漂亮的Kotlin！</em>**
+***有一个漂亮的Kotlin！***

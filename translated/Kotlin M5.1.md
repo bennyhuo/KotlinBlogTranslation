@@ -75,7 +75,7 @@ val x = object : A() { ... }
 x的类型是什么？它曾经是匿名类型，但如果您从外部使用x，则无法访问它：类型无效。现在该类型将为A.这仅适用于从外部可以看到的属性，即如果x是局部变量，它将仍然具有匿名类型，因为它是无害的。
 ## 类对象可以从Java使用
 
-Kotlin类没有静态成员，而是<a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">类对象</a> </em>：
+Kotlin类没有静态成员，而是<a href="http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects">类对象</a>*：
 
 {% raw %}
 <p></p>

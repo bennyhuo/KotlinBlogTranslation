@@ -16,7 +16,7 @@ translator_url:
 
 Kotlin is always happy to learn from other programming languages, and this is why we decided to support [S-expressions](http://en.wikipedia.org/wiki/S-expression) , the empowering concept of  [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) .
 The main motivation behind this is the compatibility with [Clojure](http://clojure.org/) , the LISP for the JVM. Clojure is well-known for its solid libraries, particularly the ones used for concurrency and read-only data structures.
-To facilitate interoperability with LISP (and Clo<em>j</em>ure libraries in particular), Kotlin now allows expressions like this one:
+To facilitate interoperability with LISP (and Clo*j*ure libraries in particular), Kotlin now allows expressions like this one:
 
 {% raw %}
 <p></p>

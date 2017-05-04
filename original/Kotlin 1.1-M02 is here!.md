@@ -65,7 +65,7 @@ In addition to that, we’re working to make more of the Kotlin API available in
 ## How to Try It
 
 **In Maven/Gradle:** Add `http://dl.bintray.com/kotlin/kotlin-eap-1.1` as a repository for the build script and your projects; use 1.1-M02 as the version number for the compiler and the standard library.
-**In IntelliJ IDEA:** Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
+**In IntelliJ IDEA:** Go to *Tools → Kotlin → Configure Kotlin Plugin Updates*, then select “Early Access Preview 1.1” in the *Update channel* drop-down list, then press *Check for updates*.
 **On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a>**. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M02.
 **With SDKMan**. Run `sdk install kotlin 1.1-M02`.
 If you are using [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) library please use updated version 0.1-alpha-2, it’s almost the same, but it’s recompiled with 1.1-M02 compiler. You can follow the updates in the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) .

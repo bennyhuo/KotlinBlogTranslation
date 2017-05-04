@@ -69,7 +69,7 @@ kotlin {
 ## 如何尝试
 
 **在Maven / Gradle中：**将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用`1.1.0-beta-38`作为编译器和标准库的版本号。
-**在IntelliJ IDEA中：**转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
+**在IntelliJ IDEA中：**转到*工具→Kotlin→配置Kotlin插件更新*，然后在*更新频道*下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按*检查更新*。
 命令行编译器可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta2) 。
 **<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。即将推出。
 让我们来吧！

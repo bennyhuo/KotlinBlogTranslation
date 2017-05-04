@@ -20,7 +20,7 @@ translator_url:
 通过截取注解处理器（例如Dagger 2）和`javac`之间的通信，初始版本的`kapt`工作，并在Java类之上添加了已经编译的Kotlin类，代码> javac`在源中看到自己。这种方法的问题是，由于Kotlin类必须已经被编译，所以没有办法引用处理器生成的任何代码（例如Dagger的模块类）。因此，我们必须在Java中编写Dagger应用程序类。
 ## 它现在如何工作
 
-如 [在上一篇博文中讨论过](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 可以通过在运行`javac`之前生成Kotlin类的</em> </em>来克服该问题，然后在`javac`完成后运行真正的编译。存根只包含声明，没有方法体。 Kotlin编译器用于在内存中创建这样的存根（它们用于Java互操作，当Java代码回溯到Kotlin时），所以我们只需要将它们序列化到磁盘上的文件。
+如 [在上一篇博文中讨论过](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 可以通过在运行`javac`之前生成Kotlin类的**来克服该问题，然后在`javac`完成后运行真正的编译。存根只包含声明，没有方法体。 Kotlin编译器用于在内存中创建这样的存根（它们用于Java互操作，当Java代码回溯到Kotlin时），所以我们只需要将它们序列化到磁盘上的文件。
 ## 示例：DBFlow
 
 Stubs支持依赖于注释处理器生成的代码的框架。例如，您现在可以使用 [DBFlow](https://github.com/Raizlabs/DBFlow) 在Kotlin：

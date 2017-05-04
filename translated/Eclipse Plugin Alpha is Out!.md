@@ -28,14 +28,14 @@ IntelliJ IDEA中的Kotlin支持一直是我们的首要任务之一，但是我�
 
 ## 安装
 
-要试一试，你需要一个干净的安装 [Eclipse Luna](https://www.eclipse.org/downloads/) 。 Kotlin插件可从Eclipse市场</em>获得。安装Kotlin插件的最简单方法是将该按钮拖放到正在运行的Eclipse窗口**中：
+要试一试，你需要一个干净的安装 [Eclipse Luna](https://www.eclipse.org/downloads/) 。 Kotlin插件可从Eclipse市场*获得。安装Kotlin插件的最简单方法是将该按钮拖放到正在运行的Eclipse窗口**中：
 
 {% raw %}
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a><br/>
 <span id="more-1945"></span></p>
 {% endraw %}
 
-或者，您可以使用<em>帮助 - ＆gt; Eclipse Marketplace ... </em>菜单或以下更新站点：
+或者，您可以使用*帮助 - ＆gt; Eclipse Marketplace ...*菜单或以下更新站点：
 
 {% raw %}
 <p></p>
@@ -62,7 +62,7 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/New-Kotlin-File-in-Context-Menu.png"><img alt="New Kotlin File in Context Menu" class="alignnone size-full wp-image-1957" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/New-Kotlin-File-in-Context-Menu.png?resize=640%2C194&amp;ssl=1"/></a></p>
 {% endraw %}
 
-问题视图</em>显示Kotlin报告的诊断（错误和警告）：
+问题视图*显示Kotlin报告的诊断（错误和警告）：
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/03/skitch.png"><img alt="Problems View in Action" class="alignnone size-full wp-image-1959" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/03/skitch.png?resize=640%2C241&amp;ssl=1"/></a></p>
@@ -71,7 +71,7 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 ### 编辑
 
 支持基本编辑器功能，如代码高亮和格式化。还支持基本代码完成，但需要进一步改进。
-对于Java和Kotlin的未解决的类，自动导入</em>已经存在：
+对于Java和Kotlin的未解决的类，自动导入*已经存在：
 
 {% raw %}
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png"><img alt="Eclipse Auto-Import Feature" class="alignnone size-full wp-image-1965" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png?resize=393%2C119&amp;ssl=1"/></a></p>
@@ -85,13 +85,13 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 
 ### 导航
 
-<em>开放声明</em>是此版本中唯一支持的导航操作：
+*开放声明*是此版本中唯一支持的导航操作：
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/eclipse-references.png"><img alt="Eclipse References" class="alignnone size-full wp-image-1969" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/eclipse-references.png?resize=592%2C159&amp;ssl=1"/></a></p>
 {% endraw %}
 
-此外，您可以使用<em>大纲视图</em>导航到Kotlin文件中的声明，并在<em>开放资源</em>窗口中按名称搜索Kotlin文件。
+此外，您可以使用*大纲视图*导航到Kotlin文件中的声明，并在*开放资源*窗口中按名称搜索Kotlin文件。
 ### 调试器
 
 安装了我们的插件后，Eclipse JDT调试器可以初步支持Kotlin。再次，有很多改进，但你可以
@@ -107,7 +107,7 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 
 ### 单元测试
 
-如果您在类路径中已经有JUnit 3或JUnit 4，则可以在Kotlin中编写测试。运行 - ＆gt;运行方式 - ＆gt;主菜单中的Kotlin JUnit测试</em>开始测试，并在<em> JUnit View </em>中打开结果。
+如果您在类路径中已经有JUnit 3或JUnit 4，则可以在Kotlin中编写测试。运行 - ＆gt;运行方式 - ＆gt;主菜单中的Kotlin JUnit测试*开始测试，并在*JUnit View*中打开结果。
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-01.39.29.png"><img alt="Eclipse Tests Demonstation" class="alignnone size-full wp-image-1962" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-01.39.29.png?resize=560%2C199&amp;ssl=1"/></a></p>
