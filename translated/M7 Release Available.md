@@ -31,10 +31,10 @@ Kotlin标准库的许多功能现在已经被列入了。
 
 ### toString（），equals（）和hashCode（）需要override指令
 
-当声明<em> toString（）</em>，<em> equals（）</em>和<em> hashCode（）</em>时，我们现在需要使用<em>覆盖</em>关键词。这是以前版本中的<strong>突破性变化</strong>，适用于所有类。使用IDE中提供的快速修复（Alt + Enter错误）快速添加“覆盖”到项目中的所有这些方法。
+当声明<em> toString（）</em>，<em> equals（）</em>和<em> hashCode（）</em>时，我们现在需要使用<em>覆盖</em>关键词。这是以前版本中的**突破性变化**，适用于所有类。使用IDE中提供的快速修复（Alt + Enter错误）快速添加“覆盖”到项目中的所有这些方法。
 ### “jet”包更名为“kotlin”
 
-核心类已被重命名为“kotlin”，这也意味着，是的，你猜到了，Kotlin现在是Kotlin的官方和最终名字。这也是一个潜在的<strong>破坏性变化</strong>。大多数进口将自动发生。如果遇到任何问题，请手动重命名导入。
+核心类已被重命名为“kotlin”，这也意味着，是的，你猜到了，Kotlin现在是Kotlin的官方和最终名字。这也是一个潜在的**破坏性变化**。大多数进口将自动发生。如果遇到任何问题，请手动重命名导入。
 ### 参考本地功能
 
 在Kotlin中，您可以使用<em> :: functionName </em>语法通过名称引用函数。这也适用于本地功能
@@ -125,7 +125,7 @@ void connect(String host) throws SocketException {
 ## 标准库
 
 标准图书馆正在重新加工。这包括引入<em>流</em>（除其他外，这将有助于更好地与Java 8的兼容性）和某些功能的弃用。
-某些重新设计已导致库API破坏</strong> </strong>。大多数功能仍然可用，但您可能需要稍微修复现有代码。
+某些重新设计已导致库API破坏****。大多数功能仍然可用，但您可能需要稍微修复现有代码。
 ## IntelliJ IDEA增强功能
 
 ### 现在复制/粘贴插入导入

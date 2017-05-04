@@ -40,7 +40,7 @@ The reason is rather complicated:
 * so, when a parameterless lambda is passed in we don’t know which one should be chosen
 * it worked before, because an old library extension function (dating back to the pre-SAM era) was selected instead of a SAM-converted member.
 
-<strong>The workaround</strong> is simple, just specify the parameter, e.g.:
+**The workaround** is simple, just specify the parameter, e.g.:
 
 {% raw %}
 <p></p>
@@ -119,7 +119,7 @@ We are cleaning up the Standard Library, and this includes some repackaging:
 * In preparation to rearranging packages in the Standard Library, we have created the new packages and copied all functions to them. The old functions are kept for binary compatibility. No migration needed for Kotlin code, Code Cleanup is available for Java code.
 
 Later, we are planning to extract one more JAR from the library: it will contain array utilities that are infrequently used, so we’d like to keep them outside the main JAR to reduce its size.
-<strong>Some more highlights</strong>:
+**Some more highlights**:
 Kotlin’s `Int::class` may correspond to Java’s `int.class` or `Integer.class` in different contexts (and it’s justified). To facilitate use cases when a specific one of the two is needed, we have introduced two properties:
 
 * Int::class.javaPrimitiveType returns Int.class
@@ -131,7 +131,7 @@ Also, we can now say things like `IntArray(5) { it * 3 }`, i.e. create initializ
 The later versions of the JDK are making collections more and more null-intolerant. For example, here’s what the [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) says about `java.util.Map.computeIfAbsent`:
 <p>
 
-  If the specified key is not already associated with a value <strong>(or is mapped to null)</strong>, attempts to compute its value using the given mapping function and enters it into this map unless null.
+  If the specified key is not already associated with a value **(or is mapped to null)**, attempts to compute its value using the given mapping function and enters it into this map unless null.
 
 </p>
 These contracts are intrinsic to atomicity properties of such operations, so we decided that we have to meet them too, otherwise we won’t be able to guarantee proper behavior for Kotlin’s extension functions when they operate on null-free concurrent collections. So, we are going to change the behavior of `getOrPut` and other such functions so that they treat `null` value the same as the value was not present.

@@ -100,7 +100,7 @@ future {
 * 库完全控制着暂停和恢复计算的所有方面：线程，异常和计算的其他方面是完全可定制的。
 
 我们为有趣的常见用例写了一套图书馆： [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) [阅读更多关于协程](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 这里。
-<strong>重要的注释</strong>。凭借所带来的所有好处，Kotlin协同程序是一个相当新的设计，需要大量的战斗测试，才能确定它的100％正确和完整。这就是为什么我们会在“实验性”选择标志下发布。我们不希望语言规则发生变化，但API可能需要在Kotlin 1.2中进行一些调整。
+**重要的注释**。凭借所带来的所有好处，Kotlin协同程序是一个相当新的设计，需要大量的战斗测试，才能确定它的100％正确和完整。这就是为什么我们会在“实验性”选择标志下发布。我们不希望语言规则发生变化，但API可能需要在Kotlin 1.2中进行一些调整。
 
 * 命令行：-Xcoroutines = enabled
 * Gradle：kotlin.coroutines =在gradle.properties或local.properties中启用
@@ -114,9 +114,9 @@ Kotlin的标准库正在更新 [许多有用的实用程序](https://kotlinlang.
 我们现在支持JSR 223 [Spring框架](https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0) 以及类型安全的DSL和其他事情。
 ## 如何尝试
 
-与其他预发行版本一样，我们为Kotlin 1.1-Beta提供了<strong>无后向兼容性保证</strong>。此外，当我们达到最终RC时，由发行版本生成的所有二进制文件将被编译器禁止：您需要重新编译1.1-M0x和Beta编译的所有内容（1.0.x中的所有代码都是完美的罚款没有重新编译）。
-<strong>在Maven / Gradle中：</strong>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用`1.1.0-beta-17`作为编译器和标准库的版本号。
-<strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
+与其他预发行版本一样，我们为Kotlin 1.1-Beta提供了**无后向兼容性保证**。此外，当我们达到最终RC时，由发行版本生成的所有二进制文件将被编译器禁止：您需要重新编译1.1-M0x和Beta编译的所有内容（1.0.x中的所有代码都是完美的罚款没有重新编译）。
+**在Maven / Gradle中：**添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用`1.1.0-beta-17`作为编译器和标准库的版本号。
+**在IntelliJ IDEA中：**转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
 命令行编译器可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta) 。
-<strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表将编译器版本更改为1.1-Beta。
+**<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。使用右下角的下拉列表将编译器版本更改为1.1-Beta。
 让我们来吧！

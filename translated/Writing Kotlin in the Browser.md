@@ -58,7 +58,7 @@ translator_url:
 {% endraw %}
 
 在开发期间，我们需要最新版本的这些文件，因此我们希望将这些文件放在我们的<em> web / js / app </em>文件夹中。我们可以在很多方面做到这一点 [IntelliJ IDEA工件](http://www.jetbrains.com/idea/webhelp/artifact.html) 或Maven / Gradle。在我们的例子中，我们只是使用一个工件。我们可以设置一个将相应的文件复制到所需的输出位置，另外还将最初复制到<em>脚本</em>文件夹的<em> kotlin.js </em>文件复制到同一位置*。
-<strong> <em> <span style =“font-size：x-small;”> *这是一次一次性操作，所以一个更好的选择是将此文件的输出位置直接定义到所需的输出文件夹该项目。我们这样做是为了逐步解释事情。 </span> </em> </strong>
+**<em> <span style =“font-size：x-small;”> *这是一次一次性操作，所以一个更好的选择是将此文件的输出位置直接定义到所需的输出文件夹该项目。我们这样做是为了逐步解释事情。 </span> </em>**
 ## 与DOM元素交互
 
 现在我们已经准备好项目布局了，我们开始编写一些代码。我们可以做的最基本的事情是操纵一些DOM元素。我们可以创建一个简单的HTML页面（名为<em> index.html </em>），并将其放在<em> web </em>文件夹下
@@ -92,7 +92,7 @@ Kotlin提供了一系列专门针对网络的图书馆。在我们的例子中�
 {% endraw %}
 
 这被放置在与应用程序相同的模块内，我们可以通过Kotlin模块名称来引用它*
-<strong> <span style =“color：＃000000;”> <em> *此API不是最终的，将来很可能会发生变化，可能会更加紧凑。</em> </span> / strong>
+**<span style =“color：＃000000;”> <em> *此API不是最终的，将来很可能会发生变化，可能会更加紧凑。</em> </span> / strong>
 # 下一步
 
 这不是所有可能与Kotlin。我们没有提到的一件事是能够从Kotlin内部调用JavaScript代码，这是我们将在另一个帖子中覆盖的东西，因为这个已经变得太久了！

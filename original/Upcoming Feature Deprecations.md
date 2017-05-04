@@ -22,7 +22,7 @@ Some of you might have heard of this feature: traits in Kotlin can “extend” 
 Technically it means that when a class extends such a trait, it must (directly or indirectly) extend the required class as well. This feature has very few use cases, so we are deprecating it.
 ## Captured Type Parameters
 
-When a generic class `Outer` has an <strong>inner</strong> class `Inner`, Java allows us to use generic parameters of `Outer` inside `Inner`:
+When a generic class `Outer` has an **inner** class `Inner`, Java allows us to use generic parameters of `Outer` inside `Inner`:
 
 {% raw %}
 <p></p>

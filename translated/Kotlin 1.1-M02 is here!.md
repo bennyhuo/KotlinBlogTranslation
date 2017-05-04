@@ -14,8 +14,8 @@ translator:
 translator_url:
 ---
 
-我们很高兴地宣布Kotlin 1.1的第二个里程碑版本。这个版本带来了一个期待已久的新语言功能，在lambdas </strong>中进行破解，以及1.1-M1中引入的功能的许多改进，包括类型别名，协程和绑定引用。新版本还包括Kotlin 1.0.4和1.0.5-eap-66中引入的所有工具功能，并且与IntelliJ IDEA 2016.3 EAP和Android Studio 2.2完全兼容。
-与Kotlin 1.1-M01一样，我们为新的语言和库功能提供<strong>无后向兼容性保证</strong>。在1.1版本的里程碑版本中引入的内容在最终1.1版本之前是<strong>可能会更改</strong>。
+我们很高兴地宣布Kotlin 1.1的第二个里程碑版本。这个版本带来了一个期待已久的新语言功能，在lambdas**中进行破解，以及1.1-M1中引入的功能的许多改进，包括类型别名，协程和绑定引用。新版本还包括Kotlin 1.0.4和1.0.5-eap-66中引入的所有工具功能，并且与IntelliJ IDEA 2016.3 EAP和Android Studio 2.2完全兼容。
+与Kotlin 1.1-M01一样，我们为新的语言和库功能提供**无后向兼容性保证**。在1.1版本的里程碑版本中引入的内容在最终1.1版本之前是**可能会更改**。
 再次：请分享您关于新语言功能或您可能遇到的任何问题的反馈，通过此版本 [YouTrack](https://youtrack.jetbrains.com/issues/KT) ， [论坛](http://discuss.kotlinlang.org) 和 [松弛](https://kotlinlang.slack.com) 。
 1.1-M02的完整更新日期可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M2/ChangeLog.md) 。
 
@@ -25,7 +25,7 @@ translator_url:
 
 ## 兰布达的破坏
 
-Kotlin 1.0支持 [解构声明](https://kotlinlang.org/docs/reference/multi-declarations.html) - 一个允许您“解包”复合值（如数据类）并将其组件分配给多个不同变量的功能。 Kotlin 1.1将其扩展为<strong> lambda参数</strong>，让您解压缩传递给lambda的复合变量，并以不同的名称访问其组件。例如，您可以使用它来遍历对列表：
+Kotlin 1.0支持 [解构声明](https://kotlinlang.org/docs/reference/multi-declarations.html) - 一个允许您“解包”复合值（如数据类）并将其组件分配给多个不同变量的功能。 Kotlin 1.1将其扩展为**lambda参数**，让您解压缩传递给lambda的复合变量，并以不同的名称访问其组件。例如，您可以使用它来遍历对列表：
 
 {% raw %}
 <p></p>
@@ -60,13 +60,13 @@ IntelliJ IDEA插件已经扩展到支持新的1.1语言功能，新的重构“�
 从这个版本开始，Kotlin支持JSR-223（`javax.script` API），允许您从应用程序轻松运行Kotlin脚本，并使用Kotlin作为嵌入式脚本语言。它还继续支持在Gradle构建文件中支持Kotlin脚本的工作。
 ## JavaScript
 
-1.1-M02中的JavaScript支持已经扩展到支持<strong>类型别名</strong>和<strong>类文字</strong>（`Foo :: class`）。
+1.1-M02中的JavaScript支持已经扩展到支持**类型别名**和**类文字**（`Foo :: class`）。
 除此之外，我们正在努力在多平台项目中提供更多的Kotlin API。为此，我们在`kotlin`包中定义了所有标准异常类。当定位到JVM时，Kotlin异常被定义为相应Java异常的类型别名，JS后端提供了其完整的实现。我们还为标准集合类提供了一个完整的Kotlin实现，现在用于JS项目。 （Kotlin在JVM上仍然使用标准的Java集合类。）
 ## 如何尝试
 
-<strong>在Maven / Gradle中：</strong>将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用1.1-M02作为编译器和标准库的版本号。
-<strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
-<strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表将编译器版本更改为1.1-M02。
-<strong>使用SDKMan </strong>。运行`sdk install kotlin 1.1-M02`。
+**在Maven / Gradle中：**将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用1.1-M02作为编译器和标准库的版本号。
+**在IntelliJ IDEA中：**转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
+**<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。使用右下角的下拉列表将编译器版本更改为1.1-M02。
+**使用SDKMan**。运行`sdk install kotlin 1.1-M02`。
 如果你正在使用 [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) 图书馆请使用更新版本的0.1-alpha-2，它几乎相同，但是它与1.1-M02编译器重新编译。你可以跟随更新 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。
 有一个漂亮的Kotlin！

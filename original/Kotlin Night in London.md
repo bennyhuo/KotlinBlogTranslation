@@ -15,7 +15,7 @@ translator_url:
 ---
 
 We’re holding another [Kotlin Night](https://info.jetbrains.com/Kotlin-Night-London.html) , but this time in London. We’ve brought together members of the community that have been and are currently using Kotlin in production, to come and speak to us about their experiences. As well as share some tips and tricks.
-In collaboration with Trifork and GOTO London 2016, we’re holding this free event on the <strong>12th of October 2016</strong> at the CodeNode venue. We’ll have talks, chats and drinks.<br/>
+In collaboration with Trifork and GOTO London 2016, we’re holding this free event on the **12th of October 2016** at the CodeNode venue. We’ll have talks, chats and drinks.<br/>
 
 Given spaces are limited, we encourage you to [sign up sooner rather than later](https://info.jetbrains.com/Kotlin-Night-London.html) !
 
@@ -29,11 +29,11 @@ Given spaces are limited, we encourage you to [sign up sooner rather than later]
 {% endraw %}
 
 For details on talks, please check the [event page](https://info.jetbrains.com/Kotlin-Night-London.html) .
-17:30 – 18:00 – <strong>Registration and Welcome</strong>
-18:00 – 18:45 –<strong> 10 Things I’m loving about Kotlin. </strong><em>Graham Tackley. Kaleida</em>
-18:45 – 19:30 –  <strong>Expressive Kotlin. </strong><em>Nat Pryce and Duncan McGregor, Springer Nature</em>
-19:30 – 20:00 – <strong>Snacks and Drinks</strong>
-20:00 – 20:45 – <strong>Using Sealed Classes to build Concursus API. </strong><em>Dominic Fox, OpenCredo</em>
+17:30 – 18:00 – **Registration and Welcome**
+18:00 – 18:45 –** 10 Things I’m loving about Kotlin. **<em>Graham Tackley. Kaleida</em>
+18:45 – 19:30 –  **Expressive Kotlin. **<em>Nat Pryce and Duncan McGregor, Springer Nature</em>
+19:30 – 20:00 – **Snacks and Drinks**
+20:00 – 20:45 – **Using Sealed Classes to build Concursus API. **<em>Dominic Fox, OpenCredo</em>
 
 {% raw %}
 <p> </p>

@@ -66,20 +66,20 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        <strong>classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.6.+'</strong>
+        **classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.6.+'**
         classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
  
 apply plugin: 'android'
-<strong>apply plugin: 'kotlin-android'</strong>
+**apply plugin: 'kotlin-android'**
  
 repositories {
     mavenCentral()
 }
  
 dependencies {
-    <strong>compile 'org.jetbrains.kotlin:kotlin-stdlib:0.6.+'</strong>
+    **compile 'org.jetbrains.kotlin:kotlin-stdlib:0.6.+'**
 }
  
 android {
@@ -90,9 +90,9 @@ android {
         minSdkVersion 7
         targetSdkVersion 16
     }
-    <strong>sourceSets {
+    **sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
-    }</strong>
+    }**
 }
 ```
 
@@ -100,7 +100,7 @@ android {
 <p></p>
 {% endraw %}
 
-<strong>更新</strong>：将“<strong> 0.6。+ </strong>”替换为已安装的Kotlin插件版本。
+**更新**：将“**0.6。+**”替换为已安装的Kotlin插件版本。
 相对于Kotlin的部分以粗体突出显示：
 
 * 选择Gradle的Kotlin插件和我们正在使用的版本。 M6版本对应于0.6.69。

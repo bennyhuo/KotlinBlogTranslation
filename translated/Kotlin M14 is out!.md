@@ -24,7 +24,7 @@ translator_url:
 ## 语言
 
 我们正在用语言变化来包装，所以在M14中没有什么真正戏剧性的。
-<strong>注意</strong>：我们正在删除以前不推荐使用的功能和功能，因此请确保在安装M14之前运行代码清理</em>。
+**注意**：我们正在删除以前不推荐使用的功能和功能，因此请确保在安装M14之前运行代码清理</em>。
 ### 背景领域
 
 旧的`$ propertyName`语法已弃用。要访问getter / setter内的后备字段，请使用`字段`合成变量：
@@ -130,7 +130,7 @@ public final class FooKt {
 ### 从旧的“包装外观”迁移
 
 当我们转向了 [新的类文件布局](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) ，现在是退休老人的时候了。由于M14旧程序包外观类（例如`FooPackage`）已被弃用，IDE可帮助您通过代码清理</em>将Java代码迁移到新的方案。
-<strong>注意</strong>：包立面将很快丢弃，因此请务必迁移您的代码。
+**注意**：包立面将很快丢弃，因此请务必迁移您的代码。
 标准库（以前的`kotlin.KotlinPackage`类）也被迁移到新的方案中：见下文。
 ### 其他语言变化
 

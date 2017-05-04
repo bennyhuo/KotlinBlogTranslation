@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-We are happy to present Kotlin <strong>Beta Candidate</strong>. An official 1.0 Beta will be out soon. By now, the binary format is finalized, no major language changes are planned, and only a few changes in the standard library are coming.
+We are happy to present Kotlin **Beta Candidate**. An official 1.0 Beta will be out soon. By now, the binary format is finalized, no major language changes are planned, and only a few changes in the standard library are coming.
 In this post we describe the changes since M14, including
 
 * imports from objects,
@@ -48,7 +48,7 @@ fun testInfix() = Foo() bar Foo()
 <p></p>
 {% endraw %}
 
-Now, we have relaxed this requirement for Java functions: <strong>any Java function with a suitable signature can be used as an operator</strong>, but not as infix.
+Now, we have relaxed this requirement for Java functions: **any Java function with a suitable signature can be used as an operator**, but not as infix.
 Some operator names have been changed to avoid ambiguities:
 
 * we should now use unaryPlus and unaryMinus instead of just plus and minus for unary functions, i.e. -Foo() is now Foo().unaryMinus();
@@ -171,7 +171,7 @@ fun bar(vararg args: String) {
 
 The semantics of the <em>spread operator</em> have been fixed so that it always guarantees that an array that `foo` sees will not be modified or observed by the “outside world”. We can assume that a defensive copy is made every time the spread operator is used (in fact, some optimizations may be implemented later to reduce memory traffic).
 As a result, authors of Kotlin libraries can rely on the vararg arrays being safe to store without defensive copying.<br/>
-<strong>NOTE</strong>: This guarantee is not fulfilled when Kotlin functions are called from java, because no spread operators are used there. This means that if a function is intended to be used from both Java and Kotlin, its contract for Java clients should include a note that the array should be copied before being passed to it.
+**NOTE**: This guarantee is not fulfilled when Kotlin functions are called from java, because no spread operators are used there. This means that if a function is intended to be used from both Java and Kotlin, its contract for Java clients should include a note that the array should be copied before being passed to it.
 ### “sparam” annotation target has been renamed to “setparam”
 
 To annotate a setter parameter of a property, use `setparam` use-site target instead of `sparam`:
@@ -212,7 +212,7 @@ So, we introduced the `@UnsafeVariance` annotation on types for this purpose. It
 ### Miscellaneous checks and restrictions
 
 Many checks were added, some of these restrictions may be lifted later.
-<strong>Type parameter declarations</strong>. We decided to restrict the syntax of type parameter declarations so that all such declarations are consistent, so
+**Type parameter declarations**. We decided to restrict the syntax of type parameter declarations so that all such declarations are consistent, so
 
 * fun foo<T>() is deprecated in favor of fun <T> foo():
 * All constraints on type parameters should occur either in “where” or inside “<…>”:
@@ -233,7 +233,7 @@ fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
 <p></p>
 {% endraw %}
 
-<strong>Dynamic type checks for arrays</strong>. Array element types are reified in Java, but their Kotlin-specific properties, like nullability, is not. So, we removed the special treatment of arrays that allowed checks like `a is Array&lt;String&gt;`, and now arrays work as all other generic classes: we can check for `a is Array&lt;*&gt;` and a cast like `a as Array&lt;String&gt;` is marked as unchecked. We added a JVM-specific function `isArrayOf&lt;T&gt;()` that check that a given array can contain elements of type `T` <em>in Java</em>:
+**Dynamic type checks for arrays**. Array element types are reified in Java, but their Kotlin-specific properties, like nullability, is not. So, we removed the special treatment of arrays that allowed checks like `a is Array&lt;String&gt;`, and now arrays work as all other generic classes: we can check for `a is Array&lt;*&gt;` and a cast like `a as Array&lt;String&gt;` is marked as unchecked. We added a JVM-specific function `isArrayOf&lt;T&gt;()` that check that a given array can contain elements of type `T` <em>in Java</em>:
 
 {% raw %}
 <p></p>
@@ -251,7 +251,7 @@ fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
 <p></p>
 {% endraw %}
 
-<strong>Delegated properties</strong>. The conventions for delegated properties now use `KProperty&lt;*&gt;` instead of `PropertyMetadata` in `getValue` and `setValue`:
+**Delegated properties**. The conventions for delegated properties now use `KProperty&lt;*&gt;` instead of `PropertyMetadata` in `getValue` and `setValue`:
 
 {% raw %}
 <p></p>
@@ -268,8 +268,8 @@ fun Foo.getValue(thisRef: Bar, property: KProperty<*>): Baz? {
 {% endraw %}
 
 <em>Code cleanup</em> will help you migrate.
-<strong>Callable references</strong>. Some usages of `::` are forbidden for now, to be enabled later when we implement bound references. Most notably, `::foo` should not be used for now when `foo` is a member of a class. Only `MyClass::foo` should be used. References to members of objects are also unsupported temporarily (they will work as bound references too). We can use lambdas as a workaround for the time being.
-<strong>If-expressions</strong>. We unified the semantics of `if` and `when` by requiring an `else` when `if` is used as an expression:
+**Callable references**. Some usages of `::` are forbidden for now, to be enabled later when we implement bound references. Most notably, `::foo` should not be used for now when `foo` is a member of a class. Only `MyClass::foo` should be used. References to members of objects are also unsupported temporarily (they will work as bound references too). We can use lambdas as a workaround for the time being.
+**If-expressions**. We unified the semantics of `if` and `when` by requiring an `else` when `if` is used as an expression:
 
 {% raw %}
 <p></p>
@@ -283,7 +283,7 @@ val foo = if (cond) bar // ERROR: else is required
 <p></p>
 {% endraw %}
 
-<strong>Nothing-returning functions</strong>. When a function is known to throw an exception or loop forever, it’s return type may be `Nothing`, which means that it never returns normally. To make the tooling smarter, we require that such functions always have their return type specified explicitly:
+**Nothing-returning functions**. When a function is known to throw an exception or loop forever, it’s return type may be `Nothing`, which means that it never returns normally. To make the tooling smarter, we require that such functions always have their return type specified explicitly:
 
 {% raw %}
 <p></p>
@@ -302,7 +302,7 @@ fun goo(): Goo { throw MyExcepion() } // OK
 {% endraw %}
 
 This is now a warning that will be promoted to error after we migrate our code with <em>Code cleanup</em>
-<strong>Visibility checks</strong> were restricted so that, for example, a public declaration can not expose a local, private or internal type. Access to internal declarations is checked in the compiler as well as in the IDE;
+**Visibility checks** were restricted so that, for example, a public declaration can not expose a local, private or internal type. Access to internal declarations is checked in the compiler as well as in the IDE;
 See more [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-1038) .
 ## Collections
 

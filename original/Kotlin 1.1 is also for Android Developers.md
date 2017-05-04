@@ -18,7 +18,7 @@ We’re all really excited about the release of Kotlin 1.1. The new features thi
 But these new features, such as [coroutines](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) , or [type aliases](https://github.com/Kotlin/KEEP/blob/master/proposals/type-aliases.md) (to put a couple of examples), look like science fiction for Android developers.
 We’re still stuck in an ancient Java 6 with little improvements that forces us to develop in ways almost forgotten for most developers in any other platforms.
 So a sane question would be: has the Kotlin team been able to keep compatibility to Java 6 while bringing all these new features alive? And the answer is: of course!
-<strong>All the new stuff is still available for Java 6 and, as an extension, for Android developers.</strong> And today, I want to show you some of them, and how they can make your life even easier when developing Android Apps.
+**All the new stuff is still available for Java 6 and, as an extension, for Android developers.** And today, I want to show you some of them, and how they can make your life even easier when developing Android Apps.
 
 {% raw %}
 <p><span id="more-4826"></span></p>
@@ -95,7 +95,7 @@ sealed class UiOp {
 <p></p>
 {% endraw %}
 
-And now, <strong>as sealed classes can be defined out of the parent class</strong>, this could also be like this:
+And now, **as sealed classes can be defined out of the parent class**, this could also be like this:
 
 {% raw %}
 <p></p>
@@ -151,7 +151,7 @@ This is also really helpful for pairs or key/value sets in a map, for instance.
 # Local delegated properties
 
 Delegated properties have proven to be really useful to give extra abilities to the properties in our classes.
-For instance, one of the most useful ones is the <strong>lazy delegation</strong>, which defers the execution of the assignment until the property is used for the first time.
+For instance, one of the most useful ones is the **lazy delegation**, which defers the execution of the assignment until the property is used for the first time.
 But lazy would also be really helpful too on variables, and Kotlin was lacking this feature.
 Now, with local delegated properties, we can do it:
 
@@ -238,11 +238,11 @@ var items: List<Item> by Delegates.observable(emptyList()) {
 It’s not only that you are defining less variables, but also that the code becomes more readable. Now you don’t need to detect whether those arguments are used or not. It’s crystal clear.
 # Coroutines
 
-Coroutines are the most exciting news in Kotlin 1.1. Though finally left as “experimental” in this release, <strong>they are fully functional and you can start using them on your projects as of today</strong>.
+Coroutines are the most exciting news in Kotlin 1.1. Though finally left as “experimental” in this release, **they are fully functional and you can start using them on your projects as of today**.
 Coroutines will let you write asynchronous code in a synchronous way, allowing to suspend the execution at some point and wait for a result, all while writing sequential code.
-One thing you may already know about coroutines in Kotlin is that they are not a library or a specific implementation, <strong>but a language feature that allows creating libraries over it</strong>.
+One thing you may already know about coroutines in Kotlin is that they are not a library or a specific implementation, **but a language feature that allows creating libraries over it**.
 So, though the resulting code may look similar, it’s important to know what’s the “gear” that is creating those secondary threads and returning to the main thread, which is quite important in Android.
-Luckily, the Kotlin community moves fast and there are already <strong>several libraries that bring the power of coroutines to Android</strong>. Here you have some examples:
+Luckily, the Kotlin community moves fast and there are already **several libraries that bring the power of coroutines to Android**. Here you have some examples:
 The first ones you may want to take a look are the official ones provided by Jetbrains:
 
 * kotlinx-coroutines-android, which provides a coroutines implementation ready to be used on Android.
@@ -259,7 +259,7 @@ I urge you not only to use them, but also to check how they are implemented. Tha
 
 There are many more improvements on this release, but I wanted to highlight some that are more focused to Android development.
 The first one of them is that now you can enable the support with the Jack compiler by using: `jackOptions { true }`. Google has announced they are deprecating Jack toolchain, but if you were using it for Java 8, this may be helpful for you until the final version of Android Studio 2.4 is released.
-Also, there’s <strong>a new intention that will use</strong> `@JvmOverloads` <strong>to implement the constructors of a custom view</strong>, which literally allows to implement custom view constructors in one line (well, one really long line) by using one constructor and default values for arguments:
+Also, there’s **a new intention that will use** `@JvmOverloads` **to implement the constructors of a custom view**, which literally allows to implement custom view constructors in one line (well, one really long line) by using one constructor and default values for arguments:
 
 {% raw %}
 <p></p>
@@ -281,4 +281,4 @@ class CustomView @JvmOverloads constructor(
 
 Kotlin 1.1 has brought a good bunch of new awesome features that make the question of why we still use Java even more inevitable.
 The power that Kotlin brings to Android developers is out of question, and you can start writing your Android apps in Kotlin from today.
-And if you want to learn Kotlin for Android from scratch while developing an App, <strong>you might find <a href="https://antonioleiva.com/kotlin-android-developers-book/">Kotlin for Android Developers</a> book of your interest</strong>.
+And if you want to learn Kotlin for Android from scratch while developing an App, **you might find <a href="https://antonioleiva.com/kotlin-android-developers-book/">Kotlin for Android Developers</a> book of your interest**.

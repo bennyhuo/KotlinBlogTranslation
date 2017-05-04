@@ -29,7 +29,7 @@ translator_url:
 ### 注释：新语法
 
 和我们一样 [前面提到过](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) ，我们决定为未来更有效的使用预留方括号，并使Java用户的注释语法更加熟悉。所以，从M12开始，我们写`@Foo（args）`而不是`[Foo（args）]`。更多细节可以找到 [这里](http://kotlinlang.org/docs/reference/annotations.html) （甚至更多 - 在 [规格文件](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ）。
-请注意，在大多数情况下，`@`不需要</strong>。通常我们编写注释而不进行任何转义：
+请注意，在大多数情况下，`@`不需要**。通常我们编写注释而不进行任何转义：
 
 {% raw %}
 <p></p>
@@ -158,7 +158,7 @@ class PrivateConstructor private constructor (val x: Int) {
 <p></p>
 {% endraw %}
 
-只有当我们想要注释</strong>主要构造函数或添加修饰符时，完整的表单才是<strong>。在大多数情况下，旧的熟悉语法仍然有效：
+只有当我们想要注释**主要构造函数或添加修饰符时，完整的表单才是**。在大多数情况下，旧的熟悉语法仍然有效：
 
 {% raw %}
 <p></p>
@@ -416,19 +416,19 @@ M12为标准库添加了新功能：
 完整的更改列表可用 [这里](https://quip.com/Cy9IAkZtvmjm) 。
 ## IntelliJ IDEA插件
 
-Kotlin IDE现在支持标准的<strong>引用参数</strong>重构，将将函数内选择的表达式转换为参数：
+Kotlin IDE现在支持标准的**引用参数**重构，将将函数内选择的表达式转换为参数：
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/05/parameter.png?fit=640%2C120&amp;ssl=1"/></p>
 {% endraw %}
 
-另外，<strong>引入Lambda参数</strong>可用于提取一段代码作为函数值：
+另外，**引入Lambda参数**可用于提取一段代码作为函数值：
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/05/lambda.png?fit=640%2C120&amp;ssl=1"/></p>
 {% endraw %}
 
-<strong>重命名</strong>还可以重命名相关声明（变量，子类等）：
+**重命名**还可以重命名相关声明（变量，子类等）：
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/05/rename.png?fit=640%2C85&amp;ssl=1"/></p>

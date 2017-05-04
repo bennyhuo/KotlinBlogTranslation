@@ -107,18 +107,18 @@ public static void main(String[] args) {
 
 ## Package-parts and facades
 
-In fact, it’s all a little trickier: top-level functions and properties become statics in Java classes, and we can access them through a class named after the package, yes, but that class is only a <strong>facade</strong>. The actual layout of the code is as follows:
+In fact, it’s all a little trickier: top-level functions and properties become statics in Java classes, and we can access them through a class named after the package, yes, but that class is only a **facade**. The actual layout of the code is as follows:
 
 {% raw %}
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/06/PackageFacade.png"><img alt="PackageFacade" class="alignleft size-full wp-image-2400" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/06/PackageFacade.png?resize=640%2C309&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Every source file is compiled into a <em>separate class file</em>. Even when they are in the same package. Those per-source-file classes are called <strong>package-parts</strong>. They contain all the actual byte code of methods and declare all the fields. So, <em>all implementation resides in package-parts</em>.
-Then, a single <strong>package-facade</strong> class is generated that declares all the top-level functions and properties (again), and delegates implementations to the package-parts.
+Every source file is compiled into a <em>separate class file</em>. Even when they are in the same package. Those per-source-file classes are called **package-parts**. They contain all the actual byte code of methods and declare all the fields. So, <em>all implementation resides in package-parts</em>.
+Then, a single **package-facade** class is generated that declares all the top-level functions and properties (again), and delegates implementations to the package-parts.
 ## Why
 
-<strong>Why have a single facade</strong>. This is something we are going to change, but here’s the reasoning we followed a few years ago when we made this decision: having a single entry point class for Java clients seems to be as simple as it gets. Also, moving functions from one file to another doesn’t break anything since we refer to them only through the facade, don’t we? <strong>Win-win, isn’t it?</strong> Well, not quite in fact, but we’ll get to it later, and for now will just explain the rest of the design taking the need for a facade for granted.
-<strong>Why package-parts</strong>. The main reason is initialization order for static fields. Indeed, consider these two files:
+**Why have a single facade**. This is something we are going to change, but here’s the reasoning we followed a few years ago when we made this decision: having a single entry point class for Java clients seems to be as simple as it gets. Also, moving functions from one file to another doesn’t break anything since we refer to them only through the facade, don’t we? **Win-win, isn’t it?** Well, not quite in fact, but we’ll get to it later, and for now will just explain the rest of the design taking the need for a facade for granted.
+**Why package-parts**. The main reason is initialization order for static fields. Indeed, consider these two files:
 <em>file1.kt</em>:
 
 {% raw %}
@@ -164,8 +164,8 @@ As you might have noticed in the picture above, package-parts tend to have weird
 If you ever saw an exception stack trace from a Kotlin program, you probably noticed those hashes, they are just ugly. The bigger problem is that they may change when the project is built <em>on another machine</em> (which is not unlikely to have the source tree located in another directory). This may cause trouble, and it did, a few times.
 ## Package-facade names, again
 
-Now it’s time to talk about REAL trouble that keeps biting us and our users more or less all the time. Let’s face it: <strong>package-facade names do clash</strong>.
-How it usually happens: you have two modules, `a` and `b`, and in `a` you have a top-level function declared inside the `foo.bar` package. Everything is fine until you add another top-level function into the same `foo.bar` package <strong>in another module</strong>, `b`. As soon as you do that, both modules generate class files with the same fully-qualified name: `foo.bar.BarPackage`, and there’s no chance for the runtime to distinguish them. And you get a `NoSuchMethodError`, because only one of the two facades is loaded at run-time, and the function from the other one is not there.
+Now it’s time to talk about REAL trouble that keeps biting us and our users more or less all the time. Let’s face it: **package-facade names do clash**.
+How it usually happens: you have two modules, `a` and `b`, and in `a` you have a top-level function declared inside the `foo.bar` package. Everything is fine until you add another top-level function into the same `foo.bar` package **in another module**, `b`. As soon as you do that, both modules generate class files with the same fully-qualified name: `foo.bar.BarPackage`, and there’s no chance for the runtime to distinguish them. And you get a `NoSuchMethodError`, because only one of the two facades is loaded at run-time, and the function from the other one is not there.
 (Compilation may break too, but it is not that bad.)
 ## The new design
 
@@ -189,7 +189,7 @@ Consequently:
 * you can refer to top-level functions from Java by the file name (File1.foo()),
 * renaming a file requires the clients to be recompiled, unless you have customized the class name with the annotation.
 
-<strong>Example 1</strong>. By default, each file is compiled to a class named after it:
+**Example 1**. By default, each file is compiled to a class named after it:
 <em>file1.kt</em>:
 
 {% raw %}
@@ -224,7 +224,7 @@ public class File1 {
 <p></p>
 {% endraw %}
 
-<strong>Example 2</strong>. We can change the name of the class by providing a file-level annotation:
+**Example 2**. We can change the name of the class by providing a file-level annotation:
 
 {% raw %}
 <p></p>
@@ -260,7 +260,7 @@ public class Utils {
 {% endraw %}
 
 regardless of the source file name.
-<strong>Example 3</strong>. We can hide many package-parts generated for individual files behind a facade by specifying the same JVM name for many files:
+**Example 3**. We can hide many package-parts generated for individual files behind a facade by specifying the same JVM name for many files:
 <em>file1.kt</em>:
 
 {% raw %}
@@ -321,4 +321,4 @@ When we had a single package-facade, we could look into it and find all members 
 
 The new scheme liberates us from the issues of the old one. Class name clashes are still possible, but no more probable than they are for normal classes.
 This blog post describes the design we are going to implement soon.<br/>
-<strong>If you have feedback, it is very welcome!</strong>
+**If you have feedback, it is very welcome!**

@@ -58,7 +58,7 @@ When we write Kotlin code,the compiler will generate some JavaScript which needs
 {% endraw %}
 
 During development we need to have an up to date version of these files so ideally we’d like to have these located in our <em>web/js/app </em>folder. We can do this in many ways, either using [IntelliJ IDEA artifacts](http://www.jetbrains.com/idea/webhelp/artifact.html) or Maven/Gradle. In our case we’re just going to use an artifact. We can set one up to copy the corresponding files to the desired output location and additional also copy the <em>kotlin.js</em> file that was originally copied to the <em>script </em>folder to the same location*.
-<strong><em><span style="font-size: x-small;">*This is a one-time operation so a better alternative is to define the output location of this file directly to our required output folder when setting up the project. We have done it this way to explain things step by step. </span></em></strong>
+**<em><span style="font-size: x-small;">*This is a one-time operation so a better alternative is to define the output location of this file directly to our required output folder when setting up the project. We have done it this way to explain things step by step. </span></em>**
 ## Interacting with DOM Elements
 
 Now that we have the project layout ready, let’s start writing some code. The most basic thing we can do is manipulate some DOM elements. We can create a simple HTML page (named <em>index.html</em>) and place it under the <em>web </em>folder
@@ -92,7 +92,7 @@ What if we have some code in Kotlin we want to use from JavaScript? For instance
 {% endraw %}
 
 This is placed inside the same module as the application and we can call it referencing it by the Kotlin module name*
-<strong><span style="color: #000000;"><em>*This API is not final and will most likely change in the future, and probably will be much more compact.</em></span></strong>
+**<span style="color: #000000;"><em>*This API is not final and will most likely change in the future, and probably will be much more compact.</em></span>**
 # Next Steps
 
 That’s not all that is possible with Kotlin. One thing we haven’t mentioned is the ability to call JavaScript code from within Kotlin and that is something we’ll be covering in a another post, as this one has already become too long!

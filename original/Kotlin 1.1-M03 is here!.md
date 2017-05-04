@@ -15,7 +15,7 @@ translator_url:
 ---
 
 We are pleased to announce the third milestone of the upcoming Kotlin 1.1. This release brings new language features as well as improvements and fixes in the JavaScript backend, compiler and IDEA plugin. The new release also includes all tooling features introduced in Kotlin 1.0.5, and is compatible with IntelliJ IDEA 2016.3 EAP and Android Studio 2.2 and 2.3.
-As with other milestone releases, we give <b>no backwards compatibility guarantees</b> for new language and library features. Anything introduced in milestone releases of 1.1 is <b>subject to change </b>before the final 1.1 release.
+As with other milestone releases, we give **no backwards compatibility guarantees** for new language and library features. Anything introduced in milestone releases of 1.1 is **subject to change**before the final 1.1 release.
 Please do share your feedback regarding the new features or any problems that you may run into with this release, via [YouTrack](https://youtrack.jetbrains.com/issues/KT) , [forums](https://discuss.kotlinlang.org) and [Slack](http://kotlinlang.slack.com/) .
 The full changelog for 1.1-M03 is available [here](https://github.com/JetBrains/kotlin/blob/1.1-M03/ChangeLog.md) .
 
@@ -147,6 +147,6 @@ JavaScript backend now supports the following Kotlin language features on par wi
 JavaScript backend now generates more statically checkable code, which is friendlier to JS code processing tools, like minifiers, optimisers, linters, etc.
 ## How to Try It
 
-<b>In Maven/Gradle:</b> Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M03 as the version number for the compiler and the standard library.
-<b>In IntelliJ IDEA:</b> Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
+**In Maven/Gradle:** Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M03 as the version number for the compiler and the standard library.
+**In IntelliJ IDEA:** Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
 Drive to Kotlin!

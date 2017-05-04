@@ -52,7 +52,7 @@ To enable experimental kapt, just add the following line to your `build.gradle`:
 `apply plugin: 'kotlin-kapt'`
 ## All-open compiler plugin
 
-The <strong>all-open</strong> compiler plugin makes classes annotated with a specific annotation and their members open without the explicit `open` keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
+The **all-open** compiler plugin makes classes annotated with a specific annotation and their members open without the explicit `open` keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
 We provide all-open plugin support both for Gradle and Maven, as well as the IDE integration.
 ### How to use all-open with Gradle
 
@@ -160,7 +160,7 @@ Of course, you can use both `kotlin-allopen` and `kotlin-spring` in the same pro
 
 ## No-arg compiler plugin
 
-The <b>no-arg</b> compiler plugin generates an additional zero-argument constructor for classes with a specific annotation. The generated constructor is synthetic so it can’t be directly called from Java or Kotlin, but it can be called using reflection. You can see motivating discussion [here](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) .
+The **no-arg** compiler plugin generates an additional zero-argument constructor for classes with a specific annotation. The generated constructor is synthetic so it can’t be directly called from Java or Kotlin, but it can be called using reflection. You can see motivating discussion [here](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) .
 ### How to use no-arg in Gradle
 
 The usage is pretty similar to all-open.

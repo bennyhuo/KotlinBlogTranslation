@@ -17,7 +17,7 @@ translator_url:
 虽然Kotlin 1.0.X版本不断提供增量更新和工具功能，但我们正在研究Kotlin 1.1中的新语言功能。今天，我们展示了1.1的第一个预览版本，它远离Beta，但勇敢和好奇的人可以玩新的令人兴奋的事情（希望能给我们提供宝贵的反馈）。
 ## 兼容性
 
-这不是Kotlin的稳定版本，并且<strong>不兼容性保证</strong>在这里给出：在1.1的未来预览中，语法，API，命令行开关和任何其他可能会更改。如果您需要Kotlin的稳定版本，请留在1.0.X，直至另行通知。
+这不是Kotlin的稳定版本，并且**不兼容性保证**在这里给出：在1.1的未来预览中，语法，API，命令行开关和任何其他可能会更改。如果您需要Kotlin的稳定版本，请留在1.0.X，直至另行通知。
 ## 反馈
 
 这种暂时缺乏保证的上升空间是我们可以立即使用您提供给我们的所有反馈！告诉我们你认为是什么的最好方式 [保持](https://github.com/Kotlin/KEEP) 请留意您对以下提案中提出的问题的意见。 Kotlin 1.1 M01中的实现是KEEP中描述的功能的原型。
@@ -68,7 +68,7 @@ typealias Action<T> = (T) -> Unit
 <p></p>
 {% endraw %}
 
-这意味着我们可以与`（T） - >互换使用`Action＆lt; T＆gt;`单位`，即它是真实的<strong>别名</strong>。类型别名可用于缩写代码中多个位置使用的较长类型：
+这意味着我们可以与`（T） - >互换使用`Action＆lt; T＆gt;`单位`，即它是真实的**别名**。类型别名可用于缩写代码中多个位置使用的较长类型：
 
 * 具有复杂签名的函数类型：UserAction =（用户，上下文） - > ActionResponse，
 * 复杂的通用类型：Multimap <K，V> = Map <K，List <V >>
@@ -145,17 +145,17 @@ DSL和脚本也将受益于此功能。
 我们非常感谢GitHub用户 [dotlin](https://github.com/dotlin) ， [Valdemar0204](https://github.com/Valdemar0204) ， [ensirius](https://github.com/ensirius) 和 [地理位置](https://github.com/geoand) 为他们对这个版本的贡献！
 ## 如何尝试
 
-<strong>在Maven / Gradle </strong>中。加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) （请参阅<em>“设置我！”</em>下的说明）作为项目的存储库。使用版本1.1-M01作为您的Kotlin文物。
-<strong>在IDE </strong>中。如果你正在运行 [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) ，请转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在更新频道下拉列表中选择“Early Access Preview 1.1”
+**在Maven / Gradle**中。加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) （请参阅<em>“设置我！”</em>下的说明）作为项目的存储库。使用版本1.1-M01作为您的Kotlin文物。
+**在IDE**中。如果你正在运行 [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) ，请转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在更新频道下拉列表中选择“Early Access Preview 1.1”
 
 {% raw %}
 <p><img alt="Configure-Plugin-Updates" class="aligncenter size-small wp-image-4085" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Configure-Plugin-Updates.png?w=400&amp;ssl=1"/></p>
 {% endraw %}
 
 在同一对话框中按<em>检查更新</em>，当新版本显示时，<em>安装</em>。
-<strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表更改编译器版本：<br/>
+**<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。使用右下角的下拉列表更改编译器版本：<br/>
 “img alt =”屏幕截图2016-07-14在20.23.48“class =”alignnone size-full wp-image-4121“data-recalc-dims =”1“src =”https：//i0.wp。 com / blog.jetbrains.com / kotlin / files / 2016/07 / Screen-Shot-2016-07-14-at-20.23.48.png？resize = 640％2C549＆amp; ssl = 1“/>
-<strong>使用SDKMan </strong>。运行`sdk install kotlin 1.1-M01`。
+**使用SDKMan**。运行`sdk install kotlin 1.1-M01`。
 您的反馈非常受欢迎，一如既往。
 ### 有一个漂亮的Kotlin！
 

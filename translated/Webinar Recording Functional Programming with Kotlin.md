@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-我们的十月二十二日网络研讨会<strong>功能编程与Kotlin </strong>的录音现已上线 [JetBrainsTV YouTube频道](https://youtu.be/AhA-Q7MOre0) 。
+我们的十月二十二日网络研讨会**功能编程与Kotlin**的录音现已上线 [JetBrainsTV YouTube频道](https://youtu.be/AhA-Q7MOre0) 。
 在这个演讲中，Mike Hearn通过实例提供了Kotlin编程的简要介绍：在打字时创建一个带有自动填充建议的文本框。演示项目可用 [GitHub](https://github.com/mikehearn/KotlinFPWebinar) 。
 涵盖的主题包括：
 

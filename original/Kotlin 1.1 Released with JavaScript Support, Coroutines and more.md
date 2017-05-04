@@ -68,7 +68,7 @@ launch(UI) {
 {% endraw %}
 
 Read more in our  [docs](http://kotlinlang.org/docs/reference/coroutines.html) .
-<strong>An important note</strong>. With all the benefits that they bring, Kotlin coroutines are a fairly new design that needs extensive battle-testing before we can be sure it’s 100% right and complete. This is why we will release it under an “experimental”  [opt-in flag](http://kotlinlang.org/docs/diagnostics/experimental-coroutines.html) . We do not expect the language rules to change, but APIs may require some adjustments in Kotlin 1.2.
+**An important note**. With all the benefits that they bring, Kotlin coroutines are a fairly new design that needs extensive battle-testing before we can be sure it’s 100% right and complete. This is why we will release it under an “experimental”  [opt-in flag](http://kotlinlang.org/docs/diagnostics/experimental-coroutines.html) . We do not expect the language rules to change, but APIs may require some adjustments in Kotlin 1.2.
 ## JavaScript support
 
 As mentioned above, all language features in Kotlin 1.1, including coroutines, work on both JVM/Android and JavaScript. (Reflection for JavaScript is not available, but we’re looking into it.) This means that a web application can be written entirely in Kotlin, and we already have some experience doing that inside JetBrains. We will publish tutorials and other materials about this soon.
@@ -112,12 +112,12 @@ Apart from this, our next release will be mostly focused on maintenance, perform
 P.S. Running on multiple platforms is a strategic direction for Kotlin. With 1.1 we can run on servers, desktops, Android devices and browsers, but in the future we are going to compile Kotlin to native code and run on many more platforms (including, for example, iOS and embedded devices). A great team here at JetBrains is working on this project, and we are expecting to show something interesting fairly soon. This does not target any particular release yet, though.
 # Installation instructions
 
-As always, you can <strong>try Kotlin online</strong> at  [try.kotlinlang.org](http://try.kotlinlang.org/) .
-<strong>In Maven/Gradle</strong>: Use `1.1.0` as the version number for the compiler and the standard library. See the docs  [here](http://kotlinlang.org/docs/reference/using-gradle.html) .
-<strong>In IntelliJ IDEA</strong>: 2017.1 has Kotlin 1.1 bundled, in earlier versions Install or update the Kotlin plugin to version 1.1.
-<strong>In Android Studio</strong>: Install or update the plugin through <em>Plugin Manager</em>.
-<strong>In Eclipse</strong>: install the plugin using  [Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) .
-<strong>The command-line compiler</strong> can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1) .
-<strong>Compatibility</strong>. In Kotlin 1.1 the language and the standard library are  [backwards compatible (modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) : if something compiled and ran in 1.0, it will keep working in 1.1. To aid big teams that update gradually, we provide a compiler switch that disables new features.  [Here](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)  is a document covering possible pitfalls.
+As always, you can **try Kotlin online** at  [try.kotlinlang.org](http://try.kotlinlang.org/) .
+**In Maven/Gradle**: Use `1.1.0` as the version number for the compiler and the standard library. See the docs  [here](http://kotlinlang.org/docs/reference/using-gradle.html) .
+**In IntelliJ IDEA**: 2017.1 has Kotlin 1.1 bundled, in earlier versions Install or update the Kotlin plugin to version 1.1.
+**In Android Studio**: Install or update the plugin through <em>Plugin Manager</em>.
+**In Eclipse**: install the plugin using  [Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) .
+**The command-line compiler** can be downloaded from the  [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1) .
+**Compatibility**. In Kotlin 1.1 the language and the standard library are  [backwards compatible (modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) : if something compiled and ran in 1.0, it will keep working in 1.1. To aid big teams that update gradually, we provide a compiler switch that disables new features.  [Here](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)  is a document covering possible pitfalls.
 <em>Have a nice Kotlin!</em>
 P.S. See discussions on  [Reddit](https://www.reddit.com/r/programming/comments/5wvpv8/kotlin_11_released_with_javascript_support/)  and  [Hacker News](https://news.ycombinator.com/item?id=13763483) 

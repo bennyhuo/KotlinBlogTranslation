@@ -138,7 +138,7 @@ class Example(
 <p></p>
 {% endraw %}
 
-<strong>NOTE: this is a breaking change</strong>. Before M13 when we annotated parameters of primary constructors, annotations were written <strong>both</strong> on parameters and fields they are stored in. Now they are only written on one of the following (the first applicable): parameter, property, field. I.e. if the annotation is applicable to both field and parameter, it will only be written on the parameter now. This presents some issues when using Jackson, but there is an easy workaround: use the special [Jackson module for Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) . And the old way didn’t have one.
+**NOTE: this is a breaking change**. Before M13 when we annotated parameters of primary constructors, annotations were written **both** on parameters and fields they are stored in. Now they are only written on one of the following (the first applicable): parameter, property, field. I.e. if the annotation is applicable to both field and parameter, it will only be written on the parameter now. This presents some issues when using Jackson, but there is an easy workaround: use the special [Jackson module for Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) . And the old way didn’t have one.
 Find more information in the [docs](http://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets) .
 ### Visibilities
 
@@ -151,7 +151,7 @@ We have revisited our access modifier/visibility model. From now on:
 
 This may seem controversial that we chose `public` as default visibility. Kotlin being a type-safe language, choosing the safest option, `private`, by default may seem more logical. And we totally realize there are valid arguments in favour of this default. But Kotlin is also a pragmatic language. I’ll try to explain briefly why we believe `public` is the right default.
 In real Java code bases (where public/private decisions are taken explicitly), `public` occurs a lot more often than `private` (2.5 to 5 times more often in the code bases that we examined, [including Kotlin compiler and IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ). This means that we’d make people write `public` all over the place to implement their designs, that would make Kotlin a lot more ceremonial, and we’d lose some of the precious ground won from Java in terms of brevity. In our experience explicit `public` breaks the flow of many DSLs and very often — of primary constructors. So we decided to use it by default to keep our code clean.
-<strong>NOTE</strong>: `internal` remains supported, but now you need to specify it explicitly.
+**NOTE**: `internal` remains supported, but now you need to specify it explicitly.
 ### Miscellaneous changes
 
 
@@ -201,7 +201,7 @@ A few months ago we announced [this change](http://blog.jetbrains.com/kotlin/201
 * You can specify a @file:JvmName("CustomName") annotation on a source file to change the name of the class;
 * Many files can share the same JVM name if they are additionally marked with @file:JvmMultifileClass annotation.
 
-To make this change work, we had to introduce a new resource file that is required to compile Kotlin code against Kotlin binaries. Its name is `META-INF/&lt;module_name&gt;.kotlin_module`. <strong>Make sure these `.kotlin_module` files are not stripped by your packaging process.</strong> Also, make sure that module names do not clash in your project:
+To make this change work, we had to introduce a new resource file that is required to compile Kotlin code against Kotlin binaries. Its name is `META-INF/&lt;module_name&gt;.kotlin_module`. **Make sure these `.kotlin_module` files are not stripped by your packaging process.** Also, make sure that module names do not clash in your project:
 
 * in Maven we use groupId and artifactId for module names, but you can say
 
@@ -263,11 +263,11 @@ The standard library has got many convenient additions including
 More on this is a separate post too.
 ## Tools
 
-<strong>Compiler daemon.</strong> We announced [support for Gradle Daemon](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) a while ago and your feedback has been positive: compilation times seem to go down up to a factor of three. We keep working on compilation performance, and since M13 a daemon similar to Gradle’s is used in IntelliJ IDEA as well. This feature is marked “experimental” for now, so you need to tick a box in the <em>Preferences</em> dialog to switch it on:
+**Compiler daemon.** We announced [support for Gradle Daemon](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) a while ago and your feedback has been positive: compilation times seem to go down up to a factor of three. We keep working on compilation performance, and since M13 a daemon similar to Gradle’s is used in IntelliJ IDEA as well. This feature is marked “experimental” for now, so you need to tick a box in the <em>Preferences</em> dialog to switch it on:
 <p>
   Build, execution, deployment -&gt; Compiler -&gt; Kotlin compiler -&gt; Keep compiler process alive between invocations (experimental)
 </p>
-<strong>Incremental compilation</strong> is another direction we have taken to improve Kotlin compilation times. M13 brings:
+**Incremental compilation** is another direction we have taken to improve Kotlin compilation times. M13 brings:
 
 * incremental compilation for inline functions: now if you change a body of an inline function, only classes that use it are recompiled;
 * changes to private members do not cause recompilation of other files.

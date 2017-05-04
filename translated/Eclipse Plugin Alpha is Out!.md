@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-IntelliJ IDEA中的Kotlin支持一直是我们的首要任务之一，但是我们也一直致力于Eclipse的支持，今天我们很高兴地介绍这一努力的第一个<strong> alpha </strong>结果。
+IntelliJ IDEA中的Kotlin支持一直是我们的首要任务之一，但是我们也一直致力于Eclipse的支持，今天我们很高兴地介绍这一努力的第一个**alpha**结果。
 虽然这只是一个开始，但很多事情会随着时间的推移而改善，它已经具备了
 
 * 建立和运行您的代码
@@ -28,7 +28,7 @@ IntelliJ IDEA中的Kotlin支持一直是我们的首要任务之一，但是我�
 
 ## 安装
 
-要试一试，你需要一个干净的安装 [Eclipse Luna](https://www.eclipse.org/downloads/) 。 Kotlin插件可从Eclipse市场</em>获得。安装Kotlin插件的最简单方法是将该按钮拖放到正在运行的Eclipse窗口</strong>中：
+要试一试，你需要一个干净的安装 [Eclipse Luna](https://www.eclipse.org/downloads/) 。 Kotlin插件可从Eclipse市场</em>获得。安装Kotlin插件的最简单方法是将该按钮拖放到正在运行的Eclipse窗口**中：
 
 {% raw %}
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a><br/>
@@ -120,6 +120,6 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 
 ## 反馈欢迎
 
-我们可以慢慢地继续实现功能，使插件越来越稳定和强大。但是，我们决定显示早期的阿尔法希望<strong>反馈</strong>。对我们来说非常重要。
+我们可以慢慢地继续实现功能，使插件越来越稳定和强大。但是，我们决定显示早期的阿尔法希望**反馈**。对我们来说非常重要。
 我们已经有一些问题和功能要求 [跟踪器](https://youtrack.jetbrains.com/search/Kotlin%20Eclipse-19206) 。请填写免费添加更多。谢谢。
-此外，这是一个开放源码的项目，我们期望它比我们的编译器和IntelliJ Plugin更加是一个<strong>社区努力</strong>，所以你的 [拉请求](https://github.com/JetBrains/kotlin-eclipse/) 非常欢迎
+此外，这是一个开放源码的项目，我们期望它比我们的编译器和IntelliJ Plugin更加是一个**社区努力**，所以你的 [拉请求](https://github.com/JetBrains/kotlin-eclipse/) 非常欢迎

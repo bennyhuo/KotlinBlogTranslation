@@ -24,7 +24,7 @@ With the release approaching, we switch to shorter milestones. Meet M14 that bri
 ## Language
 
 We are wrapping up with the language changes, so nothing really dramatic has happened in M14.
-<strong>NOTE</strong>: We are dropping previously deprecated features and functions, so make sure to have run <em>Code Cleanup</em> before you install M14.
+**NOTE**: We are dropping previously deprecated features and functions, so make sure to have run <em>Code Cleanup</em> before you install M14.
 ### Backing fields
 
 The old `$propertyName` syntax is deprecated. To access backing fields inside getter/setter, use the `field` synthetic variable:
@@ -130,7 +130,7 @@ public final class FooKt {
 ### Migration from old “package facades”
 
 As we have transitioned to the [new class-file layout](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) , it’s time to retire the old one. Since M14 old package-facade classes (e.g. `FooPackage`) are deprecated, and the IDE helps you migrate your Java code to the new scheme through <em>Code Cleanup</em>.
-<strong>NOTE</strong>: package facades will be dropped very soon, so make sure to migrate your code.
+**NOTE**: package facades will be dropped very soon, so make sure to migrate your code.
 The Standard Library (previously `kotlin.KotlinPackage` class) is being migrated to the new scheme too: see below.
 ### Other language changes
 

@@ -58,7 +58,7 @@ data class Derived(a: A, b: B, val c: C) : Base(a, b)
 * 等于（）的传递性怎么样？
 * 如果我通过Base类型的引用复制Derived的实例？
 
-以及组件功能如何启用 [多重声明](http://kotlinlang.org/docs/reference/multi-declarations.html) ？在这种基本情况下，`c`简单地成为`Derived` <strong>中的第三个组件似乎或多或少是逻辑的：
+以及组件功能如何启用 [多重声明](http://kotlinlang.org/docs/reference/multi-declarations.html) ？在这种基本情况下，`c`简单地成为`Derived` **中的第三个组件似乎或多或少是逻辑的：
 
 {% raw %}
 <p></p>

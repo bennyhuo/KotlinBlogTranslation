@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-Kotlin support in IntelliJ IDEA has always been among our top priorities, but we have been working on Eclipse support as well, and today we are happy to present the first <strong>alpha</strong> result of this effort.
+Kotlin support in IntelliJ IDEA has always been among our top priorities, but we have been working on Eclipse support as well, and today we are happy to present the first **alpha** result of this effort.
 Although it’s only a start and many things will be improved over time, it already features
 
 * Building and Running Your Code
@@ -28,7 +28,7 @@ Although it’s only a start and many things will be improved over time, it alre
 
 ## Installation
 
-To give it a try you will need a clean installation of [Eclipse Luna](https://www.eclipse.org/downloads/) . The Kotlin plugin is available from the <em>Eclipse Marketplace</em>. The easiest way to install the Kotlin plugin is to <strong>drag-and-drop this button into a running Eclipse window</strong>:
+To give it a try you will need a clean installation of [Eclipse Luna](https://www.eclipse.org/downloads/) . The Kotlin plugin is available from the <em>Eclipse Marketplace</em>. The easiest way to install the Kotlin plugin is to **drag-and-drop this button into a running Eclipse window**:
 
 {% raw %}
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a><br/>
@@ -120,6 +120,6 @@ If you already have JUnit 3 or JUnit 4 in the classpath, you can write your test
 
 ## Feedback Welcome
 
-We could have continued implementing features one by one slowly making the plugin more and more stable and powerful. But instead we decided to show the early alpha hoping for the <strong>feedback</strong>. It is very important for us.
+We could have continued implementing features one by one slowly making the plugin more and more stable and powerful. But instead we decided to show the early alpha hoping for the **feedback**. It is very important for us.
 Some issues and feature-requests are already in our [tracker](https://youtrack.jetbrains.com/search/Kotlin%20Eclipse-19206) . Please fill free to add more. Thanks.
-Also, this is an open-source project, and we expect it to be even more of a <strong>community effort</strong> than our compiler and IntelliJ Plugin are, so your [Pull Requests](https://github.com/JetBrains/kotlin-eclipse/) are very welcome.
+Also, this is an open-source project, and we expect it to be even more of a **community effort** than our compiler and IntelliJ Plugin are, so your [Pull Requests](https://github.com/JetBrains/kotlin-eclipse/) are very welcome.

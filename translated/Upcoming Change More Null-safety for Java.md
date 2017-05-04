@@ -21,7 +21,7 @@ translator_url:
 * 在M9中，我们抛弃了注释（暂时），并介绍了平台类型，现在可以做任何事情，但是我们失去了（一些）类型安全;
 * 在M11中，我们开始通过在Java可空性限制被违反的情况下发出警告来带回注释的有用方面。
 
-现在，我们计划再做一个步骤，并结合平台类型使用注释，使<strong>带回尽可能多的类型安全</strong>。<span id =“more-2090”> </span>
+现在，我们计划再做一个步骤，并结合平台类型使用注释，使**带回尽可能多的类型安全**。<span id =“more-2090”> </span>
 ## 概述
 
 细节描述于 [这个规范文件](https://github.com/JetBrains/kotlin/blob/types-from-annotations/spec-docs/flexible-java-types.md#enhancing-signatures-with-annotated-declarations) ，但总体思路如下：每当我们在Java中遇到可空性注释时，它们与它们之间的任何东西都不会发生冲突（如超类型中的重写声明），我们使用精确的类型。例如：

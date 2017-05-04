@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-我们很高兴为Eclipse IDE提供一个新版本的插件。除了支持Kotlin <strong> 1.0.2 </strong>编译器，此更新带来非常重要的功能和改进。
+我们很高兴为Eclipse IDE提供一个新版本的插件。除了支持Kotlin **1.0.2**编译器，此更新带来非常重要的功能和改进。
 
 {% raw %}
 <p><span id="more-3901"></span></p>

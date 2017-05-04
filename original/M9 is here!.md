@@ -18,7 +18,7 @@ M9 has arrived and it’s bringing many new features and important changes. We�
 <span id="more-1643"></span>
 ## Language Changes
 
-<b>NOTE:</b> Some of the changes below are <em>breaking changes</em>, meaning that some code that was compilable with earlier versions will not compile any more, so you’ll need to correct it.
+**NOTE:** Some of the changes below are <em>breaking changes</em>, meaning that some code that was compilable with earlier versions will not compile any more, so you’ll need to correct it.
 ### Platform Types
 
 As we [mentioned before](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) , platform interoperability (i.e. Java and JavaScript interoperability) is among our top priorities, because this is so for our users. <em>Nullability</em> issues when interoperating with Java were one of the biggest complaints we were getting. In a nutshell, the problem is that any reference coming from Java may be <em>null</em>, and Kotlin, being null-safe by design, forced the user to null-check every Java value, or use <em>safe calls</em> (`?.`) or <em>not-null assertions</em> (`!!`). Those being very handy features in the pure Kotlin world, tend to turn into a disaster when you have to use them too often in the Kotlin/Java setting. We relied on [external annotations](http://blog.jetbrains.com/kotlin/using-external-annotations) and [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/) to mitigate this problem by enhancing Java with extra type information. This approach proves to be too cumbersome and doesn’t work for some cases.

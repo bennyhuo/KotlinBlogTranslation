@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-The recording of our October 22nd webinar, <strong>Functional Programming with Kotlin</strong>, is now available on [JetBrainsTV YouTube channel](https://youtu.be/AhA-Q7MOre0) .
+The recording of our October 22nd webinar, **Functional Programming with Kotlin**, is now available on [JetBrainsTV YouTube channel](https://youtu.be/AhA-Q7MOre0) .
 In this talk, Mike Hearn provides a brief introduction to programming in Kotlin via practical example: creating a textfield with the autocomplete suggestions while typing. Demo project is available on [GitHub](https://github.com/mikehearn/KotlinFPWebinar) .
 Topics covered include:
 

@@ -48,7 +48,7 @@ fun main(args : Array<String>) {
 {% endraw %}
 
 这里，filter（）和join（）是扩展函数。
-实现方面，扩展函数只是静态实用程序函数，如“好老旧”Java的Collecions *，但是使用“receiver.function（）”调用语法，IDE使它们更好：有<strong>代码完成< / strong>可以帮助您浏览API并学习（就像扩展名是正常的类成员一样）：
+实现方面，扩展函数只是静态实用程序函数，如“好老旧”Java的Collecions *，但是使用“receiver.function（）”调用语法，IDE使它们更好：有**代码完成< / strong>可以帮助您浏览API并学习（就像扩展名是正常的类成员一样）：
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png"><img alt="" class="alignnone size-medium wp-image-483" data-recalc-dims="1" sizes="(max-width: 259px) 100vw, 259px" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png?resize=259%2C300&amp;ssl=1" srcset="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png?resize=259%2C300&amp;ssl=1 259w, https://i1.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Extensions.png?w=663&amp;ssl=1 663w"/></a></p>
@@ -60,7 +60,7 @@ fun main(args : Array<String>) {
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png"><img alt="" class="alignnone size-full wp-image-485" data-recalc-dims="1" sizes="(max-width: 501px) 100vw, 501px" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?resize=501%2C144&amp;ssl=1" srcset="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?resize=300%2C86&amp;ssl=1 300w, https://i2.wp.com/blog.jetbrains.com/kotlin/files/2012/03/Navigation-2.png?w=501&amp;ssl=1 501w"/></a></p>
 {% endraw %}
 
-并在那里查看<strong> doc评论</strong>：
+并在那里查看**doc评论**：
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png"><img alt="" class="alignnone size-full wp-image-486" data-recalc-dims="1" sizes="(max-width: 476px) 100vw, 476px" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?resize=476%2C297&amp;ssl=1" srcset="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?resize=300%2C187&amp;ssl=1 300w, https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/03/println.png?w=476&amp;ssl=1 476w"/></a></p>

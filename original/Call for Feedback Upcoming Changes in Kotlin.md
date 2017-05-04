@@ -200,7 +200,7 @@ class Derived : Base() {
 
 The compiler will not require `override` on `Derived::foo` because the parent function is not visible, but in the byte code these have the same signature, and the runtime will bind them as overrides, which was not intended by the authors. The problem is most painful when modules X and Y evolve independently (e.g. one is a library and the other — user’s project), so that when Y is compiled `foo` was not yet present in `X`.
 To avoid this, we decided to mangle names of internal members so that they do not clash with superclass members.
-<strong>Update</strong>: mangling will likely cause this members to be impossible to call from Java. This seems to be hard to fix, but the workaround is straightforward: just make it `public` or `protected`.
+**Update**: mangling will likely cause this members to be impossible to call from Java. This seems to be hard to fix, but the workaround is straightforward: just make it `public` or `protected`.
 ## Other changes
 
 

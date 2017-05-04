@@ -59,7 +59,7 @@ We did add a few last-minute features in this beta. Here are the most important 
 
 ## Source Compatibility with Kotlin 1.0
 
-Another area to which we paid a lot of attention in this update is <strong>source compatibility with Kotlin 1.0</strong>. This allows you to try Kotlin 1.1, even if your team is using Kotlin 1.0, without worrying that you’ll break the build by using some of the features added in the new release.
+Another area to which we paid a lot of attention in this update is **source compatibility with Kotlin 1.0**. This allows you to try Kotlin 1.1, even if your team is using Kotlin 1.0, without worrying that you’ll break the build by using some of the features added in the new release.
 To enable the compatibility mode:
 
 * For Maven, Ant and the command-line compiler, set the -language-version compiler argument to 1.0.
@@ -68,8 +68,8 @@ To enable the compatibility mode:
 
 ## How to try it
 
-<strong>In Maven/Gradle:</strong> Add `http://dl.bintray.com/kotlin/kotlin-eap-1.1` as a repository for the build script and your projects; use `1.1.0-beta-38` as the version number for the compiler and the standard library.
-<strong>In IntelliJ IDEA:</strong> Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
+**In Maven/Gradle:** Add `http://dl.bintray.com/kotlin/kotlin-eap-1.1` as a repository for the build script and your projects; use `1.1.0-beta-38` as the version number for the compiler and the standard library.
+**In IntelliJ IDEA:** Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
 The command-line compiler can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta2) .
-<strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Will be available soon.
+**On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a>**. Will be available soon.
 Let’s Kotlin!

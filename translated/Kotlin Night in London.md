@@ -15,7 +15,7 @@ translator_url:
 ---
 
 我们抱着另一个 [Kotlin之夜](https://info.jetbrains.com/Kotlin-Night-London.html) ，但这次在伦敦。我们汇集了已经和目前正在生产中使用Kotlin的社区成员，来和我们谈谈他们的经验。以及分享一些提示和技巧。
-与Trifork和GOTO伦敦2016年合作，我们将在CodeNode会议举行的2016年10月12日<strong>举行这个免费活动。我们会谈话，聊天和喝酒
+与Trifork和GOTO伦敦2016年合作，我们将在CodeNode会议举行的2016年10月12日**举行这个免费活动。我们会谈话，聊天和喝酒
 
 给定的空间是有限的，我们鼓励你 [注册时间较早，而不是稍后](https://info.jetbrains.com/Kotlin-Night-London.html) ！
 
@@ -29,11 +29,11 @@ translator_url:
 {% endraw %}
 
 有关会谈的详细信息，请查看 [活动页面](https://info.jetbrains.com/Kotlin-Night-London.html) 。
-17:30  -  18:00  -  <strong>注册和欢迎</strong>
-18:00  -  18:45  -  <strong>我喜欢Kotlin的10件事情。 </strong>格雷厄姆·塔克利（Graham Tackley） Kaleida </em>
-18:45  -  19:30  -  <strong>表达Kotlin。 </strong> </em> Nat Pryce和Duncan McGregor，Springer Nature </em>
-19:30  -  20:00  -  <strong>零食和饮料</strong>
-20:00  -  20:45  -  <strong>使用密封类构建Concursus API。 Dominic Fox，OpenCredo </em> </strong>
+17:30  -  18:00  -  **注册和欢迎**
+18:00  -  18:45  -  **我喜欢Kotlin的10件事情。**格雷厄姆·塔克利（Graham Tackley） Kaleida </em>
+18:45  -  19:30  -  **表达Kotlin。** </em> Nat Pryce和Duncan McGregor，Springer Nature </em>
+19:30  -  20:00  -  **零食和饮料**
+20:00  -  20:45  -  **使用密封类构建Concursus API。 Dominic Fox，OpenCredo </em>**
 
 {% raw %}
 <p> </p>

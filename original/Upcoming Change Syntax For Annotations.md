@@ -44,7 +44,7 @@ fun setFoo(foo: Foo) { ... }
 <p></p>
 {% endraw %}
 
-<strong>NOTE</strong>: the short syntax that does not require `[...]` nor `@` is going to be kept anyways, so you will still be able to say this:
+**NOTE**: the short syntax that does not require `[...]` nor `@` is going to be kept anyways, so you will still be able to say this:
 
 {% raw %}
 <p></p>

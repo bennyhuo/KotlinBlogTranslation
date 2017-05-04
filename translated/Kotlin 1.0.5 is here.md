@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-我们很高兴地宣布，我们刚刚发布了Kotlin 1.0.5 </b>，它继续了Kotlin 1.0的一系列错误修复和工具更新。
+我们很高兴地宣布，我们刚刚发布了Kotlin 1.0.5**，它继续了Kotlin 1.0的一系列错误修复和工具更新。
 我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [基拉里·拉赫曼](https://github.com/cypressious) ， [弗拉季斯拉夫·戈卢布](https://github.com/ensirius) ， [Vsevolod Tolstopyatov](https://github.com/qwwdfsad) ， [Yoshinori Isogai](https://github.com/shiraji) ， [takahirom](https://github.com/takahirom) 和 [gitreelike](https://github.com/gitreelike) 。感谢所有尝试EAP构建的人，并向我们发送反馈意见！
 发布中的完整更改列表可以在 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) 。值得强调的一些变化是：
 ### 循环到λ转换

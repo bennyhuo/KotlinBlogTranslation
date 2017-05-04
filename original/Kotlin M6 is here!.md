@@ -96,7 +96,7 @@ As you know, Kotlin allows properties to initialized on the declaration. Intelli
 You can now safely remove symbols that are not referenced in the project, including checking for references in comments and strings  <img alt="image" border="0" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image3.png?resize=189%2C164&amp;ssl=1" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px"/>
 ### Unwrap / Remove Expressions
 
-Same as the support for other languages in IDEA, you can now unwrap or remove expressions from inside the enclosing statements, via the <strong>Code | Unwrap/Remove</strong> Refactoring.  <img alt="image" border="0" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image4.png?resize=384%2C123&amp;ssl=1" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px"/>
+Same as the support for other languages in IDEA, you can now unwrap or remove expressions from inside the enclosing statements, via the **Code | Unwrap/Remove** Refactoring.  <img alt="image" border="0" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image4.png?resize=384%2C123&amp;ssl=1" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px"/>
 ## Other Features and Improvements
 
 In addition to the above features, this release also brings some other goodies

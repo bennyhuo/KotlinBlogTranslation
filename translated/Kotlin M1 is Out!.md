@@ -14,11 +14,11 @@ translator:
 translator_url:
 ---
 
-今天，我们很高兴地宣布：M1：Kotlin的第一个里程碑版本</strong>
+今天，我们很高兴地宣布：M1：Kotlin的第一个里程碑版本**
 Kotlin的主页（ [kotlin.jetbrains.org](http://kotlin.jetbrains.org) ）提供有关语言的完整详细信息。在这篇文章中，我提供了与里程碑版本相关的一些亮点。
 ## 盒子里有什么东西
 
-Kotlin以IntelliJ IDEA </strong>的<strong>独立编译器</strong>和<strong>插件的形式出现。
+Kotlin以IntelliJ IDEA**的**独立编译器**和**插件的形式出现。
 
 * IntelliJ IDEA插件
 

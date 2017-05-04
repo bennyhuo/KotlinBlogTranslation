@@ -53,9 +53,9 @@ fun foo(var x: Int) {
 <p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="390" src="https://www.youtube.com/embed/JY-Vx8FjtIM?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" style="border:0;" type="text/html" width="640"></iframe></span></p>
 {% endraw %}
 
-## 支持Java的<strong>保护静态</strong>方法
+## 支持Java的**保护静态**方法
 
-一些Java框架（如Android）依赖于受保护的静态方法在子类中可用。虽然这似乎是一个有问题的模式，但Kotlin现在支持它（仅适用于Java兼容性），即如果您在Kotlin中扩展此类，则可以访问Java类的<strong>受保护的静态</strong>成员。
+一些Java框架（如Android）依赖于受保护的静态方法在子类中可用。虽然这似乎是一个有问题的模式，但Kotlin现在支持它（仅适用于Java兼容性），即如果您在Kotlin中扩展此类，则可以访问Java类的**受保护的静态**成员。
 ## 匿名对象
 
 考虑以下代码（使用Kotlin模拟到匿名内部类）：
@@ -115,4 +115,4 @@ public static void main(String[] args) {
 ## 要求
 
 Kotlin M5.1要求 [IntelliJ IDEA 12.0.4](http://www.jetbrains.com/idea/download/index.html) （不支持12.1的EAP），您可以从插件库中下载。
-<strong>拥有不错的Kotlin！</strong>
+**拥有不错的Kotlin！**

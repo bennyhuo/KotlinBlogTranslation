@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-We are happy to present a new release of our plugin for Eclipse IDE. Along with the support for Kotlin <strong>1.0.2</strong> compiler, this update brings very important features and improvements.
+We are happy to present a new release of our plugin for Eclipse IDE. Along with the support for Kotlin **1.0.2** compiler, this update brings very important features and improvements.
 
 {% raw %}
 <p><span id="more-3901"></span></p>

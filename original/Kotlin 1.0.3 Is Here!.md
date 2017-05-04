@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-We are delighted to present <strong>Kotlin 1.0.3</strong>. This update is not full of brand new and shiny features, it is more about bug fixes, tooling improvements and performance boosts. That’s why you’ll like it 😉 Take a look at the full [change log](https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md) and issues stats by subsystem:
+We are delighted to present **Kotlin 1.0.3**. This update is not full of brand new and shiny features, it is more about bug fixes, tooling improvements and performance boosts. That’s why you’ll like it 😉 Take a look at the full [change log](https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md) and issues stats by subsystem:
 <img alt="Kotlin 1.0.3. Fixed issues" class="alignnone size-full wp-image-4043" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/Pasted-image-at-2016_06_28-07_25-PM.png" width="800"/><br/>
 <span id="more-4042"></span><br/>
 

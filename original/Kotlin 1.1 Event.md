@@ -15,7 +15,7 @@ translator_url:
 ---
 
 In addition to the new features that Kotlin 1.1 brings to your projects, it is also a good reason to meet up with your local community and friends to learn about new opportunities behind the release and impact on the future of Kotlin.
-You can organize a Kotlin 1.1 Event together with the JetBrains team and your community on <strong>March 23</strong>. We will hold 2 live stream sessions to accommodate different time zones. You can join the live stream at <strong>5pm or 7pm CET (9am and 11am PDT)</strong>. [Let us know about your event](https://docs.google.com/forms/d/e/1FAIpQLSf6iXcrIpaNIqeeUJI2L6pntS5yy_iI01PbrO9gTMmX0kg5Lw/viewform) so we can announce it at the blog.
+You can organize a Kotlin 1.1 Event together with the JetBrains team and your community on **March 23**. We will hold 2 live stream sessions to accommodate different time zones. You can join the live stream at **5pm or 7pm CET (9am and 11am PDT)**. [Let us know about your event](https://docs.google.com/forms/d/e/1FAIpQLSf6iXcrIpaNIqeeUJI2L6pntS5yy_iI01PbrO9gTMmX0kg5Lw/viewform) so we can announce it at the blog.
 
 {% raw %}
 <p><img alt="1600" class="size-full wp-image-4739 aligncenter" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2017/03/1600.png?resize=640%2C320&amp;ssl=1"/></p>

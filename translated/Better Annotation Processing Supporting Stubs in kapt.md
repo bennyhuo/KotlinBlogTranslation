@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-我们宣布 [kapt](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 之前，Kotlin的注释处理工具，并讨论了其局限性。现在，大部分<strong>限制正在消失，`可以使用`0.1-SNAPSHOT`预览版本的`kapt`更新版本。<span id =“ more-2385“> </span>
+我们宣布 [kapt](http://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 之前，Kotlin的注释处理工具，并讨论了其局限性。现在，大部分**限制正在消失，`可以使用`0.1-SNAPSHOT`预览版本的`kapt`更新版本。<span id =“ more-2385“> </span>
 ## 回顾：kapt如何工作
 
 通过截取注解处理器（例如Dagger 2）和`javac`之间的通信，初始版本的`kapt`工作，并在Java类之上添加了已经编译的Kotlin类，代码> javac`在源中看到自己。这种方法的问题是，由于Kotlin类必须已经被编译，所以没有办法引用处理器生成的任何代码（例如Dagger的模块类）。因此，我们必须在Java中编写Dagger应用程序类。
@@ -49,7 +49,7 @@ public object ItemRepository {
 
 由DBFLow库提供类似DSL的功能`Select（）`，（）`等，DBFlow的注释处理器生成`Item_Table`，上面的Kotlin代码可以高兴地参考它！
 完整的例子是可用的 [这里](https://github.com/yanex/kotlin-poc) （谢谢 [Mickele Moriconi](https://github.com/mickele) 对于初始代码）。
-请注意，生成存根需要相对较多的工作，因为所有声明必须解决，有时候知道返回类型需要分析表达式（函数或属性初始化程序的主体在`=`符号之后）。因此，在`kapt`中使用存根减慢了你的构建。这就是为什么<strong>存根默认情况下关闭</strong>，为了使它们能够在您的 [build.gradle文件](https://github.com/yanex/kotlin-poc/blob/master/app/build.gradle#L41) ：
+请注意，生成存根需要相对较多的工作，因为所有声明必须解决，有时候知道返回类型需要分析表达式（函数或属性初始化程序的主体在`=`符号之后）。因此，在`kapt`中使用存根减慢了你的构建。这就是为什么**存根默认情况下关闭**，为了使它们能够在您的 [build.gradle文件](https://github.com/yanex/kotlin-poc/blob/master/app/build.gradle#L41) ：
 
 {% raw %}
 <p></p>

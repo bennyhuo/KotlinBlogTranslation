@@ -21,7 +21,7 @@ Proceed to [Kotlin M2 Installation Instructions](http://blog.jetbrains.com/kotli
 
 The previous post gave an overview of the new [Language Features](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/#language) . Here’s a little more:<span id="more-570"></span>
 First, I’d like to remind you that in M1 we added the [“assert not null” operator: !!](http://confluence.jetbrains.net/display/Kotlin/Null-safety#Null-safety-The%7B%7B%5C%21%5C%21%7D%7Doperator) , it replaces the sure() function we used to have in the standard library. Now, we removed sure() from the library, so some of you code might break, but it’s very easy to fix.
-People keep asking whether Kotlin has <strong>literals for lists or maps</strong>. The answer is: strictly speaking, no, but we have function in the [library](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/kotlin/package-summary.html) that are good enough for that:
+People keep asking whether Kotlin has **literals for lists or maps**. The answer is: strictly speaking, no, but we have function in the [library](http://jetbrains.github.com/kotlin/versions/snapshot/apidocs/kotlin/package-summary.html) that are good enough for that:
 
 {% raw %}
 <p></p>
@@ -62,7 +62,7 @@ A little more news on the docs: our KDoc tool is maturing rapidly, thanks to [Ja
 ## Examples
 
 As I mentioned above, the big things in this milestone were JavaScript support in the IDE and Android. It’s always good to start with examples, so here’s a set of projects you can open in your IDE and play with. Please, find some instructions in the [previous post](http://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/) .
-Examples for <strong>JavaScript</strong>:
+Examples for **JavaScript**:
 
 * Hello, world!
 * Creatures (HTML5 Canvas): see it running
@@ -70,7 +70,7 @@ Examples for <strong>JavaScript</strong>:
 * Traffic Lights: see it running
 * Also note koolapp by James Strachan, which deserves a separate post, that I hope will be there soon. For now, refer to the readme file.
 
-Examples for <strong>Android</strong>:
+Examples for **Android**:
 
 * Hello, world!
 * Standard Snake and Wikitionary example re-written to Kotlin can be found here.
@@ -88,7 +88,7 @@ The IntelliJ IDEA plugin is progressing pretty fast. Most of the work is done be
 * Also, we changed the IDE icons, and they are very nice now. More work coming on this topic.
 
 Our priority for the next milestone is IDE performance and improvements to null-safety support for Java classes.
-<strong><a name="install">To install the M2 plugin</a></strong>: If you had you M1 installed, it will update automatically from the [plugin repository](http://plugins.intellij.net/plugin/?idea&pluginId=6954) . It checks for updates once a day, so if you don’t want to wait, initiate the check manually:
+**<a name="install">To install the M2 plugin</a>**: If you had you M1 installed, it will update automatically from the [plugin repository](http://plugins.intellij.net/plugin/?idea&pluginId=6954) . It checks for updates once a day, so if you don’t want to wait, initiate the check manually:
 
 {% raw %}
 <p><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Check-For-Updates.png"><img alt="" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Check-For-Updates.png?resize=150%2C150&amp;ssl=1"/></a></p>
@@ -96,7 +96,7 @@ Our priority for the next milestone is IDE performance and improvements to null-
 
 You will be prompted to update your Kotlin library, since the annotation format has changed a little. If you miss the “Update Kotlin Runtime” balloon, open the message in the Event Log:<br/>
 <img alt="" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Outdated-Kotlin-Runtime.png?resize=150%2C129&amp;ssl=1"/><img alt="" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2012/06/Update-Runtime.png?resize=150%2C150&amp;ssl=1"/>
-<strong>Note </strong>that you have to uninstall the M2 Candidate and any nightly builds of the Kotlin plugin or builds installed manually before [installing](http://www.jetbrains.com/idea/plugins/index.html) M2 from the main [plugin repository](http://plugins.intellij.net/plugin/?idea&pluginId=6954) .
+**Note**that you have to uninstall the M2 Candidate and any nightly builds of the Kotlin plugin or builds installed manually before [installing](http://www.jetbrains.com/idea/plugins/index.html) M2 from the main [plugin repository](http://plugins.intellij.net/plugin/?idea&pluginId=6954) .
 ## Build Tools: Ant and Maven
 
 Our [build tools integration](http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools) , including Maven, has improved a little bit fewer repositories, easier set-up process. You may need to update your pom’s. See instructions [here](http://confluence.jetbrains.net/display/Kotlin/Kotlin+Build+Tools) .

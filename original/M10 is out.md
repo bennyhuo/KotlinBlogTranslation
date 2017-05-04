@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-Right before the festivities start, we’ve managed to release the next milestone of Kotlin, adding <strong>dynamic types</strong> and more. Let’s see what M10 brings us. <span id="more-1708"></span>
+Right before the festivities start, we’ve managed to release the next milestone of Kotlin, adding **dynamic types** and more. Let’s see what M10 brings us. <span id="more-1708"></span>
 ## Language enhancements
 
 Some improvements in the language, in particular:
@@ -69,7 +69,7 @@ myTree.findParentOfType<MyTreeNodeType>()
 {% endraw %}
 
 But then we’d need <em>reified generics</em> to access that type inside a function, and on the JVM reified generics are expensive…
-Fortunately, Kotlin has [inline functions](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) , and they now support <strong>reified</strong> type parameters, so we can write something like this:
+Fortunately, Kotlin has [inline functions](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) , and they now support **reified** type parameters, so we can write something like this:
 
 {% raw %}
 <p></p>
@@ -89,7 +89,7 @@ inline fun <reified T> TreeNode.findParentOfType(): T? {
 <p></p>
 {% endraw %}
 
-We qualified the type parameter with the <strong>reified</strong> modifier, now it’s accessible inside the function, almost as if it were a normal class. Since the function is inlined,  no reflection is needed, normal operators like <strong>!is</strong> are working now. Also, we can call it as mentioned above: `myTree.findParentOfType&lt;MyTreeNodeType&gt;()`.
+We qualified the type parameter with the **reified** modifier, now it’s accessible inside the function, almost as if it were a normal class. Since the function is inlined,  no reflection is needed, normal operators like **!is** are working now. Also, we can call it as mentioned above: `myTree.findParentOfType&lt;MyTreeNodeType&gt;()`.
 Though reflection may not be needed in many cases, we can still use it with a reified type parameter: `javaClass<t>()</t>` gives us access to it:
 
 {% raw %}
@@ -112,7 +112,7 @@ Normal functions (not marked as `inline`) can not have reified parameters. A typ
 This feature is intended to simplify code in frameworks that traditionally rely on reflection, and our internal experiments show that it’s working well.
 ### Checks for declaration-site variance
 
-Kotlin has [declaration-site variance](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) from the very beginning, but the correspondent checks have been missing from the compiler for a long time. Now they are put in their place: the compiler complains if we declare a type parameter as <strong>in</strong> or <strong>out</strong>, but misuse it in the class body:
+Kotlin has [declaration-site variance](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) from the very beginning, but the correspondent checks have been missing from the compiler for a long time. Now they are put in their place: the compiler complains if we declare a type parameter as **in** or **out**, but misuse it in the class body:
 
 {% raw %}
 <p></p>
@@ -128,8 +128,8 @@ class C<out T> {
 <p></p>
 {% endraw %}
 
-In this example, since T is declared as <strong>out</strong> (i.e. the class is <em>covariant</em> in T), we are not allowed to take it as a parameter to the `foo()` function, we can only return it.
-Note that a <strong>private</strong> declaration is allowed to violate variance restrictions, for example:
+In this example, since T is declared as **out** (i.e. the class is <em>covariant</em> in T), we are not allowed to take it as a parameter to the `foo()` function, we can only return it.
+Note that a **private** declaration is allowed to violate variance restrictions, for example:
 
 {% raw %}
 <p></p>
@@ -145,7 +145,7 @@ class C<out T>(t: T) {
 <p></p>
 {% endraw %}
 
-Although `foo`‘s setter takes T as as an argument, and thus violates the <strong>out</strong> restriction on it, the compiler allows this and makes sure that only <em>the same instance</em> of `C` has access to `foo`. This means that the following function in `C` would not compile:
+Although `foo`‘s setter takes T as as an argument, and thus violates the **out** restriction on it, the compiler allows this and makes sure that only <em>the same instance</em> of `C` has access to `foo`. This means that the following function in `C` would not compile:
 
 {% raw %}
 <p></p>
@@ -162,7 +162,7 @@ private fun copyTo(other: C<T>) {
 <p></p>
 {% endraw %}
 
-This is a <strong>breaking change</strong>: some code that compiled previously may break, but not fixing it is likely to result in run-time exceptions anyways, so the compiler errors will be of some value to you <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+This is a **breaking change**: some code that compiled previously may break, but not fixing it is likely to result in run-time exceptions anyways, so the compiler errors will be of some value to you <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 ### Type inference supports use-site variance
 
 Type argument inference has been improved to accommodate [use-site variance](http://kotlinlang.org/docs/reference/generics.html#type-projections) more comfortably. Now you can call a generic function, e.g. `reverseInPlace()` on a projected type, such as `Array&lt;out Number&gt;`:
@@ -204,7 +204,7 @@ fun <T> Array<T>.reverseInPlace() {
 The underlying mechanism was proposed initially by Ross Tate in his [paper on “Mixed-Site Variance”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) .
 ### Varargs translated to projected arrays
 
-Another <strong>breaking change</strong> comes in the form of a fix to a obscure, but sometimes [rather](https://youtrack.jetbrains.com/issue/KT-5534) [annoying](https://youtrack.jetbrains.com/issue/KT-2163) issue: when we have a function that takes a vararg of `String?`, we really want to be able to pass an array of `String` to it, don’t we? Before M10 it was impossible, because vararg of T were compiled to `Array&lt;T&gt;`, now they are compiled to `Array&lt;out T&gt;`, and the following code works:
+Another **breaking change** comes in the form of a fix to a obscure, but sometimes [rather](https://youtrack.jetbrains.com/issue/KT-5534) [annoying](https://youtrack.jetbrains.com/issue/KT-2163) issue: when we have a function that takes a vararg of `String?`, we really want to be able to pass an array of `String` to it, don’t we? Before M10 it was impossible, because vararg of T were compiled to `Array&lt;T&gt;`, now they are compiled to `Array&lt;out T&gt;`, and the following code works:
 
 {% raw %}
 <p></p>

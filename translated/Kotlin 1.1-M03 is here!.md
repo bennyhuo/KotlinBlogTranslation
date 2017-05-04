@@ -15,7 +15,7 @@ translator_url:
 ---
 
 我们很高兴地宣布即将到来的Kotlin1.1的第三个里程碑。此版本带来了新的语言功能，以及JavaScript后端，编译器和IDEA插件中的改进和修复。新版本还包括Kotlin 1.0.5中引入的所有工具功能，并与IntelliJ IDEA 2016.3 EAP和Android Studio 2.2和2.3兼容。
-与其他里程碑版本一样，我们为新语言和库功能提供<b>无后向兼容性保证</b>。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改</b>。
+与其他里程碑版本一样，我们为新语言和库功能提供**无后向兼容性保证**。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改**。
 请分享您关于新功能或您可能遇到的任何问题的反馈，通过此版本 [YouTrack](https://youtrack.jetbrains.com/issues/KT) ， [论坛](https://discuss.kotlinlang.org) 和 [松弛](http://kotlinlang.slack.com/) 。
 1.1-M03的完整更新日期可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M03/ChangeLog.md) 。
 
@@ -147,6 +147,6 @@ JavaScript后端现在支持与JVM后端兼容的以下Kotlin语言功能：
 JavaScript后端现在可以生成更多的静态可检查代码，这对JS代码处理工具（比如minifier，optimizers，linters等）来说更为友善。
 ## 如何尝试
 
-<b>在Maven / Gradle中：</b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M03作为编译器和标准库的版本号。
-<b>在IntelliJ IDEA中：</b>转到<i>工具→Kotlin→配置Kotlin插件更新</i>，然后在<i>更新频道</i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</i>。
+**在Maven / Gradle中：**添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M03作为编译器和标准库的版本号。
+**在IntelliJ IDEA中：**转到<i>工具→Kotlin→配置Kotlin插件更新</i>，然后在<i>更新频道</i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</i>。
 开车去Kotlin！

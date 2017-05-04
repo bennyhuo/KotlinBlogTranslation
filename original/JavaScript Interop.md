@@ -18,7 +18,7 @@ When working with JavaScript, i.e. creating a Kotlin application that compiles d
 <span id="more-1766"></span>
 ## Dynamic support
 
-In M10 we’ve added the <strong>dynamic</strong> keyword<strong>[1]</strong> which allows us to declare types as dynamic, permitting certain interoperability which previously could be more cumbersome. For instance, when working with jQuery, up to M10, our only option was to use the strongly typed libraries that Kotlin provides. As for M10 we can now use the dynamic keyword too
+In M10 we’ve added the **dynamic** keyword**[1]** which allows us to declare types as dynamic, permitting certain interoperability which previously could be more cumbersome. For instance, when working with jQuery, up to M10, our only option was to use the strongly typed libraries that Kotlin provides. As for M10 we can now use the dynamic keyword too
 
 {% raw %}
 <p></p>
@@ -163,7 +163,7 @@ when injecting JavaScript language:
 
 In addition to <em>dynamic</em> and <em>js</em>, we also introduced support for <em>nativeGetter,nativeSetter</em> and <em>nativeInvoke</em> annotations for JavaScript, which we already covered in the [M10 release post](http://blog.jetbrains.com/kotlin/2014/12/m10-is-out/) .
 These new features are all provided for better interoperability with JavaScript, but they do not trump any plans to continue to provide strongly-typed support for existing libraries and frameworks in JavaScript.
-<strong>[1]</strong><br/>
+**[1]**<br/>
 “dynamic” is a soft keyword:
 
 * if it occurs in a non-type context, it’s an identifier

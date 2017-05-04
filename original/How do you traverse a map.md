@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-It’s been a while since I blogged last time on Kotlin M2. Now, the hot summer has passed, and <strong>M3</strong> will be out very soon. In this post I describe two small features added in M3 that make our lives easier and will lead to simplification of the language.
+It’s been a while since I blogged last time on Kotlin M2. Now, the hot summer has passed, and **M3** will be out very soon. In this post I describe two small features added in M3 that make our lives easier and will lead to simplification of the language.
 ## How do you traverse a map?
 
 Assume you have a map like this:
@@ -88,13 +88,13 @@ for ((user, count) in counts) {
 <p></p>
 {% endraw %}
 
-Looks like what we want, but <strong>how can we do it?</strong>
+Looks like what we want, but **how can we do it?**
 ## Pair objects
 
-To iterate through something, we have to supply an iterator() function. As Map doesn’t have one, it will be an extension function. What should it return? One option would be an iterator over pairs (e.g. objects of Tuple2). The obvious downside is that would need to <strong>create a new object</strong> for every entry in the map. <strong>Can we do better?</strong>
+To iterate through something, we have to supply an iterator() function. As Map doesn’t have one, it will be an extension function. What should it return? One option would be an iterator over pairs (e.g. objects of Tuple2). The obvious downside is that would need to **create a new object** for every entry in the map. **Can we do better?**
 ## Multi-declarations in Kotlin
 
-Kotlin M3 introduces a new concept that we call <strong>multi-declarations</strong>. You can write things like this:
+Kotlin M3 introduces a new concept that we call **multi-declarations**. You can write things like this:
 
 {% raw %}
 <p></p>
@@ -140,8 +140,8 @@ for ((a, b) in collection) { ... }
 <p></p>
 {% endraw %}
 
-Variables a and b get the values returned by component1() and component2() called on element of the collection. Goes without saying, <strong>these functions can be extensions</strong>.
-<strong>Note</strong>: Multi-declarations will be available in the upcoming Kotlin M3, currently you can try them out using our nightly builds.
+Variables a and b get the values returned by component1() and component2() called on element of the collection. Goes without saying, **these functions can be extensions**.
+**Note**: Multi-declarations will be available in the upcoming Kotlin M3, currently you can try them out using our nightly builds.
 ## Back to maps
 
 Now, let’s come back to the map example. It’s easy now: we can simple provide component functions for Map.Entry, and the example above will work.
@@ -175,7 +175,7 @@ class User(val name: String, val age: Int)
 <p></p>
 {% endraw %}
 
-But often times we need a little more: an obvious equals()/hashCode() pair, a toString(), and now — component functions. We had quite a few requests for supporting this, and now there is <strong>data</strong> annotation supported by Kotlin compiler:
+But often times we need a little more: an obvious equals()/hashCode() pair, a toString(), and now — component functions. We had quite a few requests for supporting this, and now there is **data** annotation supported by Kotlin compiler:
 
 {% raw %}
 <p></p>
@@ -189,10 +189,10 @@ data class User(val name: String, val age: Int)
 <p></p>
 {% endraw %}
 
-This class gets <strong>component functions</strong>, one for each property declared in the primary constructor, <strong>generated automatically</strong> (this is already implemented), same for all the other goodies common for data: <strong>toString()</strong>, <strong>equals()</strong> and <strong>hashCode()</strong> (will be there soon).
+This class gets **component functions**, one for each property declared in the primary constructor, **generated automatically** (this is already implemented), same for all the other goodies common for data: **toString()**, **equals()** and **hashCode()** (will be there soon).
 ## Multiple return values
 
-How to return multiple things from a function? Some think that <strong>tuples</strong> provide a good way of doing this, but the problem there is the same as with Map.Entry: tuple components have no names, so the call site is cluttered with blank “_1” and “_2” or something very similar. So it seems much nicer to handle multiple returns with data classes:
+How to return multiple things from a function? Some think that **tuples** provide a good way of doing this, but the problem there is the same as with Map.Entry: tuple components have no names, so the call site is cluttered with blank “_1” and “_2” or something very similar. So it seems much nicer to handle multiple returns with data classes:
 
 {% raw %}
 <p></p>
@@ -222,8 +222,8 @@ fun test() {
 {% endraw %}
 
 No matter whether we decide to use a multi-declaration or not, the names are not lost: they are declared in the data class.
-Some people complain about the need to come up with the name for the returned entity, but in many cases it is good to realize <strong><em>what this thing is</em></strong>…
+Some people complain about the need to come up with the name for the returned entity, but in many cases it is good to realize **<em>what this thing is</em>**…
 ## Conclusion
 
-We discussed new features introduced in <strong>Kotlin M3</strong>. <strong>Multi-declarations</strong> allow to bind several names shortly, and, as an example, traverse map entries in a nice way without creating unneeded objects. <strong>Data classes</strong> enable one-line definitions of classes that simply handle data and yet come with all the necessary functions attached.
-<strong>Your feedback is very welcome</strong>, as usual. For more on the new things to appear in the upcoming M3 and our future plans — stay tuned until next week.
+We discussed new features introduced in **Kotlin M3**. **Multi-declarations** allow to bind several names shortly, and, as an example, traverse map entries in a nice way without creating unneeded objects. **Data classes** enable one-line definitions of classes that simply handle data and yet come with all the necessary functions attached.
+**Your feedback is very welcome**, as usual. For more on the new things to appear in the upcoming M3 and our future plans — stay tuned until next week.

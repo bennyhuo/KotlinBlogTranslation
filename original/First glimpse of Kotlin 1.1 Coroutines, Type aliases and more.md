@@ -17,7 +17,7 @@ translator_url:
 While Kotlin 1.0.X releases keep delivering incremental updates and tooling features, we are working on the new language features in Kotlin 1.1. Today we are presenting the first preview version of 1.1, it’s far from Beta, but the brave and curious ones can play with new  exciting things (and hopefully give us their invaluable feedback).
 ## Compatibility
 
-This is not a stable version of Kotlin, and <strong>no compatibility guarantees</strong> are given here: in the future previews of 1.1, syntax, APIs, command-line switches and anything else may be changed. If you need a stable version of Kotlin, please stay on 1.0.X until further notice.
+This is not a stable version of Kotlin, and **no compatibility guarantees** are given here: in the future previews of 1.1, syntax, APIs, command-line switches and anything else may be changed. If you need a stable version of Kotlin, please stay on 1.0.X until further notice.
 ## Feedback
 
 The upside of this temporary lack of guarantees is that we can make immediate use of all the feedback you provide us! The best way to tell us what you think is through [KEEP](https://github.com/Kotlin/KEEP) : please leave your comments on the issues associated with proposals mentioned below. The implementations in Kotlin 1.1 M01 are prototypes of the functionality described in the KEEPs.
@@ -68,7 +68,7 @@ typealias Action<T> = (T) -> Unit
 <p></p>
 {% endraw %}
 
-This means that we can use `Action&lt;T&gt;` interchangeably with `(T) -&gt; Unit`, i.e. it is a true <strong>alias</strong>. Type aliases are useful for abbreviating longer types that are used in multiple places in the code:
+This means that we can use `Action&lt;T&gt;` interchangeably with `(T) -&gt; Unit`, i.e. it is a true **alias**. Type aliases are useful for abbreviating longer types that are used in multiple places in the code:
 
 * function types with complex signatures: UserAction = (User, Context) -> ActionResponse,
 * complex generic types: Multimap<K, V> = Map<K, List<V>>
@@ -145,17 +145,17 @@ Find the proposals related to JavaScript [here](https://github.com/Kotlin/KEEP/l
 We are very grateful to GitHub users [dotlin](https://github.com/dotlin) , [Valdemar0204](https://github.com/Valdemar0204) , [ensirius](https://github.com/ensirius) and [geoand](https://github.com/geoand) for their contributions to this version!
 ## How to try it
 
-<strong>In Maven/Gradle</strong>. Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) (see instructions under <em>“Set me up!”</em>) as a repository to your project. Use version 1.1-M01 for your Kotlin artifacts.
-<strong>In the IDE</strong>. If you are running [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) , go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list:
+**In Maven/Gradle**. Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](https://bintray.com/kotlin/kotlin-eap-1.1) (see instructions under <em>“Set me up!”</em>) as a repository to your project. Use version 1.1-M01 for your Kotlin artifacts.
+**In the IDE**. If you are running [Kotlin 1.0.3](https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/) , go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list:
 
 {% raw %}
 <p><img alt="Configure-Plugin-Updates" class="aligncenter size-small wp-image-4085" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Configure-Plugin-Updates.png?w=400&amp;ssl=1"/></p>
 {% endraw %}
 
 Press <em>Check for updates</em> in the same dialog, and, when the new version is show, <em>Install</em>.
-<strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Use the drop-down list at the bottom-right corner to change the compiler version:<br/>
+**On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a>**. Use the drop-down list at the bottom-right corner to change the compiler version:<br/>
 <img alt="Screen Shot 2016-07-14 at 20.23.48" class="alignnone size-full wp-image-4121" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Screen-Shot-2016-07-14-at-20.23.48.png?resize=640%2C549&amp;ssl=1"/>
-<strong>With SDKMan</strong>. Run `sdk install kotlin 1.1-M01`.
+**With SDKMan**. Run `sdk install kotlin 1.1-M01`.
 Your feedback is very welcome, as always.
 ### Have a nice Kotlin!
 

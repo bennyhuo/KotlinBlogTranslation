@@ -17,7 +17,7 @@ translator_url:
 我们的第一次更新 [测试版](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) 在这儿！我们正在稳定，所以它主要是错误修复和标准库的更改。
 ## 语言变化
 
-我们现在对类型参数强制执行<strong>单实例继承</strong>约束：相同的`T`不能同时具有`List＆lt; Int＆gt;`和`List＆lt ; String＆gt;`作为其上限。对于类，这一直被禁止，现在对类型参数也是一样的。<span id =“more-3093”> </span>
+我们现在对类型参数强制执行**单实例继承**约束：相同的`T`不能同时具有`List＆lt; Int＆gt;`和`List＆lt ; String＆gt;`作为其上限。对于类，这一直被禁止，现在对类型参数也是一样的。<span id =“more-3093”> </span>
 智能演员不可能的情况下，诊断有所改善：
 
 {% raw %}

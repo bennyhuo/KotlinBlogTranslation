@@ -30,18 +30,18 @@ Kotlin 1.1今天正式发布了，这让Kotlin有能力适用于更多的应用�
 <p><span id="more-4611"></span></p>
 {% endraw %}
 
-首先，<em><strong>JavaScript支持</strong></em>的“试验性”标签已被移除，并且支持所有Kotlin语言特性、标准库的大部分内容以及JavaScript互操作性。这意味着开发者可以完全使用Kotlin来编写整个WEB应用，同时继续使用JavaScript的开发框架（比如React）。  
+首先，<em>**JavaScript支持**</em>的“试验性”标签已被移除，并且支持所有Kotlin语言特性、标准库的大部分内容以及JavaScript互操作性。这意味着开发者可以完全使用Kotlin来编写整个WEB应用，同时继续使用JavaScript的开发框架（比如React）。  
 
-其次，我们引入了<em><strong>协程(coroutines)</strong></em>的概念。作为线程的轻量级替代方案，协程在应用程序后端可以具有更大可扩展性，从而支持单个JVM实例上的大量工作负载。除此之外，协程对于实现异步行为具有强大的表现力，这对于在任何平台上构建响应式用户交互界面而言极其重要。  
+其次，我们引入了<em>**协程(coroutines)**</em>的概念。作为线程的轻量级替代方案，协程在应用程序后端可以具有更大可扩展性，从而支持单个JVM实例上的大量工作负载。除此之外，协程对于实现异步行为具有强大的表现力，这对于在任何平台上构建响应式用户交互界面而言极其重要。  
 
 下面我们将进一步介绍这两大功能。其他部分如[type aliases](http://kotlinlang.org/docs/reference/whatsnew11.html#type-aliases)，[callable references](http://kotlinlang.org/docs/reference/whatsnew11.html#bound-callable-references)，[destructuring in lambdas](http://kotlinlang.org/docs/reference/whatsnew11.html#destructuring-in-lambdas)等详情可在[最新消息](http://kotlinlang.org/docs/reference/whatsnew11.html)查看，试试完整的可运行示例代码！
 ## 协程(Coroutines)
 
 在Kotlin中协程使非阻塞式异步代码与同步代码一样易于理解。  
 
-异步编程正当风靡，唯一让我们思虑的是，非阻塞式代码大量增加了系统的复杂性。 而Kotlin现在提供了简化这种复杂性的方法，通过单原子让协程在语言中成为一等公民：<em><strong>挂起函数</strong></em>。这种类型的函数（或lambda）表示在计算运行中可以被挂起（不阻塞任何线程），而后也能继续恢复运行。  
+异步编程正当风靡，唯一让我们思虑的是，非阻塞式代码大量增加了系统的复杂性。 而Kotlin现在提供了简化这种复杂性的方法，通过单原子让协程在语言中成为一等公民：<em>**挂起函数**</em>。这种类型的函数（或lambda）表示在计算运行中可以被挂起（不阻塞任何线程），而后也能继续恢复运行。  
 
-从技术上说，协程是多任务协作的轻量级解决方案（类似于[fibers](https://en.wikipedia.org/wiki/Fiber_(computer_science))）。换言之，他们只是<em><strong>更好的线程</strong></em>：可以任意的启动和保留，且挂起的消耗极其之低（挂起之于协程，如阻塞之于线程），非常易于组合与订制。  
+从技术上说，协程是多任务协作的轻量级解决方案（类似于[fibers](https://en.wikipedia.org/wiki/Fiber_(computer_science))）。换言之，他们只是<em>**更好的线程**</em>：可以任意的启动和保留，且挂起的消耗极其之低（挂起之于协程，如阻塞之于线程），非常易于组合与订制。  
 
 我们对于协程的设计以实现最大的灵活性为目标：在语言中固化的部分少，而且可以作为库来实现很多功能。[kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)项目在Rx，CompletableFuture，NIO，JavaFx和Swing上均有设计功能库，甚至可以为Android和JavaScript编写类似的库。即使在其​​他语言中许多内置构建现在也可以用Kotlin库来编写。包括Python的generators/yield，来自Go的channels/select以及C＃的async/await:
 
@@ -74,7 +74,7 @@ launch(UI) {
 
 查看[完整内容](http://kotlinlang.org/docs/reference/coroutines.html)。  
 
-<strong>重要提示</strong>：凭借上述的这些优势，Kotlin协程近乎全新的设计，在我们能确定这是100％正确和完整之前，仍然需要大量的实践和测试。因此我们才选择在“实验性”[标志](http://kotlinlang.org/docs/diagnostics/experimental-coroutines.html)下发布。我们不希望语言规则发生变化，但API可能需要在Kotlin 1.2中进行调整。
+**重要提示**：凭借上述的这些优势，Kotlin协程近乎全新的设计，在我们能确定这是100％正确和完整之前，仍然需要大量的实践和测试。因此我们才选择在“实验性”[标志](http://kotlinlang.org/docs/diagnostics/experimental-coroutines.html)下发布。我们不希望语言规则发生变化，但API可能需要在Kotlin 1.2中进行调整。
 ## JavaScript支持
 
 如上所述，Kotlin 1.1中的所有语言特性（包括协程）都适用于JVM / Android和JavaScript（JavaScript的反射目前不可用，但我们正在这方面努力）。这意味着Web应用程序可以完全使用Kotlin编写，而且我们已经在JetBrains内部有一些尝试，相信很快就会发布教程和其他资料。  
@@ -122,20 +122,20 @@ Java 9即将推出，我们将在发布之前为其新功能提供支持。
 P.S 跨平台运行是Kotlin的战略方向，伴随着1.1的发布，我们可以在服务器，台式机，Android设备和浏览器上运行，但是未来我们将把Kotlin编译为本地代码，并使之能够在更多平台（例如iOS和嵌入式设备等）上运行。 目前在JetBrains内部，有一个非常棒的团队正在开展这个项目，我们期待很快就会出现有趣的东西，不过尚未计划为此专门发布任何版本。
 # 安装说明
 
-与以往一样，开发者可以使用<strong>Kotlin线上编辑器</strong> [try.kotlinlang.org](http://try.kotlinlang.org/)。  
+与以往一样，开发者可以使用**Kotlin线上编辑器** [try.kotlinlang.org](http://try.kotlinlang.org/)。  
 
-<strong>Maven/Gradle</strong>：使用`1.1.0`作为编译器和标准库的版本号([查看文档](http://kotlinlang.org/docs/reference/using-gradle.html))。  
+**Maven/Gradle**：使用`1.1.0`作为编译器和标准库的版本号([查看文档](http://kotlinlang.org/docs/reference/using-gradle.html))。  
 
-<strong>IntelliJ IDEA</strong>：2017.1已包含Kotlin 1.1；旧版本则需要安装Kotlin插件或更新到1.1版本。  
+**IntelliJ IDEA**：2017.1已包含Kotlin 1.1；旧版本则需要安装Kotlin插件或更新到1.1版本。  
 
-<strong>Android Studio</strong>：通过<em><strong>Plugin Manager</strong></em>安装或更新插件。  
+**Android Studio**：通过<em>**Plugin Manager**</em>安装或更新插件。  
 
-<strong>Eclipse</strong>：使用[Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) 安装插件。  
+**Eclipse**：使用[Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) 安装插件。  
 
-<strong>命令行编译器</strong>可以从[Github发布页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1)下载。  
+**命令行编译器**可以从[Github发布页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1)下载。  
 
-<strong>兼容性</strong>：Kotlin 1.1语言和标准库[向后兼容(modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) ：如果使用1.0版本编译运行，1.1版本仍然可以运行。为了帮助大型团队有规律的更新，我们在编译器中新增禁用新功能的开关。查看[踩坑文档](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)。  
+**兼容性**：Kotlin 1.1语言和标准库[向后兼容(modulo bugs)](http://kotlinlang.org/docs/reference/compatibility.html) ：如果使用1.0版本编译运行，1.1版本仍然可以运行。为了帮助大型团队有规律的更新，我们在编译器中新增禁用新功能的开关。查看[踩坑文档](http://kotlinlang.org/docs/reference/compatibility.html#binary-compatibility-warnings)。  
 
-<em><strong>请尽情享受Kotlin！</strong></em>  
+<em>**请尽情享受Kotlin！**</em>  
 
 P.S: 在[Reddit](https://www.reddit.com/r/programming/comments/5wvpv8/kotlin_11_released_with_javascript_support/)和[Hacker News](https://news.ycombinator.com/item?id=13763483)上加入讨论吧！

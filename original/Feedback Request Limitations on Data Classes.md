@@ -58,7 +58,7 @@ Now, how does `equals()` or `copy()` work in `Derived`? All the well-known issue
 * what about transitivity of equals()?
 * what if I copy an instance of Derived through a reference of type Base?
 
-And what about component functions that enable [multi-declarations](http://kotlinlang.org/docs/reference/multi-declarations.html) ? It seems more or less logical that `c` simply becomes the third component in `Derived` <strong>in this basic case</strong>:
+And what about component functions that enable [multi-declarations](http://kotlinlang.org/docs/reference/multi-declarations.html) ? It seems more or less logical that `c` simply becomes the third component in `Derived` **in this basic case**:
 
 {% raw %}
 <p></p>

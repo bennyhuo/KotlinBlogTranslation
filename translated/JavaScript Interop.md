@@ -18,7 +18,7 @@ translator_url:
 <span id =“more-1766”> </span>
 ## 动态支持
 
-在M10中，我们添加了<strong>动态</strong>关键字<strong> [1] </strong>，这样我们可以将类型声明为动态的，允许某些互操作性以前可能更麻烦。例如，当使用jQuery，直到M10，我们唯一的选择是使用Kotlin提供的强类库。至于M10，我们现在也可以使用动态关键字
+在M10中，我们添加了**动态**关键字**[1]**，这样我们可以将类型声明为动态的，允许某些互操作性以前可能更麻烦。例如，当使用jQuery，直到M10，我们唯一的选择是使用Kotlin提供的强类库。至于M10，我们现在也可以使用动态关键字
 
 {% raw %}
 <p></p>
@@ -163,7 +163,7 @@ M10还在IntelliJ IDEA for Kotlin中添加了语言注入支持。虽然这适�
 
 除了<em>动态</em>和<em> js </em>之外，我们还引入了对JavaScript的nativeGetter，nativeSetter </em>和<em> nativeInvoke </em>注释的支持，我们已经覆盖了 [M10发布帖子](http://blog.jetbrains.com/kotlin/2014/12/m10-is-out/) 。
 这些新功能都提供了与JavaScript的更好的互操作性，但是他们并没有争取继续为JavaScript中的现有库和框架提供强类型的支持。
-<strong> [1] </strong> <br/>
+**[1]** <br/>
 “动态”是一个软关键字：
 
 * 如果它发生在非类型上下文中，则它是一个标识符

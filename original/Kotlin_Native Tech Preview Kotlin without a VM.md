@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-We are happy to announce the first Technology Preview of <strong>Kotlin/Native</strong> that compiles Kotlin directly to machine code. The Kotlin/Native compiler produces standalone executables that can run without any virtual machine.
+We are happy to announce the first Technology Preview of **Kotlin/Native** that compiles Kotlin directly to machine code. The Kotlin/Native compiler produces standalone executables that can run without any virtual machine.
 It is not a fully functional release yet, but you can already play with the technology and take a look at its source code [here](https://github.com/JetBrains/kotlin-native/) . The compiler is available under the Apache 2 OSS license.
 
 {% raw %}
@@ -64,4 +64,4 @@ We are currently working on the core technology for Kotlin/Native which is the s
 
 We’ve prepared two archives with compiler, samples and documentation: [for Mac and iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz) and [for Linux and Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) .
 Check out the [Github project](https://github.com/JetBrains/kotlin-native) and [Release Notes](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md) for instructions.
-<strong>Your feedback is very welcome</strong> in the #kotlin-native channel on our [public Slack](https://kotlinlang.slack.com) (Get your invite [here](http://slack.kotl.in) .
+**Your feedback is very welcome** in the #kotlin-native channel on our [public Slack](https://kotlinlang.slack.com) (Get your invite [here](http://slack.kotl.in) .

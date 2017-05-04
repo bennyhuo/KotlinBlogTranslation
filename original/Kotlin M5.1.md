@@ -53,9 +53,9 @@ If some of your existing code breaks, you can quick-fix the whole project in one
 <p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="390" src="https://www.youtube.com/embed/JY-Vx8FjtIM?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" style="border:0;" type="text/html" width="640"></iframe></span></p>
 {% endraw %}
 
-## Support for Java’s<strong> protected static </strong>methods
+## Support for Java’s**protected static**methods
 
-Some Java frameworks, like Android, rely on protected static methods to be available in subclasses. Although this seems like a questionable pattern, Kotlin now supports it (only for Java compatibility), i.e. you can access a <strong>protected static </strong>member of a Java class if you extend this class in Kotlin.
+Some Java frameworks, like Android, rely on protected static methods to be available in subclasses. Although this seems like a questionable pattern, Kotlin now supports it (only for Java compatibility), i.e. you can access a **protected static**member of a Java class if you extend this class in Kotlin.
 ## Anonymous Objects
 
 Consider the following code (that uses a Kotlin analog to anonymous inner class):
@@ -115,4 +115,4 @@ The compiler is being improved too: a few fixes for corner cases of nullable typ
 ## Requirements
 
 Kotlin M5.1 requires [IntelliJ IDEA 12.0.4](http://www.jetbrains.com/idea/download/index.html) (EAPs of 12.1 are not supported yet), you can download it from the plugin repository.
-<strong>Have a nice Kotlin!</strong>
+**Have a nice Kotlin!**

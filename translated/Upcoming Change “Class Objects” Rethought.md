@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-<strong> Kotlin M11 </strong>即将到来，和您中的一些人一样 [表示担忧](https://devnet.jetbrains.com/thread/461012?tstart=0) 关于即将发生的变化，我将介绍M11的一个功能，并要求您提供一些<strong>反馈</strong>。 <span id =“more-1817”> </span>
+**Kotlin M11**即将到来，和您中的一些人一样 [表示担忧](https://devnet.jetbrains.com/thread/461012?tstart=0) 关于即将发生的变化，我将介绍M11的一个功能，并要求您提供一些**反馈**。 <span id =“more-1817”> </span>
 ## 类对象：一个简短的提醒
 
 众所周知，任何Kotlin类都可以有一个关联的 [类对象](http://kotlinlang.org/docs/reference/classes.html#class-objects) ：
@@ -52,7 +52,7 @@ KotlinClass.classObjectMember()
 {% endraw %}
 
 （您可以使用`[platformStatic]`注释来使这些成员实际上从Java中看到`static`。）
-事实上，Kotlin的<em>类对象</em>和Java的静态不一样，因为<em>类对象是<strong>对象</strong> </em>，即它们可以扩展类，实现traits并在运行时作为<em>值</em>：
+事实上，Kotlin的<em>类对象</em>和Java的静态不一样，因为<em>类对象是**对象** </em>，即它们可以扩展类，实现traits并在运行时作为<em>值</em>：
 
 {% raw %}
 <p></p>
@@ -90,7 +90,7 @@ class KotlinClass {
 
 所以，以前被称为“类对象”现在称为“默认对象”。
 更多的动力来自于下面，但在这一点上，请注意你对这个变化的感受：现在更好吗？更混乱大概和以前一样？
-<strong>请在阅读动机之前，在下面的评论中分享您的意见。非常感谢！</strong>
+**请在阅读动机之前，在下面的评论中分享您的意见。非常感谢！**
 
 {% raw %}
 <p><a name="why-default-objects"></a></p>
@@ -98,7 +98,7 @@ class KotlinClass {
 
 ## 为什么选择默认对象
 
-<strong>注意</strong>：此处提供的所有语法均为<strong>临时</strong>（我们已实施，但可能会决定在M11之前更改）。
+**注意**：此处提供的所有语法均为**临时**（我们已实施，但可能会决定在M11之前更改）。
 不幸的措辞不是这个变化的唯一原因。事实上，我们重新设计了这个概念，使其与普通物体更为统一。
 请注意，类可以（并且总是可以）嵌套到它中的许多对象（通常的，命名的单例）：
 
@@ -157,7 +157,7 @@ class KotlinClass {
 
 现在，您仍然可以通过包含类的名称来引用其成员：`KotlinClass.foo（）`，或通过完整的资格：`KotlinClass.Default.foo（）`。
 正如你所看到的，与我们以前使用的<em>类对象</em>不同，默认对象</em>与普通对象完全一致。
-另一个重要的好处是，现在每个对象<em>都有一个名字</em>（当省略缺省对象</em>的名称时，再次使用`Default`），为默认对象启用<strong>书写扩展功能</strong>：
+另一个重要的好处是，现在每个对象<em>都有一个名字</em>（当省略缺省对象</em>的名称时，再次使用`Default`），为默认对象启用**书写扩展功能**：
 
 {% raw %}
 <p></p>
@@ -182,4 +182,4 @@ fun KotlinClass.Default.bar() { ... }
 * 新概念与普通命名对象是一致的。
 * 您现在可以将扩展名写入可以在类名上调用的默认对象。
 
-<strong>您的反馈非常受欢迎！</strong>这个变化的很大一部分是关于术语和措词，所以如果你认为新的概念是混乱的话，请在评论中告诉我们。
+**您的反馈非常受欢迎！**这个变化的很大一部分是关于术语和措词，所以如果你认为新的概念是混乱的话，请在评论中告诉我们。

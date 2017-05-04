@@ -66,4 +66,4 @@ translator_url:
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a></p>
 {% endraw %}
 
-您的<strong>反馈</strong>和 [拉请求](https://github.com/JetBrains/kotlin-eclipse) 受欢迎的！
+您的**反馈**和 [拉请求](https://github.com/JetBrains/kotlin-eclipse) 受欢迎的！

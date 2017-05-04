@@ -43,7 +43,7 @@ buildscript {
 <p></p>
 {% endraw %}
 
-<strong>NOTE</strong>: we get the full-scale speedups only after a few runs of the build. The first time we run cold and wait for the warmup, the second time most of the warmup is gone, and the build completes faster. Subsequent runs may get slightly faster too, because of the JIT.
+**NOTE**: we get the full-scale speedups only after a few runs of the build. The first time we run cold and wait for the warmup, the second time most of the warmup is gone, and the build completes faster. Subsequent runs may get slightly faster too, because of the JIT.
 ## Feedback
 
 Please tell us if your builds have gotten faster with this change. Some project details (like LOCs and actual build times) would be appreciated.

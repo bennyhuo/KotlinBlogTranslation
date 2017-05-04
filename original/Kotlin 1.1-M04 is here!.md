@@ -15,11 +15,11 @@ translator_url:
 ---
 
 We are glad to present you the fourth milestone of the upcoming Kotlin release. We’re wrapping up the development of the version 1.1, with the final release planned for Q1 2017. Most features are already in decent shape, so it is a good time to try it and give us your feedback. We will appreciate it a lot!
-As with other milestone releases, we give <b>no backwards compatibility guarantees</b> for new language and library features. Anything introduced in milestone releases of 1.1 is <b>subject to change </b>before the final 1.1 release.
+As with other milestone releases, we give **no backwards compatibility guarantees** for new language and library features. Anything introduced in milestone releases of 1.1 is **subject to change**before the final 1.1 release.
 Please do share your feedback regarding the new features or any problems that you may run into with this release, via [YouTrack](https://youtrack.jetbrains.com/issues/KT) , [forums](https://discuss.kotlinlang.org) and [Slack](http://kotlinlang.slack.com/) .
 This milestone brings a significant rework of coroutine syntax and semantics, making coroutines simpler and more flexible. It also contains standard library enhancements, new language features and compiler plugins, numerous features and improvement in the JS backend, and many other fixes and updates.<br/>
 
-The new release also includes all features introduced in the [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) , including updates for compatibility with <b>Android Studio 2.3 Beta 1</b>.
+The new release also includes all features introduced in the [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) , including updates for compatibility with **Android Studio 2.3 Beta 1**.
 The full changelog is available [here](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md) and some key changes are listed below:<br/>
 <span id="more-4405"></span>
 ## Coroutines
@@ -303,8 +303,8 @@ fun main(args: Array<String>) {
 You can check the generated JS code for this snippet for the CommonJS and “plain” module systems [here](https://gist.github.com/ligee/50d30ad9bca5ea925ff7d913ff232004) .
 ## How to Try It
 
-<b>In Maven/Gradle:</b> Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M04 as the version number for the compiler and the standard library.
-<b>In IntelliJ IDEA:</b> Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
-The <strong>command-line compiler</strong> can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) .
-<b>On <a href="http://try.kotlinlang.org">try.kotlinlang.org</a></b>. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M04.
+**In Maven/Gradle:** Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M04 as the version number for the compiler and the standard library.
+**In IntelliJ IDEA:** Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
+The **command-line compiler** can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) .
+**On <a href="http://try.kotlinlang.org">try.kotlinlang.org</a>**. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M04.
 Merry Kotlin!

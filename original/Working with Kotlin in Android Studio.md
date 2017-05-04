@@ -66,20 +66,20 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        <strong>classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.6.+'</strong>
+        **classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.6.+'**
         classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
  
 apply plugin: 'android'
-<strong>apply plugin: 'kotlin-android'</strong>
+**apply plugin: 'kotlin-android'**
  
 repositories {
     mavenCentral()
 }
  
 dependencies {
-    <strong>compile 'org.jetbrains.kotlin:kotlin-stdlib:0.6.+'</strong>
+    **compile 'org.jetbrains.kotlin:kotlin-stdlib:0.6.+'**
 }
  
 android {
@@ -90,9 +90,9 @@ android {
         minSdkVersion 7
         targetSdkVersion 16
     }
-    <strong>sourceSets {
+    **sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
-    }</strong>
+    }**
 }
 ```
 
@@ -100,7 +100,7 @@ android {
 <p></p>
 {% endraw %}
 
-<strong>Update</strong>: Replace “<strong>0.6.+</strong>” with the version of Kotlin plugin you have installed.
+**Update**: Replace “**0.6.+**” with the version of Kotlin plugin you have installed.
 The parts relative to Kotlin are highlighted in bold:
 
 * Select the Kotlin plugin for Gradle and the version we’re using. The M6 release corresponds to 0.6.69.

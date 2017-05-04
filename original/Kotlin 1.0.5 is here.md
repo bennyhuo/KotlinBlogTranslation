@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-We’re happy to announce that we’ve just released <b>Kotlin 1.0.5</b>, which continues the series of bugfix and tooling updates for Kotlin 1.0.
+We’re happy to announce that we’ve just released **Kotlin 1.0.5**, which continues the series of bugfix and tooling updates for Kotlin 1.0.
 We’d like to thank our external contributors whose pull requests were included in this release: [Kirill Rakhman](https://github.com/cypressious) , [Vladislav Golub](https://github.com/ensirius) , [Vsevolod Tolstopyatov](https://github.com/qwwdfsad) , [Yoshinori Isogai](https://github.com/shiraji) , [takahirom](https://github.com/takahirom) and [gitreelike](https://github.com/gitreelike) . Thanks to everyone who tried the EAP builds and sent us feedback, too!
 The complete list of changes in the release can be found in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) . Some of the changes worth highlighting are:
 ### Loop to Lambda Conversion

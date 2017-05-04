@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-Join us this <strong>Thursday, October 22nd, 14:00 – 15:00 GMT</strong> (10:00 – 11:00 AM EDT) for our free webinar, [Functional Programming with Kotlin](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) with Mike Hearn
+Join us this **Thursday, October 22nd, 14:00 – 15:00 GMT** (10:00 – 11:00 AM EDT) for our free webinar, [Functional Programming with Kotlin](http://info.jetbrains.com/Kotlin-Webinar-October2015-registration.html) with Mike Hearn
 In this talk, Mike Hearn will provide a brief introduction to programming in Kotlin via worked, practical examples, with a focus on functional programming.
 Topics covered will include:
 

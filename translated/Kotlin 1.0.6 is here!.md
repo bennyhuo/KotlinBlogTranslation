@@ -52,7 +52,7 @@ translator_url:
 `应用插件：'kotlin-kapt'`
 ## 全开编译器插件
 
-<strong>全开</strong>编译器插件使类注释具有特定的注释，并且它们的成员在没有明确的`open`关键字的情况下打开，因此使用框架/库更容易，如Spring AOP或Mockito。您可以阅读相关的全开的详细信息 [保持](https://github.com/Kotlin/KEEP/pull/40) 。
+**全开**编译器插件使类注释具有特定的注释，并且它们的成员在没有明确的`open`关键字的情况下打开，因此使用框架/库更容易，如Spring AOP或Mockito。您可以阅读相关的全开的详细信息 [保持](https://github.com/Kotlin/KEEP/pull/40) 。
 我们为Gradle和Maven以及IDE集成提供全面的插件支持。
 ### 如何使用全开的Gradle
 
@@ -160,7 +160,7 @@ apply plugin: "kotlin-spring"
 
 ## No-arg编译器插件
 
-<b> no-arg </b>编译器插件为具有特定注释的类生成一个额外的零参数构造函数。生成的构造函数是合成的，因此不能从Java或Kotlin直接调用，但可以使用反射来调用它。你可以看到激动人心的讨论 [这里](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) 。
+**no-arg**编译器插件为具有特定注释的类生成一个额外的零参数构造函数。生成的构造函数是合成的，因此不能从Java或Kotlin直接调用，但可以使用反射来调用它。你可以看到激动人心的讨论 [这里](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) 。
 ### 如何在Gradle中使用no-arg
 
 用法非常类似于全开。

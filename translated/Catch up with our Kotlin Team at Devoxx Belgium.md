@@ -14,14 +14,14 @@ translator:
 translator_url:
 ---
 
-<img alt =“Devoxx Logo”class =“alignright size-full wp-image-1359”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin /files/2013/11/devoxx_logo.jpg?resize=183%2C75&amp;ssl=1"/> JetBrains和Kotlin团队成员Svetlana Isakova和Aleksei Sedunov 11月11日至15日在售罄 [德比克斯比利时](http://www.devoxx.be/#/) 会议。我们邀请您以<strong>在我们的展位</strong>停止<strong>即兴演示</strong>，一些<strong>优质礼品</strong>，并有机会赢得免费个人许可证< / strong>。
+<img alt =“Devoxx Logo”class =“alignright size-full wp-image-1359”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin /files/2013/11/devoxx_logo.jpg?resize=183%2C75&amp;ssl=1"/> JetBrains和Kotlin团队成员Svetlana Isakova和Aleksei Sedunov 11月11日至15日在售罄 [德比克斯比利时](http://www.devoxx.be/#/) 会议。我们邀请您以**在我们的展位**停止**即兴演示**，一些**优质礼品**，并有机会赢得免费个人许可证< / strong>。
 不要错过以下伟大的Kotlin事件：
-<strong> Hackergarten动手编码</strong>
+**Hackergarten动手编码**
 11月12日星期二，阿列克谢将参加Hackergarten动手编码活动。他将让您开始使用Kotlin语言，并将帮助您为Kotlin的IntelliJ IDEA编写一个插件。 [令人困惑的Kotlin：使您的代码清晰](http://www.devoxx.be/dv13-svetlana-isakova.html?presId=3575) 加入Svetlana和Aleksei星期四，11月14日，10:50 -11：50在6室。在这个演讲中，我们将从Kotlin的角度讲述Java拼图游戏的故事，这将演示Kotlin设计如何帮助消除一些有问题的问题在Java中找到。特别地，我们将考虑表达式和控制结构，异常处理，对象和类，可空类型和扩展等方面。
-#### <strong>关于Svetlana Isakova <a href="http://www.devoxx.be/dv13-svetlana-isakova.html?presId=3575"> <br/>
-</a> </strong>
+#### **关于Svetlana Isakova <a href="http://www.devoxx.be/dv13-svetlana-isakova.html?presId=3575"> <br/>
+</a>**
 
-#### 关于Aleksei Sedunov </strong>
+#### 关于Aleksei Sedunov**
 
 要了解即将到来的行动，请观看Devoxx 2012的JetBrains展位，观赏人气和气氛的短片。
 

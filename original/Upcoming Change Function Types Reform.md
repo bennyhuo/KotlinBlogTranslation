@@ -18,11 +18,11 @@ Kotlin M12 will likely bring another change that is crucial for implementing a u
 ## Why
 
 Currently, there are 23*2 = 46 class files related to `FunctionX` in the `kotlin` package `kotlin-runtime.jar` and 46 more class files related to `ExtensionFunctionX` (`X` being a number between 0 and 22). This is a lot of class files already, but there are 46*3 = 138 more class files in the `kotlin.reflect` package (`KFunctionX`, `KMemberFunctionX`, `KExtensionFunctionX`), which is way over the top <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
-So, for one thing, we really need to <strong>reduce the number of class files</strong> in `kotlin-runtime.jar`.
+So, for one thing, we really need to **reduce the number of class files** in `kotlin-runtime.jar`.
 Then, at the moment `ExtensionFunctionX` types are not related to `FunctionX` types, and we can not say `listOfStrings.map(String::length)`, because the argument has type `String.() -&gt; Int`, but `map()` expects `(String) -&gt; Int`, which is sad, annoying and inconvenient.
-So, we want to make extension functions <strong>coercible to normal functions</strong> (with an extra parameter).
-While we are at it, we would also like to <strong>allow functions with more than 22 parameters</strong>, theoretically any number of parameters (in practice 255 on JVM).
-An important constraint here is that <strong>implementing Kotlin functions in Java</strong> must remain easy: Java 8 lambdas should work and in earlier versions of Java `new Function2() { ... }` with only `invoke()` method in the body should be enough.
+So, we want to make extension functions **coercible to normal functions** (with an extra parameter).
+While we are at it, we would also like to **allow functions with more than 22 parameters**, theoretically any number of parameters (in practice 255 on JVM).
+An important constraint here is that **implementing Kotlin functions in Java** must remain easy: Java 8 lambdas should work and in earlier versions of Java `new Function2() { ... }` with only `invoke()` method in the body should be enough.
 ## How
 
 All 230 function class files will be replaced by a single interface [Function](https://github.com/JetBrains/kotlin/blob/spec-function-types/spec-docs/function-types.md#function-trait) which will represent all functions at runtime (+ we will keep 23 interfaces `kotlin.jvm.FunctionX` to facilitate easy creation of Kotlin functions in Java). A total win of over 200 class files.
@@ -61,5 +61,5 @@ builder {
 ## Consequences
 
 These changes will make reflection on functions possible (i.e. `KClass` will finally have `getFunctions()`), and using function objects will be more intuitive.
-<strong>You won’t need to change anything in your code</strong> unless you referenced `ExtensionFunctionX` types directly (by saying, e.g. `ExtensionFucntion0&lt;Foo, Unit&gt;`).
+**You won’t need to change anything in your code** unless you referenced `ExtensionFunctionX` types directly (by saying, e.g. `ExtensionFucntion0&lt;Foo, Unit&gt;`).
 For more details, see this [spec document](https://github.com/JetBrains/kotlin/pull/636/files) (you can comment on the source, or press “View” for rendered markdown).

@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-<strong>Kotlin M11</strong> is coming very soon, and as some of you [expressed concerns](https://devnet.jetbrains.com/thread/461012?tstart=0) about being informed about the upcoming changes, I will describe one of the features of M11 and ask you for some <strong>feedback</strong>. <span id="more-1817"></span>
+**Kotlin M11** is coming very soon, and as some of you [expressed concerns](https://devnet.jetbrains.com/thread/461012?tstart=0) about being informed about the upcoming changes, I will describe one of the features of M11 and ask you for some **feedback**. <span id="more-1817"></span>
 ## Class Objects: a short reminder
 
 As you all know, any Kotlin class can have an associated [class object](http://kotlinlang.org/docs/reference/classes.html#class-objects) :
@@ -52,7 +52,7 @@ KotlinClass.classObjectMember()
 {% endraw %}
 
 (You can even use the `[platformStatic]` annotation to make those member actually `static` when seen from Java.)
-In fact, Kotlin’s <em>class objects</em> and Java’s statics are not at all the same, because <em>class objects are <strong>objects</strong></em>, i.e. they can extend classes, implement traits and serve as <em>values</em> at runtime:
+In fact, Kotlin’s <em>class objects</em> and Java’s statics are not at all the same, because <em>class objects are **objects**</em>, i.e. they can extend classes, implement traits and serve as <em>values</em> at runtime:
 
 {% raw %}
 <p></p>
@@ -90,7 +90,7 @@ class KotlinClass {
 
 So, what used to be called “class objects” will now be called “default objects”.
 More motivation is coming below, but at this point, please note how you feel about this change: is it better now? more confusing? about the same as before?<br/>
-<strong>Please share your opinion in the comments below, now, before reading the motivation. Thanks a lot!</strong>
+**Please share your opinion in the comments below, now, before reading the motivation. Thanks a lot!**
 
 {% raw %}
 <p><a name="why-default-objects"></a></p>
@@ -98,7 +98,7 @@ More motivation is coming below, but at this point, please note how you feel abo
 
 ## Why Default Objects
 
-<strong>NOTE</strong>: all syntax presented here is <strong>provisional</strong> (we have it implemented, but might decide to change it before M11).
+**NOTE**: all syntax presented here is **provisional** (we have it implemented, but might decide to change it before M11).
 The unfortunate wording is not the only reason for this change. In fact, we redesigned the concept so that it is more uniform with normal objects.
 Note that a class can (and always could) have many objects (usual, named singletons) nested into it:
 
@@ -157,7 +157,7 @@ class KotlinClass {
 
 Now you can still refer to its members though the name of the containing class: `KotlinClass.foo()`, or through full qualification: `KotlinClass.Default.foo()`.
 As you can see, unlike what we used to have with <em>class objects</em>, <em>default objects</em> are completely uniform with normal objects.
-Another important benefit is that now every object <em>has a name</em> (again, `Default` is used when the name of a <em>default object</em> is omitted), which enables <strong>writing extension function for default objects</strong>:
+Another important benefit is that now every object <em>has a name</em> (again, `Default` is used when the name of a <em>default object</em> is omitted), which enables **writing extension function for default objects**:
 
 {% raw %}
 <p></p>
@@ -182,4 +182,4 @@ The old syntax will be deprecated and kept around for a while, so that you can m
 * The new concept is uniform with normal named objects.
 * You can now write extensions to default objects that can be called on class names.
 
-<strong>Your feedback is very welcome!</strong> A large part of this change is about terminology and wording, so if you think the new concept is confusing is some way, please tell us in the comments.
+**Your feedback is very welcome!** A large part of this change is about terminology and wording, so if you think the new concept is confusing is some way, please tell us in the comments.

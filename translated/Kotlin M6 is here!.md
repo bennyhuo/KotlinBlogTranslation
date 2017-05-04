@@ -96,7 +96,7 @@ enum class Side {
 您现在可以安全地删除项目中未引用的符号，包括检查注释和字符串中的引用<img alt =“image”border =“0”data-recalc-dims =“1”src =“https：// i0.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image3.png?resize=189%2C164&amp;ssl=1“style =”padding-top：0px; padding-left：0px; padding -  right：0px; border-width：0px“/>
 ### 展开/删除表达式
 
-与IDEA中其他语言的支持相同，您现在可以通过<strong>代码|展开/移除</strong>重构。 <img alt =“image”border =“0”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image4。 png？resize = 384％2C123＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“
+与IDEA中其他语言的支持相同，您现在可以通过**代码|展开/移除**重构。 <img alt =“image”border =“0”data-recalc-dims =“1”src =“https://i1.wp.com/blog.jetbrains.com/kotlin/files/2013/08/image4。 png？resize = 384％2C123＆amp; ssl = 1“style =”padding-top：0px; padding-left：0px; padding-right：0px; border-width：0px“
 ## 其他功能和改进
 
 除了上述功能之外，这个版本还带来了一些其他的好东西

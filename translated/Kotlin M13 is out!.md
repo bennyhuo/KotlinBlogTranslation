@@ -138,7 +138,7 @@ class Example(
 <p></p>
 {% endraw %}
 
-<strong>注意：这是一个突破性的变化</strong>。在M13之前，当我们注释主要构造函数的参数时，在它们存储的参数和字段上注释<strong>都是</strong>。现在它们只写在以下一个（第一个适用的）之一：参数，属性，领域。即如果注释适用于字段和参数，则只会在参数上写入。这在使用Jackson时会出现一些问题，但有一个简单的解决方法：使用特殊的 [杰克逊模块为Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) 。而旧的方式没有一个。
+**注意：这是一个突破性的变化**。在M13之前，当我们注释主要构造函数的参数时，在它们存储的参数和字段上注释**都是**。现在它们只写在以下一个（第一个适用的）之一：参数，属性，领域。即如果注释适用于字段和参数，则只会在参数上写入。这在使用Jackson时会出现一些问题，但有一个简单的解决方法：使用特殊的 [杰克逊模块为Kotlin](http://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin) 。而旧的方式没有一个。
 查找更多信息 [文件](http://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets) 。
 ### 可见性
 
@@ -151,7 +151,7 @@ class Example(
 
 这可能是有争议的，我们选择`public`作为默认可见性。 Kotlin是一种类型安全的语言，选择最安全的选项，默认情况下，`private`似乎更合乎逻辑。我们完全认识到有利于这一违约的有效论据。但Kotlin也是一种务实的语言。我会尽量简单解释为什么我们认为`public`是正确的默认值。
 在真正的Java代码库（公开/私有决策明确地采用）中，`public`比`private`更频繁地出现（代码库中的2.5到5倍）我们检查过， [其中包括Kotlin编译器和IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ）。这意味着我们会让人们在整个地方写出`public`来实现他们的设计，这将使Kotlin更加礼节，我们会失去一些从Java获得的宝贵的成果简洁。在我们的经验中，显式的`public`打破了许多DSL的流程，并且常常是主要构造函数。所以我们决定默认使用它来保持我们的代码清洁。
-<strong>注意</strong>：`internal`仍然支持，但现在您需要明确指定。
+**注意**：`internal`仍然支持，但现在您需要明确指定。
 ### 杂项变更
 
 
@@ -201,7 +201,7 @@ fun demo(bean: JBean) {
 * 您可以在源文件上指定一个@file：JvmName（“CustomName”）注释来更改类的名称;
 * 如果额外添加了@file：JvmMultifileClass注释，许多文件可以共享相同的JVM名称。
 
-为了使这个更改工作，我们必须引入一个新的资源文件，这是编译Kotlin代码所需的Kotlin二进制文件。它的名字是`META-INF /＆lt; module_name＆gt; .kotlin_module`。 <strong>确保这些`.kotlin_module`文件不会被包装过程剥离。</strong>另外，确保模块名不会在您的项目中冲突：
+为了使这个更改工作，我们必须引入一个新的资源文件，这是编译Kotlin代码所需的Kotlin二进制文件。它的名字是`META-INF /＆lt; module_name＆gt; .kotlin_module`。 **确保这些`.kotlin_module`文件不会被包装过程剥离。**另外，确保模块名不会在您的项目中冲突：
 
 * 在Maven中，我们使用groupId和artifactId作为模块名，但可以说
 
@@ -263,11 +263,11 @@ Kotlin图书馆也在积极发展。 M13带来全功能的反射库：我们现�
 更多的这是一个单独的职位。
 ## 工具
 
-<strong>编译器守护进程。</strong>我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</em>对话框中的一个框，将其打开：
+**编译器守护进程。**我们宣布 [支持Gradle守护进程](http://blog.jetbrains.com/kotlin/2015/08/gradle-daemon-support-for-faster-compilation/) 前一段时间，您的反馈一直是积极的：编译时间似乎下降到三分之一。我们一直致力于编译性能，因为M13在IntelliJ IDEA中也使用了类似于Gradle的守护进程。此功能现在被标记为“实验性”，因此您需要勾选“首选项”</em>对话框中的一个框，将其打开：
 <p>
   构建，执行，部署 - ＆gt;编译器 - ＆gt; Kotlin编译器 - ＆gt;在调用之前保持编译器进程（实验）
 </p>
-<strong>增量编译</strong>是我们为提高Kotlin编译时间而采取的另一个方向。 M13带来：
+**增量编译**是我们为提高Kotlin编译时间而采取的另一个方向。 M13带来：
 
 * 内联函数的增量编译：现在如果您更改内联函数的主体，则仅重新编译使用它的类;
 * 对私有成员的更改不会导致重新编译其他文件。

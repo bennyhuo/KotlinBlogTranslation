@@ -15,11 +15,11 @@ translator_url:
 ---
 
 我们很高兴向您呈现即将推出的Kotlin发行版的第四个里程碑。我们正在封装版本1.1的开发，最终版本计划于2017年第一季度进行。大多数功能已经形成了体面，所以现在是尝试它的好时机，并给我们您的反馈。我们会很感激！
-与其他里程碑版本一样，我们为新语言和库功能提供<b>无后向兼容性保证</b>。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改</b>。
+与其他里程碑版本一样，我们为新语言和库功能提供**无后向兼容性保证**。在1.1版本的里程碑版本中引入的任何内容都将在最终1.1版本之前更改**。
 请分享您关于新功能或您可能遇到的任何问题的反馈，通过此版本 [YouTrack](https://youtrack.jetbrains.com/issues/KT) ， [论坛](https://discuss.kotlinlang.org) 和 [松弛](http://kotlinlang.slack.com/) 。
 这一里程碑对协同语法和语义进行了重大改造，使协同工作更加简单和灵活。它还包含标准库增强功能，新语言功能和编译器插件，JS后端的许多功能和改进，以及许多其他修补程序和更新。<br/>
 
-新版本还包括所有功能 [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) ，包括与<b> Android Studio 2.3 Beta 1 </b>兼容的更新。
+新版本还包括所有功能 [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) ，包括与**Android Studio 2.3 Beta 1**兼容的更新。
 完整的更新日志可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md) 以下列出了一些关键变化：
 <span id =“more-4405”> </span>
 ## 协调程序
@@ -299,8 +299,8 @@ fun main(args: Array<String>) {
 您可以为CommonJS和“plain”模块系统检查此代码段生成的JS代码 [这里](https://gist.github.com/ligee/50d30ad9bca5ea925ff7d913ff232004) 。
 ## 如何尝试
 
-<b>在Maven / Gradle中：</b>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M04作为编译器和标准库的版本号。
-<b>在IntelliJ IDEA中：</b>转到<i>工具→Kotlin→配置Kotlin插件更新</i>，然后在<i>更新频道</i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</i>。
-<strong>命令行编译器</strong>可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) 。
-<b> <a href="http://try.kotlinlang.org"> try.kotlinlang.org </a> </b>。使用右下角的下拉列表将编译器版本更改为1.1-M04。
+**在Maven / Gradle中：**添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用1.1-M04作为编译器和标准库的版本号。
+**在IntelliJ IDEA中：**转到<i>工具→Kotlin→配置Kotlin插件更新</i>，然后在<i>更新频道</i>下拉列表中选择“早期访问预览1.1”下拉列表，然后按<i>检查更新</i>。
+**命令行编译器**可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) 。
+**<a href="http://try.kotlinlang.org"> try.kotlinlang.org </a>**。使用右下角的下拉列表将编译器版本更改为1.1-M04。
 快乐Kotlin！

@@ -66,4 +66,4 @@ Install this release by drag-and-drop’ing this button to Eclipse:
 <p><a class="drag" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Your <strong>feedback</strong> and [pull requests](https://github.com/JetBrains/kotlin-eclipse) are welcome!
+Your **feedback** and [pull requests](https://github.com/JetBrains/kotlin-eclipse) are welcome!

@@ -48,6 +48,6 @@ translator_url:
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mac-mini-sphero2-games.png"><img alt="mac-mini-sphero2-games" class="alignnone size-full wp-image-3151" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mac-mini-sphero2-games.png?resize=640%2C420&amp;ssl=1"/></a></p>
 {% endraw %}
 
-所有应用程序必须由2015年12月14日（星期日）的<strong>结束日期</strong>提交！ RoboVM和JetBrains的团队将从所有提交中挑选获奖者。有效的条目包含您的<strong> tweet </strong>，指向您的<strong>应用程序的GitHub存储库</strong>。每个参与者和每个GitHub资料库只能获得一个奖项。跨平台应用程序的积分，我们将高兴推广的tweet或博客帖子的开发日志，以及代码质量！获奖者将在RoboVM和Kotlin博客以及Twitter上公布，并将通过GitHub联系。
+所有应用程序必须由2015年12月14日（星期日）的**结束日期**提交！ RoboVM和JetBrains的团队将从所有提交中挑选获奖者。有效的条目包含您的**tweet**，指向您的**应用程序的GitHub存储库**。每个参与者和每个GitHub资料库只能获得一个奖项。跨平台应用程序的积分，我们将高兴推广的tweet或博客帖子的开发日志，以及代码质量！获奖者将在RoboVM和Kotlin博客以及Twitter上公布，并将通过GitHub联系。
 没有Kotlin经验？加入800多个社区成员 [松弛](http://kotlinslackin.herokuapp.com/) 并提问！
 祝你好运！

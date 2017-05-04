@@ -14,14 +14,14 @@ translator:
 translator_url:
 ---
 
-Kotlin is undergoing finalization, and as part of the process we are <strong>cleaning up</strong>: revising the language and its libraries. The biggest changes have been made in [M12](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) , but some more are coming. The point is to perform all the necessary breaking changes before we release 1.0, so that we can keep the language and libraries <strong>backwards-compatible</strong> after the release.
+Kotlin is undergoing finalization, and as part of the process we are **cleaning up**: revising the language and its libraries. The biggest changes have been made in [M12](http://blog.jetbrains.com/kotlin/2015/05/kotlin-m12-is-out/) , but some more are coming. The point is to perform all the necessary breaking changes before we release 1.0, so that we can keep the language and libraries **backwards-compatible** after the release.
 The trick is both we, ourselves, and you, our users, have quite a bit of code written in Kotlin already, and we don’t want all that code broken hopelessly on each update (some breakages are inevitable, unfortunately, but we are doing our best). The general scheme of making changes in a user-friendly way is “deprecate-release-remove”, for example:
 
 * in M12 we deprecated quite a few language constructs and library classes/functions,
 * then we released M12, so that whenever you use those to-be-removed language and library features, the compiler issues warnings,
 * in the next milestone we will remove those deprecated things completely, so that the compiler will issue errors instead of warnings.
 
-So, if you have any deprecation warnings in your code, <strong>now is just the right time to get rid of them</strong>: the next major update will make all that code red, and your build will break.
+So, if you have any deprecation warnings in your code, **now is just the right time to get rid of them**: the next major update will make all that code red, and your build will break.
 ## Getting rid of deprecation warnings
 
 As mentioned above, there are two kinds of deprecation warnings: language deprecations and library deprecations. To get rid of them we provide several options.<br/>
@@ -29,7 +29,7 @@ As mentioned above, there are two kinds of deprecation warnings: language deprec
 ### Quick Fixes
 
 With a <em>Quick Fix</em> you can fix a deprecation warning when you press `Alt+Enter` on it: available options will appear that fix an individual warning or all such warnings in the entire project. Deprecated language constructs and library functions will be replaced by newer versions.
-Please note that for the quick fix to work correctly on library functions, <strong>the sources of the standard library must be attached to your project</strong>.
+Please note that for the quick fix to work correctly on library functions, **the sources of the standard library must be attached to your project**.
 ### Project-Wide Code Cleanup
 
 Quick fixes are good when you have located the deprecated usage already, but since we have deprecated a lot of things recently, it may not be a viable option to look for each individual usage. In such a case, you can apply these fixes in bulk with an IDE action “<em>Analyze | Code Cleanup</em>“.
@@ -37,7 +37,7 @@ We provide an inspection named “<em>Usage of redundant or deprecated syntax or
 ### Manual Rewrite
 
 In rare cases some deprecated usages can not be fixed automagically. These include usages of language constructs and library symbols that will be dropped without alternatives or can’t be rewritten without breaking the code, or when there are several options of rewriting the code, so that explicit choice is required.
-<strong>Bottom line</strong>. How to get ready for Kotlin M13:<br/>
+**Bottom line**. How to get ready for Kotlin M13:<br/>
 – install Kotlin M12 (ensure you have latest update of M12 installed),<br/>
 – get rid of the deprecation warnings by means described above.
 ## Which API’s will definitely be dropped in M13

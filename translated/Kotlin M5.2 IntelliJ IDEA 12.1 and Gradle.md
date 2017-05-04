@@ -34,7 +34,7 @@ Kotlin IDE的改进包括：
 
 ## SAM构造函数
 
-当使用Java库时，现在可以通过调用它来创建SAM接口（一个具有<strong> S </strong> ingle <strong> A </strong> bstract <strong> M </strong>方法）的实例命名并传递函数文字。例如：
+当使用Java库时，现在可以通过调用它来创建SAM接口（一个具有**S** ingle **A** bstract **M**方法）的实例命名并传递函数文字。例如：
 
 {% raw %}
 <p></p>
@@ -48,7 +48,7 @@ SwingUtilities.invokeLater(Runnable { doItNow() })
 <p></p>
 {% endraw %}
 
-<strong>这仅适用于Java类</strong>。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个<em>合成的</em>函数
+**这仅适用于Java类**。事实上，它不是语言的一部分，而是Java类被加载到Kotlin的一个特征：我们定义一个<em>合成的</em>函数
 
 {% raw %}
 <p></p>
@@ -125,4 +125,4 @@ dependencies {
 ## 提醒：KAnnotator
 
 别忘了你现在有了 [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/) 乐意效劳。
-<strong>拥有不错的Kotlin！</strong>
+**拥有不错的Kotlin！**

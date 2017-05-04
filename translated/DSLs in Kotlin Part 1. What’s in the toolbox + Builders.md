@@ -201,7 +201,7 @@ lock (myLock) {
 <p></p>
 {% endraw %}
 
-这是一个内置的构造，如Java的<strong>同步</strong>部分？不，这是一个函数调用。它使用非常方便的约定：您可以将最后一个函数文字</em>传递到您的参数列表周围的括号之外。所以这个电话与“lock（myLock，{...}”）相同，但看起来更漂亮。
+这是一个内置的构造，如Java的**同步**部分？不，这是一个函数调用。它使用非常方便的约定：您可以将最后一个函数文字</em>传递到您的参数列表周围的括号之外。所以这个电话与“lock（myLock，{...}”）相同，但看起来更漂亮。
 有关这个例子的更多信息可以找到 [这里](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Inlinefunctions) 。
 还有一个很好的约会，使得非常接近LINQ的东西可能：
 

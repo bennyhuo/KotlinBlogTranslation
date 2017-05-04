@@ -48,7 +48,7 @@ public class InTheLoop {
 
 Don’t read further until you figure what this program prints <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 <span id="more-247"></span><br/>
-This program prints nothing and simply loops forever, because variable ‘i’ is of type <strong>int</strong>, and ANY <strong>int</strong> is less or equal than Integer.MAX_INT.
+This program prints nothing and simply loops forever, because variable ‘i’ is of type **int**, and ANY **int** is less or equal than Integer.MAX_INT.
 Now, if I write this in Kotlin:
 
 {% raw %}
@@ -90,9 +90,9 @@ This Kotlin program SHOULD loop forever. And it does not. Sigh. I have already o
 {% endraw %}
 
 And this TERMINATES and prints “101”. That’s where I really got puzzled.
-After some experimentation, I discovered that making variable ‘end’ <strong>final</strong> makes the program loop forever. “It must be JIT, ” — I though, and was right: when run with “java -Xint”, this code loops forever, and so does the Kotlin code.
+After some experimentation, I discovered that making variable ‘end’ **final** makes the program loop forever. “It must be JIT, ” — I though, and was right: when run with “java -Xint”, this code loops forever, and so does the Kotlin code.
 How come? Well, I run a 64-bit JVM. Most likely, JIT optimizer makes the loop variable 64-bit, because registers are this big, or something like this, and it does not overflow, but just becomes Integer.MAX_VALUE + 1.
 Sigh. I closed our “New issue” dialog, and opened the HotSpot’s one… (Some technicalities prevent me from finishing the reporting process right now, but I will do it on Monday).
-Now, <strong>what lesson can we learn from this</strong>? I don’t think I can learn much from hitting a JIT bug. Bugs happen — that’s the lesson here, I think.
-But what about the initial puzzler? I teach Pascal at a high school, and one thing I really like about this language is that a <strong>for</strong> loop ALWAYS TERMINATES there. We cannot have the same in Kotlin, because in general <strong>for</strong> uses an iterator that may have arbitrary logic in it. But what we can do is guarantee that <strong>iteration over a range of numbers always terminates</strong>.
-BTW, if a range was just a list of numbers, the loops would terminate, right? So it <strong>IS</strong> a [bug](http://youtrack.jetbrains.net/issue/KT-492) in the Kotlin compiler, after all. <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+Now, **what lesson can we learn from this**? I don’t think I can learn much from hitting a JIT bug. Bugs happen — that’s the lesson here, I think.
+But what about the initial puzzler? I teach Pascal at a high school, and one thing I really like about this language is that a **for** loop ALWAYS TERMINATES there. We cannot have the same in Kotlin, because in general **for** uses an iterator that may have arbitrary logic in it. But what we can do is guarantee that **iteration over a range of numbers always terminates**.
+BTW, if a range was just a list of numbers, the loops would terminate, right? So it **IS** a [bug](http://youtrack.jetbrains.net/issue/KT-492) in the Kotlin compiler, after all. <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>

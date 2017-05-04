@@ -24,10 +24,10 @@ Let’s look at the plans for each area in more detail, starting with the big on
 <span id="more-3844"></span>
 ## New Language Features
 
-Before we can start talking about specific features, the <strong>big disclaimer</strong>: everything we’re talking about here is still in the design phase, and features may end up being changed dramatically or dropped entirely as we move forward with the design, implementation and feedback gathering process. So, no guarantees.
+Before we can start talking about specific features, the **big disclaimer**: everything we’re talking about here is still in the design phase, and features may end up being changed dramatically or dropped entirely as we move forward with the design, implementation and feedback gathering process. So, no guarantees.
 ### async/await/yield
 
-The most important feature that we’re designing right now is support for <strong>coroutines</strong> (async/await/yield). By now, the async/await pattern has found its way into many different languages, including C#, Python and Dart, and we want to support this in Kotlin as well. However, that’s not the end of the story: we want to put the specific code execution semantics into the library, rather than the compiler.
+The most important feature that we’re designing right now is support for **coroutines** (async/await/yield). By now, the async/await pattern has found its way into many different languages, including C#, Python and Dart, and we want to support this in Kotlin as well. However, that’s not the end of the story: we want to put the specific code execution semantics into the library, rather than the compiler.
 The compiler will take care of transforming the function used as a coroutine into a form allowing to suspend and resume its execution. The actual execution of a coroutine (the initial invocation, as well as resuming the execution after a suspension point) will be the responsibility of the support library. Therefore, the same mechanism will allow us to support many different patterns: generators (`yield`), asynchronously executed functions (`async`/`await`), Go-like channels and goroutines, as well as potentially others which haven’t even been invented yet.
 Note that we’re still in the process of estimating the effort needed to implement this feature, and we don’t know whether it would be reasonable to support it in the 1.1 timeframe or it would be postponed to a later release.
 ### Other Language Features

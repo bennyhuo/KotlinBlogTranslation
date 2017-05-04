@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-Today we are releasing a new milestone: Kotlin M11, which brings such long-awaited features as <strong>secondary constructors</strong>, a first glimpse of true <strong>reflection</strong> support for Kotlin and much more. <span id="more-1836"></span>
+Today we are releasing a new milestone: Kotlin M11, which brings such long-awaited features as **secondary constructors**, a first glimpse of true **reflection** support for Kotlin and much more. <span id="more-1836"></span>
 ## Language Changes
 
 M11 brings quite a few language changes, some of which are breaking changes and/or deprecation of old ways of doing things in favor of new ones. Some of your code may break, but we’ve done our best to make your transition path as smooth as possible.
@@ -84,11 +84,11 @@ class Foo {
 <p></p>
 {% endraw %}
 
-The old syntax is <strong>deprecated</strong>, i.e. you’ll get a warning, not an error. Also, the IDE provides an Alt+Enter quick-fix action to convert the old syntax to the new one, which has an option to bulk update the whole project.
+The old syntax is **deprecated**, i.e. you’ll get a warning, not an error. Also, the IDE provides an Alt+Enter quick-fix action to convert the old syntax to the new one, which has an option to bulk update the whole project.
 See [user docs](http://kotlinlang.org/docs/reference/classes.html#constructors) for more details.
 ### Companion Objects (Class-Objects Rethought)
 
-As you all probably know, Kotlin classes do not have static members. Instead there may be a special singleton `object` associated with a class, which we used to call “class object” &dash; a rather unfortunate term. So, we somewhat redesigned the concept, and, [with your help](http://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/) , chose another name for it: <strong>companion object</strong>.
+As you all probably know, Kotlin classes do not have static members. Instead there may be a special singleton `object` associated with a class, which we used to call “class object” &dash; a rather unfortunate term. So, we somewhat redesigned the concept, and, [with your help](http://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/) , chose another name for it: **companion object**.
 The unfortunate wording was not the only reason for this change. In fact, we redesigned the concept so that it is more uniform with normal objects.
 Note that a class can (and always could) have many objects (usual, named singletons) nested into it:
 
@@ -147,7 +147,7 @@ class KotlinClass {
 
 Now you can still refer to its members though the name of the containing class: `KotlinClass.foo()`, or through full qualification: `KotlinClass.Companion.foo()`.
 As you can see, unlike what we used to have with <em>class objects</em>, <em>companion objects</em> are completely uniform with normal objects.
-Another important benefit is that now every object <em>has a name</em> (again, `Companion` is used when the name of a <em>companion object</em> is omitted), which enables <strong>writing extension function for companion objects</strong>:
+Another important benefit is that now every object <em>has a name</em> (again, `Companion` is used when the name of a <em>companion object</em> is omitted), which enables **writing extension function for companion objects**:
 
 {% raw %}
 <p></p>
@@ -264,7 +264,7 @@ Next step would be to issue Java nullability errors in a safe way (so that an er
 
 Good news for Android users: M11 brings a useful extension that makes Android development in Kotlin easier.
 We all know about `findViewById()`. It is a notorious source of bugs and unpleasant code which is hard to read and support. In Java the way around this problem is through libraries such as [ButterKnife](http://jakewharton.github.io/butterknife/) and [AndroidAnnotations](http://androidannotations.org) , which rely on [JSR 269](https://jcp.org/aboutJava/communityprocess/mrel/jsr269/index2.html) , but it is a `javac`-specific API and is not supported in Kotlin (yet).
-Since M11, Kotlin has its own solution to the `findViewById()` problem, which does not require JSR 269: the new `kotlin-android-extensions` plugin for the Kotlin compiler allows you to access views in a type-safe way with <strong>zero</strong> extra user code (no annotations or other such things) and <strong>no runtime libraries required</strong>.
+Since M11, Kotlin has its own solution to the `findViewById()` problem, which does not require JSR 269: the new `kotlin-android-extensions` plugin for the Kotlin compiler allows you to access views in a type-safe way with **zero** extra user code (no annotations or other such things) and **no runtime libraries required**.
 To use this extension, you need to enable it in your Gradle build and install an extension plugin into your IDE. See more [here](http://kotlinlang.org/docs/tutorials/android-plugin.html) .
 ## IntelliJ IDEA Support
 

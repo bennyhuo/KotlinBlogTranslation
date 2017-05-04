@@ -31,10 +31,10 @@ NOTE: If inlining breaks your code (due to compiler bugs, for example), you can 
 
 ### toString(), equals() and hashCode() need override directive
 
-When declaring <em>toString()</em>,<em> equals() </em>and <em>hashCode()</em> we now need to prefix them with the <em>override </em>keyword. This is a <strong>breaking change</strong> from the previous release and applies to all classes. Use the provided quick-fix in the IDE (Alt+Enter on an error) to quickly add “override” to all such methods in project.
+When declaring <em>toString()</em>,<em> equals() </em>and <em>hashCode()</em> we now need to prefix them with the <em>override </em>keyword. This is a **breaking change** from the previous release and applies to all classes. Use the provided quick-fix in the IDE (Alt+Enter on an error) to quickly add “override” to all such methods in project.
 ### “jet” package renamed to “kotlin”
 
-The <em>jet</em> core classes have been renamed to <em>kotlin</em>, which also means that, yes you guessed it, Kotlin is now the official and final name of, well, Kotlin. This is, again, a potentially <strong>breaking change</strong>. Most imports will happen automatically. In case you encounter any issues, rename the imports manually.
+The <em>jet</em> core classes have been renamed to <em>kotlin</em>, which also means that, yes you guessed it, Kotlin is now the official and final name of, well, Kotlin. This is, again, a potentially **breaking change**. Most imports will happen automatically. In case you encounter any issues, rename the imports manually.
 ### References to local functions
 
 In Kotlin you can reference a function by name using the <em>::functionName</em> syntax. This is also available now for local functions
@@ -125,7 +125,7 @@ In addition, JavaScript native functions also allow passing extension literals a
 ## Standard Library
 
 The standard library is being severely reworked. This includes introduction of <em>streams</em> (among other things, this will serve better compatibility with Java 8) and deprecation of some functions.
-Some of the redesign has led to <strong>breaking changes</strong> to the library API. Most of the functionality is still available, but you may need to fix existing code slightly.
+Some of the redesign has led to **breaking changes** to the library API. Most of the functionality is still available, but you may need to fix existing code slightly.
 ## IntelliJ IDEA Enhancements
 
 ### Copy/Paste now inserts imports

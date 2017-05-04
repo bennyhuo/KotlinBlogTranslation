@@ -29,7 +29,7 @@ Many of the changes introduced to the language and core libraries are deprecatio
 ### Annotations: New Syntax
 
 As we [mentioned before](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) , we decided to reserve square brackets for some more productive future uses, and make annotation syntax more familiar to Java users. So, since M12, we write `@Foo(args)` instead of `[Foo(args)]`. More details can be found [here](http://kotlinlang.org/docs/reference/annotations.html) (even more — in the [spec document](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ).
-Note that `@` is <strong>not required</strong> in most cases. Normally we write annotations without any escaping:
+Note that `@` is **not required** in most cases. Normally we write annotations without any escaping:
 
 {% raw %}
 <p></p>
@@ -158,7 +158,7 @@ class PrivateConstructor private constructor (val x: Int) {
 <p></p>
 {% endraw %}
 
-The full form is <strong>only needed when we want to annotate</strong> a primary constructor or add a modifier. In most cases, the old familiar syntax still works:
+The full form is **only needed when we want to annotate** a primary constructor or add a modifier. In most cases, the old familiar syntax still works:
 
 {% raw %}
 <p></p>
@@ -416,19 +416,19 @@ As we are working on the Kotlin standard library, some things get changed and/or
 The full list of changes is available [here](https://quip.com/Cy9IAkZtvmjm) .
 ## IntelliJ IDEA Plugin
 
-Kotlin IDE now supports the standard <strong>Introduce Parameter</strong> refactoring that turns an expression selected inside a function into a parameter:
+Kotlin IDE now supports the standard **Introduce Parameter** refactoring that turns an expression selected inside a function into a parameter:
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/05/parameter.png?fit=640%2C120&amp;ssl=1"/></p>
 {% endraw %}
 
-Additionally, <strong>Introduce Lambda Parameter</strong> is available to extract a piece of code as a function value:
+Additionally, **Introduce Lambda Parameter** is available to extract a piece of code as a function value:
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/05/lambda.png?fit=640%2C120&amp;ssl=1"/></p>
 {% endraw %}
 
-<strong>Rename</strong> has an option to rename related declarations (variables, subclasses etc) as well:
+**Rename** has an option to rename related declarations (variables, subclasses etc) as well:
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/05/rename.png?fit=640%2C85&amp;ssl=1"/></p>

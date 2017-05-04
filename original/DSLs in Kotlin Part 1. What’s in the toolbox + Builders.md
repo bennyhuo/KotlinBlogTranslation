@@ -201,7 +201,7 @@ lock (myLock) {
 <p></p>
 {% endraw %}
 
-Is this a built-in construct, like Java’s <strong>synchronized</strong> section? No, it’s a function call. It uses a very handy convention: you can pass <em>the last function literal</em> outside the parentheses you put around your argument list. So this call is the same as “lock(myLock, {…})”, but looks prettier.
+Is this a built-in construct, like Java’s **synchronized** section? No, it’s a function call. It uses a very handy convention: you can pass <em>the last function literal</em> outside the parentheses you put around your argument list. So this call is the same as “lock(myLock, {…})”, but looks prettier.
 More about this example can be found [here](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Inlinefunctions) .
 There’s one other nice convention that makes something very close to LINQ possible:
 

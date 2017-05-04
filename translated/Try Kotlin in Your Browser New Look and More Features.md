@@ -36,7 +36,7 @@ translator_url:
 ## 分享你的代码
 
 您可以使用Google，Facebook或Twitter帐户登录。登录后，您可以创建新项目并复制示例项目以进行更改。
-任何已保存的项目（我们的示例或您的自定义代码）可以由<strong>共享，只需从地址栏复制和粘贴链接</strong>。
+任何已保存的项目（我们的示例或您的自定义代码）可以由**共享，只需从地址栏复制和粘贴链接**。
 例如，这是一个 [链接到示例程序](http://try.kotlinlang.org/#/Examples/Problems/Sum/Sum.kt) 。<BR/>
 这就是 [将我的代码链接到表示Go的推迟作为Kotlin库](http://try.kotlinlang.org/#/UserProjects/-1984665128/1040749715610173087711460271843) 。
 ## 旧网络演示
@@ -46,4 +46,4 @@ translator_url:
 ## 反馈
 
 像往常一样欢迎您的反馈。
-<strong>享受</strong>！
+**享受**！

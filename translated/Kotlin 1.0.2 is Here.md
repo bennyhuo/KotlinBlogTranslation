@@ -17,11 +17,11 @@ translator_url:
 我们很高兴地宣布发布Kotlin 1.0.2，这是Kotlin的第二个修补程序和工具更新。除编译器和语言错误修复外，Kotlin 1.0.2还为IDE和构建工具添加了许多主要功能。
 ### Gradle和IDE中的增量编译
 
-新版本继续开展Kotlin增量编译支持工作，加快开发过程中的周转时间。默认情况下，IDE中的增量编译（以前标记为实验）已被启用。此外，期待已久的对Gradle构建</b>中的增量编译的支持现在已经存在。
-要为Gradle启用增量编译，您需要将<b> kotlin.incremental </b>属性设置为true（例如，通过将`kotlin.incremental = true`添加到`在项目的根目录中的gradle.properties`文件）。
+新版本继续开展Kotlin增量编译支持工作，加快开发过程中的周转时间。默认情况下，IDE中的增量编译（以前标记为实验）已被启用。此外，期待已久的对Gradle构建**中的增量编译的支持现在已经存在。
+要为Gradle启用增量编译，您需要将**kotlin.incremental**属性设置为true（例如，通过将`kotlin.incremental = true`添加到`在项目的根目录中的gradle.properties`文件）。
 ### Android Lint Checks
 
-Kotlin 1.0.2引入了针对Kotlin代码的<b> Android Lint检查</b>的支持，确保正确检测到您所定位的Android版本中不支持使用API​​的问题。
+Kotlin 1.0.2引入了针对Kotlin代码的**Android Lint检查**的支持，确保正确检测到您所定位的Android版本中不支持使用API​​的问题。
 
 {% raw %}
 <p><span id="more-3865"></span></p>

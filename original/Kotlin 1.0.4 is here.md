@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-We’re happy to announce the release of a new bugfix and tooling update of Kotlin, version <b>1.0.4</b>. This version brings many improvements related to the IDE and build tools, as well as JavaScript support.
+We’re happy to announce the release of a new bugfix and tooling update of Kotlin, version **1.0.4**. This version brings many improvements related to the IDE and build tools, as well as JavaScript support.
 Once again we’d like to thank our external contributors who implemented some of the features in this release, [Kirill Rakhman](https://github.com/cypressious) and [Yoshinori Isogai](https://github.com/shiraji) , as well as everyone who tried the EAP builds of 1.0.4 and sent us feedback.
 You can find the full list of fixes and improvements in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.4/ChangeLog.md) . Some of the changes deserve special mention:
 ### Language Change: Assignment of ‘val’ in try/catch
@@ -40,7 +40,7 @@ catch(e: Exception) {
 {% endraw %}
 
 In effect, a final variable could be assigned twice, and it was possible to observe two different values for it (for example, if the value in the `try` statement was captured in a lambda). In Java, the equivalent code is not allowed.
-To maintain consistent semantics, the code which assigns the same `val` in both `try` and `catch` branches <b>becomes a warning</b> in Kotlin 1.0.4 and will <b>become an error</b> in version 1.0.5. In most cases, the code can be easily fixed by converting the code to an expression form, and the IDE will <b>offer a quickfix</b> to convert this code automatically. The above example would be converted to:
+To maintain consistent semantics, the code which assigns the same `val` in both `try` and `catch` branches **becomes a warning** in Kotlin 1.0.4 and will **become an error** in version 1.0.5. In most cases, the code can be easily fixed by converting the code to an expression form, and the IDE will **offer a quickfix** to convert this code automatically. The above example would be converted to:
 
 {% raw %}
 <p></p>
@@ -68,7 +68,7 @@ catch(e: Exception) {
 
 Kotlin 1.0.4 includes a new experimental implementation of the annotation processing API. To enable it, add the following to your build.gradle:
 `apply plugin: 'kotlin-kapt'`
-You also need to <b>remove</b> the snippet that enables old annotation processing:
+You also need to **remove** the snippet that enables old annotation processing:
 
 {% raw %}
 <p></p>

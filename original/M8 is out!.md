@@ -150,7 +150,7 @@ inline fun <T> guardedValue(
 <p></p>
 {% endraw %}
 
-Our guardedValue() is an inline function. Now, the <b>lock</b> parameter has a default value (a new ReentrantLock is created for every value). Then, the object expression inside this function “captures” the <b>compute</b> parameter, and inlines it directly inside the anonymous class created. This results in only one class and one object emitted (and stored) per value, instead of two classes and two objects for the non-inline case.
+Our guardedValue() is an inline function. Now, the **lock** parameter has a default value (a new ReentrantLock is created for every value). Then, the object expression inside this function “captures” the **compute** parameter, and inlines it directly inside the anonymous class created. This results in only one class and one object emitted (and stored) per value, instead of two classes and two objects for the non-inline case.
 
 {% raw %}
 <p><a name="platformName"></a></p>
@@ -247,7 +247,7 @@ fun getX() = 1
 {% endraw %}
 
 Note that nothing changes when for the Kotlin clients of this code, but Java clients must use the platform name (doGetX) instead of Kotlin name (getX).
-<b>WARNING:</b> This is a <b>breaking</b> change, some of your existing code may need to be fixed.
+**WARNING:** This is a **breaking** change, some of your existing code may need to be fixed.
 ### Support for transient, synchronized and strictfp
 
 In addition to the long-available <em>volatile</em>. We now support <em>transient</em>, <em>synchronized</em> and <em>strictfp</em> as annotations. The semantics are exactly like in Java:
@@ -283,7 +283,7 @@ class FlagDemo {
 
 ## Language Changes
 
-A few language changes, all of which are <b>breaking changes</b>, so important to take note:
+A few language changes, all of which are **breaking changes**, so important to take note:
 
 * private in a package now means private to the current package inside the module. Packages with the same name in other modules won’t see these definitions. Note that packages are nested, so privates are also visible to subpackages in the same module.
 * Extension Properties cannot have backing fields. This was never recommended anyway.

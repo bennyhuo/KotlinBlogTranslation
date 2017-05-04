@@ -15,7 +15,7 @@ translator_url:
 ---
 
 最后，Kotlin已经毕业了Beta，我们很高兴地介绍了Release Candidate Build！
-<strong>注意</strong>：就像我们一样 [早些时候宣布](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) ，<strong> RC需要重新编译所有代码</strong>，以确保没有使用旧版本编译的代码（即使您使用的是EAP版本，请重新编译）。
+**注意**：就像我们一样 [早些时候宣布](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) ，**RC需要重新编译所有代码**，以确保没有使用旧版本编译的代码（即使您使用的是EAP版本，请重新编译）。
 这篇博客文章概述了自Beta 4以来所做的更改。库更改是此版本中最大的。另外，一些错误已经修复。完整的更改列表可用 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 。
 
 {% raw %}

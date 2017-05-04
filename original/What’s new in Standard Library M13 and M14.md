@@ -56,7 +56,7 @@ class Poll(val json: Map<String, *>) {
 <p></p>
 {% endraw %}
 
-Unlike `Delegates.lazy`, an semantics of `lazy` is <strong>synchronized</strong> by default.
+Unlike `Delegates.lazy`, an semantics of `lazy` is **synchronized** by default.
 ## Delegating properties to a map
 
 Another common use case is storing values of properties in a map, where names of properties serve as keys. For this case we provide extension functions `get` and `set` on maps to satisfy the delegation convention, allowing to delegate property right to the map, without creating wrapper delegate objects:

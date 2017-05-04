@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-我们很高兴地介绍Kotlin 1.0.3 </strong>。这个更新不是全新的和闪亮的功能，更多的是关于错误修复，工具改进和性能提升。这就是为什么你会喜欢它😉看看充分 [更改日志](https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md) 并通过子系统发布统计信息：
+我们很高兴地介绍Kotlin 1.0.3**。这个更新不是全新的和闪亮的功能，更多的是关于错误修复，工具改进和性能提升。这就是为什么你会喜欢它😉看看充分 [更改日志](https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md) 并通过子系统发布统计信息：
 <img alt =“Kotlin 1.0.3。修复问题”class =“alignnone size-full wp-image-4043”src =“https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/Pasted-image -at-2016_06_28-07_25-PM.png“width =”800“/> <br/>
 <span id =“more-4042”> </span> <br/>
 

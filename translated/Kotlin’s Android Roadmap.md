@@ -23,12 +23,12 @@ Google最近发布的最有趣的消息之一是Google宣布 [（有限）Java 8
 我们非常重视使Kotlin成为Android开发的好工具。在接下来的几个版本（1.0.X）中，我们将继续改进我们的工具链和库。我们目前的努力主要集中在三个主要领域：加快开发工作流程，减少运行时库的大小，并提供更完整的工具支持。
 #### 开发工作流程
 
-为了加快开发工作流程，<b>增量编译</b>来到Kotlin的Gradle插件。这将大大改善构建时间：当源文件更改时，我们只会重新编译这个特定文件，这些文件真的取决于它，而不是整个模块。
-我们接下来要做的是提高Android构建性能，这是提供与Android新的<b> <a href="http://tools.android.com/tech-docs/jackandjill">杰克和吉尔工具链< a> </b>。现在有一些问题阻止杰克正确处理Kotlin生成的字节码（ [196084年](https://code.google.com/p/android/issues/detail?id=196084) 和 [203531](https://code.google.com/p/android/issues/detail?id=203531) ），但是我们计划与Google团队一起解决问题或提供解决方案。一旦完成，我们将能够在增量编译期间仅使用Jill翻译已更改的类文件，而不是每次翻译所有类文件（这是旧版Android工具中唯一可能的行为）。
-最后但并非最不重要的：<b>即时运行</b>。目前，冷交换对于Kotlin来说是正常的，但暖和热交换需要进一步调查。我们将竭尽全力尽快解决问题。同时， [适用于Android的JRebel](https://zeroturnaround.com/software/jrebel-for-android/) Kotlin已经很好了。
+为了加快开发工作流程，**增量编译**来到Kotlin的Gradle插件。这将大大改善构建时间：当源文件更改时，我们只会重新编译这个特定文件，这些文件真的取决于它，而不是整个模块。
+我们接下来要做的是提高Android构建性能，这是提供与Android新的**<a href="http://tools.android.com/tech-docs/jackandjill">杰克和吉尔工具链< a>**。现在有一些问题阻止杰克正确处理Kotlin生成的字节码（ [196084年](https://code.google.com/p/android/issues/detail?id=196084) 和 [203531](https://code.google.com/p/android/issues/detail?id=203531) ），但是我们计划与Google团队一起解决问题或提供解决方案。一旦完成，我们将能够在增量编译期间仅使用Jill翻译已更改的类文件，而不是每次翻译所有类文件（这是旧版Android工具中唯一可能的行为）。
+最后但并非最不重要的：**即时运行**。目前，冷交换对于Kotlin来说是正常的，但暖和热交换需要进一步调查。我们将竭尽全力尽快解决问题。同时， [适用于Android的JRebel](https://zeroturnaround.com/software/jrebel-for-android/) Kotlin已经很好了。
 #### 运行时大小
 
-我们正在计划对<b>减少kotlin-stdlib的方法计数</b>的几项改进。我们目前的结果是7'191：<img src =“https://img.shields.io/badge/Methods count-core：6289 | deps：902-e91e63.svg”style =“
+我们正在计划对**减少kotlin-stdlib的方法计数**的几项改进。我们目前的结果是7'191：<img src =“https://img.shields.io/badge/Methods count-core：6289 | deps：902-e91e63.svg”style =“
 
     显示：inline;
 
@@ -40,7 +40,7 @@ Google最近发布的最有趣的消息之一是Google宣布 [（有限）Java 8
 在多文件外观类中优化顶级函数表示，并将仅内联函数从运行时可用的二进制文件中移出将会赢得我们几千种方法。
 #### 模具支持
 
-Kotlin 1.0的Android支持故事中缺少的主要内容是<b> Lint Checks </b>，我们很高兴地宣布他们来到Kotlin。我们已经实施了Android Studio 1.5中可用的所有支票（计划在Kotlin 1.0.2中发布），新的2.0检查正在进行中。我们的Lint检查是建立在Kotlin和Java代码的常见表示之上的，我们计划将该表示贡献给Android SDK，以便在未来版本的Android SDK中添加新的检查将与Kotlin开箱即用。
+Kotlin 1.0的Android支持故事中缺少的主要内容是**Lint Checks**，我们很高兴地宣布他们来到Kotlin。我们已经实施了Android Studio 1.5中可用的所有支票（计划在Kotlin 1.0.2中发布），新的2.0检查正在进行中。我们的Lint检查是建立在Kotlin和Java代码的常见表示之上的，我们计划将该表示贡献给Android SDK，以便在未来版本的Android SDK中添加新的检查将与Kotlin开箱即用。
 随着1.0.X版本的发布，还将逐渐添加更多Android特定的IDE支持，例如新的Kotlin活动</i>动作，代码洞察和导航功能等。
 ### Kotlin和Java 8
 

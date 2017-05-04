@@ -40,7 +40,7 @@ translator_url:
 * 所以当传递无参数的lambda时，我们不知道应该选择哪一个
 * 之前工作，因为选择旧的图书馆扩展功能（可追溯到SAM之前的时代）而不是SAM转换的成员。
 
-<strong>解决方法</strong>很简单，只需指定参数，例如：
+**解决方法**很简单，只需指定参数，例如：
 
 {% raw %}
 <p></p>
@@ -119,7 +119,7 @@ fun bar(p: List<Open>) // in Java: List<Open>
 * 为了准备在标准库中重新排列包，我们已经创建了新的包，并将所有的功能复制到它们。旧功能保留二进制兼容性。 Kotlin代码不需要迁移，代码清理可用于Java代码。
 
 之后，我们计划从库中再次提取一个JAR：它将包含很少使用的数组实用程序，所以我们希望将它们保留在主JAR之外，以减小其大小。
-<strong>更多亮点</strong>：
+**更多亮点**：
 Kotlin的`Int :: class`可能在不同的上下文中对应于Java的`int.class`或`Integer.class`（这是合理的）。为了方便用例，当需要两个特定的一个时，我们引入了两个属性：
 
 * Int :: class.javaPrimitiveType返回Int.class
@@ -131,7 +131,7 @@ Kotlin的`Int :: class`可能在不同的上下文中对应于Java的`int.class`
 JDK的更新版本使得集合越来越不容忍。例如，这是什么 [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) 关于`java.util.Map.computeIfAbsent`：
 <p>
 
-  如果指定的键尚未与值<strong>（或映射到null）</strong>相关联，则尝试使用给定的映射函数计算其值，并将其输入到此映射中，除非为null。
+  如果指定的键尚未与值**（或映射到null）**相关联，则尝试使用给定的映射函数计算其值，并将其输入到此映射中，除非为null。
 
 </p>
 这些合同对于这种操作的原子属性是固有的，所以我们决定我们也必须满足它们，否则当Kotlin的扩展功能在无空闲的并发集合中运行时，我们将无法保证正确的行为。所以，我们将改变`getOrPut`和其他这样的函数的行为，以便它们将值`null`的值与该值不存在相同。

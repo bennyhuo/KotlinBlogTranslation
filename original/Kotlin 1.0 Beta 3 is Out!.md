@@ -66,7 +66,7 @@ when {
 <p></p>
 {% endraw %}
 
-Many people tend to think that the condition “`foo.isValid(), foo.isReady()`” means that `foo` is <strong>both</strong> valid <strong>and</strong> ready, while actually the comma means <em>or</em>. The workaround is trivial: simply use `||` instead:
+Many people tend to think that the condition “`foo.isValid(), foo.isReady()`” means that `foo` is **both** valid **and** ready, while actually the comma means <em>or</em>. The workaround is trivial: simply use `||` instead:
 
 {% raw %}
 <p></p>
@@ -123,7 +123,7 @@ We are cleaning up and fixing minor issues in visibilities and scoping rules, so
 ## Android Extensions
 
 We have merged the main Kotlin plugin for IntelliJ IDEA and the <em>Kotlin Extensions For Android</em> plugin. The latter is now obsolete as its functionality is available from the main Kotlin plugin.
-Also, we have added support for Android <strong>product flavors</strong>: now properties from different flavours are available in different packages.
+Also, we have added support for Android **product flavors**: now properties from different flavours are available in different packages.
 For example, if we have two flavors in the `build.gradle` file:
 
 {% raw %}

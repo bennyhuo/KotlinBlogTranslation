@@ -14,7 +14,7 @@ translator:
 translator_url:
 ---
 
-在庆祝活动开始之前，我们设法发布了Kotlin的下一个里程碑，添加了<strong>动态类型</strong>等等。我们来看看M10带给我们什么。 <span id =“more-1708”> </span>
+在庆祝活动开始之前，我们设法发布了Kotlin的下一个里程碑，添加了**动态类型**等等。我们来看看M10带给我们什么。 <span id =“more-1708”> </span>
 ## 语言增强
 
 语言的一些改进，特别是：
@@ -69,7 +69,7 @@ myTree.findParentOfType<MyTreeNodeType>()
 {% endraw %}
 
 但是，我们需要使用<em>的泛化泛型</em>来访问一个函数中的类型，而在JVM上，通用的泛型是昂贵的...
-幸运的是，Kotlin有 [内联函数](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) 现在他们支持<strong> reified </strong>类型参数，所以我们可以这样写：
+幸运的是，Kotlin有 [内联函数](http://kotlinlang.org/docs/reference/lambdas.html#inline-functions) 现在他们支持**reified**类型参数，所以我们可以这样写：
 
 {% raw %}
 <p></p>
@@ -89,7 +89,7 @@ inline fun <reified T> TreeNode.findParentOfType(): T? {
 <p></p>
 {% endraw %}
 
-我们使用<strong> reified </strong>修饰符对type参数进行限定，现在可以在函数内部访问，几乎就像是普通类一样。由于函数是内联的，因此不需要反射，像<strong>！</strong>这样的正常运算符正在工作。另外，我们可以如上所述调用它：`myTree.findParentOfType＆MyTreeNodeType＆gt;（）`。
+我们使用**reified**修饰符对type参数进行限定，现在可以在函数内部访问，几乎就像是普通类一样。由于函数是内联的，因此不需要反射，像**！**这样的正常运算符正在工作。另外，我们可以如上所述调用它：`myTree.findParentOfType＆MyTreeNodeType＆gt;（）`。
 虽然在许多情况下可能并不需要反思，但我们仍然可以使用一个重定义的类型参数：`javaClass <t>（）</t>`使我们可以访问它：
 
 {% raw %}
@@ -112,7 +112,7 @@ fun main(s: Array<String>) {
 此功能旨在简化传统上依赖于反思的框架中的代码，我们的内部实验表明它的工作正常。
 ### 检查申报地点差异
 
-Kotlin有 [申报地点差异](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) 从一开始，但编译器长时间缺少通讯员检查。现在他们放在他们的位置：编译器抱怨如果我们在</strong>或<strong> out </strong>中声明一个类型参数为<strong>，但在类体中滥用它：
+Kotlin有 [申报地点差异](http://kotlinlang.org/docs/reference/generics.html#declaration-site-variance) 从一开始，但编译器长时间缺少通讯员检查。现在他们放在他们的位置：编译器抱怨如果我们在**或**out**中声明一个类型参数为**，但在类体中滥用它：
 
 {% raw %}
 <p></p>
@@ -128,8 +128,8 @@ class C<out T> {
 <p></p>
 {% endraw %}
 
-在这个例子中，由于T在T中被声明为<strong> out </strong>（即类是<em> covariant </em>），我们不允许将它作为`foo的参数（）`函数，我们只能返回它。
-请注意，<strong>私人</strong>声明可以违反方差限制，例如：
+在这个例子中，由于T在T中被声明为**out**（即类是<em> covariant </em>），我们不允许将它作为`foo的参数（）`函数，我们只能返回它。
+请注意，**私人**声明可以违反方差限制，例如：
 
 {% raw %}
 <p></p>
@@ -145,7 +145,7 @@ class C<out T>(t: T) {
 <p></p>
 {% endraw %}
 
-虽然`foo`的设置器将T作为参数，因此违反了<strong> out </strong>限制，编译器允许这样做，并确保只有同一个实例</em> `C`可以访问`foo`。这意味着`C`中的以下函数将无法编译：
+虽然`foo`的设置器将T作为参数，因此违反了**out**限制，编译器允许这样做，并确保只有同一个实例</em> `C`可以访问`foo`。这意味着`C`中的以下函数将无法编译：
 
 {% raw %}
 <p></p>
@@ -162,7 +162,7 @@ private fun copyTo(other: C<T>) {
 <p></p>
 {% endraw %}
 
-这是一个<strong>破坏变化</strong>：以前编译的一些代码可能会中断，但是不能修复它可能会导致运行时异常，所以编译器错误将对你有一些价值<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/ simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
+这是一个**破坏变化**：以前编译的一些代码可能会中断，但是不能修复它可能会导致运行时异常，所以编译器错误将对你有一些价值<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/ simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
 ### 类型推断支持使用方差
 
 类型参数推断已被改进以适应 [使用方差](http://kotlinlang.org/docs/reference/generics.html#type-projections) 更舒适现在您可以调用通用功能，例如一个投影类型的`reverseInPlace（）`，例如`Array＆lt; out Number＆gt;`：
@@ -204,7 +204,7 @@ fun <T> Array<T>.reverseInPlace() {
 最初由罗斯·泰特（Ross Tate）提出的基本机制 [“混合场地差异”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) 。
 ### Varargs转换为投影阵列
 
-另一个<strong>突破性变化</strong>的形式是对一个晦涩的修复，但有时候 [相反](https://youtrack.jetbrains.com/issue/KT-5534) [烦人的](https://youtrack.jetbrains.com/issue/KT-2163) 问题：当我们有一个使用`String？`的变量的函数时，我们真的希望能够将`String`的数组传递给它，不是吗？在M10之前是不可能的，因为T的vararg被编译为`Array＆lt; T＆gt;`，现在它们被编译为`Array＆lt; out T＆gt;`，并且以下代码工作：
+另一个**突破性变化**的形式是对一个晦涩的修复，但有时候 [相反](https://youtrack.jetbrains.com/issue/KT-5534) [烦人的](https://youtrack.jetbrains.com/issue/KT-2163) 问题：当我们有一个使用`String？`的变量的函数时，我们真的希望能够将`String`的数组传递给它，不是吗？在M10之前是不可能的，因为T的vararg被编译为`Array＆lt; T＆gt;`，现在它们被编译为`Array＆lt; out T＆gt;`，并且以下代码工作：
 
 {% raw %}
 <p></p>

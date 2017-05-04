@@ -30,7 +30,7 @@ fun bar() {}
 <p></p>
 {% endraw %}
 
-But sometimes you need <strong>static constants</strong> in your class: for example, to comply with requirements of some framework or to use serialization. How do you do this in Kotlin? <span id="more-1101"></span> There are two things in Kotlin that resemble Java’s statics: aforementioned package-level functions and [class objects](http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects) . I’ll explain briefly what class objects are and then proceed to static constants.
+But sometimes you need **static constants** in your class: for example, to comply with requirements of some framework or to use serialization. How do you do this in Kotlin? <span id="more-1101"></span> There are two things in Kotlin that resemble Java’s statics: aforementioned package-level functions and [class objects](http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects) . I’ll explain briefly what class objects are and then proceed to static constants.
 ## Class Objects
 
 A class (not [inner](http://confluence.jetbrains.com/display/Kotlin/Nested+classes) and not local) or trait may declare at most one class object associated with it. For example:
@@ -116,7 +116,7 @@ Class object is an instance stored in a static field inside the class it is defi
 ## Static Constants
 
 A property in a class object works as well as a static field (and even better), but only in Kotlin. As we saw above, for Java it looks different, and this may cause problems if some framework or convention (in Java) requires you to have a real static field.
-<strong>Disclaimer</strong>: in Kotlin M5.3 there’s no way to have a static field in your class. It was implemented very recently, so you have it only in the [latest nightly build](http://confluence.jetbrains.com/display/Kotlin/Getting+Started#GettingStarted-UsingtheKotlinnightlybuilds) .
+**Disclaimer**: in Kotlin M5.3 there’s no way to have a static field in your class. It was implemented very recently, so you have it only in the [latest nightly build](http://confluence.jetbrains.com/display/Kotlin/Getting+Started#GettingStarted-UsingtheKotlinnightlybuilds) .
 When you define a public or internal property in your class object, and do not specify custom getter, nor setter, Kotlin automatically stores it directly in the enclosing class, so that in Java you can say
 
 {% raw %}

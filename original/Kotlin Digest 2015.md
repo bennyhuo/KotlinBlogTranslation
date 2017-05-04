@@ -26,7 +26,7 @@ By the way, you can [join us on slack](http://kotlinslackin.herokuapp.com/) and 
 <p><span id="more-3400"></span></p>
 {% endraw %}
 
-<strong>N.B: Some of the following articles use outdated versions of Kotlin in the examples and should be interpreted in the context of the time at which they were written</strong>
+**N.B: Some of the following articles use outdated versions of Kotlin in the examples and should be interpreted in the context of the time at which they were written**
 ## Top 6 General Publications
 
 

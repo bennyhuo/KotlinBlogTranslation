@@ -31,7 +31,7 @@ fun bar() {}
 <p></p>
 {% endraw %}
 
-然而有时仍需要在类中使用<strong>静态常量</strong>：例如，要符合某些框架的要求或使用序列化，那么在kotlin中应该如何实现？Kotlin中有两种类似于Java的静态概念：上述的包级别函数以及[类对象](http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects) 。下面将简要解释类对象，然后继续讨论静态常量。
+然而有时仍需要在类中使用**静态常量**：例如，要符合某些框架的要求或使用序列化，那么在kotlin中应该如何实现？Kotlin中有两种类似于Java的静态概念：上述的包级别函数以及[类对象](http://confluence.jetbrains.com/display/Kotlin/Classes+and+Inheritance#ClassesandInheritance-Classobjects) 。下面将简要解释类对象，然后继续讨论静态常量。
 
 ## 类对象
 
@@ -122,7 +122,7 @@ Foo.object$.getBar()
 
 类对象中的属性与静态字段相同（甚至更好），但仅限于Kotlin。如上所述，对于Java而言这是不同的，如果（在Java中）框架或约定要求您必须使用静态字段，则可能会引发问题。  
 
-<strong>免责声明</strong>：在Kotlin M5.3中，类是不可能存在静态字段的。但最近已经实现，所以只要你去[每日最新版本](http://confluence.jetbrains.com/display/Kotlin/Getting+Started#GettingStarted-UsingtheKotlinnightlybuilds)尝试即可。 
+**免责声明**：在Kotlin M5.3中，类是不可能存在静态字段的。但最近已经实现，所以只要你去[每日最新版本](http://confluence.jetbrains.com/display/Kotlin/Getting+Started#GettingStarted-UsingtheKotlinnightlybuilds)尝试即可。 
 
 当对类对象使用public或internal访问修饰符，且不定义getter与setter时，Kotlin会自动将其直接存储在附属类中，所以在Java中可以用
 

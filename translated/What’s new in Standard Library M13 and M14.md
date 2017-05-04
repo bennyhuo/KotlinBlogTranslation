@@ -56,7 +56,7 @@ class Poll(val json: Map<String, *>) {
 <p></p>
 {% endraw %}
 
-与`Delegates.lazy`不同，默认情况下，`lazy`的语义为<strong> synchronized </strong>。
+与`Delegates.lazy`不同，默认情况下，`lazy`的语义为**synchronized**。
 ## 将属性委派给地图
 
 另一个常见的用例是将属性的值存储在地图中，其中属性的名称用作键。对于这种情况，我们在地图上提供扩展函数`get`和`set`以满足委派约定，允许将属性委托给地图，而不创建包装器委托对象：

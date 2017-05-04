@@ -17,7 +17,7 @@ translator_url:
 The first update to our [Beta](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) is here! We are stabilizing, so it’s mostly bug-fixing and changes to the standard library.
 ## Language changes
 
-We are now enforcing <strong>single-instantiation inheritance</strong> constraint on type parameters: the same `T` can not have both `List&lt;Int&gt;` and `List&lt;String&gt;` as its upper bounds. This has been always forbidden for classes, now the same check applies for type parameters.<span id="more-3093"></span>
+We are now enforcing **single-instantiation inheritance** constraint on type parameters: the same `T` can not have both `List&lt;Int&gt;` and `List&lt;String&gt;` as its upper bounds. This has been always forbidden for classes, now the same check applies for type parameters.<span id="more-3093"></span>
 Diagnostics were improved for the cases when a smart cast is impossible:
 
 {% raw %}

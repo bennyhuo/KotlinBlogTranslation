@@ -59,7 +59,7 @@ kotlin {
 
 ## 源兼容性Kotlin 1.0
 
-在这次更新中我们非常关注的另一个领域是与Kotlin 1.0的源兼容性</strong>。这样，即使您的团队使用Kotlin 1.0，您也可以尝试使用Kotlin 1.1，而不用担心通过使用新版本中添加的一些功能来打破构建。
+在这次更新中我们非常关注的另一个领域是与Kotlin 1.0的源兼容性**。这样，即使您的团队使用Kotlin 1.0，您也可以尝试使用Kotlin 1.1，而不用担心通过使用新版本中添加的一些功能来打破构建。
 要启用兼容性模式：
 
 * 对于Maven，Ant和命令行编译器，将-language-version编译器参数设置为1.0。
@@ -68,8 +68,8 @@ kotlin {
 
 ## 如何尝试
 
-<strong>在Maven / Gradle中：</strong>将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用`1.1.0-beta-38`作为编译器和标准库的版本号。
-<strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
+**在Maven / Gradle中：**将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用`1.1.0-beta-38`作为编译器和标准库的版本号。
+**在IntelliJ IDEA中：**转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
 命令行编译器可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta2) 。
-<strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。即将推出。
+**<a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a>**。即将推出。
 让我们来吧！
