@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-0-7-is-out/
+translator:
+translator_url:
 ---
 
 We’re happy to announce that Kotlin 1.0.7, the last update in the Kotlin 1.0.x series, is out. The main focus of this update is to backport the fixes related to Gradle and annotation processing so that they become available to those who can’t upgrade to version 1.1 at this time. The complete list of fixes is available in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.7/ChangeLog.md) .

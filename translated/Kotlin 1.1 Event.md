@@ -12,8 +12,8 @@ reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-1-event-2/  
 translator: SnakEys  
 translator_url: https://github.com/SnakeEys  
-
 ---
+
 Kotlin 1.1除了为您的项目带来新特性之外，还是您与当地社区进行线下交流学习、了解Kotlin的未来与发展的绝好机会。  
 您可以组织社区的小伙伴们，一起参与Jetbrains团队在<strong>3月23日</strong>举办的Kotlin直播活动。为了适应不同时区，我们准备了两个直播流，分别是<strong>欧洲中部时间[CET]下午5点/7点(太平洋夏季时间[PDT]上午9点/11点)</strong>。  
 
@@ -29,6 +29,7 @@ Kotlin 1.1除了为您的项目带来新特性之外，还是您与当地社区�
 {% endraw %}
 
 ## Kotlin 1.1活动时间：
+
 * <strong>CET时间下午5点/7点(PDT时间上午9点/11点)</strong> - Andrey Breslav演讲(Youtube上直播30分钟)，链接将稍候放出。
 * <strong>CET时间下午5点30分/7点30分(PDT时间上午9点30分/11点30分)</strong> -  休息30分钟，期间可以自由讨论关于在Kotlin未来版本中您最希望加入的功能或特性，并在Twitter上分享和评论。
 * <strong>CET时间下午6点/8点(PDT时间上午10点/12点)</strong> - 与Kotlin团队的互动问答环节(45分钟，直播);
@@ -41,7 +42,6 @@ Kotlin 1.1除了为您的项目带来新特性之外，还是您与当地社区�
 * 团队将在Q＆A环节现场回答问题;
 * 如果在会议期间有问题没有答复，我们仍将通过Twitter进行回复
 * 优先回答提问频率最高的问题
-
 
 ## Future Features kit
 

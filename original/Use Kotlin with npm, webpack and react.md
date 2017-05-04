@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/use-kotlin-with-npm-webpack-and-react/
+translator:
+translator_url:
 ---
 
 With Kotlin 1.1, targeting JavaScript in the Kotlin compiler has officially reached production-ready status. Of course, having compiler support is not enough to be able to solve real-life problems, so we continue our work on integrating Kotlin into the larger JavaScript ecosystem.

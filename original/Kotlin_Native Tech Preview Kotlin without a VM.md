@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlinnative-tech-preview-kotlin-without-a-vm/
+translator:
+translator_url:
 ---
 
-We are happy to announce the first Technology Preview of <strong>Kotlin/Native</strong> that compiles Kotlin directly to machine code. The Kotlin/Native compiler produces standalone executables that can run without any virtual machine.
+We are happy to announce the first Technology Preview of **Kotlin/Native** that compiles Kotlin directly to machine code. The Kotlin/Native compiler produces standalone executables that can run without any virtual machine.
 It is not a fully functional release yet, but you can already play with the technology and take a look at its source code [here](https://github.com/JetBrains/kotlin-native/) . The compiler is available under the Apache 2 OSS license.
 
 {% raw %}
@@ -23,7 +25,7 @@ It is not a fully functional release yet, but you can already play with the tech
 ## Mission
 
 Kotlin/Native is another step toward making Kotlin usable throughout a modern application. Eventually, it will be possible to use Kotlin to write every component, from the server back-end to the web or mobile clients. Sharing the skill set is one big motivation for this scenario. Another is sharing actual code.
-Our vision for inter-platform code reuse is the following: one can write entire modules in Kotlin in a platform-independent way and compile them for any supported platform (currently these are Kotlin/JVM, Kotlin/JS and the upcoming Kotlin/Native). We call these <em>common modules</em>. Parts of a common module may require a platform-specific implementation, which can be developed individually for each platform. Common modules provide a common API for all clients, but other (platform-specific) modules can extend this API to provide some exclusive capabilities on their platform.
+Our vision for inter-platform code reuse is the following: one can write entire modules in Kotlin in a platform-independent way and compile them for any supported platform (currently these are Kotlin/JVM, Kotlin/JS and the upcoming Kotlin/Native). We call these *common modules*. Parts of a common module may require a platform-specific implementation, which can be developed individually for each platform. Common modules provide a common API for all clients, but other (platform-specific) modules can extend this API to provide some exclusive capabilities on their platform.
 Note that we do not intend to make arbitrary Kotlin/JVM programs runnable on Kotlin/Native or Kotlin/JS. It would be equivalent to implementing another JVM, which is both a lot of work and a lot of limitations for the runtime. We are going another way: providing a common language for all platforms while enabling creation of common libraries through seamless interoperability with platform code.
 ## Technology
 
@@ -62,4 +64,4 @@ We are currently working on the core technology for Kotlin/Native which is the s
 
 We’ve prepared two archives with compiler, samples and documentation: [for Mac and iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz) and [for Linux and Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) .
 Check out the [Github project](https://github.com/JetBrains/kotlin-native) and [Release Notes](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md) for instructions.
-<strong>Your feedback is very welcome</strong> in the #kotlin-native channel on our [public Slack](https://kotlinlang.slack.com) (Get your invite [here](http://slack.kotl.in) .
+**Your feedback is very welcome** in the #kotlin-native channel on our [public Slack](https://kotlinlang.slack.com) (Get your invite [here](http://slack.kotl.in) .

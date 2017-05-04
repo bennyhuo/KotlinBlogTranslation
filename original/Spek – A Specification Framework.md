@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/02/speka-specification-framework/
+translator:
+translator_url:
 ---
 
 For a while now, a [few](http://twitter.com/orangy) [of](http://twitter.com/jonyzzz) [us](https://plus.google.com/111179551284404865949/about) have been working on a project called Spek, a framework that allows you to write executable specifications. It allows you to write specifications (i.e. tests) in a more human-readable, and what’s more important, descriptive manner, without having to resort to long test names, underscores or regular expressions.
@@ -33,7 +35,7 @@ If you’re not familiar, let me briefly explain:
 * On – Execute the action, i.e. Act
 * It – Validate the results, i.e. Assert
 
-Spek allows you to have more than one action for the same context. That is for the same <em>given </em>you can have multiple <em>on’s</em>. It also allows you to have more than assertion (<em>it) </em>for the same action.
+Spek allows you to have more than one action for the same context. That is for the same *given*you can have multiple *on’s*. It also allows you to have more than assertion (*it) *for the same action.
 ## Spek is not only for Kotlin
 
 Spek is written in Kotlin. Specifications you write will also be in Kotlin. However, as Kotlin is 100% compatible with Java, you can test new and existing Java code with Spek.

@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/08/why-jetbrains-needs-kotlin/
+translator:
+translator_url:
 ---
 
 The question of motivation is one of the first asked when someone learns that someone else is working on a new programming language. Kotlin documentation offers a fairly detailed overview of why the language exists. Still, we would like to make it clearer what exactly JetBrains expects to gain from the whole endeavor. We’re obviously in it for the long run, and yes, we realize it will take years to reach our goals. And here’s why we are willing to make this investment.

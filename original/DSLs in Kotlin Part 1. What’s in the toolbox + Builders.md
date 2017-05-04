@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/10/dsls-in-kotlin-part-1-whats-in-the-toolbox-builders/
+translator:
+translator_url:
 ---
 
-If you have a <em>very nice</em> API, it is the fashion nowadays to call it an <em>internal DSL</em>, because the code that uses such an API reads almost like a language inside your language of choice. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html) serve as one of the most popular examples.
+If you have a *very nice* API, it is the fashion nowadays to call it an *internal DSL*, because the code that uses such an API reads almost like a language inside your language of choice. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html) serve as one of the most popular examples.
 Many modern languages provide some advanced means for creating internal DSLs, and Kotlin is no exception here. In this post I will briefly list the features that are useful for this purpose.<br/>
 <span id="more-181"></span>
 Let’s start with [extension functions](http://confluence.jetbrains.net/display/Kotlin/Extension+functions) . We all are familiar with Java’s utility classes, like java.util.Collections and like. Such classes are simply containers for a bunch of static methods, which are intended to be used with such and such classes. So we end up writing code like this:
@@ -30,9 +32,9 @@ int index = Collections.binarySearch(list, x);
 <p></p>
 {% endraw %}
 
-and this does not look very pretty. Static imports make it prettier, but they don’t solve an important problem of <em>discoverability</em>: we all navigate through APIs with IDE’s code completion capability:<br/>
+and this does not look very pretty. Static imports make it prettier, but they don’t solve an important problem of *discoverability*: we all navigate through APIs with IDE’s code completion capability:<br/>
 <img alt="Code completion in IDEA" class="alignnone size-full wp-image-220" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2011/09/Screen-shot-2011-10-04-at-15.42.18-.png?resize=582%2C143&amp;ssl=1"/><br/>
-And wouldn’t it be cool to discover those utility functions the same way? So we have <em>extension functions</em> that are called in the form “a.foo()” even if foo() is not a member of the class of a. For example, those utility functions from Collections could be defined as extension functions, and be called like this:
+And wouldn’t it be cool to discover those utility functions the same way? So we have *extension functions* that are called in the form “a.foo()” even if foo() is not a member of the class of a. For example, those utility functions from Collections could be defined as extension functions, and be called like this:
 
 {% raw %}
 <p></p>
@@ -199,7 +201,7 @@ lock (myLock) {
 <p></p>
 {% endraw %}
 
-Is this a built-in construct, like Java’s <strong>synchronized</strong> section? No, it’s a function call. It uses a very handy convention: you can pass <em>the last function literal</em> outside the parentheses you put around your argument list. So this call is the same as “lock(myLock, {…})”, but looks prettier.
+Is this a built-in construct, like Java’s **synchronized** section? No, it’s a function call. It uses a very handy convention: you can pass *the last function literal* outside the parentheses you put around your argument list. So this call is the same as “lock(myLock, {…})”, but looks prettier.
 More about this example can be found [here](http://confluence.jetbrains.net/display/Kotlin/Functions#Functions-Inlinefunctions) .
 There’s one other nice convention that makes something very close to LINQ possible:
 

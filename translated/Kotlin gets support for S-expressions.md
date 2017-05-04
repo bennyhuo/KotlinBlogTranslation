@@ -10,11 +10,13 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/04/kotlin-gets-support-for-s-expressions/
+translator:
+translator_url:
 ---
 
-Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决定支持 [S表达式](http://en.wikipedia.org/wiki/S-expression) ，赋权的概念 [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) 。
-其背后的主要动机是兼容性 [Clojure](http://clojure.org/) ，JVM的LISP。 Clojure以其实体库而闻名，特别是用于并发和只读数据结构的库。
-为了促进与LISP（和Clo尤其是图书馆）的互操作性，Kotlin现在允许这样的表达式：
+Kotlin 总是乐意从其他编程语言中学习，这就是为什么我们决定支持 [S 表达式](http://en.wikipedia.org/wiki/S-expression) ，赋权的概念 [LISP](http://en.wikipedia.org/wiki/Lisp_(programming_language)) 。
+其背后的主要动机是兼容性 [Clojure](http://clojure.org/) ，JVM 的 LISP。 Clojure 以其实体库而闻名，特别是用于并发和只读数据结构的库。
+为了促进与 LISP（和 Clo 尤其是图书馆）的互操作性，Kotlin 现在允许这样的表达式：
 
 {% raw %}
 <p></p>
@@ -38,10 +40,10 @@ Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决�
 <p></p>
 {% endraw %}
 
-这只是给你的味道。现在，我们逐一解释这些结构。<span id =“more-1505”> </ span>
-## S表达式解释
+这只是给你的味道。现在，我们逐一解释这些结构。<span id =“more-1505”> </span>
+## S 表达式解释
 
-首先，只添加一个新的句法结构，即S表达式。它有形式
+首先，只添加一个新的句法结构，即 S 表达式。它有形式
 
 {% raw %}
 <p></p>
@@ -55,8 +57,8 @@ Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决�
 <p></p>
 {% endraw %}
 
-其中A，B，C ...可能自己是S表达式或其他Kotlin表达式。
-现在，LISP中的大多数操作都是以前缀形式编写的，如果需要，您可以在Kotlin中以此样式写入添加：
+其中 A，B，C ...可能自己是 S 表达式或其他 Kotlin 表达式。
+现在，LISP 中的大多数操作都是以前缀形式编写的，如果需要，您可以在 Kotlin 中以此样式写入添加：
 
 {% raw %}
 <p></p>
@@ -71,7 +73,7 @@ Kotlin总是乐意从其他编程语言中学习，这就是为什么我们决�
 {% endraw %}
 
 请注意，文字（'1'，'3'）可以与其他表达式（例如“两”）混合。
-LISP原来代表<strong> LIS </ strong> t <strong> P </ strong>加密，所以列表的文字非常重要：
+LISP 原来代表**LIS** t **P**加密，所以列表的文字非常重要：
 
 {% raw %}
 <p></p>
@@ -86,7 +88,7 @@ LISP原来代表<strong> LIS </ strong> t <strong> P </ strong>加密，所以�
 {% endraw %}
 
 这将创建一个四个对象的列表。
-正常的Kotlin函数可以以LISP方式调用，因此要打印上面的列表，我们可以说：
+正常的 Kotlin 函数可以以 LISP 方式调用，因此要打印上面的列表，我们可以说：
 
 {% raw %}
 <p></p>
@@ -102,7 +104,7 @@ LISP原来代表<strong> LIS </ strong> t <strong> P </ strong>加密，所以�
 <p></p>
 {% endraw %}
 
-Lambda表达式还具有LISP格式：
+Lambda 表达式还具有 LISP 格式：
 
 {% raw %}
 <p></p>
@@ -142,11 +144,11 @@ Lambda表达式还具有LISP格式：
 
 ## 试试看！
 
-你可以找到上面的例子（还有一些） [这里](http://kotlin-demo.jetbrains.com/?publicLink=104074971561017308771-1697121195) 。他们是可运行的，你可以玩代码。 <strong>免责声明</ strong>：它只是一个原型。
+你可以找到上面的例子（还有一些） [这里](http://kotlin-demo.jetbrains.com/?publicLink=104074971561017308771-1697121195) 。他们是可运行的，你可以玩代码。 **免责声明**：它只是一个原型。
 ## 限制
 
-不幸的是，在这个阶段我们对S表达式的支持有限。由于与解析相关的一些问题，S表达式只能是<strong>奇数长度</ strong>。我们正在努力消除这个限制。
-另外，当将命名函数定义为S表达式时，其名称必须在前面带有一个点（不要与下面提到的点运算符混淆）：
+不幸的是，在这个阶段我们对 S 表达式的支持有限。由于与解析相关的一些问题，S 表达式只能是**奇数长度**。我们正在努力消除这个限制。
+另外，当将命名函数定义为 S 表达式时，其名称必须在前面带有一个点（不要与下面提到的点运算符混淆）：
 
 {% raw %}
 <p></p>
@@ -163,4 +165,4 @@ Lambda表达式还具有LISP格式：
 
 ## 点运算符
 
-你们中的许多人正在急切地等待我们释放 [点运算符](http://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/) 。现在它的实现，编译器和IDE插件可以下载 [这里]( https://github.com/JetBrains/kotlin/releases/tag/dot-operator) ， 谢谢 [jgl87](https://github.com/JetBrains/kotlin/pull/430) 。
+你们中的许多人正在急切地等待我们释放 [点运算符](http://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/) 。现在它的实现，编译器和 IDE 插件可以下载 [这里]( https://github.com/JetBrains/kotlin/releases/tag/dot-operator) ， 谢谢 [jgl87](https://github.com/JetBrains/kotlin/pull/430) 。

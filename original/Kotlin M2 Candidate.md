@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/06/kotlin-m2-candidate/
+translator:
+translator_url:
 ---
 
-It’s been seven weeks since [Kotlin M1 release](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) , and I’m happy to invite you to try out a candidate build of <strong>Kotlin M2</strong>! This post gives an overview of the upcoming milestone release along with come usage instructions.
+It’s been seven weeks since [Kotlin M1 release](http://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/) , and I’m happy to invite you to try out a candidate build of **Kotlin M2**! This post gives an overview of the upcoming milestone release along with come usage instructions.
 ## Thank you, M1!
 
 Our M1 build did a pretty good job: got about [800 downloads](http://plugins.intellij.net/plugin/?id=6954) , and brought extensive feedback in our [forum](http://devnet.jetbrains.com/community/kotlin) and [issue tracker](http://youtrack.jetbrains.net/issues/KT) .
@@ -36,12 +38,12 @@ Seems like you have had some fun with it, and we are aiming at even more fun <im
 As usual, it’s been [a lot of bugs fixed](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-04-12+..+2012-06-07) . I’d like to point out that we are working on the IDE performance. It has been somewhat improved in M2, and will get to its real speed by the next milestone.
 ## Language Features
 
-Kotlin now respects <strong>visibility modifiers</strong>. We have four of them:
+Kotlin now respects **visibility modifiers**. We have four of them:
 
 * private, protected, public — as usual,
 * internal — visible inside a module (that is more than a package).
 
-You can now pass an <strong>array of values to a vararg-function</strong>:
+You can now pass an **array of values to a vararg-function**:
 
 {% raw %}
 <p></p>
@@ -62,7 +64,7 @@ fun main(args: Array<String>) {
 <p></p>
 {% endraw %}
 
-The <strong>spread</strong> operator “converts” an array into a vararg-list. Unlike Java, this does not present any ugly corner-cases.
+The **spread** operator “converts” an array into a vararg-list. Unlike Java, this does not present any ugly corner-cases.
 There will a few more nice things shortly.
 ## JavaScript Support in the IDE
 

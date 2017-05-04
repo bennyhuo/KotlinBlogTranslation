@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2011/07/slides-from-the-jvm-language-summit-presentations/
+translator: DemoJameson
+translator_url: http://www.demojameson.com
 ---
 
 一个简短的说明：我们已经公开了 JVM 语言峰会上演示和研讨会时使用的幻灯片。

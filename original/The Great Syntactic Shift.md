@@ -10,17 +10,19 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/01/the-great-syntactic-shift/
+translator:
+translator_url:
 ---
 
-As the first public preview of Kotlin is approaching (it will be announced on Jan 10th, 2012, which is <strong>less than a week</strong> from now!), we are putting some things in order…
+As the first public preview of Kotlin is approaching (it will be announced on Jan 10th, 2012, which is **less than a week** from now!), we are putting some things in order…
 In particular, we have reviewed syntactic forms available in the language, and decided to change a few. These changes are incompatible with the old syntax, and we have migrated all our test data, and will update the [publicly available documentation](http://jetbrains.com/kotlin) soon.
 I would like to point out that this is not the last change of this sort. Kotlin is not released yet, and until it is we are constantly gathering feedback and sometimes find out that something needs to be changed. Consequently, there are no backward-compatibility guarantees before the 1.0. We realize how important backward compatibility is, but we’d better be backward compatible to a really good design created according to the needs of real people.
 Here’s an overview of the changes we’ve made.<br/>
 <span id="more-291"></span><br/>
-<strong>The Namespace is dead. Long live the Package.</strong>
-The concept of <em>namespaces</em> evolved into something so close to Java packages, that we decided to rename it. The <strong>namespace</strong> keyword is replaced by <strong>package</strong> keyword. Additionally, <em>namespace blocks</em> are no longer supported.
-<strong>The Arrow loses weight</strong>
-An arrow is used in function literals and <strong>when</strong> expressions. Some languages use a “fat arrow” (=>) and some use a “thin arrow” (->). Initially, we used the fat one, but is has some unfortunate interactions with comparisons, like this:
+**The Namespace is dead. Long live the Package.**
+The concept of *namespaces* evolved into something so close to Java packages, that we decided to rename it. The **namespace** keyword is replaced by **package** keyword. Additionally, *namespace blocks* are no longer supported.
+**The Arrow loses weight**
+An arrow is used in function literals and **when** expressions. Some languages use a “fat arrow” (=>) and some use a “thin arrow” (->). Initially, we used the fat one, but is has some unfortunate interactions with comparisons, like this:
 
 {% raw %}
 <p></p>
@@ -48,7 +50,7 @@ So we decided to switch to a thin arrow:
 <p></p>
 {% endraw %}
 
-<strong>More readable function types</strong>
+**More readable function types**
 In the old syntax we wrote function types as follows:
 
 {% raw %}
@@ -92,6 +94,6 @@ fun max(col : Collection<Int>, compare : (Int, Int) -> Int) : Int
 <p></p>
 {% endraw %}
 
-<strong>And a little more</strong>
+**And a little more**
 Additionally, we introduced optional parentheses in types, changed the tuple syntax to be distinguishable from parenthesized expression lists and made some minor (backward compatible) changes. All this will be reflected in the docs soon. As usual, your feedback is very welcome.
 Stay tuned, and don’t miss the announcement next Tuesday!

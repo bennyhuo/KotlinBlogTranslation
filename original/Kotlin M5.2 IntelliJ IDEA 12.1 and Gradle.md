@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/
+translator:
+translator_url:
 ---
 
 Another update of [Kotlin](http://kotlin.jetbrains.org/) comes out today. Welcome Kotlin M5.2. <span id="more-1038"></span>
@@ -32,7 +34,7 @@ The Kotlin IDE improvements include:
 
 ## SAM Constructors
 
-When using Java libraries, you can now create an instance of a SAM interface (one with a <strong>S</strong>ingle <strong>A</strong>bstract <strong>M</strong>ethod) by calling its name and passing a function literal. For example:
+When using Java libraries, you can now create an instance of a SAM interface (one with a **S**ingle **A**bstract **M**ethod) by calling its name and passing a function literal. For example:
 
 {% raw %}
 <p></p>
@@ -46,7 +48,7 @@ SwingUtilities.invokeLater(Runnable { doItNow() })
 <p></p>
 {% endraw %}
 
-<strong>This works only for Java classes</strong>. In fact, it is not a part of the language, but a feature of how Java classes are loaded into Kotlin: we define a <em>synthesized</em> function
+**This works only for Java classes**. In fact, it is not a part of the language, but a feature of how Java classes are loaded into Kotlin: we define a *synthesized* function
 
 {% raw %}
 <p></p>
@@ -123,4 +125,4 @@ More examples & docs can be found [here](http://confluence.jetbrains.com/display
 ## Reminder: KAnnotator
 
 Don’t forget that you now have [KAnnotator](http://blog.jetbrains.com/kotlin/2013/03/kannotator-0-1-is-out/) at your service.
-<strong>Have a nice Kotlin!</strong>
+**Have a nice Kotlin!**

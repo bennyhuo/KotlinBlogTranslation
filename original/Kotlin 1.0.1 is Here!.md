@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/03/kotlin-1-0-1-is-here/
+translator:
+translator_url:
 ---
 
 It’s been a month since we released [Kotlin 1.0](http://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-released-pragmatic-language-for-jvm-and-android/) , and while our user base roughly doubled during this time, we prepared the first bugfix update.

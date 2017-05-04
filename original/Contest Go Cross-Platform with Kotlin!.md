@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/11/contest-go-cross-platform-with-kotlin/
+translator:
+translator_url:
 ---
 
 Hi All,
@@ -46,6 +48,6 @@ Any applicable taxes due on winnings to be paid by prize recipient.
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mac-mini-sphero2-games.png"><img alt="mac-mini-sphero2-games" class="alignnone size-full wp-image-3151" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/11/mac-mini-sphero2-games.png?resize=640%2C420&amp;ssl=1"/></a></p>
 {% endraw %}
 
-All apps must be submitted by <strong>end of day PST December 14th 2015</strong>! The teams at RoboVM and JetBrains will pick the winners from all submissions. A valid entry consists of your <strong>tweet</strong> pointing to your <strong>app’s GitHub repository</strong>. Only one prize will be awarded per participant, and per GitHub repository. Bonus points for cross-platform apps, development logs in form of tweets or blog posts which we’ll happily promote, as well as code quality! Winners will be announced on the RoboVM and Kotlin blogs as well as on Twitter, and will be contacted via GitHub.
+All apps must be submitted by **end of day PST December 14th 2015**! The teams at RoboVM and JetBrains will pick the winners from all submissions. A valid entry consists of your **tweet** pointing to your **app’s GitHub repository**. Only one prize will be awarded per participant, and per GitHub repository. Bonus points for cross-platform apps, development logs in form of tweets or blog posts which we’ll happily promote, as well as code quality! Winners will be announced on the RoboVM and Kotlin blogs as well as on Twitter, and will be contacted via GitHub.
 Don’t have Kotlin experience? Join 800+ community members on [Slack](http://kotlinslackin.herokuapp.com/) and ask questions!
 Good luck!
