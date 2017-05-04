@@ -50,7 +50,6 @@ class Poll(val json: Map<String, *>) {
         }
     }
 }
- 
 ```
 
 {% raw %}
@@ -74,7 +73,6 @@ class Poll(val json: Map<String, *>) {
     val utc_timestamp: Long by json
     val error: String by json
 }
- 
 ```
 
 {% raw %}
@@ -141,7 +139,6 @@ T.apply（f：T.（）→Unit）：T
     val multiline = """First line
 Second line
 Third line"""
- 
 ```
 
 {% raw %}
@@ -161,7 +158,6 @@ trimIndent， [trimMargin](http://kotlinlang.org/api/latest/jvm/stdlib/kotlin/tr
       Second line
       Third line
     """.trimIndent()
- 
 ```
 
 {% raw %}

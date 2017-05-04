@@ -33,7 +33,6 @@ try {
 catch(e: Exception) {
     x = 2
 }
- 
 ```
 
 {% raw %}
@@ -54,7 +53,6 @@ val x = try {
 catch(e: Exception) {
     2
 }
- 
 ```
 
 {% raw %}
@@ -80,7 +78,6 @@ You also need to <b>remove</b> the snippet that enables old annotation processin
 kapt {
     generateStubs = true
 }
- 
 ```
 
 {% raw %}
@@ -109,7 +106,6 @@ inline fun <reified T> foo() {
 println(A().jsClass.name) // prints "A"
 println(jsClass<B>().name) // prints "B"
 foo<C>() // prints "C"
- 
 ```
 
 {% raw %}

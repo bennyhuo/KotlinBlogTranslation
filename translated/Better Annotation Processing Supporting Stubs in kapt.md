@@ -41,7 +41,6 @@ public object ItemRepository {
     }
  
 }
- 
 ```
 
 {% raw %}
@@ -60,7 +59,6 @@ public object ItemRepository {
 kapt {
     generateStubs = true
 }
- 
 ```
 
 {% raw %}
@@ -80,7 +78,6 @@ kapt {
         arg("androidManifestFile", variant.outputs[0].processResourcesTask.manifestFile)
     }
 }
- 
 ```
 
 {% raw %}
@@ -138,7 +135,6 @@ dependencies {
 kapt {
     generateStubs = true
 }
- 
 ```
 
 {% raw %}

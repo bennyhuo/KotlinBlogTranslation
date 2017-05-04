@@ -48,7 +48,6 @@ The reason is rather complicated:
 
 ```kotlin
 file.listFiles { it -> ... }
- 
 ```
 
 {% raw %}
@@ -65,7 +64,6 @@ Example: in Kotlin `String::length` is a property, not a function, but it’s co
 
 ```kotlin
 val lengths = strs.map(String::length)
- 
 ```
 
 {% raw %}
@@ -106,7 +104,6 @@ interface Open
 fun bar(p: List<Open>) // in Java: List<? extends Open> (Open is not final)
 @JvmSuppressWildcards
 fun bar(p: List<Open>) // in Java: List<Open>
- 
 ```
 
 {% raw %}

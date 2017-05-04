@@ -26,7 +26,6 @@ M13即将到来，我们计划稍后一点。这是对Kotlin未来变化的反�
 
 ```kotlin
 data class Foo(val a: A, val b: B)
- 
 ```
 
 {% raw %}
@@ -47,7 +46,6 @@ data class Foo(val a: A, val b: B)
 open data class Base(val a: A, val b: B)
  
 data class Derived(a: A, b: B, val c: C) : Base(a, b)
- 
 ```
 
 {% raw %}
@@ -68,7 +66,6 @@ data class Derived(a: A, b: B, val c: C) : Base(a, b)
 
 ```kotlin
 val (a, b, c) = Derived(...)
- 
 ```
 
 {% raw %}
@@ -83,7 +80,6 @@ val (a, b, c) = Derived(...)
 
 ```kotlin
 data class Derived(b: B, a: A, val c: C) : Base(a, b)
- 
 ```
 
 {% raw %}
@@ -98,7 +94,6 @@ data class Derived(b: B, a: A, val c: C) : Base(a, b)
 
 ```kotlin
 data class Derived(val c: C, b: B, a: A) : Base(a, b)
- 
 ```
 
 {% raw %}

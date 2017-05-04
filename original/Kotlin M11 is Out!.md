@@ -34,7 +34,6 @@ class MyView : View {
  
     constructor(context: Context, attrs: AttributeSet) : this(context, attrs, 0) {}
 }
- 
 ```
 
 {% raw %}
@@ -59,7 +58,6 @@ class Foo {
         // pre-M11 initializer
     }
 }
- 
 ```
 
 {% raw %}
@@ -80,7 +78,6 @@ class Foo {
         // initializer
     }
 }
- 
 ```
 
 {% raw %}
@@ -105,7 +102,6 @@ class KotlinClass {
     object Obj2 { ... }
     ...
 }
- 
 ```
 
 {% raw %}
@@ -124,7 +120,6 @@ class KotlinClass {
     companion object Obj2 { ... }
     ...
 }
- 
 ```
 
 {% raw %}
@@ -144,7 +139,6 @@ class KotlinClass {
     companion object { ... }
     ...
 }
- 
 ```
 
 {% raw %}
@@ -161,7 +155,6 @@ Another important benefit is that now every object <em>has a name</em> (again, `
 
 ```kotlin
 fun KotlinClass.Companion.bar() { ... }
- 
 ```
 
 {% raw %}
@@ -179,7 +172,6 @@ Kotlin has higher-order functions, which means that you can pass a function arou
 
 ```kotlin
 val f = fun (x: Int): Int { return x + 1 }
- 
 ```
 
 {% raw %}
@@ -197,7 +189,6 @@ Among other things, function expressions enable us to make a step toward support
 
 ```kotlin
 pairs.filter { (a, b) -> a != b }
- 
 ```
 
 {% raw %}
@@ -226,7 +217,6 @@ list.map {
     if (it < 10) return@map DEFAULT
     ...
 }
- 
 ```
 
 {% raw %}
@@ -255,7 +245,6 @@ To obtain a reflection object for a class in Kotlin, use the following syntax:
 
 ```kotlin
 val c = MyClass::class
- 
 ```
 
 {% raw %}

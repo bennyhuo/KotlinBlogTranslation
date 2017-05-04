@@ -42,7 +42,6 @@ fun testPlus() = Foo() + Foo()
 infix fun Foo.bar(other: Foo): Foo { ... }
  
 fun testInfix() = Foo() bar Foo()
- 
 ```
 
 {% raw %}
@@ -69,7 +68,6 @@ Kotlin now supports importing individual members of objects by name (but not `*`
 import mypackage.MyObject.foo
  
 val test = foo("...")
- 
 ```
 
 {% raw %}
@@ -85,7 +83,6 @@ To import from companion objects of classes, we have to specify their full name:
 
 ```kotlin
 import mypackage.MyClass.Companion.foo
- 
 ```
 
 {% raw %}
@@ -118,7 +115,6 @@ val mapped = users.map {
 if (a is String) {
     println(a.length) // This works now
 }
- 
 ```
 
 {% raw %}
@@ -147,7 +143,6 @@ package foo
 fun main(args: Array<String>) {
     println("b.kt")
 }
- 
 ```
 
 {% raw %}
@@ -168,7 +163,6 @@ fun foo(vararg args: String) { ... }
 fun bar(vararg args: String) {
     foo(*args) // spread operator
 }
- 
 ```
 
 {% raw %}
@@ -189,7 +183,6 @@ To annotate a setter parameter of a property, use `setparam` use-site target ins
 ```kotlin
 @setparam:Inject
 var foo: Foo = ...
- 
 ```
 
 {% raw %}
@@ -208,7 +201,6 @@ Sometimes we need to suppress [declaration-site variance checks](https://kotlinl
 interface Set<out E> : Collection<E> {
     fun contains(element: @UnsafeVariance E): Boolean
 }
- 
 ```
 
 {% raw %}
@@ -235,7 +227,6 @@ fun <T: Any> foo() {} // OK
 fun <T> foo() where T: Serializable, T: Comparable<T> {} // OK
  
 fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
- 
 ```
 
 {% raw %}
@@ -254,7 +245,6 @@ fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
     if (a is Array<*> && a.isArrayOf<String>()) {
         println((a as Array<String>)[0])
     }
- 
 ```
 
 {% raw %}
@@ -271,7 +261,6 @@ fun <T: Serializable> foo() where T: Comparable<T> {} // Forbidden
 fun Foo.getValue(thisRef: Bar, property: KProperty<*>): Baz? {
     return myMap[property.name]
 }
- 
 ```
 
 {% raw %}
@@ -288,7 +277,6 @@ fun Foo.getValue(thisRef: Bar, property: KProperty<*>): Baz? {
 
 ```kotlin
 val foo = if (cond) bar // ERROR: else is required
- 
 ```
 
 {% raw %}
@@ -307,7 +295,6 @@ fun foo() = throw MyException() // Must specify return type explicitly
 fun bar(): Nothing = throw MyException() // OK
 fun baz() { throw MyExcepion() } // OK
 fun goo(): Goo { throw MyExcepion() } // OK
- 
 ```
 
 {% raw %}
@@ -332,7 +319,6 @@ val strs = setOf("1", "abc")
 if (1 in strs) { // 'strs' is a set of strings, can't contain an Int
     println("No!")
 }
- 
 ```
 
 {% raw %}
@@ -363,7 +349,6 @@ From now on we inline Java constants (public static final fields of primitive an
 
 ```kotlin
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) { ... }
- 
 ```
 
 {% raw %}

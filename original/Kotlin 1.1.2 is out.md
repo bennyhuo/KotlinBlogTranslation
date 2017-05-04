@@ -39,7 +39,6 @@ Since Kotlin 1.1.2, incremental compilation which was previously available for I
 <properties>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 </properties>
- 
 ```
 
 {% raw %}
@@ -75,7 +74,6 @@ Kotlin’s annotation processing tool, kapt, can now be invoked from Maven build
         </annotationProcessorPaths>
     </configuration>
 </execution>
- 
 ```
 
 {% raw %}

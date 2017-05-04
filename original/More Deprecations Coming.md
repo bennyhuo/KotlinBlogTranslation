@@ -29,7 +29,6 @@ var foo: Foo? = null
         ...
     }
     // default getter is used
- 
 ```
 
 {% raw %}
@@ -44,7 +43,6 @@ you can access the backing field through the name of the property prefixed with 
 
 ```kotlin
 $foo = 2
- 
 ```
 
 {% raw %}
@@ -66,7 +64,6 @@ var foo: Foo?
     set(v) {
         ...
     }
- 
 ```
 
 {% raw %}
@@ -84,7 +81,6 @@ Another rarely used feature is the following syntax:
 
 ```kotlin
 foo(bar, null: Baz)
- 
 ```
 
 {% raw %}

@@ -33,7 +33,6 @@ enum class Message(val str: String) {
     WARNING : Message("This is a friendly warning")
     DEBUG : Message("Ignore this")
 }
- 
 ```
 
 {% raw %}
@@ -57,7 +56,6 @@ enum class Message(val str: String) {
     WARNING("This is a friendly warning")
     DEBUG("Ignore this")
 }
- 
 ```
 
 {% raw %}
@@ -77,7 +75,6 @@ enum class Example(...) {
  
     fun foo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -99,7 +96,6 @@ enum class Example(...) {
  
     fun foo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -120,7 +116,6 @@ enum class Example(...) {
  
     @inject fun foo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -139,7 +134,6 @@ enum class Example {
     entry A
     entry B
 }
- 
 ```
 
 {% raw %}
@@ -158,7 +152,6 @@ enum class Example {
     @Ann1 A
     @Ann2(...) B    
 }
- 
 ```
 
 {% raw %}
@@ -192,7 +185,6 @@ for (...) {
         ... -> if (...) continue // ERROR
     }
 }
- 
 ```
 
 {% raw %}

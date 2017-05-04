@@ -31,7 +31,6 @@ translator_url:
 strs.contains(ns) // accepted now
 strs.contains(cs) // accepted now
 str.contains(i) // ERROR (in fact, a deprecation warning, but will be an error soon)
- 
 ```
 
 我们发现以前建议的`containsRaw`方法比较低效，使用`contains()`更加合适，同时保证了兼容性。请注意，集合接口本身是完整的，所有这些都是通过扩展功能完成的。请使用*Code Cleanup*来迁移代码。
@@ -49,7 +48,6 @@ when {
     foo.isValid(), foo.isReady() -> process(foo)
     ...
 }
- 
 ```
 
 许多人倾向于认为条件 `foo.isValid(), foo.isReady()` 表示 `foo.isValid() == true and foo.isReady() == true`，而实际上逗号是指 **or**。解决方法很简单：只需使用 **||**:
@@ -59,7 +57,6 @@ when {
     foo.isValid() || foo.isReady() -> process(foo)
     ...
 }
- 
 ```
 
 *Code Cleanup*会自动迁移。
@@ -106,7 +103,6 @@ productFlavors {
         versionName "1.0-pro"
     }
 }
- 
 ```
 
 现在，我们不仅可以在**main source set**中的布局使用合成属性，还可以在flavor布局使用合成属性：
@@ -126,7 +122,6 @@ class FreeActivity : AppCompatActivity() {
         versionMarker.text = "Free version"
     }
 }
- 
 ```
 
 请注意，**main source set**的所有布局现在位于`kotlinx.android.synthetic.main`包之下，旧的包命名约定已被弃用。

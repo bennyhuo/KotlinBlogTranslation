@@ -32,7 +32,6 @@ for (s in list) {
         result.add(s)
     }
 }
- 
 ```
 
 {% raw %}
@@ -47,7 +46,6 @@ for (s in list) {
 
 ```kotlin
 val result = list.filter { it.isNotEmpty() }
- 
 ```
 
 {% raw %}

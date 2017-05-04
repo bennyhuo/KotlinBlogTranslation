@@ -49,7 +49,6 @@ class Example {
     @delegate:Transient
     val foo by Lazy { ... }
 }
- 
 ```
 
 {% raw %}
@@ -72,7 +71,6 @@ val ints = mutableListOf(1, 2, 3)
 val strs = mutableListOf("abc", "def")
 val comps: MutableList<out Comparable<*>> = ints
 comps.addAll(strs) // ?! Adding strings to a list of ints
- 
 ```
 
 {% raw %}
@@ -87,7 +85,6 @@ This code was mistakenly accepted before and is rejected now on the last line wi
 
 ```kotlin
 Projected type MutableList<out Comparable<*>> restricts the use of addAll()
- 
 ```
 
 {% raw %}
@@ -137,7 +134,6 @@ To enable Android Extensions in Gradle in a more idiomatic way, we now say:
 
 ```kotlin
 apply plugin: 'kotlin-android-extensions'
- 
 ```
 
 {% raw %}

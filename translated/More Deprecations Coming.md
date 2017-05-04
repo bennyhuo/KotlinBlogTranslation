@@ -29,7 +29,6 @@ var foo: Foo? = null
         ...
     }
     // default getter is used
- 
 ```
 
 {% raw %}
@@ -44,7 +43,6 @@ var foo: Foo? = null
 
 ```kotlin
 $foo = 2
- 
 ```
 
 {% raw %}
@@ -66,7 +64,6 @@ var foo: Foo?
     set(v) {
         ...
     }
- 
 ```
 
 {% raw %}
@@ -84,7 +81,6 @@ var foo: Foo?
 
 ```kotlin
 foo(bar, null: Baz)
- 
 ```
 
 {% raw %}

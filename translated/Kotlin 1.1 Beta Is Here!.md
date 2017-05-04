@@ -87,7 +87,6 @@ future {
     // then run `applyOverlay(...)` when they are both loaded
     return applyOverlay(original.await(), overlay.await())
 }
- 
 ```
 
 {% raw %}

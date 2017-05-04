@@ -35,7 +35,6 @@ Kotlin 1.0 supports [destructuring declarations](https://kotlinlang.org/docs/ref
 listOfPairs.map {
     (a, b) -> a + b
 }
- 
 ```
 
 {% raw %}

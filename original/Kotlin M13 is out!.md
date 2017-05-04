@@ -48,7 +48,6 @@ class Example {
     @Inject
     lateinit var bar: Bar
 }
- 
 ```
 
 {% raw %}
@@ -82,7 +81,6 @@ fun Pet.saySomething(): String {
         is Cat -> "meow"
     }
 }
- 
 ```
 
 {% raw %}
@@ -134,7 +132,6 @@ class Example(
     @field:MyFieldAnnotation(...)
     val foo: Foo
 )
- 
 ```
 
 {% raw %}
@@ -187,7 +184,6 @@ class JBean {
 fun demo(bean: JBean) {
     println(bean.foo) // 'foo' is automatically defined
 }
- 
 ```
 
 {% raw %}
@@ -218,7 +214,6 @@ To make this change work, we had to introduce a new resource file that is requir
 <configuration>
     <moduleName>com.example.mymodule</moduleName>
 </configuration>
- 
 ```
 
 {% raw %}
@@ -237,7 +232,6 @@ To make this change work, we had to introduce a new resource file that is requir
 compileKotlin {
     kotlinOptions.moduleName = "com.example.mymodule"    
 }
- 
 ```
 
 {% raw %}

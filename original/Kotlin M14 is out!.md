@@ -43,7 +43,6 @@ var prop: Int = 1
         notifyWrite(field, v)
         field = v
     }
- 
 ```
 
 {% raw %}
@@ -63,7 +62,6 @@ As announced [previously](http://blog.jetbrains.com/kotlin/2015/09/call-for-feed
 
 ```kotlin
 operator fun JavaClass.plus(other: JavaClass): JavaClass = this.plus(other)
- 
 ```
 
 {% raw %}
@@ -82,7 +80,6 @@ Since M14 we need to prefix Kotlin constants with `const` to be able to use them
 
 ```kotlin
 const val MAX = 239
- 
 ```
 
 {% raw %}
@@ -106,7 +103,6 @@ Since M13, top-level functions and properties from each source file are put into
 package bar
  
 fun baz() {}
- 
 ```
 
 {% raw %}
@@ -125,7 +121,6 @@ will be compiled to
 public final class FooKt {
     public static void baz() {...}
 }
- 
 ```
 
 {% raw %}

@@ -27,7 +27,6 @@ translator_url:
 var foo: Foo = ...
     get() { beforeRead(); return $foo }
     set(v) { beforeWrite($foo, v); $foo = v }
- 
 ```
 
 {% raw %}
@@ -49,7 +48,6 @@ var foo: Foo = ...
 var foo: Foo = ...
     get() { beforeRead(); return field }
     set(v) { beforeWrite(field, v); field = v }
- 
 ```
 
 {% raw %}
@@ -68,7 +66,6 @@ private var _foo = ...
 public var foo: Foo
     get() = ...
     set(v) { ... }
- 
 ```
 
 {% raw %}
@@ -93,7 +90,6 @@ Infix函数仍然可以使用旧的标准语法`x.or（y）`进行调用，但�
 
 ```kotlin
 list map {...}.toSet() // Error: toSet() is not applicable to a lambda
- 
 ```
 
 {% raw %}
@@ -111,7 +107,6 @@ list map {...}.toSet() // Error: toSet() is not applicable to a lambda
 
 ```kotlin
 const val SCREEN_WIDTH = 2048
- 
 ```
 
 {% raw %}
@@ -135,7 +130,6 @@ class Foo {
 fun test(foo: Foo) {
     "".foo()
 }
- 
 ```
 
 {% raw %}
@@ -156,7 +150,6 @@ class Foo {
 fun test(foo: Foo) {
     "".foo()
 }
- 
 ```
 
 {% raw %}
@@ -173,7 +166,6 @@ fun test(foo: Foo) {
 class Foo
  
 operator fun Foo.invokeExtension(s: String) { ... }
- 
 ```
 
 {% raw %}
@@ -200,7 +192,6 @@ open class Base {
 class Derived : Base() {
     fun foo() {...}
 }
- 
 ```
 
 {% raw %}

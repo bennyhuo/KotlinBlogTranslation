@@ -37,7 +37,6 @@ translator_url:
 
 ```kotlin
 data class Foo // `data` is an annotation
- 
 ```
 
 {% raw %}
@@ -60,7 +59,6 @@ loop@ for (i in 1..100) {
       break@loop
   }
 }
- 
 ```
 
 {% raw %}
@@ -82,7 +80,6 @@ annotation class handledBy(val handlerClass: Class<out Handler>)
 // Usage
 handledBy(javaClass<MyHandler>())
 class MyEvent {...}
- 
 ```
 
 {% raw %}
@@ -101,7 +98,6 @@ annotation class handledBy(val handlerClass: KClass<out Handler>)
 // Usage
 handledBy(MyHandler::class)
 class MyEvent {...}
- 
 ```
 
 {% raw %}
@@ -119,7 +115,6 @@ class MyEvent {...}
 @interface JavaAnnotation {
     Class<?> value();
 }
- 
 ```
 
 {% raw %}
@@ -138,7 +133,6 @@ fun introspect(jann: JavaAnnotation) {
     val theClass = jann.value // the type of this expression is KClass<*>
     ...
 }
- 
 ```
 
 {% raw %}
@@ -158,7 +152,6 @@ fun introspect(jann: JavaAnnotation) {
 class PrivateConstructor private constructor (val x: Int) {
     ...
 }
- 
 ```
 
 {% raw %}
@@ -175,7 +168,6 @@ class PrivateConstructor private constructor (val x: Int) {
 class MyClass(val x: Int) {
     ...
 }
- 
 ```
 
 {% raw %}
@@ -198,7 +190,6 @@ class MyClass(val x: Int) {
 enum class Foo {
     A, B, C
 }
- 
 ```
 
 {% raw %}
@@ -219,7 +210,6 @@ enum class FooWithMember {
  
     fun doIt() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -239,7 +229,6 @@ enum class Color(val rgb: Int) {
   BLUE(0x0000FF)
   // no members => semicolon is not needed here
 }
- 
 ```
 
 {% raw %}
@@ -259,7 +248,6 @@ enum class Color(val rgb: Int) {
 // map() expects `(String) -> Int`
 // argument has type `String.() -> Int`
 strings.map(String::length)
- 
 ```
 
 {% raw %}
@@ -282,7 +270,6 @@ var foo = bar()
 if (foo != null) {
     foo.baz() // no error here
 }
- 
 ```
 
 {% raw %}
@@ -304,7 +291,6 @@ fun foo(c: C) {
         c.d.foo() // c.d has been smart-cast here
     }
 }
- 
 ```
 
 {% raw %}
@@ -322,7 +308,6 @@ fun test(list: List<Foo?>) {
     val mapped = list.map(fun (item) = item?.toString() ?: return@test) // non-local return
     ...
 }
- 
 ```
 
 {% raw %}
@@ -360,7 +345,6 @@ Kotlin有默认的参数大大地减少了重载中的需求，但是Java客户�
 jvmOverloads fun f(a: String, b: Int = 0, c: String = "abc") {
     ...
 }
- 
 ```
 
 {% raw %}
@@ -378,7 +362,6 @@ jvmOverloads fun f(a: String, b: Int = 0, c: String = "abc") {
 void f(String a, int b, String c)
 void f(String a, int b)
 void f(String a)
- 
 ```
 
 {% raw %}

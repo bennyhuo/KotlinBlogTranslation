@@ -28,7 +28,6 @@ Kotlin从第一天起就具有顶级的职能和财产。它们在许多情况�
 package foo.bar
  
 fun demo() { ... }
- 
 ```
 
 {% raw %}
@@ -47,7 +46,6 @@ package foo.bar;
 public class BarPackage {
     public static void demo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -65,7 +63,6 @@ public class BarPackage {
 package foo.bar
  
 val prop: String = ...
- 
 ```
 
 {% raw %}
@@ -86,7 +83,6 @@ public class BarPackage {
  
     public static String getProp() { return prop; }
 }
- 
 ```
 
 {% raw %}
@@ -103,7 +99,6 @@ public class BarPackage {
 public static void main(String[] args) {
     System.out.println(BarPackage.getProp());
 }
- 
 ```
 
 {% raw %}
@@ -134,7 +129,6 @@ public static void main(String[] args) {
 package foo.bar
  
 val a = computeA()
- 
 ```
 
 {% raw %}
@@ -151,7 +145,6 @@ val a = computeA()
 package foo.bar
  
 val b = computeB()
- 
 ```
 
 {% raw %}
@@ -207,7 +200,6 @@ val b = computeB()
 package foo.bar
  
 fun foo() {...}
- 
 ```
 
 {% raw %}
@@ -226,7 +218,6 @@ package foo.bar;
 public class File1 {
     public static void foo() {...}
 }
- 
 ```
 
 {% raw %}
@@ -244,7 +235,6 @@ public class File1 {
 package foo.bar
  
 fun foo() {...}
- 
 ```
 
 {% raw %}
@@ -263,7 +253,6 @@ package foo.bar;
 public class Utils {
     public static void foo() {...}
 }
- 
 ```
 
 {% raw %}
@@ -283,7 +272,6 @@ public class Utils {
 package foo.bar
  
 fun foo() {...}
- 
 ```
 
 {% raw %}
@@ -301,7 +289,6 @@ fun foo() {...}
 package foo.bar
  
 fun bar() {...}
- 
 ```
 
 {% raw %}
@@ -321,7 +308,6 @@ public class Utils {
     public static void foo() { File1.foo(); }
     public static void bar() { File2.bar(); }
 }
- 
 ```
 
 {% raw %}

@@ -43,7 +43,6 @@ var prop: Int = 1
         notifyWrite(field, v)
         field = v
     }
- 
 ```
 
 {% raw %}
@@ -63,7 +62,6 @@ var prop: Int = 1
 
 ```kotlin
 operator fun JavaClass.plus(other: JavaClass): JavaClass = this.plus(other)
- 
 ```
 
 {% raw %}
@@ -82,7 +80,6 @@ operator fun JavaClass.plus(other: JavaClass): JavaClass = this.plus(other)
 
 ```kotlin
 const val MAX = 239
- 
 ```
 
 {% raw %}
@@ -106,7 +103,6 @@ const val MAX = 239
 package bar
  
 fun baz() {}
- 
 ```
 
 {% raw %}
@@ -125,7 +121,6 @@ fun baz() {}
 public final class FooKt {
     public static void baz() {...}
 }
- 
 ```
 
 {% raw %}

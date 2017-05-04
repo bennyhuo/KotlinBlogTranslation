@@ -32,7 +32,6 @@ class C {
                                 // because 'x' is a member variable
     }
 }
- 
 ```
 
 {% raw %}
@@ -49,7 +48,6 @@ Also, the compiler is now smart enough to warn us when a value is always null at
     var x: Foo? = ...
     if (x != null) return
     x?.bar() // WARNING: bar() will never run, because x is always null here
- 
 ```
 
 {% raw %}
@@ -76,7 +74,6 @@ The `filterIsInstance` extension now requires an explicit specification of its t
 ```kotlin
 foo(list.filterIsInstance()) // error: what is the type the checks are done for?!
 foo(list.filterIsInstance<Bar>()) // OK: we are checking for Bar
- 
 ```
 
 {% raw %}

@@ -28,7 +28,6 @@ val intent = Intent(this, javaClass<SomeActivity>())
 intent.putExtra("id", 5)
 intent.putExtra("name", "John")
 startActivity(intent)
- 
 ```
 
 {% raw %}
@@ -43,7 +42,6 @@ With Anko we can do this in exactly one line of code:
 
 ```kotlin
 startActivity<SomeActivity>("id" to 5, "name" to "John")
- 
 ```
 
 {% raw %}
@@ -63,7 +61,6 @@ Almost every application has code that loads a page in the default web browser o
 ```kotlin
 browse("http://somewebsite.org (http://somewebsite.org/)")
 email("admin@domain.net (mailto:admin@domain.net)", "Here I am!", "Message text")
- 
 ```
 
 {% raw %}
@@ -85,7 +82,6 @@ alert("Order", "Do you want to order this item?") {
     positiveButton("Yes") { processAnOrder() }
     negativeButton("No") { }
 }.show()
- 
 ```
 
 {% raw %}
@@ -103,7 +99,6 @@ val flowers = listOf("Chrysanthemum", "Rose", "Hyacinth")
 selector("What is your favorite flower?", flowers) { i ->
     toast("So your favorite flower is ${flowers[i]}, right?")
 }
- 
 ```
 
 {% raw %}
@@ -119,7 +114,6 @@ Both indeterminate and basic progress dialogs are supported:
 ```kotlin
 progressDialog("Please wait a minute.", "Downloading…")
 indeterminateProgressDialog("Fetching the data…")
- 
 ```
 
 {% raw %}
@@ -146,7 +140,6 @@ alert {
          }
     }
 }.show()
- 
 ```
 
 {% raw %}
@@ -166,7 +159,6 @@ if (!wifiManager.isWifiEnabled()) {
     vibrator.vibrate(200)
     toast("Wifi is disabled. Please turn on!")
 }
- 
 ```
 
 {% raw %}
@@ -186,7 +178,6 @@ Probably the most popular way to execute code in the background is to subclass a
 async(someExecutor) { // omit the parameter to use the default executor
 // This code will be executed in background
 }
- 
 ```
 
 {% raw %}
@@ -206,7 +197,6 @@ async {
         toast("The work is done!")
     }
 }
- 
 ```
 
 {% raw %}
@@ -231,7 +221,6 @@ async {
         so we are holding a reference to it. */
     }
 }
- 
 ```
 
 {% raw %}
@@ -253,7 +242,6 @@ class SomeActivity : Activity(), AnkoLogger {
         debug(42) // .toString() method will be called automatically
     }
 }
- 
 ```
 
 {% raw %}
@@ -270,7 +258,6 @@ Each method has two versions: plain and “lazy” (lambda will be executed only
 ```kotlin
 info("String " + "concatenation")
 info { "String " + "concatenation" }
- 
 ```
 
 {% raw %}

@@ -31,7 +31,6 @@ class KotlinClass {
  
     fun classMember() {}
 }
- 
 ```
 
 {% raw %}
@@ -46,7 +45,6 @@ Members of a <em>class object</em> are roughly analogous to <em>static members</
 
 ```kotlin
 KotlinClass.classObjectMember()
- 
 ```
 
 {% raw %}
@@ -62,7 +60,6 @@ In fact, Kotlin’s <em>class objects</em> and Java’s statics are not at all t
 
 ```kotlin
 val x = KotlinClass // reference to class object of KotlinClass is assigned to x
- 
 ```
 
 {% raw %}
@@ -85,7 +82,6 @@ class KotlinClass {
  
     fun classMember() {}
 }
- 
 ```
 
 {% raw %}
@@ -116,7 +112,6 @@ class KotlinClass {
     object Obj2 { ... }
     ...
 }
- 
 ```
 
 {% raw %}
@@ -135,7 +130,6 @@ class KotlinClass {
     default object Obj2 { ... }
     ...
 }
- 
 ```
 
 {% raw %}
@@ -155,7 +149,6 @@ class KotlinClass {
     default object { ... }
     ...
 }
- 
 ```
 
 {% raw %}
@@ -172,7 +165,6 @@ Another important benefit is that now every object <em>has a name</em> (again, `
 
 ```kotlin
 fun KotlinClass.Default.bar() { ... }
- 
 ```
 
 {% raw %}

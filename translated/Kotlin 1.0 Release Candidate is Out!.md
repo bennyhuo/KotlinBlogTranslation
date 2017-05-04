@@ -49,7 +49,6 @@ class Example {
     @delegate:Transient
     val foo by Lazy { ... }
 }
- 
 ```
 
 {% raw %}
@@ -72,7 +71,6 @@ val ints = mutableListOf(1, 2, 3)
 val strs = mutableListOf("abc", "def")
 val comps: MutableList<out Comparable<*>> = ints
 comps.addAll(strs) // ?! Adding strings to a list of ints
- 
 ```
 
 {% raw %}
@@ -87,7 +85,6 @@ comps.addAll(strs) // ?! Adding strings to a list of ints
 
 ```kotlin
 Projected type MutableList<out Comparable<*>> restricts the use of addAll()
- 
 ```
 
 {% raw %}
@@ -140,7 +137,6 @@ EAP用户报告：
 
 ```kotlin
 apply plugin: 'kotlin-android-extensions'
- 
 ```
 
 {% raw %}

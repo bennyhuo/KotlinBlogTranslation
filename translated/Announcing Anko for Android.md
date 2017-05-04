@@ -46,7 +46,6 @@ class MainActivity : Activity() {
         }
     }
 }
- 
 ```
 
 {% raw %}
@@ -93,7 +92,6 @@ fun _LinearLayout.inputField(name: String): TextView {
     }.layoutParams { verticalMargin = dip(4) }
     return editText()
 }
- 
 ```
 
 {% raw %}
@@ -127,7 +125,6 @@ seekBar.setOnSeekBarChangeListener(object: OnSeekBarChangeListener {
     // Another empty method
   }
 })
- 
 ```
 
 {% raw %}
@@ -146,7 +143,6 @@ seekBar {
     // Something
   }
 }
- 
 ```
 
 {% raw %}
@@ -171,7 +167,6 @@ startActivity(intent)
  
 // With Anko
 startActivity<MyActivity>("id" to 5)
- 
 ```
 
 {% raw %}
@@ -191,7 +186,6 @@ vibrator.vibrate(500)
  
 // With Anko
 vibrator.vibrate(500)
- 
 ```
 
 {% raw %}
@@ -210,7 +204,6 @@ Toast.makeText(this, "Download is complete!", Toast.LENGTH_SHORT).show()
  
 // With Anko
 toast("Download is complete!")
- 
 ```
 
 {% raw %}
@@ -228,7 +221,6 @@ toast("Download is complete!")
 ```kotlin
 name.hint = "Enter your name"
 name.onClick { /* do something */ }
- 
 ```
 
 {% raw %}
@@ -255,7 +247,6 @@ name.onClick { /* do something */ }
 dependencies {
   compile 'org.jetbrains.anko:anko:0.5-15'
 }
- 
 ```
 
 {% raw %}

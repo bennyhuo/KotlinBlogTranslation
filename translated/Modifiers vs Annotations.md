@@ -31,7 +31,6 @@ Kotlin（以及许多其他语言）有两种<em>元数据</em>：
 ```kotlin
 val public = "PUBLIC!"
 println(public)
- 
 ```
 
 {% raw %}
@@ -69,7 +68,6 @@ println(public)
 
 ```kotlin
 annotation(repeatable = true) class MyRepeatableAnnotation
- 
 ```
 
 {% raw %}

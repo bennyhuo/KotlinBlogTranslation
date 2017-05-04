@@ -52,7 +52,6 @@ fun builder(body: Foo.() -> Unit) { // body has type `@extension Function1<Foo, 
 builder {
     this.bar() // `this` has type Foo
 }
- 
 ```
 
 {% raw %}

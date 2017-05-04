@@ -29,7 +29,6 @@ class KotlinClass {
         fun callMeOnTheClassName() { ... }
     }
 }
- 
 ```
 
 {% raw %}

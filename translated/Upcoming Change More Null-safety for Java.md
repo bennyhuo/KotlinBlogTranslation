@@ -40,7 +40,6 @@ class Foo {
 // Kotlin
  
 foo.bar(nullableString ?: "default")?.length()
- 
 ```
 
 {% raw %}
@@ -66,7 +65,6 @@ class Sub extends Super {
     @Override
     String foo(@NotNull String bar) { ... }
 }
- 
 ```
 
 {% raw %}

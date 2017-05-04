@@ -38,7 +38,6 @@ class Outer<T> {
         Inner().takeT(t)
     }
 }
- 
 ```
 
 {% raw %}
@@ -62,7 +61,6 @@ class Outer<T> {
         Inner<T>().takeT(t)
     }
 }
- 
 ```
 
 {% raw %}
@@ -86,7 +84,6 @@ open class Base : List<Number> {
 class Derived : Base(), List<Int> { // no error
  
 }
- 
 ```
 
 {% raw %}

@@ -41,7 +41,6 @@ dependencies {
     compile 'com.google.dagger:dagger:2.0'
     kapt 'com.google.dagger:dagger-compiler:2.0'
     provided 'org.glassfish:javax.annotation:10.0-b28'
- 
 ```
 
 {% raw %}
@@ -68,7 +67,6 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:0.1-SNAPSHOT"
     }
 }
- 
 ```
 
 {% raw %}
@@ -91,7 +89,6 @@ public abstract class BaseApplication extends Application {
                 .androidModule(new AndroidModule(this)).build();
     }
 }
- 
 ```
 
 {% raw %}

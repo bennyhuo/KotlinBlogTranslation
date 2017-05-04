@@ -43,7 +43,6 @@ Alternatively, you can use <em>Help -&gt; Eclipse Marketplace…</em> menu, or t
 
 ```kotlin
 https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
- 
 ```
 
 {% raw %}

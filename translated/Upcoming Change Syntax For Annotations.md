@@ -23,7 +23,6 @@ Kotlin的注释语法灵感来自C＃，它围绕着它们的方括号：
 ```kotlin
 [Inject]
 fun setFoo(foo: Foo) { ... }
- 
 ```
 
 {% raw %}
@@ -39,7 +38,6 @@ fun setFoo(foo: Foo) { ... }
 ```kotlin
 @Inject
 fun setFoo(foo: Foo) { ... }
- 
 ```
 
 {% raw %}
@@ -56,7 +54,6 @@ fun setFoo(foo: Foo) { ... }
 data class Foo
  
 volatile var bar: Bar = ...
- 
 ```
 
 {% raw %}
@@ -78,7 +75,6 @@ for (i in 1..20) {
     if (enough(i)) break@loop
     println(i)
 }
- 
 ```
 
 {% raw %}
@@ -97,7 +93,6 @@ for (i in 1..20) {
     if (enough(i)) break@loop
     println(i)
 }
- 
 ```
 
 {% raw %}
@@ -115,7 +110,6 @@ for (i in 1..20) {
 
 ```kotlin
 class C(@Ann("arg") var foo: Int)
- 
 ```
 
 {% raw %}
@@ -139,7 +133,6 @@ class C(@Ann("arg") var foo: Int)
 
 ```kotlin
 class C(@field:Ann("arg") var foo: Int)
- 
 ```
 
 {% raw %}
@@ -155,7 +148,6 @@ class C(@field:Ann("arg") var foo: Int)
 
 ```kotlin
 class C(@(Ann@field)("arg") var foo: Int)
- 
 ```
 
 {% raw %}
@@ -174,7 +166,6 @@ class C(@(Ann@field)("arg") var foo: Int)
 
 ```kotlin
 class C(@field(@Ann("arg")) var foo: Int)
- 
 ```
 
 {% raw %}
@@ -194,7 +185,6 @@ class C(@field(@Ann("arg")) var foo: Int)
 ```kotlin
 class C(@at(FIELD, @Ann1("arg"), @Ann2) var foo: Int)
 class C(@atMany(array(FIELD, PROPERTY), @Ann1("arg"), @Ann2) var foo: Int)
- 
 ```
 
 {% raw %}
@@ -210,7 +200,6 @@ class C(@atMany(array(FIELD, PROPERTY), @Ann1("arg"), @Ann2) var foo: Int)
 ```kotlin
 annotation class at(val target: AnnotationTarget, vararg val annotations: Annotation)
 annotation class atMany(val target: Array<AnnotationTarget>, vararg val annotations: Annotation)
- 
 ```
 
 {% raw %}
@@ -230,7 +219,6 @@ val foo: Int = 1
     field _foo
     @GetterAnnotation
     get
- 
 ```
 
 {% raw %}
@@ -254,7 +242,6 @@ fun example() {
     data class Example(val foo: String, val bar: Int) // Error on this line
     ...
 }
- 
 ```
 
 {% raw %}
@@ -272,7 +259,6 @@ fun example() {
     @data class Example(val foo: String, val bar: Int) // OK
     ...
 }
- 
 ```
 
 {% raw %}
@@ -291,7 +277,6 @@ fun example() {
     @open class Example(val foo: String, val bar: Int)
     ...
 }
- 
 ```
 
 {% raw %}

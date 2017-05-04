@@ -27,7 +27,6 @@ I mentioned some time ago that we are not happy with the present syntax of backi
 var foo: Foo = ...
     get() { beforeRead(); return $foo }
     set(v) { beforeWrite($foo, v); $foo = v }
- 
 ```
 
 {% raw %}
@@ -49,7 +48,6 @@ So, we decided to change the rules here:
 var foo: Foo = ...
     get() { beforeRead(); return field }
     set(v) { beforeWrite(field, v); field = v }
- 
 ```
 
 {% raw %}
@@ -68,7 +66,6 @@ private var _foo = ...
 public var foo: Foo
     get() = ...
     set(v) { ... }
- 
 ```
 
 {% raw %}
@@ -93,7 +90,6 @@ Note that common functions in the standard library (e.g. `map` or `filter`) will
 
 ```kotlin
 list map {...}.toSet() // Error: toSet() is not applicable to a lambda
- 
 ```
 
 {% raw %}
@@ -111,7 +107,6 @@ Compile-time constants are important when it comes to annotations: only they can
 
 ```kotlin
 const val SCREEN_WIDTH = 2048
- 
 ```
 
 {% raw %}
@@ -135,7 +130,6 @@ class Foo {
 fun test(foo: Foo) {
     "".foo()
 }
- 
 ```
 
 {% raw %}
@@ -156,7 +150,6 @@ class Foo {
 fun test(foo: Foo) {
     "".foo()
 }
- 
 ```
 
 {% raw %}
@@ -173,7 +166,6 @@ As a side-effect, it will be possible to add such function as an extension:
 class Foo
  
 operator fun Foo.invokeExtension(s: String) { ... }
- 
 ```
 
 {% raw %}
@@ -200,7 +192,6 @@ open class Base {
 class Derived : Base() {
     fun foo() {...}
 }
- 
 ```
 
 {% raw %}

@@ -39,7 +39,6 @@ Let’s imagine we want a listener that has access to the view. Our adapter clas
 class MyAdapter(val items: List<Item>, val listener: (View) -> Unit) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     ...
 }
- 
 ```
 
 {% raw %}
@@ -58,7 +57,6 @@ class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         itemView.setOnClickListener(listener)
     }
 }
- 
 ```
 
 {% raw %}
@@ -91,7 +89,6 @@ sealed class UiOp {
     object Hide : UiOp()
     data class Translate(val axis: Axis, val amount: Int): UiOp()
 }
- 
 ```
 
 {% raw %}
@@ -109,7 +106,6 @@ sealed class UiOp
 object Show : UiOp()
 object Hide : UiOp()
 data class Translate(val axis: Axis, val amount: Int)
- 
 ```
 
 {% raw %}
@@ -128,7 +124,6 @@ Data classes could be destructured since the first version thanks to the `compon
 data class Item(val text: String, val url: String)
  
 val (text, url) = item
- 
 ```
 
 {% raw %}
@@ -146,7 +141,6 @@ fun bind(item: Item) = item.let { (text, url) ->
     textView.text = text
     imageView.loadUrl(url)
 }
- 
 ```
 
 {% raw %}
@@ -176,7 +170,6 @@ fun testLocalDelegation() {
         cache.use { ... }
     }
 }
- 
 ```
 
 {% raw %}
@@ -201,7 +194,6 @@ var items: List<Content> by Delegates.observable(emptyList()) {
     prop, old, new ->
     autoNotify(old, new) { o, n -> o.id == n.id }
 }
- 
 ```
 
 {% raw %}
@@ -219,7 +211,6 @@ var items: List<Content> by Delegates.observable(emptyList()) {
     _, old, new ->
     autoNotify(old, new) { o, n -> o.id == n.id }
 }
- 
 ```
 
 {% raw %}
@@ -238,7 +229,6 @@ var items: List<Item> by Delegates.observable(emptyList()) {
     _, _, _ ->
     notifyDataSetChanged()
 }
- 
 ```
 
 {% raw %}
@@ -281,7 +271,6 @@ class CustomView @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
     ...
 }
- 
 ```
 
 {% raw %}

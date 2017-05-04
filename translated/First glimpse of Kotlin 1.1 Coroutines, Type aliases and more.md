@@ -44,7 +44,6 @@ fun main(args: Array<String>) {
  
     println(future.get())
 }
- 
 ```
 
 {% raw %}
@@ -63,7 +62,6 @@ fun main(args: Array<String>) {
 
 ```kotlin
 typealias Action<T> = (T) -> Unit
- 
 ```
 
 {% raw %}
@@ -84,7 +82,6 @@ typealias Action<T> = (T) -> Unit
 ```kotlin
 typealias Length = Double
 typealias Weight = Double
- 
 ```
 
 {% raw %}
@@ -114,7 +111,6 @@ fun example(foo: (Bar) -> Foo, bar: Bar) {
         memoizedFoo.doSomething()
     }
 }
- 
 ```
 
 {% raw %}

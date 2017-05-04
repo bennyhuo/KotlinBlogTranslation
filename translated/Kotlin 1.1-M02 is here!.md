@@ -35,7 +35,6 @@ Kotlin 1.0支持 [解构声明](https://kotlinlang.org/docs/reference/multi-decl
 listOfPairs.map {
     (a, b) -> a + b
 }
- 
 ```
 
 {% raw %}

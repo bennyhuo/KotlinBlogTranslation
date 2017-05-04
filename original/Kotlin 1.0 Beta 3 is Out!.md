@@ -35,7 +35,6 @@ Here we give only one highlight from the [changes](https://github.com/JetBrains/
 strs.contains(ns) // accepted now
 strs.contains(cs) // accepted now
 str.contains(i) // ERROR (in fact, a deprecation warning, but will be an error soon)
- 
 ```
 
 {% raw %}
@@ -61,7 +60,6 @@ when {
     foo.isValid(), foo.isReady() -> process(foo)
     ...
 }
- 
 ```
 
 {% raw %}
@@ -79,7 +77,6 @@ when {
     foo.isValid() || foo.isReady() -> process(foo)
     ...
 }
- 
 ```
 
 {% raw %}
@@ -101,7 +98,6 @@ annotation class Entry(val value: String)
 annotation class Example(
         val entries: Array<Entry> = arrayOf(Entry("a"), Entry("b")) // OK now
 )
- 
 ```
 
 {% raw %}
@@ -143,7 +139,6 @@ productFlavors {
         versionName "1.0-pro"
     }
 }
- 
 ```
 
 {% raw %}
@@ -171,7 +166,6 @@ class FreeActivity : AppCompatActivity() {
         versionMarker.text = "Free version"
     }
 }
- 
 ```
 
 {% raw %}

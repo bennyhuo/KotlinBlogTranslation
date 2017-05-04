@@ -32,7 +32,6 @@ class C {
                                 // because 'x' is a member variable
     }
 }
- 
 ```
 
 {% raw %}
@@ -49,7 +48,6 @@ class C {
     var x: Foo? = ...
     if (x != null) return
     x?.bar() // WARNING: bar() will never run, because x is always null here
- 
 ```
 
 {% raw %}
@@ -76,7 +74,6 @@ class C {
 ```kotlin
 foo(list.filterIsInstance()) // error: what is the type the checks are done for?!
 foo(list.filterIsInstance<Bar>()) // OK: we are checking for Bar
- 
 ```
 
 {% raw %}

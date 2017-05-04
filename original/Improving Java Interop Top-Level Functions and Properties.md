@@ -28,7 +28,6 @@ Top-level functions are compiled to static methods in the byte code, so that
 package foo.bar
  
 fun demo() { ... }
- 
 ```
 
 {% raw %}
@@ -47,7 +46,6 @@ package foo.bar;
 public class BarPackage {
     public static void demo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -65,7 +63,6 @@ Properties are very similar, only they are translated to a field and accessor(s)
 package foo.bar
  
 val prop: String = ...
- 
 ```
 
 {% raw %}
@@ -86,7 +83,6 @@ public class BarPackage {
  
     public static String getProp() { return prop; }
 }
- 
 ```
 
 {% raw %}
@@ -103,7 +99,6 @@ Note the name of the class: `BarPackage`. It is derived from the short name of t
 public static void main(String[] args) {
     System.out.println(BarPackage.getProp());
 }
- 
 ```
 
 {% raw %}
@@ -134,7 +129,6 @@ Then, a single <strong>package-facade</strong> class is generated that declares 
 package foo.bar
  
 val a = computeA()
- 
 ```
 
 {% raw %}
@@ -151,7 +145,6 @@ val a = computeA()
 package foo.bar
  
 val b = computeB()
- 
 ```
 
 {% raw %}
@@ -207,7 +200,6 @@ Consequently:
 package foo.bar
  
 fun foo() {...}
- 
 ```
 
 {% raw %}
@@ -226,7 +218,6 @@ package foo.bar;
 public class File1 {
     public static void foo() {...}
 }
- 
 ```
 
 {% raw %}
@@ -244,7 +235,6 @@ public class File1 {
 package foo.bar
  
 fun foo() {...}
- 
 ```
 
 {% raw %}
@@ -263,7 +253,6 @@ package foo.bar;
 public class Utils {
     public static void foo() {...}
 }
- 
 ```
 
 {% raw %}
@@ -283,7 +272,6 @@ regardless of the source file name.
 package foo.bar
  
 fun foo() {...}
- 
 ```
 
 {% raw %}
@@ -301,7 +289,6 @@ fun foo() {...}
 package foo.bar
  
 fun bar() {...}
- 
 ```
 
 {% raw %}
@@ -321,7 +308,6 @@ public class Utils {
     public static void foo() { File1.foo(); }
     public static void bar() { File2.bar(); }
 }
- 
 ```
 
 {% raw %}

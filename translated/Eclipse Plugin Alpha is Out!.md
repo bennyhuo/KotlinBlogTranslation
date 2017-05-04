@@ -43,7 +43,6 @@ IntelliJ IDEA中的Kotlin支持一直是我们的首要任务之一，但是我�
 
 ```kotlin
 https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
- 
 ```
 
 {% raw %}

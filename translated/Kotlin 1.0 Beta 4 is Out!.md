@@ -48,7 +48,6 @@ translator_url:
 
 ```kotlin
 file.listFiles { it -> ... }
- 
 ```
 
 {% raw %}
@@ -65,7 +64,6 @@ file.listFiles { it -> ... }
 
 ```kotlin
 val lengths = strs.map(String::length)
- 
 ```
 
 {% raw %}
@@ -106,7 +104,6 @@ interface Open
 fun bar(p: List<Open>) // in Java: List<? extends Open> (Open is not final)
 @JvmSuppressWildcards
 fun bar(p: List<Open>) // in Java: List<Open>
- 
 ```
 
 {% raw %}

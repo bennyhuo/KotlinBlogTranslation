@@ -41,7 +41,6 @@ editText {
         }
     }
 }
- 
 ```
 
 {% raw %}
@@ -62,7 +61,6 @@ configuration(screenSize = ScreenSize.LARGE, orientation = Orientation.LANDSCAPE
       if the screen is large and its orientation is landscape
     */
 }
- 
 ```
 
 {% raw %}
@@ -85,7 +83,6 @@ frameLayout {
         backgroundResource = R.drawable.custom_view_bg
     }.linearLayout(width = matchParent)
 }
- 
 ```
 
 {% raw %}
@@ -108,7 +105,6 @@ frameLayout {
 UI {
     textView(R.string.name)
 }
- 
 ```
 
 {% raw %}

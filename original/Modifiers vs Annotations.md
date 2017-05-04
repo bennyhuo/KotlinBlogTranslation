@@ -31,7 +31,6 @@ Unlike many languages, in Kotlin <strong>most modifiers are not proper keywords<
 ```kotlin
 val public = "PUBLIC!"
 println(public)
- 
 ```
 
 {% raw %}
@@ -69,7 +68,6 @@ Incidentally, we think that it would make sense to allow modifiers to have param
 
 ```kotlin
 annotation(repeatable = true) class MyRepeatableAnnotation
- 
 ```
 
 {% raw %}

@@ -40,7 +40,6 @@ class Derived : Base() {
         Derived.foo() // ERROR!
     }
 }
- 
 ```
 
 {% raw %}
@@ -65,7 +64,6 @@ var foo: Foo? = makeFoo() // initializer required
             notifyListeners()
         field = v
     }
- 
 ```
 
 {% raw %}
@@ -91,7 +89,6 @@ var foo: Foo?
 init {
     _foo = ...
 }
- 
 ```
 
 {% raw %}
@@ -110,7 +107,6 @@ init {
 fun <T> T.foo() = ...
  
 fun T.foo<T>() = ...
- 
 ```
 
 {% raw %}
@@ -134,7 +130,6 @@ class Public : Super() {
  
     fun public(p: Private): Private = ...
 }
- 
 ```
 
 {% raw %}
@@ -164,7 +159,6 @@ val getter = target.getGetter() ?: run {
     defaultGetter.initialize(target.getType())
     ^defaultGetter
 }
- 
 ```
 
 {% raw %}
@@ -187,7 +181,6 @@ private fun transformTryCatchBlocks(methodNode: MethodNode, newTryStartLabels: H
              TryCatchBlockNode(newTryStartLabel, tcb.end, tcb.handler, tcb.type)
      }
 }
- 
 ```
 
 {% raw %}

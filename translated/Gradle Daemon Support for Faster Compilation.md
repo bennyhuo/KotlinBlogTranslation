@@ -37,7 +37,6 @@ buildscript {
     ...
   }
 }
- 
 ```
 
 {% raw %}

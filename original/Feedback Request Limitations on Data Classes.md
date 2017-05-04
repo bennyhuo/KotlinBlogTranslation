@@ -26,7 +26,6 @@ The concept of [data classes](http://kotlinlang.org/docs/reference/data-classes.
 
 ```kotlin
 data class Foo(val a: A, val b: B)
- 
 ```
 
 {% raw %}
@@ -47,7 +46,6 @@ For example, what if I want to extend a data class? What if the derived class is
 open data class Base(val a: A, val b: B)
  
 data class Derived(a: A, b: B, val c: C) : Base(a, b)
- 
 ```
 
 {% raw %}
@@ -68,7 +66,6 @@ And what about component functions that enable [multi-declarations](http://kotli
 
 ```kotlin
 val (a, b, c) = Derived(...)
- 
 ```
 
 {% raw %}
@@ -83,7 +80,6 @@ But nothing prevents us from writing something like this:
 
 ```kotlin
 data class Derived(b: B, a: A, val c: C) : Base(a, b)
- 
 ```
 
 {% raw %}
@@ -98,7 +94,6 @@ Note that the parameter order is reversed: first `b`, than `a`. Now it’s not t
 
 ```kotlin
 data class Derived(val c: C, b: B, a: A) : Base(a, b)
- 
 ```
 
 {% raw %}

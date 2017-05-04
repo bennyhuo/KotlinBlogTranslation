@@ -44,7 +44,6 @@ fun main(args: Array<String>) {
  
     println(future.get())
 }
- 
 ```
 
 {% raw %}
@@ -63,7 +62,6 @@ In Kotlin 1.1 we can write
 
 ```kotlin
 typealias Action<T> = (T) -> Unit
- 
 ```
 
 {% raw %}
@@ -84,7 +82,6 @@ In anticipation of your questions: this feature does not cover the use cases whe
 ```kotlin
 typealias Length = Double
 typealias Weight = Double
- 
 ```
 
 {% raw %}
@@ -114,7 +111,6 @@ fun example(foo: (Bar) -> Foo, bar: Bar) {
         memoizedFoo.doSomething()
     }
 }
- 
 ```
 
 {% raw %}

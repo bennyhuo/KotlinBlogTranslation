@@ -73,7 +73,6 @@ apply plugin: "kotlin-allopen"
 allOpen {
     annotation("com.your.Annotation")
 }
- 
 ```
 
 {% raw %}
@@ -92,7 +91,6 @@ annotation class MyFrameworkAnnotation
  
 @MyFrameworkAnnotation
 class MyClass // will be all-open
- 
 ```
 
 {% raw %}
@@ -113,7 +111,6 @@ buildscript {
 }
  
 apply plugin: "kotlin-spring"
- 
 ```
 
 {% raw %}
@@ -155,7 +152,6 @@ apply plugin: "kotlin-spring"
         </dependency>
     </dependencies>
 </plugin>
- 
 ```
 
 {% raw %}
@@ -186,7 +182,6 @@ apply plugin: "kotlin-noarg"
 noArg {
     annotation("com.your.Annotation")
 }
- 
 ```
 
 {% raw %}
@@ -225,7 +220,6 @@ noArg {
         </dependency>
     </dependencies>
 </plugin>
- 
 ```
 
 {% raw %}
