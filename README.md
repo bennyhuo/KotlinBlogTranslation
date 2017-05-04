@@ -9,32 +9,32 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 * 翻译时直接修改对应译文，不要修改格式。
 * 如需在发布后接受打赏，可以将 reward 设置为 true，并且提供微信和支付宝二维码图片的地址（可以外链，也可以直接上传到本仓库 /assets/文章名/ 目录，地址写绝对路径，比如 /assets/文章名/wechat.png）。
 * 4.27 新增译者展示，将你的名字和主页地址写入文章开头的属性，博客中会直接展示，下面是个例子：
-	
-	```
-	translator: SnakEys
-	translator_url: https://github.com/SnakeEys
-	```
-	
-	展示的效果：
-	
-	![](assets/readme/translator.png)
+
+  ```
+  translator: SnakEys
+  translator_url: https://github.com/SnakeEys
+  ```
+
+  展示的效果：
+
+  ![](assets/readme/translator.png)
 
 ### 文章列表
 
-| 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址 |
-| ---------------------------------------- | ------------------- | ---------------------------------------- | ---------------------------------------- |---|
-|[Kotlin 1.1.2 is out](original/Kotlin%201.1.2%20is%20out.md) |2017-04-25 21:19:00| [译文](translated/Kotlin%201.1.2%20is%20out.md)| [SnakEys](https://github.com/SnakeEys)  | [[译]Kotlin 1.1.2 is out](https://www.kotliner.cn/2017/04/25/Kotlin%201.1.2%20is%20out/) |
+| 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址                                     |
+| ---------------------------------------- | ------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| [Kotlin 1.1.2 is out](original/Kotlin%201.1.2%20is%20out.md) | 2017-04-25 21:19:00 | [译文](translated/Kotlin%201.1.2%20is%20out.md) | [SnakEys](https://github.com/SnakeEys)   | [[译]Kotlin 1.1.2 is out](https://www.kotliner.cn/2017/04/25/Kotlin%201.1.2%20is%20out/) |
 | [Use Kotlin with npm, webpack and react](original/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | 2017-04-18 15:23:00 | [译文](translated/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | [Liu PeiPei](https://github.com/lsanotes) | [[译]Use Kotlin with npm, webpack and react](https://www.kotliner.cn/2017/04/18/Use%20Kotlin%20with%20npm,%20webpack%20and%20react/) |
 | [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) | 2017-04-06 23:21:00 | [译文](translated/Kotlin%201.1%20Event%20Report.md) | [Liu PeiPei](https://github.com/lsanotes) | [[译]Kotlin 1.1 Event Report](https://www.kotliner.cn/2017/04/06/Kotlin%201.1%20Event%20Report/) |
 | [Kotlin 1.1 is also for Android Developers](original/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | 2017-04-05 16:13:00 | [译文](translated/Kotlin%201.1%20is%20also%20for%20Android%20Developers.md) | [DemoJameson](http://www.demojameson.com) | [[译]Kotlin 1.1 也适用于 Android 开发者](https://www.kotliner.cn/2017/04/05/Kotlin%201.1%20is%20also%20for%20Android%20Developers/) |
 | [Kotlin_Native Tech Preview Kotlin without a VM](original/Kotlin_Native%20Tech%20Preview%20Kotlin%20without%20a%20VM.md) | 2017-04-04 14:42:00 | [译文](translated/Kotlin_Native%20Tech%20Preview%20Kotlin%20without%20a%20VM.md) |                                          |                                          |
-| [Kotlin 1.1 Event in Your City](original/Kotlin%201.1%20Event%20in%20Your%20City.md) | 2017-03-21 21:51:00 | [译文](translated/Kotlin%201.1%20Event%20in%20Your%20City.md) | [SnakEys](https://github.com/SnakeEys)   |     [[译]Kotlin 1.1 Event in Your City](https://www.kotliner.cn/2017/03/21/Kotlin%201.1%20Event%20in%20Your%20City/)                                  |
+| [Kotlin 1.1 Event in Your City](original/Kotlin%201.1%20Event%20in%20Your%20City.md) | 2017-03-21 21:51:00 | [译文](translated/Kotlin%201.1%20Event%20in%20Your%20City.md) | [SnakEys](https://github.com/SnakeEys)   | [[译]Kotlin 1.1 Event in Your City](https://www.kotliner.cn/2017/03/21/Kotlin%201.1%20Event%20in%20Your%20City/) |
 | [Kotlin 1.0.7 is out](original/Kotlin%201.0.7%20is%20out.md) | 2017-03-15 22:21:00 | [译文](translated/Kotlin%201.0.7%20is%20out.md) |                                          |                                          |
 | [Announcing KotlinConf](original/Announcing%20KotlinConf.md) | 2017-03-14 21:57:00 | [译文](translated/Announcing%20KotlinConf.md) |                                          |                                          |
-| [Kotlin 1.1.1 is out](original/Kotlin%201.1.1%20is%20out.md) | 2017-03-14 20:29:00 | [译文](translated/Kotlin%201.1.1%20is%20out.md) | [SnakEys](https://github.com/SnakeEys)   |                                           [[译]Kotlin 1.1.1 is out](https://www.kotliner.cn/2017/03/14/Kotlin%201.1.1%20is%20out/) |
-| [Kotlin 1.1 Event](original/Kotlin%201.1%20Event.md) | 2017-03-06 17:43:00 | [译文](translated/Kotlin%201.1%20Event.md) | [SnakEys](https://github.com/SnakeEys)                                 |                                          |
-| [Kotlin 1.1 Released with JavaScript Support, Coroutines and more](original/Kotlin%201.1%20Released%20with%20JavaScript%20Support%2C%20Coroutines%20and%20more.md) | 2017-03-01 17:12:00 | [译文](translated/Kotlin%201.1%20Released%20with%20JavaScript%20Support%2C%20Coroutines%20and%20more.md) |   [SnakEys](https://github.com/SnakeEys)                                        |                                          |
-| [Kotlin 1.1 Release Candidate is Here](original/Kotlin%201.1%20Release%20Candidate%20is%20Here.md) | 2017-02-17 13:37:00 | [译文](translated/Kotlin%201.1%20Release%20Candidate%20is%20Here.md) |                                          |                                          |
+| [Kotlin 1.1.1 is out](original/Kotlin%201.1.1%20is%20out.md) | 2017-03-14 20:29:00 | [译文](translated/Kotlin%201.1.1%20is%20out.md) | [SnakEys](https://github.com/SnakeEys)   | [[译]Kotlin 1.1.1 is out](https://www.kotliner.cn/2017/03/14/Kotlin%201.1.1%20is%20out/) |
+| [Kotlin 1.1 Event](original/Kotlin%201.1%20Event.md) | 2017-03-06 17:43:00 | [译文](translated/Kotlin%201.1%20Event.md) | [SnakEys](https://github.com/SnakeEys)   |                                          |
+| [Kotlin 1.1 Released with JavaScript Support, Coroutines and more](original/Kotlin%201.1%20Released%20with%20JavaScript%20Support%2C%20Coroutines%20and%20more.md) | 2017-03-01 17:12:00 | [译文](translated/Kotlin%201.1%20Released%20with%20JavaScript%20Support%2C%20Coroutines%20and%20more.md) | [SnakEys](https://github.com/SnakeEys)   |                                          |
+| [Kotlin 1.1 Release Candidate is Here](original/Kotlin%201.1%20Release%20Candidate%20is%20Here.md) | 2017-02-17 13:37:00 | [译文](translated/Kotlin%201.1%20Release%20Candidate%20is%20Here.md) | [ahong222](https://github.com/ahong222)  |                                          |
 | [Our first book about Kotlin is out](original/Our%20first%20book%20about%20Kotlin%20is%20out.md) | 2017-02-10 20:00:00 | [译文](translated/Our%20first%20book%20about%20Kotlin%20is%20out.md) |                                          |                                          |
 | [Kotlin 1.1 Beta 2 is here](original/Kotlin%201.1%20Beta%202%20is%20here.md) | 2017-02-02 23:24:00 | [译文](translated/Kotlin%201.1%20Beta%202%20is%20here.md) |                                          |                                          |
 | [Announcing the Support Program for Kotlin User Groups and Events](original/Announcing%20the%20Support%20Program%20for%20Kotlin%20User%20Groups%20and%20Events.md) | 2017-01-30 21:42:00 | [译文](translated/Announcing%20the%20Support%20Program%20for%20Kotlin%20User%20Groups%20and%20Events.md) |                                          |                                          |
@@ -67,8 +67,8 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Kotlin 1.0 Release Candidate is Out!](original/Kotlin%201.0%20Release%20Candidate%20is%20Out%21.md) | 2016-02-04 18:39:00 | [译文](translated/Kotlin%201.0%20Release%20Candidate%20is%20Out%21.md) |                                          |                                          |
 | [Kotlin Digest 2015](original/Kotlin%20Digest%202015.md) | 2016-01-19 15:53:00 | [译文](translated/Kotlin%20Digest%202015.md) |                                          |                                          |
 | [Kotlin 1.0 Beta 4 is Out!](original/Kotlin%201.0%20Beta%204%20is%20Out%21.md) | 2015-12-22 22:25:00 | [译文](translated/Kotlin%201.0%20Beta%204%20is%20Out%21.md) |                                          |                                          |
-| [Learn Kotlin with “Advent of Code”](original/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | 2015-12-18 22:08:00 | [译文](translated/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | [团子](https://github.com/pye52)           | [[译]Learn Kotlin with “Advent of Code”](https://www.kotliner.cn/2015/12/18/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D/) |
-| [Kotlin 1.0 Beta 3 is Out!](original/Kotlin%201.0%20Beta%203%20is%20Out%21.md) | 2015-12-07 15:45:00 | [译文](translated/Kotlin%201.0%20Beta%203%20is%20Out%21.md) |                                          |                                          |
+| [Learn Kotlin with “Advent of Code”](original/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | 2015-12-18 22:08:00 | [译文](translated/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D.md) | [pye52](https://github.com/pye52)        | [[译]Learn Kotlin with “Advent of Code”](https://www.kotliner.cn/2015/12/18/Learn%20Kotlin%20with%20%E2%80%9CAdvent%20of%20Code%E2%80%9D/) |
+| [Kotlin 1.0 Beta 3 is Out!](original/Kotlin%201.0%20Beta%203%20is%20Out%21.md) | 2015-12-07 15:45:00 | [译文](translated/Kotlin%201.0%20Beta%203%20is%20Out%21.md) | [pye52](https://github.com/pye52)        |                                          |
 | [Kotlin Eclipse Plugin 0.5.0](original/Kotlin%20Eclipse%20Plugin%200.5.0.md) | 2015-12-01 15:57:00 | [译文](translated/Kotlin%20Eclipse%20Plugin%200.5.0.md) |                                          |                                          |
 | [Contest Go Cross-Platform with Kotlin!](original/Contest%20Go%20Cross-Platform%20with%20Kotlin%21.md) | 2015-11-25 18:17:00 | [译文](translated/Contest%20Go%20Cross-Platform%20with%20Kotlin%21.md) |                                          |                                          |
 | [Kotlin 1.0 Beta 2 is Out!](original/Kotlin%201.0%20Beta%202%20is%20Out%21.md) | 2015-11-16 21:01:00 | [译文](translated/Kotlin%201.0%20Beta%202%20is%20Out%21.md) |                                          |                                          |
@@ -128,7 +128,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | [Working with Kotlin in Android Studio](original/Working%20with%20Kotlin%20in%20Android%20Studio.md) | 2013-08-26 18:49:00 | [译文](translated/Working%20with%20Kotlin%20in%20Android%20Studio.md) |                                          |                                          |
 | [Kotlin M6 is here!](original/Kotlin%20M6%20is%20here%21.md) | 2013-08-12 21:09:00 | [译文](translated/Kotlin%20M6%20is%20here%21.md) |                                          |                                          |
 | [Mixed-Site Variance in Kotlin](original/Mixed-Site%20Variance%20in%20Kotlin.md) | 2013-06-26 12:00:00 | [译文](translated/Mixed-Site%20Variance%20in%20Kotlin.md) |                                          |                                          |
-| [“Static constants” in Kotlin](original/%E2%80%9CStatic%20constants%E2%80%9D%20in%20Kotlin.md) | 2013-06-24 12:00:00 | [译文](translated/%E2%80%9CStatic%20constants%E2%80%9D%20in%20Kotlin.md) | [SnakEys](https://github.com/SnakeEys)   |    [[译]“Static constants” in Kotlin](https://www.kotliner.cn/2013/06/24/%E2%80%9CStatic%20constants%E2%80%9D%20in%20Kotlin/)                                      |
+| [“Static constants” in Kotlin](original/%E2%80%9CStatic%20constants%E2%80%9D%20in%20Kotlin.md) | 2013-06-24 12:00:00 | [译文](translated/%E2%80%9CStatic%20constants%E2%80%9D%20in%20Kotlin.md) | [SnakEys](https://github.com/SnakeEys)   | [[译]“Static constants” in Kotlin](https://www.kotliner.cn/2013/06/24/%E2%80%9CStatic%20constants%E2%80%9D%20in%20Kotlin/) |
 | [Type-Safe Web with Kotlin](original/Type-Safe%20Web%20with%20Kotlin.md) | 2013-06-17 18:13:00 | [译文](translated/Type-Safe%20Web%20with%20Kotlin.md) |                                          |                                          |
 | [Talk @ GeekOUT Tallinn Language Design Trade-Offs (Kotlin and Beyond)](original/Talk%20%40%20GeekOUT%20Tallinn%20Language%20Design%20Trade-Offs%20%28Kotlin%20and%20Beyond%29.md) | 2013-06-10 15:27:00 | [译文](translated/Talk%20%40%20GeekOUT%20Tallinn%20Language%20Design%20Trade-Offs%20%28Kotlin%20and%20Beyond%29.md) |                                          |                                          |
 | [Kotlin M5.3 IntelliJ IDEA 13, Delegated Properties and more](original/Kotlin%20M5.3%20IntelliJ%20IDEA%2013%2C%20Delegated%20Properties%20and%20more.md) | 2013-06-06 10:48:00 | [译文](translated/Kotlin%20M5.3%20IntelliJ%20IDEA%2013%2C%20Delegated%20Properties%20and%20more.md) |                                          |                                          |
