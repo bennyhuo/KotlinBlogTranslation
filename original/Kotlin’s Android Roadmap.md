@@ -46,16 +46,16 @@ More Android-specific IDE support, such as a <i>New Kotlin Activity</i> action, 
 
 Java 8 has been around for quite a while now, and thus many of our users, those who are not doing Android development, have chosen Kotlin over Java 8 and are happy about it. Now that Android has official support for the Java 8 language features, how does that change the decision of choosing between Kotlin and Java?
 First of all, while Java 8 does bring lambdas to Android, there are important differences between the way the Android toolchain supports lambdas on existing platform versions (that don’t run the N release) and the way Kotlin supports lambdas. To understand the difference, let’s see how the following simple code snippets are compiled:
-Kotlin: <code>list.forEach { process(it) }</code><br/>
+Kotlin: `list.forEach { process(it) }`<br/>
 
-Java 8: <code>list.forEach(it -&gt; process(it))</code>
+Java 8: `list.forEach(it -&gt; process(it))`
 Java’s version is a tiny bit longer, but let’s not focus on that. Instead, let’s see what happens under the hood. Starting with Java:
 
 * in Android’s Java 8 every lambda is compiled to a class, which has two methods: constructor and the actual body (affecting the method count of your application);
 * this class is later instantiated at runtime, in many cases — every time the forEach is called (creating pressure on the garbage collector);
 * and to access it, Java uses a polymorphic call to Consumer.accept, which may happen on every iteration in a tight loop (affecting performance, because the runtime cannot always inline such calls).
 
-Kotlin, in the general case, implements lambdas in exactly the same way. However, in many cases, including most collection operations such as <code>forEach</code>, Kotlin generates much more efficient bytecode through the use of <i>inline functions</i>. When you use an inline function with a lambda, both the body of the function and the lambda are inlined at the call site. As a result:
+Kotlin, in the general case, implements lambdas in exactly the same way. However, in many cases, including most collection operations such as `forEach`, Kotlin generates much more efficient bytecode through the use of <i>inline functions</i>. When you use an inline function with a lambda, both the body of the function and the lambda are inlined at the call site. As a result:
 
 * the bytecode of the lambda is inserted directly into the bytecode of the calling method, so the method count does not increase;
 * executing the code does not allocate any objects, so there is no garbage collector pressure;

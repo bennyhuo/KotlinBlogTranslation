@@ -26,8 +26,8 @@ The upside of this temporary lack of guarantees is that we can make immediate us
 The full changelog for 1.1 M01 is available [here](https://github.com/JetBrains/kotlin/blob/1.1-M1/ChangeLog.md#11-m01-eap-1) .<span id="more-4080"></span>
 ## Coroutines
 
-We all know that blocking is bad under a high load, that polling is a no-go, and the world is becoming more and more push-based and asynchronous. Many languages (starting with C# in 2012) support asynchronous programming through dedicated language constructs such as <code>async</code>/<code>await</code> keywords. In Kotlin, we generalized this concept so that libraries can define their own versions of such constructs, and <code>async</code> is not a keyword, but simply a function.
-This design allows for integration of different asynchronous APIs: futures/promises, callback-passing, etc. It is also general enough to express lazy generators (<code>yield</code>) and cover some other use cases.
+We all know that blocking is bad under a high load, that polling is a no-go, and the world is becoming more and more push-based and asynchronous. Many languages (starting with C# in 2012) support asynchronous programming through dedicated language constructs such as `async`/`await` keywords. In Kotlin, we generalized this concept so that libraries can define their own versions of such constructs, and `async` is not a keyword, but simply a function.
+This design allows for integration of different asynchronous APIs: futures/promises, callback-passing, etc. It is also general enough to express lazy generators (`yield`) and cover some other use cases.
 So, meet one of the bigger features of Kotlin 1.1: <em>coroutines</em>. This is a traditional CS term for “program components that generalize subroutines for nonpreemptive multitasking”, but we’ll not dive into theory here <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 
 {% raw %}
@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
 {% endraw %}
 
 The great thing about coroutines is that they can <em>suspend</em> without blocking a thread, and yet they look like normal sequential code. Please see a [detailed description](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) and examples in a dedicated [KEEP repository](https://github.com/Kotlin/kotlin-coroutines) and comment on the [issues there](https://github.com/Kotlin/kotlin-coroutines/issues) .
-We are prototyping coroutine-based libraries [here](https://github.com/Kotlin/kotlinx.coroutines) , to be later included with the Standard Library. This includes JDK’s <code>CompletableFuture</code>, asynchronous IO (NIO), RxJava, and off-loading tasks from the UI thread in Swing. The repo contains examples as well as the libraries themselves. To play with it, follow the instructions in the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) .
+We are prototyping coroutine-based libraries [here](https://github.com/Kotlin/kotlinx.coroutines) , to be later included with the Standard Library. This includes JDK’s `CompletableFuture`, asynchronous IO (NIO), RxJava, and off-loading tasks from the UI thread in Swing. The repo contains examples as well as the libraries themselves. To play with it, follow the instructions in the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) .
 ## Type aliases
 
 In Kotlin 1.1 we can write
@@ -70,7 +70,7 @@ typealias Action<T> = (T) -> Unit
 <p></p>
 {% endraw %}
 
-This means that we can use <code>Action&lt;T&gt;</code> interchangeably with <code>(T) -&gt; Unit</code>, i.e. it is a true <strong>alias</strong>. Type aliases are useful for abbreviating longer types that are used in multiple places in the code:
+This means that we can use `Action&lt;T&gt;` interchangeably with `(T) -&gt; Unit`, i.e. it is a true <strong>alias</strong>. Type aliases are useful for abbreviating longer types that are used in multiple places in the code:
 
 * function types with complex signatures: UserAction = (User, Context) -> ActionResponse,
 * complex generic types: Multimap<K, V> = Map<K, List<V>>
@@ -91,11 +91,11 @@ typealias Weight = Double
 <p></p>
 {% endraw %}
 
-it won’t do us much good, because <code>Length</code> can be freely assigned to <code>Weight</code> and vice versa. In fact, they can both be assigned to and from a regular <code>Double</code>. We understand the importance of such use cases, and are planning to cover them in the future, most likely through <em>value classes</em>, but that’s another story. For now we only have type aliases.
+it won’t do us much good, because `Length` can be freely assigned to `Weight` and vice versa. In fact, they can both be assigned to and from a regular `Double`. We understand the importance of such use cases, and are planning to cover them in the future, most likely through <em>value classes</em>, but that’s another story. For now we only have type aliases.
 Read more and comment [here](https://github.com/Kotlin/KEEP/issues/4) .
 ## Bound callable references
 
-In Kotlin 1.0 one can obtain a reference to a function (or property) like this: <code>String::length</code>, i.e. using a name of the containing class. In 1.1 we are adding <em>bound references</em>: i.e. we’ll be able to say <code>mystr::length</code> where <code>mystr</code> is a variable (or any other expression). Such references are bound to their receiver, and thus are a special case of partial function application (that we are not supporting in the general case, at least for now).
+In Kotlin 1.0 one can obtain a reference to a function (or property) like this: `String::length`, i.e. using a name of the containing class. In 1.1 we are adding <em>bound references</em>: i.e. we’ll be able to say `mystr::length` where `mystr` is a variable (or any other expression). Such references are bound to their receiver, and thus are a special case of partial function application (that we are not supporting in the general case, at least for now).
 Read more and comment [here](https://github.com/Kotlin/KEEP/issues/5) .
 ## Local delegated properties & Inline properties
 
@@ -137,8 +137,8 @@ More details in the [proposal](https://github.com/Kotlin/KEEP/issues/28) .
 ## Java 7/8 support
 
 We are working on the improved support for Java 8: 1.1 fixes the issues with Stream APIs that we used to have (and mitigated with a support library), and adds support for generating default methods in Kotlin interfaces, so that Java clients can implement them seamlessly. Read and comment [here](https://github.com/Kotlin/KEEP/issues/30) .
-To enable generation of version 8 class files, supply the <code>-jvm-target 1.8</code> command line switch.
-We are also adding new functions to the Standard Library, and as they rely on Java API version newer than 1.6, we introduce new artifacts: <code>kotlin-stdlib-jre7</code> and <code>kotlin-stdlib-jre8</code> that carry extra functionality such as <code>AutoCloseable.use()</code>, Regex named groups support and stream-related functions. Use these artifacts instead of <code>kotlin-stdlib</code> from your Maven/Gradle builds if you need the APIs they add.
+To enable generation of version 8 class files, supply the `-jvm-target 1.8` command line switch.
+We are also adding new functions to the Standard Library, and as they rely on Java API version newer than 1.6, we introduce new artifacts: `kotlin-stdlib-jre7` and `kotlin-stdlib-jre8` that carry extra functionality such as `AutoCloseable.use()`, Regex named groups support and stream-related functions. Use these artifacts instead of `kotlin-stdlib` from your Maven/Gradle builds if you need the APIs they add.
 Read and discuss the proposals related to stdlib [here](https://github.com/Kotlin/KEEP/labels/stdlib) .
 ## JavaScript
 
@@ -159,7 +159,7 @@ We are very grateful to GitHub users [dotlin](https://github.com/dotlin) , [Vald
 Press <em>Check for updates</em> in the same dialog, and, when the new version is show, <em>Install</em>.
 <strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Use the drop-down list at the bottom-right corner to change the compiler version:<br/>
 <img alt="Screen Shot 2016-07-14 at 20.23.48" class="alignnone size-full wp-image-4121" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Screen-Shot-2016-07-14-at-20.23.48.png?resize=640%2C549&amp;ssl=1"/>
-<strong>With SDKMan</strong>. Run <code>sdk install kotlin 1.1-M01</code>.
+<strong>With SDKMan</strong>. Run `sdk install kotlin 1.1-M01`.
 Your feedback is very welcome, as always.
 ### Have a nice Kotlin!
 

@@ -31,7 +31,7 @@ Kotlin编译器现在也需要基于JDK 8运行。但您应该不需要在意这
 
 ## Maven增量编译
 
-从Kotlin 1.1.2开始，以前用于IntelliJ IDEA和Gradle构建的增量编译现在也支持Maven。启用该功能时，需要使用-D命令行参数或<code>proterties</code>标记设置<code>kotlin.compiler.incremental</code>属性为true：
+从Kotlin 1.1.2开始，以前用于IntelliJ IDEA和Gradle构建的增量编译现在也支持Maven。启用该功能时，需要使用-D命令行参数或`proterties`标记设置`kotlin.compiler.incremental`属性为true：
 
 ```kotlin
 <properties>
@@ -41,7 +41,7 @@ Kotlin编译器现在也需要基于JDK 8运行。但您应该不需要在意这
 
 ## Maven注解处理
 
-现在可以从Maven构建中调用Kotlin的注解处理工具kapt了，只需要在<code>compile</code>前，从kotlin-maven-plugin中添加<code>kapt</code>的执行目标：
+现在可以从Maven构建中调用Kotlin的注解处理工具kapt了，只需要在`compile`前，从kotlin-maven-plugin中添加`kapt`的执行目标：
 
 {% raw %}
 <p></p>
@@ -78,7 +78,7 @@ Kotlin编译器现在也需要基于JDK 8运行。但您应该不需要在意这
 
 在[这里](https://github.com/JetBrains/kotlin-examples/blob/master/maven/dagger-maven-example/pom.xml)查看具有Java-Kotlin代码支持和测试的POM文件完整示例。  
 
-请注意，IntelliJ IDEA自己的构建系统仍然不支持<code>kapt</code>。当您要重新运行注解处理时，需要从“Maven Projects”工具栏中启动构建。
+请注意，IntelliJ IDEA自己的构建系统仍然不支持`kapt`。当您要重新运行注解处理时，需要从“Maven Projects”工具栏中启动构建。
 ## 内联方法重构
 
 我们终于在Kotlin代码中实现了Inline方法（Function）的支持。

@@ -38,7 +38,7 @@ First of all, as promised before, there has been a clean-up:
 Most other language changes are minor tweaks and bug fixes. Some highlights are given below. See the full list [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 ### Annotations on delegate fields
 
-The new <code>@delegate:</code> annotation target (use-site) is now supported. For example, to mark the delegate object as <code>@Transient</code>, we can say:
+The new `@delegate:` annotation target (use-site) is now supported. For example, to mark the delegate object as `@Transient`, we can say:
 
 {% raw %}
 <p></p>
@@ -101,7 +101,7 @@ Some improvements to synthesized properties derived from Java’s get/set pairs:
 * such declarations (as well as SAM-converted methods) are now resolved on par with members;
 * support added for Java setters that return values.
 
-Support added for <code>@Nullable/@NotNull</code> annotations from various popular libraries such as <code>javax.annotations</code>, Android SDK, etc.<br/>
+Support added for `@Nullable/@NotNull` annotations from various popular libraries such as `javax.annotations`, Android SDK, etc.<br/>
 
 EAP users report:
 <p>
@@ -144,7 +144,7 @@ apply plugin: 'kotlin-android-extensions'
 <p></p>
 {% endraw %}
 
-in the <code>build.gradle</code> file (individually for each project).
+in the `build.gradle` file (individually for each project).
 The old way doesn’t work any more and prints fixing instructions to the output.
 ## IDE Changes
 

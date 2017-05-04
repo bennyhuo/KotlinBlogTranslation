@@ -17,9 +17,9 @@ translator_url:
 We are happy to announce the release of Kotlin 1.0.6, the new bugfix and tooling update for Kotlin 1.0. This version brings a significant number of improvements related to the IDE plugin and Android support.
 We’d like to thank our external contributors whose pull requests are included in this release: [Kirill Rakhman](https://github.com/cypressious) and [Yoshinori Isogai](https://github.com/shiraji) . We also want to thank everyone of our EAP users for their feedback. It is really valuable for us, as always.
 You can find the full list of changes in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.6/ChangeLog.md#106) . Some of the changes worth highlighting are described below. <span id="more-4429"></span>
-## Convert <code>try-finally</code> to <code>use()</code> intention
+## Convert `try-finally` to `use()` intention
 
-We continue to add intentions for converting code to idiomatic Kotlin. The IDE now automatically suggests to replace <code>try-finally</code> block with the [use()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) call when all the <code>finally</code> block does is closing a resource.<br/>
+We continue to add intentions for converting code to idiomatic Kotlin. The IDE now automatically suggests to replace `try-finally` block with the [use()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) call when all the `finally` block does is closing a resource.<br/>
 <img alt="" class="alignnone size-full wp-image-4043" onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try.gif';" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png" width="700"/>
 ## “Add names to call arguments” intention
 
@@ -48,11 +48,11 @@ Named arguments help to increase code readability. With the new “Add names to 
 ## Kapt Improvements
 
 We continue to work on the experimental version of Kotlin annotation processing tool (kapt). While there are still some things to do in order to fully support incremental compilation, performance of the annotation processing is significantly increased since Kotlin 1.0.4.
-To enable experimental kapt, just add the following line to your <code>build.gradle</code>:
-<code>apply plugin: 'kotlin-kapt'</code>
+To enable experimental kapt, just add the following line to your `build.gradle`:
+`apply plugin: 'kotlin-kapt'`
 ## All-open compiler plugin
 
-The <strong>all-open</strong> compiler plugin makes classes annotated with a specific annotation and their members open without the explicit <code>open</code> keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
+The <strong>all-open</strong> compiler plugin makes classes annotated with a specific annotation and their members open without the explicit `open` keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
 We provide all-open plugin support both for Gradle and Maven, as well as the IDE integration.
 ### How to use all-open with Gradle
 
@@ -80,7 +80,7 @@ allOpen {
 <p></p>
 {% endraw %}
 
-If the class (or any of its superclasses) is annotated with <code>com.your.Annotation</code>, the class itself and all its members will become open. It even works with meta-annotations:
+If the class (or any of its superclasses) is annotated with `com.your.Annotation`, the class itself and all its members will become open. It even works with meta-annotations:
 
 {% raw %}
 <p></p>
@@ -120,7 +120,7 @@ apply plugin: "kotlin-spring"
 <p></p>
 {% endraw %}
 
-Of course, you can use both <code>kotlin-allopen</code> and <code>kotlin-spring</code> in the same project.
+Of course, you can use both `kotlin-allopen` and `kotlin-spring` in the same project.
 ### How to use all-open with Maven
 
 

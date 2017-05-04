@@ -49,10 +49,10 @@ class Derived : Base() {
 
 ## Lateinit val’s
 
-With the help of our users we found that we have previously missed an unpleasant hole in the design of <code>lateinit val</code>: backing fields for such properties were not final, and thus Java code could modify them freely. That makes the <code>val</code>-ness of such properties vanish, because no code can ever assume any immutability on them, so we decided to take this feature back: from now on, only <code>var</code>s can be marked <code>lateinit</code>. We’ll keep thinking on use cases and improvements of this feature.
+With the help of our users we found that we have previously missed an unpleasant hole in the design of `lateinit val`: backing fields for such properties were not final, and thus Java code could modify them freely. That makes the `val`-ness of such properties vanish, because no code can ever assume any immutability on them, so we decided to take this feature back: from now on, only `var`s can be marked `lateinit`. We’ll keep thinking on use cases and improvements of this feature.
 ## Backing fields and custom setters
 
-An addition to the previously announced  [change]()  in backing field syntax: if a property has a custom setter or is <code>open</code>, the setter may be reading the field before writing it, so there’s no syntax for initializing this property for the first time, unless it’s done upon declaration. So, we now require initializers for such properties:
+An addition to the previously announced  [change]()  in backing field syntax: if a property has a custom setter or is `open`, the setter may be reading the field before writing it, so there’s no syntax for initializing this property for the first time, unless it’s done upon declaration. So, we now require initializers for such properties:
 
 {% raw %}
 <p></p>
@@ -117,10 +117,10 @@ fun T.foo<T>() = ...
 <p></p>
 {% endraw %}
 
-Two is too many, so we decided to keep only the first one, because it places the declaration of <code>T</code> before its usages, which is easier to read and code completion will be more helpful.
+Two is too many, so we decided to keep only the first one, because it places the declaration of `T` before its usages, which is easier to read and code completion will be more helpful.
 ## Visibilities of subclasses and elements of declarations
 
-It’s a technical requirement, but rather intuitive: if something is <code>public</code>, it should not, for example, expose a <code>private</code> type:
+It’s a technical requirement, but rather intuitive: if something is `public`, it should not, for example, expose a `private` type:
 
 {% raw %}
 <p></p>
@@ -147,7 +147,7 @@ More formally: a supertype or an element of a declaration must be (effectively) 
 
 This one is not really decided, and very debatable indeed, but it can’t be added after 1.0, so we have been thinking about it for some time:
 As some of you [rightfully observed](https://youtrack.jetbrains.com/issue/KT-8695) , it may be difficult at times to see what expressions are used as results of blocks or lambdas.
-We are considering prefixing such result expressions with the <code>^</code> symbol (or maybe some other prefix) to make them visible, in the following cases:
+We are considering prefixing such result expressions with the `^` symbol (or maybe some other prefix) to make them visible, in the following cases:
 
 * expression is a result of a multi-line block or lambda, AND
 * its type is not Unit, nor Nothing.

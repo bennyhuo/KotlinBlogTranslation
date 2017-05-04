@@ -29,7 +29,7 @@ Using a declaration with a name consisting entirely of underscore characters now
 
 ## Maven Incremental Compilation
 
-Since Kotlin 1.1.2, incremental compilation which was previously available for IntelliJ IDEA and Gradle builds is now supported for Maven. To enable, set the <code>kotlin.compiler.incremental</code> property to true, using either the -D command line argument or the <code>properties</code> tag:
+Since Kotlin 1.1.2, incremental compilation which was previously available for IntelliJ IDEA and Gradle builds is now supported for Maven. To enable, set the `kotlin.compiler.incremental` property to true, using either the -D command line argument or the `properties` tag:
 
 {% raw %}
 <p></p>
@@ -48,7 +48,7 @@ Since Kotlin 1.1.2, incremental compilation which was previously available for I
 
 ## Maven Annotation Processing
 
-Kotlin’s annotation processing tool, kapt, can now be invoked from Maven builds. Just add an execution of the <code>kapt</code> goal from kotlin-maven-plugin before <code>compile</code>:
+Kotlin’s annotation processing tool, kapt, can now be invoked from Maven builds. Just add an execution of the `kapt` goal from kotlin-maven-plugin before `compile`:
 
 {% raw %}
 <p></p>
@@ -83,7 +83,7 @@ Kotlin’s annotation processing tool, kapt, can now be invoked from Maven build
 {% endraw %}
 
  [Here](https://github.com/JetBrains/kotlin-examples/blob/master/maven/dagger-maven-example/pom.xml)  is a complete example of the POM file with Java-Kotlin code support and tests.
-Please note that <code>kapt</code> is still not supported for IntelliJ IDEA’s own build system. Launch the build from the “Maven Projects” toolbar whenever you want to re-run the annotation processing.
+Please note that `kapt` is still not supported for IntelliJ IDEA’s own build system. Launch the build from the “Maven Projects” toolbar whenever you want to re-run the annotation processing.
 ## Inline Method Refactoring
 
 We’ve finally implemented the support for Inline Method (Function) in Kotlin code.

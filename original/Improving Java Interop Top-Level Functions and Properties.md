@@ -93,7 +93,7 @@ public class BarPackage {
 <p></p>
 {% endraw %}
 
-Note the name of the class: <code>BarPackage</code>. It is derived from the short name of the package: <code>bar</code>. The rest is easy: static methods. So, we can refer to them from Java:
+Note the name of the class: `BarPackage`. It is derived from the short name of the package: `bar`. The rest is easy: static methods. So, we can refer to them from Java:
 
 {% raw %}
 <p></p>
@@ -158,21 +158,21 @@ val b = computeB()
 <p></p>
 {% endraw %}
 
-When we access <code>a</code> or <code>b</code> from Java, in what order should their initializers be called? In fact, it may be a very complicated question, because <code>computeA()</code> and <code>computeB()</code> may depend on one another (directly or indirectly, through other code). And they may have side-effects, so this actually matters.
+When we access `a` or `b` from Java, in what order should their initializers be called? In fact, it may be a very complicated question, because `computeA()` and `computeB()` may depend on one another (directly or indirectly, through other code). And they may have side-effects, so this actually matters.
 So, Kotlin’s answer is:
 
 * inside a single file properties are initialized top-down,
 * upon the first access to any code in this file.
 
-Loops may happen (and lead to errors), but this is inevitable and Java has it the same way with statics, doesn’t it? So the implementation piggybacks on the Java’s semantics for static class initializers: every file has its own package-part, which declares all the fields and initializes them in the <code>&lt;clinit&gt;</code> method (that corresponds to the <code>static {...}</code> initializer in the Java language). Thus fields are initialized upon first access. And we get thread-safety for free, which is a big plus. If not for package parts, we couldn’t make it work.
+Loops may happen (and lead to errors), but this is inevitable and Java has it the same way with statics, doesn’t it? So the implementation piggybacks on the Java’s semantics for static class initializers: every file has its own package-part, which declares all the fields and initializes them in the `&lt;clinit&gt;` method (that corresponds to the `static {...}` initializer in the Java language). Thus fields are initialized upon first access. And we get thread-safety for free, which is a big plus. If not for package parts, we couldn’t make it work.
 ## Package-part names
 
-As you might have noticed in the picture above, package-parts tend to have weird names, such as <code>BarPackage$file1$0fbe61c7.class</code>. This consists, obviously, of a package-facade name (<code>BarPackage</code>), a short name of the source file (<code>file1</code>) and a hash-code of the <em>absolute path to the source file</em>. Yes, an ABSOLUTE path. There’s no other way to be sure that two package-part names won’t clash.
+As you might have noticed in the picture above, package-parts tend to have weird names, such as `BarPackage$file1$0fbe61c7.class`. This consists, obviously, of a package-facade name (`BarPackage`), a short name of the source file (`file1`) and a hash-code of the <em>absolute path to the source file</em>. Yes, an ABSOLUTE path. There’s no other way to be sure that two package-part names won’t clash.
 If you ever saw an exception stack trace from a Kotlin program, you probably noticed those hashes, they are just ugly. The bigger problem is that they may change when the project is built <em>on another machine</em> (which is not unlikely to have the source tree located in another directory). This may cause trouble, and it did, a few times.
 ## Package-facade names, again
 
 Now it’s time to talk about REAL trouble that keeps biting us and our users more or less all the time. Let’s face it: <strong>package-facade names do clash</strong>.
-How it usually happens: you have two modules, <code>a</code> and <code>b</code>, and in <code>a</code> you have a top-level function declared inside the <code>foo.bar</code> package. Everything is fine until you add another top-level function into the same <code>foo.bar</code> package <strong>in another module</strong>, <code>b</code>. As soon as you do that, both modules generate class files with the same fully-qualified name: <code>foo.bar.BarPackage</code>, and there’s no chance for the runtime to distinguish them. And you get a <code>NoSuchMethodError</code>, because only one of the two facades is loaded at run-time, and the function from the other one is not there.
+How it usually happens: you have two modules, `a` and `b`, and in `a` you have a top-level function declared inside the `foo.bar` package. Everything is fine until you add another top-level function into the same `foo.bar` package <strong>in another module</strong>, `b`. As soon as you do that, both modules generate class files with the same fully-qualified name: `foo.bar.BarPackage`, and there’s no chance for the runtime to distinguish them. And you get a `NoSuchMethodError`, because only one of the two facades is loaded at run-time, and the function from the other one is not there.
 (Compilation may break too, but it is not that bad.)
 ## The new design
 
@@ -308,7 +308,7 @@ fun bar() {...}
 <p></p>
 {% endraw %}
 
-generates <code>File1.class</code> and <code>File2.class</code> containing implementations and a facade:
+generates `File1.class` and `File2.class` containing implementations and a facade:
 
 {% raw %}
 <p></p>
@@ -330,7 +330,7 @@ public class Utils {
 
 ## A small bit on metadata
 
-When we had a single package-facade, we could look into it and find all members of the package at once. Now there’s no single place to look into, and this may affect the compilation performance, so, for each module, the compiler will generate a special file <code>META-INF/&lt;module name&gt;.kotlin_module</code> and store a mapping from packages to package-parts there. This will facilitate rapid discovery of top-level members.
+When we had a single package-facade, we could look into it and find all members of the package at once. Now there’s no single place to look into, and this may affect the compilation performance, so, for each module, the compiler will generate a special file `META-INF/&lt;module name&gt;.kotlin_module` and store a mapping from packages to package-parts there. This will facilitate rapid discovery of top-level members.
 ## Conclusion
 
 The new scheme liberates us from the issues of the old one. Class name clashes are still possible, but no more probable than they are for normal classes.

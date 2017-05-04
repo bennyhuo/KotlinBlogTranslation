@@ -30,7 +30,7 @@ fun setFoo(foo: Foo) { ... }
 <p></p>
 {% endraw %}
 
-But brackets are precious for a language designer, and we would really like to use them later for something else, so we are considering changing the annotation syntax to the more Java-like <code>@</code>-based one:
+But brackets are precious for a language designer, and we would really like to use them later for something else, so we are considering changing the annotation syntax to the more Java-like `@`-based one:
 
 {% raw %}
 <p></p>
@@ -46,7 +46,7 @@ fun setFoo(foo: Foo) { ... }
 <p></p>
 {% endraw %}
 
-<strong>NOTE</strong>: the short syntax that does not require <code>[...]</code> nor <code>@</code> is going to be kept anyways, so you will still be able to say this:
+<strong>NOTE</strong>: the short syntax that does not require `[...]` nor `@` is going to be kept anyways, so you will still be able to say this:
 
 {% raw %}
 <p></p>
@@ -66,7 +66,7 @@ volatile var bar: Bar = ...
 This change has some implications, though.<span id="more-2021"></span>
 ## Labels
 
-First of all, the <code>@</code>-syntax is already in use, for labels:
+First of all, the `@`-syntax is already in use, for labels:
 
 {% raw %}
 <p></p>
@@ -85,7 +85,7 @@ for (i in 1..20) {
 <p></p>
 {% endraw %}
 
-Since expressions can be annotated as well as declarations, we need to change something here. The simplest option would be to move the <code>@</code> to the end of a label declaration:
+Since expressions can be annotated as well as declarations, we need to change something here. The simplest option would be to move the `@` to the end of a label declaration:
 
 {% raw %}
 <p></p>
@@ -104,10 +104,10 @@ for (i in 1..20) {
 <p></p>
 {% endraw %}
 
-Note that the use site (<code>break@loop</code>) is not changed, and still looks pretty nice <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+Note that the use site (`break@loop`) is not changed, and still looks pretty nice <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 ## Targeting
 
-We are also looking into how we could prescribe what an annotation should be attached to in the generated <code>.class</code>-file:
+We are also looking into how we could prescribe what an annotation should be attached to in the generated `.class`-file:
 
 {% raw %}
 <p></p>
@@ -122,7 +122,7 @@ class C(@Ann("arg") var foo: Int)
 <p></p>
 {% endraw %}
 
-We have quite a few options here: the <code>@Ann</code> annotation can be put on
+We have quite a few options here: the `@Ann` annotation can be put on
 
 * the field where foo is stored
 * the property foo itself (not a Java declaration)
@@ -166,7 +166,7 @@ class C(@(Ann@field)("arg") var foo: Int)
 * Downside: too many parentheses
 * Upside: @field is also an annotation (yes, Ann is an annotated annotation), which means more extensible syntax and fewer concepts in the language
 
-Yet another option would be to have <code>@field</code> annotation whose arguments are annotations for the field:
+Yet another option would be to have `@field` annotation whose arguments are annotations for the field:
 
 {% raw %}
 <p></p>
@@ -261,7 +261,7 @@ fun example() {
 <p></p>
 {% endraw %}
 
-This does not parse correctly, because <code>data</code> is not a keyword (neither is <code>open</code>, btw), so we need to write it like this:
+This does not parse correctly, because `data` is not a keyword (neither is `open`, btw), so we need to write it like this:
 
 {% raw %}
 <p></p>
@@ -279,8 +279,8 @@ fun example() {
 <p></p>
 {% endraw %}
 
-Now, what if I want an <code>open</code> local class, or <code>abstract</code>? Those are <em>modifiers</em>, not annotations, and we can’t say <code>@open</code> or <code>@abstract</code>.
-One option is to allow escaping modifiers with <code>@</code> as well as annotations:
+Now, what if I want an `open` local class, or `abstract`? Those are <em>modifiers</em>, not annotations, and we can’t say `@open` or `@abstract`.
+One option is to allow escaping modifiers with `@` as well as annotations:
 
 {% raw %}
 <p></p>

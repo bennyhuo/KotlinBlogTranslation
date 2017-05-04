@@ -15,7 +15,7 @@ translator_url:
 ---
 
 In [Kotlin M5](http://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/) we have redesigned our ranges a little bit.<span id="more-855"></span>
-Range expressions are formed with <tt>rangeTo</tt> functions that have the [operator form of ..](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations) which are complemented by [in and !in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) . Range is defined for any comparable type (subclass of <code>Comparable</code>), but for number primitives it is optimized. Here are examples of using ranges:
+Range expressions are formed with <tt>rangeTo</tt> functions that have the [operator form of ..](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-Binaryoperations) which are complemented by [in and !in](http://confluence.jetbrains.com/display/Kotlin/Operator+overloading#Operatoroverloading-in) . Range is defined for any comparable type (subclass of `Comparable`), but for number primitives it is optimized. Here are examples of using ranges:
 
 {% raw %}
 <p></p>

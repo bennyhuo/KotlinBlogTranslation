@@ -78,7 +78,7 @@ The basic editor features such as code highlighting and formatting are supported
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png"><img alt="Eclipse Auto-Import Feature" class="alignnone size-full wp-image-1965" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png?resize=393%2C119&amp;ssl=1"/></a></p>
 {% endraw %}
 
-Many [quick-fixes](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix) and [intentions](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions) would be useful while editing Kotlin sources, and we will gradually add more and more of them. We started with the simple one for replacing <code>get()</code> calls with the indexing operator (<code>[...]</code>):
+Many [quick-fixes](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix) and [intentions](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions) would be useful while editing Kotlin sources, and we will gradually add more and more of them. We started with the simple one for replacing `get()` calls with the indexing operator (`[...]`):
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png"><img alt="Replace 'get' With Index Operator" class="alignnone size-full wp-image-1966" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png?resize=500%2C83&amp;ssl=1"/></a></p>

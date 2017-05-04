@@ -19,7 +19,7 @@ translator_url:
 发布中的完整更改列表可以在 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) 。值得强调的一些变化是：
 ### 循环到λ转换
 
-IntelliJ IDEA插件现在可以检测许多情况，其中</code>循环的命令式<code>可以使用标准库函数（例如<code> filter </code>和<code> map < / code>。作为一个简单的例子，下面的代码段：
+IntelliJ IDEA插件现在可以检测许多情况，其中`循环的命令式`可以使用标准库函数（例如`filter`和`map < / code>。作为一个简单的例子，下面的代码段：
 
 {% raw %}
 <p></p>
@@ -54,7 +54,7 @@ val result = list.filter { it.isNotEmpty() }
 <p></p>
 {% endraw %}
 
-要触发转换，将插入符号放在</code>关键字的<code>上，然后按<kbd> Alt-Enter </kbd>。<br/>
+要触发转换，将插入符号放在`关键字的`上，然后按<kbd> Alt-Enter </kbd>。<br/>
 <span id =“more-4350”> </span>
 ### 后缀代码完成
 

@@ -17,7 +17,7 @@ translator_url:
 We’re excited to announce a library we’ve been working on for Android development, which, among other things allows the creation of Application Interfaces in a type-safe and dynamic way using a DSL.
 ## A Sample Taste
 
-Here is a small example describing some of Anko’s possibilities. Imagine we need to create a simple sign-up form consisting of an <code>EditText</code> for a username and a “Sign up” <code>Button</code>. The code for this, using Anko would be:
+Here is a small example describing some of Anko’s possibilities. Imagine we need to create a simple sign-up form consisting of an `EditText` for a username and a “Sign up” `Button`. The code for this, using Anko would be:
 
 {% raw %}
 <p></p>
@@ -65,7 +65,7 @@ Of course, we can also see a preview during design time using the Anko Preview p
 <p><img alt="Anko Designer" class="aligncenter size-full wp-image-2007" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/04/Screen-Shot-2015-04-02-at-00.33.22.png?resize=640%2C481&amp;ssl=1"/></p>
 {% endraw %}
 
-If we now want to add another text input widget, for instance an email, we could probably create another  pair of <code>textView()</code> and <code>editText()</code> function calls. However, a nicer approach would be to extract the corresponding DSL fragment into a new function:
+If we now want to add another text input widget, for instance an email, we could probably create another  pair of `textView()` and `editText()` function calls. However, a nicer approach would be to extract the corresponding DSL fragment into a new function:
 
 {% raw %}
 <p></p>
@@ -153,11 +153,11 @@ seekBar {
 <p></p>
 {% endraw %}
 
-Methods that have empty bodies no longer require, well, empty implementations. Also, if setting <code>onProgressChanged()</code> and <code>onStartTrackingTouch()</code> for the same View, these two “partially defined” listeners will be merged.
+Methods that have empty bodies no longer require, well, empty implementations. Also, if setting `onProgressChanged()` and `onStartTrackingTouch()` for the same View, these two “partially defined” listeners will be merged.
 ## More than a DSL
 
 Anko is not just a DSL but a library which facilitates Android development in different areas. It has many methods covering dialogs, asynchronous tasks, services, intents and even SQLite database access.
-For instance, if you want to start a new <code>Activity</code>:
+For instance, if you want to start a new `Activity`:
 
 {% raw %}
 <p></p>
@@ -219,7 +219,7 @@ toast("Download is complete!")
 
 ### Existing code support
 
-You can keep your old classes written in Java. Moreover, if you still want (or have) to write a Kotlin activity class and inflate an XML layout for some reason, you can use <code>View</code> properties and listener helpers which would make things easier:
+You can keep your old classes written in Java. Moreover, if you still want (or have) to write a Kotlin activity class and inflate an XML layout for some reason, you can use `View` properties and listener helpers which would make things easier:
 
 {% raw %}
 <p></p>
@@ -245,7 +245,7 @@ Hopefully you can see that Anko offers a series of benefits, in particular:
 
 ## Give it a try!
 
-Anko is still in alpha stage but we want to release early to get your feedback, so please give it a try. We’ve made it as simple as possible to do so. It’s all published on Maven Central, and if you’re using Gradle, you can easily add the required dependencies to the <code>build.gradle</code> file:
+Anko is still in alpha stage but we want to release early to get your feedback, so please give it a try. We’ve made it as simple as possible to do so. It’s all published on Maven Central, and if you’re using Gradle, you can easily add the required dependencies to the `build.gradle` file:
 
 {% raw %}
 <p></p>

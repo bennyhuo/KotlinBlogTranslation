@@ -64,7 +64,7 @@ Kotlin 1.1的最大消息是
 
 ## 弃用
 
-我们弃用了我们用于<code>％</code>运算符的不幸的名称<code> mod </code>，并将其替换为语法正确的＆code＆remot =例如<code> java.math.BigInteger </code>。弃用警告和工具将引导您完成迁移过程。
+我们弃用了我们用于`％`运算符的不幸的名称`mod`，并将其替换为语法正确的＆code＆remot =例如`java.math.BigInteger`。弃用警告和工具将引导您完成迁移过程。
 ## JavaScript
 
 很简单：可以将完整的Kotlin语言编译成JavaScript。这并不意味着我们已将所有的JDK移植到浏览器中：语言和标准库不与JDK结合使用，但您可以在JS上使用Kotlin字符串，集合，序列，数组和其他核心API JVM / Android。
@@ -116,7 +116,7 @@ Kotlin的标准库正在更新 [许多有用的实用程序](https://kotlinlang.
 ## 如何尝试
 
 与其他预发行版本一样，我们为Kotlin 1.1-Beta提供了<strong>无后向兼容性保证</strong>。此外，当我们达到最终RC时，由发行版本生成的所有二进制文件将被编译器禁止：您需要重新编译1.1-M0x和Beta编译的所有内容（1.0.x中的所有代码都是完美的罚款没有重新编译）。
-<strong>在Maven / Gradle中：</strong>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用<code> 1.1.0-beta-17 </code>作为编译器和标准库的版本号。
+<strong>在Maven / Gradle中：</strong>添加 [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) 作为构建脚本和项目的存储库;使用`1.1.0-beta-17`作为编译器和标准库的版本号。
 <strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
 命令行编译器可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta) 。
 <strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表将编译器版本更改为1.1-Beta。

@@ -36,24 +36,24 @@ Topics covered include:
 {% endraw %}
 
 The video includes the time stamps following the [agenda announced](http://blog.jetbrains.com/kotlin/2015/10/join-live-webinar-functional-programming-with-kotlin/) :<br/>
-<code>00:08</code> — Intoduction and demo application<br/>
-<code>05:00</code> — <code>apply</code> function<br/>
-<code>05:45</code> — Introduce NGram data class<br/>
-<code>08:22</code> — Creating extension methods<br/>
-<code>09:55</code> — Working with lazy infinite sequences<br/>
-<code>10:35</code> — <code>map</code> function<br/>
-<code>11:10</code> — <code>to</code> function and infix notation<br/>
-<code>14:35</code> — Destructuring of data classes<br/>
-<code>19:20</code> — <code>filter</code>, <code>let</code> and <code>all</code> functions<br/>
-<code>23:00</code> — Debug lazy code<br/>
-<code>24:20</code> — Add completions to UI<br/>
-<code>25:18</code> — Load data in a functional way<br/>
-<code>28:30</code> — Improve performance of the data loading<br/>
-<code>33:20</code> — Improve the UI responsiveness in RX style<br/>
-<code>40:05</code> — Using [Kovenant](https://github.com/mplatvoet/kovenant) library<br/>
-<code>42:03</code> — Using [funKTionale](https://github.com/MarioAriasC/funKTionale) library<br/>
-<code>44:10</code> — Currying<br/>
-<code>45:35</code> — Questions
+`00:08` — Intoduction and demo application<br/>
+`05:00` — `apply` function<br/>
+`05:45` — Introduce NGram data class<br/>
+`08:22` — Creating extension methods<br/>
+`09:55` — Working with lazy infinite sequences<br/>
+`10:35` — `map` function<br/>
+`11:10` — `to` function and infix notation<br/>
+`14:35` — Destructuring of data classes<br/>
+`19:20` — `filter`, `let` and `all` functions<br/>
+`23:00` — Debug lazy code<br/>
+`24:20` — Add completions to UI<br/>
+`25:18` — Load data in a functional way<br/>
+`28:30` — Improve performance of the data loading<br/>
+`33:20` — Improve the UI responsiveness in RX style<br/>
+`40:05` — Using [Kovenant](https://github.com/mplatvoet/kovenant) library<br/>
+`42:03` — Using [funKTionale](https://github.com/MarioAriasC/funKTionale) library<br/>
+`44:10` — Currying<br/>
+`45:35` — Questions
 About the Presenter:
 Thanks to all the attendees for the questions! If you still have some, please, contact Mike or our team.
 You are welcome to suggest themes for future webinars in comments.

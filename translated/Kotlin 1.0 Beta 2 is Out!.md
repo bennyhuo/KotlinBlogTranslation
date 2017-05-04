@@ -17,7 +17,7 @@ translator_url:
 我们的第一次更新 [测试版](http://blog.jetbrains.com/kotlin/2015/11/the-kotlin-language-1-0-beta-is-here/) 在这儿！我们正在稳定，所以它主要是错误修复和标准库的更改。
 ## 语言变化
 
-我们现在对类型参数强制执行<strong>单实例继承</strong>约束：相同的<code> T </code>不能同时具有<code> List＆lt; Int＆gt; </code>和<code> List＆lt ; String＆gt; </code>作为其上限。对于类，这一直被禁止，现在对类型参数也是一样的。<span id =“more-3093”> </span>
+我们现在对类型参数强制执行<strong>单实例继承</strong>约束：相同的`T`不能同时具有`List＆lt; Int＆gt;`和`List＆lt ; String＆gt;`作为其上限。对于类，这一直被禁止，现在对类型参数也是一样的。<span id =“more-3093”> </span>
 智能演员不可能的情况下，诊断有所改善：
 
 {% raw %}
@@ -58,7 +58,7 @@ class C {
 
 ## 图书馆更改
 
-我们清理标准库的API。这个时间关系范围最明显的变化。我们打算使用常见的用例，例如“<code> if（x in 1..10）</code>”或“<code> for（i in 1..10）</code>”保持不变，但在引擎盖下进行了一些重命名和层次重构：
+我们清理标准库的API。这个时间关系范围最明显的变化。我们打算使用常见的用例，例如“`if（x in 1..10）`”或“`for（i in 1..10）`”保持不变，但在引擎盖下进行了一些重命名和层次重构：
 
 * 双重和浮动进度被丢弃
 * 字节和短进度已被弃用，字节和短路的..运算符现在返回IntRange
@@ -66,8 +66,8 @@ class C {
 * Progression <T>不利于具体的进阶实现：IntProgression，LongProngession，CharProgression
 * 开始和结束属性被重命名为第一个和最后一个
 
-然后，字符串的实用程序扩展被广义化以在可能的情况下与<code> CharSequence </code>一起使用。
-现在，<code> filterIsInstance </code>扩展名需要明确规定其类型参数：
+然后，字符串的实用程序扩展被广义化以在可能的情况下与`CharSequence`一起使用。
+现在，`filterIsInstance`扩展名需要明确规定其类型参数：
 
 {% raw %}
 <p></p>
@@ -83,7 +83,7 @@ foo(list.filterIsInstance<Bar>()) // OK: we are checking for Bar
 <p></p>
 {% endraw %}
 
-注意：为了减小运行时库的大小（这对Android应用程序尤其重要），我们从标准库中删除了kotlin.dom和kotlin.browser包。他们现在可以作为一个单独的图书馆， [kotlinx.dom](https://github.com/Kotlin/kotlinx.dom) 。如果您在项目中使用任何这些软件包，请添加新库作为依赖关系，并更新代码中的import语句（更改<code> kotlin.dom </code>和<code> kotlin.browser </代码>到<code> kotlinx.dom </code>和<code> kotlinx.browser </code>）。否则，库的API没有改变。
+注意：为了减小运行时库的大小（这对Android应用程序尤其重要），我们从标准库中删除了kotlin.dom和kotlin.browser包。他们现在可以作为一个单独的图书馆， [kotlinx.dom](https://github.com/Kotlin/kotlinx.dom) 。如果您在项目中使用任何这些软件包，请添加新库作为依赖关系，并更新代码中的import语句（更改`kotlin.dom`和`kotlin.browser </代码>到`kotlinx.dom`和`kotlinx.browser`）。否则，库的API没有改变。
 其他变化：
 
 * 添加

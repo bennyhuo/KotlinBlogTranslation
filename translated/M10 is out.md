@@ -89,8 +89,8 @@ inline fun <reified T> TreeNode.findParentOfType(): T? {
 <p></p>
 {% endraw %}
 
-我们使用<strong> reified </strong>修饰符对type参数进行限定，现在可以在函数内部访问，几乎就像是普通类一样。由于函数是内联的，因此不需要反射，像<strong>！</strong>这样的正常运算符正在工作。另外，我们可以如上所述调用它：<code> myTree.findParentOfType＆MyTreeNodeType＆gt;（）</code>。
-虽然在许多情况下可能并不需要反思，但我们仍然可以使用一个重定义的类型参数：<code> javaClass <t>（）</t> </code>使我们可以访问它：
+我们使用<strong> reified </strong>修饰符对type参数进行限定，现在可以在函数内部访问，几乎就像是普通类一样。由于函数是内联的，因此不需要反射，像<strong>！</strong>这样的正常运算符正在工作。另外，我们可以如上所述调用它：`myTree.findParentOfType＆MyTreeNodeType＆gt;（）`。
+虽然在许多情况下可能并不需要反思，但我们仍然可以使用一个重定义的类型参数：`javaClass <t>（）</t>`使我们可以访问它：
 
 {% raw %}
 <p></p>
@@ -108,7 +108,7 @@ fun main(s: Array<String>) {
 <p></p>
 {% endraw %}
 
-正常功能（未标记为<code> inline </code>）不能有参数。不具有运行时表示形式的类型（例如，非引用类型参数或类似于<code> Nothing </code>的虚构类型）不能用作引用类型参数的参数。
+正常功能（未标记为`inline`）不能有参数。不具有运行时表示形式的类型（例如，非引用类型参数或类似于`Nothing`的虚构类型）不能用作引用类型参数的参数。
 此功能旨在简化传统上依赖于反思的框架中的代码，我们的内部实验表明它的工作正常。
 ### 检查申报地点差异
 
@@ -128,7 +128,7 @@ class C<out T> {
 <p></p>
 {% endraw %}
 
-在这个例子中，由于T在T中被声明为<strong> out </strong>（即类是<em> covariant </em>），我们不允许将它作为<code> foo的参数（）</code>函数，我们只能返回它。
+在这个例子中，由于T在T中被声明为<strong> out </strong>（即类是<em> covariant </em>），我们不允许将它作为`foo的参数（）`函数，我们只能返回它。
 请注意，<strong>私人</strong>声明可以违反方差限制，例如：
 
 {% raw %}
@@ -145,7 +145,7 @@ class C<out T>(t: T) {
 <p></p>
 {% endraw %}
 
-虽然<code> foo </code>的设置器将T作为参数，因此违反了<strong> out </strong>限制，编译器允许这样做，并确保只有同一个实例</em> <code> C </code>可以访问<code> foo </code>。这意味着<code> C </code>中的以下函数将无法编译：
+虽然`foo`的设置器将T作为参数，因此违反了<strong> out </strong>限制，编译器允许这样做，并确保只有同一个实例</em> `C`可以访问`foo`。这意味着`C`中的以下函数将无法编译：
 
 {% raw %}
 <p></p>
@@ -165,7 +165,7 @@ private fun copyTo(other: C<T>) {
 这是一个<strong>破坏变化</strong>：以前编译的一些代码可能会中断，但是不能修复它可能会导致运行时异常，所以编译器错误将对你有一些价值<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/ simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“
 ### 类型推断支持使用方差
 
-类型参数推断已被改进以适应 [使用方差](http://kotlinlang.org/docs/reference/generics.html#type-projections) 更舒适现在您可以调用通用功能，例如一个投影类型的<code> reverseInPlace（）</code>，例如<code> Array＆lt; out Number＆gt; </code>：
+类型参数推断已被改进以适应 [使用方差](http://kotlinlang.org/docs/reference/generics.html#type-projections) 更舒适现在您可以调用通用功能，例如一个投影类型的`reverseInPlace（）`，例如`Array＆lt; out Number＆gt;`：
 
 {% raw %}
 <p></p>
@@ -181,7 +181,7 @@ fun example(a: Array<out Number>) {
 <p></p>
 {% endraw %}
 
-其中<code> reverseInPlace </code>定义如下：
+其中`reverseInPlace`定义如下：
 
 {% raw %}
 <p></p>
@@ -204,7 +204,7 @@ fun <T> Array<T>.reverseInPlace() {
 最初由罗斯·泰特（Ross Tate）提出的基本机制 [“混合场地差异”](http://www.cs.cornell.edu/~ross/publications/mixedsite/) 。
 ### Varargs转换为投影阵列
 
-另一个<strong>突破性变化</strong>的形式是对一个晦涩的修复，但有时候 [相反](https://youtrack.jetbrains.com/issue/KT-5534) [烦人的](https://youtrack.jetbrains.com/issue/KT-2163) 问题：当我们有一个使用<code> String？</code>的变量的函数时，我们真的希望能够将<code> String </code>的数组传递给它，不是吗？在M10之前是不可能的，因为T的vararg被编译为<code> Array＆lt; T＆gt; </code>，现在它们被编译为<code> Array＆lt; out T＆gt; </code>，并且以下代码工作：
+另一个<strong>突破性变化</strong>的形式是对一个晦涩的修复，但有时候 [相反](https://youtrack.jetbrains.com/issue/KT-5534) [烦人的](https://youtrack.jetbrains.com/issue/KT-2163) 问题：当我们有一个使用`String？`的变量的函数时，我们真的希望能够将`String`的数组传递给它，不是吗？在M10之前是不可能的，因为T的vararg被编译为`Array＆lt; T＆gt;`，现在它们被编译为`Array＆lt; out T＆gt;`，并且以下代码工作：
 
 {% raw %}
 <p></p>
@@ -248,7 +248,7 @@ fun interopJS(obj: dynamic): dynamic {
 ### 新注释
 
 我们添加了一系列注释，使JavaScript互操作更简单，特别是nativeInvoke，nativeGetter </em>和<em> nativeSetter </em>。
-如果使用<code> nativeInvoke </code>注释了一个函数<code> bar </code>，它的调用<code> foo.bar（）</code>将被转换为<code> foo（）</code>在JavaScript中。例如：
+如果使用`nativeInvoke`注释了一个函数`bar`，它的调用`foo.bar（）`将被转换为`foo（）`在JavaScript中。例如：
 
 {% raw %}
 <p></p>
@@ -289,7 +289,7 @@ class JsArray<T> {
 <p></p>
 {% endraw %}
 
-没有<code> native * </code>注解，调用<code> get </code>和<code> set </code>（包括按惯例完成的那些，例如<code> a [i] = j <代码>与<code> a.set（i，j）</code>相同）被翻译成<code> a.get（...）</code>和<code> a.set（.. 。）</code>，但是注释如上所述，它们在JavaScript中被转换为方括号运算符：
+没有`native *`注解，调用`get`和`set`（包括按惯例完成的那些，例如`a [i] = j <代码>与`a.set（i，j）`相同）被翻译成`a.get（...）`和`a.set（.. 。）`，但是注释如上所述，它们在JavaScript中被转换为方括号运算符：
 
 {% raw %}
 <p></p>
@@ -338,13 +338,13 @@ js("var value = document.getElementById('item')")
 
 ### [platformStatic]属性
 
-现在，我们可以将属性标记为<code> [platformStatic] </code>，以便它们的访问者从Java可视为静态方法。
+现在，我们可以将属性标记为`[platformStatic]`，以便它们的访问者从Java可视为静态方法。
 ### 对象中的静态字段
 
 任何对象的属性现在都会产生静态字段，以便它们可以轻松地从Java消费，即使不需要使用<em> platformStatic </em>注释进行装饰。
 ### JNI和[本地]
 
-Kotlin现在通过<code> [native] </code>注释支持JNI，在<code> kotlin.jvm </code>包中定义（参见规范文档 [这里](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) 。）。要声明本机方法，只需将注释放在其上：
+Kotlin现在通过`[native]`注释支持JNI，在`kotlin.jvm`包中定义（参见规范文档 [这里](https://github.com/JetBrains/kotlin/blob/master/spec-docs/jvm-native-flag-support.md) 。）。要声明本机方法，只需将注释放在其上：
 
 {% raw %}
 <p></p>
@@ -430,7 +430,7 @@ class Derived<X>: Base<List<X>> {
 完成项目订购已得到改进，现在突出显示立即成员。智能完成现在可以找到预期类型的​​继承者。完成表现严重改善。
 ### 可运行的对象
 
-现在，您可以为IDE运行一个声明为<code> [platformStatic] </code>主要功能的对象：
+现在，您可以为IDE运行一个声明为`[platformStatic]`主要功能的对象：
 
 {% raw %}
 <p></p>

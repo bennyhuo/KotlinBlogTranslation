@@ -47,10 +47,10 @@ foo.bar(nullableString ?: "default")?.length()
 <p></p>
 {% endraw %}
 
-在最后一行，编译器要求我们处理需要非空值的<code> bar（）</code>的参数（所以我们使用“elvis”来提供一个默认值），结果为空（我们使用安全电话来保护NPE）。如果我们忽略了任何一个，那么这将是一个编译错误。
+在最后一行，编译器要求我们处理需要非空值的`bar（）`的参数（所以我们使用“elvis”来提供一个默认值），结果为空（我们使用安全电话来保护NPE）。如果我们忽略了任何一个，那么这将是一个编译错误。
 ## 冲突
 
-似乎我们只是把我们以前放弃的东西（并对此感到高兴），但这不是这样。细节是相当涉及的，但简而言之，与我们之前介绍的平台类型之间的巨大差异在于，您不能有一种允许<code> ArrayList＆lt; String＆gt; </code>和<code> ArrayList＆lt; String？＆gt; </code>，当我们需要将我们从Java获得的东西重新提供给另一个Java方法时，它会导致需要痛苦的解决方法。是的，如果它不是泛型，几乎没有什么会改变，但泛型总是使编译器的作者的世界更亮了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1”style =“height：1em; max -height：1em;“/>
+似乎我们只是把我们以前放弃的东西（并对此感到高兴），但这不是这样。细节是相当涉及的，但简而言之，与我们之前介绍的平台类型之间的巨大差异在于，您不能有一种允许`ArrayList＆lt; String＆gt;`和`ArrayList＆lt; String？＆gt;`，当我们需要将我们从Java获得的东西重新提供给另一个Java方法时，它会导致需要痛苦的解决方法。是的，如果它不是泛型，几乎没有什么会改变，但泛型总是使编译器的作者的世界更亮了<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1”style =“height：1em; max -height：1em;“/>
 另一件改变的是我们如何处理超越签名的冲突：
 
 {% raw %}
@@ -73,7 +73,7 @@ class Sub extends Super {
 <p></p>
 {% endraw %}
 
-当我们将未注释的Java类型视为可空时，在上面的示例中，Kotlin只能看到两个不相关的方法：<code> foo（String？）</code>和<code> foo（String）</code>具有不兼容的类型签名。
+当我们将未注释的Java类型视为可空时，在上面的示例中，Kotlin只能看到两个不相关的方法：`foo（String？）`和`foo（String）`具有不兼容的类型签名。
 还有更多的可能的冲突来源，其中大多数在注释中实际上是不一致的，但是用户不断在他们的代码中使用它们，我们必须能够使用它们。所以，每当我们遇到冲突，我们只是坚持平台类型。 M11中引入的警告保留在这种情况下，因此该代码不会以奇怪的方式打破，但是我们尽力让您了解可能的运行时问题。
 请注意，在Java中，任何保留未注释的内容仍然包含平台类型，包括Java 8之前的所有通用类型参数。
 ## 哪些注释？

@@ -44,7 +44,7 @@ class MyView : View {
 Please refer to the [user docs](http://kotlinlang.org/docs/reference/classes.html#constructors) and the [spec document](https://github.com/JetBrains/kotlin/blob/master/spec-docs/secondary-constructors.md) for more details.
 ### Prefixes For Initializer Blocks
 
-Another change, also related to constructors, is prefixing initializer blocks with the soft-keyword <code>init</code>.<br/>
+Another change, also related to constructors, is prefixing initializer blocks with the soft-keyword `init`.<br/>
 The main reason for this change is that the formerly used syntax (where just curly braces in a class body denoted an initializer block) didn’t work out too well when an initializer followed a property declaration (which is pretty common):
 
 {% raw %}
@@ -66,7 +66,7 @@ class Foo {
 <p></p>
 {% endraw %}
 
-An error was reported on the call of <code>baz()</code>, because the initializer looks exactly like a trailing lambda passed to it. The only workaround was to put a semicolon after the property initializer, which looks rather unnatural in Kotlin. So, since M11, we require <code>init</code> before the initializer block:
+An error was reported on the call of `baz()`, because the initializer looks exactly like a trailing lambda passed to it. The only workaround was to put a semicolon after the property initializer, which looks rather unnatural in Kotlin. So, since M11, we require `init` before the initializer block:
 
 {% raw %}
 <p></p>
@@ -91,7 +91,7 @@ The old syntax is <strong>deprecated</strong>, i.e. you’ll get a warning, not 
 See [user docs](http://kotlinlang.org/docs/reference/classes.html#constructors) for more details.
 ### Companion Objects (Class-Objects Rethought)
 
-As you all probably know, Kotlin classes do not have static members. Instead there may be a special singleton <code>object</code> associated with a class, which we used to call “class object” &dash; a rather unfortunate term. So, we somewhat redesigned the concept, and, [with your help](http://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/) , chose another name for it: <strong>companion object</strong>.
+As you all probably know, Kotlin classes do not have static members. Instead there may be a special singleton `object` associated with a class, which we used to call “class object” &dash; a rather unfortunate term. So, we somewhat redesigned the concept, and, [with your help](http://blog.jetbrains.com/kotlin/2015/03/follw-up-new-class-object-syntax/) , chose another name for it: <strong>companion object</strong>.
 The unfortunate wording was not the only reason for this change. In fact, we redesigned the concept so that it is more uniform with normal objects.
 Note that a class can (and always could) have many objects (usual, named singletons) nested into it:
 
@@ -112,7 +112,7 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Since M11, one of these objects may be declared with the <code>companion</code> modifier, which means that its members can be accessed directly through class name:
+Since M11, one of these objects may be declared with the `companion` modifier, which means that its members can be accessed directly through class name:
 
 {% raw %}
 <p></p>
@@ -131,8 +131,8 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Accessing members of <code>Obj1</code> requires qualification: <code>KotlinClass.Obj1.foo()</code>. For members of <code>Obj2</code> the object name is optional: <code>KotlinClass.foo()</code>.
-One last step: the name of a <em>companion object</em> can be omitted (the compiler will use the default name <code>Companion</code> in this case):
+Accessing members of `Obj1` requires qualification: `KotlinClass.Obj1.foo()`. For members of `Obj2` the object name is optional: `KotlinClass.foo()`.
+One last step: the name of a <em>companion object</em> can be omitted (the compiler will use the default name `Companion` in this case):
 
 {% raw %}
 <p></p>
@@ -151,9 +151,9 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Now you can still refer to its members though the name of the containing class: <code>KotlinClass.foo()</code>, or through full qualification: <code>KotlinClass.Companion.foo()</code>.
+Now you can still refer to its members though the name of the containing class: `KotlinClass.foo()`, or through full qualification: `KotlinClass.Companion.foo()`.
 As you can see, unlike what we used to have with <em>class objects</em>, <em>companion objects</em> are completely uniform with normal objects.
-Another important benefit is that now every object <em>has a name</em> (again, <code>Companion</code> is used when the name of a <em>companion object</em> is omitted), which enables <strong>writing extension function for companion objects</strong>:
+Another important benefit is that now every object <em>has a name</em> (again, `Companion` is used when the name of a <em>companion object</em> is omitted), which enables <strong>writing extension function for companion objects</strong>:
 
 {% raw %}
 <p></p>
@@ -171,7 +171,7 @@ fun KotlinClass.Companion.bar() { ... }
 See user docs [here](http://kotlinlang.org/docs/reference/object-declarations.html#companion-objects) .
 ### Function Expressions
 
-Kotlin has higher-order functions, which means that you can pass a function around as a value. Before M11, there were two ways of obtaining such values: lambda expressions (e.g. <code>{ x -&gt; x + 1 }</code>) and callable references (e.g. <code>MyClass::myFun</code>). M11 introduces a new one, which is very logical, if you think about it:
+Kotlin has higher-order functions, which means that you can pass a function around as a value. Before M11, there were two ways of obtaining such values: lambda expressions (e.g. `{ x -&gt; x + 1 }`) and callable references (e.g. `MyClass::myFun`). M11 introduces a new one, which is very logical, if you think about it:
 
 {% raw %}
 <p></p>
@@ -204,7 +204,7 @@ pairs.filter { (a, b) -> a != b }
 <p></p>
 {% endraw %}
 
-Here, <code>(a, b)</code> is a [multi-declaration](http://kotlinlang.org/docs/reference/multi-declarations.html) , i.e. <code>a</code> gets the first component of each <code>Pair</code> object, and <code>b</code> gets the second one. Currently, multi-declarations are not supported, but we deprecated some of the syntactic forms of lambdas to drop them in M12 and make the multi-declaration syntax possible.
+Here, `(a, b)` is a [multi-declaration](http://kotlinlang.org/docs/reference/multi-declarations.html) , i.e. `a` gets the first component of each `Pair` object, and `b` gets the second one. Currently, multi-declarations are not supported, but we deprecated some of the syntactic forms of lambdas to drop them in M12 and make the multi-declaration syntax possible.
 What is deprecated:
 
 * specifying return types of lambdas, e.g. { (a: Int): Int -> a + 1 }
@@ -215,7 +215,7 @@ Whenever you really need one of these, please switch to using function expressio
 The IDE provides a quick-fix that migrates your code automatically.
 ### Labeled Returns in Lambdas
 
-For a long time there was a restriction on using <code>return</code> expressions in lambdas: a <em>local</em> <code>return</code> was only allowed if the lambda has an explicit return type specified. This was caused by a limitation in the type inference algorithm. Now, the restriction is removed, and we can use local returns freely:
+For a long time there was a restriction on using `return` expressions in lambdas: a <em>local</em> `return` was only allowed if the lambda has an explicit return type specified. This was caused by a limitation in the type inference algorithm. Now, the restriction is removed, and we can use local returns freely:
 
 {% raw %}
 <p></p>
@@ -243,8 +243,8 @@ Implementing Kotlin-specific reflection (rather than making you use Java reflect
 At last, we present the first results of this work: the ability to introspect properties, provided through a new kotlin-reflect.jar that ships with the compiler (a lot more functionality will be added soon).
 ### The New Reflection Jar
 
-We ship <code>kotlin-reflect.jar</code> separately (not as part of <code>kotlin-runtime.jar</code>), because it is rather big at the moment: about 1.8MB. We will look into reducing its size, but it is likely to always be rather substantial, so making everyone always ship it with their applications is not an option (especially for Android developers).
-As a consequence, you may need to add this jar to your classpath, if you use property literals (<code>::propertyName</code>). The M11 compiler will yield an error if you don’t, but later this requirement will be relaxed. The IDE will offer you a quick-fix action that adds the jar automatically to your project.
+We ship `kotlin-reflect.jar` separately (not as part of `kotlin-runtime.jar`), because it is rather big at the moment: about 1.8MB. We will look into reducing its size, but it is likely to always be rather substantial, so making everyone always ship it with their applications is not an option (especially for Android developers).
+As a consequence, you may need to add this jar to your classpath, if you use property literals (`::propertyName`). The M11 compiler will yield an error if you don’t, but later this requirement will be relaxed. The IDE will offer you a quick-fix action that adds the jar automatically to your project.
 ### Class Literals
 
 To obtain a reflection object for a class in Kotlin, use the following syntax:
@@ -262,20 +262,20 @@ val c = MyClass::class
 <p></p>
 {% endraw %}
 
-You get an instance of <code>KClass&lt;MyClass&gt;</code>, which you can introspect, e.g. get its properties.
+You get an instance of `KClass&lt;MyClass&gt;`, which you can introspect, e.g. get its properties.
 See more in the [user docs](http://kotlinlang.org/docs/reference/reflection.html#class-references) .
 ### Compatibility with Java Reflection APIs
 
-Kotlin reflection API works both for Kotlin and Java classes, and you can “convert” from Kotlin to Java reflection objects and back. For example, you can say <code>kClass.java</code> and get a <code>java.lang.Class</code> instance, and vice versa: <code>jlClass.kotlin</code> gives you a <code>KClass</code> instance.
+Kotlin reflection API works both for Kotlin and Java classes, and you can “convert” from Kotlin to Java reflection objects and back. For example, you can say `kClass.java` and get a `java.lang.Class` instance, and vice versa: `jlClass.kotlin` gives you a `KClass` instance.
 ## @Nullable and @NotNull in Java
 
-As always, Java interop is a big priority for us, and this time we are improving on the <em>platform types</em> feature we shipped in [M9](http://blog.jetbrains.com/kotlin/2014/10/m9-is-here/) : now the compiler issues warnings on misuse of Java values annotated as <code>@Nullable</code> and <code>@NotNull</code>. This is not as strict as it used to be before M9, but it doesn’t break as often either.
+As always, Java interop is a big priority for us, and this time we are improving on the <em>platform types</em> feature we shipped in [M9](http://blog.jetbrains.com/kotlin/2014/10/m9-is-here/) : now the compiler issues warnings on misuse of Java values annotated as `@Nullable` and `@NotNull`. This is not as strict as it used to be before M9, but it doesn’t break as often either.
 Next step would be to issue Java nullability errors in a safe way (so that an error can always be fixed reasonably), and this is planned for the next milestone.
 ## Android Extensions
 
 Good news for Android users: M11 brings a useful extension that makes Android development in Kotlin easier.
-We all know about <code>findViewById()</code>. It is a notorious source of bugs and unpleasant code which is hard to read and support. In Java the way around this problem is through libraries such as [ButterKnife](http://jakewharton.github.io/butterknife/) and [AndroidAnnotations](http://androidannotations.org) , which rely on [JSR 269](https://jcp.org/aboutJava/communityprocess/mrel/jsr269/index2.html) , but it is a <code>javac</code>-specific API and is not supported in Kotlin (yet).
-Since M11, Kotlin has its own solution to the <code>findViewById()</code> problem, which does not require JSR 269: the new <code>kotlin-android-extensions</code> plugin for the Kotlin compiler allows you to access views in a type-safe way with <strong>zero</strong> extra user code (no annotations or other such things) and <strong>no runtime libraries required</strong>.
+We all know about `findViewById()`. It is a notorious source of bugs and unpleasant code which is hard to read and support. In Java the way around this problem is through libraries such as [ButterKnife](http://jakewharton.github.io/butterknife/) and [AndroidAnnotations](http://androidannotations.org) , which rely on [JSR 269](https://jcp.org/aboutJava/communityprocess/mrel/jsr269/index2.html) , but it is a `javac`-specific API and is not supported in Kotlin (yet).
+Since M11, Kotlin has its own solution to the `findViewById()` problem, which does not require JSR 269: the new `kotlin-android-extensions` plugin for the Kotlin compiler allows you to access views in a type-safe way with <strong>zero</strong> extra user code (no annotations or other such things) and <strong>no runtime libraries required</strong>.
 To use this extension, you need to enable it in your Gradle build and install an extension plugin into your IDE. See more [here](http://kotlinlang.org/docs/tutorials/android-plugin.html) .
 ## IntelliJ IDEA Support
 

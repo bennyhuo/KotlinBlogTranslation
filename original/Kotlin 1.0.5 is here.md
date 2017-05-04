@@ -19,7 +19,7 @@ We’d like to thank our external contributors whose pull requests were included
 The complete list of changes in the release can be found in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) . Some of the changes worth highlighting are:
 ### Loop to Lambda Conversion
 
-The IntelliJ IDEA plugin can now detect many cases where imperative <code>for</code> loops can be rewritten in a more compact and idiomatic manner using standard library functions such as <code>filter</code> and <code>map</code>. As a simple example, the following snippet:
+The IntelliJ IDEA plugin can now detect many cases where imperative `for` loops can be rewritten in a more compact and idiomatic manner using standard library functions such as `filter` and `map`. As a simple example, the following snippet:
 
 {% raw %}
 <p></p>
@@ -54,7 +54,7 @@ val result = list.filter { it.isNotEmpty() }
 <p></p>
 {% endraw %}
 
-To trigger the conversion, put the caret on the <code>for</code> keyword and press <kbd>Alt-Enter</kbd>.<br/>
+To trigger the conversion, put the caret on the `for` keyword and press <kbd>Alt-Enter</kbd>.<br/>
 <span id="more-4350"></span>
 ### Postfix Code Completion
 

@@ -23,9 +23,9 @@ translator_url:
 
 ## 迁移说明
 
-对于JavaScript项目，我们更改了标准库的工件名称。而不是<code> kotlin-js-library </code>，它现在是<code> kotlin-stdlib-js </code>。当您更新到1.1 beta 2或更新的版本时，您将需要更新您的Maven和Gradle脚本。
-除此之外，JavaScript的测试支持类（包<code> kotlin.test </code>）现在被打包为单独的工件，就像以前为Java版本一样。如果您在JS项目中使用kotlin.test，请在<code> kotlin-test-js </code>上添加依赖关系。
-Kotlin标准库中的协同程序API已被移至<code> kotlin.coroutines.experimental </code>包;如果您在代码中使用了这些API，则需要更新导入。看到 [安德烈的论坛帖子](https://discuss.kotlinlang.org/t/experimental-status-of-coroutines-in-1-1-and-related-compatibility-concerns/2236) 为了这个变化的背景。
+对于JavaScript项目，我们更改了标准库的工件名称。而不是`kotlin-js-library`，它现在是`kotlin-stdlib-js`。当您更新到1.1 beta 2或更新的版本时，您将需要更新您的Maven和Gradle脚本。
+除此之外，JavaScript的测试支持类（包`kotlin.test`）现在被打包为单独的工件，就像以前为Java版本一样。如果您在JS项目中使用kotlin.test，请在`kotlin-test-js`上添加依赖关系。
+Kotlin标准库中的协同程序API已被移至`kotlin.coroutines.experimental`包;如果您在代码中使用了这些API，则需要更新导入。看到 [安德烈的论坛帖子](https://discuss.kotlinlang.org/t/experimental-status-of-coroutines-in-1-1-and-related-compatibility-concerns/2236) 为了这个变化的背景。
 我们还使您的Gradle项目中的实验协同程序支持变得更加容易。您可以将以下代码片段添加到build.gradle中，而不是编辑gradle.properties：
 
 {% raw %}
@@ -44,7 +44,7 @@ kotlin {
 <p></p>
 {% endraw %}
 
-如果你正在使用 [kotlinx.corutines库](https://github.com/kotlin/kotlinx.coroutines) 请更新您的依赖关系到版本<code> 0.6-beta </code>。该库的早期版本与此Kotlin更新不兼容。
+如果你正在使用 [kotlinx.corutines库](https://github.com/kotlin/kotlinx.coroutines) 请更新您的依赖关系到版本`0.6-beta`。该库的早期版本与此Kotlin更新不兼容。
 ## 新功能
 
 我们在此测试版中添加了几个最新功能。这里是最重要的：
@@ -68,7 +68,7 @@ kotlin {
 
 ## 如何尝试
 
-<strong>在Maven / Gradle中：</strong>将<code> http://dl.bintray.com/kotlin/kotlin-eap-1.1 </code>添加为构建脚本和项目的存储库;使用<code> 1.1.0-beta-38 </code>作为编译器和标准库的版本号。
+<strong>在Maven / Gradle中：</strong>将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用`1.1.0-beta-38`作为编译器和标准库的版本号。
 <strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
 命令行编译器可以从中下载 [Github发行页面](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta2) 。
 <strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。即将推出。

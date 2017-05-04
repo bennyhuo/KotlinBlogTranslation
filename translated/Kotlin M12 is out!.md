@@ -28,8 +28,8 @@ translator_url:
 引入语言和核心库的许多更改都是​​弃用。使用 [“代码清理...”操作](http://blog.jetbrains.com/idea/2014/07/try-intellij-idea-14-eap-138-1283-4-with-code-cleanup-android-studio-beta-features-and-more/) 自动修复项目中的所有警告。
 ### 注释：新语法
 
-和我们一样 [前面提到过](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) ，我们决定为未来更有效的使用预留方括号，并使Java用户的注释语法更加熟悉。所以，从M12开始，我们写<code> @Foo（args）</code>而不是<code> [Foo（args）] </code>。更多细节可以找到 [这里](http://kotlinlang.org/docs/reference/annotations.html) （甚至更多 - 在 [规格文件](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ）。
-请注意，在大多数情况下，<code> @ </code>不需要</strong>。通常我们编写注释而不进行任何转义：
+和我们一样 [前面提到过](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-syntax-for-annotations) ，我们决定为未来更有效的使用预留方括号，并使Java用户的注释语法更加熟悉。所以，从M12开始，我们写`@Foo（args）`而不是`[Foo（args）]`。更多细节可以找到 [这里](http://kotlinlang.org/docs/reference/annotations.html) （甚至更多 - 在 [规格文件](https://github.com/JetBrains/kotlin/blob/spec-at-based-annotations/spec-docs/at-based-annotation-syntax.md) ）。
+请注意，在大多数情况下，`@`不需要</strong>。通常我们编写注释而不进行任何转义：
 
 {% raw %}
 <p></p>
@@ -44,10 +44,10 @@ data class Foo // `data` is an annotation
 <p></p>
 {% endraw %}
 
-基于<code> [...] </code>的旧语法已被弃用</em>，因此编译器将在您的代码上发出警告。要修复这些警告，请按Alt + Enter并运行快速修复（个人或整个项目）。上述“代码清理...”动作也适用于整个项目。
+基于`[...]`的旧语法已被弃用</em>，因此编译器将在您的代码上发出警告。要修复这些警告，请按Alt + Enter并运行快速修复（个人或整个项目）。上述“代码清理...”动作也适用于整个项目。
 ### 标签语法已更改
 
-由于M12 <code> @name </code>是一个注释，但它之前有一个含义，即它是一个 [标签](http://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels) 。我们不得不为标签找到一些其他语法，现在他们在最后用<code> @ </code>声明：
+由于M12 `@name`是一个注释，但它之前有一个含义，即它是一个 [标签](http://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels) 。我们不得不为标签找到一些其他语法，现在他们在最后用`@`声明：
 
 {% raw %}
 <p></p>
@@ -67,10 +67,10 @@ loop@ for (i in 1..100) {
 <p></p>
 {% endraw %}
 
-所以，<code> loop @ </code> <em>声明一个标签，<code> break @ loop </code> <em>使用</em>。
+所以，`loop @` <em>声明一个标签，`break @ loop` <em>使用</em>。
 ### 注释中的类文字
 
-在M12之前，Kotlin中的注释被允许使用<code> java.lang.Class </code>，例如：
+在M12之前，Kotlin中的注释被允许使用`java.lang.Class`，例如：
 
 {% raw %}
 <p></p>
@@ -89,7 +89,7 @@ class MyEvent {...}
 <p></p>
 {% endraw %}
 
-现在，在Kotlin注释中不推荐使用Java特定的类，我们需要使用Kotlin自己的模型：<code> kotlin.reflect.KClass </code>而不是<code> java.lang.Class </code>和<代码> Foo :: class </code>而不是<code> javaClass＆Foo＆gt;（）</code>：
+现在，在Kotlin注释中不推荐使用Java特定的类，我们需要使用Kotlin自己的模型：`kotlin.reflect.KClass`而不是`java.lang.Class`和<代码> Foo :: class`而不是`javaClass＆Foo＆gt;（）`：
 
 {% raw %}
 <p></p>
@@ -108,7 +108,7 @@ class MyEvent {...}
 <p></p>
 {% endraw %}
 
-请注意，Kotlin看到Java注释，就像他们引用<code> KClass </code>而不是<code> java.lang.Class </code>一样：
+请注意，Kotlin看到Java注释，就像他们引用`KClass`而不是`java.lang.Class`一样：
 
 {% raw %}
 <p></p>
@@ -145,10 +145,10 @@ fun introspect(jann: JavaAnnotation) {
 <p></p>
 {% endraw %}
 
-现在，当我们需要将一个<code> KClass </code>转换成一个<code> java.lang.Class </code>时，我们可以调用它们的<code> .java </code>。 <code> Foo :: class.java </code>或<code> jann.value.java </code>。
+现在，当我们需要将一个`KClass`转换成一个`java.lang.Class`时，我们可以调用它们的`.java`。 `Foo :: class.java`或`jann.value.java`。
 ### 注释主要构造函数
 
-我们决定使主构造函数的语法更加规则，现在主构造函数的<em>完整表单</em>包括<code>构造函数</code>关键字：
+我们决定使主构造函数的语法更加规则，现在主构造函数的<em>完整表单</em>包括`构造函数`关键字：
 
 {% raw %}
 <p></p>
@@ -184,7 +184,7 @@ class MyClass(val x: Int) {
 
 ### 特征现在是接口
 
-由于我们的特征相当有限，Java的接口几乎相同，所以我们已经弃用了<code> trait </code>关键字，所以请改用<code> interface </code>。
+由于我们的特征相当有限，Java的接口几乎相同，所以我们已经弃用了`trait`关键字，所以请改用`interface`。
 像往常一样，快速修复和“清理代码...”将帮助您。
 ### 枚举类：新语法
 
@@ -205,7 +205,7 @@ enum class Foo {
 <p></p>
 {% endraw %}
 
-现在，当你声明一个<code>枚举</code>类的成员时，它必须在所有条目之后，在最后一个条目之后必须有一个分号：
+现在，当你声明一个`枚举`类的成员时，它必须在所有条目之后，在最后一个条目之后必须有一个分号：
 
 {% raw %}
 <p></p>
@@ -226,7 +226,7 @@ enum class FooWithMember {
 <p></p>
 {% endraw %}
 
-最后，当<code>枚举</code>具有构造函数时，可以通过简单地传递条目名称旁边的参数来调用它：
+最后，当`枚举`具有构造函数时，可以通过简单地传递条目名称旁边的参数来调用它：
 
 {% raw %}
 <p></p>
@@ -249,7 +249,7 @@ enum class Color(val rgb: Int) {
 旧的语法已弃用。
 ### 功能类型改写
 
-我们统一了函数类型和扩展函数类型，所以现在它们通常可以互换使用。例如，我们可以传递<code> String :: length </code>，其中函数<code>'（String） - > Int'</code>是预期的。
+我们统一了函数类型和扩展函数类型，所以现在它们通常可以互换使用。例如，我们可以传递`String :: length`，其中函数`'（String） - > Int'`是预期的。
 
 {% raw %}
 <p></p>
@@ -267,10 +267,10 @@ strings.map(String::length)
 {% endraw %}
 
 更多细节 [这个帖子](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-function-types-reform) 。
-如果您在Java代码中使用Kotlin的函数类（例如<code> kotlin.Function1 </code>），则需要对其进行调整，因为从现在开始，这些类驻留在<code> kotlin.jvm.function </code>包。您可以通过运行“清除代码...”来迁移所有Java代码，并使用“Java中使用已弃用的函数类”检查。
+如果您在Java代码中使用Kotlin的函数类（例如`kotlin.Function1`），则需要对其进行调整，因为从现在开始，这些类驻留在`kotlin.jvm.function`包。您可以通过运行“清除代码...”来迁移所有Java代码，并使用“Java中使用已弃用的函数类”检查。
 ### 智能铸造更聪明
 
-一个期待已久的功能：Kotlin现在可以智能铸造本地的<code> var </code>：
+一个期待已久的功能：Kotlin现在可以智能铸造本地的`var`：
 
 {% raw %}
 <p></p>
@@ -289,8 +289,8 @@ if (foo != null) {
 <p></p>
 {% endraw %}
 
-当然，只有当编译器知道自相关检查后才能进行修改，智能转换只能起作用。请注意，循环通常会使图像失真（由于某些技术原因，我们无法使用完整的数据流分析进行智能转换），因此当循环中的<code> var </code>被突变时，智能转换可能会不行。
-公共和受保护的不可变的<code> val </code>在同一个模块中的使用也可以被智能铸造：
+当然，只有当编译器知道自相关检查后才能进行修改，智能转换只能起作用。请注意，循环通常会使图像失真（由于某些技术原因，我们无法使用完整的数据流分析进行智能转换），因此当循环中的`var`被突变时，智能转换可能会不行。
+公共和受保护的不可变的`val`在同一个模块中的使用也可以被智能铸造：
 
 {% raw %}
 <p></p>
@@ -349,7 +349,7 @@ M12删除以前不推荐的一些功能：
 ### jvmOverloads
 
 Kotlin有默认的参数大大地减少了重载中的需求，但是Java客户端不能直接从这个功能中受益
-在M12中，我们添加了一个注释<code> jvmOverloads </code>，指示编译器为具有N个默认参数的Kotlin函数生成N + 1重载。<br/>
+在M12中，我们添加了一个注释`jvmOverloads`，指示编译器为具有N个默认参数的Kotlin函数生成N + 1重载。<br/>
 例如，
 
 {% raw %}
@@ -391,7 +391,7 @@ void f(String a)
 一些技术说明：每个类文件都有分配给说明的行号。对于内联函数体，我们分配行数超出文件的实际结尾（例如，如果文件有50行，内联代码的行号以51开头），这些“虚拟”数字将映射到可能的内联代码的实际来源驻留在其他文件中。标准的JVM调试器可以了解源映射，并可以遍历相应的文件和行。唯一的注意事项是，异常堆栈跟踪可能有时包含超出文件结尾的行号。我们正在寻找解决这个问题的办法。
 ### Java注释：参数排序
 
-在Java中，注释是接口，它们的参数是这些接口的方法。因此，参数的排序是微不足道的，呼叫站点不能依赖它。这就是为什么Java要求所有的参数，但是一个（命名为<code> value </code>）的命名。
+在Java中，注释是接口，它们的参数是这些接口的方法。因此，参数的排序是微不足道的，呼叫站点不能依赖它。这就是为什么Java要求所有的参数，但是一个（命名为`value`）的命名。
 虽然在Kotlin中声明的注释有适当的构造函数允许定位参数甚至是varargs，但是我们在这方面不能依赖Java注释，所以从现在开始，以下内容适用于Java注释：
 
 * 只有名称值的参数才能被传递而不用名字，
@@ -451,13 +451,13 @@ Kotlin IDE现在支持标准的<strong>引用参数</strong>重构，将将函�
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/05/rename.png?fit=640%2C85&amp;ssl=1"/></p>
 {% endraw %}
 
-由于我们最近添加了很多弃用资料，IDE现在支持<code> ReplaceWith </code> quick-fix：对于<code>已弃用的</code>注释，有一个（可选的）额外的参数，我们可以指定一个表达式替换已弃用的调用：
+由于我们最近添加了很多弃用资料，IDE现在支持`ReplaceWith` quick-fix：对于`已弃用的`注释，有一个（可选的）额外的参数，我们可以指定一个表达式替换已弃用的调用：
 
 {% raw %}
 <p><img class="aligncenter" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/05/replace-with.png?fit=640%2C230&amp;ssl=1"/></p>
 {% endraw %}
 
-有一个意图是将<code> ReplaceWith </code>添加到用户不推荐的声明中。
+有一个意图是将`ReplaceWith`添加到用户不推荐的声明中。
 一些更改：
 
 * 新的调试器功能

@@ -16,7 +16,7 @@ translator_url:
 
 In the [previous post](http://blog.jetbrains.com/kotlin/2015/03/upcoming-change-class-objects-rethought/) I explained the rethought design of what used to be called “class objects”: they are now more uniform with normal nested objects, have names (name may be omitted, but a default one will be used by the compiler), and we can write extensions to them.
 One of the goals of that post was to gather feedback on the term we proposed, namely “default object”, and many of you rightfully stated in the comments that  the term has a disadvantage: it is easily misread for “a default instance of the class”. <strong>Now we are looking for a better term</strong> and need some more feedback…
-<strong>Update</strong>: thanks to everyone, with your help, we chose <code>companion</code>.<span id="more-1843"></span>
+<strong>Update</strong>: thanks to everyone, with your help, we chose `companion`.<span id="more-1843"></span>
 We are talking about a modifier in front of the word <strong>object</strong>:
 
 {% raw %}

@@ -38,7 +38,7 @@ translator_url:
 大多数其他语言的变化是微小的调整和错误修复。下面给出了一些亮点。查看完整列表 [这里](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) 。
 ### 委托字段的注释
 
-现在支持新的<code> @delegate：</code>注释目标（use-site）。例如，要将委托对象标记为<code> @Transient </code>，我们可以说：
+现在支持新的`@delegate：`注释目标（use-site）。例如，要将委托对象标记为`@Transient`，我们可以说：
 
 {% raw %}
 <p></p>
@@ -101,7 +101,7 @@ Projected type MutableList<out Comparable<*>> restricts the use of addAll()
 * 这样的声明（以及SAM转换的方法）现在与成员一样解决;
 * 为返回值的Java设置器添加了支持。
 
-支持从各种流行的库（例如<code> javax.annotations </code>，Android SDK等）中的<code> @ Nullable / @ NotNull </code>注释添加。
+支持从各种流行的库（例如`javax.annotations`，Android SDK等）中的`@ Nullable / @ NotNull`注释添加。
 
 EAP用户报告：
 <p>
@@ -147,7 +147,7 @@ apply plugin: 'kotlin-android-extensions'
 <p></p>
 {% endraw %}
 
-在<code> build.gradle </code>文件（每个项目单独）。
+在`build.gradle`文件（每个项目单独）。
 旧的方式不再工作，并打印修复说明到输出。
 ## IDE更改
 

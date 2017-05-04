@@ -47,10 +47,10 @@ foo.bar(nullableString ?: "default")?.length()
 <p></p>
 {% endraw %}
 
-In the last line the compiler requires us to deal with both the argument of <code>bar()</code> requiring a non-null value (so we use “elvis” to provide a default) and the result being nullable (we use a safe call to guard from NPE). If we neglected any of those, it would have been a compilation error.
+In the last line the compiler requires us to deal with both the argument of `bar()` requiring a non-null value (so we use “elvis” to provide a default) and the result being nullable (we use a safe call to guard from NPE). If we neglected any of those, it would have been a compilation error.
 ## Conflicts
 
-It may seem that we are just bringing back what we dropped before (and were so happy about it), but this is not so. The details are rather involved, but in a nutshell, a huge difference with what we had before platform types were introduced is that you could not have a type that admitted both an <code>ArrayList&lt;String&gt;</code> and <code>ArrayList&lt;String?&gt;</code>, and it lead to painful workarounds being necessary when we needed to feed something we got from Java back into another Java method. Yes, if it wasn’t for generics, almost nothing would have changed, but generics always make a compiler writer’s world brighter <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
+It may seem that we are just bringing back what we dropped before (and were so happy about it), but this is not so. The details are rather involved, but in a nutshell, a huge difference with what we had before platform types were introduced is that you could not have a type that admitted both an `ArrayList&lt;String&gt;` and `ArrayList&lt;String?&gt;`, and it lead to painful workarounds being necessary when we needed to feed something we got from Java back into another Java method. Yes, if it wasn’t for generics, almost nothing would have changed, but generics always make a compiler writer’s world brighter <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 Another thing that changed is how we treat conflicts in overriding signatures:
 
 {% raw %}
@@ -73,7 +73,7 @@ class Sub extends Super {
 <p></p>
 {% endraw %}
 
-When we treated unannotated Java types as nullable, in the example above Kotlin could only see two unrelated methods: <code>foo(String?)</code> and <code>foo(String)</code> have incompatible type signatures.
+When we treated unannotated Java types as nullable, in the example above Kotlin could only see two unrelated methods: `foo(String?)` and `foo(String)` have incompatible type signatures.
 There are many more possible sources of conflicts, most of them are actually inconsistencies in the annotations, but users keep having them in their code, and we have to be able to work with it. So, whenever we encounter a conflict now, we simply stick to the platform types. Warnings introduced in M11 are kept for such cases, so that that code does not break in weird ways, but we do everything in our power to keep you informed on the possible runtime issues.
 Note that whatever stays unannotated in Java still bears platform types, including all generic type arguments in the pre-Java 8 code.
 ## Which Annotations?

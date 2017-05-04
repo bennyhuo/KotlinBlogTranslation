@@ -73,7 +73,7 @@ Read more in our  [docs](http://kotlinlang.org/docs/reference/coroutines.html) .
 
 As mentioned above, all language features in Kotlin 1.1, including coroutines, work on both JVM/Android and JavaScript. (Reflection for JavaScript is not available, but we’re looking into it.) This means that a web application can be written entirely in Kotlin, and we already have some experience doing that inside JetBrains. We will publish tutorials and other materials about this soon.
 Kotlin for JavaScript has dynamic types to interoperate with “native” JavaScript code. To use well-known libraries through typed APIs, you can use the  [ts2kt converter](http://github.com/kotlin/ts2kt)  together with headers from  [DefinitelyTyped](http://github.com/DefinitelyTyped/DefinitelyTyped) .
-We support both Node.js and the browser. The Kotlin Standard Library is available for use through <code>npm</code>.
+We support both Node.js and the browser. The Kotlin Standard Library is available for use through `npm`.
 Read more in our  [docs](http://kotlinlang.org/docs/reference/js-overview.html) .
 ## Tooling
 
@@ -113,7 +113,7 @@ P.S. Running on multiple platforms is a strategic direction for Kotlin. With 1.1
 # Installation instructions
 
 As always, you can <strong>try Kotlin online</strong> at  [try.kotlinlang.org](http://try.kotlinlang.org/) .
-<strong>In Maven/Gradle</strong>: Use <code>1.1.0</code> as the version number for the compiler and the standard library. See the docs  [here](http://kotlinlang.org/docs/reference/using-gradle.html) .
+<strong>In Maven/Gradle</strong>: Use `1.1.0` as the version number for the compiler and the standard library. See the docs  [here](http://kotlinlang.org/docs/reference/using-gradle.html) .
 <strong>In IntelliJ IDEA</strong>: 2017.1 has Kotlin 1.1 bundled, in earlier versions Install or update the Kotlin plugin to version 1.1.
 <strong>In Android Studio</strong>: Install or update the plugin through <em>Plugin Manager</em>.
 <strong>In Eclipse</strong>: install the plugin using  [Marketplace](https://marketplace.eclipse.org/content/kotlin-plugin-eclipse) .

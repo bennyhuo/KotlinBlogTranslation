@@ -58,16 +58,16 @@ Kotlin 1.1-M02为标准库添加了几个新的API：
 IntelliJ IDEA插件已经扩展到支持新的1.1语言功能，新的重构“引入类型别名”和“内联类型别名”，一种意图操作，用于从使用中创建一个类型别名，以及在lambdas中应用解构的quickfix自动。
 ## 脚本
 
-从这个版本开始，Kotlin支持JSR-223（<code> javax.script </code> API），允许您从应用程序轻松运行Kotlin脚本，并使用Kotlin作为嵌入式脚本语言。它还继续支持在Gradle构建文件中支持Kotlin脚本的工作。
+从这个版本开始，Kotlin支持JSR-223（`javax.script` API），允许您从应用程序轻松运行Kotlin脚本，并使用Kotlin作为嵌入式脚本语言。它还继续支持在Gradle构建文件中支持Kotlin脚本的工作。
 ## JavaScript
 
-1.1-M02中的JavaScript支持已经扩展到支持<strong>类型别名</strong>和<strong>类文字</strong>（<code> Foo :: class </code>）。
-除此之外，我们正在努力在多平台项目中提供更多的Kotlin API。为此，我们在<code> kotlin </code>包中定义了所有标准异常类。当定位到JVM时，Kotlin异常被定义为相应Java异常的类型别名，JS后端提供了其完整的实现。我们还为标准集合类提供了一个完整的Kotlin实现，现在用于JS项目。 （Kotlin在JVM上仍然使用标准的Java集合类。）
+1.1-M02中的JavaScript支持已经扩展到支持<strong>类型别名</strong>和<strong>类文字</strong>（`Foo :: class`）。
+除此之外，我们正在努力在多平台项目中提供更多的Kotlin API。为此，我们在`kotlin`包中定义了所有标准异常类。当定位到JVM时，Kotlin异常被定义为相应Java异常的类型别名，JS后端提供了其完整的实现。我们还为标准集合类提供了一个完整的Kotlin实现，现在用于JS项目。 （Kotlin在JVM上仍然使用标准的Java集合类。）
 ## 如何尝试
 
-<strong>在Maven / Gradle中：</strong>将<code> http://dl.bintray.com/kotlin/kotlin-eap-1.1 </code>添加为构建脚本和项目的存储库;使用1.1-M02作为编译器和标准库的版本号。
+<strong>在Maven / Gradle中：</strong>将`http://dl.bintray.com/kotlin/kotlin-eap-1.1`添加为构建脚本和项目的存储库;使用1.1-M02作为编译器和标准库的版本号。
 <strong>在IntelliJ IDEA中：</strong>转到<em>工具→Kotlin→配置Kotlin插件更新</em>，然后在<em>更新频道</em>下拉菜单中选择“Early Access Preview 1.1”下拉列表，然后按<em>检查更新</em>。
 <strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表将编译器版本更改为1.1-M02。
-<strong>使用SDKMan </strong>。运行<code> sdk install kotlin 1.1-M02 </code>。
+<strong>使用SDKMan </strong>。运行`sdk install kotlin 1.1-M02`。
 如果你正在使用 [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) 图书馆请使用更新版本的0.1-alpha-2，它几乎相同，但是它与1.1-M02编译器重新编译。你可以跟随更新 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。
 有一个漂亮的Kotlin！

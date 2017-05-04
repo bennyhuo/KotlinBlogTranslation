@@ -28,7 +28,7 @@ Kotlin正在进行定稿，作为此过程的一部分，我们将<strong>清理
 <span id =“more-2358”> </span>
 ### 快速修复
 
-使用<em>快速修复</em>，当您按下<code> Alt + Enter </code>时，您可以修复弃用警告：将出现可用选项，可在整个项目中修复单个警告或所有此类警告。不推荐的语言结构和库函数将被更新的版本替代。
+使用<em>快速修复</em>，当您按下`Alt + Enter`时，您可以修复弃用警告：将出现可用选项，可在整个项目中修复单个警告或所有此类警告。不推荐的语言结构和库函数将被更新的版本替代。
 请注意，要快速修复在库函数上正常工作，<strong>标准库的来源必须附加到您的项目</strong>。
 ### 项目范围代码清理
 
@@ -48,16 +48,16 @@ Kotlin正在进行定稿，作为此过程的一部分，我们将<strong>清理
 Kotlin流的大问题是它们与Java 8中的流冲突（通过名称），我们不能依赖Java 8流，因为Kotlin也针对早期的JDK（认为Android）。因此，在M11中引入序列而不是流，并且流将被丢弃。
 ### 迭代器工具
 
-迭代器和一些迭代器类的实用函数已被弃用，有利于M8中的流，但现在也不推荐流，因此这种功能的最终继承者是<code> Sequence </code>。
+迭代器和一些迭代器类的实用函数已被弃用，有利于M8中的流，但现在也不推荐流，因此这种功能的最终继承者是`Sequence`。
 ### 顺序实现
 
-我们在实现序列操作所需的标准库中有一堆序列实现，例如，<code> sequence.filter {predicate} </code>的<code> FilteringSequence </code>，<code> TransformingSequence </code > for <code> sequence.map {transform} </code>等等。这些实现类在图书馆的公共API中没有任何意义，所以我们已经在M12中弃用它们，并将它们在M13中隐藏（或者从用户的角度来看）:)。
+我们在实现序列操作所需的标准库中有一堆序列实现，例如，`sequence.filter {predicate}`的`FilteringSequence`，`TransformingSequence </code > for `sequence.map {transform}`等等。这些实现类在图书馆的公共API中没有任何意义，所以我们已经在M12中弃用它们，并将它们在M13中隐藏（或者从用户的角度来看）:)。
 ### String.split和String.replaceFirst
 
-在M12之前，我们对从JDK继承的字符串进行了扩展方法：<code> split </code>，<code> replaceAll </code> / <code> replaceFirst </code>，<code> matches </code>。他们都有共同之处在于它们采用字符串参数并将其解释为正则表达式。这种方法有两个缺点。
-首先，它需要编译到底层的<code> Pattern </code>，这在紧密循环中使用时可能具有性能意义。这将详细解释一个名为的文章 [“Java的String.split（）和replace（）”的隐藏的邪恶](http://chrononsystems.com/blog/hidden-evils-of-javas-stringsplit-and-stringr) 。我们希望尽可能的避免在将来写下名为“Kotlin的某些东西的隐藏的罪恶”的文章，所以我们像往常一样决定明确表达，并引入这些功能的重载，这些函数采用了<code> Regex </code >作为预期正则表达式的参数。
-其次，它使得很难引入一个负载字符串并将其解释为文字。我们不得不在M12中引入这样的重载，用于<code> split </code>和<code> replaceFirst </code>，我们必须分别命名为<code> splitBy </code>和<code> replaceFirstLiteral </code>。但是，一旦我们删除M13中原来的弃用重载，我们将把这些新方法重命名为<code> split </code>和<code> replaceFirst </code>（当然我们会把<code > splitBy </code>和<code> replaceFirstLiteral </code>已弃用，并在其<code>已弃用的</code>注释中提供替换。
-还值得注意的是，<code> split </code>方法的返回类型已更改：它现在返回一个<code> List＆lt; String＆gt; </code>而不是<code> Array＆lt; String＆gt; </code >，并且最终改变其关于删除空子串的行为。按照最不高兴的原则，我们从这个不合适的责任中减轻了<code> split </code>，现在不需要<code> split（regex：String）</code>，我们应该说<code> split（regex.toRegex （））。dropLastWhile {it.isEmpty（）} .toTypedArray（）</code>。 IDE将帮助您迁移。
+在M12之前，我们对从JDK继承的字符串进行了扩展方法：`split`，`replaceAll` / `replaceFirst`，`matches`。他们都有共同之处在于它们采用字符串参数并将其解释为正则表达式。这种方法有两个缺点。
+首先，它需要编译到底层的`Pattern`，这在紧密循环中使用时可能具有性能意义。这将详细解释一个名为的文章 [“Java的String.split（）和replace（）”的隐藏的邪恶](http://chrononsystems.com/blog/hidden-evils-of-javas-stringsplit-and-stringr) 。我们希望尽可能的避免在将来写下名为“Kotlin的某些东西的隐藏的罪恶”的文章，所以我们像往常一样决定明确表达，并引入这些功能的重载，这些函数采用了`Regex </code >作为预期正则表达式的参数。
+其次，它使得很难引入一个负载字符串并将其解释为文字。我们不得不在M12中引入这样的重载，用于`split`和`replaceFirst`，我们必须分别命名为`splitBy`和`replaceFirstLiteral`。但是，一旦我们删除M13中原来的弃用重载，我们将把这些新方法重命名为`split`和`replaceFirst`（当然我们会把<code > splitBy`和`replaceFirstLiteral`已弃用，并在其`已弃用的`注释中提供替换。
+还值得注意的是，`split`方法的返回类型已更改：它现在返回一个`List＆lt; String＆gt;`而不是`Array＆lt; String＆gt; </code >，并且最终改变其关于删除空子串的行为。按照最不高兴的原则，我们从这个不合适的责任中减轻了`split`，现在不需要`split（regex：String）`，我们应该说`split（regex.toRegex （））。dropLastWhile {it.isEmpty（）} .toTypedArray（）`。 IDE将帮助您迁移。
 ## 结论
 
 我们将在标准库中进行更多更改，但是我们已经介绍了代码清理和快速修复。在发布之前，对于每个Kotlin里程碑，如上所述执行代码清理将使您的代码保持最新。

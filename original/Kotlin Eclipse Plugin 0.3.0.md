@@ -38,7 +38,7 @@ We are happy to announce Kotlin Eclipse Plugin version 0.3.0. This release is lo
 
 ## Find References
 
-A very common task in daily activity of any developer is looking up references to a function, property or class all over the project. <em>Find References</em> in 0.3.0 searches through usages of Kotlin declarations in both Java and Kotlin code. And running <em>Find References</em> for a Java declaration reveals usages in Kotlin too! The same <code>Ctrl+Shift+G / ⇧⌘G</code> shortcut works for both languages.
+A very common task in daily activity of any developer is looking up references to a function, property or class all over the project. <em>Find References</em> in 0.3.0 searches through usages of Kotlin declarations in both Java and Kotlin code. And running <em>Find References</em> for a Java declaration reveals usages in Kotlin too! The same `Ctrl+Shift+G / ⇧⌘G` shortcut works for both languages.
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/references_cover_new.png?w=600';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/references_new.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/references_cover_new.png?w=600"/></p>
@@ -46,7 +46,7 @@ A very common task in daily activity of any developer is looking up references t
 
 ## Parameter Hints
 
-Kotlin Eclipse plugin now supports parameter hints. To look up the order of function parameters or their names and types, place the cursor inside the parentheses and press <code>Ctrl+Shift+Space / ⇧⌃Space</code> to see a hint.
+Kotlin Eclipse plugin now supports parameter hints. To look up the order of function parameters or their names and types, place the cursor inside the parentheses and press `Ctrl+Shift+Space / ⇧⌃Space` to see a hint.
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/parameters_cover.png?w=480';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/parameters.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/parameters_cover.png?w=480"/></p>
@@ -63,13 +63,13 @@ Some IDE features proved to be really addictive, and once accustomed, you will a
 Please note that <em>Select Next/Previous element</em> actions are also supported for Kotlin.
 ## Override/Implement Members
 
-Since 0.3.0 Kotlin Eclipse plugin can help in resolving a very frequent “not implemented” error. <em>Quick Fix</em> menu (<code>Ctrl + 1</code> / ⌘1) has an <em>Implement Members</em> item that will generate all missing declarations after selection.
+Since 0.3.0 Kotlin Eclipse plugin can help in resolving a very frequent “not implemented” error. <em>Quick Fix</em> menu (`Ctrl + 1` / ⌘1) has an <em>Implement Members</em> item that will generate all missing declarations after selection.
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/09/implement_fix_cover.png?w=450';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/implement_fix.gif';" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/09/implement_fix_cover.png?w=450"/></p>
 {% endraw %}
 
-It’s also possible to call <em>Override/Implement Members</em> and select methods you want to implement as a separate action from <em>Quick Access</em> (<code>Ctrl + 3</code> / ⌘3).
+It’s also possible to call <em>Override/Implement Members</em> and select methods you want to implement as a separate action from <em>Quick Access</em> (`Ctrl + 3` / ⌘3).
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/09/implement_override_cover.png?w=530';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/implement_override.gif';" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/09/implement_override_cover.png?w=530"/></p>
@@ -77,7 +77,7 @@ It’s also possible to call <em>Override/Implement Members</em> and select meth
 
 ## Body Conversion Quick-Fix
 
-Kotlin allows you to declare methods in a really short way, and now Eclipse can to convert one form to another with a quick fix (<code>Ctrl + 1</code> / ⌘1).
+Kotlin allows you to declare methods in a really short way, and now Eclipse can to convert one form to another with a quick fix (`Ctrl + 1` / ⌘1).
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/body_convert_cover_new.png?w=335';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/body_convert_new.gif';" src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2015/09/body_convert_cover_new.png?w=335"/></p>
@@ -88,7 +88,7 @@ Kotlin allows you to declare methods in a really short way, and now Eclipse can 
 Several important debugger features are ready to be tried out.
 ### Run To Line
 
-While debugging your program it’s a very common task to skip some code and stop the execution an particular line. This is very much like a “one-time breakpoint”, but removing a breakpoint right after hitting it is tedious. This is why debuggers have <em>Run To Line</em> (<code>Ctrl + R</code> / ⌘R) feature which is now also supported for Kotlin code.
+While debugging your program it’s a very common task to skip some code and stop the execution an particular line. This is very much like a “one-time breakpoint”, but removing a breakpoint right after hitting it is tedious. This is why debuggers have <em>Run To Line</em> (`Ctrl + R` / ⌘R) feature which is now also supported for Kotlin code.
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/09/run_to_cursor_cover.png?w=630';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/run_to_cursor.gif';" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/09/run_to_cursor_cover.png?w=630"/></p>
@@ -96,7 +96,7 @@ While debugging your program it’s a very common task to skip some code and sto
 
 ### Step Into Selection
 
-It’s often not enough to debug in terms on lines. Imagine the situation when there’re several calls in one line and you want to skip two of them but wonder what the third function does. Instead of cycling through <em>Step-Into</em>, <em>Step-Out</em> actions it’s better to hit <em>Step Into Selection</em> (<code>Ctrl + F5</code> / ⌥ F5) action.
+It’s often not enough to debug in terms on lines. Imagine the situation when there’re several calls in one line and you want to skip two of them but wonder what the third function does. Instead of cycling through <em>Step-Into</em>, <em>Step-Out</em> actions it’s better to hit <em>Step Into Selection</em> (`Ctrl + F5` / ⌥ F5) action.
 
 {% raw %}
 <p><img data-recalc-dims="1" onmouseout="this.src='https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/09/step_into_selection_cover.png?w=580';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2015/09/step_into_selection.gif';" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/09/step_into_selection_cover.png?w=580"/></p>

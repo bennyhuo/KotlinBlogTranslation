@@ -58,16 +58,16 @@ The reflection library has gained a substantial amount of new features. You can 
 The IntelliJ IDEA plugin has been extended to support the new 1.1 language features, with new refactorings “Introduce type alias” and “Inline type alias”, an intention action to create a type alias from usage, as well as quickfixes to apply destructuring in lambdas automatically.
 ## Scripting
 
-Starting with this release, Kotlin supports JSR-223 (the <code>javax.script</code> API), allowing you to easily run Kotlin scripts from your application and to use Kotlin as an embeddes scripting language. It also continues the work required to support Kotlin scripting in Gradle build files.
+Starting with this release, Kotlin supports JSR-223 (the `javax.script` API), allowing you to easily run Kotlin scripts from your application and to use Kotlin as an embeddes scripting language. It also continues the work required to support Kotlin scripting in Gradle build files.
 ## JavaScript
 
-JavaScript support in 1.1-M02 has been extended to support <strong>type aliases</strong> and <strong>class literals</strong> (<code>Foo::class</code>).
-In addition to that, we’re working to make more of the Kotlin API available in multiplatform projects. To that end, we’ve defined all the standard exception classes in the <code>kotlin</code> package. When targeting the JVM, the Kotlin exceptions are defined as type aliases for the corresponding Java exceptions, and the JS backend provides their full-fledged implementations. We’ve also provided a full Kotlin implementation for the standard collection classes, which is now used in JS projects. (Kotlin on the JVM still uses standard Java collection classes.)
+JavaScript support in 1.1-M02 has been extended to support <strong>type aliases</strong> and <strong>class literals</strong> (`Foo::class`).
+In addition to that, we’re working to make more of the Kotlin API available in multiplatform projects. To that end, we’ve defined all the standard exception classes in the `kotlin` package. When targeting the JVM, the Kotlin exceptions are defined as type aliases for the corresponding Java exceptions, and the JS backend provides their full-fledged implementations. We’ve also provided a full Kotlin implementation for the standard collection classes, which is now used in JS projects. (Kotlin on the JVM still uses standard Java collection classes.)
 ## How to Try It
 
-<strong>In Maven/Gradle:</strong> Add <code>http://dl.bintray.com/kotlin/kotlin-eap-1.1</code> as a repository for the build script and your projects; use 1.1-M02 as the version number for the compiler and the standard library.
+<strong>In Maven/Gradle:</strong> Add `http://dl.bintray.com/kotlin/kotlin-eap-1.1` as a repository for the build script and your projects; use 1.1-M02 as the version number for the compiler and the standard library.
 <strong>In IntelliJ IDEA:</strong> Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
 <strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M02.
-<strong>With SDKMan</strong>. Run <code>sdk install kotlin 1.1-M02</code>.
+<strong>With SDKMan</strong>. Run `sdk install kotlin 1.1-M02`.
 If you are using [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) library please use updated version 0.1-alpha-2, it’s almost the same, but it’s recompiled with 1.1-M02 compiler. You can follow the updates in the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) .
 Have a nice Kotlin!

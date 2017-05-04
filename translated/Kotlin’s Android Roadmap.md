@@ -46,16 +46,16 @@ Kotlin 1.0的Android支持故事中缺少的主要内容是<b> Lint Checks </b>�
 
 Java 8已经存在了很长一段时间，因此我们的许多用户，那些没有做Android开发的用户，已经选择了Kotlin的Java 8，并对此感到高兴。现在，Android已经对Java 8语言功能提供了正式的支持，那么如何改变Kotlin和Java之间的选择呢？
 首先，虽然Java 8将lambdas引入Android，但Android工具链在现有平台版本（不运行N版本）上支持lambdas的方式与Kotlin支持lambdas的方式之间存在重大差异。要了解不同之处，请看下面简单的代码片段如何编译：
-Kotlin：<code> list.forEach {process（it）} </code> <br/>
+Kotlin：`list.forEach {process（it）}` <br/>
 
-Java 8：<code> list.forEach（it  - ＆gt; process（it））</code>
+Java 8：`list.forEach（it  - ＆gt; process（it））`
 Java的版本稍微长了一些，但是我们不会专注于这一点。相反，让我们看看引擎盖下会发生什么。从Java开始：
 
 * 在Android的Java 8中，每个lambda都被编译成一个类，它有两种方法：构造函数和实体（影响应用程序的方法计数）;
 * 这个类在运行时稍后实例化，在许多情况下 - 每次调用forEach（在垃圾收集器上产生压力）;
 * 并且要访问它，Java使用对Consumer.accept的多态调用，这可能在紧密循环的每次迭代中发生（影响性能，因为运行时并不总是内联这样的调用）。
 
-在一般情况下，Kotlin以完全相同的方式实施羊羔。然而，在许多情况下，包括大多数收集操作（例如<code> forEach </code>），Kotlin通过使用<i>内联函数</i>生成更高效的字节码。当您使用带有lambda的内联函数时，函数的主体和lambda都将在调用站点内联。结果是：
+在一般情况下，Kotlin以完全相同的方式实施羊羔。然而，在许多情况下，包括大多数收集操作（例如`forEach`），Kotlin通过使用<i>内联函数</i>生成更高效的字节码。当您使用带有lambda的内联函数时，函数的主体和lambda都将在调用站点内联。结果是：
 
 * lambda的字节码直接插入到调用方法的字节码中，所以方法计数不增加;
 * 执行代码不分配任何对象，所以没有垃圾收集器的压力;

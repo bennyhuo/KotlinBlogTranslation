@@ -17,9 +17,9 @@ translator_url:
 我们很高兴地宣布发布Kotlin 1.0.6，这是Kotlin 1.0的新bug和工具更新。此版本带来了与IDE插件和Android支持相关的大量改进。
 我们要感谢我们的外部贡献者，他们的引用请求被包含在这个版本中： [基拉里·拉赫曼](https://github.com/cypressious) 和 [Yoshinori Isogai](https://github.com/shiraji) 。我们也要感谢我们的EAP用户的反馈。这对我们来说真的很有价值。
 您可以在其中找到完整的更改列表 [更新日志](https://github.com/JetBrains/kotlin/blob/1.0.6/ChangeLog.md#106) 。下面将介绍一些值得突出显示的变化。 <span id =“more-4429”> </span>
-## 将<code> try-finally </code>转换为<code> use（）</code>意图
+## 将`try-finally`转换为`use（）`意图
 
-我们继续添加将代码转换为惯用Kotlin的意图。 IDE现在自动地建议用...替换<code> try-finally </code>块 [使用（）](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) 当所有的<code> finally </code>块正在关闭资源时调用
+我们继续添加将代码转换为惯用Kotlin的意图。 IDE现在自动地建议用...替换`try-finally`块 [使用（）](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) 当所有的`finally`块正在关闭资源时调用
 “img alt =”“class =”alignnone size-full wp-image-4043“onmouseout =”this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png'; “ onmouseover =“this.src ='https：//d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try.gif';” src =“https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png”width =“700”/>
 ## “添加名称来调用参数”意图
 
@@ -48,11 +48,11 @@ translator_url:
 ## Kapt改进
 
 我们继续研究Kotlin注解处理工具（kapt）的实验版本。尽管为了完全支持增量编译，还有一些事情要做，但自Kotlin 1.0.4起，注释处理的性能显着增加。
-要启用实验性kapt，只需将以下行添加到您的<code> build.gradle </code>：
-<code>应用插件：'kotlin-kapt'</code>
+要启用实验性kapt，只需将以下行添加到您的`build.gradle`：
+`应用插件：'kotlin-kapt'`
 ## 全开编译器插件
 
-<strong>全开</strong>编译器插件使类注释具有特定的注释，并且它们的成员在没有明确的<code> open </code>关键字的情况下打开，因此使用框架/库更容易，如Spring AOP或Mockito。您可以阅读相关的全开的详细信息 [保持](https://github.com/Kotlin/KEEP/pull/40) 。
+<strong>全开</strong>编译器插件使类注释具有特定的注释，并且它们的成员在没有明确的`open`关键字的情况下打开，因此使用框架/库更容易，如Spring AOP或Mockito。您可以阅读相关的全开的详细信息 [保持](https://github.com/Kotlin/KEEP/pull/40) 。
 我们为Gradle和Maven以及IDE集成提供全面的插件支持。
 ### 如何使用全开的Gradle
 
@@ -80,7 +80,7 @@ allOpen {
 <p></p>
 {% endraw %}
 
-如果类（或其任何超类）用<code> com.your.Annotation </code>注释，则类本身及其所有成员将被打开。它甚至可以使用元注释：
+如果类（或其任何超类）用`com.your.Annotation`注释，则类本身及其所有成员将被打开。它甚至可以使用元注释：
 
 {% raw %}
 <p></p>
@@ -120,7 +120,7 @@ apply plugin: "kotlin-spring"
 <p></p>
 {% endraw %}
 
-当然，您可以在同一个项目中同时使用<code> kotlin-allopen </code>和<code> kotlin-spring </code>。
+当然，您可以在同一个项目中同时使用`kotlin-allopen`和`kotlin-spring`。
 ### 如何使用全部打开与Maven
 
 

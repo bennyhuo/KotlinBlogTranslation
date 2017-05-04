@@ -86,7 +86,7 @@ JetBrains是Kotlin目前的主要支持者：我们投入了大量精力开发�
 当然，我们也有越来越多的使用Kotlin </strong>的公司，包括Prezi和Expedia。顺便说一下，如果您使用Kotlin，请确保您向我们发送 [拉请求](https://github.com/JetBrains/kotlin-web-site/blob/master/_data/companies-using-kotlin.yml) 。
 ## 即将到来的路线图
 
-从1.0开始，我们致力于语言及其标准库（<code> kotlin-stdlib </code>）的长期<strong>向后兼容性</strong>：
+从1.0开始，我们致力于语言及其标准库（`kotlin-stdlib`）的长期<strong>向后兼容性</strong>：
 
 * 较新的编译器将使用较旧的二进制文件（但较旧的编译器可能不了解较新的二进制文件，如javac 1.6无法读取由javac 1.8编译的类）;
 * 较旧的二进制文件将在运行时继续使用较新的二进制文件（尽管更新的代码可能需要较新的依赖关系）。

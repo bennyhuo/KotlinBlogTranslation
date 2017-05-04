@@ -84,7 +84,7 @@ enum class Example(...) {
 <p></p>
 {% endraw %}
 
-The problem is that <code>A</code> and <code>B</code> can be parsed as annotations on <code>foo()</code>. So, we had some options to consider here.
+The problem is that `A` and `B` can be parsed as annotations on `foo()`. So, we had some options to consider here.
 We are leaning toward putting a separator there between entries and other members:
 
 {% raw %}
@@ -178,7 +178,7 @@ We have not decided which way to go on this one yet.
 
 ## Prohibiting break/continue in when-expressions
 
-We are planning to implement <code>continue</code> in <code>when</code>-expressions as a jump to the next <code>when</code>-entry. It is not implemented yet, but we want your code to stay unchanged when we add it, so for the time being, we prohibit using <code>continue</code> in <code>when</code> without a label that points to a loop:
+We are planning to implement `continue` in `when`-expressions as a jump to the next `when`-entry. It is not implemented yet, but we want your code to stay unchanged when we add it, so for the time being, we prohibit using `continue` in `when` without a label that points to a loop:
 
 {% raw %}
 <p></p>
@@ -199,8 +199,8 @@ for (...) {
 <p></p>
 {% endraw %}
 
-We also prohibit unlabeled <code>break</code> inside <code>when</code>. While it is not decided whether we want to allow it ever, it seems like a better design to keep <code>break</code> and <code>continue</code> symmetric.
-NOTE: A simple interpretation of <code>break</code> inside <code>when</code> is “stop matching and jump outside” (as in <code>switch</code> in Java and C), but our <code>when</code> often returns a value, and that would be unknown if we break out of it.
+We also prohibit unlabeled `break` inside `when`. While it is not decided whether we want to allow it ever, it seems like a better design to keep `break` and `continue` symmetric.
+NOTE: A simple interpretation of `break` inside `when` is “stop matching and jump outside” (as in `switch` in Java and C), but our `when` often returns a value, and that would be unknown if we break out of it.
 
 {% raw %}
 <p><a name="interfaces"></a></p>
@@ -208,5 +208,5 @@ NOTE: A simple interpretation of <code>break</code> inside <code>when</code> is 
 
 ## Rename traits to interfaces
 
-Well, we picked the names long time ago, and now what we call “trait” in Kotlin is not so much of a trait, and is exactly like Java’s interface nowadays, so we want to deprecate the usage of the <code>trait</code> keyword, and introduce <code>interface</code> in M12.
+Well, we picked the names long time ago, and now what we call “trait” in Kotlin is not so much of a trait, and is exactly like Java’s interface nowadays, so we want to deprecate the usage of the `trait` keyword, and introduce `interface` in M12.
 Feedback request: Let the flame begin <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>

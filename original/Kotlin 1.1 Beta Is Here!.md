@@ -66,7 +66,7 @@ extension lambdas in SAM conversions
 
 ## Deprecation
 
-We deprecate the unfortunate name <code>mod</code> that we used for the <code>%</code> operator, and replace it with <code>rem</code>, which is semantically correct and agrees with existing libraries such as <code>java.math.BigInteger</code>. Deprecation warnings and the tooling will guide you through the migration process.
+We deprecate the unfortunate name `mod` that we used for the `%` operator, and replace it with `rem`, which is semantically correct and agrees with existing libraries such as `java.math.BigInteger`. Deprecation warnings and the tooling will guide you through the migration process.
 ## JavaScript
 
 It’s simple: the full Kotlin language can be now compiled to JavaScript. It doesn’t mean that we have ported all of the JDK into the browser: the language and its Standard Library are not coupled with JDK, but you can use Kotlin strings, collections, sequences, arrays and other core APIs on JS as well as JVM/Android.
@@ -118,7 +118,7 @@ We now support JSR 223, which is utilized by [the Spring Framework](https://spri
 ## How to Try It
 
 As with other pre-release versions, we give <strong>no backward compatibility guarantees</strong> for Kotlin 1.1‑Beta. Moreover, when we reach final RC, all binaries produced by pre-release versions will be outlawed by the compiler: you’ll be required to recompile everything that was compiled by 1.1‑M0x and Beta (all the code from 1.0.x is perfectly fine without recompilation).
-<strong>In Maven/Gradle:</strong> Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use <code>1.1.0-beta-17</code> as the version number for the compiler and the standard library.
+<strong>In Maven/Gradle:</strong> Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use `1.1.0-beta-17` as the version number for the compiler and the standard library.
 <strong>In IntelliJ IDEA:</strong> Go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list, then press <em>Check for updates</em>.
 The command-line compiler can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-beta) .
 <strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1‑Beta.

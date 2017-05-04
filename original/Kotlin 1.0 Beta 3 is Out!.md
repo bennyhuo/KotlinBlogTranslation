@@ -21,7 +21,7 @@ See closed issues [here](https://youtrack.jetbrains.com/issues/KT?q=%23Major+%23
 ## Library Changes
 
 We are working hard on the standard library to get it into the best shape before 1.0. This involves some experimentation, so new deprecations happen and new functions are added. We are planning to make the final clean-up of the standard library in the 1.0 build (or RC): remove all the deprecations and other legacy stuff.
-Here we give only one highlight from the [changes](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595) : <code>contains()</code> and other similar extensions now accept supertypes of the element of the collection.
+Here we give only one highlight from the [changes](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595) : `contains()` and other similar extensions now accept supertypes of the element of the collection.
 
 {% raw %}
 <p></p>
@@ -42,7 +42,7 @@ str.contains(i) // ERROR (in fact, a deprecation warning, but will be an error s
 <p></p>
 {% endraw %}
 
-We found that the previously proposed <code>containsRaw</code> approach is inefficient, and opted for making <code>contains()</code> a bit more permissive, while keeping the initially intended safety. Note that the collection interfaces themselves are intact, and all this is done solely through extension functions. Use <em>Code Cleanup</em> to migrate your code.
+We found that the previously proposed `containsRaw` approach is inefficient, and opted for making `contains()` a bit more permissive, while keeping the initially intended safety. Note that the collection interfaces themselves are intact, and all this is done solely through extension functions. Use <em>Code Cleanup</em> to migrate your code.
 ## Language Changes
 
 Some highlights from the language changes, the full list is available [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-beta-3595) .<br/>
@@ -68,7 +68,7 @@ when {
 <p></p>
 {% endraw %}
 
-Many people tend to think that the condition “<code>foo.isValid(), foo.isReady()</code>” means that <code>foo</code> is <strong>both</strong> valid <strong>and</strong> ready, while actually the comma means <em>or</em>. The workaround is trivial: simply use <code>||</code> instead:
+Many people tend to think that the condition “`foo.isValid(), foo.isReady()`” means that `foo` is <strong>both</strong> valid <strong>and</strong> ready, while actually the comma means <em>or</em>. The workaround is trivial: simply use `||` instead:
 
 {% raw %}
 <p></p>
@@ -110,8 +110,8 @@ annotation class Example(
 
 ### Enum.values()
 
-Recently we changed the traditional Java’s <code>Enum.values()</code> to be a property: <code>Enum.values</code>, but now we are rolling this change back, because there’s an unpleasant corner case: a constant in an enum may be named <code>values</code>, and there’s no way to access one of the two then. We considered different options, and decided that changing <code>values</code> back to a function is the cleanest.
-So, the <code>values</code> property is now deprecated, and <code>values()</code> function — un-deprecated.
+Recently we changed the traditional Java’s `Enum.values()` to be a property: `Enum.values`, but now we are rolling this change back, because there’s an unpleasant corner case: a constant in an enum may be named `values`, and there’s no way to access one of the two then. We considered different options, and decided that changing `values` back to a function is the cleanest.
+So, the `values` property is now deprecated, and `values()` function — un-deprecated.
 ### Visibilities and scoping rules
 
 We are cleaning up and fixing minor issues in visibilities and scoping rules, so
@@ -128,7 +128,7 @@ We are cleaning up and fixing minor issues in visibilities and scoping rules, so
 
 We have merged the main Kotlin plugin for IntelliJ IDEA and the <em>Kotlin Extensions For Android</em> plugin. The latter is now obsolete as its functionality is available from the main Kotlin plugin.
 Also, we have added support for Android <strong>product flavors</strong>: now properties from different flavours are available in different packages.
-For example, if we have two flavors in the <code>build.gradle</code> file:
+For example, if we have two flavors in the `build.gradle` file:
 
 {% raw %}
 <p></p>
@@ -150,7 +150,7 @@ productFlavors {
 <p></p>
 {% endraw %}
 
-We can now use synthetic properties not only for layouts in the <code>main</code> source set, but also for the flavor layouts:
+We can now use synthetic properties not only for layouts in the `main` source set, but also for the flavor layouts:
 
 {% raw %}
 <p></p>
@@ -178,7 +178,7 @@ class FreeActivity : AppCompatActivity() {
 <p></p>
 {% endraw %}
 
-Note that all layouts for the main source set are now located under the <code>kotlinx.android.synthetic.main</code> package, and the old package naming convention is deprecated.
+Note that all layouts for the main source set are now located under the `kotlinx.android.synthetic.main` package, and the old package naming convention is deprecated.
 ## What’s new in the IDE
 
 

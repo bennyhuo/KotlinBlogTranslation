@@ -53,7 +53,7 @@ KotlinClass.classObjectMember()
 <p></p>
 {% endraw %}
 
-(You can even use the <code>[platformStatic]</code> annotation to make those member actually <code>static</code> when seen from Java.)
+(You can even use the `[platformStatic]` annotation to make those member actually `static` when seen from Java.)
 In fact, Kotlin’s <em>class objects</em> and Java’s statics are not at all the same, because <em>class objects are <strong>objects</strong></em>, i.e. they can extend classes, implement traits and serve as <em>values</em> at runtime:
 
 {% raw %}
@@ -71,7 +71,7 @@ val x = KotlinClass // reference to class object of KotlinClass is assigned to x
 
 ## Terminology Change
 
-As you might have noticed, the term “class object” sounds a little ambiguous in English, and this is why many people tend to think that class object of <code>Foo</code> must be an instance (in other words, object) of <code>Foo</code>, which is totally not so. This, among other reasons, is why we are looking for another term and syntax. The current proposal has it as follows:
+As you might have noticed, the term “class object” sounds a little ambiguous in English, and this is why many people tend to think that class object of `Foo` must be an instance (in other words, object) of `Foo`, which is totally not so. This, among other reasons, is why we are looking for another term and syntax. The current proposal has it as follows:
 
 {% raw %}
 <p></p>
@@ -123,7 +123,7 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Now, one of these objects may be declared with the <code>default</code> modifier, which means that its members can be accessed directly through class name, i.e. <em>by default</em>:
+Now, one of these objects may be declared with the `default` modifier, which means that its members can be accessed directly through class name, i.e. <em>by default</em>:
 
 {% raw %}
 <p></p>
@@ -142,8 +142,8 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Accessing members of <code>Obj1</code> requires qualification: <code>KotlinClass.Obj1.foo()</code>, for members of <code>Obj2</code> the object name is optional: <code>KotlinClass.foo()</code>.
-One last step: the name of a <em>default object</em> can be omitted (the compiler will use the default name <code>Default</code> in this case):
+Accessing members of `Obj1` requires qualification: `KotlinClass.Obj1.foo()`, for members of `Obj2` the object name is optional: `KotlinClass.foo()`.
+One last step: the name of a <em>default object</em> can be omitted (the compiler will use the default name `Default` in this case):
 
 {% raw %}
 <p></p>
@@ -162,9 +162,9 @@ class KotlinClass {
 <p></p>
 {% endraw %}
 
-Now you can still refer to its members though the name of the containing class: <code>KotlinClass.foo()</code>, or through full qualification: <code>KotlinClass.Default.foo()</code>.
+Now you can still refer to its members though the name of the containing class: `KotlinClass.foo()`, or through full qualification: `KotlinClass.Default.foo()`.
 As you can see, unlike what we used to have with <em>class objects</em>, <em>default objects</em> are completely uniform with normal objects.
-Another important benefit is that now every object <em>has a name</em> (again, <code>Default</code> is used when the name of a <em>default object</em> is omitted), which enables <strong>writing extension function for default objects</strong>:
+Another important benefit is that now every object <em>has a name</em> (again, `Default` is used when the name of a <em>default object</em> is omitted), which enables <strong>writing extension function for default objects</strong>:
 
 {% raw %}
 <p></p>
@@ -179,7 +179,7 @@ fun KotlinClass.Default.bar() { ... }
 <p></p>
 {% endraw %}
 
-This can be called as <code>KotlinClass.bar()</code>. This is how we implement platform-specific extensions for built-in classes like <code>Int</code>: e.g. <code>Int.MAX_VALUE</code> is an extension for <code>Int.Default</code> defined only on the JVM (JS ony has floating-point numbers, so <code>Int.MAX_VALUE</code> is meaningless there).
+This can be called as `KotlinClass.bar()`. This is how we implement platform-specific extensions for built-in classes like `Int`: e.g. `Int.MAX_VALUE` is an extension for `Int.Default` defined only on the JVM (JS ony has floating-point numbers, so `Int.MAX_VALUE` is meaningless there).
 ## Summary
 
 

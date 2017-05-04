@@ -78,7 +78,7 @@ Kotlin编译器集成到Eclipse的构建过程中，因此您可以在一个Ecli
 <p><a href="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png"><img alt="Eclipse Auto-Import Feature" class="alignnone size-full wp-image-1965" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.26.27.png?resize=393%2C119&amp;ssl=1"/></a></p>
 {% endraw %}
 
-许多 [快速修复](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix) 和 [意图](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions) 在编辑Kotlin源时将会很有用，我们将逐渐增加越来越多的来源。我们从简单的开始，用索引运算符（<code> [...] </code>）替换<code> get（）</code>调用：
+许多 [快速修复](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/quickfix) 和 [意图](https://github.com/JetBrains/kotlin/tree/master/idea/src/org/jetbrains/kotlin/idea/intentions) 在编辑Kotlin源时将会很有用，我们将逐渐增加越来越多的来源。我们从简单的开始，用索引运算符（`[...]`）替换`get（）`调用：
 
 {% raw %}
 <p><a href="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png"><img alt="Replace 'get' With Index Operator" class="alignnone size-full wp-image-1966" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2015/03/Screenshot-2015-03-30-15.29.20.png?resize=500%2C83&amp;ssl=1"/></a></p>

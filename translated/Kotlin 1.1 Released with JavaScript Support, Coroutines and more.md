@@ -81,7 +81,7 @@ launch(UI) {
 
 Kotlin for JavaScript具有与“源生”JavaScript代码进行互相操作的动态类型，通过类型API可以使用[ts2kt converter](http://github.com/kotlin/ts2kt)以及[DefinitelyTyped](http://github.com/DefinitelyTyped/DefinitelyTyped)等知名库。  
 
-我们支持Node.js和浏览器。 Kotlin标准库可通过<code>npm</code>使用。  
+我们支持Node.js和浏览器。 Kotlin标准库可通过`npm`使用。  
 [文档链接](http://kotlinlang.org/docs/reference/js-overview.html) 。
 ## 工具
 
@@ -124,7 +124,7 @@ P.S 跨平台运行是Kotlin的战略方向，伴随着1.1的发布，我们可�
 
 与以往一样，开发者可以使用<strong>Kotlin线上编辑器</strong> [try.kotlinlang.org](http://try.kotlinlang.org/)。  
 
-<strong>Maven/Gradle</strong>：使用<code>1.1.0</code>作为编译器和标准库的版本号([查看文档](http://kotlinlang.org/docs/reference/using-gradle.html))。  
+<strong>Maven/Gradle</strong>：使用`1.1.0`作为编译器和标准库的版本号([查看文档](http://kotlinlang.org/docs/reference/using-gradle.html))。  
 
 <strong>IntelliJ IDEA</strong>：2017.1已包含Kotlin 1.1；旧版本则需要安装Kotlin插件或更新到1.1版本。  
 

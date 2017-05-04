@@ -35,7 +35,7 @@ Note that the 1.0 release which we’re working towards right now will be focuse
 ### Late-init properties
 
 One of the biggest issues when using Kotlin with frameworks that inject values into Java fields (i.e. Dependency Injection, Mocking, Serialization and other frameworks) used to be the inability to have a property of a non-null type that is not initialized in constructor.
-Now, we introduce <code>lateinit</code> properties:
+Now, we introduce `lateinit` properties:
 
 {% raw %}
 <p></p>
@@ -55,12 +55,12 @@ class Example {
 <p></p>
 {% endraw %}
 
-Both <code>foo</code> and <code>bar</code> have no initializers, but at the same time declare a non-null type. If we try to read them before they are initialized, an exception will be thrown, but as soon as they are initialized by a DI framework (Guice, Dagger or Spring, for example), they can be read as normal properties.
-Such properties can also be used for other use cases (such as JUnit <code>setUp</code> initialization). Note that <code>val</code>‘s can be marked <code>lateinit</code> as well as <code>var</code>‘s. Unlike <code>var</code>s, they can not be assigned freely in the code, but a framework can inject values into them without obstacles, because the underlying JVM fields are not marked as <code>final</code>.
+Both `foo` and `bar` have no initializers, but at the same time declare a non-null type. If we try to read them before they are initialized, an exception will be thrown, but as soon as they are initialized by a DI framework (Guice, Dagger or Spring, for example), they can be read as normal properties.
+Such properties can also be used for other use cases (such as JUnit `setUp` initialization). Note that `val`‘s can be marked `lateinit` as well as `var`‘s. Unlike `var`s, they can not be assigned freely in the code, but a framework can inject values into them without obstacles, because the underlying JVM fields are not marked as `final`.
 See more in the [language docs](http://kotlinlang.org/docs/reference/properties.html#late-initialized-properties) .
 ### Sealed classes
 
-Many people ask if Kotlin supports [Algebraic Data Types (ADTs)](https://en.wikipedia.org/wiki/Algebraic_data_type) . The answer has always been: “Yes, ADTs can be expressed as classes in Kotlin, and <code>when</code> is practically as good as pattern matching”. Now we have added a bit more type-safety to it: with <code>sealed</code> classes we can make sure that all cases are enumerated in <code>when</code>:
+Many people ask if Kotlin supports [Algebraic Data Types (ADTs)](https://en.wikipedia.org/wiki/Algebraic_data_type) . The answer has always been: “Yes, ADTs can be expressed as classes in Kotlin, and `when` is practically as good as pattern matching”. Now we have added a bit more type-safety to it: with `sealed` classes we can make sure that all cases are enumerated in `when`:
 
 {% raw %}
 <p></p>
@@ -89,13 +89,13 @@ fun Pet.saySomething(): String {
 <p></p>
 {% endraw %}
 
-Note that <code>else</code> is not required in the example above: since <code>Pet</code> is a sealed class, the compiler knows that it has <em>no subclasses other than <code>Dog</code> and <code>Cat</code></em>. So we can be sure that all cases have been checked and <code>else</code> is not needed. Incidentally, if you forget to cover some cases, the compiler will report an error and remind you to do it, or resort to <code>else</code>.
+Note that `else` is not required in the example above: since `Pet` is a sealed class, the compiler knows that it has <em>no subclasses other than `Dog` and `Cat`</em>. So we can be sure that all cases have been checked and `else` is not needed. Incidentally, if you forget to cover some cases, the compiler will report an error and remind you to do it, or resort to `else`.
 For now only classes nested into the sealed class can extend it, but we will later relax this restriction and allow subclasses in the same source file.
 For more details see the [docs](http://kotlinlang.org/docs/reference/classes.html#sealed-classes) .
 ### Annotations require “@”
 
-Modifiers and annotations have been separated syntactically (see this [blog post](http://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/) ) in M13. We now require a <code>@</code> for annotations, and all annotation classes are supposed to be named starting with a capital letter (which brings better uniformity with Java).
-Thus, library annotations such as <code>@Throws</code>, or <code>@Volatile</code> are renamed. We also renamed <code>@platformName</code> to <code>@JvmName</code> and <code>@platformStatic</code> to <code>@JvmStatic</code>.
+Modifiers and annotations have been separated syntactically (see this [blog post](http://blog.jetbrains.com/kotlin/2015/08/modifiers-vs-annotations/) ) in M13. We now require a `@` for annotations, and all annotation classes are supposed to be named starting with a capital letter (which brings better uniformity with Java).
+Thus, library annotations such as `@Throws`, or `@Volatile` are renamed. We also renamed `@platformName` to `@JvmName` and `@platformStatic` to `@JvmStatic`.
 Some former annotations have become modifiers:
 
 * data
@@ -152,9 +152,9 @@ We have revisited our access modifier/visibility model. From now on:
 * the default visibility (no modifier) is changed from internal to public,
 * we finally enabled the checks that reject usages of internal declarations outside a module.
 
-This may seem controversial that we chose <code>public</code> as default visibility. Kotlin being a type-safe language, choosing the safest option, <code>private</code>, by default may seem more logical. And we totally realize there are valid arguments in favour of this default. But Kotlin is also a pragmatic language. I’ll try to explain briefly why we believe <code>public</code> is the right default.
-In real Java code bases (where public/private decisions are taken explicitly), <code>public</code> occurs a lot more often than <code>private</code> (2.5 to 5 times more often in the code bases that we examined, [including Kotlin compiler and IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ). This means that we’d make people write <code>public</code> all over the place to implement their designs, that would make Kotlin a lot more ceremonial, and we’d lose some of the precious ground won from Java in terms of brevity. In our experience explicit <code>public</code> breaks the flow of many DSLs and very often — of primary constructors. So we decided to use it by default to keep our code clean.
-<strong>NOTE</strong>: <code>internal</code> remains supported, but now you need to specify it explicitly.
+This may seem controversial that we chose `public` as default visibility. Kotlin being a type-safe language, choosing the safest option, `private`, by default may seem more logical. And we totally realize there are valid arguments in favour of this default. But Kotlin is also a pragmatic language. I’ll try to explain briefly why we believe `public` is the right default.
+In real Java code bases (where public/private decisions are taken explicitly), `public` occurs a lot more often than `private` (2.5 to 5 times more often in the code bases that we examined, [including Kotlin compiler and IntelliJ IDEA](https://youtrack.jetbrains.com/issue/KT-3240#comment=27-1110881) ). This means that we’d make people write `public` all over the place to implement their designs, that would make Kotlin a lot more ceremonial, and we’d lose some of the precious ground won from Java in terms of brevity. In our experience explicit `public` breaks the flow of many DSLs and very often — of primary constructors. So we decided to use it by default to keep our code clean.
+<strong>NOTE</strong>: `internal` remains supported, but now you need to specify it explicitly.
 ### Miscellaneous changes
 
 
@@ -168,7 +168,7 @@ In real Java code bases (where public/private decisions are taken explicitly), <
 
 ### Java get/set pairs are now seen as properties
 
-People have been asking for this feature for a long time, and it took us a while to figure it out. Now when we use Java classes that define properties by convention (e.g. <code>getFoo()</code> and maybe <code>setFoo()</code>), Kotlin automatically defines corresponding extension properties:
+People have been asking for this feature for a long time, and it took us a while to figure it out. Now when we use Java classes that define properties by convention (e.g. `getFoo()` and maybe `setFoo()`), Kotlin automatically defines corresponding extension properties:
 
 {% raw %}
 <p></p>
@@ -194,7 +194,7 @@ fun demo(bean: JBean) {
 <p></p>
 {% endraw %}
 
-Access to such properties is optimized so that <code>bean.foo</code> compiles to <code>bean.getFoo()</code> without any intermediate calls.
+Access to such properties is optimized so that `bean.foo` compiles to `bean.getFoo()` without any intermediate calls.
 ### New layout of .class files for top-level declarations
 
 A few months ago we announced [this change](http://blog.jetbrains.com/kotlin/2015/06/improving-java-interop-top-level-functions-and-properties/) and now it’s done:
@@ -205,7 +205,7 @@ A few months ago we announced [this change](http://blog.jetbrains.com/kotlin/201
 * You can specify a @file:JvmName("CustomName") annotation on a source file to change the name of the class;
 * Many files can share the same JVM name if they are additionally marked with @file:JvmMultifileClass annotation.
 
-To make this change work, we had to introduce a new resource file that is required to compile Kotlin code against Kotlin binaries. Its name is <code>META-INF/&lt;module_name&gt;.kotlin_module</code>. <strong>Make sure these <code>.kotlin_module</code> files are not stripped by your packaging process.</strong> Also, make sure that module names do not clash in your project:
+To make this change work, we had to introduce a new resource file that is required to compile Kotlin code against Kotlin binaries. Its name is `META-INF/&lt;module_name&gt;.kotlin_module`. <strong>Make sure these `.kotlin_module` files are not stripped by your packaging process.</strong> Also, make sure that module names do not clash in your project:
 
 * in Maven we use groupId and artifactId for module names, but you can say
 
@@ -255,8 +255,8 @@ $ kotlinc-jvm -module-name com.example.mymodule
 More information can be found [here](http://kotlinlang.org/docs/reference/java-interop.html#package-level-functions) .
 ### Null-safety in Java interop
 
-We first announced this [a while ago](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) . Now we can use <code>@NotNull</code> and <code>@Nullable</code> in Java and Kotlin recognizes them so that misuse results in compilation errors rather than warnings.
-As a consequence, using Java collections has become a lot safer: we can not put a <code>null</code> into an <code>ArrayList&lt;String&gt;</code> any more. [Platform types](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) are kept in place, because annotations are often missing and sometimes wrong (violate inheritance rules, for example), so by default no static null-checks are imposed onto Java code.
+We first announced this [a while ago](http://blog.jetbrains.com/kotlin/2015/04/upcoming-change-more-null-safety-for-java/) . Now we can use `@NotNull` and `@Nullable` in Java and Kotlin recognizes them so that misuse results in compilation errors rather than warnings.
+As a consequence, using Java collections has become a lot safer: we can not put a `null` into an `ArrayList&lt;String&gt;` any more. [Platform types](http://blog.jetbrains.com/kotlin/2014/10/making-platform-interop-even-smoother/) are kept in place, because annotations are often missing and sometimes wrong (violate inheritance rules, for example), so by default no static null-checks are imposed onto Java code.
 External annotations are not used either, so we have spared you quite some build configuration.
 ## Libraries
 

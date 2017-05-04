@@ -31,7 +31,7 @@ translator_url:
 ### 重载分辨率的变化
 
 由于修复了重载解析算法，Kotlin现在将SAM转换的Java函数更像是成员（以前曾经像之前的扩展名一样）。这个修复很重要，因为编译器会以麻烦的方式解释许多情况。
-不幸的是，至少有一个比较常见的情况已经破裂了。但修复很简单。现在编译器抱怨<code> file.listFiles {it.name ==“...”} </code>。<br/>
+不幸的是，至少有一个比较常见的情况已经破裂了。但修复很简单。现在编译器抱怨`file.listFiles {it.name ==“...”}`。<br/>
 
 原因很复杂：
 
@@ -57,7 +57,7 @@ file.listFiles { it -> ... }
 
 ### 属性可以用作无参数的函数对象
 
-示例：在Kotlin中<String> String :: length </code>是一个属性，而不是一个函数，但是可以方便地在其中使用函数，例如，
+示例：在Kotlin中<String> String :: length`是一个属性，而不是一个函数，但是可以方便地在其中使用函数，例如，
 
 {% raw %}
 <p></p>
@@ -72,7 +72,7 @@ val lengths = strs.map(String::length)
 <p></p>
 {% endraw %}
 
-所以，我们现在允许这个。换句话说，每当一个API期望一个类型为<code>（R）的功能 - ＆gt; T </code>我们可以使用对<code> R </code>的属性的引用，其返回类型是<code> T </code>。
+所以，我们现在允许这个。换句话说，每当一个API期望一个类型为`（R）的功能 - ＆gt; T`我们可以使用对`R`的属性的引用，其返回类型是`T`。
 ### 保留关键字以备将来使用
 
 我们计划在未来的Kotlin版本中添加新功能，因此我们决定提前预留必要的关键字。我们了解到，人们无法预测未来的全部，但这是我们最好的猜测（没有详细的设计，为将来的功能可用，但我们会尽力使它们有用）
@@ -82,11 +82,11 @@ val lengths = strs.map(String::length)
 * typeof被保留为关键字。在JS中，使用jsTypeOf（）
 * 异步保留在“{”和“乐趣”之前
 
-所以现在，而不是<code> async {...} </code>，我们不得不说<code> async（）{...} </code>。我们知道这不是很干净，但是我们没有找到更好的选择。代码完成将自动插入<code>（）</code>。
+所以现在，而不是`async {...}`，我们不得不说`async（）{...}`。我们知道这不是很干净，但是我们没有找到更好的选择。代码完成将自动插入`（）`。
 代码清理</em>将帮助您迁移现有代码。
 ### Java通配符
 
-有关Kotlin如何翻译变体类型的问题，例如列表＆lt; Foo＆gt; </code>应该是<code> List <在Java中扩展Foo＆gt; </code>或简单地<code> List＆lt; Foo＆gt; </code>。细节细节，我们做了如下工作：
+有关Kotlin如何翻译变体类型的问题，例如列表＆lt; Foo＆gt;`应该是`List <在Java中扩展Foo＆gt;`或简单地`List＆lt; Foo＆gt;`。细节细节，我们做了如下工作：
 
 * 默认情况下，我们不会在返回类型中生成通配符，并且它们没有任何意义
 * 当需要通配符时，可以使用类型注释来强制执行其存在：List <@JvmWildcard String>始终是List <？在Java中扩展String>
@@ -123,21 +123,21 @@ fun bar(p: List<Open>) // in Java: List<Open>
 
 之后，我们计划从库中再次提取一个JAR：它将包含很少使用的数组实用程序，所以我们希望将它们保留在主JAR之外，以减小其大小。
 <strong>更多亮点</strong>：
-Kotlin的<code> Int :: class </code>可能在不同的上下文中对应于Java的<code> int.class </code>或<code> Integer.class </code>（这是合理的）。为了方便用例，当需要两个特定的一个时，我们引入了两个属性：
+Kotlin的`Int :: class`可能在不同的上下文中对应于Java的`int.class`或`Integer.class`（这是合理的）。为了方便用例，当需要两个特定的一个时，我们引入了两个属性：
 
 * Int :: class.javaPrimitiveType返回Int.class
 * Int :: class.javaObjectType返回Integer.class
 
-此外，我们现在可以说如<code> IntArray（5）{it * 3} </code>，即创建初始化的基元数组。
+此外，我们现在可以说如`IntArray（5）{it * 3}`，即创建初始化的基元数组。
 ### 未来的变化：集合中的null的含义
 
-JDK的更新版本使得集合越来越不容忍。例如，这是什么 [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) 关于<code> java.util.Map.computeIfAbsent </code>：
+JDK的更新版本使得集合越来越不容忍。例如，这是什么 [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) 关于`java.util.Map.computeIfAbsent`：
 <p>
 
   如果指定的键尚未与值<strong>（或映射到null）</strong>相关联，则尝试使用给定的映射函数计算其值，并将其输入到此映射中，除非为null。
 
 </p>
-这些合同对于这种操作的原子属性是固有的，所以我们决定我们也必须满足它们，否则当Kotlin的扩展功能在无空闲的并发集合中运行时，我们将无法保证正确的行为。所以，我们将改变<code> getOrPut </code>和其他这样的函数的行为，以便它们将值<code> null </code>的值与该值不存在相同。
+这些合同对于这种操作的原子属性是固有的，所以我们决定我们也必须满足它们，否则当Kotlin的扩展功能在无空闲的并发集合中运行时，我们将无法保证正确的行为。所以，我们将改变`getOrPut`和其他这样的函数的行为，以便它们将值`null`的值与该值不存在相同。
 要更新您的代码，请遵循废弃警告中给出的建议。
 ## IDE中的新功能
 

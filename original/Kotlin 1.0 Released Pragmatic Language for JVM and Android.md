@@ -86,7 +86,7 @@ Talking about lines of code, the number of these in open repositories on GitHub 
 And of course we have a growing list of <strong>companies using Kotlin</strong> including Prezi and Expedia. By the way, if you’re using Kotlin, make sure you send us a [Pull Request](https://github.com/JetBrains/kotlin-web-site/blob/master/_data/companies-using-kotlin.yml) .
 ## The upcoming roadmap
 
-As of 1.0, we are committed to long-term <strong>backward compatibility</strong> of the language and its standard library (<code>kotlin-stdlib</code>):
+As of 1.0, we are committed to long-term <strong>backward compatibility</strong> of the language and its standard library (`kotlin-stdlib`):
 
 * a newer compiler will work with older binaries (but older compilers may not understand newer binaries, like javac 1.6 can’t read classes compiled by javac 1.8);
 * older binaries will keep working with newer binaries at runtime (newer code may require newer dependencies, though).

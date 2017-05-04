@@ -22,7 +22,7 @@ Some of you might have heard of this feature: traits in Kotlin can “extend” 
 Technically it means that when a class extends such a trait, it must (directly or indirectly) extend the required class as well. This feature has very few use cases, so we are deprecating it.
 ## Captured Type Parameters
 
-When a generic class <code>Outer</code> has an <strong>inner</strong> class <code>Inner</code>, Java allows us to use generic parameters of <code>Outer</code> inside <code>Inner</code>:
+When a generic class `Outer` has an <strong>inner</strong> class `Inner`, Java allows us to use generic parameters of `Outer` inside `Inner`:
 
 {% raw %}
 <p></p>
@@ -93,7 +93,7 @@ class Derived : Base(), List<Int> { // no error
 <p></p>
 {% endraw %}
 
-Note that <code>List</code> is co-variant in Kotlin.
+Note that `List` is co-variant in Kotlin.
 Although, again, logical, this has almost no use-cases, to our knowledge, but supporting this involves a lot of compiler magic and breaks Java interop right and left, so we are going to drop this.
 ## More Deprecations Coming
 

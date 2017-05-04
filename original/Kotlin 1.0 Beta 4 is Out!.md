@@ -31,7 +31,7 @@ Some highlights from the [full list of changes](https://github.com/JetBrains/kot
 ### Changes in overload resolution
 
 Due to a fix in the overload resolution algorithm, Kotlin now treats SAM-converted Java functions more like members (they used to behave like extensions before). This fix is important, because otherwise many cases were interpreted in cumbersome ways by the compiler.
-Unfortunately, there’s at least one relatively common case that has broken as a result. The fix is very easy, though. Now the compiler complains about <code>file.listFiles { it.name == "..." }</code>.<br/>
+Unfortunately, there’s at least one relatively common case that has broken as a result. The fix is very easy, though. Now the compiler complains about `file.listFiles { it.name == "..." }`.<br/>
 
 The reason is rather complicated:
 
@@ -57,7 +57,7 @@ file.listFiles { it -> ... }
 
 ### Properties can be used as parameterless function objects
 
-Example: in Kotlin <code>String::length</code> is a property, not a function, but it’s convenient to be able to use it where a function is expected, e.g.
+Example: in Kotlin `String::length` is a property, not a function, but it’s convenient to be able to use it where a function is expected, e.g.
 
 {% raw %}
 <p></p>
@@ -72,7 +72,7 @@ val lengths = strs.map(String::length)
 <p></p>
 {% endraw %}
 
-So, we now allow this. In other words, whenever some API expects a function of type <code>(R) -&gt; T</code> we can use a reference to a property of <code>R</code> whose return type is <code>T</code>.
+So, we now allow this. In other words, whenever some API expects a function of type `(R) -&gt; T` we can use a reference to a property of `R` whose return type is `T`.
 ### Reserving keywords for future use
 
 We are planning to add new features in the future releases of Kotlin, so we decided to reserve the necessary keywords in advance. We understand that one can’t predict all of the future, but here’s our best guess (no detailed design for the future features is available yet, but we’ll do our best to make them as useful as can be):
@@ -82,11 +82,11 @@ We are planning to add new features in the future releases of Kotlin, so we deci
 * typeof is reserved as a keyword. In JS, use jsTypeOf()
 * async is reserved in front of “{” and “fun“
 
-So, now, instead of <code>async {...}</code> we’ll have to say <code>async () {...}</code>. We understand that it’s not as clean, but we didn’t find a better option. Code completion will insert <code>()</code> automatically.
+So, now, instead of `async {...}` we’ll have to say `async () {...}`. We understand that it’s not as clean, but we didn’t find a better option. Code completion will insert `()` automatically.
 <em>Code Cleanup</em> will help you migrate existing code.
 ### Java Wildcards
 
-There were issues with how Kotlin translated variant types, e.g. whether a <code>List&lt;Foo&gt;</code> should be <code>List&lt;? extends Foo&gt;</code> in Java or simply <code>List&lt;Foo&gt;</code>. Subtleties details aside, we did the following:
+There were issues with how Kotlin translated variant types, e.g. whether a `List&lt;Foo&gt;` should be `List&lt;? extends Foo&gt;` in Java or simply `List&lt;Foo&gt;`. Subtleties details aside, we did the following:
 
 * By default, we do not generate wildcards in return types and where they make no sense
 * When a wildcard is needed, one can enforce its presence with a type annotation: List<@JvmWildcard String> is always List<? extends String> in Java
@@ -123,21 +123,21 @@ We are cleaning up the Standard Library, and this includes some repackaging:
 
 Later, we are planning to extract one more JAR from the library: it will contain array utilities that are infrequently used, so we’d like to keep them outside the main JAR to reduce its size.
 <strong>Some more highlights</strong>:
-Kotlin’s <code>Int::class</code> may correspond to Java’s <code>int.class</code> or <code>Integer.class</code> in different contexts (and it’s justified). To facilitate use cases when a specific one of the two is needed, we have introduced two properties:
+Kotlin’s `Int::class` may correspond to Java’s `int.class` or `Integer.class` in different contexts (and it’s justified). To facilitate use cases when a specific one of the two is needed, we have introduced two properties:
 
 * Int::class.javaPrimitiveType returns Int.class
 * Int::class.javaObjectType returns Integer.class
 
-Also, we can now say things like <code>IntArray(5) { it * 3 }</code>, i.e. create initialized primitive arrays.
+Also, we can now say things like `IntArray(5) { it * 3 }`, i.e. create initialized primitive arrays.
 ### Future change: meaning of null in collections
 
-The later versions of the JDK are making collections more and more null-intolerant. For example, here’s what the [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) says about <code>java.util.Map.computeIfAbsent</code>:
+The later versions of the JDK are making collections more and more null-intolerant. For example, here’s what the [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#computeIfAbsent-K-java.util.function.Function-) says about `java.util.Map.computeIfAbsent`:
 <p>
 
   If the specified key is not already associated with a value <strong>(or is mapped to null)</strong>, attempts to compute its value using the given mapping function and enters it into this map unless null.
 
 </p>
-These contracts are intrinsic to atomicity properties of such operations, so we decided that we have to meet them too, otherwise we won’t be able to guarantee proper behavior for Kotlin’s extension functions when they operate on null-free concurrent collections. So, we are going to change the behavior of <code>getOrPut</code> and other such functions so that they treat <code>null</code> value the same as the value was not present.
+These contracts are intrinsic to atomicity properties of such operations, so we decided that we have to meet them too, otherwise we won’t be able to guarantee proper behavior for Kotlin’s extension functions when they operate on null-free concurrent collections. So, we are going to change the behavior of `getOrPut` and other such functions so that they treat `null` value the same as the value was not present.
 To update your code, follow the recommendations given in deprecation warnings.
 ## What’s new in the IDE
 

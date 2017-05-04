@@ -124,16 +124,16 @@ table {
 <p></p>
 {% endraw %}
 
-为了解决这个问题，我们添加了<code> @DslMarker </code>注释，允许在这些情况下更准确地控制可见性范围。有关使用示例请参阅 [使用此功能的kotlinx.html库的预览版本](https://github.com/Kotlin/kotlinx.html/tree/dsl-markers) （看到 [HtmlTagMarker](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/api.kt#L103) 和 [HTMLTag](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/htmltag.kt#L5) 实现和 [DSL-标记](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/DSL-markers.md) 预览库使用信息）。
+为了解决这个问题，我们添加了`@DslMarker`注释，允许在这些情况下更准确地控制可见性范围。有关使用示例请参阅 [使用此功能的kotlinx.html库的预览版本](https://github.com/Kotlin/kotlinx.html/tree/dsl-markers) （看到 [HtmlTagMarker](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/api.kt#L103) 和 [HTMLTag](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/shared/src/main/kotlin/htmltag.kt#L5) 实现和 [DSL-标记](https://github.com/Kotlin/kotlinx.html/blob/dsl-markers/DSL-markers.md) 预览库使用信息）。
 ## 标准库统一
 
-不同平台的标准库统一过程正在向前发展。我们已经开始统一1.1-M2中的异常类型，现在在所有平台上都支持一些更常见的类型，可以在<code> kotlin。* </code>包中使用，默认情况下导入。这些包括：
+不同平台的标准库统一过程正在向前发展。我们已经开始统一1.1-M2中的异常类型，现在在所有平台上都支持一些更常见的类型，可以在`kotlin。*`包中使用，默认情况下导入。这些包括：
 
 * ArrayList，HashSet，LinkedHashSet，HashMap，LinkedTashMap在kotlin.collections中
 * 在kotlin.text中附加和StringBuilder
 * 比较器在kotlin.com对比
 
-在JVM上，这些只是来自<code> java.util </code>和<code> java.lang </code>的旧旧类型的typealiases
+在JVM上，这些只是来自`java.util`和`java.lang`的旧旧类型的typealiases
 ## JavaScript后端中支持新语言功能
 
 JavaScript后端现在支持与JVM后端兼容的以下Kotlin语言功能：

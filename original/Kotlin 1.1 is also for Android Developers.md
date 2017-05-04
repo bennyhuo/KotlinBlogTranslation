@@ -28,7 +28,7 @@ So a sane question would be: has the Kotlin team been able to keep compatibility
 
 Of course, type aliases have a lot of different applications. But the first that came to my mind was the ability to make listeners more readable while keeping the use of lambdas.
 If you haven’t heard about [type aliases](https://github.com/Kotlin/KEEP/issues/4) before, they’re basically a way to rename complex types into more readable ones.
-For instance, you could have an <code>RecyclerViewadapter</code> which will receive a listener. As you may know, <code>RecyclerView</code> doesn’t have a standard way to deal with item clicks, just as <code>ListView</code> had, so we have to come out with our own.
+For instance, you could have an `RecyclerViewadapter` which will receive a listener. As you may know, `RecyclerView` doesn’t have a standard way to deal with item clicks, just as `ListView` had, so we have to come out with our own.
 Let’s imagine we want a listener that has access to the view. Our adapter class could look like this:
 
 {% raw %}
@@ -46,7 +46,7 @@ class MyAdapter(val items: List<Item>, val listener: (View) -> Unit) : RecyclerV
 <p></p>
 {% endraw %}
 
-And your <code>ViewHolder</code> would probably need to receive that listener too, to assign it to the click listener of the view:
+And your `ViewHolder` would probably need to receive that listener too, to assign it to the click listener of the view:
 
 {% raw %}
 <p></p>
@@ -67,13 +67,13 @@ class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 This is not a very complicated case, but as you can see, we need to repeat that lambda definition which, out of context, could lead to a difficult read.
 But we can create a type alias that represents a click listener:<br/>
-<code>typealias ClickListener = (View) -&gt; Unit</code><br/>
+`typealias ClickListener = (View) -&gt; Unit`<br/>
 
 And then use it in every place we need that listener:<br/>
-<code>class MyAdapter(val items: List&lt;Item&gt;, val listener: ClickListener)</code><br/>
+`class MyAdapter(val items: List&lt;Item&gt;, val listener: ClickListener)`<br/>
 
 or<br/>
-<code>fun bind(item: Item, listener: ClickListener) { ... }</code>
+`fun bind(item: Item, listener: ClickListener) { ... }`
 # Data classes are now more powerful
 
 Data classes are great because the avoid a huge amount of boilerplate. But they were lacking some powers, which made them unusable in some cases.
@@ -118,7 +118,7 @@ data class Translate(val axis: Axis, val amount: Int)
 
 # Destructuring inside lambdas
 
-Data classes could be destructured since the first version thanks to the <code>componentX()</code> methods they generate. You could assign the content of a data class into several variables like this:
+Data classes could be destructured since the first version thanks to the `componentX()` methods they generate. You could assign the content of a data class into several variables like this:
 
 {% raw %}
 <p></p>
@@ -268,8 +268,8 @@ I urge you not only to use them, but also to check how they are implemented. Tha
 # Some other cool things for Android Devs
 
 There are many more improvements on this release, but I wanted to highlight some that are more focused to Android development.
-The first one of them is that now you can enable the support with the Jack compiler by using: <code>jackOptions { true }</code>. Google has announced they are deprecating Jack toolchain, but if you were using it for Java 8, this may be helpful for you until the final version of Android Studio 2.4 is released.
-Also, there’s <strong>a new intention that will use</strong> <code>@JvmOverloads</code> <strong>to implement the constructors of a custom view</strong>, which literally allows to implement custom view constructors in one line (well, one really long line) by using one constructor and default values for arguments:
+The first one of them is that now you can enable the support with the Jack compiler by using: `jackOptions { true }`. Google has announced they are deprecating Jack toolchain, but if you were using it for Java 8, this may be helpful for you until the final version of Android Studio 2.4 is released.
+Also, there’s <strong>a new intention that will use</strong> `@JvmOverloads` <strong>to implement the constructors of a custom view</strong>, which literally allows to implement custom view constructors in one line (well, one really long line) by using one constructor and default values for arguments:
 
 {% raw %}
 <p></p>

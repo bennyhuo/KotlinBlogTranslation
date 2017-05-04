@@ -26,8 +26,8 @@ translator_url:
 1.1 M01的完整更新日期可用 [这里](https://github.com/JetBrains/kotlin/blob/1.1-M1/ChangeLog.md#11-m01-eap-1) <span id =“more-4080”> </span>
 ## 协调程序
 
-我们都知道，在高负载下阻塞是坏的，轮询是一个不停的，世界正在变得越来越多的基于推动和异步。许多语言（2012年以C＃开头）通过专用语言结构支持异步编程，例如<code> async </code> / <code>等待</code>关键字。在Kotlin中，我们概括了这个概念，以便库可以定义自己的这样的结构版本，而<code> async </code>不是一个关键字，而只是一个函数。
-这种设计允许不同异步API的集成：期货/承诺，回调传递等。表达延迟生成器（<code> yield </code>）并涵盖其他一些用例也是一般的。
+我们都知道，在高负载下阻塞是坏的，轮询是一个不停的，世界正在变得越来越多的基于推动和异步。许多语言（2012年以C＃开头）通过专用语言结构支持异步编程，例如`async` / `等待`关键字。在Kotlin中，我们概括了这个概念，以便库可以定义自己的这样的结构版本，而`async`不是一个关键字，而只是一个函数。
+这种设计允许不同异步API的集成：期货/承诺，回调传递等。表达延迟生成器（`yield`）并涵盖其他一些用例也是一般的。
 所以，满足Kotlin 1.1的更大功能之一：<em>协同程序</em>。这是一个传统的CS术语，用于“泛化非优先多任务的子程序的程序组件”，但是我们不会在这里介绍理论<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1 “src =”https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1“style =”height：1em ; max-height：1em;“/>
 
 {% raw %}
@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
 {% endraw %}
 
 关于协同程序的好处是，他们可以暂停</em>而不阻止线程，但它们看起来像正常的顺序代码。请看一下 [详细说明](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) 和一个专门的例子 [KEEP存储库](https://github.com/Kotlin/kotlin-coroutines) 并评论 [那里的问题](https://github.com/Kotlin/kotlin-coroutines/issues) 。
-我们是基于协同程序的库的原型 [这里](https://github.com/Kotlin/kotlinx.coroutines) ，随后被列入标准库。这包括来自Swing中的UI线程的JDK的<code> CompletableFuture </code>，异步IO（NIO），RxJava和卸载任务。这个回购包含了例子以及图书馆本身。要玩，请按照说明进行操作 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。
+我们是基于协同程序的库的原型 [这里](https://github.com/Kotlin/kotlinx.coroutines) ，随后被列入标准库。这包括来自Swing中的UI线程的JDK的`CompletableFuture`，异步IO（NIO），RxJava和卸载任务。这个回购包含了例子以及图书馆本身。要玩，请按照说明进行操作 [自述文件](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) 。
 ## 键入别名
 
 在Kotlin 1.1中我们可以写
@@ -70,7 +70,7 @@ typealias Action<T> = (T) -> Unit
 <p></p>
 {% endraw %}
 
-这意味着我们可以与<code>（T） - >互换使用<code> Action＆lt; T＆gt; </code>单位</code>，即它是真实的<strong>别名</strong>。类型别名可用于缩写代码中多个位置使用的较长类型：
+这意味着我们可以与`（T） - >互换使用`Action＆lt; T＆gt;`单位`，即它是真实的<strong>别名</strong>。类型别名可用于缩写代码中多个位置使用的较长类型：
 
 * 具有复杂签名的函数类型：UserAction =（用户，上下文） - > ActionResponse，
 * 复杂的通用类型：Multimap <K，V> = Map <K，List <V >>
@@ -91,11 +91,11 @@ typealias Weight = Double
 <p></p>
 {% endraw %}
 
-它不会让我们做得很好，因为<code> Length </code>可以自由分配给<code> Weight </code>，反之亦然。实际上，它们都可以被分配给一个常规的<code> Double </code>。我们了解这种用例的重要性，并计划在未来对其进行覆盖，最有可能通过<em>价值类</em>，但这是另一个故事。现在我们只有类型别名。
+它不会让我们做得很好，因为`Length`可以自由分配给`Weight`，反之亦然。实际上，它们都可以被分配给一个常规的`Double`。我们了解这种用例的重要性，并计划在未来对其进行覆盖，最有可能通过<em>价值类</em>，但这是另一个故事。现在我们只有类型别名。
 阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/4) 。
 ## 绑定的可引用引用
 
-在Kotlin 1.0中，可以获得对这样的函数（或属性）的引用：<code> String :: length </code>，即使用包含类的名称。在1.1中，我们添加了<em>绑定引用</em>：即我们可以说<code> mystr :: length </code>其中<code> mystr </code>是一个变量表达）。这样的引用被绑定到它们的接收者，因此是部分功能应用的特殊情况（在一般情况下，至少现在我们不支持）。
+在Kotlin 1.0中，可以获得对这样的函数（或属性）的引用：`String :: length`，即使用包含类的名称。在1.1中，我们添加了<em>绑定引用</em>：即我们可以说`mystr :: length`其中`mystr`是一个变量表达）。这样的引用被绑定到它们的接收者，因此是部分功能应用的特殊情况（在一般情况下，至少现在我们不支持）。
 阅读更多和评论 [这里](https://github.com/Kotlin/KEEP/issues/5) 。
 ## 本地委托属性和内联属性
 
@@ -137,8 +137,8 @@ DSL和脚本也将受益于此功能。
 ## Java 7/8支持
 
 我们正在努力改进对Java 8：1.1的支持，解决了我们以前使用的Stream API（并减少了支持库）的问题，并增加了在Kotlin接口中生成默认方法的支持，以便Java客户端可以实现它们无缝地阅读和评论 [这里](https://github.com/Kotlin/KEEP/issues/30) 。
-要启用版本8类文件的生成，请提供<code> -jvm-target 1.8 </code>命令行开关。
-我们还在标准库中添加新功能，并且依靠Java API版本比1.6更新，我们引入了新的工件：<code> kotlin-stdlib-jre7 </code>和<code> kotlin-stdlib-jre8 < / code>具有额外的功能，如<code> AutoCloseable.use（）</code>，Regex命名组支持和与流相关的功能。如果您需要他们添加的API，请从Maven / Gradle构建中使用这些工件而不是<code> kotlin-stdlib </code>。
+要启用版本8类文件的生成，请提供`-jvm-target 1.8`命令行开关。
+我们还在标准库中添加新功能，并且依靠Java API版本比1.6更新，我们引入了新的工件：`kotlin-stdlib-jre7`和`kotlin-stdlib-jre8 < / code>具有额外的功能，如`AutoCloseable.use（）`，Regex命名组支持和与流相关的功能。如果您需要他们添加的API，请从Maven / Gradle构建中使用这些工件而不是`kotlin-stdlib`。
 阅读并讨论有关stdlib的提案 [这里](https://github.com/Kotlin/KEEP/labels/stdlib) 。
 ## JavaScript
 
@@ -159,7 +159,7 @@ DSL和脚本也将受益于此功能。
 在同一对话框中按<em>检查更新</em>，当新版本显示时，<em>安装</em>。
 <strong> <a href="http://try.kotlinlang.org/"> try.kotlinlang.org </a> </strong>。使用右下角的下拉列表更改编译器版本：<br/>
 “img alt =”屏幕截图2016-07-14在20.23.48“class =”alignnone size-full wp-image-4121“data-recalc-dims =”1“src =”https：//i0.wp。 com / blog.jetbrains.com / kotlin / files / 2016/07 / Screen-Shot-2016-07-14-at-20.23.48.png？resize = 640％2C549＆amp; ssl = 1“/>
-<strong>使用SDKMan </strong>。运行<code> sdk install kotlin 1.1-M01 </code>。
+<strong>使用SDKMan </strong>。运行`sdk install kotlin 1.1-M01`。
 您的反馈非常受欢迎，一如既往。
 ### 有一个漂亮的Kotlin！
 
