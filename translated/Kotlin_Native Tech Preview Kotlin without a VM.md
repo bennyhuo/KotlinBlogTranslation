@@ -30,42 +30,47 @@ Kotlin/Native是让Kotlin贯通所有应用场景又一大进步。最终目的�
 
 对于平台内部代码重用，我们有着如下愿景：使用Kotlin以平台无关的方式为任何支持的平台编写和编译模块（目前包括Kotlin/JVM，Kotlin/JS和即将推出的Kotlin/Native），我们称之为***通用模块***。通用模块的部分内容需要使用特定平台实现，因此需要单独为每个平台进行独立开发，通用模块向所有客户端提供公共API，但其它模块（特定平台）可以扩展这部分API，以在其平台上提供额外独占功能。  
 
-请注意，我们不打算在 Kotlin / Native 或 Kotlin / JS 上运行任意的 Kotlin / JVM 程序。这将相当于实现另一个 JVM，这对于运行时来说是很多工作和很多限制。我们将以另一种方式：为所有平台提供通用语言，同时通过与平台代码的无缝互操作来创建通用库。
+值得一提的是，我们并不打算在Kotlin/Native或Kotlin/JS上运行任何的Kotlin/JVM 程序。这相当于又实现了另一个JVM，因此在程序运行时有有着诸多的限制与工作量；所以我们将以另一种方式：提供跨平台语言，同时通过与平台代码无缝互通来创建通用库。
 ## 技术
 
-Kotlin / Native 使用 LLVM 编译器基础架构生成机器代码。在这个预览中，我们支持以下内容 [目标平台](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md#supported-platforms) ：
+Kotlin/Native使用LLVM编译器基础架构生成机器代码。在预览中，我们支持以下[目标平台](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md#supported-platforms) ：
 
-* Mac OS X 10.10 及更高版本（x86-64）
-* x86-64 Ubuntu Linux（14.04,16.04 及更高版本），其他 Linux 版本也可以正常工作
-* 苹果 iOS（arm64），在 MacOS X 主机上交叉编译
-* Raspberry Pi，在 Linux 主机上交叉编译
+* Mac OS X 10.10及更高版本（x86-64）
+* x86-64 Ubuntu Linux（14.04,16.04 及更高版本）及其他Linux版本 
+* Apple iOS(arm64)，MacOS X主机交叉编译
+* Raspberry Pi，Linux主机交叉编译
 
-只要 LLVM 支持可用，可以相对容易地添加更多的平台。我们将来可能会支持更多的平台。
-像往常一样，互操作性是我们的首要任务之一，Kotlin / Native 可以有效地调用 C 函数并将数据传递给/从他们获取数据。您可以在构建时从 C 头文件生成 Kotlin 绑定，并获得对目标平台原生的任何 API 的快速类型安全访问。查看详细说明 [这里](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/INTEROP.md) 。
+只要LLVM支持可用，相对地就可以很方便的添加更多平台，未来我们将尽可能会支持更多的平台。  
+
+与往常一样，互通性是我们的首要任务之一，Kotlin/Native 可以有效地调用C函数并与之进行数据传递。您可以在构建时从C的头文件中生成Kotlin绑定关系，并获得对目标平台任何原生API的快速安全类型访问。查看[详细文档](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/INTEROP.md) 。
 ### 内存管理
 
-Kotlin / Native 旨在为不同的目标平台提供不同的内存管理解决方案。例如，在将来，为服务器/桌面平台配置跟踪 GC 可能是有意义的，而 ARC 在 iOS 上更有意义。某些平台可能只需要手动内存管理，并获得一个更小的 Kotlin / Native 运行时。
-此技术预览功能具有自动参考计数，顶部采用循环收集器，但最终的内存管理解决方案在此时尚未知。
-### 当前局限性
+Kotlin/Native旨在为不同的目标平台提供不同的内存管理解决方案。例如，在未来为服务器/桌面端配置GC跟踪是非常有意义的，而ARC对于iOS意义更为巨大。某些平台可能只需要进行手动内存管理，反过来Kotlin/Native运行时内存则会更小。  
 
-如上所述，Kotlin / Native 是远未完成的，所以这个技术预览有一些限制，将在以后的阶段消除：
+此次预览技术具有自动引用计数的功能，其顶部采用循环收集器，但最终的内存管理解决方案此时尚不明确。
+### 局限性
 
-* 没有执行性能优化，所以基准测试 Kotlin / Native 在这一点上是没有意义的。
-* 标准库和反思支持还远未完成，稍后会添加更多的 API。
-* 阅读更多在发行说明。
+综上所述，Kotlin/Native目前的完成度是非常之低的，所以该荐技术预览目前存在一些限制，我们将在以后的阶段逐步消除：
 
-## 未来的计划
+* 运行性能未优化，所以对Kotlin/Native进行基准测试毫无意义。
+* 标准库以及反射支持未完整实现，后续会添加更多的API。
+* 更多[版本说明](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md)
 
-我们目前正在研究 Kotlin / Native 的核心技术，它与所有目标平台（编译器，核心运行时和库）是一样的。作为未来可能的工作，我们正在考虑以下可能的用例：
+## 后续计划
 
-* iOS 应用程序（使用 Android 重用代码）
-* 嵌入式系统/ IoT（例如，Arduino 及其以外）
+我们目前正在研究Kotlin/Native的核心技术，对于所有支持的目标平台（编译器，运行时核心以及库）而言这项技术是相通的。作为未来目标，我们正在考虑以下用例：
+
+* iOS应用程序（复用Android代码）
+* 嵌入式系统/IoT（不限于Arduino）
 * 数据分析与科学计算
-* 服务器端和微服务器（低可用性可执行文件，利用协同程序的功能）
+* 服务器端和微服务器（低内存占用可执行文件，利用协同程序的功能）
 * 游戏开发
 
-## 如何尝试
+## 试一试
 
-我们已经准备了两个具有编译器，样本和文档的档案： [适用于 Mac 和 iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz) 和 [对于 Linux 和 Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz) 。
-看看 [Github 项目](https://github.com/JetBrains/kotlin-native) 和 [发行说明](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md) 为了指示。
-**我们非常欢迎您的反馈意见**在＃kotlin 本机频道 [公共松弛](https://kotlinlang.slack.com) （获取您的邀请 [这里](http://slack.kotl.in) 。
+我们准备了两个具有编译器、示例和文档的存档：[适用于Mac和iOS](http://download.jetbrains.com/kotlin/native/kotlin-native-macos-0.1.tar.gz)  
+[适用于Linux和Raspberry Pi](http://download.jetbrains.com/kotlin/native/kotlin-native-linux-0.1.tar.gz)  
+
+从[Github](https://github.com/JetBrains/kotlin-native)上检出代码，查看[版本说明](https://github.com/JetBrains/kotlin-native/blob/v0.1.0/RELEASE_NOTES.md) 。  
+
+**您的反馈意见非常重要**，您可以在[Slack](https://kotlinlang.slack.com) （[获得邀请](http://slack.kotl.in)）的#kotlin-native频道发送给我们。
