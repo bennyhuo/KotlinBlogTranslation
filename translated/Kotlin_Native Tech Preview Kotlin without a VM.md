@@ -15,9 +15,9 @@ translator_url:https://github.com/SnakeEys
 
 ---
 
-**Kotlin/Native**的第一个技术预览版具备将Kotlin代码编译为机器码的能力了。Kotlin/Native编译器能够生成独立的可执行文件，不需要借助任何虚拟机即可运行。  
+很高兴告诉大家，**Kotlin/Native**的第一个技术预览版已经具备将Kotlin代码编译为机器码的能力了。Kotlin/Native编译器能够生成独立的可执行文件，不需要借助任何虚拟机即可运行。  
 
-尽管目前该版本功能尚未完善，但您已经可以使用该技术，在[这里](https://github.com/JetBrains/kotlin-native/)查看源代码。编译器基于Apache 2 OSS许可证下使用。
+尽管目前该版本的功能尚未完善，但这并不妨碍您去尝试使用该技术，还可以在此查看[源代码](https://github.com/JetBrains/kotlin-native/)。编译器基于Apache 2 OSS许可证下使用。
 
 {% raw %}
 <p><img alt="KotlinNative" class="alignnone size-full wp-image-4889" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/04/KotlinNative.png" width="800"/><br/>
@@ -28,7 +28,7 @@ translator_url:https://github.com/SnakeEys
 
 Kotlin/Native是让Kotlin贯穿所有应用场景又一大进步。而最终目的则是能够使用Kotlin编写从服务器端到网页甚至移动客户端的每个组件。对此，共享技能是一大激励，另外则是共享实际代码。  
 
-对于平台内部代码重用，我们有着如下愿景：使用Kotlin以平台独立的方式为任何支持的平台编写和编译整个模块（目前包括Kotlin/JVM，Kotlin/JS和即将推出的Kotlin/Native）。我们称之为***通用模块***。通用模块的部分内容可能需要特定平台实现，这能够为每个平台独立开发，通用模块向所有客户端提供公共API，但其它模块（特定平台）可以扩展这部分API，以在其平台上提供额外独占功能。  
+对于平台内部代码重用，我们有着如下愿景：使用Kotlin以平台独立的方式为任何支持的平台编写和编译整个模块（目前包括Kotlin/JVM，Kotlin/JS和即将推出的Kotlin/Native）。我们称之为***通用模块***。通用模块的部分内容可能需要基于具体平台实现，这能够为每个平台进行独立开发，通用模块向所有客户端提供公共API，但其它模块（具体平台）可以扩展这部分API，以在其平台上提供额外独占功能。  
 
 值得一提的是，我们并不打算在Kotlin/Native或Kotlin/JS上运行任何的Kotlin/JVM 程序。这相当于又实现了另一个JVM，因此在程序运行时有着诸多的限制与工作量；所以我们将换了一个思路：提供跨平台语言，同时通过与平台代码无缝互通来创建通用库。
 ## 技术
