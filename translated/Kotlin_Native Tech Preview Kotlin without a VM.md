@@ -10,12 +10,12 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlinnative-tech-preview-kotlin-without-a-vm/  
-translator:  SnakEys  
-translator_url:https://github.com/SnakeEys
+translator:SnakEys  
+translator_url:https://github.com/SnakeEys  
 
 ---
 
-我们很高兴地宣布**Kotlin/Native**的第一个技术预览版本发布了，该技术具备将Kotlin代码编译为机器码的能力。Kotlin/Native编译器能够生成独立的可执行文件，不需要借助任何虚拟机即可运行。  
+**Kotlin/Native**的第一个技术预览版具备将Kotlin代码编译为机器码的能力了。Kotlin/Native编译器能够生成独立的可执行文件，不需要借助任何虚拟机即可运行。  
 
 尽管目前该版本功能尚未完善，但您已经可以使用该技术，在[这里](https://github.com/JetBrains/kotlin-native/)查看源代码。编译器基于Apache 2 OSS许可证下使用。
 
