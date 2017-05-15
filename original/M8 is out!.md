@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2014/07/m8-is-out/
+translator:
+translator_url:
 ---
 
 It’s been a really busy couple of months since the last release and we’ve been working hard on making substantial improvements, particularly in terms of speed. We have a lot of goodies for this release. Let’s get started<span id="more-1509"></span>
@@ -148,7 +150,7 @@ inline fun <T> guardedValue(
 <p></p>
 {% endraw %}
 
-Our guardedValue() is an inline function. Now, the <b>lock</b> parameter has a default value (a new ReentrantLock is created for every value). Then, the object expression inside this function “captures” the <b>compute</b> parameter, and inlines it directly inside the anonymous class created. This results in only one class and one object emitted (and stored) per value, instead of two classes and two objects for the non-inline case.
+Our guardedValue() is an inline function. Now, the **lock** parameter has a default value (a new ReentrantLock is created for every value). Then, the object expression inside this function “captures” the **compute** parameter, and inlines it directly inside the anonymous class created. This results in only one class and one object emitted (and stored) per value, instead of two classes and two objects for the non-inline case.
 
 {% raw %}
 <p><a name="platformName"></a></p>
@@ -189,8 +191,8 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-The reason is that the getter for <em>x</em> has the same name (getX) and signature (takes no parameters, returns Int) as the function declared next to it and JVM does not allow such things in class files.
-Another case is an <em>accidental override</em>:
+The reason is that the getter for *x* has the same name (getX) and signature (takes no parameters, returns Int) as the function declared next to it and JVM does not allow such things in class files.
+Another case is an *accidental override*:
 
 {% raw %}
 <p></p>
@@ -226,7 +228,7 @@ The following declarations have the same JVM signature (getX()I):
 <p></p>
 {% endraw %}
 
-One may wonder why wouldn’t we, say, rename one of the functions automatically instead of emitting an error? The answers lie in the realm of Java interoperability (nobody likes names invented by the compiler) and binary compatibility (names of things must never change silently, or all dependent code will unexpectedly break). On the other hand, you can specify desired JVM names manually with the <em>platformName</em> annotation:
+One may wonder why wouldn’t we, say, rename one of the functions automatically instead of emitting an error? The answers lie in the realm of Java interoperability (nobody likes names invented by the compiler) and binary compatibility (names of things must never change silently, or all dependent code will unexpectedly break). On the other hand, you can specify desired JVM names manually with the *platformName* annotation:
 
 {% raw %}
 <p></p>
@@ -245,10 +247,10 @@ fun getX() = 1
 {% endraw %}
 
 Note that nothing changes when for the Kotlin clients of this code, but Java clients must use the platform name (doGetX) instead of Kotlin name (getX).
-<b>WARNING:</b> This is a <b>breaking</b> change, some of your existing code may need to be fixed.
+**WARNING:** This is a **breaking** change, some of your existing code may need to be fixed.
 ### Support for transient, synchronized and strictfp
 
-In addition to the long-available <em>volatile</em>. We now support <em>transient</em>, <em>synchronized</em> and <em>strictfp</em> as annotations. The semantics are exactly like in Java:
+In addition to the long-available *volatile*. We now support *transient*, *synchronized* and *strictfp* as annotations. The semantics are exactly like in Java:
 
 {% raw %}
 <p></p>
@@ -281,7 +283,7 @@ class FlagDemo {
 
 ## Language Changes
 
-A few language changes, all of which are <b>breaking changes</b>, so important to take note:
+A few language changes, all of which are **breaking changes**, so important to take note:
 
 * private in a package now means private to the current package inside the module. Packages with the same name in other modules won’t see these definitions. Note that packages are nested, so privates are also visible to subpackages in the same module.
 * Extension Properties cannot have backing fields. This was never recommended anyway.

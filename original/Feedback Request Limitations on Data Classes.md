@@ -10,10 +10,12 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/feedback-request-limitations-on-data-classes/
+translator:
+translator_url:
 ---
 
 While M13 is approaching, we are planning a little ahead. This is a request for feedback on some future changes in Kotlin.
-We want to deliver Kotlin 1.0 rather sooner than later, and this makes us postpone some design choices we don’t have enough confidence about. Today let’s discuss <em>data classes</em>.<span id="more-2472"></span>
+We want to deliver Kotlin 1.0 rather sooner than later, and this makes us postpone some design choices we don’t have enough confidence about. Today let’s discuss *data classes*.<span id="more-2472"></span>
 ## Introduction
 
 The concept of [data classes](http://kotlinlang.org/docs/reference/data-classes.html) has proven very useful when it comes to simply storing data. All you need is say:
@@ -24,14 +26,13 @@ The concept of [data classes](http://kotlinlang.org/docs/reference/data-classes.
 
 ```kotlin
 data class Foo(val a: A, val b: B)
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-and you get <code>equals()/hashCode()</code>, <code>toString()</code>, <code>copy()</code> and component functions for free.
+and you get `equals()/hashCode()`, `toString()`, `copy()` and component functions for free.
 The most common use case works like a charm, but interaction of data classes with other language features may lead to surprising results.
 ## Issues
 
@@ -45,20 +46,19 @@ For example, what if I want to extend a data class? What if the derived class is
 open data class Base(val a: A, val b: B)
  
 data class Derived(a: A, b: B, val c: C) : Base(a, b)
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-Now, how does <code>equals()</code> or <code>copy()</code> work in <code>Derived</code>? All the well-known issues arise at once:
+Now, how does `equals()` or `copy()` work in `Derived`? All the well-known issues arise at once:
 
 * should an instance of Base be equal to an instance of Derived if they have the same values for a and b?
 * what about transitivity of equals()?
 * what if I copy an instance of Derived through a reference of type Base?
 
-And what about component functions that enable [multi-declarations](http://kotlinlang.org/docs/reference/multi-declarations.html) ? It seems more or less logical that <code>c</code> simply becomes the third component in <code>Derived</code> <strong>in this basic case</strong>:
+And what about component functions that enable [multi-declarations](http://kotlinlang.org/docs/reference/multi-declarations.html) ? It seems more or less logical that `c` simply becomes the third component in `Derived` **in this basic case**:
 
 {% raw %}
 <p></p>
@@ -66,7 +66,6 @@ And what about component functions that enable [multi-declarations](http://kotli
 
 ```kotlin
 val (a, b, c) = Derived(...)
- 
 ```
 
 {% raw %}
@@ -81,14 +80,13 @@ But nothing prevents us from writing something like this:
 
 ```kotlin
 data class Derived(b: B, a: A, val c: C) : Base(a, b)
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-Note that the parameter order is reversed: first <code>b</code>, than <code>a</code>. Now it’s not that clear any more. And it may get worse:
+Note that the parameter order is reversed: first `b`, than `a`. Now it’s not that clear any more. And it may get worse:
 
 {% raw %}
 <p></p>
@@ -96,14 +94,13 @@ Note that the parameter order is reversed: first <code>b</code>, than <code>a</c
 
 ```kotlin
 data class Derived(val c: C, b: B, a: A) : Base(a, b)
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-Now <code>c</code> comes first, and the inherited <code>component1(): A</code> is simply a conflict, it is not an override, but such an overload is not legal either.
+Now `c` comes first, and the inherited `component1(): A` is simply a conflict, it is not an override, but such an overload is not legal either.
 And these are only some examples, there’re many more issues, big and small.
 ## Our strategy
 
@@ -128,7 +125,7 @@ We are going to do the following:
 Again, some of the restrictions in this list may be lifted later, but for now we don’t want to deal with these cases.
 ## Appendix. Comparing arrays
 
-It’s a long-standing well-known issue on the JVM: <code>equals()</code> works differently for arrays and collections. Collections are compared structurally, while arrays are not, <code>equals()</code> for them simply resorts to referential equality: <code>this === other</code>.
+It’s a long-standing well-known issue on the JVM: `equals()` works differently for arrays and collections. Collections are compared structurally, while arrays are not, `equals()` for them simply resorts to referential equality: `this === other`.
 Currently, Kotlin data classes are ill-behaved with respect to this issue:
 
 * if you declare a component to be an array, it will be compared structurally,
@@ -146,7 +143,7 @@ So, whenever you say
 * DataClass(arr1) == DataClass(arr2)
 * or anything else along these lines,
 
-you get the arrays compared through <code>equals()</code>, i.e. referentially.
+you get the arrays compared through `equals()`, i.e. referentially.
 We’d love to fix the inconsistency with collections, but the only sane way of fixing it seems to be fixing it in Java first, which is beyond anybody’s power, AFAIK <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
 ## Call for feedback
 

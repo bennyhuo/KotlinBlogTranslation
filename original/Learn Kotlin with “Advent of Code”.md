@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/12/try-kotlin-with-advent-of-code/
+translator:
+translator_url:
 ---
 
 Christmas is coming! Are you prepared? It’s time to gift yourself with a new language!<br/>

@@ -10,17 +10,19 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-release-candidate-is-out/
+translator:
+translator_url:
 ---
 
 Finally, Kotlin has graduated the Beta and we are happy to present the Release Candidate Build!
-<strong>NOTE</strong>: as we [announced earlier](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) , <strong>RC requires all code to be recompiled</strong> to make sure no code compiled with older versions is kept around (please recompile even if you were on the EAP version!).
+**NOTE**: as we [announced earlier](http://blog.jetbrains.com/kotlin/2015/12/kotlin-1-0-beta-4-is-out/) , **RC requires all code to be recompiled** to make sure no code compiled with older versions is kept around (please recompile even if you were on the EAP version!).
 This blog post gives an overview of the changes made since Beta 4. Library changes are the biggest in this build. Also, some bugs have been fixed. Full list of changes is available [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 
 {% raw %}
 <p><img alt="Kotlin 1.0 RC" class="alignnone size-full wp-image-3485" data-recalc-dims="1" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/02/RC-Banner.png?resize=640%2C330&amp;ssl=1"/></p>
 {% endraw %}
 
-<em>See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a></em>.
+*See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a>*.
 
 {% raw %}
 <p><span id="more-3453"></span></p>
@@ -36,7 +38,7 @@ First of all, as promised before, there has been a clean-up:
 Most other language changes are minor tweaks and bug fixes. Some highlights are given below. See the full list [here](https://github.com/JetBrains/kotlin/releases/tag/build-1.0.0-rc-1036) .
 ### Annotations on delegate fields
 
-The new <code>@delegate:</code> annotation target (use-site) is now supported. For example, to mark the delegate object as <code>@Transient</code>, we can say:
+The new `@delegate:` annotation target (use-site) is now supported. For example, to mark the delegate object as `@Transient`, we can say:
 
 {% raw %}
 <p></p>
@@ -47,7 +49,6 @@ class Example {
     @delegate:Transient
     val foo by Lazy { ... }
 }
- 
 ```
 
 {% raw %}
@@ -70,7 +71,6 @@ val ints = mutableListOf(1, 2, 3)
 val strs = mutableListOf("abc", "def")
 val comps: MutableList<out Comparable<*>> = ints
 comps.addAll(strs) // ?! Adding strings to a list of ints
- 
 ```
 
 {% raw %}
@@ -85,7 +85,6 @@ This code was mistakenly accepted before and is rejected now on the last line wi
 
 ```kotlin
 Projected type MutableList<out Comparable<*>> restricts the use of addAll()
- 
 ```
 
 {% raw %}
@@ -99,7 +98,7 @@ Some improvements to synthesized properties derived from Java’s get/set pairs:
 * such declarations (as well as SAM-converted methods) are now resolved on par with members;
 * support added for Java setters that return values.
 
-Support added for <code>@Nullable/@NotNull</code> annotations from various popular libraries such as <code>javax.annotations</code>, Android SDK, etc.<br/>
+Support added for `@Nullable/@NotNull` annotations from various popular libraries such as `javax.annotations`, Android SDK, etc.<br/>
 
 EAP users report:
 <p>
@@ -135,14 +134,13 @@ To enable Android Extensions in Gradle in a more idiomatic way, we now say:
 
 ```kotlin
 apply plugin: 'kotlin-android-extensions'
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-in the <code>build.gradle</code> file (individually for each project).
+in the `build.gradle` file (individually for each project).
 The old way doesn’t work any more and prints fixing instructions to the output.
 ## IDE Changes
 
@@ -170,4 +168,4 @@ Sorry for the inconvenience.
 ## Stay tuned
 
 The final release is approaching, meanwhile — have a nice Kotlin! <img alt=":)" class="wp-smiley" data-recalc-dims="1" src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&amp;ssl=1" style="height: 1em; max-height: 1em;"/>
-<em>P.S. See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a></em>.
+*P.S. See the discussions on <a href="https://news.ycombinator.com/item?id=11034273">Hacker News</a> and <a href="https://www.reddit.com/r/programming/comments/445jih/jvm_languages_news_kotlin_10_release_candidate_is/">Reddit</a>*.

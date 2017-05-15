@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/use-kotlin-with-npm-webpack-and-react/
+translator:
+translator_url:
 ---
 
 在 Kotlin 1.1 中，编译器生成 JavaScript 功能已经达到生产可用状态。当然，编译器支持还不足以解决现实生活中的问题，所以我们继续将 Kotlin 整合到更大的 JavaScript 生态系统中。

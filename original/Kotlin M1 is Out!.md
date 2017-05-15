@@ -10,13 +10,15 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/04/kotlin-m1-is-out/
+translator:
+translator_url:
 ---
 
-Today we are pleased to announce M1: the first milestone release of <strong>Kotlin</strong>.<br/>
+Today we are pleased to announce M1: the first milestone release of **Kotlin**.<br/>
 Kotlin’s homepage ( [kotlin.jetbrains.org](http://kotlin.jetbrains.org) ) provides full details about the language. In this post I give some highlights associated with the milestone release.
 ## What’s in the box
 
-Kotlin comes in form of a <strong>standalone compiler </strong>and a <strong>plugin for IntelliJ IDEA</strong>.
+Kotlin comes in form of a **standalone compiler**and a **plugin for IntelliJ IDEA**.
 
 * IntelliJ IDEA Plugin
 
@@ -41,7 +43,7 @@ val minors = users.filter { it.age < 21 }
 <p></p>
 {% endraw %}
 
-Or you can <em>simply</em> read text from a java.io.File:
+Or you can *simply* read text from a java.io.File:
 
 {% raw %}
 <p></p>

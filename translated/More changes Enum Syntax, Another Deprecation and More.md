@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/04/more-changes-enum-syntax-and-one-deprecation-and-more/
+translator:
+translator_url:
 ---
 
 
@@ -31,7 +33,6 @@ enum class Message(val str: String) {
     WARNING : Message("This is a friendly warning")
     DEBUG : Message("Ignore this")
 }
- 
 ```
 
 {% raw %}
@@ -55,7 +56,6 @@ enum class Message(val str: String) {
     WARNING("This is a friendly warning")
     DEBUG("Ignore this")
 }
- 
 ```
 
 {% raw %}
@@ -75,14 +75,13 @@ enum class Example(...) {
  
     fun foo() { ... }
 }
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-问题是可以将<code> A </ code>和<code> B </ code>解析为<code> foo（）</ code>上的注释。所以我们在这里有一些选择。
+问题是可以将`A`和`B`解析为`foo（）`上的注释。所以我们在这里有一些选择。
 我们倾向于在条目和其他成员之间放置一个分隔符：
 
 {% raw %}
@@ -97,7 +96,6 @@ enum class Example(...) {
  
     fun foo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -118,7 +116,6 @@ enum class Example(...) {
  
     @inject fun foo() { ... }
 }
- 
 ```
 
 {% raw %}
@@ -126,7 +123,7 @@ enum class Example(...) {
 {% endraw %}
 
 这与普通课程，特质等有些不一致
-或者我们可以使用（soft-）关键字对enum条目进行前缀：
+或者我们可以使用（soft-）关键字对 enum 条目进行前缀：
 
 {% raw %}
 <p></p>
@@ -137,7 +134,6 @@ enum class Example {
     entry A
     entry B
 }
- 
 ```
 
 {% raw %}
@@ -156,7 +152,6 @@ enum class Example {
     @Ann1 A
     @Ann2(...) B    
 }
- 
 ```
 
 {% raw %}
@@ -165,7 +160,7 @@ enum class Example {
 
 其他选项包括
 
-* 需要枚举文字之间的逗号（像Java一样）
+* 需要枚举文字之间的逗号（像 Java 一样）
 * 需要在枚举文字之间设置换行符并允许在同一行上使用未转义的注释
 
 我们还没有决定哪一种方式。
@@ -176,7 +171,7 @@ enum class Example {
 
 ## 禁止在表达式中断/继续
 
-当</ code> -expressions作为</ code> -entry跳转到下一个<code>时，我们计划在<code>中实现<code> continue </ code>。它还没有实现，但是当我们添加代码时，我们希望您的代码保持不变，因此暂时在<code>中禁止在<code>中使用<code>继续</ code>，而不使用指向的标签循环：
+当` -expressions 作为` -entry 跳转到下一个`时，我们计划在`中实现`continue`。它还没有实现，但是当我们添加代码时，我们希望您的代码保持不变，因此暂时在`中禁止在`中使用`继续`，而不使用指向的标签循环：
 
 {% raw %}
 <p></p>
@@ -190,15 +185,14 @@ for (...) {
         ... -> if (...) continue // ERROR
     }
 }
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-我们还禁止<code>中的<code> break </ code> </ code>。虽然还没有决定是否要允许它，但似乎更好的设计是保持<code> break </ code>和<code> continue </ code>对称。
-注意：当</ code>在“停止匹配并跳出外部”（如Java和C中的<code> switch </ code>）中时，<code> break </ code>的简单解释，但是<code>当</ code>经常返回一个值时，如果我们突破它，这将是未知的。
+我们还禁止`中的`break``。虽然还没有决定是否要允许它，但似乎更好的设计是保持`break`和`continue`对称。
+注意：当`在“停止匹配并跳出外部”（如 Java 和 C 中的`switch`）中时，`break`的简单解释，但是`当`经常返回一个值时，如果我们突破它，这将是未知的。
 
 {% raw %}
 <p><a name="interfaces"></a></p>
@@ -206,5 +200,5 @@ for (...) {
 
 ## 将特征重命名为接口
 
-那么我们很久以前就选择了这些名字，现在我们在Kotlin中所说的“特质”并不是一个特质，就像现在的Java接口一样，所以我们不想使用<code> trait < / code>关键字，并在M12中引入<code> interface </ code>。
+那么我们很久以前就选择了这些名字，现在我们在 Kotlin 中所说的“特质”并不是一个特质，就像现在的 Java 接口一样，所以我们不想使用`trait < / code>关键字，并在 M12 中引入`interface`。
 反馈请求：让火焰开始<img alt =“:)”class =“wp-smiley”data-recalc-dims =“1”src =“https://i2.wp.com/blog.jetbrains.com/ kotlin / wp-includes / images / smilies / simple-smile.png？w = 640＆amp; ssl = 1“style =”height：1em; max-height：1em“

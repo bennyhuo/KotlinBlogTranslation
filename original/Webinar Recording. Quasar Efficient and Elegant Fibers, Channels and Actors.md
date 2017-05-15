@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2015/09/webinar-recording-quasar-efficient-and-elegant-fibers-channels-and-actors/
+translator:
+translator_url:
 ---
 
-The recording of our September 16th webinar, <strong>Quasar: Efficient and Elegant Fibers, Channels and Actors</strong>, is now available on [JetBrainsTV YouTube channel](https://youtu.be/Nmob2MB2Qo8) .
+The recording of our September 16th webinar, **Quasar: Efficient and Elegant Fibers, Channels and Actors**, is now available on [JetBrainsTV YouTube channel](https://youtu.be/Nmob2MB2Qo8) .
 In this webinar, Fabio Tudone shows how to use Quasar for creation of highly concurrent software. He covers basics of Kotlin syntax and shows how Quasar uses Kotlin strengths to offer concise and expressive API.
 Demo project is available on [GitHub](https://github.com/circlespainter/quasar-kotlin-jetbrains-webinar/releases) .
 The video includes the time stamps following the [agenda announced](http://blog.jetbrains.com/kotlin/2015/09/join-live-webinar-quasar-and-kotlin/) :<br/>
@@ -34,4 +36,4 @@ The video includes the time stamps following the [agenda announced](http://blog.
 About the Presenter:
 Thanks to all the attendees for the questions! If you still have some, please, contact Fabio or our team.
 You are welcome to suggest themes for future webinars in comments.
-<em>Let’s kotlin!</em>
+*Let’s kotlin!*

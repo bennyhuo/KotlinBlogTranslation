@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/04/the-dot-operator/
+translator:
+translator_url:
 ---
 
-<strong>Warning: this is an April Fools’ post</strong> [Point-free](http://en.wikipedia.org/wiki/Point-free_programming) style is a big trend in modern functional programming: it allows to manipulate functions without mentioning their arguments which makes the code concise and compositional. Here is an example from Wikipedia:
+**Warning: this is an April Fools’ post** [Point-free](http://en.wikipedia.org/wiki/Point-free_programming) style is a big trend in modern functional programming: it allows to manipulate functions without mentioning their arguments which makes the code concise and compositional. Here is an example from Wikipedia:
 
 {% raw %}
 <p></p>
@@ -30,7 +32,7 @@ This function, written in Haskell, composes a map() function with a filter() fun
 Kotlin is not a functional language per se, but we are happy to borrow useful features from other languages. So, today I’ll write about dots.<span id="more-1007"></span>
 # The Dot
 
-We introduce the <strong>dot</strong> operator in Kotlin. As usual, it works by convention. If there’s a function like this
+We introduce the **dot** operator in Kotlin. As usual, it works by convention. If there’s a function like this
 
 {% raw %}
 <p></p>
@@ -171,7 +173,7 @@ fun Foo.dot() {
 <p></p>
 {% endraw %}
 
-There is a dot after <strong>this</strong>, which has type Foo, in the body of Foo.dot() function itself, so dot() should be called recursively at that point and, seemingly, never terminate. This is called a <em>higher-order dot</em>, and is executed only if there’s a function dot1() defined on Foo. If dot1(), in turn, contains a higher-order dot, then dot2() is called and so on:
+There is a dot after **this**, which has type Foo, in the body of Foo.dot() function itself, so dot() should be called recursively at that point and, seemingly, never terminate. This is called a *higher-order dot*, and is executed only if there’s a function dot1() defined on Foo. If dot1(), in turn, contains a higher-order dot, then dot2() is called and so on:
 
 {% raw %}
 <p></p>
@@ -191,4 +193,4 @@ This corresponds to Russel’s approach to set theory called [type theory](http:
 # Conclusion
 
 We are planning to support the dot operator very soon. The first version will be restricted to basic ASCII characters such as . : ; ! ? and, of course i, but in the future we plan to expand it to other characters like ё.
-<strong>Have a nice Dot!</strong>
+**Have a nice Dot!**

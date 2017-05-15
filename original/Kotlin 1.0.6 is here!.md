@@ -10,14 +10,16 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-0-6-is-here/
+translator:
+translator_url:
 ---
 
 We are happy to announce the release of Kotlin 1.0.6, the new bugfix and tooling update for Kotlin 1.0. This version brings a significant number of improvements related to the IDE plugin and Android support.
 We’d like to thank our external contributors whose pull requests are included in this release: [Kirill Rakhman](https://github.com/cypressious) and [Yoshinori Isogai](https://github.com/shiraji) . We also want to thank everyone of our EAP users for their feedback. It is really valuable for us, as always.
 You can find the full list of changes in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.6/ChangeLog.md#106) . Some of the changes worth highlighting are described below. <span id="more-4429"></span>
-## Convert <code>try-finally</code> to <code>use()</code> intention
+## Convert `try-finally` to `use()` intention
 
-We continue to add intentions for converting code to idiomatic Kotlin. The IDE now automatically suggests to replace <code>try-finally</code> block with the [use()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) call when all the <code>finally</code> block does is closing a resource.<br/>
+We continue to add intentions for converting code to idiomatic Kotlin. The IDE now automatically suggests to replace `try-finally` block with the [use()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/use.html) call when all the `finally` block does is closing a resource.<br/>
 <img alt="" class="alignnone size-full wp-image-4043" onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png';" onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try.gif';" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/12/try1.png" width="700"/>
 ## “Add names to call arguments” intention
 
@@ -46,11 +48,11 @@ Named arguments help to increase code readability. With the new “Add names to 
 ## Kapt Improvements
 
 We continue to work on the experimental version of Kotlin annotation processing tool (kapt). While there are still some things to do in order to fully support incremental compilation, performance of the annotation processing is significantly increased since Kotlin 1.0.4.
-To enable experimental kapt, just add the following line to your <code>build.gradle</code>:
-<code>apply plugin: 'kotlin-kapt'</code>
+To enable experimental kapt, just add the following line to your `build.gradle`:
+`apply plugin: 'kotlin-kapt'`
 ## All-open compiler plugin
 
-The <strong>all-open</strong> compiler plugin makes classes annotated with a specific annotation and their members open without the explicit <code>open</code> keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
+The **all-open** compiler plugin makes classes annotated with a specific annotation and their members open without the explicit `open` keyword, so it becomes much easier to use frameworks/libraries such as Spring AOP or Mockito. You can read the detailed information about all-open in the corresponding [KEEP](https://github.com/Kotlin/KEEP/pull/40) .
 We provide all-open plugin support both for Gradle and Maven, as well as the IDE integration.
 ### How to use all-open with Gradle
 
@@ -71,14 +73,13 @@ apply plugin: "kotlin-allopen"
 allOpen {
     annotation("com.your.Annotation")
 }
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-If the class (or any of its superclasses) is annotated with <code>com.your.Annotation</code>, the class itself and all its members will become open. It even works with meta-annotations:
+If the class (or any of its superclasses) is annotated with `com.your.Annotation`, the class itself and all its members will become open. It even works with meta-annotations:
 
 {% raw %}
 <p></p>
@@ -90,7 +91,6 @@ annotation class MyFrameworkAnnotation
  
 @MyFrameworkAnnotation
 class MyClass // will be all-open
- 
 ```
 
 {% raw %}
@@ -111,14 +111,13 @@ buildscript {
 }
  
 apply plugin: "kotlin-spring"
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-Of course, you can use both <code>kotlin-allopen</code> and <code>kotlin-spring</code> in the same project.
+Of course, you can use both `kotlin-allopen` and `kotlin-spring` in the same project.
 ### How to use all-open with Maven
 
 
@@ -153,7 +152,6 @@ Of course, you can use both <code>kotlin-allopen</code> and <code>kotlin-spring<
         </dependency>
     </dependencies>
 </plugin>
- 
 ```
 
 {% raw %}
@@ -162,7 +160,7 @@ Of course, you can use both <code>kotlin-allopen</code> and <code>kotlin-spring<
 
 ## No-arg compiler plugin
 
-The <b>no-arg</b> compiler plugin generates an additional zero-argument constructor for classes with a specific annotation. The generated constructor is synthetic so it can’t be directly called from Java or Kotlin, but it can be called using reflection. You can see motivating discussion [here](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) .
+The **no-arg** compiler plugin generates an additional zero-argument constructor for classes with a specific annotation. The generated constructor is synthetic so it can’t be directly called from Java or Kotlin, but it can be called using reflection. You can see motivating discussion [here](https://discuss.kotlinlang.org/t/feature-request-a-modifier-annotation-for-data-classes-to-provide-a-non-arg-constructor-on-jvm/1549/4) .
 ### How to use no-arg in Gradle
 
 The usage is pretty similar to all-open.
@@ -184,7 +182,6 @@ apply plugin: "kotlin-noarg"
 noArg {
     annotation("com.your.Annotation")
 }
- 
 ```
 
 {% raw %}
@@ -223,7 +220,6 @@ noArg {
         </dependency>
     </dependencies>
 </plugin>
- 
 ```
 
 {% raw %}

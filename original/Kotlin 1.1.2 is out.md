@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-2-is-out/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the release of Kotlin 1.1.2, the second bugfix and tooling update for Kotlin 1.1. The update brings performance improvements to the compiler and the IntelliJ IDEA plugin, several new features in the tools, and lots of bugfixes in all areas. Kotlin 1.1.2 also brings compatibility with version 2.4.0-alpha of the Android Gradle plugin.
@@ -27,7 +29,7 @@ Using a declaration with a name consisting entirely of underscore characters now
 
 ## Maven Incremental Compilation
 
-Since Kotlin 1.1.2, incremental compilation which was previously available for IntelliJ IDEA and Gradle builds is now supported for Maven. To enable, set the <code>kotlin.compiler.incremental</code> property to true, using either the -D command line argument or the <code>properties</code> tag:
+Since Kotlin 1.1.2, incremental compilation which was previously available for IntelliJ IDEA and Gradle builds is now supported for Maven. To enable, set the `kotlin.compiler.incremental` property to true, using either the -D command line argument or the `properties` tag:
 
 {% raw %}
 <p></p>
@@ -37,7 +39,6 @@ Since Kotlin 1.1.2, incremental compilation which was previously available for I
 <properties>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 </properties>
- 
 ```
 
 {% raw %}
@@ -46,7 +47,7 @@ Since Kotlin 1.1.2, incremental compilation which was previously available for I
 
 ## Maven Annotation Processing
 
-Kotlin’s annotation processing tool, kapt, can now be invoked from Maven builds. Just add an execution of the <code>kapt</code> goal from kotlin-maven-plugin before <code>compile</code>:
+Kotlin’s annotation processing tool, kapt, can now be invoked from Maven builds. Just add an execution of the `kapt` goal from kotlin-maven-plugin before `compile`:
 
 {% raw %}
 <p></p>
@@ -73,7 +74,6 @@ Kotlin’s annotation processing tool, kapt, can now be invoked from Maven build
         </annotationProcessorPaths>
     </configuration>
 </execution>
- 
 ```
 
 {% raw %}
@@ -81,7 +81,7 @@ Kotlin’s annotation processing tool, kapt, can now be invoked from Maven build
 {% endraw %}
 
  [Here](https://github.com/JetBrains/kotlin-examples/blob/master/maven/dagger-maven-example/pom.xml)  is a complete example of the POM file with Java-Kotlin code support and tests.
-Please note that <code>kapt</code> is still not supported for IntelliJ IDEA’s own build system. Launch the build from the “Maven Projects” toolbar whenever you want to re-run the annotation processing.
+Please note that `kapt` is still not supported for IntelliJ IDEA’s own build system. Launch the build from the “Maven Projects” toolbar whenever you want to re-run the annotation processing.
 ## Inline Method Refactoring
 
 We’ve finally implemented the support for Inline Method (Function) in Kotlin code.

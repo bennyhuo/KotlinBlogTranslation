@@ -10,14 +10,16 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/12/kotlin-1-1-m04-is-here/
+translator:
+translator_url:
 ---
 
 We are glad to present you the fourth milestone of the upcoming Kotlin release. We’re wrapping up the development of the version 1.1, with the final release planned for Q1 2017. Most features are already in decent shape, so it is a good time to try it and give us your feedback. We will appreciate it a lot!
-As with other milestone releases, we give <b>no backwards compatibility guarantees</b> for new language and library features. Anything introduced in milestone releases of 1.1 is <b>subject to change </b>before the final 1.1 release.
+As with other milestone releases, we give **no backwards compatibility guarantees** for new language and library features. Anything introduced in milestone releases of 1.1 is **subject to change**before the final 1.1 release.
 Please do share your feedback regarding the new features or any problems that you may run into with this release, via [YouTrack](https://youtrack.jetbrains.com/issues/KT) , [forums](https://discuss.kotlinlang.org) and [Slack](http://kotlinlang.slack.com/) .
 This milestone brings a significant rework of coroutine syntax and semantics, making coroutines simpler and more flexible. It also contains standard library enhancements, new language features and compiler plugins, numerous features and improvement in the JS backend, and many other fixes and updates.<br/>
 
-The new release also includes all features introduced in the [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) , including updates for compatibility with <b>Android Studio 2.3 Beta 1</b>.
+The new release also includes all features introduced in the [Kotlin 1.0.6](https://discuss.kotlinlang.org/t/kotlin-1-0-6-eap/2117/10) , including updates for compatibility with **Android Studio 2.3 Beta 1**.
 The full changelog is available [here](https://github.com/JetBrains/kotlin/blob/1.1-M04/ChangeLog.md) and some key changes are listed below:<br/>
 <span id="more-4405"></span>
 ## Coroutines
@@ -30,7 +32,7 @@ We have significantly re-thought the coroutines design, making it simpler, compo
 * Suspending functions can be defined to wrap any callback-style API and can be freely used inside any asynchronous coroutine. The controllers are not needed anymore. The generate and yield pair, that builds synchronous sequences, restricts suspensions inside generate blocks using @RestrictsSuspension annotation.
 * Type inference for coroutines is now implemented. You can omit types in most use-cases for coroutine builders and the types will be inferred automatically.
 
-The classical <code>await</code> suspending function can now be implemented via a tail-call to the <code>suspendCoroutine</code> suspending function that is a part of the standard library:
+The classical `await` suspending function can now be implemented via a tail-call to the `suspendCoroutine` suspending function that is a part of the standard library:
 
 {% raw %}
 <p></p>
@@ -52,7 +54,7 @@ suspend fun <T> await(f: CompletableFuture<T>): T =
 <p></p>
 {% endraw %}
 
-The corresponding builder is called <code>async</code> and implemented via the <code>startCoroutine</code> function:
+The corresponding builder is called `async` and implemented via the `startCoroutine` function:
 
 {% raw %}
 <p></p>
@@ -99,13 +101,13 @@ async {
 {% endraw %}
 
 However, futures are just one of many supported use-cases for coroutines. The full overview of the coroutine implementation and their usage samples are available in the revised [KEEP document](https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md) .
-We think that now we have got a great design of coroutines for Kotlin, but we realize that it has not been battle-tested enough. Therefore we are going to release it in 1.1 under an opt-in incubation flag. Starting from this milestone you’ll get “This feature is experimental: coroutines” warning when using coroutines. You can turn off this warning with <code>-Xcoroutines=enable</code> compiler flag or disable this features with <code>-Xcoroutines=error</code> compiler flag. The corresponding setting is also available under Kotlin compiler settings in the IDEA. To set this option for a gradle project you can add <code>kotlin.coroutines=enable</code> or <code>kotlin.coroutines=error</code> to local.properties file at the root of project.
-If you are using [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) library please use updated version <code>0.2-alpha-1</code>, adapted to the newest changes in the coroutines design. This version also introduces <code>yieldAll</code> method in the generate scope. Please see the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) for further details.
+We think that now we have got a great design of coroutines for Kotlin, but we realize that it has not been battle-tested enough. Therefore we are going to release it in 1.1 under an opt-in incubation flag. Starting from this milestone you’ll get “This feature is experimental: coroutines” warning when using coroutines. You can turn off this warning with `-Xcoroutines=enable` compiler flag or disable this features with `-Xcoroutines=error` compiler flag. The corresponding setting is also available under Kotlin compiler settings in the IDEA. To set this option for a gradle project you can add `kotlin.coroutines=enable` or `kotlin.coroutines=error` to local.properties file at the root of project.
+If you are using [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines) library please use updated version `0.2-alpha-1`, adapted to the newest changes in the coroutines design. This version also introduces `yieldAll` method in the generate scope. Please see the [readme file](https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md) for further details.
 ## Language features
 
 ### Type for properties can be inferred from getter
 
-For example in the code below the type for the property <code>foo</code> will be inferred as <code>String</code>. See the issue [KT-550](https://youtrack.jetbrains.com/issue/KT-550) for some more details.
+For example in the code below the type for the property `foo` will be inferred as `String`. See the issue [KT-550](https://youtrack.jetbrains.com/issue/KT-550) for some more details.
 
 {% raw %}
 <p></p>
@@ -121,11 +123,11 @@ val foo get() = ""
 
 ### Floating point related features, fixes and improvements
 
-Floating point number comparisons now use IEEE 754 compliant comparison where the type is known statically to be <code>Double</code> or <code>Float</code>. For ranges of floating point numbers we’ve introduced specialized <code>ClosedFloatingPointRange</code> interface, which provides its own comparison method, so that extension operations employing ranges, like <code>coerceIn</code>, could be implemented on top of that. Its instances are obtained with the operator <code>..</code> invoked on two <code>Float</code> or <code>Double</code> values. See [KT-4481](https://youtrack.jetbrains.com/issue/KT-4481) and [KT-14651 for details.](https://youtrack.jetbrains.com/issue/KT-14651) <br/>
+Floating point number comparisons now use IEEE 754 compliant comparison where the type is known statically to be `Double` or `Float`. For ranges of floating point numbers we’ve introduced specialized `ClosedFloatingPointRange` interface, which provides its own comparison method, so that extension operations employing ranges, like `coerceIn`, could be implemented on top of that. Its instances are obtained with the operator `..` invoked on two `Float` or `Double` values. See [KT-4481](https://youtrack.jetbrains.com/issue/KT-4481) and [KT-14651 for details.](https://youtrack.jetbrains.com/issue/KT-14651) <br/>
 
 ### Interception of delegated property binding
 
-It is possible now to intercept delegate to property binding using the <code>provideDelegate</code> operator.<br/>
+It is possible now to intercept delegate to property binding using the `provideDelegate` operator.<br/>
 
 For example, if we want to check property name before binding, we can write something like this:
 
@@ -155,7 +157,7 @@ class MyUI {
 <p></p>
 {% endraw %}
 
-Here method <code>provideDelegate</code> will be called in constructor initializer for class <code>MyUI</code>. So, we can check property consistency at the moment of creation. Earlier such checks were only possible at the moment of calling getter or setter.
+Here method `provideDelegate` will be called in constructor initializer for class `MyUI`. So, we can check property consistency at the moment of creation. Earlier such checks were only possible at the moment of calling getter or setter.
 Unfortunately, the feature is not yet properly documented, but you can use [this draft document](https://github.com/orangy/KEEP/blob/fabb56360f2d7a293ac720cace89cd445da3c919/proposals/attach-to-property.md#createdelegate) as an initial reference.
 ### Enhanced nullability of some JDK methods
 
@@ -183,9 +185,9 @@ get returns a nullable value, as it can become null at any moment if the referen
 
 These enhancements are safe in most cases. In particular, they are safe when the enhanced type becomes more specific (non-nullable) in return position or more general (nullable) in parameter position. But when the type is changed in the opposite direction, the change will be breaking.<br/>
 
-We strive not to introduce such breaking enhancements unless not respecting the correct nullability would lead to an exception in runtime. So for example <code>Optional.of</code> now takes a non-nullable argument which is more restrictive, but trying to pass <code>null</code> to that method would result in an exception anyway.<br/>
+We strive not to introduce such breaking enhancements unless not respecting the correct nullability would lead to an exception in runtime. So for example `Optional.of` now takes a non-nullable argument which is more restrictive, but trying to pass `null` to that method would result in an exception anyway.<br/>
 
-On the other hand, we decided not to specify the correct nullability for <code>File.listFiles</code> which actually can return null sometimes, because in most cases there’s no meaningful fallback other than to throw another exception.
+On the other hand, we decided not to specify the correct nullability for `File.listFiles` which actually can return null sometimes, because in most cases there’s no meaningful fallback other than to throw another exception.
 ### Other changes
 
 
@@ -198,26 +200,26 @@ On the other hand, we decided not to specify the correct nullability for <code>F
 
 ### String to number conversions
 
-There is a bunch of new extensions on the <code>String</code> class to convert it to a number without throwing an exception on invalid number: <code>String.toIntOrNull(): Int?</code>, <code>String.toDoubleOrNull(): Double?</code> etc.<br/>
+There is a bunch of new extensions on the `String` class to convert it to a number without throwing an exception on invalid number: `String.toIntOrNull(): Int?`, `String.toDoubleOrNull(): Double?` etc.<br/>
 
 Beware that these functions will box resulting numbers before returning them, as the return type assumes it.
-Also integer conversion functions, like <code>Int.toString()</code>, <code>String.toInt()</code>, <code>String.toIntOrNull()</code>, each got an overload with <code>radix</code> parameter, which allows to specify the base of conversion.
+Also integer conversion functions, like `Int.toString()`, `String.toInt()`, `String.toIntOrNull()`, each got an overload with `radix` parameter, which allows to specify the base of conversion.
 We would like to thank [Daniil Vodopian](https://github.com/voddan) for his substantial contribution to the development of these functions.
 ### onEach
 
-<code>onEach</code> is a small, but useful extension function for collections and sequences, which allows to perform some action, possibly with side-effects, on each element of the collection/sequence in a chain of operations.<br/>
+`onEach` is a small, but useful extension function for collections and sequences, which allows to perform some action, possibly with side-effects, on each element of the collection/sequence in a chain of operations.<br/>
 
-On iterables it behaves like <code>forEach</code> but also returns the iterable instance further. And on sequences it returns a wrapping sequence, which applies the given action lazily as the elements are being iterated.
+On iterables it behaves like `forEach` but also returns the iterable instance further. And on sequences it returns a wrapping sequence, which applies the given action lazily as the elements are being iterated.
 Thanks to [Christian Brüggemann](https://github.com/cbruegg) for the initial prototype.
 ## JavaScript backend
 
-### <code>external</code> instead of <code>@native</code>
+### `external` instead of `@native`
 
-From this milestone <code>@native</code> annotation becomes deprecated and instead you have to use <code>external</code> modifier.<br/>
+From this milestone `@native` annotation becomes deprecated and instead you have to use `external` modifier.<br/>
 
-Unlike the JVM target, the JS one permits to use <code>external</code> modifier with classes and properties.<br/>
+Unlike the JVM target, the JS one permits to use `external` modifier with classes and properties.<br/>
 
-Note, that you don’t need to mark members of <code>external</code> classes as <code>external</code>: this modifier<br/>
+Note, that you don’t need to mark members of `external` classes as `external`: this modifier<br/>
 
 is automatically inherited by the members. So, instead of
 
@@ -251,9 +253,9 @@ external fun alert(message: Any?)
 
 You can now describe declarations which should be imported from JavaScript modules more precisely.<br/>
 
-If you add <code>@JsModule("&lt;module-name&gt;")</code> annotation on an external declaration it will be properly imported to a module system (either CommonJS or AMD) during the compilation. For example, with CommonJS the declaration will be imported via <code>require(...)</code> function.<br/>
+If you add `@JsModule("&lt;module-name&gt;")` annotation on an external declaration it will be properly imported to a module system (either CommonJS or AMD) during the compilation. For example, with CommonJS the declaration will be imported via `require(...)` function.<br/>
 
-Additionally, if you want to import a declaration either as a module or as a global JavaScript object, you can use <code>@JsNonModule</code> annotation
+Additionally, if you want to import a declaration either as a module or as a global JavaScript object, you can use `@JsNonModule` annotation
 Let’s see the full example below. You can import jQuery library to a Kotlin source file like this:
 
 {% raw %}
@@ -279,7 +281,7 @@ external fun JQuery(selector: String): JQuery
 <p></p>
 {% endraw %}
 
-In this case, JQuery will be imported as a module named <code>jquery</code> and alternatively, it can be used as a <code>$</code>-object, depending on what module system Kotlin compiler is configured to use.
+In this case, JQuery will be imported as a module named `jquery` and alternatively, it can be used as a `$`-object, depending on what module system Kotlin compiler is configured to use.
 You can use these declarations in your application like this:
 
 {% raw %}
@@ -301,8 +303,8 @@ fun main(args: Array<String>) {
 You can check the generated JS code for this snippet for the CommonJS and “plain” module systems [here](https://gist.github.com/ligee/50d30ad9bca5ea925ff7d913ff232004) .
 ## How to Try It
 
-<b>In Maven/Gradle:</b> Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M04 as the version number for the compiler and the standard library.
-<b>In IntelliJ IDEA:</b> Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
-The <strong>command-line compiler</strong> can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) .
-<b>On <a href="http://try.kotlinlang.org">try.kotlinlang.org</a></b>. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M04.
+**In Maven/Gradle:** Add [http://dl.bintray.com/kotlin/kotlin-eap-1.1](http://dl.bintray.com/kotlin/kotlin-eap-1.1) as a repository for the build script and your projects; use 1.1-M04 as the version number for the compiler and the standard library.
+**In IntelliJ IDEA:** Go to <i>Tools → Kotlin → Configure Kotlin Plugin Updates</i>, then select “Early Access Preview 1.1” in the <i>Update channel</i> drop-down list, then press <i>Check for updates</i>.
+The **command-line compiler** can be downloaded from the [Github release page](https://github.com/JetBrains/kotlin/releases/tag/v1.1-M04) .
+**On <a href="http://try.kotlinlang.org">try.kotlinlang.org</a>**. Use the drop-down list at the bottom-right corner to change the compiler version to 1.1-M04.
 Merry Kotlin!

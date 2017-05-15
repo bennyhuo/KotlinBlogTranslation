@@ -10,9 +10,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/kotlin-m5-is-out/
+translator:
+translator_url:
 ---
 
-In two weeks from now it will be one year since Kotlin started out as an open source project. It’s been a lot of hard work over this time, with a huge help of the community: we received [164 pull requests](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) , which means a contribution every other day or so. Today we make another step and roll out <strong>Kotlin M5</strong>. This blog post covers the changes introduced in this release.<span id="more-835"></span>
+In two weeks from now it will be one year since Kotlin started out as an open source project. It’s been a lot of hard work over this time, with a huge help of the community: we received [164 pull requests](https://github.com/jetbrains/kotlin/pulls?page=1&sort=created&state=closed) , which means a contribution every other day or so. Today we make another step and roll out **Kotlin M5**. This blog post covers the changes introduced in this release.<span id="more-835"></span>
 # Overview
 
 M5 was a short milestone (you should subtract the New Year’s break from its term), but we got rid of [144 issues](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-12-11+..+2013-02-04) in the tracker.
@@ -28,10 +30,10 @@ Some of the changes are not so humble and may require you to fix the existing co
 
 In the older versions of Kotlin every package that had top-level functions or properties declared was compiled to a class named “namespace”, where the top-level declarations were represented by static methods. When you used more than one of these “namespace” classes in Java, you ran into a name clash: you can not import two classes with the same name into the same compilation unit. With Kotlin M5 package [classes are named after respective packages](http://confluence.jetbrains.com/display/Kotlin/Java+interoperability#Javainteroperability-Packagelevelfunctions) , which gives them different names and fixes this problem.
 The naming convention works as follows: package “org.example” gets a class “org.example.ExamplePackage”. I.e., we take the simple name of the package, capitalize it, append “Package” and put that class into the package itself. So far it works pretty well.
-NOTE: your older versions of <strong>kotlin-runtime.jar</strong> will not work any more because of this change. The compiler will complain about an “incompatible ABI version”, and the IDE will propose to replace the old runtime jar with a new one.
+NOTE: your older versions of **kotlin-runtime.jar** will not work any more because of this change. The compiler will complain about an “incompatible ABI version”, and the IDE will propose to replace the old runtime jar with a new one.
 # Inner Classes
 
-An <em>inner class </em>is a non-static nested class, i.e. it holds a reference to an instance of its outer. In Java nested classes are inner by default, and if you don’t want a reference to the outer, you make your class <strong>static</strong>. Sometimes it leads to memory leaks, when someone is holding a reference to an instance of an inner class without knowing that it also holds an outer instance.
+An *inner class*is a non-static nested class, i.e. it holds a reference to an instance of its outer. In Java nested classes are inner by default, and if you don’t want a reference to the outer, you make your class **static**. Sometimes it leads to memory leaks, when someone is holding a reference to an instance of an inner class without knowing that it also holds an outer instance.
 Since M5, Kotlin wants you to [mark inner classes explicitly](http://confluence.jetbrains.com/display/Kotlin/Nested+classes) , and nested classes are “static” by default. This may break your existing code, and in the IDE there’s a handy quick-fix to the rescue (just press Alt+Enter on the error).
 
 {% raw %}
@@ -41,7 +43,7 @@ Since M5, Kotlin wants you to [mark inner classes explicitly](http://confluence.
 # Java Generics and Nullability
 
 Generics are tricky, and their combination with nullable types is trickier still. In Java everything is nullable, for example, consider a Java method foo(ArrayList<String>), Kotlin (before M5) used to see it as ArrayList<String?>?, i.e. the collection may be null, and its elements may be null too. This is the safest thing we can do, but it proved to be very inconvenient: if you have an ArrayList<String> in Kotlin, you can’t pass it to foo(): ArrayList is invariant in its generic parameter and thus ArrayList<String> is not a subtype of ArrayList<String?>. This causes a lot of pain, even when KAnnotator is used.
-So we decided to change the default strategy for <em>generic argument types</em>, and load ArrayList<String>? in the case above.
+So we decided to change the default strategy for *generic argument types*, and load ArrayList<String>? in the case above.
 This change may break some of the existing code. Most of it is straightforwardly fixable by removing unneeded question marks. If you want the old type, you can [add an external annotation](http://blog.jetbrains.com/kotlin/using-external-annotations/) to your Java definition.
 But what about safety? Now Java code may fool you by giving you a collection of nulls instead of strings, and your Kotlin code will fail. This may happen, but we make it fail helpfully: Kotlin checks data received from Java and fails early and with a detailed error message like this:
 
@@ -141,8 +143,8 @@ class Bean(val data: Integer = 0)
 <p></p>
 {% endraw %}
 
-Now, constructors are even more convenient: in the generated byte code this class will get a <em>default constructor</em>, i.e. the one that takes no arguments (uses the default values for them). This case comes up a lot when using Java frameworks like JAXB, so now Kotlin is even more Java-friendly.
+Now, constructors are even more convenient: in the generated byte code this class will get a *default constructor*, i.e. the one that takes no arguments (uses the default values for them). This case comes up a lot when using Java frameworks like JAXB, so now Kotlin is even more Java-friendly.
 # Conclusion
 
 You can download Kotlin M5 from the [plugin repository](http://plugins.jetbrains.com/plugin?pr=idea&pluginId=6954) . It requires [IntelliJ IDEA 12](http://www.jetbrains.com/idea/) (using recently released 12.0.3 is recommended).
-<strong>Have a nice Kolin!</strong>
+**Have a nice Kolin!**

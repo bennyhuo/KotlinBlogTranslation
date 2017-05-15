@@ -10,12 +10,14 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2013/02/surround-with-comes-to-kotlin/
+translator:
+translator_url:
 ---
 
 Great news for fans of Intellij IDEA: “Surroud with…” action is now available for Kotlin!
 ## What is the “Surround with…” action?
 
-<strong></strong>This action allows you to surround a block of code with <em>if</em>, <em>try</em> or other statements (see [the full list](#full_list) bellow). Simply select a block of code, press <em>Ctrl + Alt + T</em> and choose the template (<em>Cmd + Alt + T</em> for Mac):<span id="more-868"></span>
+****This action allows you to surround a block of code with *if*, *try* or other statements (see [the full list](#full_list) bellow). Simply select a block of code, press *Ctrl + Alt + T* and choose the template (*Cmd + Alt + T* for Mac):<span id="more-868"></span>
 
 {% raw %}
 <p><img alt="" data-recalc-dims="1" src="https://i0.wp.com/www.evernote.com/shard/s119/sh/30b15c39-ad04-4960-a4ac-63a0c44b7798/15300fa96a0fb6466f48c2abdd2f5f8b/deep/0/surroundwith1.jpg?w=640&amp;ssl=1"/></p>
@@ -59,7 +61,7 @@ Use this template if you want to “hide” some variables in the scope of the b
 
 ## When template
 
-You don’t need to write <em>when </em>expression by hand any more: you can simply select a subject expression, choose “surround with <em>when(expr) {}</em>” and the result will be:
+You don’t need to write *when*expression by hand any more: you can simply select a subject expression, choose “surround with *when(expr) {}*” and the result will be:
 
 {% raw %}
 <p><img alt="" data-recalc-dims="1" src="https://i2.wp.com/www.evernote.com/shard/s119/sh/08db9fde-304e-4226-a261-0a8d6724ebc1/7d45417b3110edfb4091e8dcc03b97c9/deep/0/surroundwith6.jpg?w=640&amp;ssl=1"/></p>

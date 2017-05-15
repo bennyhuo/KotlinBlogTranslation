@@ -10,6 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2012/10/dogfooding-kotlin-and-m3-1/
+translator:
+translator_url:
 ---
 
 After releasing [Kotlin M3](http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/) , we immediately started [dogfooding](http://en.wikipedia.org/wiki/Eating_your_own_dog_food) Kotlin. Working on [KAnnotator](https://github.com/abreslav/kannotator) — a static analysis tool that will automatically infer nullability annotations for libraries — helps us tremendously at prioritizing issues. As a result, we roll out a bugfix update: [Kotlin M3.1](http://plugins.intellij.net/plugin?pr=idea&pluginId=6954) ( [list of closed issues](http://youtrack.jetbrains.com/issues/KT?q=resolved+date%3A+2012-09-12+..+2012-10-10) ). We recommend to run it with the latest [IntelliJ IDEA 12 EAP](http://confluence.jetbrains.com/display/IDEADEV/IDEA+12+EAP) .

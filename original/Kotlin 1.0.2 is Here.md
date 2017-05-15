@@ -10,16 +10,18 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/
+translator:
+translator_url:
 ---
 
 We’re happy to announce the release of Kotlin 1.0.2, the second bugfix and tooling update for Kotlin. In addition to compiler and language bugfixes, Kotlin 1.0.2 adds a number of major features to the IDE and the build tools.
 ### Incremental Compilation in Gradle and the IDE
 
-The new release continues our work on Kotlin incremental compilation support, speeding up the turnaround time during development. Incremental compilation in the IDE (which was previously marked as experimental) is now enabled by default. Also, the long-awaited support for <b>incremental compilation in Gradle builds</b> is now there.
-To enable incremental compilation for Gradle, you need to set the <b>kotlin.incremental</b> property to true (for example, by adding the line <code>kotlin.incremental=true</code> to the <code>gradle.properties</code> file in the root directory of your project).
+The new release continues our work on Kotlin incremental compilation support, speeding up the turnaround time during development. Incremental compilation in the IDE (which was previously marked as experimental) is now enabled by default. Also, the long-awaited support for **incremental compilation in Gradle builds** is now there.
+To enable incremental compilation for Gradle, you need to set the **kotlin.incremental** property to true (for example, by adding the line `kotlin.incremental=true` to the `gradle.properties` file in the root directory of your project).
 ### Android Lint Checks
 
-Kotlin 1.0.2 introduces support for <b>Android Lint checks</b> for Kotlin code, ensuring that issues like using the API not available in the Android version you’re targeting are correctly detected.
+Kotlin 1.0.2 introduces support for **Android Lint checks** for Kotlin code, ensuring that issues like using the API not available in the Android version you’re targeting are correctly detected.
 
 {% raw %}
 <p><span id="more-3865"></span></p>

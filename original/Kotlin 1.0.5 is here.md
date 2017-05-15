@@ -10,14 +10,16 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2016/11/kotlin-1-0-5-is-here/
+translator:
+translator_url:
 ---
 
-We’re happy to announce that we’ve just released <b>Kotlin 1.0.5</b>, which continues the series of bugfix and tooling updates for Kotlin 1.0.
+We’re happy to announce that we’ve just released **Kotlin 1.0.5**, which continues the series of bugfix and tooling updates for Kotlin 1.0.
 We’d like to thank our external contributors whose pull requests were included in this release: [Kirill Rakhman](https://github.com/cypressious) , [Vladislav Golub](https://github.com/ensirius) , [Vsevolod Tolstopyatov](https://github.com/qwwdfsad) , [Yoshinori Isogai](https://github.com/shiraji) , [takahirom](https://github.com/takahirom) and [gitreelike](https://github.com/gitreelike) . Thanks to everyone who tried the EAP builds and sent us feedback, too!
 The complete list of changes in the release can be found in the [changelog](https://github.com/JetBrains/kotlin/blob/1.0.5/ChangeLog.md) . Some of the changes worth highlighting are:
 ### Loop to Lambda Conversion
 
-The IntelliJ IDEA plugin can now detect many cases where imperative <code>for</code> loops can be rewritten in a more compact and idiomatic manner using standard library functions such as <code>filter</code> and <code>map</code>. As a simple example, the following snippet:
+The IntelliJ IDEA plugin can now detect many cases where imperative `for` loops can be rewritten in a more compact and idiomatic manner using standard library functions such as `filter` and `map`. As a simple example, the following snippet:
 
 {% raw %}
 <p></p>
@@ -30,7 +32,6 @@ for (s in list) {
         result.add(s)
     }
 }
- 
 ```
 
 {% raw %}
@@ -45,14 +46,13 @@ for (s in list) {
 
 ```kotlin
 val result = list.filter { it.isNotEmpty() }
- 
 ```
 
 {% raw %}
 <p></p>
 {% endraw %}
 
-To trigger the conversion, put the caret on the <code>for</code> keyword and press <kbd>Alt-Enter</kbd>.<br/>
+To trigger the conversion, put the caret on the `for` keyword and press <kbd>Alt-Enter</kbd>.<br/>
 <span id="more-4350"></span>
 ### Postfix Code Completion
 
