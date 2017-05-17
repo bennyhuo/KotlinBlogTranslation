@@ -23,6 +23,9 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 | 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址                                     |
 | ---------------------------------------- | ------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+|[Kotlin on Android. Now official](original/Kotlin%20on%20Android.%20Now%20official.md) |2017-05-17 22:33:00| [译文](translated/Kotlin%20on%20Android.%20Now%20official.md)| |
+|[New Style for User Groups](original/New%20Style%20for%20User%20Groups.md) |2017-05-16 17:52:00| [译文](translated/New%20Style%20for%20User%20Groups.md)| |
+[Kotlin_Native v0.2 is out](original/Kotlin_Native%20v0.2%20is%20out.md) |2017-05-12 11:08:00| [译文](translated/Kotlin_Native%20v0.2%20is%20out.md)| |
 | [Kotlin 1.1.2 is out](original/Kotlin%201.1.2%20is%20out.md) | 2017-04-25 21:19:00 | [译文](translated/Kotlin%201.1.2%20is%20out.md) | [SnakEys](https://github.com/SnakeEys)   | [[译]Kotlin 1.1.2 is out](https://www.kotliner.cn/2017/04/25/Kotlin%201.1.2%20is%20out/) |
 | [Use Kotlin with npm, webpack and react](original/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | 2017-04-18 15:23:00 | [译文](translated/Use%20Kotlin%20with%20npm%2C%20webpack%20and%20react.md) | [Liu PeiPei](https://github.com/lsanotes) | [[译]Use Kotlin with npm, webpack and react](https://www.kotliner.cn/2017/04/18/Use%20Kotlin%20with%20npm,%20webpack%20and%20react/) |
 | [Kotlin 1.1 Event Report](original/Kotlin%201.1%20Event%20Report.md) | 2017-04-06 23:21:00 | [译文](translated/Kotlin%201.1%20Event%20Report.md) | [Liu PeiPei](https://github.com/lsanotes) | [[译]Kotlin 1.1 Event Report](https://www.kotliner.cn/2017/04/06/Kotlin%201.1%20Event%20Report/) |

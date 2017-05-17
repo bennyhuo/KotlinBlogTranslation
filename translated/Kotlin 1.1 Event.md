@@ -54,4 +54,4 @@ Kotlin 1.1除了为您的项目带来新特性之外，还是您与当地社区�
 * 将结果进行拍照;
 * 使用#kotlinevent标签在Twitter上发布
 
-[告诉我们](https://docs.google.com/forms/d/e/1FAIpQLSf6iXcrIpaNIqeeUJI2L6pntS5yy_iI01PbrO9gTMmX0kg5Lw/viewform) 
+[在这里提交你的答案吧](https://docs.google.com/forms/d/e/1FAIpQLSf6iXcrIpaNIqeeUJI2L6pntS5yy_iI01PbrO9gTMmX0kg5Lw/viewform) 
