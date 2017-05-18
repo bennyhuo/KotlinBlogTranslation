@@ -43,7 +43,7 @@ source_url: https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-offi
 Kotlin的目标之一是成为跨平台使用的语言，并且一直如此。我们将继续支持并积极开发Kotlin/JVM（服务器端，桌面和其他类型的应用程序）和Kotlin/JS。目前我们也正在努力为其它平台——如macOS, iOS以及IoT/嵌入式系统——开发Kotlin/Native。
 ### 对Kotlin的发布周期有何影响？
 
-Kotlin将继续对Android或Android Studio进行独立发布。项目保持完全独立。显然，产品团队将密切合作，以确保Kotlin在Android Studio中始终正常运行。
+Kotlin将继续对Android或Android Studio进行独立发布。项目保持完全独立。很显然，双方产品团队将会有更多密切合作，以确保Kotlin在Android Studio中始终正常运行。
 ### Android Studio插件开发？
 
 Android Studio插件由JetBrains继续开发，但会与Android Studio团队保持紧密合作。
@@ -51,7 +51,7 @@ Android Studio插件由JetBrains继续开发，但会与Android Studio团队保�
 
 不会，Kotlin仍然是针对多个平台的语言，并且将继续提供对其他IDE的支持。显然，IntelliJ IDEA将重点关注对其它社区的贡献。
 ### 是否影响对macOS还是iOS的支持？
-不，我们还有计划用Kotlin/Native支持这两个系统，在这方面没有任何改变。
+不，我们仍然计划用Kotlin/Native支持这两个系统，在这方面没有任何改变。
 ### JetBrains会被Google收购吗？
 
 JetBrains没有计划被任何公司收购。JetBrains一真以来都是面向开发人员的独立IDE供应商，无论他们选择的平台或语言如何。
