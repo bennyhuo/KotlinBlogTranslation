@@ -7,52 +7,55 @@ keywords:
 categories: 官方动态
 reward: false
 reward_title: Have a nice Kotlin!
-reward_wechat:
-reward_alipay:
-translator:
-translator_url:
-source_url: https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/
+reward_wechat:  
+reward_alipay:  
+translator:SnakeEys  
+translator_url:https://github.com/SnakeEys  
+source_url: https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/  
+
 ---
 
-[?25l[?25h今天，在Google I / O主旨演讲中，Android团队宣布为Kotlin提供一流的支持。我们认为这是Kotlin的一大进步，也是Android开发人员以及其他社区的绝佳消息。我们对这个开放的机会感到非常兴奋。
-对于Android开发人员，Kotlin的支持是一个使用现代和强大的语言的机会，有助于解决常见的头痛，如运行时异常和源代码冗长。科特林很容易开始，可以逐渐引入现有项目，这意味着您现有的技能和技术投资得以保留。
+今天，在Google I/O大会上，Android团队宣布Kotlin成为Android一级支持语言。我们相信这是Kotlin取得的又一大进步，对于Android开发人员以及其他社区来说，这是一个无比令人兴奋的绝佳消息。我们同样对这个开放的机会深感愉悦。
+
+对于Android开发人员而言，Kotlin的支持是一个使用现代和强大的语言的机会，它有助于解决常见而又令人头痛的问题，例如运行时异常，以及冗长的源代码。Kotlin易于上手，随时可以引入现有项目中，然后逐步采用，这意味着您现有的技能仍然不会落伍。
 
 {% raw %}
 <p><img alt="Kotlin for Android" class="aligncenter size-full wp-image-5015" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/05/android_kotlin.png"/><br/>
 <span id="more-5010"></span></p>
 {% endraw %}
 
-从现在开始，Android Studio 3.0随附了Kotlin，意味着Android开发人员不再需要安装任何附加功能或担心兼容性。这也意味着向前迈进，您可以放心，JetBrains和Google都将支持Kotlin的Android开发。
-如果您关心Kotlin支持的其他平台（Kotlin / JVM的服务器和桌面，Kotlin / JS和Kotlin / Native），请确保它们与以往一样重要。我们的愿景是使Kotlin成为使用相同语言跨越多个平台的各种应用程序的端到端开发的统一工具。这包括全栈Web应用程序，Android和iOS客户端，嵌入式/ IoT等等。
-编程语言就像人类一样：语言越多，越好。 Android上的一流支持可能会为Kotlin带来更多用户，我们期望社区大幅增长。这意味着在Kotlin开发的更多的图书馆和工具，更多的经验分享，更多的Kotlin工作机会，更多的学习资料出版等等。我们很高兴看到科特林生态系统蓬勃发展！null
-[?25h
-[?25l[?25h我们将与Google合作，为科特林创造一个非营利基金会。语言发展将继续由JetBrains赞助，Kotlin团队（40多人和公司第二大团队）将照常运作。安德烈·布雷斯拉夫仍然是领先的语言设计师，科特林将按照与以前相同的原则开发。我们将继续保持我们的设计流程，因为您的反馈对于我们将Kotlin推向正确的方向至关重要。
-如果您在Google I / O，请确保您停止了其中一个 [科特林会谈时间表](https://events.google.com/io/schedule/?section=may-17&gclid=CLuaj9GZ7NMCFY0V0wodvVgI7Q) 。当然，别忘了注册 [KotlinConf](https://kotlinconf.com)  在11月的旧金山。这将是一个惊人的事件！
+从现在开始，Android Studio 3.0默认包含Kotlin插件，Android开发人员不再需要安装任何附加功能插件，或者担心兼容性的问题了。您可以放心，JetBrains和Google都将支持Kotlin的Android开发。  
+
+如果您关心Kotlin支持的其他平台（Kotlin/JVM的服务器和桌面，Kotlin/JS和Kotlin/Native），请继续保持关注。我们的愿景是使Kotlin成为使用相同语言跨平台的各种应用程序端到端开发的统一工具。这包括全栈Web应用程序，Android和iOS客户端，嵌入式/IoT等。  
+
+编程语言就像人类语言一样：使用的人越多越好。 Android使用Kotlin为一级语言可能会为Kotlin带来更多用户，我们也期望社区能够逐渐壮大。这意味着会有更多使用Kotlin开发的库和工具，更多的经验分享，更多的Kotlin工作机会，更多的学习资料出版等等。我们很高兴看到Kotlin社区生态的蓬勃发展！  
+
+我们将与Google合作，为Kotlin创造一个非营利基金会。语言发展将继续由JetBrains赞助，Kotlin团队（40多人，公司第二大团队）将照常运作。Andrey·Breslav仍然是首席语言设计师，Kotlin仍以之前的准则进行开发。您的反馈对于我们将Kotlin推向正确的方向至关重要，所以设计流程仍然保持开放。  
+
+如果您在Google I/O现场，希望您不要错过[Kotlin演讲的日程表](https://events.google.com/io/schedule/?section=may-17&gclid=CLuaj9GZ7NMCFY0V0wodvVgI7Q)。当然，也别忘了11月在旧金山举行的[KotlinConf](https://kotlinconf.com)，绝对精彩！
 ## 十分感谢你！
 
-6年前，当我们与Kotlin开始旅程时，我们的目的是创建符合驱动我们工具的相同原则的语言 - 创造一些帮助开发人员繁琐和平凡的任务，让他们专注于什么真的很重要当然，尽可能让这个过程愉快愉快。
-我们要感谢Google和Android团队对Kotlin的信任，但首先，我们要感谢您，我们的社区，我们的用户。没有你，科特林不会是今天的地方。感谢您在此次旅途中陪伴我们，我们希望您能加入我们，前进的激动人心的道路。
-## 经常问的问题
+6年前，当我们开始Kotlin的旅程时，意图创建符合驱动我们工具的相同原则的语言——帮助开发人员解决繁琐乏味的任务，让他们专注于真正重要的事情，当然，要尽可能让这个过程愉快。  
 
-我们已经准备好了关于本公告可能遇到的一系列问题的答案。如果您的问题不包括在内，请随时向我们发表评论。如果您是Kotlin的新人，请确保您退房了 [网站上的常见问题](https://kotlinlang.org/docs/reference/faq.html)  在那里您可以了解有关基础知识的更多信息。
-### 科特林将会主要关注Android吗？null
-[?25h
+我们要感谢Google和Android团队对Kotlin的信任，但首先，我们要感谢您，我们的社区，我们的用户。没有你，Kotlin不会有今天的成就。感谢您在此次旅途中的陪伴，我们希望能够与您一起继续在这条激动人心的道路上前进。
+## 常见问题
 
-[?25l[?25h科特林的目标之一是成为一种可以在多个平台上使用的语言，这将永远是这样。我们将继续支持并积极开发Kotlin / JVM（服务器端，桌面和其他类型的应用程序）和Kotlin / JS。我们正在为Kotlin / Native开发其他平台，如macOS，iOS和IoT /嵌入式系统。
-### 这对Kotlin的发布周期有何影响？
+我们已经准备好了关于本公告可能遇到的一系列问题的答案。如果您的问题未被提及，可以随时在评论中提问。如果您之前并未接触过Kotlin，可以在[FAQ](https://kotlinlang.org/docs/reference/faq.html)了解相关基础内容。
+### Kotlin将会以Android为主要目标吗？
+Kotlin的目标之一是成为跨平台使用的语言，并且一直如此。我们将继续支持并积极开发Kotlin/JVM（服务器端，桌面和其他类型的应用程序）和Kotlin/JS。目前我们也正在努力为其它平台——如macOS, iOS以及IoT/嵌入式系统——开发Kotlin/Native。
+### 对Kotlin的发布周期有何影响？
 
-Kotlin将继续拥有与Android或Android Studio独立的发布周期。项目保持完全独立。显然，产品团队将密切合作，以确保Kotlin在Android Studio中始终正常运行。
+Kotlin将继续对Android或Android Studio进行独立发布。项目保持完全独立。显然，产品团队将密切合作，以确保Kotlin在Android Studio中始终正常运行。
 ### 谁将在Android Studio插件上工作？
 
 JetBrains将继续在Android Studio插件上工作，与Android Studio团队紧密合作。
-### 这会影响IntelliJ IDEA，Eclipse还是Netbeans的支持？
+### 是否影响IntelliJ IDEA，Eclipse或者Netbeans的支持？
 
-不，科特林继续是针对多个平台的语言，并且将继续提供对其他IDE的支持。显然，IntelliJ IDEA将重点关注其他社区对社区的贡献。
+不会，Kotlin仍然是针对多个平台的语言，并且将继续提供对其他IDE的支持。显然，IntelliJ IDEA将重点关注其它对社区的贡献。
 ### 这会影响对macOS还是iOS的支持？
+不，我们还有计划用Kotlin/Native支持这两个系统，在这方面没有任何改变。
+### JetBrains会被Google收购吗？
 
-不，我们还有计划用Kotlin / Native支持这两个系统，在这方面没有任何改变。
-### JetBrains将被Google收购吗？
+JetBrains没有计划被任何公司收购。JetBrains是并且继续是一个独立的IDE供应商，面向开发人员，无论他们选择的平台或语言如何。
 
-JetBrains没有计划被任何公司收购。 JetBrains是并且继续是一个独立的工具供应商，面向开发人员，无论他们选择的平台或语言如何。
-Maxim Shafirov </ em>null
-[?25h
+<em>Maxim Shafirov</em>
