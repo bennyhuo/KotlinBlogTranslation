@@ -50,7 +50,7 @@ Android Studio插件由JetBrains继续开发，但会与Android Studio团队保�
 ### 是否影响对IntelliJ IDEA，Eclipse或者Netbeans的支持？
 
 不会，Kotlin仍然是针对多个平台的语言，并且将继续提供对其他IDE的支持。显然，IntelliJ IDEA将重点关注对其它社区的贡献。
-### 是否影响对macOS还是iOS的支持？
+### 是否影响对macOS或者iOS的支持？
 不，我们仍然计划用Kotlin/Native支持这两个系统，在这方面没有任何改变。
 ### JetBrains会被Google收购吗？
 
