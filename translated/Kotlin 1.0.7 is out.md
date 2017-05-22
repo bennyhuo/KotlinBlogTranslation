@@ -10,8 +10,8 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/03/kotlin-1-0-7-is-out/
-translator:
-translator_url:
+translator: pye52
+translator_url: https://github.com/pye52
 ---
 
 我们很高兴地宣布Kotlin 1.0.x系列的最后一个更新，Kotlin 1.0.7已经发布了。需要重点关注的是该补丁针对Gradle和annotation processing进行修复，此前无法升级到1.1版本的用户现在可以正常使用了。完整的修复列表可以在[更新日志](https://github.com/JetBrains/kotlin/blob/1.0.7/ChangeLog.md)查看。
