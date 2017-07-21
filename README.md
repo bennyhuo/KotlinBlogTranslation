@@ -23,6 +23,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 | 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址                                     |
 | -------------------------------- | ------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------- |
+| [KotlinConf – Speaker List Announced](original/KotlinConf%20-%20Speaker%20List%20Announced.md)| 2017-07-17 07:53:00 | [译文](translated/KotlinConf%20-%20Speaker%20List%20Announced.md) | | |
 | [Early access program for Kotlin 1.2 has been started](original/Early%20access%20program%20for%20Kotlin%201.2%20has%20been%20started.md) | 2017-06-27 14:45:00 | [译文](translated/Early%20access%20program%20for%20Kotlin%201.2%20has%20been%20started.md) | | |
 | [Kotlin 1.1.3 is out](original/Kotlin%201.1.3%20is%20out.md) | 2017-06-23 13:19:00 | [译文](translated/Kotlin%201.1.3%20is%20out.md) | | |
 | [Kotlin Native v0.3 is out](original/Kotlin%20Native%20v0.3%20is%20out.md) | 2017-06-22 13:41:00 | [译文](translated/Kotlin%20Native%20v0.3%20is%20out.md) | | |
