@@ -7,7 +7,7 @@ tags:
 categories:  官方动态
 ---
 
-Kotlin/Native 0.3发布啦！此次发布包括支持Windows同时作为编译主机与运行平台，同时也支持Google Android设备运行native activities。因此在Windows上编写['Hello World'](https://github.com/JetBrains/kotlin-native/tree/master/samples/win32)看上去非常轻松：
+Kotlin/Native 0.3发布啦！此次升级包括支持Windows同时作为编译主机与运行平台，同时也增加了对Google Android设备运行native activities的支持。因此在Windows平台编写['Hello World'](https://github.com/JetBrains/kotlin-native/tree/master/samples/win32)看起来会像下面一样简单：
 
 {% raw %}
 <p></p>
