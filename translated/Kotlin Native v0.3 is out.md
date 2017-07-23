@@ -1,7 +1,9 @@
 ---
 title: Kotlin/Native v0.3 is out
 author: Nikolay Igotti
-date: 2017-06-22 20:41:00
+date: 2017-06-22 20:41:00  
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys
 source_url: https://blog.jetbrains.com/kotlin/2017/06/kotlinnative-v0-3-is-out/
 tags: 
 categories:  官方动态
