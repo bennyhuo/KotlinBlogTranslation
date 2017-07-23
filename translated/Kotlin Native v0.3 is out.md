@@ -7,7 +7,7 @@ tags:
 categories:  官方动态
 ---
 
-我们很高兴地宣布发布Kotlin / Native v0.3。我们要去新的土地！随着版本v0.3的发布，Windows作为编译主机和执行目标以及Google Android设备作为本机活动的执行目标都被支持。所以Windows API“埃洛世界”可能看起来很容易：
+Kotlin/Native 0.3发布啦！此次升级包括支持Windows同时作为编译主机与运行平台，同时也增加了对Google Android设备运行native activities的支持。因此在Windows平台编写['Hello World'](https://github.com/JetBrains/kotlin-native/tree/master/samples/win32)看起来会像下面一样简单：
 
 {% raw %}
 <p></p>
@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
 <p><span id="more-5071"></span></p>
 {% endraw %}
 
-Android本土活动鈥事件处理：
+[Android native activies](https://github.com/JetBrains/kotlin-native/tree/master/samples/androidNativeActivity/src/main/kotlin)事件处理：
 
 {% raw %}
 <p></p>
@@ -68,7 +68,7 @@ AInputQueue_finishEvent(queue, event.value, 1)
 
 ## 调试
 
-有了这个版本，我们支持源级调试（仅限单步）。例如，尝试
+本次发布的版本支持源代码级调试（仅限单步调试）。例如：
 
 {% raw %}
 <p></p>
@@ -110,15 +110,13 @@ Process 12288 stopped
 <p></p>
 {% endraw %}
 
-## 图书馆
+## 依赖库
 
-最后，但肯定不是最不重要的，我们引入了一个新的库格式，称为.klib，它将作为Kotlin / Native库的默认分发格式。本地库和框架可以轻松地与.klib进行互操作，并通过指定-library库命令行标志或库Gradle插件选项与Kotlin / Native编译器一起使用。默认情况下，Interop工具已经生成.klib格式文件。有关库格式的更多详细信息，请参阅此处。
-## 得到一点
+非常值得一提的是，我们引入了一个新的依赖库格式：***.klib***，今后也将作为Kotlin/Native库的默认发行版本。本地库和框架可以轻松地使用 ***.klib*** 进行互操作，并通过指定 ***-library library*** 命令行参数或 ***library*** Gradle插件选项与Kotlin/Native编译器一起使用。Interop工具默认自动生成 ***.klib*** 格式文件。更多详细信息，请参阅[此处](https://github.com/JetBrains/kotlin-native/blob/master/LIBRARIES.md)。
+## 下载
 
-二进制文件可以在下面下载：
+* [x86-64 Linux](http://download.jetbrains.8686c.com/kotlin/native/kotlin-native-linux-0.3.tar.gz)
+* [x86-64 MacOS](http://download.jetbrains.8686c.com/kotlin/native/kotlin-native-macos-0.3.tar.gz)
+* [x86-64 Windows](http://download.jetbrains.8686c.com/kotlin/native/kotlin-native-windows-0.3.zip)
 
-* x86-64 Linux
-* x86-64 MacOS
-* x86-64 Windows
-
-可以使用Kotlin错误跟踪器报告错误和问题。
+欢迎使用[Kotlin错误跟踪器](https://youtrack.jetbrains.com/oauth?state=%2Fnewissue%3Fproject%3Dkotlin)提交错误和问题。
