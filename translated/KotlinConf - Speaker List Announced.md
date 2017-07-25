@@ -1,5 +1,5 @@
 ---
-title: (译)KotlinConf – Speaker List Announced
+title: KotlinConf – Speaker List Announced
 author: Hadi Hariri
 date: 2017-07-17 14:53:00
 tags: 
