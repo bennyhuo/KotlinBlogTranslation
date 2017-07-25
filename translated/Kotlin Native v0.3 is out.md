@@ -7,6 +7,8 @@ translator_url: https://github.com/SnakeEys
 source_url: https://blog.jetbrains.com/kotlin/2017/06/kotlinnative-v0-3-is-out/
 tags: 
 categories:  官方动态
+translator: SnakEys
+translator_url: https://github.com/SnakeEys
 ---
 
 Kotlin/Native 0.3发布啦！此次升级包括支持Windows同时作为编译主机与运行平台，同时也增加了对Google Android设备运行native activities的支持。因此在Windows平台编写['Hello World'](https://github.com/JetBrains/kotlin-native/tree/master/samples/win32)看起来会像下面一样简单：
