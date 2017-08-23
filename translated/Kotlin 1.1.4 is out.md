@@ -13,7 +13,7 @@ Kotlin 1.1.4来啦！本次更新主要包括：
  * IntelliJ IDEA插件主要性能回归修正  
  * 支持缺省包可空性注解  
  * 提升对JAVA 9的支持  
- * 添加@Parcelize注解生成Android Parceable实现的初始支持(实验性)  
+ * 添加@Parcelize注解生成Android Parcelable实现的初始支持(实验性)  
  * 添加用于删除JavaScript无用代码的工具，提升对JS调试源映射的支持，并支持JS单元测试  
  * 生成更高效的字节码
  * IntelliJ IDEA诸多新特性   
@@ -57,9 +57,9 @@ androidExtensions {
 <p></p>
 {% endraw %}
 
-## 包裹支持
+## Parcelable支持
 
-Android Extensions插件现在包括一个自动包装实现生成器。声明主构造函数中的序列化属性并添加@Parcelize注释，并且将自动创建writeToParcel（）/ createFromParcel（）方法：
+Android Extensions插件包含自动实现[Parcelable](https://developer.android.com/reference/android/os/Parcelable.html)的生成器。在主构造函数中声明序列化属性，添加```@Parcelize```注解后，将自动创建```writeToParcel()/createFromParcel()```方法。
 
 {% raw %}
 <p></p>
@@ -75,19 +75,20 @@ class User(val firstName: String, val lastName: String) : Parcelable
 <p></p>
 {% endraw %}
 
-包裹发电机也处于实验状态。我们没有与之相关的兼容性保证，欢迎您对API的反馈。有关更多信息，请参阅提出的规范。
-## JavaScript死代码消除
+Parcelable生成器目前处于实验状态，我们无法确保其兼容性。欢迎您随时向我们反馈API使用情况。更多详细内容，请参阅[建议规范](https://github.com/Kotlin/KEEP/blob/master/proposals/extensions/android-parcelable.md) 。
 
-Kotlin 1.1.4添加了一个新工具来消除由Kotlin / JS编译器生成的.js文件中的死代码。此工具仅在Gradle版本中受支持;启用，添加应用插件：'kotlin-dce-js'到你的build.gradle。有关详细信息，请参阅文档。
+## JavaScript无用代码删除
+
+Kotlin 1.1.4中新增加了用于删除由Kotlin/JS编译器生成的.js文件中无用代码的工具。目前此工具仅在Gradle构建中受支持；若需启用，在build.gradle中添加```apply plugin: 'kotlin-dce-js'```。有关详细信息，请参阅[文档](https://kotlinlang.org/docs/reference/javascript-dce.html)。
 ## JavaScript调试
 
-Kotlin 1.1.4改进了对JavaScript源代码生成的支持，从而更容易在浏览器调试器（如Chrome DevTools）中调试JS。有关详细信息，请参阅本教程。
+Kotlin 1.1.4改进了对JavaScript源代码生成的支持，从而更容易在浏览器调试器（如Chrome DevTools）中调试JS。有关详细信息，请参阅本[教程](https://kotlinlang.org/docs/tutorials/javascript/debugging-javascript/debugging-javascript.html)。
 ## JavaScript单元测试
 
-此更新扩展了JavaScript单元测试支持，以便与更多种类的库共同使用。有关更多信息和示例项目的链接，请参阅论坛帖子。
-## 字节码质量改进
+本次更新扩展了JavaScript单元测试支持，以便与更多种类的库共同使用。有关更多信息和示例项目的链接，请访问[论坛帖子](https://discuss.kotlinlang.org/t/unit-testing-in-kotlin-js/3943)。
+## 字节码质量提升
 
-在此更新中，我们为生成的字节码的质量实施了许多改进。命名挂起功能的异常现在源于函数本身，这使得它们的堆栈跟踪器更易于阅读，并且字节码在许多情况下表现更好。
+在本次更新中，我们为生成字节码的质量实施了诸多改进。命名挂起功能的异常现在源于函数本身，这使得它们的堆栈跟踪器更易于阅读，并且字节码在许多情况下表现更好。
 ## IntelliJ IDEA插件改进
 
 新版本为IntelliJ IDEA插件带来了许多改进：
