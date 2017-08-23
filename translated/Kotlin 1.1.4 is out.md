@@ -7,34 +7,40 @@ tags:
 categories:  官方动态
 ---
 
-我们很高兴地宣布发布Kotlin 1.1.4，这是Kotlin 1.1的一个新的bug修复和工具更新。此更新：
 
-* 修复了IntelliJ IDEA插件中的主要性能回归
-* 添加对包缺省可空性注解的支持
-* 改善Java 9的支持
-* 添加使用@Parcelize注释生成Android Parcelable实现的初始实验支持
-* 添加一个用于JavaScript死代码消除的工具，提高对JS调试和JS单元测试支持的源映射支持
-* 生成更高效的字节码
-* 为IntelliJ IDEA插件添加了许多新功能
+Kotlin 1.1.4来啦！本次更新主要包括：
+  
+ * IntelliJ IDEA插件主要性能回归修正  
+ * 支持缺省包可空性注解  
+ * 提升对JAVA 9的支持  
+ * 添加@Parcelize注解生成Android Parceable实现的初始支持(实验性)  
+ * 添加用于删除JavaScript无用代码的工具，提升对JS调试源映射的支持，并支持JS单元测试  
+ * 生成更高效的字节码
+ * IntelliJ IDEA诸多新特性   
 
-该更新程序与所有版本的IntelliJ IDEA兼容，从2016.2到2017.2以及Android Studio 2.3和3.0 Beta版本。
-此版本中的完整更改列表可以在更改日志中找到。
+本次更新适用于2016.2至2017.2间所有版本的IntellJ IDEA以及Android Studdio 2.3以及3.0 Beta版。
+
+查看完整更新[日志](https://github.com/JetBrains/kotlin/blob/1.1.4/ChangeLog.md)。
 
 {% raw %}
 <p><span id="more-5184"></span></p>
 {% endraw %}
 
-我们要感谢我们的外部贡献者，他们的推荐要求包括在这个版本中：Andrius Semionovas，Bill Collins，Derek Alexander，Dimach，Ilya Zorin，Kirill Rakhman，Stuart Kent，takahirom，Toshiaki Kameyama，Vasily Kirichenko，Vitaly Khudobakhshov，Vladimir Koshelev，Yoshinori Isogai，Yuli Fiterman和Zoltan Polgar。
+感谢在本次发布中向我们提交PR的贡献者们[Andrius Semionovas](https://github.com/neworld)，[Bill Collins](https://github.com/mrginglymus)，[Derek Alexander](https://github.com/alexanderdr)，[Dimach](https://github.com/Dimach)，[Ilya Zorin](https://github.com/geralt-encore)，[Kirill Rakhman](https://github.com/cypressious)，[Stuart Kent](https://github.com/stkent)，[takahirom](https://github.com/takahirom)，[Toshiaki Kameyama](https://github.com/t-kameyama)，[Vasily Kirichenko](https://github.com/vasily-kirichenko)，[Vitaly Khudobakhshov](https://github.com/khud)，[Vladimir Koshelev](https://github.com/vedun-z)，[Yoshinori Isogai](https://github.com/shiraji)，[Yuli Fiterman](https://github.com/fitermay)以及[Zoltan Polgar](https://github.com/Pozo)。  
+
 ## 包缺省可空性注解
 
-从这个版本开始，Kotlin支持package-default可空性注释（如JSR-305檚@ParametersAreNonnullByDefault和Spring Framework 5.0中引入的@NonNullApi注释）。为了方便迁移，并避免由于使用Java API的更为精确的可空性信息而导致的编译错误，默认情况下，对这些注释的支持已关闭，需要通过将-Xjsr305-annotations = enable命令行选项传递给编译器来启用。要在Gradle构建中启用此功能，请使用freeCompilerArgs选项;在Maven构建中，使用<args>。有关更多信息，请参阅提出的规范。
+自本次发布的版本开始，Kotlin支持缺省包可空性注解（例如JSR-305的[```@ParametersAreNonnullByDefault```](http://static.javadoc.io/com.google.code.findbugs/jsr305/3.0.1/javax/annotation/ParametersAreNonnullByDefault.html)以及Spring框架5.0中引入的[```@NonNullApi```](https://github.com/spring-projects/spring-framework/blob/master/spring-core/src/main/java/org/springframework/lang/NonNullApi.java)注解）。为了迁移方便，以及避免由于使用精确Java API可空性信息而导致的编译错误，默认情况下此类注解均已关闭，需要向编译器传递```-Xjsr305-annotations = enable```的命令来启用。在Gradle中启用此功能，使用[freeCompilerArgs option](http://kotlinlang.org/docs/reference/using-gradle.html#attributes-common-for-jvm-and-js)； 在Maven构建中使用[args](http://kotlinlang.org/docs/reference/using-maven.html#attributes-common-for-jvm-and-js)；更多详细内容，请参阅[建议规范](https://github.com/Kotlin/KEEP/pull/78)。
+
 ## Java 9支持
 
-我们将继续推进Java 9的支持。从此版本开始，Kotlin基于module-info.java的信息执行基于模块的可见性检查。现在还支持在JDK 9下运行编译器。
-## Android Extensions插件增强功能
+我们将继续推进Java 9的支持。在本次发布的版本中，Kotlin基于module-info.java的信息执行基于模块的可见性检查。现已支持在JDK 9下运行编译器。
 
-Android Extensions插件现在不仅支持活动和片段，还支持自定义视图，甚至支持自定义布局容器（如ViewHolder）。此外，变体现已完全支持。
-您可以在KEEP提案中了解有关新功能的更多信息。所有这些都被认为是实验性的，因此您需要在build.gradle文件中打开一个实验标志：
+## Android Extensions插件增强
+
+Android Extensions插件现在不仅支持Activities和Fragments，同时还支持自定义控件，甚至支持自定义布局容器（如[ViewHolder](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder.html)）。此外，现已完全支持[Build Variant](https://developer.android.com/studio/build/build-variants.html)。  
+
+更多详细内容请参阅[KEEP建议](https://github.com/Kotlin/KEEP/blob/master/proposals/android-extensions-entity-caching.md)。以上内容目前均为实验性质，因此需要在build.gradle文件中添加如下参数：
 
 {% raw %}
 <p></p>
