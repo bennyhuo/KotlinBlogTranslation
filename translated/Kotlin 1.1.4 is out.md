@@ -88,23 +88,25 @@ Kotlin 1.1.4改进了对JavaScript源代码生成的支持，从而更容易在�
 本次更新扩展了JavaScript单元测试支持，以便与更多种类的库共同使用。有关更多信息和示例项目的链接，请访问[论坛帖子](https://discuss.kotlinlang.org/t/unit-testing-in-kotlin-js/3943)。
 ## 字节码质量提升
 
-在本次更新中，我们为生成字节码的质量实施了诸多改进。命名挂起功能的异常现在源于函数本身，这使得它们的堆栈跟踪器更易于阅读，并且字节码在许多情况下表现更好。
+在本次更新中，我们为生成字节码的质量实施了诸多改进。命名挂起函数的异常现在由函数本身抛出，更易于阅读和追踪堆栈信息，并且字节码在多数情况下表现更强大。
+
 ## IntelliJ IDEA插件改进
 
-新版本为IntelliJ IDEA插件带来了许多改进：
+新发布的版本对IntelliJ IDEA插件有着显著提升：
 
-* 主要业绩改善
-* 新的重构？
-
-现在可以使用带有访问器的属性来重构
-* 现在支持重命名标签
-* 代码样式设置中有许多新的选项
-* 数据流分析支持（分析|分析数据流从/到这里）
-* 在项目中配置Kotlin？现在支持使用Gradle Kotlin DSL的项目
-* 许多新的检查和quickfixes
+* 主要性能提升
+* 新的重构“复制类”  
+* 含有访问器的属性可使用"Inline"重构
+* 支持重命名标签
+* 更多的代码样式风格设置选项
+* [数据流分析支持](https://www.jetbrains.com/help/idea/analyzing-data-flow.html)，在菜单栏中选择(Analyze | Analyze Data Flow from/to Here)
+* "配置Kotlin项目"现已支持使用[Gradle Kotlin DSL](https://github.com/gradle/kotlin-dsl)的工程
+* 其它新检查和快速修复
 
 ## 如何更新
 
-要更新插件，请使用工具| Kotlin |配置Kotlin插件更新，然后按“淐呵呵更新” - 按钮。此外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本。
-像往常一样，如果您遇到新版本的任何问题，欢迎您在论坛上，Slack（在这里获得邀请）请求帮助，或者在问题跟踪器中报告问题。
-让檚ot！
+要更新插件，请在菜单栏中选择Tools | Kotlin | Configure Kotlin Plugin Updates，点击"Check for updates now"按钮。当然，不要忘记同步更新编译器以及Maven和Gradle脚本中的标准库版本。  
+
+与往常一样，如果您在新版本中遇到任何问题，欢迎您在[论坛](https://discuss.kotlinlang.org/)、Slack（获得[邀请](http://slack.kotlinlang.org/)）上寻求帮助，或者在[问题跟踪器（issue tracker）](https://youtrack.jetbrains.com/issues/KT)中反馈问题。  
+
+Let's Kotlin!
