@@ -18,7 +18,7 @@ Kotlin 1.1.4来啦！本次更新主要包括：
  * 更高效率的字节码
  * IntelliJ IDEA其它新特性   
 
-本次更新适用于2016.2至2017.2间所有版本的IntellJ IDEA以及Android Studdio 2.3以及3.0 Beta版。
+本次更新适用于2016.2至2017.2所有版本的IntellJ IDEA以及Android Studdio 2.3以及3.0 Beta版。
 
 查看完整[更新日志](https://github.com/JetBrains/kotlin/blob/1.1.4/ChangeLog.md)。
 
@@ -30,11 +30,11 @@ Kotlin 1.1.4来啦！本次更新主要包括：
 
 ## 包缺省可空性注解
 
-自本次发布的版本开始，Kotlin支持缺省包可空性注解（例如JSR-305的[```@ParametersAreNonnullByDefault```](http://static.javadoc.io/com.google.code.findbugs/jsr305/3.0.1/javax/annotation/ParametersAreNonnullByDefault.html)以及Spring框架5.0中引入的[```@NonNullApi```](https://github.com/spring-projects/spring-framework/blob/master/spring-core/src/main/java/org/springframework/lang/NonNullApi.java)注解）。为了迁移方便，以及避免由于使用精确Java API可空性信息而导致的编译错误，默认情况下此类注解均已关闭，启用时需向编译器传递```-Xjsr305-annotations = enable```命令。在Gradle中启用此功能，请使用[freeCompilerArgs option](http://kotlinlang.org/docs/reference/using-gradle.html#attributes-common-for-jvm-and-js)； 在Maven构建中使用[args](http://kotlinlang.org/docs/reference/using-maven.html#attributes-common-for-jvm-and-js)；更多详细内容，请参阅[建议规范](https://github.com/Kotlin/KEEP/pull/78)。
+自本次版本发布开始，Kotlin支持缺省包可空性注解（例如JSR-305的[```@ParametersAreNonnullByDefault```](http://static.javadoc.io/com.google.code.findbugs/jsr305/3.0.1/javax/annotation/ParametersAreNonnullByDefault.html)以及Spring框架5.0中引入的[```@NonNullApi```](https://github.com/spring-projects/spring-framework/blob/master/spring-core/src/main/java/org/springframework/lang/NonNullApi.java)注解）。为了迁移方便，同时避免由于使用精确Java API可空性信息而导致的编译错误，默认情况下此类注解均已关闭，启用时需向编译器传递```-Xjsr305-annotations = enable```命令。在Gradle中启用此功能，请使用[freeCompilerArgs option](http://kotlinlang.org/docs/reference/using-gradle.html#attributes-common-for-jvm-and-js)； 在Maven构建中使用[args](http://kotlinlang.org/docs/reference/using-maven.html#attributes-common-for-jvm-and-js)；更多详细内容，请参阅[建议规范](https://github.com/Kotlin/KEEP/pull/78)。
 
 ## Java 9支持
 
-我们将继续推进Java 9的支持。在本次发布的版本中，Kotlin基于module-info.java的信息执行基于模块的可见性检查。现已支持在JDK 9下运行编译器。
+我们将继续推进对Java 9的支持。在本次发布的版本中，Kotlin基于module-info.java的信息执行基于模块的可见性检查。现已支持在JDK 9下运行编译器。
 
 ## Android Extensions插件增强
 
