@@ -14,8 +14,8 @@ translator: pye52
 translator_url: https://pye52.github.io/
 ---
 
-我们主要将更新推送到我们创建的包含Kotlin Workshop资料的新存储库。除了涵盖所有主要的Kotlin主题的示例代码外，它还有演示幻灯片，以及练习和问题，供学生完成。
-这是我与JetBrains中其他人在Kotlin研讨会上使用的材料。它分为基础和高级，一般有两天的分量。我们用Creative Commons授权了它，欢迎使用它来学习Kotlin和/或组织你们自己的研讨会。作为开源项目，非常欢迎你们的贡献！
+我们将主要更新推送到我们创建的包含Kotlin Workshop资料的新存储库。除了涵盖所有主要的Kotlin主题的示例代码外，它还有演示幻灯片，以及练习和问题，供学生完成。
+这是我与JetBrains中其他人在Kotlin研讨会上使用的材料。它分为基础和高级，一般可以使用两天。我们用Creative Commons进行了授权，欢迎使用它来学习Kotlin和/或组织你们自己的研讨会。作为开源项目，非常欢迎你们的贡献！
 Kotlin Workshop材料
 ## 临近的研讨会提醒
 
