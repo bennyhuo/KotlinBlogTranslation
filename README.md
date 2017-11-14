@@ -23,6 +23,8 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 | 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址                                     |
 | -------------------------------- | ------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------- |
+| [Kotlin 1.1.50 is out](original/Kotlin%201.1.50%20is%20out.md) | 2017-09-22 11:13:00 | [译文](translated/Kotlin%201.1.50%20is%20out.md) | | |
+| [KotlinConf - New Workshop and Community Event by JetBrains and Realm](original/KotlinConf%20-%20New%20Workshop%20and%20Community%20Event%20by%20JetBrains%20and%20Realm.md) | 2017-09-05 12:51:00 | [译文](translated/KotlinConf%20-%20New%20Workshop%20and%20Community%20Event%20by%20JetBrains%20and%20Realm.md) | | |
 | [Kotlin 1.1.4 is out](original/Kotlin%201.1.4%20is%20out.md) | 2017-08-15 03:38:00 | [译文](translated/Kotlin%201.1.4%20is%20out.md) |[SnakEys](https://github.com/SnakeEys) | |
 | [Kotlin 1.2 M2 is out](original/Kotlin%201.2%20M2%20is%20out.md) | 2017-08-09 10:56:00  | [译文](translated/Kotlin%201.2%20M2%20is%20out.md) | [pye52](https://githut.com/pye52) | |
 | [Kotlin Workshop Material for you to use](original/Kotlin%20Workshop%20Material%20for%20you%20to%20use.md) | 2017-07-27 05:36:00 | [译文](translated/Kotlin%20Workshop%20Material%20for%20you%20to%20use.md) | [pye52](https://githut.com/pye52) | |
