@@ -2,9 +2,15 @@
 title: Kotlin Census 2017
 author: Roman Belov
 date: 2017-10-18 18:55:00
-source_url: https://blog.jetbrains.com/kotlin/2017/10/kotlin-census-2017/
 tags: 
 categories:  官方动态
+reward: false
+reward_title: Have a nice Kotlin!
+reward_wechat:
+reward_alipay:
+source_url: https://blog.jetbrains.com/kotlin/2017/10/kotlin-census-2017/
+translator: pye52 & 睡魔的倦意
+translator_url: https://pye52.github.io/ & https://suima0v0.github.io/
 ---
 
 你好！
