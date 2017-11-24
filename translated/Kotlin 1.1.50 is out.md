@@ -7,17 +7,17 @@ tags:
 categories:  官方动态
 ---
 
-我们很高兴地宣布发布Kotlin 1.1.50，这是Kotlin 1.1的一个新的bug修复和工具更新。此更新：
+Kotlin1.1.50版本正式发布，本次更新是基于1.1版本的Bug修复及工具更新，包括： 
 
-* 推出新的版本控制方案：1.1.5x而不是1.1.5-x
-* 改进对JSR-305注释的支持（可空性问题可以作为警告报告，检查在JSR-305类不在类路径上时工作）
-* 改进生成的字节码性能
+* 采取新的版本控制方案：使用1.1.5x替代1.1.5-x
+* 提升对JSR-305标准注解的支持（可空性问题可作为警告方式进行提示，基于JSR-305标准的类无路径时进行检查）
+* 提升生成字节码的性能
 * 使原始数组为TypedArray转换，增加源代码映射支持死码消除工具，并对JS后端进行其他改进
-* 修复了编译器和IDE中的大量错误
-* 在IntelliJ插件中引入新的检查，性能改进和错误修复
+* 编译器和IDE的Bug修复
+* 在IntelliJ插件中引入新的检查项，性能提升和错误修复
 * 支持预览Kotlin序列化插件的扩展点
 
-该更新与所有版本的IntelliJ IDEA兼容，从2016.3到2017.3以及Android Studio 2.3和3.0。
+本次更新兼容2016.3至2017.3版本的IntelliJ IDEA以及Android Studio 2.3和3.0。
 此版本中的完整更改列表可在更改日志中找到。
 
 {% raw %}
@@ -83,16 +83,17 @@ arrayOfInts !is IntArray && arrayOfInts is Array<*> // true
 Kotlin 1.1.50改进了死码消除工具，使其更容易调试其输出。该工具检测现有的源地图并将其与代码一起转换。有关JS调试的更多信息，请参阅本教程。
 ## IntelliJ IDEA插件改进
 
-新版本为IntelliJ IDEA插件带来了许多改进：
+IntelliJ IDEA插件在新版本中的改进部分：
 
-* 性能改进
+* 性能提升
 * 支持导入别名的代码完成
 * 更好地支持Gradle Kotlin DSL
-* 检查以验证代码是否与为项目配置的格式和命名约定相匹配
-* 许多其他新的检查和quickfixes
+* 校验代码是否与项目配置的格式以及约定命名相匹配
+* 其它新特性及问题修复
 
 ## 如何更新
 
-要更新插件，请使用工具|科特林配置Kotlin插件更新，然后按“淐呵呵更新” - 按钮。此外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本。
-像往常一样，如果您遇到新版本的任何问题，欢迎您在论坛上请求帮助，在Slack（在这里获得邀请）或报告问题跟踪器中的问题。
-让檚ot lin！
+更新插件，请依次在菜单栏中选择 Tools | Kotlin | Configure Kotlin Plugin Updates并点击"Check for updates now"按钮。此外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本。
+
+与往常一样，如果您在新版本中遇到的任何问题，欢迎您在[论坛](https://youtrack.jetbrains.com/issues/KT)上寻求帮助，在Slack（[获得邀请](http://slack.kotlinlang.org/)）或在[问题跟踪器](https://youtrack.jetbrains.com/issues/KT)中上报问题。
+Let's Kotlin!
