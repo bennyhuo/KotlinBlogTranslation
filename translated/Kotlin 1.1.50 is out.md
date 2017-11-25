@@ -33,12 +33,14 @@ Kotlin1.1.50版本正式发布，本次更新是基于1.1版本的Bug修复及�
 
 从本次发布的版本开始将使用1.1.50，1.1.51，1.1.52版本号替代旧的1.1.5，1.1.5-1，1.1.5-2版本号。
 
-我们希望使用与发布版本相同的版本号将JS组件发布至NPM，一直以来我们在“-”后面的数字作为补丁号使用，而NPM则将“-”后的数字作为[预发布版本](https://docs.npmjs.com/misc/semver#prerelease-tags)。因此在NPM看来，Kotlin 1.1.5的版本高于1.1.5-1，然而这恰恰与实际情况背道而驰，所以只需变更版本方案即可解决。
+我们希望使用与发布版本相同的版本号将JS组件发布至NPM，一直以来我们将“-”后面的数字作为补丁号使用，而NPM则将“-”后的数字作为[预发布版本](https://docs.npmjs.com/misc/semver#prerelease-tags)。因此在NPM看来，Kotlin 1.1.5的版本高于1.1.5-1，然而这恰恰与实际情况背道而驰，所以只需变更版本方案即可解决。
 
 ## 改进对JSR-305注解的支持
 
-在Kotlin 1.1.4中引入了**默认可空性注解**的试验性支持，例如使用[@ParametersAreNonnullByDefault](http://static.javadoc.io/com.google.code.findbugs/jsr305/3.0.1/javax/annotation/ParametersAreNonnullByDefault.html)作为可选功能。在Kotlin 1.1.50中，由于这种注释，检测到的可空性问题默认情况下**被报告为警告**。若将警告转换为错误报告，需要添加命令行参数`-Xjsr305 = strict`。要禁用警告，请使用`-Xjsr305 = ignore`。 （注意现已不推荐使用在Kotlin 1.1.4中启用默认可空性注释的命令行参数`-Xjsr305-annotations = enable`）。
+在Kotlin 1.1.4中引入了**默认可空性注解**的试验性支持，例如使用[@ParametersAreNonnullByDefault](http://static.javadoc.io/com.google.code.findbugs/jsr305/3.0.1/javax/annotation/ParametersAreNonnullByDefault.html)作为可选功能。在Kotlin 1.1.50中，由于这种注释，检测到的可空性问题默认情况下**被报告为警告**。若将警告转换为错误报告，需要添加命令行参数`-Xjsr305 = strict`。要禁用警告，请使用`-Xjsr305 = ignore`。 （注意现已不推荐使用在Kotlin 1.1.4中启用默认可空性注释的命令行参数`-Xjsr305-annotations = enable`）。  
+
 此外自本次发布版本开始，Kotlin不再需要在依赖库中添加包含JSR-305注解的.jar文件以用于读取此库的可空性信息。  
+
 请注意编译器对严格模式下的JSR-305支持被标记为**实验性质**。
 ## JavaScript后端提升
 
@@ -49,7 +51,7 @@ Kotlin 1.1.50新引入的几项变化使得JavaScript后端不再向前兼容，
 
 ### TypedArrays默认启用
 
-默认情况下，原始数组将转换为[TypedArrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)，要禁用此功能，使用命令行参数`-Xtypedarrays = false`传递给编译器。该项特性会影响向前版本的兼容性--因此并不建议在旧的编译器下使用新的编译库。
+默认情况下，原始数组将转换为[TypedArrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)，若需要禁用此特性，设置编译参数`-Xtypedarrays = false`即可。该项特性会对旧版本的兼容性有所影响--因此并不建议在旧的编译器下使用新的编译库。
 
 值得注意的是新的数组表示方法也可能会影响Kotlin调用JS代码，若需要从JS函数获取常规数组而非TypedArray时，使用[toTypedArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/to-typed-array.html)函数将TypedArray转换为常规数组。例如类似[toIntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/to-int-array.html)的函数可将常规的基础类型数组转换为TypedArray。
 
@@ -68,7 +70,7 @@ val otherIntArray: IntArray = arrayOfInts.toIntArray() // otherIntArray is Int32
 <p></p>
 {% endraw %}
 
-这些变化也可在运行时区分Array和IntArray等类似情况。
+这些变化也使得可在运行时对Array和IntArray等类似情况进行区分。
 
 
 {% raw %}
