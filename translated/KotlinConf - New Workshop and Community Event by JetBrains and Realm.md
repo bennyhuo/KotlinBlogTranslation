@@ -7,15 +7,19 @@ tags:
 categories:  官方动态
 ---
 
-KotlinConf就在拐角处，如果你没有办公室，你可以检查出伟大的演讲者阵容和会话，你可能现在要这样做！无论您是做移动设备，台式机，服务器端还是Web前端开发，我们都会在Kotlin周围收到两天的内容，还有很多话题。
-我们现在正在通过专门的工作坊，让KotlinConf更加精彩！我们与国家合作，于11月1日向Kotlin全日制讲习班介绍，随后是Kotlin的Kotlin Talk建筑图书馆，由Realm主办的晚餐！
-全日制讲习班和晚间活动将在旧金山二楼Townsend街148号的Realm办事处举行，地址为CA 94107（见地图）。
+[KotlinConf](https://kotlinconf.com/)即将来临，要是您还不了解[出席的大佬们](https://kotlinconf.com/speakers/)有谁以及[演讲内容](https://kotlinconf.com/sessions/)，那么现在就去看看吧！我们将会围绕着Kotlin进行为期两天的议程会议，无论您是从事移动开发，桌面端开发亦或是服务端甚至前后端开发，这里都有诸多干货供您选择。  
+
+为了让KotlinConf更加丰富精彩！我们与[Realm](https://realm.io/)公司合作，在**11月1日**举行*Kotlin工作室的全天介绍会*，以及**为Kotlin构建Kotlin库**讨论会，并由Realm公司提供晚餐！  
+
+全天介绍会以及晚间活动将在旧金山CA 94107Townsend街148号二楼Realm办事处举行（[见地图](https://goo.gl/maps/t1E9hGq64L82)）。  
+
 
 {% raw %}
 <p><span id="more-5244"></span></p>
 {% endraw %}
 
-研讨会日程：
+**研讨会日程：**  
+
 上午9:00  -  5：00 pm：Kotlin Java开发者研讨会。 Svetlana Isakova。最大容量50
 下午5:30  - 晚上8点：晚餐和谈话。 Kotlin建筑图书馆。埃里克·麦克斯韦最大容量150
 如果您还没有注册KotlinConf，请确保您利用我们优质的折扣价格，包括车间，社区活动和会议！
