@@ -7,9 +7,11 @@ tags:
 categories:  官方动态
 ---
 
-我们很高兴地宣布Kotlin 1.2的第二个Beta版本。在这个版本中，我们一直主要关注较小的内部变化，并在我们的多平台项目故事中增加一些缺失的部分。
-感谢Andrey Mischenko，Francesco Vasco，Jake Wharton，Jonathan Leitschuh，Kirill Rakhman，Pap Lorinc，Paul Merlin，Raluca Sauciuc，Toshiaki Kameyama和Yoshinori Isogai对Kotlin 1.2 Beta2的贡献。
-自1.2-Beta以来的完整更新日志可以在这里找到，下面列出的重大更改。
+Kotlin1.2的第二个Beta版本发布了。在该版本中，我们一直对较小的内部变化保持持续关注，并在多平台项目中对缺失部分增补。  
+
+感谢Andrey Mischenko，Francesco Vasco，Jake Wharton，Jonathan Leitschuh，Kirill Rakhman，Pap Lorinc，Paul Merlin，Raluca Sauciuc，Toshiaki Kameyama和Yoshinori Isogai对Kotlin 1.2 Beta2所做出的贡献。
+
+查看1.2 Beta发布以来的[完整更新日志](https://github.com/JetBrains/kotlin/blob/1.2-Beta2/ChangeLog.md)，以下列出的重大更改。
 
 {% raw %}
 <p><span id="more-5350"></span></p>
@@ -17,17 +19,20 @@ categories:  官方动态
 
 ## 编译器
 
-### 编译器性能改进
+### 编译器性能提升
 
-自上次公开发布以来，有一系列的编译器性能改进。平均项目建设时间减少了近20％。
+自上次公开版本发布后编译我们对编译器的性能进行一系列的改进，项目构建的平均时间节省近20%。
+
 ### 生成字节码后处理工具的代码规范化
 
-从1.0版开始，Kotlin支持复杂控制流的表达式，如try-catch表达式和内联函数调用。这样的代码根据Java虚拟机规范是有效的。不幸的是，当构造函数调用的参数中存在这样的表达式时，一些字节码处理工具不能很好地处理这些代码。
-为了缓解这种字节码处理工具的用户的这个问题，我们添加了一个命令行选项（-Xnormalize-constructor-calls = MODE），告诉编译器为这样的结构生成更多的类Java字节码。这里MODE是以下之一：
+从1.0版本开始，Kotlin就支持复杂控制流的表达式，如try-catch表达式和内联函数(inline fun)调用。这些代码是符合Java虚拟机规范的。然而不幸的是，部分字节码处理工具并不能较好的处理这些代码，尤其是当构造函数调用的参数中存在此类表达式时。
 
-* 禁用（默认）“按照Kotlin 1.0和1.1中的相同方式生成字节码;
-* 启用“为构造函数调用生成类似Java的字节码。这可以改变类加载和初始化的顺序;
-* 保留类初始化 - 为构造函数调用生成类似于Java的字节码，确保保持类初始化顺序。这可能会影响应用程序的整体性能;只有在多个类之间共享一些复杂的状态并在类初始化时更新时才使用它。
+为了缓解这个问题，用户在使用此类字节码处理工具时，可以通过添加命令行选项(`-Xnormalize-constructor-calls=MODE`)，告诉编译器为此类构造函数生成更类似Java的字节码。`MODE`参数可以是如下之一：
+
+
+* `disable`（默认）- 以Kotlin 1.0和1.1版本同样的方式生成字节码；
+* `enable` - 为构造函数调用生成更类似Java的字节码。但会改变类加载和初始化的顺序；
+* `preserve-class-initialization` - 为构造函数调用生成类似Java的字节码，确保类初始化顺序不变。但会影响应用程序的整体性能；建议只在多个类之间共享复杂状态且在类初始化更新时使用。
 
 “解决方案”的解决方法是将具有控制流的子表达式的值存储在变量中，而不是直接在调用参数中对它们进行求值。它与-Xnormalize-constructor-calls = enable类似。
 有关更多详细信息，请参阅KT-19251。
