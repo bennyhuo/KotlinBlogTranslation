@@ -10,11 +10,11 @@ translator_url: https://github.com/SnakeEys
 
 ---
 
-[KotlinConf](https://kotlinconf.com/)即将来临，要是您还不了解[出席的大佬们](https://kotlinconf.com/speakers/)有谁以及[演讲内容](https://kotlinconf.com/sessions/)，那么现在就去看看吧！我们将会围绕着Kotlin进行为期两天的议程会议，无论您是从事移动开发，桌面端开发亦或是服务端甚至前后端开发，这里都有诸多干货供您选择。  
+[KotlinConf](https://kotlinconf.com/)即将来临，要是您还不了解[出席的大佬们](https://kotlinconf.com/speakers/)有谁以及[演讲内容](https://kotlinconf.com/sessions/)，那么现在就去看看吧！我们将会围绕着Kotlin进行为期两天的活动，无论您是从事移动开发，桌面端开发亦或是服务端甚至前后端开发，这里都有诸多干货供您选择。  
 
-为了让KotlinConf更加丰富精彩！我们与[Realm](https://realm.io/)公司合作，在**11月1日**举行*Kotlin工作室的全天介绍会*，以及**为Kotlin构建Kotlin库**讨论会，并由Realm公司提供晚餐！  
+为了让KotlinConf更加丰富精彩！我们与[Realm](https://realm.io/)公司合作，在**11月1日**举行*Kotlin研讨会*，以及**为Kotlin构建依赖库**的演讲，并由Realm公司提供晚餐！  
 
-全天介绍会以及晚间活动将在旧金山CA 94107Townsend街148号二楼Realm办事处举行（[见地图](https://goo.gl/maps/t1E9hGq64L82)）。  
+全天研讨会以及晚间活动将在旧金山CA 94107Townsend街148号二楼Realm办事处举行（[见地图](https://goo.gl/maps/t1E9hGq64L82)）。  
 
 
 {% raw %}
