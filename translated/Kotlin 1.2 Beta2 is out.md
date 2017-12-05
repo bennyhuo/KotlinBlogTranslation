@@ -32,26 +32,26 @@ Kotlin1.2的第二个Beta版本发布了。在该版本中，我们一直对较�
 
 * `disable`（默认）- 以Kotlin 1.0和1.1版本同样的方式生成字节码；
 * `enable` - 为构造函数调用生成更类似Java的字节码。但会改变类加载和初始化的顺序；
-* `preserve-class-initialization` - 为构造函数调用生成类似Java的字节码，确保类初始化顺序不变。但会影响应用程序的整体性能；建议只在多个类之间共享复杂状态且在类初始化更新时使用。
+* `preserve-class-initialization` - 为构造函数调用生成类似Java的字节码，确保类初始化顺序不变。但会影响应用程序的整体性能；仅在多个类之间需要共享复杂状态和类初始化更新时使用。
 
-“解决方案”的解决方法是将具有控制流的子表达式的值存储在变量中，而不是直接在调用参数中对它们进行求值。它与-Xnormalize-constructor-calls = enable类似。
-有关更多详细信息，请参阅KT-19251。
+“手册”的解决方案是将具有控制流的子表达式的值存储在变量中，而非直接在调用参数中进行求值。类似于`Xnormalize-constructor-calls=enable`。
+
+更多详细信息请查阅[KT-19251](https://youtrack.jetbrains.com/issue/KT-19251)。
+
 ## 多平台项目
+IDE中对多平台项目支持方面有诸多改进，但不限于此。
 
-在多平台项目支持方面有许多改进，主要是在IDE中，但不仅如此。最值得注意的是以下几个。
-### 编写多平台单元测试的注释
+### 编写多平台单元测试的注解
 
-现在可以在一个普通的项目中编写测试，以便在每个平台项目中进行编译和运行。在kotlin-test包中提供了4个注释，用于标记常用代码中的测试：@Test，@Ignore，@BeforeTest和@AfterTest。
-在JVM平台中，这些注释被映射到相应的JUnit 4注释，而在JS中它们已经可用，从1.1.4开始支持JS单元测试。
-为了使用它们，你需要添加一个对通用模块通用的kotlin-test-annotations，对你的JVM模块的kotlin-test-junit，以及对JS模块的kotlin-test-js的依赖。
-### “实施”更名为“预计”。
+在常用项目中编写测试并独立在每个平台项目中编译运行已经成为可能。目前在`kotlin-test`包中提供4个注解，用于改进常用代码中的测试：`@Test`，`@Ignore`，`@BeforeTest`，`@AfterTest`。  
+在JVM平台这些注解被映射到相应的JUnit 4注解，而在JS中从1.1.4版本便已经支持JS单元测试。
 
+若要使用则需要对通用模块添加`kotlin-test-annotations-common`依赖，在JVM模块中添加`kotlin-test-junit`，在js模块中添加`kotlin-test-js`。
 
+### “implement”更名为“expectedBy”。
 
+在`expect`/`actual`命名之后，Gradle依赖项配置`implement`（由平台项目使用，以指向其相应的公共项目）现在被重命名为`expectedBy`，并且旧的名称已被弃用。
 
-在期望/实际命名之后，Gradle依赖项配置实现（由平台项目使用，以指向其相应的公共项目）现在被重命名为expectedBy，并且旧的名称已被弃用。
-
-正确导入具有多个模块的多平台项目
 
 {% raw %}
 <p></p>
@@ -68,19 +68,13 @@ dependencies {
 <p></p>
 {% endraw %}
 
-### 引用平台模块中的通用代码在多模块多平台项目中未解决的问题引起了一个讨厌的问题。现在，从Gradle导入这样的项目是固定的，您不必手动添加额外的依赖关系，以便解决这些引用。
+### 正确导入多模块的多平台项目
+在平台模块中引用通用代码有令人心烦的问题，在多模块多平台项目中仍未解决。现在从Gradle中引入这些项目是固定的，并且不再需要通过额外手动添加依赖来解决这些问题。
 
-Gradle插件
-## “行动错误”更名为“警告错误”。
+## Gradle插件
+### “warningsAsErrors错误”更名为“allWarningsAsErrors”。
 
-
-
-
-在Kotlin 1.2 Beta中引入的warningsAsErrors标志被重命名为allWarningsAsErrors：
-
-### 标准库
-
-“可以使用的”，“可用的”，“可以使用的”，“可以使用的”
+在Kotlin 1.2 Beta中引入的`warningsAsErrors`标志被重命名为`allWarningsAsErrors`：
 
 {% raw %}
 <p></p>
@@ -94,8 +88,10 @@ compileKotlin.kotlinOptions.allWarningsAsErrors = true
 {% raw %}
 <p></p>
 {% endraw %}
+## 标准库
 
-## 最后，Closeable.use函数调用Throwable.addSuppressed，当一些其他异常关闭资源时抛出异常。要启用这种行为，你需要在你的依赖关系中有kotlin-stdlib-jdk7。
+### “Throwable.addSuppressed”可用时被“Closeable.use”调用
+在其它异常关闭资源后抛出异常时，`Closeable.use`函数最终调用`Throwable.addSuppressed`。要启用该功能需添加`kotlin-stdlib-jdk7`依赖项。
 
 ### 发布前的注意事项
 
