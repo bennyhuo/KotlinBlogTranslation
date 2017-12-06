@@ -5,6 +5,9 @@ date: 2017-10-19 13:43:00
 source_url: https://blog.jetbrains.com/kotlin/2017/10/kotlin-1-2-beta2-is-out/
 tags: 
 categories:  官方动态
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys
+
 ---
 
 Kotlin1.2的第二个Beta版本发布了。在该版本中，我们一直对较小的内部变化保持持续关注，并在多平台项目中对缺失部分增补。  
@@ -93,14 +96,15 @@ compileKotlin.kotlinOptions.allWarningsAsErrors = true
 ### “Throwable.addSuppressed”可用时被“Closeable.use”调用
 在其它异常关闭资源后抛出异常时，`Closeable.use`函数最终调用`Throwable.addSuppressed`。要启用该功能需添加`kotlin-stdlib-jdk7`依赖项。
 
-### 发布前的注意事项
+### 发布前注意事项
+*与其它里程碑式发布版本相似，我们对新语言以及库特征<strong>无法提供向后兼容性保证</strong>。任何在1.2里程碑版本中引入的内容都将以最终的1.2版本<strong>变更为准</strong>。在最后的RC版本中，编译器会将所有预发布版本生成的二进制文件当作非法文件：开发者可能需要重新将之前由1.2-Mx，1.2-Beta或者1.2-Beta2编译的内容重新进行编译。*  
+*但是，由1.1.x以及更早版本编译的代码无需重新编译亦可完美运行。*
 
-与其他里程碑版本一样，我们也不会对新语言和库功能提供向后兼容保证。在1.2的里程碑版本中引入的任何内容在最终的1.2版本之前可能会发生变化。当我们达到最后的RC，由预发布版本生成的所有二进制文件将被编译器取缔：你以 - 檒l条需要重新编译，是由1.2鈥惭X，1.2测试版，或1.2的Beta2编译一切。
-但是，所有由1.1.x和更早版本编译的代码在没有重新编译的情况下是完全正确的。
 ## 如何尝试
+**Maven/Gradle：**添加`http://dl.bintray.com/kotlin/kotlin-eap-1.2`作为构建脚本和项目的仓库；修改编译器插件以及标准库版本号为`1.2.0-beta-88`。  
 
-在Maven / Gradle中：添加http://dl.bintray.com/kotlin/kotlin-eap-1.2作为构建脚本和项目的存储库;使用1.2.0-beta-88作为编译器插件和标准库的版本号。
-## 在IntelliJ IDEA的：进入工具鈫科特林鈫配置科特林插件的更新，然后选择鈥淓阿尔利访问预览1.2鈥在更新通道下拉列表，然后按检查更新？？。
-命令行编译器可以从GitHub发布页面下载。
+**IntelliJ IDEA：**在菜单栏中依次选择***Tools → Kotlin → Configure Kotlin Plugin Updates***， 并在***Update Channel***下拉列表中选择“Early Access Preview 1.2”，点击***Check for updates***。  
+命令行编译器可在[Github页面](https://github.com/JetBrains/kotlin/releases/tag/v1.2-beta2)下载。
 
-在try.kotlinlang.org上：使用右下角的下拉列表将编译器版本更改为1.2（即将推出）。
+
+**[try.kotlinlang.org](https://try.kotlinlang.org/)：**可在右下角的下拉列表将编译器版本更改为1.2Beta2（即将推出）。
