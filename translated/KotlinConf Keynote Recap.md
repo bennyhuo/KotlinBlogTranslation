@@ -24,24 +24,28 @@ categories:  官方动态
 
 # Kotlin / Native iOS支持
 
-我们宣布的下一个重大消息是支持Kotlin / Native的iOS开发，作为Kotlin / Native 0.4的一部分发布。这种支持还处于早期阶段，但在这方面，这是我们在所有平台上实现科特林发展的重要一步。
-为了展示什么是可能的，我们写了两个应用程序，并将它们发布到App Store：
+作为Kotlin/Native 0.4的一部分，第二个大新闻便Kotlin/Native支持iOS开发。然而目前还处于早期阶段，但从无到有，让Kotlin在全平台开发的道路上迈出巨大的一步。  
 
-* Spinner应用程序（GitHub）是使用OpenGL构建的简单游戏。它在iOS和Android上运行（玩商店链接），大部分代码在这两个版本之间共享。 iOS版本还有其他一些功能，如Game Center集成。
-* KotlinConf应用程序（GitHub）向您显示本次会议的时间安排，并具有完全原生的UIKit构建的iOS UI。
+为此，我们编写了两个应用程序，并发布在了App Store:
 
-这两个示例应用程序都是开源的，您可以将它们作为模板在纯Kotlin中构建自己的跨平台移动应用程序。
+* [Spinner App](https://itunes.apple.com/us/app/kotlinconf-spinner/id1291282375?mt=8)([Github](https://github.com/jetbrains/kotlinconf-spinner))是一款使用OpenGL编写的简单游戏。可以同时运行在iOS和Android平台上运行([Play Sotre链接](https://play.google.com/store/apps/details?id=com.jetbrains.konan_activity2))，两个版本之间的大部分代码是通用的。但在iOS版本中集成了Game Center。
+* [KotlinCof App](https://itunes.apple.com/us/app/kotlinconf/id1299196584?mt=8)([Github](https://github.com/jetbrains/kotlinconf-app))可以展示本次大会的时间安排，并使用UIKit构建完全原生的iOS界面。
+
+以上两个程序的代码完全开源，开发者可以以其为模板蓝本，完全使用Kotlin来构建自己的跨平台移动应用程序。
 # Kotlin / Native IDE支持
 
-当然，你需要一个IDE来使用任何语言，从今天开始，Kotlin / Native也有IDE支持。
-我们现在正在发布CLion的Kotlin / Native插件的最初预览版本，我们的C / C ++ IDE。该插件支持CMake作为构建系统。它包括IntelliJ IDEA的Kotlin插件的全套代码编辑功能，以及对项目创建，测试和调试的初始支持。
+当然，无论任何语言，使用IDE都可以大幅提高效率，从今天开始，Kotlin/Native也开始有IDE支持了。
+
+我们即将为自己的C/C++ IDE——CLion，发布一款Kotlin/Native插件的初始预览版本。插件支持使用CMake作为构建系统，它包括IntelliJ IDEA的Kotlin插件的全套代码编辑功能，以及对创建项目，测试和调试的初始支持。
 
 {% raw %}
 <p><a href="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/11/clion-debugger.png" rel="attachment wp-att-5414"><img alt="clion-debugger" class="alignnone size-full wp-image-5414" height="612" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/11/clion-debugger.png" width="1600"/></a></p>
 {% endraw %}
 
-要尝试插件，请安装CLion 2017.3 EAP并在JetBrains插件列表中搜索“otlin / Native”。
-在未来的日子里，我们将发布一个单独的博客文章，详细介绍插件及其功能。当然，CLion插件只是我们Kotlin IDE支持故事中的一步。请继续关注明年的进一步公告！
+目前插件可在2017.3 EAP版本CLion中的JetBrains插件列表中获取(搜索“Kotlin/Native”)。  
+
+后续我们将单独发布博客文章，详细介绍该插件及其功能。当然CLion插件仅仅只是我们对Kotlin IDE支持故事中的一步。明年请继续关注。
+
 # Ktor 0.9
 
 服务器端开发也是我们多平台故事的关键部分。而现在我们正在宣布我们自己的这一部分：Ktor的0.9版本，这是一个非常棒的基于异步协程的Web框架，从Kotlin开始构建。
