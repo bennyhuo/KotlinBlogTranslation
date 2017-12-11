@@ -7,7 +7,7 @@ tags:
 categories:  官方动态
 ---
 
-对于Kotlin社区来说，今天意义非凡。1200多名来自世界各地的与会者，齐聚旧三藩市，共庆KotlinConf——Kotlin的首次大会。大会开幕式上，Kotlin首席设计师Andrey Breslav宣布了一系列有关Kotlin的重要发展， 
+对于Kotlin社区来说，今天意义非凡。1200多名来自世界各地的与会者，齐聚三藩市，共庆KotlinConf——Kotlin的首次大会。大会开幕式上，Kotlin首席设计师Andrey Breslav宣布了一系列有关Kotlin的重要发展， 
 # Kotlin 1.2 RC
 
 第一个重磅消息是**Kotlin 1.2候选发布版本**，此版本中的新特性包括对**[多平台项目](http://kotlinlang.org/docs/reference/multiplatform.html)**的实验性支持，因此开发者可在针对JVM和JavaScript的模块之间共享代码；以及几项**语言改进**，包括是对注解中数组常量的支持。关于1.2版本中新功能的更多内容，请参考**[Kotlin 1.2 Beta is out](https://github.com/enbandari/KotlinBlogTranslation/blob/master/translated/Kotlin%201.2%20Beta%20is%20out.md)。**  
@@ -48,26 +48,33 @@ categories:  官方动态
 
 # Ktor 0.9
 
-服务器端开发也是我们多平台故事的关键部分。而现在我们正在宣布我们自己的这一部分：Ktor的0.9版本，这是一个非常棒的基于异步协程的Web框架，从Kotlin开始构建。
-Ktor已经在JetBrains内部和社区中的许多项目中使用，现在我们相信它是构建高性能Web应用程序的坚实基础。查看ktor.io上的快速入门指南，试用一下，让我们知道您的想法，以便我们可以在1.0版本中做得更好。
+**服务端开发**在我们的多平台项目中也是非常关键的内容之一。现在我们宣布[Ktor](http://ktor.io/) 0.9版本正式面世，这是一款由Kotlin构建，了不起的基于异步协程的**Web端框架**。
+
+Ktor已经应用于JetBrains内部和社区的诸多项目中，而且我们相应它足以成为构建高性能Web应用程序的基石。开发者可以在ktor.io上查看[快速入门手册](http://ktor.io/quickstart/index.html)，尝试一下，告诉我们您的想法，让我们可以在1.0版本中做的更好。
+
 # 使用React和Kotlin创建现代Web应用程序
 
-对于使用Kotlin进行Web前端开发，今天最大的新闻是发布React.js的官方Kotlin包装器，以及使用React.js在Kotlin中创建现代Web应用程序的工具箱create-react-kotlin-app。 。使用create-react-kotlin-app，您可以生成并立即开始在客户端应用程序上工作，而无需担心项目设置和构建配置，使用静态类型语言的好处以及JavaScript生态系统的强大功能。
-要开始，请运行npm install -g create-react-kotlin-app并查看入门指南。
+对于使用Kotlin进行Web前后端的开发者而言，今天最大的消息莫过于为[React.js](https://reactjs.org/)发布的[官方Kotlin封装库](https://github.com/JetBrains/kotlin-wrappers)，以及使用React.js在Kotlin中创建现代Web应用程序的工具箱[create-react-kotlin-app](https://www.npmjs.com/package/create-react-kotlin-app)。有了这个工具箱，开发者可以生成并立即开始进行客户端应用开发，无需关注项目设置和构建配置，享受静态类型语言的好处，以及JavaScript生态系统的强大功能。  
+
+获取组件请运行`npm install -g create-react-kotlin-app`，查看[入门指南](https://github.com/JetBrains/create-react-kotlin-app/)。
+
 # 多平台项目演示
 
-为了展示我们的多平台故事中的所有内容，我们使用我们的技术堆栈的所有最新版本构建了一个应用程序：KotlinConf应用程序。它由以下组件组成：
+为了充分展示多平台项目中的所有内容，我们应用目前所有技术栈的最新版本构建了KotlinConf应用程序，包括如下组件：
 
-* 使用Ktor的后端;
-* 使用React.js和Kotlin React包装的浏览器应用程序;
-* 使用Anko和Android体系结构组件的Android应用程序;
-* iOS应用（上面提到）使用UIKit。
+* 后端使用Ktor；
+* 浏览器应用程序使用React.js和Kotlin React封装库；
+* Android应用程序使用Anko和Android体系结构组件；
+* iOS应用（见上文）使用UIKit。
 
-后端，浏览器应用程序和Android应用程序使用Kotlin多平台项目技术共享代码。对于异步编程，所有组件都使用协程。为了在服务器和客户端之间交换数据，我们使用全新的kotlinx.serialization库。
-您可以从应用程序的源代码中找到技术宝库，您也可以在自己的工作中使用这些宝藏。
+后端，浏览器应用和Android应用程序均使用Kotlin跨平台项目技术共享代码。异步编程均使用协程实现。服务端与客户端数据交互则使用全新的kotlinx.serialization库。  
+
+开发者能够从该程序的源代码中获益良多，并可直接应用于实际工作中。
+
 # 学习Kotlin
 
-随着Kotlin的各种喧嚣，越来越多的人对学习语言感兴趣。为了使这一点更容易，我们发布了新版本的EduTools插件，允许通过在您喜欢的IDE中解决交互式练习来学习Kotlin。新版本增加了对Android Studio的支持（以前只支持IntelliJ IDEA），并包含用于构建自己的课程的新UI。
+伴随着Kotlin的喧嚣而上，会有越来越多的人对Kotlin产生兴趣并去学习。为此，我们发布了新版本的EduTools插件以让学习更容易，让开发者在自己最爱的IDE中通过解决交互练习来学习Kotlin。新版本增加了对Android Studio的支持(旧版本仅支持IntelliJ IDEA)，并包括用于构建自己课程的新UI。
+
 # 未来的方向
 
 至于语言的未来发展，我们目前的主要目标是在Kotlin支持的平台之间实现更好，更广泛的代码重用。我们计划使用相同的API扩展在所有平台上可用的库集，以包括I / O，网络，序列化，日期处理等等。
