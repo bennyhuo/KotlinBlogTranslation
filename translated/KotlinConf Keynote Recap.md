@@ -4,7 +4,10 @@ author: Dmitry Jemerov
 date: 2017-11-02 20:51:00
 source_url: https://blog.jetbrains.com/kotlin/2017/11/kotlinconf-keynote-recap/
 tags: 
-categories:  官方动态
+categories:  官方动态  
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys
+
 ---
 
 今天对于Kotlin社区来说是意义非凡的一天。1200多名来自世界各地的与会者，齐聚三藩市，共庆KotlinConf——关于Kotlin的首次大会。大会开幕式上，Kotlin首席设计师Andrey Breslav宣布了一系列有关Kotlin的重磅消息以及未来发展。 
@@ -74,11 +77,11 @@ Ktor已经应用于JetBrains内部和社区的诸多项目中，而且我们相�
 
 # 学习Kotlin
 
-伴随着Kotlin的喧嚣而上，会有越来越多的人对Kotlin产生兴趣并去学习。为此，我们发布了新版本的[EduTools插件](https://www.jetbrains.com/education/kotlin-edu/)，让学习Kotlin更轻松，让开发者在自己最爱的IDE中通过解决交互练习掌握Kotlin。新版本增加了对Android Studio的支持(旧版本仅支持IntelliJ IDEA)，并包括用于构建自己课程的新UI。
+伴随着Kotlin的喧嚣而上，会有越来越多的人对Kotlin产生兴趣并开始学习。为此，我们发布了新版本的[EduTools插件](https://www.jetbrains.com/education/kotlin-edu/)，让学习Kotlin更轻松，让开发者在自己最爱的IDE中通过解决交互练习掌握Kotlin。新版本增加了对Android Studio的支持(旧版本仅支持IntelliJ IDEA)，并包括用于构建自己课程的新UI。
 
 # 未来的方向
 
-至于语言的未来发展，目前的主要目标是在Kotlin支持的平台之间实现更好，更广泛的代码重用。我们计划使用相同的API扩展在所有平台上可用的库，包括I/O，网络，序列化，日期处理等等。
+至于语言的未来发展，当下的主要目标是在Kotlin支持的平台之间实现更好和更广泛的代码重用。我们计划使用相同的API扩展在所有平台上可用的库，包括I/O，网络，序列化，日期处理等等。
 在编译器中，对于1.3版本我们的主要焦点仍然是关注内部变化，而非外部可见的语言特性。内部的改变可以提高性能，改进类型推断，为所有目标平台生成更高效的代码，以及更好的IDE插件响应能力。我们希望在新版本发布时仍然有不错的新语言特性，但是目前我们对此不做任何承诺。  
 
 Let's Kotlin！
