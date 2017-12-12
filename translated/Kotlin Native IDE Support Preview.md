@@ -7,9 +7,13 @@ tags:
 categories:  官方动态
 ---
 
-Kotlin / Native是一种全新的技术，可将Kotlin直接编译为机器码，并生成可在没有虚拟机的情况下运行的可执行文件。在KotlinConf 2017上，我们宣布了Kotlin / Native开发工具的预览版本。
-虽然我们有与Kotlin合作的IntelliJ IDEA，但Kotlin / Native与Clang和LLDB支持等本土技术相结合。那为什么JetBrains为Kotlin / Native选择CLion，我们的C和C ++的IDE。
-要开始使用，请下载并安装CLion 2017.3（请注意，此版本现在处于早期访问预览阶段）。接下来，从JetBrains插件库中安装两个插件。在CLion中，选择“配置”→“插件”→“安装JetBrains插件”然后在那里找到Kotlin和Kotlin / Native插件，并安装它们。不要忘记，这仍然是一个技术预览和错误是可能的，但如果你遇到任何，请报告！
+
+Kotlin/Native是一项可以将Kotlin直接编译为机器码的[全新技术](http://kotlinlang.org/docs/reference/native-overview.html)，并且生成不依赖虚拟机即可运行的可执行文件。在KotlinConf 2017上，我们正式发布了Kotlin/Native开发工具的预览版本。
+
+尽管我们使用IntelliJ IDEA来编写Kotlin，但Kotlin/Native结合了如Clang和LLDB等原生技术的支持。因此JetBrains为Kotlin/Native选择了[CLion](https://www.jetbrains.com/clion/)作为C和C++的IDE。  
+
+要开始使用，请下载并安装CLion 2017.3（请注意，此版本现阶段仍处于早期预览阶段）。接下来，从JetBrains插件库中安装两个插件。在CLion设置中，依次选择***配置(Configure) → 插件(Plugins) → 安装JetBrains插件…(Install JetBrains plugin…)***，找到并安装Kotlin和Kotlin/Native插件。请谨记该技术仍然是预览版本，遇到任何错误都有可能，若您在开发中遇到相关问题可及时向我们进行反馈！
+
 
 {% raw %}
 <p><span id="more-5421"></span></p>
