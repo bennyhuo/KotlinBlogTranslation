@@ -7,32 +7,33 @@ tags:
 categories:  官方动态
 ---
 
-对于Kotlin社区来说，今天意义非凡。1200多名来自世界各地的与会者，齐聚三藩市，共庆KotlinConf——Kotlin的首次大会。大会开幕式上，Kotlin首席设计师Andrey Breslav宣布了一系列有关Kotlin的重要发展， 
+今天对于Kotlin社区来说是意义非凡的一天。1200多名来自世界各地的与会者，齐聚三藩市，共庆KotlinConf——关于Kotlin的首次大会。大会开幕式上，Kotlin首席设计师Andrey Breslav宣布了一系列有关Kotlin的重磅消息以及未来发展。 
 # Kotlin 1.2 RC
 
-第一个重磅消息是**Kotlin 1.2候选发布版本**，此版本中的新特性包括对**[多平台项目](http://kotlinlang.org/docs/reference/multiplatform.html)**的实验性支持，因此开发者可在针对JVM和JavaScript的模块之间共享代码；以及几项**语言改进**，包括是对注解中数组常量的支持。关于1.2版本中新功能的更多内容，请参考**[Kotlin 1.2 Beta is out](https://github.com/enbandari/KotlinBlogTranslation/blob/master/translated/Kotlin%201.2%20Beta%20is%20out.md)。**  
+第一个重磅消息是**Kotlin 1.2候选发布版本**，此版本中的新特性包括对<strong>[多平台项目](http://kotlinlang.org/docs/reference/multiplatform.html)</strong>的实验性支持，因此开发者可在针对JVM和JavaScript的模块之间共享代码；以及几项<strong>语言改进</strong>，包括对注解中数组常量的支持。关于1.2版本中新功能的更多内容，请参考**[Kotlin 1.2 Beta is out](https://github.com/enbandari/KotlinBlogTranslation/blob/master/translated/Kotlin%201.2%20Beta%20is%20out.md)**。  
 
-编译器现在已经无法编译由较早版本的Kotlin 1.2所编译的二进制文件，因此开发者需要重新编译新版本；而Kotlin 1.0或1.1.x版本则不受影响。  
+编译器现在已经无法编译由较早版本的Kotlin 1.2所编译的二进制文件，因此开发者需要重新编译新版本；而Kotlin 1.0或1.1.x版本则不受此影响。  
 
-尽管协程(Coroutines)仍然被标记为实验性，但我们仍然要对此状态进行说明：协程已经完**全准备好用于生产项目中**，在我们自己的开发项目中就有使用，到目前为止尚未发现存在重大问题。目前仍然保留实验性状态的原因是使我们有能力重复设计。但即使我们对API进行了修改，已有的API仍然支持，即便被标记为弃用(deprecated)，我们也会提供必要的**迁移工具**。根据目前的计划，我们会在Kotlin 1.3版本中将协程的实验状态移除。  
+尽管协程(Coroutines)仍然被标记为实验性，但我们仍然要对此状态进行说明：协程已经**完全准备好用于生产项目中**，在我们自己的开发项目中就有使用，到目前为止尚未发现存在重大问题。目前仍然保留实验性状态的原因仅仅是让我们能够进行迭代设计。但即使我们对API进行了修改，已有的API仍然支持，即便被标记为弃用(deprecated)，我们也会提供必要的**迁移工具**。根据目前的计划，我们会在Kotlin 1.3版本中将协程的实验状态移除。  
 
-而现在我们**需要大家的帮助**，尽管在团队内部以及JetBrains其它团队中进行了长时间大量测试，但实际情况要比我们想象的复杂的多。如果可以请在您自己的项目中尝试使用1.2RC版本，如果遇到任何问题，请与我们联系。您的帮助对于确保最终版本的顺利发布至关重要。
+而现在我们**需要大家的帮助**，尽管在团队内部以及JetBrains其它团队中进行了大量的长时间测试，但实际情况要比我们想象的复杂的多。如果可以请在您自己的项目中尝试使用1.2RC版本，如果遇到任何问题，请与我们联系。您的反馈对于确保最终版本的顺利发布至关重要。
 
 {% raw %}
 <p><span id="more-5407"></span></p>
 {% endraw %}
 
-# Kotlin / Native iOS支持
+# Kotlin/Native iOS支持
 
-作为Kotlin/Native 0.4的一部分，第二个大新闻便Kotlin/Native支持iOS开发。然而目前还处于早期阶段，但从无到有，让Kotlin在全平台开发的道路上迈出巨大的一步。  
+作为Kotlin/Native 0.4的一部分，第二个大新闻是Kotlin/Native支持iOS开发。然而目前还处于早期阶段，但从无到有，让Kotlin在全平台开发的道路上迈出巨大的一步。  
 
 为此，我们编写了两个应用程序，并发布在了App Store:
 
 * [Spinner App](https://itunes.apple.com/us/app/kotlinconf-spinner/id1291282375?mt=8)([Github](https://github.com/jetbrains/kotlinconf-spinner))是一款使用OpenGL编写的简单游戏。可以同时运行在iOS和Android平台上运行([Play Sotre链接](https://play.google.com/store/apps/details?id=com.jetbrains.konan_activity2))，两个版本之间的大部分代码是通用的。但在iOS版本中集成了Game Center。
-* [KotlinCof App](https://itunes.apple.com/us/app/kotlinconf/id1299196584?mt=8)([Github](https://github.com/jetbrains/kotlinconf-app))可以展示本次大会的时间安排，并使用UIKit构建完全原生的iOS界面。
+* [KotlinCof App](https://itunes.apple.com/us/app/kotlinconf/id1299196584?mt=8)([Github](https://github.com/jetbrains/kotlinconf-app))是一款可以展示本次大会的时间流程的应用程序，并使用UIKit构建完全原生的iOS界面。
 
-以上两个程序的代码完全开源，开发者可以以其为模板蓝本，完全使用Kotlin来构建自己的跨平台移动应用程序。
-# Kotlin / Native IDE支持
+以上两个程序的代码完全开源，开发者可以将其作为模板蓝本，完全使用Kotlin来构建自己的跨平台移动应用程序。
+
+# Kotlin/Native IDE支持
 
 当然，无论任何语言，使用IDE都可以大幅提高效率，从今天开始，Kotlin/Native也开始有IDE支持了。
 
