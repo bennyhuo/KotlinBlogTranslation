@@ -4,66 +4,84 @@ author: Dmitry Jemerov
 date: 2017-11-02 20:51:00
 source_url: https://blog.jetbrains.com/kotlin/2017/11/kotlinconf-keynote-recap/
 tags: 
-categories:  官方动态
+categories:  官方动态  
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys
+
 ---
 
-今天是Kotlin社区的好日子。 KotlinConf是首个Kotlin会议，今天开幕，我们留下深刻的印象，大约有1200名来自世界各地的与会者加入了我们的旧金山。在会议主题演讲中，Kotlin的首席设计师Andrey Breslav宣布了Kotlin的一些重大发展，现在我们正在与其他人分享这个消息。
+今天对于Kotlin社区来说是意义非凡的一天。1200多名来自世界各地的与会者，齐聚三藩市，共庆KotlinConf——关于Kotlin的首次大会。大会开幕式上，Kotlin首席设计师Andrey Breslav宣布了一系列有关Kotlin的重磅消息以及未来发展。 
 # Kotlin 1.2 RC
 
-主题演讲的第一个重要公告是Kotlin 1.2 Release Candidate的发布。此版本中的新功能包括对多平台项目的实验性支持，允许您在针对JVM和JavaScript的模块之间共享代码，以及多种语言改进，包括支持注释中的数组文字。有关1.2中的新功能的更多信息，请查看Kotlin 1.2 Beta公告博客文章。
-编译器现在拒绝使用较早版本的Kotlin 1.2编译的二进制文件;你需要重新编译这个版本。用Kotlin 1.0.x或1.1.x编译的代码当然是完全兼容这个版本的编译器。
-尽管协程仍然被标记为一个实验性的特征，但是我们想澄清这个状态的确切含义。协程完全准备好用于生产，我们将它们用在自己的开发中，而且我们不知道有什么实施的重大问题。我们保持实验状态的原因是它使我们有能力重复设计。请注意，即使我们对API进行了更改，当前API仍将受支持，即使它将被标记为已弃用，我们也将提供必要的迁移工具。根据我们目前的计划，Kotlin 1.3将删除协程的实验状态。
-现在是我们要求你帮忙的时候了。尽管我们已经在JetBrains内部和其他团队对这个版本进行了大量的测试，但真实世界比我们所访问的要多得多。因此，请给Kotlin 1.2 RC试一下自己的项目，如果遇到任何问题，请告诉我们。您的帮助对于确保顺利的最终版本至关重要。
-告诉大家去试试看
+第一个重磅消息是**Kotlin 1.2候选发布版本**，此版本中的新特性包括对<strong>[多平台项目](http://kotlinlang.org/docs/reference/multiplatform.html)</strong>的实验性支持，因此开发者可在针对JVM和JavaScript的模块之间共享代码；以及几项<strong>语言改进</strong>，包括对注解中数组常量的支持。关于1.2版本中新功能的更多内容，请参考<strong>[Kotlin 1.2 Beta is out](https://github.com/enbandari/KotlinBlogTranslation/blob/master/translated/Kotlin%201.2%20Beta%20is%20out.md)</strong>。  
+
+编译器现在已经无法编译由较早版本的Kotlin 1.2所编译的二进制文件，因此开发者需要重新编译新版本；而Kotlin 1.0或1.1.x版本则不受此影响。  
+
+尽管协程(Coroutines)仍然被标记为实验性，但我们仍然要对此状态进行说明：协程已经**完全准备好用于生产项目中**，在我们自己的开发项目中就有使用，到目前为止尚未发现存在重大问题。目前仍然保留实验性状态的原因仅仅是让我们能够进行迭代设计。但即使我们对API进行了修改，已有的API仍然支持，即便被标记为弃用(deprecated)，我们也会提供必要的**迁移工具**。根据目前的计划，我们会在Kotlin 1.3版本中将协程的实验状态移除。  
+
+而现在我们**需要大家的帮助**，尽管在团队内部以及JetBrains其它团队中进行了大量的长时间测试，但实际情况要比我们想象的复杂的多。如果可以请在您自己的项目中尝试使用1.2RC版本，如果遇到任何问题，请与我们联系。您的反馈对于确保最终版本的顺利发布至关重要。
 
 {% raw %}
 <p><span id="more-5407"></span></p>
 {% endraw %}
 
-# Kotlin / Native iOS支持
+# Kotlin/Native iOS支持
 
-我们宣布的下一个重大消息是支持Kotlin / Native的iOS开发，作为Kotlin / Native 0.4的一部分发布。这种支持还处于早期阶段，但在这方面，这是我们在所有平台上实现科特林发展的重要一步。
-为了展示什么是可能的，我们写了两个应用程序，并将它们发布到App Store：
+作为Kotlin/Native 0.4的一部分，第二个大新闻是Kotlin/Native支持iOS开发。然而目前还处于早期阶段，但从无到有，让Kotlin在全平台开发的道路上迈出了巨大的一步。  
 
-* Spinner应用程序（GitHub）是使用OpenGL构建的简单游戏。它在iOS和Android上运行（玩商店链接），大部分代码在这两个版本之间共享。 iOS版本还有其他一些功能，如Game Center集成。
-* KotlinConf应用程序（GitHub）向您显示本次会议的时间安排，并具有完全原生的UIKit构建的iOS UI。
+为此，我们编写了两个应用程序，并发布在了App Store:
 
-这两个示例应用程序都是开源的，您可以将它们作为模板在纯Kotlin中构建自己的跨平台移动应用程序。
-# Kotlin / Native IDE支持
+* [Spinner App](https://itunes.apple.com/us/app/kotlinconf-spinner/id1291282375?mt=8)([Github](https://github.com/jetbrains/kotlinconf-spinner))是一款使用OpenGL编写的简单游戏。可以同时运行在iOS和Android平台上([Play Sotre链接](https://play.google.com/store/apps/details?id=com.jetbrains.konan_activity2))，两个版本之间的大部分代码是通用的。但在iOS版本中集成了Game Center。
+* [KotlinCof App](https://itunes.apple.com/us/app/kotlinconf/id1299196584?mt=8)([Github](https://github.com/jetbrains/kotlinconf-app))是一款可以展示本次大会的时间流程的应用程序，并使用UIKit构建完全原生的iOS界面。
 
-当然，你需要一个IDE来使用任何语言，从今天开始，Kotlin / Native也有IDE支持。
-我们现在正在发布CLion的Kotlin / Native插件的最初预览版本，我们的C / C ++ IDE。该插件支持CMake作为构建系统。它包括IntelliJ IDEA的Kotlin插件的全套代码编辑功能，以及对项目创建，测试和调试的初始支持。
+以上两个程序的代码完全开源，开发者可以将其作为模板蓝本，完全使用Kotlin来构建自己的跨平台移动应用程序。
+
+# Kotlin/Native IDE支持
+
+当然，无论任何语言，使用IDE都可以大幅提高效率，从今天开始，Kotlin/Native也开始有IDE支持了。
+
+我们即将为自己的C/C++ IDE——CLion，发布一款Kotlin/Native插件的初始预览版本。插件支持使用CMake作为构建系统，它包括IntelliJ IDEA Kotlin插件的全套代码编辑功能，以及对创建项目，测试和调试的初始支持。
 
 {% raw %}
 <p><a href="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/11/clion-debugger.png" rel="attachment wp-att-5414"><img alt="clion-debugger" class="alignnone size-full wp-image-5414" height="612" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/11/clion-debugger.png" width="1600"/></a></p>
 {% endraw %}
 
-要尝试插件，请安装CLion 2017.3 EAP并在JetBrains插件列表中搜索“otlin / Native”。
-在未来的日子里，我们将发布一个单独的博客文章，详细介绍插件及其功能。当然，CLion插件只是我们Kotlin IDE支持故事中的一步。请继续关注明年的进一步公告！
+目前插件可在2017.3 EAP版本CLion中的JetBrains插件列表中获取(搜索“Kotlin/Native”)。  
+
+后续我们将单独发布博客文章，详细介绍该插件及其功能。当然CLion插件仅仅只是我们对Kotlin IDE支持故事中的一步。请继续关注来年的更多消息。
+
 # Ktor 0.9
 
-服务器端开发也是我们多平台故事的关键部分。而现在我们正在宣布我们自己的这一部分：Ktor的0.9版本，这是一个非常棒的基于异步协程的Web框架，从Kotlin开始构建。
-Ktor已经在JetBrains内部和社区中的许多项目中使用，现在我们相信它是构建高性能Web应用程序的坚实基础。查看ktor.io上的快速入门指南，试用一下，让我们知道您的想法，以便我们可以在1.0版本中做得更好。
+**服务端开发**在我们的多平台项目中也是非常关键的内容之一。现在我们宣布[Ktor](http://ktor.io/) 0.9版本正式面世，这是一款由Kotlin构建的了不起的基于异步协程的**Web端框架**。
+
+Ktor已经应用于JetBrains内部和社区的诸多项目中，而且我们相信它足以成为构建高性能Web应用程序的基石。开发者可以在ktor.io上查看[快速入门手册](http://ktor.io/quickstart/index.html)，尝试一下，告诉我们您的想法，让我们可以在1.0版本中做的更好。
+
 # 使用React和Kotlin创建现代Web应用程序
 
-对于使用Kotlin进行Web前端开发，今天最大的新闻是发布React.js的官方Kotlin包装器，以及使用React.js在Kotlin中创建现代Web应用程序的工具箱create-react-kotlin-app。 。使用create-react-kotlin-app，您可以生成并立即开始在客户端应用程序上工作，而无需担心项目设置和构建配置，使用静态类型语言的好处以及JavaScript生态系统的强大功能。
-要开始，请运行npm install -g create-react-kotlin-app并查看入门指南。
+对于使用Kotlin进行Web前后端的开发者而言，今天最大的消息莫过于为[React.js](https://reactjs.org/)发布的[官方Kotlin包装器](https://github.com/JetBrains/kotlin-wrappers)，以及使用React.js在Kotlin中创建现代Web应用程序的工具箱[create-react-kotlin-app](https://www.npmjs.com/package/create-react-kotlin-app)。有了这个工具箱，开发者可以生成并立即开始进行客户端应用开发，无需关注项目设置和构建配置，享受静态类型语言的好处，以及JavaScript生态系统的强大功能。  
+
+获取组件请运行`npm install -g create-react-kotlin-app`，查看[入门指南](https://github.com/JetBrains/create-react-kotlin-app/)。
+
 # 多平台项目演示
 
-为了展示我们的多平台故事中的所有内容，我们使用我们的技术堆栈的所有最新版本构建了一个应用程序：KotlinConf应用程序。它由以下组件组成：
+为了充分展示多平台项目中的所有内容，我们应用目前所有技术栈的最新版本构建了KotlinConf应用程序，所使用的组件包括如下内容：
 
-* 使用Ktor的后端;
-* 使用React.js和Kotlin React包装的浏览器应用程序;
-* 使用Anko和Android体系结构组件的Android应用程序;
-* iOS应用（上面提到）使用UIKit。
+* 后端使用Ktor；
+* 浏览器应用程序使用React.js和Kotlin React包装器；
+* Android应用程序使用Anko和Android体系结构组件；
+* iOS应用（见上文）使用UIKit。
 
-后端，浏览器应用程序和Android应用程序使用Kotlin多平台项目技术共享代码。对于异步编程，所有组件都使用协程。为了在服务器和客户端之间交换数据，我们使用全新的kotlinx.serialization库。
-您可以从应用程序的源代码中找到技术宝库，您也可以在自己的工作中使用这些宝藏。
+后端，浏览器应用和Android应用程序均使用Kotlin跨平台项目技术共享代码。异步编程均使用协程实现。服务端与客户端数据交互则使用全新的[kotlinx.serialization库](https://github.com/kotlin/kotlinx.serialization)。  
+
+开发者能够从该程序的源代码中获益良多，并可直接应用于实际工作中。
+
 # 学习Kotlin
 
-随着Kotlin的各种喧嚣，越来越多的人对学习语言感兴趣。为了使这一点更容易，我们发布了新版本的EduTools插件，允许通过在您喜欢的IDE中解决交互式练习来学习Kotlin。新版本增加了对Android Studio的支持（以前只支持IntelliJ IDEA），并包含用于构建自己的课程的新UI。
+伴随着Kotlin的喧嚣而上，会有越来越多的人对Kotlin产生兴趣并开始学习。为此，我们发布了新版本的[EduTools插件](https://www.jetbrains.com/education/kotlin-edu/)，让学习Kotlin更轻松，让开发者在自己最爱的IDE中通过解决交互练习掌握Kotlin。新版本增加了对Android Studio的支持(旧版本仅支持IntelliJ IDEA)，并包括用于构建自己课程的新UI。
+
 # 未来的方向
 
-至于语言的未来发展，我们目前的主要目标是在Kotlin支持的平台之间实现更好，更广泛的代码重用。我们计划使用相同的API扩展在所有平台上可用的库集，以包括I / O，网络，序列化，日期处理等等。
-在编译器中，我们关注1.3的主要焦点仍然是内部变化，而不是外部可见的语言特性。内部的改变可以提高性能，改进类型推断，为所有目标平台生成更高效的代码，以及更好的IDE插件响应能力。我们希望我们仍然可以用一些很好的新语言来释放发行版，但是我们现在还没有做出任何承诺。
-让科特林！
+至于语言的未来发展，当下的主要目标是在Kotlin支持的平台之间实现更好和更广泛的代码重用。我们计划使用相同的API扩展在所有平台上可用的库，包括I/O，网络，序列化，日期处理等等。
+在编译器中，对于1.3版本我们的主要焦点仍然是关注内部变化，而非外部可见的语言特性。内部的改变可以提高性能，改进类型推断，为所有目标平台生成更高效的代码，以及更好的IDE插件响应能力。我们希望在新版本发布时仍然有不错的新语言特性，但是目前我们对此不做任何承诺。  
+
+Let's Kotlin！

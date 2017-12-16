@@ -25,7 +25,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 | -------------------------------- | ------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------- |
 | [Kotlin 1.1.60 is out](original/Kotlin%201.1.60%20is%20out.md) | 2017-11-13 14:07:00 | [译文](translated/Kotlin%201.1.60%20is%20out.md) | | |
 | [Kotlin Native IDE Support Preview](original/Kotlin%20Native%20IDE%20Support%20Preview.md) | 2017-11-03 19:44:00  | [译文](translated/Kotlin%20Native%20IDE%20Support%20Preview.md) | | |
-| [KotlinConf Keynote Recap](original/KotlinConf%20Keynote%20Recap.md) | 2017-11-02 13:51:00  | [译文](translated/KotlinConf%20Keynote%20Recap.md) | | |
+| [KotlinConf Keynote Recap](original/KotlinConf%20Keynote%20Recap.md) | 2017-11-02 13:51:00  | [译文](translated/KotlinConf%20Keynote%20Recap.md) | [SnakEys](https://github.com/SnakeEys) | |
 | [Kotlin 1.2 Beta2 is out](original/Kotlin%201.2%20Beta2%20is%20out.md) | 2017-10-19 06:43:00  | [译文](translated/Kotlin%201.2%20Beta2%20is%20out.md) |[SnakEys](https://github.com/SnakeEys)  | |
 | [Kotlin Census 2017](original/Kotlin%20Census%202017.md) | 2017-10-18 11:55:00 | [译文](translated/Kotlin%20Census%202017.md) | [pye52](https://githut.com/pye52) | |
 | [Kotlin 1.2 Beta is out](original/Kotlin%201.2%20Beta%20is%20out.md) | 2017-09-29 06:51:00  | [译文](translated/Kotlin%201.2%20Beta%20is%20out.md) | [pye52](https://githut.com/pye52) | |
