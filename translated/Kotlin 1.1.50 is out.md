@@ -5,44 +5,55 @@ date: 2017-09-22 18:13:00
 source_url: https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-1-50-is-out/
 tags: 
 categories:  官方动态
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys  
+
 ---
 
-我们很高兴地宣布发布Kotlin 1.1.50，这是Kotlin 1.1的一个新的bug修复和工具更新。此更新：
+Kotlin1.1.50版本正式发布，本次更新是基于1.1版本的Bug修复及工具更新，包括： 
 
-* 推出新的版本控制方案：1.1.5x而不是1.1.5-x
-* 改进对JSR-305注释的支持（可空性问题可以作为警告报告，检查在JSR-305类不在类路径上时工作）
-* 改进生成的字节码性能
-* 使原始数组为TypedArray转换，增加源代码映射支持死码消除工具，并对JS后端进行其他改进
-* 修复了编译器和IDE中的大量错误
-* 在IntelliJ插件中引入新的检查，性能改进和错误修复
+* 采取新的版本控制方案：使用1.1.5x替代1.1.5-x
+* 改进对JSR-305标准注解的支持（可空性问题可作为警告方式进行提示，基于JSR-305标准的类无路径时的检查任务）
+* 提升生成字节码的性能
+* 启用原始数组转换TypedArray，增加废弃代码消除工具的源代码映射支持，其它JS后端改进
+* 编译器和IDE的Bug修复
+* 在IntelliJ插件中引入新的检查项，性能提升和错误修复
 * 支持预览Kotlin序列化插件的扩展点
 
-该更新与所有版本的IntelliJ IDEA兼容，从2016.3到2017.3以及Android Studio 2.3和3.0。
-此版本中的完整更改列表可在更改日志中找到。
+本次更新兼容2016.3至2017.3版本的IntelliJ IDEA以及Android Studio 2.3和3.0。
+本次发布的完整内容请参阅[更新日志](https://github.com/JetBrains/kotlin/blob/1.1.50/ChangeLog.md)。
 
 {% raw %}
 <p><span id="more-5280"></span></p>
 {% endraw %}
 
-我们要感谢我们的外部贡献者，他们的推荐要求包括在这个版本中：Andrius Semionovas，Dimach，Kirill Rakhman，Toshiaki Kameyama，scache，Andr茅奥娅，Daniil Vodopian，Nagesh Susarla和Knize。
+此外特别感谢对本次发布提交PR的外部贡献者们：[Andrius Semionovas](https://github.com/neworld), [Dimach](https://github.com/Dimach), [Kirill Rakhman](https://github.com/cypressious), [Toshiaki Kameyama](https://github.com/t-kameyama), [scache](https://github.com/sckm), [André Oriani](https://github.com/aoriani), [Daniil Vodopian](https://github.com/voddan), [Nagesh Susarla](https://github.com/nageshs)以及[Knize](https://github.com/Knize)。
+
 ## 版本控制方案更改
 
-从本版本开始，而不是使用版本1.1.5,1.1.5-1,1.1.5-2等，将使用1.1.50,1.1.51,1.1.52等。
-我们想将版本号与发行版本相同的JS工件发布到NPM。这里的问题是我们使用破折号后面的数字作为修补程序号，而NPM考虑将破折号作为预先释放的版本。这意味着NPM认为Kotlin 1.1.5比1.1.5-1更新，而实际情况恰恰相反。更改版本控制方案可以解决问题。
-## JSR-305注释支持改进
+从本次发布的版本开始将使用1.1.50，1.1.51，1.1.52版本号替代旧的1.1.5，1.1.5-1，1.1.5-2版本号。
 
-Kotlin 1.1.4引入了默认可空性注释的初始支持，例如@ParametersAreNonnullByDefault作为选择加入功能。在Kotlin 1.1.50中，由于这种注释，检测到的无效性问题默认情况下报告为警告。要将它们转换为错误，请添加命令行参数-Xjsr305 = strict。要禁用警告，请使用-Xjsr305 = ignore。 （请注意，现在不推荐使用用于在Kotlin 1.1.4中启用默认可空性注释的命令行参数-Xjsr305-annotations = enable。）
-此外，由于此版本，Kotlin不再需要在库的依赖关系中具有JSR-305注释的.jar文件，以便读取此库的可空性信息。
-## JavaScript后端改进
+我们希望使用与发布版本相同的版本号将JS组件发布至NPM，一直以来我们将“-”后面的数字作为补丁号使用，而NPM则将“-”后的数字作为[预发布版本](https://docs.npmjs.com/misc/semver#prerelease-tags)。因此在NPM看来，Kotlin 1.1.5的版本高于1.1.5-1，然而这恰恰与实际情况背道而驰，所以只需变更版本方案即可解决。
 
-Kotlin 1.1.50引入了几个改变，它们破坏了JavaScript后端的二进制向前兼容性。这意味着如果要使用Kotlin / JS 1.1.50编译的库，您应该将编译器更新为1.1.50或更高版本。您仍然可以使用使用旧版本的Kotlin编译器编译的库。
-### 内衬改进
+## 改进对JSR-305注解的支持
 
-将内联函数转换为JS的方式已更改，以避免在内联函数体中使用完全限定名称。这减少了生成的JS文件的大小。
+在Kotlin 1.1.4中引入了**默认可空性注解**的试验性支持，例如使用[@ParametersAreNonnullByDefault](http://static.javadoc.io/com.google.code.findbugs/jsr305/3.0.1/javax/annotation/ParametersAreNonnullByDefault.html)作为可选功能。在Kotlin 1.1.50中，由于这种注释，检测到的可空性问题默认情况下**被报告为警告**。若将警告转换为错误报告，需要添加命令行参数`-Xjsr305 = strict`。要禁用警告，请使用`-Xjsr305 = ignore`。 （注意现已不推荐使用在Kotlin 1.1.4中启用默认可空性注释的命令行参数`-Xjsr305-annotations = enable`）。  
+
+此外自本次发布版本开始，Kotlin不再需要在依赖库中添加包含JSR-305注解的.jar文件以用于读取此库的可空性信息。  
+
+请注意编译器对严格模式下的JSR-305支持被标记为**实验性质**。
+## JavaScript后端提升
+
+Kotlin 1.1.50新引入的几项变化使得JavaScript后端不再向前兼容，这表明Kotlin/JS 1.1.50编译的库仅支持1.1.50或更高版本的编译器，但仍然可以使用旧版本Kotlin编译器所编译的库。
+
+### 行内函数改进
+为了避免在行内函数体中使用全匹配名称，我们对行内函数转换为JS的方式进行了修改，并缩小了生成JS文件的大小。
+
 ### TypedArrays默认启用
 
-默认情况下，原始数组将转换为TypedArrays。可以通过将-Xtypedarrays = false传递给编译器来禁用此功能。这种变化影响二进制向前兼容性？不建议使用旧的编译器与新的库。
-请注意，新的数组表示也可能会影响从Kotlin调用JS代码。要调用一个需要常规数组而不是TypedArray的JS函数，请使用toTypedArray扩展函数将TypedArray转换为常规数组。类似于IntArray的函数可用于将原始数组转换为TypedArray。
+默认情况下，原始数组将转换为[TypedArrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)，若需要禁用此特性，设置编译参数`-Xtypedarrays = false`即可。该项特性会对旧版本的兼容性有所影响--因此并不建议在旧的编译器下使用新的编译库。
+
+值得注意的是新的数组表示方法也可能会影响Kotlin调用JS代码，若需要从JS函数获取常规数组而非TypedArray时，使用[toTypedArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/to-typed-array.html)函数将TypedArray转换为常规数组。例如类似[toIntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/to-int-array.html)的函数可将常规的基础类型数组转换为TypedArray。
 
 {% raw %}
 <p></p>
@@ -59,7 +70,8 @@ val otherIntArray: IntArray = arrayOfInts.toIntArray() // otherIntArray is Int32
 <p></p>
 {% endraw %}
 
-这种改变也使得可以在运行时区分Array和IntArray等。
+这些变化也使得可在运行时对Array和IntArray等类似情况进行区分。
+
 
 {% raw %}
 <p></p>
@@ -78,21 +90,22 @@ arrayOfInts !is IntArray && arrayOfInts is Array<*> // true
 <p></p>
 {% endraw %}
 
-### DCE中的源地图支持
+### DCE源映射支持
 
-Kotlin 1.1.50改进了死码消除工具，使其更容易调试其输出。该工具检测现有的源地图并将其与代码一起转换。有关JS调试的更多信息，请参阅本教程。
-## IntelliJ IDEA插件改进
+Kotlin 1.1.50改进了[废弃代码消除工具](https://kotlinlang.org/docs/reference/javascript-dce.html)，使其更容易调试输出。该工具可检测已有的源并将其与代码同时转换，更多关于JS调试信息可参阅本[教程](https://kotlinlang.org/docs/tutorials/javascript/debugging-javascript/debugging-javascript.html)。
+## IntelliJ IDEA插件强化
 
-新版本为IntelliJ IDEA插件带来了许多改进：
+IntelliJ IDEA插件在新版本中的改进部分：
 
-* 性能改进
-* 支持导入别名的代码完成
+* 性能提升
+* 支持导入别名的代码补全
 * 更好地支持Gradle Kotlin DSL
-* 检查以验证代码是否与为项目配置的格式和命名约定相匹配
-* 许多其他新的检查和quickfixes
+* 校验代码是否与项目配置的格式以及约定命名相匹配
+* 其它新特性及问题修复
 
 ## 如何更新
 
-要更新插件，请使用工具|科特林配置Kotlin插件更新，然后按“淐呵呵更新” - 按钮。此外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本。
-像往常一样，如果您遇到新版本的任何问题，欢迎您在论坛上请求帮助，在Slack（在这里获得邀请）或报告问题跟踪器中的问题。
-让檚ot lin！
+更新插件，请依次在菜单栏中选择 Tools | Kotlin | Configure Kotlin Plugin Updates并点击"Check for updates now"按钮。此外，不要忘记在Maven和Gradle构建脚本中更新编译器和标准库版本。
+
+与往常一样，如果您在新版本中遇到的任何问题，欢迎您在[论坛](https://youtrack.jetbrains.com/issues/KT)上寻求帮助，在Slack（[获得邀请](http://slack.kotlinlang.org/)）或在[问题跟踪器](https://youtrack.jetbrains.com/issues/KT)中上报问题。
+Let's Kotlin!
