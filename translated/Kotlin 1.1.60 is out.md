@@ -7,30 +7,26 @@ tags:
 categories:  官方动态
 ---
 
-我们很高兴地宣布Kotlin 1.1.60的发布，这是Kotlin 1.1的一个新的错误修正和工具更新。此更新：
+我们很高兴地宣布Kotlin 1.1.60的发布，这是针对Kotlin 1.1的一个bug修复和工具更新的新版本。包含以下更新：
 
-* 为Kotlin / JS增量编译添加实验支持
-* 向JSR-305自定义可用性注释支持添加新功能
-* 在自动Parcelable实现生成器中引入了很多bug修复，并为其提供了IDE支持
-* 改进了Gradle增量构建
-* 在IntelliJ插件中引入新的检查，性能改进和错误修复
+* Kotlin / JS将实验性地支持增量编译
+* 增加对JSR-305自定义可空注释的支持
+* 修复了Parcelable生成器的大部分bug，并为其提供了IDE的支持
+* 对Gradle的增量构建进行了改进
+* 在IntelliJ插件中引入新的检查，对性能改进以及bug修复
 
-此更新与2016.3至2017.3的所有IntelliJ IDEA版本以及Android Studio 2.3,3.0和3.1 Canary兼容。
-此更新的完整列表可以在更新日志中找到。
-我们要感谢我们的外部贡献者，他们的提案请求包括在这个版本中：龟井俊明，Kirish Rakhman，Paul Merlin，Raluca Sauciuc，Yoshinori Isogai，Andrey Mischenko，Francesco Vasco，Jonathan Leitschuh，Denis Grachev和pivotal-vladimir。
-
-{% raw %}
-<p><span id="more-5441"></span></p>
-{% endraw %}
+该更新兼容以下版本：2016.3到2017.3的所有IntelliJ IDEA版本以及Android Studio 2.3、3.0和3.1 Canary。
+完整的更新列表可以在[这里](https://github.com/JetBrains/kotlin/blob/1.1.60/ChangeLog.md)查看。
+我们还要感谢所有贡献者，他们的pr都合并到版本中：龟井俊明，Kirish Rakhman，Paul Merlin，Raluca Sauciuc，Yoshinori Isogai，Andrey Mischenko，Francesco Vasco，Jonathan Leitschuh，Denis Grachev和pivotal-vladimir。
 
 ## Kotlin / JS增量编译
 
-Kotlin 1.1.60在Kotlin / JS Gradle项目中引入了增量编译的实验性支持，可以显着减少开发过程中的构建时间，编译一个小的局部变化，而不是一分钟，而非完整的非增量重建。
-它在默认情况下是禁用的，应该通过在gradle.properties或local.properties中设置kotlin.incremental.js = true来启用它。
-随时尝试一下，并向Kotlin问题跟踪器报告遇到的任何问题。
+在1.1.60版本中，Kotlin / JS Gradle项目将实验性地支持增量编译，对于微小的局部变更，只需数秒而非几分钟的完整编译，这可以显着减少开发过程中的构建时间。
+默认情况下它是禁用的，你可以在gradle.properties或local.properties中设置kotlin.incremental.js = true来启用它。
+欢迎使用，若遇到任何问题，请向[Kotlin issue tracker](https://youtrack.jetbrains.com/oauth?state=%2Fissues%2FKT)反馈。
 ## JSR-305支持
 
-对JSR-305可空性注释的支持（由Kotlin 1.1.50中的类型限定符昵称和默认扩展）得到了进一步改进，并且在此版本中得到了错误修复。
+对[JSR-305可空注释](https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support)的支持（由Kotlin 1.1.50中的类型限定符昵称和默认扩展）得到了进一步改进，并且在此版本中得到了错误修复。
 ### 类型限定符默认为所有类型的用法
 
 JSR-305默认类型限定符现在可以指定ElementType.TYPE_USE来影响注释范围内的所有类型用法，包括类型参数，类型参数上限和通配符类型：
