@@ -5,11 +5,16 @@ date: 2017-10-19 13:43:00
 source_url: https://blog.jetbrains.com/kotlin/2017/10/kotlin-1-2-beta2-is-out/
 tags: 
 categories:  官方动态
+translator: SnakEys  
+translator_url: https://github.com/SnakeEys
+
 ---
 
-我们很高兴地宣布Kotlin 1.2的第二个Beta版本。在这个版本中，我们一直主要关注较小的内部变化，并在我们的多平台项目故事中增加一些缺失的部分。
-感谢Andrey Mischenko，Francesco Vasco，Jake Wharton，Jonathan Leitschuh，Kirill Rakhman，Pap Lorinc，Paul Merlin，Raluca Sauciuc，Toshiaki Kameyama和Yoshinori Isogai对Kotlin 1.2 Beta2的贡献。
-自1.2-Beta以来的完整更新日志可以在这里找到，下面列出的重大更改。
+Kotlin1.2的第二个Beta版本发布了。在该版本中，我们把注意力主要放在较小的内部变化上，并对多平台项目中的缺失部分进行了增补。  
+
+非常感谢Andrey Mischenko，Francesco Vasco，Jake Wharton，Jonathan Leitschuh，Kirill Rakhman，Pap Lorinc，Paul Merlin，Raluca Sauciuc，Toshiaki Kameyama和Yoshinori Isogai对Kotlin 1.2 Beta2所做出的贡献。
+
+查看1.2 Beta发布以来的[完整更新日志](https://github.com/JetBrains/kotlin/blob/1.2-Beta2/ChangeLog.md)，重要变更如下。
 
 {% raw %}
 <p><span id="more-5350"></span></p>
@@ -17,36 +22,39 @@ categories:  官方动态
 
 ## 编译器
 
-### 编译器性能改进
+### 编译器性能提升
 
-自上次公开发布以来，有一系列的编译器性能改进。平均项目建设时间减少了近20％。
-### 生成字节码后处理工具的代码规范化
+自上次公开版本发布后我们对编译器的性能进行了一系列的改进，项目构建的平均时间节省近20%。
 
-从1.0版开始，Kotlin支持复杂控制流的表达式，如try-catch表达式和内联函数调用。这样的代码根据Java虚拟机规范是有效的。不幸的是，当构造函数调用的参数中存在这样的表达式时，一些字节码处理工具不能很好地处理这些代码。
-为了缓解这种字节码处理工具的用户的这个问题，我们添加了一个命令行选项（-Xnormalize-constructor-calls = MODE），告诉编译器为这样的结构生成更多的类Java字节码。这里MODE是以下之一：
+### 字节码后处理工具生成代码规范化
 
-* 禁用（默认）“按照Kotlin 1.0和1.1中的相同方式生成字节码;
-* 启用“为构造函数调用生成类似Java的字节码。这可以改变类加载和初始化的顺序;
-* 保留类初始化 - 为构造函数调用生成类似于Java的字节码，确保保持类初始化顺序。这可能会影响应用程序的整体性能;只有在多个类之间共享一些复杂的状态并在类初始化时更新时才使用它。
+从1.0版本开始，Kotlin就支持复杂控制流的表达式，如try-catch表达式和内联函数(inline fun)调用。这些代码是符合Java虚拟机规范的。然而不幸的是，部分字节码处理工具并不能较好的处理这些代码，尤其是当调用构造函数的参数中存在此类表达式时。
 
-“解决方案”的解决方法是将具有控制流的子表达式的值存储在变量中，而不是直接在调用参数中对它们进行求值。它与-Xnormalize-constructor-calls = enable类似。
-有关更多详细信息，请参阅KT-19251。
+为了缓解这个问题，用户在使用此类字节码处理工具时，可以通过添加命令行选项(`-Xnormalize-constructor-calls=MODE`)，告诉编译器为此类构造函数生成更类似Java的字节码。`MODE`参数可以是如下之一：
+
+
+* `disable`（默认）- 以Kotlin 1.0和1.1版本同样的方式生成字节码；
+* `enable` - 为构造函数调用生成更类似Java的字节码。但会改变类加载和初始化的顺序；
+* `preserve-class-initialization` - 为构造函数调用生成类似Java的字节码，确保类初始化顺序不变。但会影响应用程序的整体性能；仅在多个类之间需要共享复杂状态和类初始化更新时使用。
+
+上述“手动”的解决方案是将具有控制流的子表达式的值存储在变量中，而非直接在调用参数中进行求值。类似于`Xnormalize-constructor-calls=enable`。
+
+更多详细信息请查阅[KT-19251](https://youtrack.jetbrains.com/issue/KT-19251)。
+
 ## 多平台项目
+对于多平台项目的支持有着难以数计的改进，大多集中在IDE方面，但远不止如此。而最值得注意的有如下内容：
 
-在多平台项目支持方面有许多改进，主要是在IDE中，但不仅如此。最值得注意的是以下几个。
-### 编写多平台单元测试的注释
+### 编写多平台单元测试的注解
 
-现在可以在一个普通的项目中编写测试，以便在每个平台项目中进行编译和运行。在kotlin-test包中提供了4个注释，用于标记常用代码中的测试：@Test，@Ignore，@BeforeTest和@AfterTest。
-在JVM平台中，这些注释被映射到相应的JUnit 4注释，而在JS中它们已经可用，从1.1.4开始支持JS单元测试。
-为了使用它们，你需要添加一个对通用模块通用的kotlin-test-annotations，对你的JVM模块的kotlin-test-junit，以及对JS模块的kotlin-test-js的依赖。
-### “实施”更名为“预计”。
+在通用项目中编写测试并独立在每个平台项目中编译运行已经成为可能。目前在`kotlin-test`包中提供4个注解：`@Test`，`@Ignore`，`@BeforeTest`，`@AfterTest`，用于提升通用代码的测试。  
+在JVM平台这些注解被映射到相应的JUnit 4注解，JS从1.1.4版本已经开始支持JS单元测试。
 
+使用时需要对通用模块添加`kotlin-test-annotations-common`依赖，在JVM模块中添加`kotlin-test-junit`，在js模块中添加`kotlin-test-js`。
 
+### “implement”更名为“expectedBy”。
 
+伴随着`expect`/`actual`命名之后，Gradle依赖项配置`implement`（由平台项目使用，以指向其相应的公共项目）现已被重命名为`expectedBy`，并且旧的名称已被弃用。
 
-在期望/实际命名之后，Gradle依赖项配置实现（由平台项目使用，以指向其相应的公共项目）现在被重命名为expectedBy，并且旧的名称已被弃用。
-
-正确导入具有多个模块的多平台项目
 
 {% raw %}
 <p></p>
@@ -63,19 +71,13 @@ dependencies {
 <p></p>
 {% endraw %}
 
-### 引用平台模块中的通用代码在多模块多平台项目中未解决的问题引起了一个讨厌的问题。现在，从Gradle导入这样的项目是固定的，您不必手动添加额外的依赖关系，以便解决这些引用。
+### 正确导入多模块的多平台项目
+在平台模块中引用通用代码有令人心烦的问题，这一情况在多模块多平台项目中并未得到改善。现在从Gradle中引入这些项目已然固定，且不再需要额外手动添加依赖来解决这些问题。
 
-Gradle插件
-## “行动错误”更名为“警告错误”。
+## Gradle插件
+### “warningsAsErrors错误”更名为“allWarningsAsErrors”。
 
-
-
-
-在Kotlin 1.2 Beta中引入的warningsAsErrors标志被重命名为allWarningsAsErrors：
-
-### 标准库
-
-“可以使用的”，“可用的”，“可以使用的”，“可以使用的”
+在Kotlin 1.2 Beta中引入的`warningsAsErrors`标志被重命名为`allWarningsAsErrors`：
 
 {% raw %}
 <p></p>
@@ -89,17 +91,20 @@ compileKotlin.kotlinOptions.allWarningsAsErrors = true
 {% raw %}
 <p></p>
 {% endraw %}
+## 标准库
 
-## 最后，Closeable.use函数调用Throwable.addSuppressed，当一些其他异常关闭资源时抛出异常。要启用这种行为，你需要在你的依赖关系中有kotlin-stdlib-jdk7。
+### “Throwable.addSuppressed”可用时被“Closeable.use”调用
+在其它异常关闭资源后抛出异常时，`Closeable.use`函数最终调用`Throwable.addSuppressed`。要启用该功能需添加`kotlin-stdlib-jdk7`依赖项。
 
-### 发布前的注意事项
+### 发布前注意事项
+*与其它里程碑式发布版本相似，我们对新语言以及特征库<strong>无法提供向后兼容性保证</strong>。任何在1.2里程碑版本中引入的内容都将以最终的1.2版本<strong>变更为准</strong>。在最后的RC版本中，编译器会将所有预发布版本生成的二进制文件当作非法文件：开发者可能需要重新将之前由1.2-Mx，1.2-Beta或者1.2-Beta2编译的内容重新进行编译。*  
+*但是，由1.1.x以及更早版本编译的代码无需重新编译亦可完美运行。*
 
-与其他里程碑版本一样，我们也不会对新语言和库功能提供向后兼容保证。在1.2的里程碑版本中引入的任何内容在最终的1.2版本之前可能会发生变化。当我们达到最后的RC，由预发布版本生成的所有二进制文件将被编译器取缔：你以 - 檒l条需要重新编译，是由1.2鈥惭X，1.2测试版，或1.2的Beta2编译一切。
-但是，所有由1.1.x和更早版本编译的代码在没有重新编译的情况下是完全正确的。
 ## 如何尝试
+**Maven/Gradle：**添加`http://dl.bintray.com/kotlin/kotlin-eap-1.2`作为构建脚本和项目的仓库；修改编译器插件以及标准库版本号为`1.2.0-beta-88`。  
 
-在Maven / Gradle中：添加http://dl.bintray.com/kotlin/kotlin-eap-1.2作为构建脚本和项目的存储库;使用1.2.0-beta-88作为编译器插件和标准库的版本号。
-## 在IntelliJ IDEA的：进入工具鈫科特林鈫配置科特林插件的更新，然后选择鈥淓阿尔利访问预览1.2鈥在更新通道下拉列表，然后按检查更新？？。
-命令行编译器可以从GitHub发布页面下载。
+**IntelliJ IDEA：**在菜单栏中依次选择***Tools → Kotlin → Configure Kotlin Plugin Updates***， 并在***Update Channel***下拉列表中选择“Early Access Preview 1.2”，点击***Check for updates***。  
+命令行编译器可在[Github页面](https://github.com/JetBrains/kotlin/releases/tag/v1.2-beta2)下载。
 
-在try.kotlinlang.org上：使用右下角的下拉列表将编译器版本更改为1.2（即将推出）。
+
+**[try.kotlinlang.org](https://try.kotlinlang.org/)：**可在右下角的下拉列表将编译器版本更改为1.2Beta2（即将推出）。
