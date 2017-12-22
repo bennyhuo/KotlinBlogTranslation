@@ -2,9 +2,15 @@
 title: Kotlin 1.2 Beta is out
 author: Roman Belov
 date: 2017-09-29 13:51:00
-source_url: https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/
 tags: 
 categories:  官方动态
+reward: false
+reward_title: Have a nice Kotlin!
+reward_wechat:
+reward_alipay:
+source_url: https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/
+translator: pye52 & 睡魔的倦意
+translator_url: https://pye52.github.io/ & https://suima0v0.github.io/
 ---
 
 ​	我们很高兴地宣布Kotlin 1.2的Beta版本。我们将于该发布版本揭示Kotlin 1.2的主要新特性——跨平台开发的实验性支持。此外，语言和标准库功能已经完善 - 所有计划于Kotlin 1.2实现的新功能都已完备。是时候将你们的反馈意见告诉我们了，如果需要的话，我们仍然有时间根据反馈去考虑并调整1.2终版的设计。

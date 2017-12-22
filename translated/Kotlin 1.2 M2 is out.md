@@ -2,6 +2,7 @@
 title: Kotlin 1.2 M2 is out
 author: Alexey Sedunov
 date: 2017-08-09 17:56:00
+tags:
 categories: 官方动态
 reward: false
 reward_title: Have a nice Kotlin!
