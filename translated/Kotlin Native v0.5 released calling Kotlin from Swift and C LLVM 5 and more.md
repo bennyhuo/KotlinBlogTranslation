@@ -2,54 +2,40 @@
 title: Kotlin/Native v0.5 released: calling Kotlin from Swift and C, LLVM 5 and more
 author: Nikolay Igotti
 date: 2017-12-19 17:16:00
-source_url: https://blog.jetbrains.com/kotlin/2017/12/kotlinnative-v0-5-released-calling-kotlin-from-swift-and-c-llvm-5-and-more/
 tags: 
-categories:  官方动态
+categories: 官方动态
+reward: false
+reward_title: Have a nice Kotlin!
+reward_wechat:
+reward_alipay:
+source_url: https://blog.jetbrains.com/kotlin/2017/12/kotlinnative-v0-5-released-calling-kotlin-from-swift-and-c-llvm-5-and-more/
+translator: pye52 & 黄志强
+translator_url: https://pye52.github.io/ & https://suima0v0.github.io/
 ---
 
-我们很高兴宣布推出Kotlin / Native v0.5，圣诞版！此版本增加了对使用C，Objective-C和Swift的Kotlin / Native听代码的支持，支持使用iOS模拟器的开发以及LLVM 5支持，以及从Linux和Windows主机创建WebAssembly。
-
-{% raw %}
-<p><span id="more-5635"></span></p>
-{% endraw %}
+我们很高兴地宣布Kotlin / Native 迎来了0.5圣诞版！该版本支持将Kotlin / Native嵌入到C，Objective-C和Swift代码中，同时可以使用iOS模拟器开发了，LLVM 5也被纳入到支持中，以及可以在Linux和Windows的主机中创建WebAssembly。
 
 # Objective-C和Swift的反向交互
 
-在之前的Kotlin / Native版本中，我们介绍了从Kotlin / Native调用Apple框架，假设他们提供了Objective-C头文件。现在我们换一种方式，添加从Swift和Objective-C调用Kotlin代码的支持。为此，已经实现了一个新的编译器选项-produce框架。它生成一个自包含的框架，可以从应用程序的其他部分使用，就好像它是用Swift编写的一样。让我们来看看这个计算器的例子。它具有用Swift编写的用户界面以及用Kotlin编写的计算器逻辑。 Swift代码与Kotlin混合透明。例如，这行Swift代码：
-
-{% raw %}
-<p></p>
-{% endraw %}
+我们曾经在之前的版本中提及过，如何在Kotlin / Native中调用Apple框架，但前提是存在Objective-C头文件。现在我们换了一种方式，以支持从Swift和Objective-C调用Kotlin的代码。为此我们提供了一个新的编译器选项`-produce framework`。它将生成一个独立的框架，可以从应用程序的其他地方调用，就好像它本身就是用Swift编写的一样。下面让我们来看看这个[计算器例子](https://github.com/JetBrains/kotlin-native/tree/master/samples/calculator)。它的界面采用的是[Swift编写](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/calculator/ViewController.swift#L12)，而计算逻辑则采用[Kotlin编写](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/src/main/kotlin/org/konan/arithmeticparser/Parser.kt#L17)。Swift代码与Kotlin完美混合。例如，这行Swift代码：
 
 ```kotlin
 private let parser = KAPPartialParser(composer: KAPCalculator(), partialComposer: PartialRenderer())
 ```
 
-{% raw %}
-<p></p>
-{% endraw %}
+创建Kotlin类[PartialParser](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/src/main/kotlin/org/konan/arithmeticparser/Parser.kt#L143)的实例，并将实现了Kotlin接口[ExpressionComposer](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/src/main/kotlin/org/konan/arithmeticparser/Parser.kt#L42)的Swift类[PartialRenderer](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/calculator/ViewController.swift#L115)实例赋予给它。
+请注意，像numbers和strings这样的基本类型在Swift和Kotlin中的映射是透明的。
+若要构建项目，只需在XCode中打开，然后设置为真实设备或模拟器进行编译，请参阅[README.md](https://github.com/JetBrains/kotlin-native/blob/master/samples/calculator/README.md)了解更加详细的信息。
 
-创建Kotlin类PartialParser的实例，并为其提供实现Kotlin接口ExpressionComposer的Swift类PartialRenderer的实例。
-请注意，像数字和字符串这样的基本类型在Swift和Kotlin世界之间是透明映射的。
-要构建项目，只需在XCode中打开它，然后将其编译为真实设备或模拟器，请参阅README.md了解详细信息。
-
-{% raw %}
-<p><img alt="Screen Shot 2017-12-18 at 18.40.21" class="alignnone size-full wp-image-5638" height="1918" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/12/Screen-Shot-2017-12-18-at-18.40.21.png" width="2804"/></p>
-{% endraw %}
+<img alt="Screen Shot 2017-12-18 at 18.40.21" class="alignnone size-full wp-image-5638" height="1918" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/12/Screen-Shot-2017-12-18-at-18.40.21.png" width="2804"/>
 
 IntelliJ IDEA中的Kotlin代码：
 
-{% raw %}
-<p><img alt="Screen Shot 2017-12-18 at 19.44.38" class="alignnone size-full wp-image-5643" height="1848" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/12/Screen-Shot-2017-12-18-at-19.44.38.png" width="3508"/></p>
-{% endraw %}
+<img alt="Screen Shot 2017-12-18 at 19.44.38" class="alignnone size-full wp-image-5643" height="1848" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/12/Screen-Shot-2017-12-18-at-19.44.38.png" width="3508"/>
 
-# 从C反向交互
+# Reverse interop from C
 
-对于其他平台，我们也支持反向互操作性，允许从外部调用Kotlin / Native代码。现代语言的最低标准是C，所以这是我们互操作的语言。编译器选项-produce dynamic会生成一个动态库（例如macOS上的.dylib，Linux上的.so和Windows上的.dll），其中包含使用Kotlin / Native代码所需的所有内容。为了使事情变得奇特，我们决定通过创建Python扩展来演示这种互操作性。 Python调用C实现，他们调用Kotlin实现像这样：
-
-{% raw %}
-<p></p>
-{% endraw %}
+我们也对其他平台提供reverse interop的特性，允许从外部调用Kotlin / Native代码。现代底层语言的标准是C，所以这是我们需要进行互操作的语言。开启编译器选项`-produce dynamic`将会生成一个动态库（如同macOS上的`.dylib`，Linux上的`.so`和Windows上的`.dll`），其中包含调用Kotlin / Native代码所需的所有内容。为了更容易理解，我们决定通过[Python扩展](https://github.com/JetBrains/kotlin-native/tree/master/samples/python_extension)来演示这种互操作性。Python调用C的实现，而C调用[Kotlin的实现](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/python_extension/src/main/kotlin/Server.kt#L23)，参考以下[例子](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/python_extension/src/main/c/kotlin_bridge.c#L87)：
 
 ```kotlin
 if (PyArg_ParseTuple(args, "Lss", &session_arg, &string_arg1, &string_arg2)) {
@@ -63,28 +49,24 @@ if (PyArg_ParseTuple(args, "Lss", &session_arg, &string_arg1, &string_arg2)) {
     }
 ```
 
-{% raw %}
-<p></p>
-{% endraw %}
-
-Kotlin / Native编译器生成一个动态库，然后Python distutils构建工具生成另一个动态库，具体取决于那个。因此，Python启动器代码通过C桥调用Kotlin / Native对象，并正确转换对象和原始类型。
+Kotlin / Native编译器将生成一个动态库，而Python distutils[构建工具](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/python_extension/src/main/python/setup.py#L19)生成另一个起决定作用的动态库。Python[起始代码](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/python_extension/src/main/python/main.py#L19)通过C来桥接Kotlin / Native转换的对象和原始类型。
 # 其他改进
 
 
-* 在Kotlin 1.2中，kotlin.math包被添加到Kotlin标准库中。使用v0.5 Kotlin / Native也支持kotlin.math包中的操作
-* 这个版本支持LLVM 5.0.0，因为clang工具链和bitcode codegenerator和优化器都支持
-* 现在可以从Linux和Windows主机上生成WebAssembly目标代码（-target wasm32）（仅在支持macOS主机之前）
-* 通过允许更容易地使用工作者执行结果和增加从工作者传递原始值的能力，工人API得到了改进
-* 漏洞修复和改进
+* 在Kotlin 1.2中，`kotlin.math`包被添加到Kotlin标准库中。Kotlin / Native v0.5版也支持`kotlin.math`包中的函数
+* 得益于对clang工具链、bitcode codegenerator和优化器的支持，LLVM 5.0.0也在这个版本中得到支持。
+* 现在可以在Linux和Windows系统的主机上生成WebAssembly目标代码（`-target wasm32`）（在这之前只支持macOS系统）
+* Workers API得到了这些改进：允许更方便地使用worker的执行结果和允许与worker交互初始值
+* 其他bug的改进及性能提升
 
-# 获取位
+# 获取二进制包
 
-二进制文件可以在下面下载：
+可以在以下链接下载二进制包：
 
-* x86-64 macOS主机
-* x86-64 Linux主机
-* x86-64 Windows主机
+* [x86-64 for macOS](download.jetbrains.com/kotlin/native/kotlin-native-macos-0.5.tar.gz)
+* [x86-64 for Linux](download.jetbrains.com/kotlin/native/kotlin-native-linux-0.5.tar.gz)
+* [x86-64 for Windows](download.jetbrains.com/kotlin/native/kotlin-native-windows-0.5.zip)
 
 # 反馈
 
-请报告Kotlin错误跟踪器中的错误和问题。问题是欢迎的＃kotlin本地听频道在Slack（获得邀请在这里）。
+若遇到问题请向[Kotlin bug 跟踪器](kotl.in/issue)提交报告。欢迎在[Slack](http://slack.kotlinlang.org/)的*kotlin本地*频道上讨论。（获得[邀请](https://kotl.in/slack)）
