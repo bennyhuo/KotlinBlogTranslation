@@ -15,7 +15,7 @@ translator_url: https://pye52.github.io/ & https://suima0v0.github.io/
 
 我们很高兴地宣布Kotlin / Native 迎来了0.5圣诞版！该版本支持将Kotlin / Native嵌入到C，Objective-C和Swift代码中，同时可以使用iOS模拟器开发了，LLVM 5也被纳入到支持中，以及可以在Linux和Windows的主机中创建WebAssembly。
 
-# Objective-C和Swift的反向交互
+# Objective-C和Swift的reverse interop
 
 我们曾经在之前的版本中提及过，如何在Kotlin / Native中调用Apple框架，但前提是存在Objective-C头文件。现在我们换了一种方式，以支持从Swift和Objective-C调用Kotlin的代码。为此我们提供了一个新的编译器选项`-produce framework`。它将生成一个独立的框架，可以从应用程序的其他地方调用，就好像它本身就是用Swift编写的一样。下面让我们来看看这个[计算器例子](https://github.com/JetBrains/kotlin-native/tree/master/samples/calculator)。它的界面采用的是[Swift编写](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/calculator/ViewController.swift#L12)，而计算逻辑则采用[Kotlin编写](https://github.com/JetBrains/kotlin-native/blob/6ee6f5907d808f21af06436e6c44b6fe2b9bb6b5/samples/calculator/src/main/kotlin/org/konan/arithmeticparser/Parser.kt#L17)。Swift代码与Kotlin完美混合。例如，这行Swift代码：
 
