@@ -2,9 +2,15 @@
 title: Kotlin 1.2.20 is out
 author: Dmitry Jemerov
 date: 2018-01-17 14:54:00
-source_url: https://blog.jetbrains.com/kotlin/2018/01/kotlin-1-2-20-is-out/
 tags: 
 categories:  官方动态
+reward: false
+reward_title: Have a nice Kotlin!
+reward_wechat:
+reward_alipay:
+source_url: https://blog.jetbrains.com/kotlin/2018/01/kotlin-1-2-20-is-out/
+translator: pye52
+translator_url: https://pye52.github.io/
 ---
 
 我们很高兴地宣布Kotlin 1.2.20的发布，这是Kotlin 1.2一个bug修复和工具更新的版本。包含了以下更新：

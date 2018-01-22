@@ -9,9 +9,11 @@ reward_title: Have a nice Kotlin!
 reward_wechat:
 reward_alipay:
 source_url: https://blog.jetbrains.com/kotlin/2017/12/kotlinconf-2017-session-recordings-and-photos-are-here/
+translator: pye52
+translator_url: https://pye52.github.io/
 ---
 
-最后，他们在这里！
+ 终于，都已齐备！
 所有的KotlinConf会议录像及其幻灯片都在[这里](https://kotlinconf.com/talks/)。观看你错过的会议，重温你感兴趣的部分！你甚至可以在最新发布的[图库](https://kotlinconf.com/photos/)里寻找上镜的自己、朋友或者同事。
 若只想要快速回顾，可以观看下面的精彩集锦，你也可以直接浏览JetBrainsTV上的KotlinConf播放列表。
 
