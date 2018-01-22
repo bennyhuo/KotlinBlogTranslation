@@ -23,6 +23,7 @@ Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原
 
 | 标题                                       | 发表时间                | 译文地址                                     | 译者                                       | 发布地址                                     |
 | -------------------------------- | ------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------- |
+| []
 | [Kotlin/Native v0.5 released: calling Kotlin from Swift and C, LLVM 5 and more](original/Kotlin%20Native%20v0.5%20released%20calling%20Kotlin%20from%20Swift%20and%20C%20LLVM%205%20and%20more.md) | 2017-12-19 17:16:00 | [译文](translated/Kotlin%20Native%20v0.5%20released%20calling%20Kotlin%20from%20Swift%20and%20C%20LLVM%205%20and%20more.md) | [pye52](https://githut.com/pye52) | |
 | [Webinar recording: Developing Multiplatform Projects in Kotlin 1.2](original/Webinar%20recording%20%20Developing%20Multiplatform%20Projects%20in%20Kotlin%201.2.md) | 2017-12-11 19:07:00 | [译文](translated/Webinar%20recording%20%20Developing%20Multiplatform%20Projects%20in%20Kotlin%201.2.md) | [pye52](https://githut.com/pye52) | |
 | [KotlinConf 2017 Session Recordings and Photos are Here!](original/KotlinConf%202017%20Session%20Recordings%20and%20Photos%20are%20Here!.md) | 2017-12-08 04:26:00 | [译文](translated/KotlinConf%202017%20Session%20Recordings%20and%20Photos%20are%20Here!.md) | [pye52](https://githut.com/pye52) | |
