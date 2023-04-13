@@ -1,3 +1,7 @@
+**Kotlin 官方博客推出了中文版，欢迎访问：https://blog.jetbrains.com/zh-hans/kotlin/**
+
+本项目已不再维护，感谢国内早期一期推广 Kotlin 的开发者们。
+
 ###  博客翻译计划
 
 Kotliner.cn 计划同步翻译 Kotlin 官方博客，以下是经过处理的原文以及经过谷歌翻译的译文，如果愿意参加到翻译当中，请加 QQ 群讨论：162452394，或关注微信公众号 Kotlin 获取最新消息。
